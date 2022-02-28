@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.3.144 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="AES-D-BC-CAN_16_VALVES" Type="FBC.0x010001B2.0x188EE62C.aes_16_v" Version="0x00.0x04" OrderNumber="AES-D-BC-CAN_16_VALVES">
+    <Connection Connector="CAN1" TargetModule="X20CP1382" TargetConnector="IF7" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="p2000_connecttomaster" Value="1" />
+    <Parameter ID="p2010_connecttomaster" Value="1" />
+    <Parameter ID="p2011sub1_connecttomaster" Value="2" />
+    <Parameter ID="p2011sub2_connecttomaster" Value="25" />
+    <Parameter ID="p2011sub4_connecttomaster" Value="27" />
+    <Parameter ID="pnodeobservation" Value="plifeguarding" />
+    <Parameter ID="plifeguarding_guardtime" Value="500" />
+    <Parameter ID="plifeguarding_retryfactor" Value="5" />
+  </Module>
+  <Module Name="X20CP1382" Type="X20CP1382" Version="1.11.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.60.100" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Connector Name="IF7">
+      <Parameter ID="ActivateCanOpen" Value="1" />
+      <Parameter ID="p100c_parametervalue" Value="1000" />
+      <Parameter ID="p100d_parametervalue" Value="3" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="AVENTICS_TEST_AVENTICS" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+  </Module>
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>

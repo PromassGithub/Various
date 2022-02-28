@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="AVENTICS.Hardware.hw" LastWriteTime="02/17/2022 11:02:32" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />
+    <Module Name="X3" Type="X3" X="251" Y="103" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
+    <Module Name="X2" Type="X2" X="238" Y="103" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
+    <Module Name="X1" Type="X1" X="225" Y="103" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="AES-D-BC-CAN_16_VALVES" Type="FBC.0x010001B2.0x188EE62C.aes_16_v" X="264" Y="352" />
+  </Modules>
+  <Links>
+    <Link From="AES-D-BC-CAN_16_VALVES" To="X20CP1382" FromPort="CAN1" ToPort="IF7" IsRoutedByUser="False">
+      <Point X="283" Y="371" />
+      <Point X="283" Y="371" />
+      <Point X="283" Y="351" />
+      <Point X="283" Y="345" />
+      <Point X="226" Y="345" />
+      <Point X="226" Y="203" />
+      <Point X="226" Y="184" />
+      <Point X="226" Y="184" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.9"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\hardware.hw" LastWriteTime="2022-02-17 10:02:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\ashwac.br&quot; -L &quot;AsIecCon: V*, astime: V*, operator: V*, runtime: V*&quot; -c &quot;AVENTICS&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B D4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;AVENTICS&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\hardware.hw" LastWriteTime="2022-02-17 10:02:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\Hardware.hw&quot;  -c &quot;AVENTICS&quot; -sysconf -S &quot;X20CP1382&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\sysconf.br&quot; -T SG4 -B D4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;AVENTICS&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\hardware.hw" LastWriteTime="2022-02-17 10:02:32" />
+    <Prerequisite ID="c:\brautomation\as49\upgrades\modified.txt" LastWriteTime="2021-12-09 08:45:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP1382&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\asfw.br&quot; -T SG4 -B D4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;AVENTICS&quot; -zip -s &quot;AVENTICS&quot; -firmware -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\hardware.hw" LastWriteTime="2022-02-17 10:02:32" />
+    <Prerequisite ID="c:\brautomation\as49\upgrades\modified.txt" LastWriteTime="2021-12-09 08:45:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP1382&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\ashwd.br&quot; -T SG4 -B D4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;AVENTICS&quot; -zip -s &quot;AVENTICS&quot; -hwd -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\hardware.hw" LastWriteTime="2022-02-17 10:02:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\iomap.iom" LastWriteTime="2022-02-11 09:30:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\X20CP1382\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.60.100 /REPO=11159 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;AVENTICS&quot; -v V1.00.0 -S &quot;X20CP1382&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;AVENTICS&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as49\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter="C:\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\iomap.iom" LastWriteTime="2022-02-11 09:30:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\pvmap.vvm" LastWriteTime="2022-02-11 09:30:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\hardware.hw" LastWriteTime="2022-02-17 10:02:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\cpu.sw" LastWriteTime="2022-02-11 09:30:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\channelconfiguration.xml" LastWriteTime="2022-02-17 10:03:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\X20CP1382\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\X20CP1382\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\iomap.br&quot; -T SG4 -B D4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;AVENTICS.X20CP1382&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\brautomation\as49\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS49\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\D0483&quot; &quot;C:\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\tcdata\tcdata.imx" LastWriteTime="2022-02-11 12:03:12" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\tcdata\tcdata.s18d" LastWriteTime="2022-02-11 12:03:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\accessandsecurity\userrolesystem\role.role" LastWriteTime="2022-02-11 09:30:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\X20CP1382\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\Role.br&quot; -zip -B D4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;AVENTICS&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\accessandsecurity\userrolesystem\user.user" LastWriteTime="2022-02-11 09:30:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\accessandsecurity\userrolesystem\role.role" LastWriteTime="2022-02-11 09:30:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\X20CP1382\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\User.br&quot; -zip -B D4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;AVENTICS&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\aventics\x20cp1382\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2022-02-11 09:30:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\AVENTICS\X20CP1382\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\FWRules.br&quot; -zip -B D4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;AVENTICS&quot; " />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\AVENTICS\X20CP1382\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\aventics\x20cp1382\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\ashwac.br" LastWriteTime="2022-02-11 12:03:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\sysconf.br" LastWriteTime="2022-02-11 12:03:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\asfw.br" LastWriteTime="2022-02-11 12:03:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\ashwd.br" LastWriteTime="2022-02-11 12:03:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\arconfig.br" LastWriteTime="2022-02-17 10:03:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\iomap.br" LastWriteTime="2022-02-17 10:03:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\tcdata.br" LastWriteTime="2022-02-11 12:03:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\role.br" LastWriteTime="2022-02-11 12:03:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\user.br" LastWriteTime="2022-02-11 12:03:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\aventics\x20cp1382\fwrules.br" LastWriteTime="2022-02-11 12:03:14" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\AVENTICS_TEST.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;AVENTICS&quot; -i &quot;C:\BrAutomation\AS49&quot; -S &quot;X20CP1382&quot; -A &quot;X20CP1382&quot; -pil -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.60.100 /REPO=11159 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>
