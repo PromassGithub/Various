@@ -17,6 +17,10 @@
     <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
     <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
     <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="sc_Config1" />
   </Module>
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
