@@ -1,0 +1,155 @@
+$ EZ-EDS Version 3.9 Generated Electronic Data Sheet
+
+$ SMC EX250-SEN1 SI Unit
+
+[File]
+        DescText = "SMC EX250-SEN1";
+        CreateDate = 09-02-2005;
+        CreateTime = 16:15:00;
+        ModDate = 02-24-2016;
+        ModTime = 09:00:00;
+        Revision = 1.2;                 $ History:  1.1 ... Initial version
+                                        $ History:  1.2 ... Modify Assembly Format
+        HomeURL = "http://www.smcworld.com";
+
+[Device]
+        VendCode = 7;
+        VendName = "SMC Corporation";
+        ProdType = 12;
+        ProdTypeStr = "Communications Adapter";
+        ProdCode = 107;
+        MajRev = 1;
+        MinRev = 3;
+        ProdName = "SMC EX250-SEN1 SI UNIT";
+        Catalog = "EX250-SEN1";
+        Icon = "ex250.ico";
+
+
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Params]
+        Param1 =
+                0,                      $ first field shall equal 0
+                ,,                      $ path size,path
+                0x0200,                 $ descriptor
+                0xC7,                   $ data type : 16-bit Unsigned Integer
+                2,                      $ data size in bytes
+                "Output Size",          $ name
+                "",                     $ units
+                "",                     $ help string
+                4,4,4,                  $ min, max, default data values
+                ,,,,                    $ mult, dev, base, offset scaling not used
+                ,,,,                    $ mult, dev, base, offset link not used
+                ;                       $ decimal places not used
+
+        Param2 =
+                0,                      $ first field shall equal 0
+                ,,                      $ path size,path
+                0x0200,                 $ descriptor
+                0xC7,                   $ data type : 16-bit Unsigned Integer
+                2,                      $ data size in bytes
+                "Input Size",           $ name
+                "",                     $ units
+                "",                     $ help string
+                6,6,6,                  $ min, max, default data values
+                ,,,,                    $ mult, dev, base, offset scaling not used
+                ,,,,                    $ mult, dev, base, offset link not used
+                ;                       $ decimal places not used
+        Param3 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RPI Range",            $ name
+                "",                     $ units
+                "",                     $ help string
+                10000,3200000,20000,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                0;                      $ decimal places
+
+        Param4 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0200,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "IO Data",              $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+[Assembly]
+        Revision = 2;
+
+        Assem100 =
+                "Input Data",
+                ,
+                ,
+                0x0000,
+                ,,
+                48,Param4;
+
+        Assem150 =
+                "Output Data",
+                ,
+                ,
+                0x0000,
+                ,,
+                32,Param4;
+
+
+[Connection Manager]
+        Connection1 =
+                0x04010002,             $ trigger & transport
+                                        $  0-15  = supported transport classes (class 1)
+                                        $  16 = cyclic (1 = supported)
+                                        $  17 = change of state (0 = not supported)
+                                        $  18 = on demand (0 = not supported)
+                                        $  19-23 = reserved (must be zero)
+                                        $  24-27 = exclusive owner
+                                        $  28-30 = reserved (must be zero)
+                                        $  31 = client 0 (don't care for classes 0 and 1)
+                0x44240405,             $ point/multicast & priority & realtime format
+                                        $   0     = O=>T fixed (1 = supported)
+                                        $   1     = O=>T variable (0 = not supported)
+                                        $   2     = T=>O fixed (1 = supported)
+                                        $   3     = T=>O variable (0 = not supported)
+                                        $  4-7   = reserved (must be zero)
+                                        $  8-10  = O=>T header (4 byte run/idle)
+                                        $  11  = reserved (must be zero)
+                                        $  12-14 = T=>O header
+                                        $  15  = reserved (must be zero)
+                                        $  16-19 = O=>T point-to-point
+                                        $  20-23 = T=>O multicast
+                                        $  24-27 = O=>T scheduled
+                                        $  28-31 = T=>O scheduled
+                Param3,Param1,Assem150, $ O=>T RPI,Size,Format
+                Param3,Param2,Assem100, $ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (dynamic assemblies)
+                ,,                      $ config part 2 (module configuration)
+                "Discrete Exclusive Owner",    $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C 96 2C 64";    $ exclusive output path
+
+
+
+
+[Port]
+        Port2 =
+                TCP,                    $ port type name
+                "TCP/IP",               $ name of port
+                "20 F5 24 01",          $ instance one of the TCP/IP interface object
+                2;                      $ port number
+
+[Capacity]
+        MaxCIPConnections = 20;
+        TSpec1 = TxRx, 1, 1000;
+        TSpec2 = TxRx, 144, 1000;
+
+
