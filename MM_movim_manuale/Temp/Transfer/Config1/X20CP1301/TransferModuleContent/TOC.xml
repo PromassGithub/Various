@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toc Version="2" MinorVersion="0">
+	<Application>
+		<Class Name="Os">
+			<Folder Name="Brm" ProjectDependent="1" IgnoreDifference="0">
+				<File Name="@cfX20CP1301.br" Size="4404" HashValue="FC8BF3C9299194B6605679AB43122AB3" ProjectDependent="1" IgnoreDifference="0" />
+				<File Name="@sbX20CP1301.br" Size="2408" HashValue="835C0A5C87A78779F61B480E44D62A7B" ProjectDependent="1" IgnoreDifference="0" />
+			</Folder>
+			<Folder Name="System" ProjectDependent="1" IgnoreDifference="0">
+				<Folder Name="BASE" ProjectDependent="1" IgnoreDifference="0">
+					<Folder Name="COMPONENTS" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="ArLcTextP.br" Size="537344" HashValue="E05F098D39012CDCD0A3DBA9B9047B54" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="ArUnitSys.br" Size="476228" HashValue="CE3F96837303ADA6203FFEA1FCD8E225" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+					<Folder Name="FW" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="0030#0.bl.gz" Size="34359" HashValue="4E89C62BBDA9586923F8E899686E821A" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+					<Folder Name="HWD" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="AsHwdhw_upl.xml.gz" Size="16512" HashValue="9986327CAC1D59E65A306A3B860A1C45" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="AsHwdx20cpx3xx.xml.gz" Size="63312" HashValue="E84EA3F5ED1C111F8190BB6095002CD0" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+				</Folder>
+				<Folder Name="DKM" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="dkm_gdbserver_brelf.out" Size="209222" HashValue="5743771FBFDE0CECC0B8D3189F5035C9" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_gdbserver_ipa.out" Size="30795" HashValue="FEC29896EA8E8520FE32CEE4D4EA0A3E" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_opcua.out.gz" Size="810324" HashValue="1B548A34BF2B0AD99ACAE9179D1AC1BB" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_rbac.out" Size="25657" HashValue="32660BE233D6634A9C67A0CCEBBE06AF" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkm_scm.out" Size="119421" HashValue="1AD9249EA09A53688D46530EABE8774E" ProjectDependent="1" IgnoreDifference="0" />
+					<File Name="dkms.xml" Size="656" HashValue="8317A83A43FD7B4F870F953AE642D75D" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="SDM" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="arsdm.tar.gz" Size="516864" HashValue="AE33F6D7D3CA036ABA9DE68948398358" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="TOC" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="ftoc.xml" Size="185" HashValue="5236588FC50BAFD15276E800159B75C0" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="WEBSERV" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="ArWebServ.br" Size="108964" HashValue="DC52A5871E971A510CBA4D24A16FCB8B" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+			</Folder>
+		</Class>
+		<Memory Name="SYSROM">
+			<Module Name="::$$sysconf" Type="129" Size="67636" Modified="2022-07-08 15:30:53" Version="4.83" ProjectDependent="1" Reboot="1" />
+			<Module Name="::TCData" Type="209" Size="3921912" Modified="2022-07-08 15:19:30" Version="1.00" ProjectDependent="1" />
+			<Module Name="::arconfig" Type="132" Size="7212" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" Reboot="1" />
+			<Module Name="::asfw" Type="67" Size="285052" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" Reboot="1" />
+			<Module Name="::ashwd" Type="67" Size="8880" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" Reboot="1" />
+		</Memory>
+		<Memory Name="USERROM">
+			<Module Name="::Alarm" Type="17" Size="11280" Modified="2022-07-08 15:19:26" Version="1.00" ProjectDependent="1" />
+			<Module Name="::ArSvcReg" Type="18" Size="78216" Modified="2016-12-09 07:57:34" Version="4.83" ProjectDependent="1" />
+			<Module Name="::AsHW" Type="18" Size="10284" Modified="2022-02-01 12:17:58" Version="4.83" ProjectDependent="1" />
+			<Module Name="::AsIecCon" Type="18" Size="17432" Modified="2022-02-01 12:18:07" Version="4.83" ProjectDependent="1" />
+			<Module Name="::Config" Type="136" Size="2892" Modified="2022-07-08 15:19:29" Version="5.131" ProjectDependent="1" />
+			<Module Name="::Config_1" Type="136" Size="1272" Modified="2022-07-08 15:19:29" Version="5.131" ProjectDependent="1" />
+			<Module Name="::Config_2" Type="136" Size="2908" Modified="2022-07-08 15:33:53" Version="5.131" ProjectDependent="1" />
+			<Module Name="::Data" Type="17" Size="8976" Modified="2022-07-08 15:33:51" Version="1.00" ProjectDependent="1" />
+			<Module Name="::DataObj" Type="18" Size="13788" Modified="2022-02-01 12:19:14" Version="4.83" ProjectDependent="1" />
+			<Module Name="::FWRules" Type="136" Size="456" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" />
+			<Module Name="::FileIO" Type="18" Size="25760" Modified="2022-02-01 12:19:27" Version="4.83" ProjectDependent="1" />
+			<Module Name="::MpAlarmX" Type="18" Size="406036" Modified="2021-01-29 03:41:37" Version="5.131" ProjectDependent="1" />
+			<Module Name="::MpAssetInt" Type="18" Size="234304" Modified="2021-01-29 08:20:57" Version="5.131" ProjectDependent="1" />
+			<Module Name="::MpBase" Type="18" Size="555492" Modified="2020-09-14 11:39:50" Version="5.13" ProjectDependent="1" />
+			<Module Name="::MpData" Type="18" Size="243936" Modified="2021-01-29 06:05:46" Version="5.131" ProjectDependent="1" />
+			<Module Name="::MpEnergy" Type="18" Size="156936" Modified="2021-01-29 09:15:47" Version="5.131" ProjectDependent="1" />
+			<Module Name="::Program" Type="17" Size="4576" Modified="2022-07-08 15:19:26" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Role" Type="136" Size="760" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" />
+			<Module Name="::User" Type="136" Size="648" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu" Type="18" Size="2148" Modified="2022-07-08 15:38:38" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu01" Type="18" Size="68268" Modified="2022-07-08 15:38:37" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu02" Type="18" Size="2948" Modified="2022-07-08 15:19:42" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Visu03" Type="18" Size="579884" Modified="2022-07-08 15:19:42" Version="1.00" ProjectDependent="1" />
+			<Module Name="::arial" Type="18" Size="1045436" Modified="2022-07-08 15:19:43" Version="1.00" ProjectDependent="1" />
+			<Module Name="::arialbd" Type="18" Size="989172" Modified="2022-07-08 15:19:42" Version="1.00" ProjectDependent="1" />
+			<Module Name="::ashwac" Type="136" Size="212" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" />
+			<Module Name="::astime" Type="18" Size="24304" Modified="2022-02-01 12:18:58" Version="4.83" ProjectDependent="1" />
+			<Module Name="::brsystem" Type="18" Size="23844" Modified="2022-02-01 12:19:10" Version="4.83" ProjectDependent="1" />
+			<Module Name="::clock" Type="17" Size="2524" Modified="2022-07-08 15:19:26" Version="1.00" ProjectDependent="1" />
+			<Module Name="::iomap" Type="50" Size="13640" Modified="2022-07-08 15:19:29" Version="1.00" ProjectDependent="1" />
+			<Module Name="::runtime" Type="18" Size="29340" Modified="2022-02-01 12:19:32" Version="4.83" ProjectDependent="1" />
+			<Module Name="::standard" Type="18" Size="11576" Modified="2022-02-01 12:19:35" Version="4.83" ProjectDependent="1" />
+			<Module Name="::sys_lib" Type="18" Size="19832" Modified="2022-02-01 12:19:36" Version="4.83" ProjectDependent="1" />
+			<Module Name="::udbdef" Type="210" Size="70264" Modified="2014-04-10 10:00:00" Version="0.01" ProjectDependent="1" />
+			<Module Name="::vcalarm" Type="18" Size="94052" Modified="2021-06-17 21:23:06" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcbclass" Type="18" Size="181352" Modified="2021-06-17 21:24:41" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccbar" Type="18" Size="9788" Modified="2021-06-17 21:23:32" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccbmp" Type="18" Size="6756" Modified="2021-06-17 21:23:40" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccbtn" Type="18" Size="17016" Modified="2021-06-17 21:23:29" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcchspot" Type="18" Size="6136" Modified="2021-06-17 21:23:27" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcchtml" Type="18" Size="83456" Modified="2021-06-17 21:24:18" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcclbox" Type="18" Size="30732" Modified="2021-06-17 21:23:26" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccnum" Type="18" Size="32992" Modified="2021-06-17 21:23:39" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccovl" Type="18" Size="1888" Modified="2021-06-17 21:23:54" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccshape" Type="18" Size="4988" Modified="2021-06-17 21:23:43" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccstr" Type="18" Size="24888" Modified="2021-06-17 21:23:37" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcctext" Type="18" Size="7516" Modified="2021-06-17 21:23:42" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcctrend" Type="18" Size="89576" Modified="2021-06-17 21:23:53" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vccurl" Type="18" Size="154720" Modified="2021-06-17 21:26:30" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcdsint" Type="18" Size="7264" Modified="2021-06-17 21:23:20" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcdsloc" Type="18" Size="37748" Modified="2021-06-17 21:23:24" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcfile" Type="18" Size="6544" Modified="2021-06-17 21:22:28" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcfntttf" Type="18" Size="276176" Modified="2021-06-17 21:25:34" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcgclass" Type="18" Size="244096" Modified="2021-06-17 21:25:14" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcmgr" Type="18" Size="41904" Modified="2021-06-17 21:25:19" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcnet" Type="18" Size="12228" Modified="2021-06-17 21:22:27" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcpdsw" Type="18" Size="2632" Modified="2021-06-17 21:22:52" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcpdvnc" Type="18" Size="76516" Modified="2021-06-17 21:22:49" Version="4.726" ProjectDependent="1" Reboot="1" />
+			<Module Name="::vcpfx20" Type="18" Size="3260" Modified="2021-06-17 21:26:00" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcpkat" Type="18" Size="3952" Modified="2021-06-17 21:23:13" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcresman" Type="18" Size="1566328" Modified="2021-06-17 21:22:25" Version="4.726" ProjectDependent="1" Reboot="1" />
+			<Module Name="::vcrt" Type="18" Size="75424" Modified="2021-06-17 21:24:51" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcshared" Type="18" Size="17228" Modified="2022-07-08 15:19:43" Version="1.00" ProjectDependent="1" />
+			<Module Name="::vctcal" Type="18" Size="5388" Modified="2021-06-17 21:23:45" Version="4.726" ProjectDependent="1" />
+			<Module Name="::vcxml" Type="18" Size="396100" Modified="2021-06-17 21:25:53" Version="4.726" ProjectDependent="1" />
+		</Memory>
+	</Application>
+</Toc>

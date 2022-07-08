@@ -1,0 +1,12 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="C:/projects/MM_movim_manuale/Physical/Config1/X20CP1301/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="Program" Source="Program.prg" />
+      <Task Name="clock" Source="clock.prg" />
+      <Task Name="Alarm" Source="Alarm.prg" />
+      <Task Name="Data" Source="Data.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

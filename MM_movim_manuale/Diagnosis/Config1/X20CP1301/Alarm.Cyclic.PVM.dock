@@ -1,0 +1,46 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Alarm 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=24 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                          MpAlarmXCore_0                             MpAlarmXCore    0 "                                                               *"    0   24    1    0    1    1         
+                                  MpLink                                    UDINT    0 "                                                        63838444"    1    7    1   10    0    0         
+                                  Enable                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                  Active                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                StatusID                                     DINT    0 "                                                               0"    1    4    1   10    0    0         
+                            ActiveAlarms                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                           PendingAlarms                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                                    Info                         MpAlarmXInfoType    0 "                                                               *"    1   24    1    0    0    1         
+                                    Diag                         MpAlarmXDiagType    0 "                                                               *"    2   24    1    0    0    1         
+                                StatusID                     MpAlarmXStatusIDType    0 "                                                               *"    3   24    1    0    0    1         
+                                      ID                                     DINT    0 "                                                               0"    4    4    1   10    0    0 e,0,mpAL
+
+                                Severity                                     DINT    0 "                                                               0"    4    4    1   10    0    0 e,0,mpCO
+
+                                    Code                                     UINT    0 "                                                               0"    4    6    1   10    0    0         
+                                Internal                    MpComInternalDataType    0 "                                                               *"    1   24    1    0    0    1         
+                                 pObject                                    UDINT    0 "                                                        57197896"    2    7    1   10    0    0         
+                                   State                                    UDINT    0 "                                                               3"    2    7    1   10    0    0         
+                       MpAlarmXHistory_0                          MpAlarmXHistory    0 "                                                               *"    0   24    1    0    1    1         
+                                  MpLink                                    UDINT    0 "                                                        63838452"    1    7    1   10    0    0         
+                                  Enable                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                              ErrorReset                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                              DeviceName                                    UDINT    0 "                                                        67874507"    1    7    1   10    0    0         
+                                Language                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                                  Export                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                  Active                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                   Error                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                StatusID                                     DINT    0 "                                                               0"    1    4    1   10    0    0         
+                             CommandBusy                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                             CommandDone                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                    Info                         MpAlarmXInfoType    0 "                                                               *"    1   24    1    0    0    1         
+                                    Diag                         MpAlarmXDiagType    0 "                                                               *"    2   24    1    0    0    1         
+                                StatusID                     MpAlarmXStatusIDType    0 "                                                               *"    3   24    1    0    0    1         
+                                      ID                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mpAL
+
+                                Severity                                     DINT    0 "                                                               *"    4    4    1   10    0    0 e,0,mpCO
+
+                                    Code                                     UINT    0 "                                                               *"    4    6    1   10    0    0         
+                                Internal                    MpComInternalDataType    0 "                                                               *"    1   24    1    0    0    1         
+                                 pObject                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
+                                   State                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
