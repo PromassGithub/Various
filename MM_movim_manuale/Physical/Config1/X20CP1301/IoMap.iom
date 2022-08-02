@@ -1,0 +1,11 @@
+VAR_CONFIG
+	Cyclic#3.glb_io.Ai.oil_pressure AT %IW."X20AI4632".AnalogInput01;
+	glb_io.out.apertura AT %QX."X3".DigitalOutput02;
+	glb_io.out.Scarico_ch AT %QX."X3".DigitalOutput03;
+	glb_io.out.Scarico_ap AT %QX."X3".DigitalOutput01;
+	glb_io.out.alta_pressione AT %QX."X3".DigitalOutput04;
+	glb_io.out.alta_velocita AT %QX."X3".DigitalOutput05;
+	Cyclic#3.glb_io.Ai.p_apertura AT %IW."X20AI4632".AnalogInput02;
+	Cyclic#3.glb_io.Ai.p_chiusura AT %IW."X20AI4632".AnalogInput03;
+	glb_io.out.chiusura AT %QX."X3".DigitalOutput06;
+END_VAR

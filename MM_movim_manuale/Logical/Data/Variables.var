@@ -1,0 +1,11 @@
+VAR
+	MpDataRegPar_0 : MpDataRegPar;
+	Enable : BOOL := TRUE; (*Enable the component, can be used in the watch window to change the setup*)
+	MpDataRecorder_0 : MpDataRecorder := (SamplingTime:=T#500ms); (*MpDataRecorder FUB*)
+	Status : DINT := 0; (*Status variable the MpAlarmBasicSet / ResetAlarm functions*)
+	MpDataTableUI_0 : MpDataTableUI := (UISetup:=(ValueListSize:=10,PVListSize:=5)); (*MpDataTableUI FUB*)
+	MpDataTableUIConnect : MpDataTableUIConnectType; (*MpDataTableUI connection datapoints*)
+	Header : MpDataRecorderHeaderType := (Name:='Report Pressioni',Description:='Campionamento delle pressioni ogni 0,5s'); (*Header description for UI components*)
+	MpDataStatisticsUI_0 : MpDataStatisticsUI := (UISetup:=(PVListSize:=6)); (*MpDataStatisticsUI FUB*)
+	MpDataStatisticsUIConnect : MpDataStatisticsUIConnectType; (*MpDataStatisticsUI connection datapoints*)
+END_VAR

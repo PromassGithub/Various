@@ -1,0 +1,12 @@
+VAR
+	MpAlarmXHistory_0 : MpAlarmXHistory; (*MpAlarmXHistory instance*)
+	MpAlarmXHistoryUI_0 : MpAlarmXHistoryUI := (UISetup:=(AlarmListSize:=9)); (*MpAlarmXHistoryUI instance*)
+	MpAlarmXListUI_0 : MpAlarmXListUI := (UISetup:=(AlarmListSize:=9)); (*MpAlarmXList instance*)
+	MpAlarmXHistoryUIConnect : MpAlarmXHistoryUIConnectType; (*MpAlarmXHistoryUI UI connection points*)
+	MpAlarmXListUIConnect : MpAlarmXListUIConnectType; (*MpAlarmXListUI UI connection points*)
+	MpAlarmXCore_0 : MpAlarmXCore; (*MpAlarmXCore instance*)
+	AlarmXSetStatus : UDINT;
+	AlarmXResetStatus : DINT;
+	AlarmXAckStatus : DINT;
+	alm_export : BOOL;
+END_VAR

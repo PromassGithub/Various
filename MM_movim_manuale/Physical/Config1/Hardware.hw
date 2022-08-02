@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20AI4632" Type="X20AI4632" Version="1.2.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12f" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11f" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="ChannelType01" Value="0 to 20mA" />
+    <Parameter ID="ChannelErrCheck01" Description="." />
+    <Parameter ID="UserGain01" Value="81920" />
+    <Parameter ID="Useroffset01" Value="-536854528" />
+    <Parameter ID="ChannelType02" Value="0 to 20mA" />
+    <Parameter ID="UserGain02" Value="81920" />
+    <Parameter ID="Useroffset02" Value="-536854528" />
+    <Parameter ID="FilterOrder02" Value="3" />
+    <Parameter ID="FilterConstant02" Value="10" />
+    <Parameter ID="ChannelType03" Value="0 to 20mA" />
+    <Parameter ID="UserGain03" Value="81920" />
+    <Parameter ID="Useroffset03" Value="-536854528" />
+    <Parameter ID="ChannelType04" Value="0 to 20mA" />
+    <Parameter ID="UserGain04" Value="81920" />
+    <Parameter ID="Useroffset04" Value="-536854528" />
+  </Module>
+  <Module Name="X20BM11f" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20CP1301" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20CP1301" Type="X20CP1301" Version="1.7.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X1" />
+    <Parameter ID="X1AI_ChannelType01" Value="0 to 20mA" />
+  </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.2" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="MM_movim_manuale_Config1" />
+    <Parameter ID="UserRamSize" Value="5101" />
+    <Parameter ID="RemMemSize" Value="10000" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="HD" />
+    <Parameter ID="FileDevicePath1" Value="D:\DataLog\" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="bazzica" />
+    <Parameter ID="FtpUserPassword1" Value="lTyRpNtFk5hGuZwqYY4KKnhd+lCxcDP31gct2Oq4zUc=" />
+    <Parameter ID="FtpUserSalt1" Value="njx/1lfK" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPMSPartition1" Value="DATA" />
+  </Module>
+  <Module Name="X20TB12f" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>
