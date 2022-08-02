@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="7" ArVersion="O4.34">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable AuditEvents="True" Name="gMAC01">
+          <Variable Name="Stop" />
+          <Variable Name="Run" />
+          <Variable Name="NewCycle" />
+          <Variable Name="CommitEnd" />
+          <Variable Name="Alarm" />
+          <Variable Name="AutoMode" />
+          <Variable Name="ManMode" />
+          <Variable Name="LiveSignal" />
+          <Variable Name="LastCycleTime" />
+          <Variable Name="ActualCycleTime" />
+          <Variable Name="PcsPerHour" />
+          <Variable Name="ActualCycleNr" />
+          <Variable Name="LifeCycles" />
+          <Variable Name="MCH_on" />
+        </Variable>
+      </GlobalVariables>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

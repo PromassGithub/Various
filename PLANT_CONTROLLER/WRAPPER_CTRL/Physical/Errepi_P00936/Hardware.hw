@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20CP1301" Type="X20CP1301" Version="1.7.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="HostName" Value="promass" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.49.7" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="ERREPI_P00936" />
+    <Parameter ID="ConfigVersion" Value="2022.5.1" />
+    <Parameter ID="PermanentPvSize" Value="24" />
+    <Parameter ID="RemanentGlobalPvSize" Value="44" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Parameter ID="EnableCfRemoteInstall" Value="1" />
+    <Parameter ID="RebootReset" Value="1" />
+    <Parameter ID="Connections" Value="10" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1301.IF6" />
+    <Parameter ID="TaskClassIdleTime" Value="8000" />
+    <Parameter ID="Cyclic1Duration" Value="8000" />
+    <Parameter ID="Cyclic1Tolerance" Value="8000" />
+    <Parameter ID="Cyclic3Duration" Value="48000" />
+    <Parameter ID="Cyclic3Tolerance" Value="48000" />
+    <Parameter ID="Cyclic8Duration" Value="8000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="HD" />
+    <Parameter ID="FileDevicePath1" Value="D:\RECIPES\" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="CF" />
+    <Parameter ID="FileDevicePath2" Value="D:\" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="LOG" />
+    <Parameter ID="FileDevicePath3" Value="D:\LOG\" />
+    <Parameter ID="ActivateSntp" Value="1" />
+    <Parameter ID="SntpcServAddr1" Value="192.168.49.1" />
+    <Parameter ID="InternetFileSystemUsername" Value="promass" />
+    <Parameter ID="InternetFileSystemPassword" Value="promass" />
+    <Parameter ID="EthernetHostName" Value="promass" />
+    <Parameter ID="EthernetDefaultGateway" Value="192.168.49.1" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="bazzica" />
+    <Parameter ID="FtpUserPassword1" Value="fv7Wv821ewKqnMsDSvGQxxKgMMgXs+bZF/2FwIesLr0=" Description="promass" />
+    <Parameter ID="FtpUserSalt1" Value="UDA6md8F" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPMSPartition1" Value="DATA" />
+    <Group ID="FtpUser2" />
+    <Parameter ID="FtpUsername2" Value="errepi" />
+    <Parameter ID="FtpUserPassword2" Value="knNz1PPTdcY0SkTRJpi6SMuvDsE3Y9gUDrG6vRz9RC4=" Description="errepi" />
+    <Parameter ID="FtpUserSalt2" Value="Ww6eA1cq" />
+    <Parameter ID="FTPAccessRight2" Value="0" />
+    <Parameter ID="FTPMSPartition2" Value="DATA" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>

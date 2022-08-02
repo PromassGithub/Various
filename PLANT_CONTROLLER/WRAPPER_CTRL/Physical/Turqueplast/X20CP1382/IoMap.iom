@@ -1,0 +1,25 @@
+VAR_CONFIG
+	gMAC03raw.Di.Run AT %IX."X2".DigitalInput01;
+	gMAC03raw.Di.Alarm AT %IX."X2".DigitalInput02;
+	gMAC03raw.Di.MoldChange AT %IX."X2".DigitalInput03;
+	gMAC03raw.Di.Manual AT %IX."X2".DigitalInput04;
+	gMAC03raw.Di.NewCycleSignal AT %IX."X2".DigitalInput05;
+	gMAC03raw.Di.CommitEnd AT %IX."X2".DigitalInput06;
+	gMAC02raw.Di.Run AT %IX."X20DI9371".DigitalInput01;
+	gMAC02raw.Di.Alarm AT %IX."X20DI9371".DigitalInput02;
+	gMAC02raw.Di.MoldChange AT %IX."X20DI9371".DigitalInput03;
+	gMAC02raw.Di.Manual AT %IX."X20DI9371".DigitalInput04;
+	gMAC02raw.Di.NewCycleSignal AT %IX."X20DI9371".DigitalInput05;
+	gMAC02raw.Di.CommitEnd AT %IX."X20DI9371".DigitalInput06;
+	gMAC01raw.Di.Run AT %IX."X20DI9371a".DigitalInput01;
+	gMAC01raw.Di.Alarm AT %IX."X20DI9371a".DigitalInput02;
+	gMAC01raw.Di.MoldChange AT %IX."X20DI9371a".DigitalInput03;
+	gMAC01raw.Di.Manual AT %IX."X20DI9371a".DigitalInput04;
+	gMAC01raw.Di.NewCycleSignal AT %IX."X20DI9371a".DigitalInput05;
+	gMAC01raw.Di.CommitEnd AT %IX."X20DI9371a".DigitalInput06;
+	::gPWL02_ok AT %IX."X20BC0083a".ModuleOk;
+	::gPWL01_ok AT %IX."X20BC0083".ModuleOk;
+	gPWL03_ok AT %IX."X2".DigitalInput07;
+	::glbMac02On AT %IX."X20DI9371".DigitalInput07;
+	::glbMac01On AT %IX."X20DI9371a".DigitalInput07;
+END_VAR

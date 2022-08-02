@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:ua="http://br-automation.com/OpcUa/configuration/NodeSet.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://br-automation.com/OpcUa/PLC/PV/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://br-automation.com/OpcUa/PLC/PV/" PublicationDate="2022-08-02T11:51:24Z" Version="1.00" />
+  </Models>
+  <Extensions>
+    <Extension>
+      <ua:ModelInfo Tool="AutomationStudio" Version="4.9.5.36 SP" />
+    </Extension>
+    <Extension>
+      <Provider Name="PV" />
+    </Extension>
+  </Extensions>
+  <DefaultView>
+    <Module>
+      <GlobalVariables Name="Global PV">
+        <Variable Name="gMAC01" DataType="i=22" AuditEvents="True">
+          <Variable Name="MCH_on" DataType="i=1" AuditEvents="True" />
+          <Variable Name="Stop" DataType="i=1" AuditEvents="True" />
+          <Variable Name="Run" DataType="i=1" AuditEvents="True" />
+          <Variable Name="NewCycle" DataType="i=1" AuditEvents="True" />
+          <Variable Name="CommitEnd" DataType="i=1" AuditEvents="True" />
+          <Variable Name="Alarm" DataType="i=1" AuditEvents="True" />
+          <Variable Name="AutoMode" DataType="i=1" AuditEvents="True" />
+          <Variable Name="ManMode" DataType="i=1" AuditEvents="True" />
+          <Variable Name="LiveSignal" DataType="i=1" AuditEvents="True" />
+          <Variable Name="LastCycleTime" DataType="i=6" AuditEvents="True" />
+          <Variable Name="ActualCycleTime" DataType="i=6" AuditEvents="True" />
+          <Variable Name="PcsPerHour" DataType="i=6" AuditEvents="True" />
+          <Variable Name="ActualCycleNr" DataType="i=6" AuditEvents="True" />
+          <Variable Name="LifeCycles" DataType="i=6" AuditEvents="True" />
+        </Variable>
+      </GlobalVariables>
+    </Module>
+  </DefaultView>
+</UANodeSet>

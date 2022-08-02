@@ -1,0 +1,3 @@
+clock	"$(AS_CPU_PATH)/clock/a.out" -o "$(AS_CPU_PATH)/clock/clock.ox" -T SG4 -r Cyclic1   -G V4.1.2  -B O4.34
+Varie	"$(AS_CPU_PATH)/Varie/a.out" -o "$(AS_CPU_PATH)/Varie/Varie.ox" -T SG4 -r Cyclic1   -G V4.1.2  -B O4.34
+main	"$(AS_CPU_PATH)/main/a.out" -o "$(AS_CPU_PATH)/main/main.ox" -T SG4 -r Cyclic2   -G V4.1.2  -B O4.34
