@@ -26,7 +26,24 @@
           <Variable Name="LifeCycles" />
           <Variable Name="MCH_on" />
         </Variable>
+        <Variable Name="glb_mac_name" />
       </GlobalVariables>
+      <Task Name="OpcUA_IF">
+        <Variable Name="life_cycles" />
+        <Variable Name="life_mold_distance" />
+        <Variable Name="mac_status">
+          <Variable Name="stop" />
+          <Variable Name="man" />
+          <Variable Name="running" />
+          <Variable Name="auto" />
+          <Variable Name="alarm" />
+          <Variable Name="mch_on" />
+          <Variable Name="commit_cycles" />
+          <Variable Name="actual_cycle_nr" />
+          <Variable Name="last_cycle_time" />
+          <Variable Name="actual_cycle_time" />
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

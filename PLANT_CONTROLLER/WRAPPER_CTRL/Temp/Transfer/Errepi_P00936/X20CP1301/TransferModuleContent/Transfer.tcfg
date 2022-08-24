@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TransferConfig Version="1.0">
 	<InstallAR sourcePath="./AR/" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/OpcUA_IF" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/main" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/Varie" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/clock" targetMemory="USERROM" overwrite="true" />
-	<InstallModule sourcePath="./FilesToTransfer/Data0/FileIO" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/Visu" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vctcal" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcrt" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcpkat" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcpfx20" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcpdsw" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcmgr" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcfntttf" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcfile" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcdsloc" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcdsint" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcctext" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vccstr" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vccovl" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vccnum" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vccdt" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vccbtn" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vccbmp" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcbclass" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcalarm" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/AsIecCon" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcshared" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/segoeuiz" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/arialbd" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/segoeuib" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/segoeuii" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/segoeui" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/arial" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/lucon" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/Visu03" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/Visu02" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/Visu01" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/astime" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/AsHW" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcgclass" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/FileIO" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/DataObj" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/asstring" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/OpcUaMap" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/standard" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/runtime" targetMemory="USERROM" overwrite="true" />
@@ -16,6 +52,9 @@
 	<InstallModule sourcePath="./FilesToTransfer/Data0/Role" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/TCData" targetMemory="SYSROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/udbdef" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcpdvnc" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcnet" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/vcresman" targetMemory="USERROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/$$sysconf" targetMemory="SYSROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/arconfig" targetMemory="SYSROM" overwrite="true" />
 	<InstallModule sourcePath="./FilesToTransfer/Data0/ashwd" targetMemory="SYSROM" overwrite="true" />

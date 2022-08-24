@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1659441080_2_
-#define _BUR_1659441080_2_
+#ifndef _BUR_1660058014_2_
+#define _BUR_1660058014_2_
 
 #include <bur/plctypes.h>
 
@@ -13,6 +13,7 @@
 
 
 /* Variables */
+_GLOBAL_RETAIN plcstring glb_mac_name[11];
 _GLOBAL struct tCmdClock cmdClock;
 _GLOBAL unsigned long cpu_time_start_mac01;
 _GLOBAL unsigned long cpu_time_start_mac02;
@@ -61,5 +62,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.fun\\\" scope 
 __asm__(".previous");
 
 
-#endif /* _BUR_1659441080_2_ */
+#endif /* _BUR_1660058014_2_ */
 

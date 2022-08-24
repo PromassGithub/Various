@@ -10,6 +10,7 @@ extern "C"
 	#include <operator.h>
 	#include <runtime.h>
 	#include <standard.h>
+	#include <asstring.h>
 	#include <astime.h>
 	#include <FileIO.h>
 	#include <AsIecCon.h>

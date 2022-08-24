@@ -1,7 +1,7 @@
 SHELL := cmd.exe
 
 export AS_SYSTEM_PATH := C:/BrAutomation/AS/System
-export AS_BIN_PATH := C:/BrAutomation/AS49/Bin-en
+export AS_BIN_PATH := C:/BrAutomation/AS49/bin-en
 export AS_INSTALL_PATH := C:/BrAutomation/AS49
 export AS_PATH := C:/BrAutomation/AS49
 export AS_VC_PATH := C:/BrAutomation/AS49/AS/VC

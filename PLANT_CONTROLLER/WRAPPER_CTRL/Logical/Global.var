@@ -48,3 +48,6 @@ VAR
 	cpu_time_start_mac01 : UDINT;
 	cmdClock : tCmdClock;
 END_VAR
+VAR RETAIN
+	glb_mac_name : STRING[10];
+END_VAR

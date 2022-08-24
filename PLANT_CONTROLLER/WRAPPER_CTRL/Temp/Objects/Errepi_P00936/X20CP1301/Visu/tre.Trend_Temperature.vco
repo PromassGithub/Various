@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Trend">
+    <Folder Name="Trend_Temperature" TargetIndex="Source[local].Trend[Trend_Temperature]">
+      <Folder Name="Config">
+        <Object Name="Trend_Temperature" ClsId="0x1802" Version="1" Type="TRE" RefString="Source[local].Trend[Trend_Temperature]">
+          <UInt32 Name="Height">768</UInt32>
+          <UInt32 Name="Width">1024</UInt32>
+          <Byte Name="Cursor1">1</Byte>
+          <Byte Name="Cursor2">1</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Reference Name="Cursor1PositionDatapoint" Type="DP">None</Reference>
+          <Reference Name="Cursor1StatusDatapoint" Type="DP">None</Reference>
+          <UInt32 Name="Cursor1Color">253</UInt32>
+          <Reference Name="Cursor2PositionDatapoint" Type="DP">None</Reference>
+          <Reference Name="Cursor2StatusDatapoint" Type="DP">None</Reference>
+          <UInt32 Name="Cursor2Color">221</UInt32>
+          <Int32 Name="TrendGridControls">1</Int32>
+          <Reference Name="TrendGrid_1" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendGrid_1]</Reference>
+          <Int32 Name="ScaleContainerControls">2</Int32>
+          <Reference Name="TrendScaleContainer_1" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendScaleContainer_1]</Reference>
+          <Reference Name="TrendScaleContainer_2" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendScaleContainer_2]</Reference>
+          <Int32 Name="TimeScaleControls">1</Int32>
+          <Reference Name="TrendTimeScale_1" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendTimeScale_1]</Reference>
+          <Int32 Name="ValueScaleControls">1</Int32>
+          <Reference Name="TrendValueScale_1" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendValueScale_1]</Reference>
+          <Int32 Name="CurveControls">2</Int32>
+          <Reference Name="TrendCurveActTemp" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendCurveActTemp]</Reference>
+          <Reference Name="TrendCurveCpuTemp" Type="CTRL">Source[local].Trend[Trend_Temperature].Control[TrendCurveCpuTemp]</Reference>
+        </Object>
+      </Folder>
+      <Folder Name="Controls">
+        <Object Name="TrendGrid_1" ClsId="0x1015" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendGrid_1]">
+          <UInt32 Name="Left">148</UInt32>
+          <UInt32 Name="Top">99</UInt32>
+          <UInt32 Name="Right">691</UInt32>
+          <UInt32 Name="Bottom">563</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001015].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">12</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="ForeColor">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">251</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="TrendScaleContainer_1" ClsId="0x1019" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendScaleContainer_1]">
+          <UInt32 Name="Left">148</UInt32>
+          <UInt32 Name="Top">564</UInt32>
+          <UInt32 Name="Right">734</UInt32>
+          <UInt32 Name="Bottom">611</UInt32>
+          <Int32 Name="AlignIndex">1</Int32>
+          <Byte Name="Horizontal">1</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001019].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">4</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="TrendScaleContainer_2" ClsId="0x1019" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendScaleContainer_2]">
+          <UInt32 Name="Left">81</UInt32>
+          <UInt32 Name="Top">99</UInt32>
+          <UInt32 Name="Right">147</UInt32>
+          <UInt32 Name="Bottom">563</UInt32>
+          <Int32 Name="AlignIndex">-1</Int32>
+          <Byte Name="Horizontal">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001019].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">4</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="TrendTimeScale_1" ClsId="0x101A" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendTimeScale_1]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[Trend_Temperature].Control[TrendScaleContainer_1]</Reference>
+          <UInt32 Name="Cursor1TimeDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2TimeDatapoint">4294967295</UInt32>
+          <UInt16 Name="LabelPosition">4</UInt16>
+          <Byte Name="Reserved">0</Byte>
+          <Byte Name="TextSource">2</Byte>
+          <UInt16 Name="TextIndex">0</UInt16>
+          <UInt16 Name="AutomaticScrollOffset">10</UInt16>
+          <UInt32 Name="TextGroup">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101A].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">12</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">15</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="TrendValueScale_1" ClsId="0x1017" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendValueScale_1]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[Trend_Temperature].Control[TrendScaleContainer_2]</Reference>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001017].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">30</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">15</UInt32>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">32</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitTextPosition">
+            <UInt16 Name="Offset">33</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">13</Byte>
+          </Group>
+          <Group Name="PitchLineSpacing">
+            <UInt16 Name="Offset">52</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">25</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="TrendCurveActTemp" ClsId="0x1016" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendCurveActTemp]">
+          <UInt32 Name="Left">342</UInt32>
+          <UInt32 Name="Top">214</UInt32>
+          <UInt32 Name="Right">416</UInt32>
+          <UInt32 Name="Bottom">288</UInt32>
+          <Reference Name="TrendData" Type="TRD">Source[local].TrendData[CPUTemperature]</Reference>
+          <Byte Name="MarkerType">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="ZoomDisplayMode">1</UInt16>
+          <Reference Name="HorizontalScale" Type="">Source[local].Trend[Trend_Temperature].Control[TrendTimeScale_1]</Reference>
+          <Reference Name="VerticalScale" Type="">Source[local].Trend[Trend_Temperature].Control[TrendValueScale_1]</Reference>
+          <UInt32 Name="Cursor1ValueDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2ValueDatapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001016].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">12</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="StatusDatapoint">
+            <UInt16 Name="Offset">16</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">4294967295</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="TrendCurveCpuTemp" ClsId="0x1016" Version="1" Type="CTRL" RefString="Source[local].Trend[Trend_Temperature].Control[TrendCurveCpuTemp]">
+          <UInt32 Name="Left">158</UInt32>
+          <UInt32 Name="Top">194</UInt32>
+          <UInt32 Name="Right">232</UInt32>
+          <UInt32 Name="Bottom">268</UInt32>
+          <Reference Name="TrendData" Type="TRD">Source[local].TrendData[ROOMTemperature]</Reference>
+          <Byte Name="MarkerType">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="ZoomDisplayMode">1</UInt16>
+          <Reference Name="HorizontalScale" Type="">Source[local].Trend[Trend_Temperature].Control[TrendTimeScale_1]</Reference>
+          <Reference Name="VerticalScale" Type="">Source[local].Trend[Trend_Temperature].Control[TrendValueScale_1]</Reference>
+          <UInt32 Name="Cursor1ValueDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2ValueDatapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001016].StyleClass[Default]</Reference>
+          <UInt16 Name="StyleTableSize">12</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="ForeColor">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">125</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

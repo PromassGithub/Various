@@ -19,15 +19,22 @@
     <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
-      <Parameter ID="HostName" Value="promass" />
+      <Parameter ID="HostName" Value="p00987" />
       <Parameter ID="Mode" Value="Manual" />
       <Parameter ID="InternetAddress" Value="192.168.49.2" />
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="errepi" Description="Password: errepi" />
+      <Parameter ID="VncPasswordViewControl1" Value="promass" Description="Password: promass" />
+      <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="ERREPI_P00987" />
     <Parameter ID="ConfigVersion" Value="2022.5.1" />
-    <Parameter ID="PermanentPvSize" Value="24" />
-    <Parameter ID="RemanentGlobalPvSize" Value="44" />
+    <Parameter ID="PermanentPvSize" Value="35" />
+    <Parameter ID="RemanentGlobalPvSize" Value="45" />
     <Parameter ID="EnableUsbRemoteInstall" Value="1" />
     <Parameter ID="EnableCfRemoteInstall" Value="1" />
     <Parameter ID="RebootReset" Value="1" />
@@ -51,9 +58,10 @@
     <Parameter ID="FileDevicePath3" Value="D:\LOG\" />
     <Parameter ID="ActivateSntp" Value="1" />
     <Parameter ID="SntpcServAddr1" Value="192.168.49.1" />
+    <Parameter ID="SntpcServAddr2" Value="216.239.35.4" />
     <Parameter ID="InternetFileSystemUsername" Value="promass" />
     <Parameter ID="InternetFileSystemPassword" Value="promass" />
-    <Parameter ID="EthernetHostName" Value="promass" />
+    <Parameter ID="EthernetHostName" Value="p00987" />
     <Parameter ID="EthernetDefaultGateway" Value="192.168.49.1" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="bazzica" />

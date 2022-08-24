@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _LIBRARIES_20220802135138_
-#define _LIBRARIES_20220802135138_
+#ifndef _LIBRARIES_20220809171334_
+#define _LIBRARIES_20220809171334_
 
 __asm__(".section \".plc\"");
 
@@ -25,6 +25,9 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.var\\\" scope \\\"
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.fun\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.typ\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/asstring/asstring.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/asstring/asstring.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/asstring/asstring.var\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 #ifdef _OPERATOR_EXPORT
@@ -521,9 +524,23 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.var\\\" scope 
 	__asm__(".ascii \"plcexport \\\"REPLACE\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"FIND\\\" FUN\\n\"");
 #endif
+#ifdef _ASSTRING_EXPORT
+	__asm__(".ascii \"plcexport \\\"ftoa\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"atof\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"itoa\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"atoi\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memset\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memcpy\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memmove\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"memcmp\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strcat\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strlen\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strcpy\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"strcmp\\\" FUN\\n\"");
+#endif
 
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20220802135138_ */
+#endif /* _LIBRARIES_20220809171334_ */
 

@@ -4,7 +4,7 @@
     <Uri>http://br-automation.com/OpcUa/PLC/PV/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://br-automation.com/OpcUa/PLC/PV/" PublicationDate="2022-08-02T11:51:24Z" Version="1.00" />
+    <Model ModelUri="http://br-automation.com/OpcUa/PLC/PV/" PublicationDate="2022-08-09T15:13:39Z" Version="1.00" />
   </Models>
   <Extensions>
     <Extension>
@@ -17,6 +17,7 @@
   <DefaultView>
     <Module>
       <GlobalVariables Name="Global PV">
+        <Variable Name="glb_mac_name" DataType="i=12" />
         <Variable Name="gMAC01" DataType="i=22" AuditEvents="True">
           <Variable Name="MCH_on" DataType="i=1" AuditEvents="True" />
           <Variable Name="Stop" DataType="i=1" AuditEvents="True" />
@@ -34,6 +35,22 @@
           <Variable Name="LifeCycles" DataType="i=6" AuditEvents="True" />
         </Variable>
       </GlobalVariables>
+      <Task Name="OpcUA_IF">
+        <Variable Name="life_cycles" DataType="i=7" />
+        <Variable Name="life_mold_distance" DataType="i=11" />
+        <Variable Name="mac_status" DataType="i=22">
+          <Variable Name="stop" DataType="i=1" />
+          <Variable Name="man" DataType="i=1" />
+          <Variable Name="running" DataType="i=1" />
+          <Variable Name="auto" DataType="i=1" />
+          <Variable Name="alarm" DataType="i=1" />
+          <Variable Name="mch_on" DataType="i=1" />
+          <Variable Name="commit_cycles" DataType="i=7" />
+          <Variable Name="actual_cycle_nr" DataType="i=7" />
+          <Variable Name="last_cycle_time" DataType="i=7" />
+          <Variable Name="actual_cycle_time" DataType="i=7" />
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </UANodeSet>
