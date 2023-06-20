@@ -1,0 +1,3 @@
+clock	"$(AS_CPU_PATH)/clock/clock.c.o" "$(AS_CPU_PATH)/clock/_bur_pvdef.c.o"  -o "$(AS_CPU_PATH)/clock/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf
+Varie	"$(AS_CPU_PATH)/Varie/Cyclic.c.o" "$(AS_CPU_PATH)/Varie/Init.c.o" "$(AS_CPU_PATH)/Varie/Exit.c.o" "$(AS_CPU_PATH)/Varie/_bur_pvdef.c.o"  -o "$(AS_CPU_PATH)/Varie/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf
+main	"$(AS_CPU_PATH)/main/Cyclic.ld.o" "$(AS_CPU_PATH)/main/Init.ld.o" "$(AS_CPU_PATH)/main/Exit.ld.o" "$(AS_CPU_PATH)/main/_bur_pvdef.st.o"  -o "$(AS_CPU_PATH)/main/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf -nostdlib

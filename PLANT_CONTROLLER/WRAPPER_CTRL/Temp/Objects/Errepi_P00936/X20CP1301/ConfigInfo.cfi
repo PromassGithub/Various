@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.9.5.36 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1">
+    <Task
+      Name="clock"
+      Disable="false"
+      Source="LOGIC.clock"
+      Language="ANSIC">
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\LOGIC\clock\clock.var" />
+    </Task>
+    <Task
+      Name="Varie"
+      Disable="false"
+      Source="VARIOUS.Varie"
+      Language="ANSIC">
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\VARIOUS\Varie\Types.typ" />
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\VARIOUS\Varie\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2">
+    <Task
+      Name="main"
+      Disable="false"
+      Source="LOGIC.main"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Temp\Objects\Errepi_P00936\X20CP1301\main\Cyclic.ld.var" />
+      <InternalFile
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Temp\Objects\Errepi_P00936\X20CP1301\main\Init.ld.var" />
+      <InternalFile
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Temp\Objects\Errepi_P00936\X20CP1301\main\Exit.ld.var" />
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\LOGIC\main\Types.typ" />
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\LOGIC\main\Variables.var" />
+    </Task>
+    <Task
+      Name="OpcUA_IF"
+      Disable="false"
+      Source="VARIOUS.OpcUA_IF"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Temp\Objects\Errepi_P00936\X20CP1301\OpcUA_IF\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Temp\Objects\Errepi_P00936\X20CP1301\OpcUA_IF\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Temp\Objects\Errepi_P00936\X20CP1301\OpcUA_IF\Exit.st.var" />
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\VARIOUS\OpcUA_IF\Types.typ" />
+      <File
+        Path="C:\projects\GitH\Various\PLANT_CONTROLLER\WRAPPER_CTRL\Logical\VARIOUS\OpcUA_IF\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4" />
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

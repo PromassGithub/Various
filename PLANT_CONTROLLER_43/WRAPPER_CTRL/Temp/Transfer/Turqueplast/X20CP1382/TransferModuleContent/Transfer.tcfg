@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransferConfig Version="1.0">
+	<InstallAR sourcePath="./AR/" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/main" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/Varie" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/clock" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/FileIO" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/AsIecCon" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/astime" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/standard" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/runtime" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/ashwac" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/iomap" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/User" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/Role" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/TCData" targetMemory="SYSROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/udbdef" targetMemory="USERROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/$$sysconf" targetMemory="SYSROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/arconfig" targetMemory="SYSROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/ashwd" targetMemory="SYSROM" overwrite="true" />
+	<InstallModule sourcePath="./FilesToTransfer/Data0/asfw" targetMemory="SYSROM" overwrite="true" />
+</TransferConfig>

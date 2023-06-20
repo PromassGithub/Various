@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="DPV">
+    <Folder Name="Drivers">
+      <Folder Name="POBJ">
+        <Object Name="DataSource" ClsId="0x200" Version="1" Type="DS" RefString="Source[global].DataSource[DataSource]">
+          <Reference Name="DriverID" Type="DS">Source[global].DataSource[DataSource]</Reference>
+          <Reference Name="TextGroup" Type="TG">None</Reference>
+          <UInt32 Name="PVCount">12</UInt32>
+          <UInt32 Name="ImageSize">37</UInt32>
+          <Table Name="Variables" Cols="5">
+            <TableHeader>
+              <Column Name="PVID" />
+              <Column Name="PVType" />
+              <Column Name="PVOffset" />
+              <Column Name="PVDim" />
+              <Column Name="PVName" />
+            </TableHeader>
+            <Group Name="gMAC01.LastCycleTime">
+              <UInt16 Name="ID">0</UInt16>
+              <UInt16 Name="PVType">4</UInt16>
+              <UInt32 Name="PVOffset">0</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">0</Int32>
+            </Group>
+            <Group Name="gMAC01.ActualCycleNr">
+              <UInt16 Name="ID">1</UInt16>
+              <UInt16 Name="PVType">4</UInt16>
+              <UInt32 Name="PVOffset">4</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">21</Int32>
+            </Group>
+            <Group Name="gMAC01.LifeCycles">
+              <UInt16 Name="ID">2</UInt16>
+              <UInt16 Name="PVType">4</UInt16>
+              <UInt32 Name="PVOffset">8</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">42</Int32>
+            </Group>
+            <Group Name="gMAC01.AutoMode">
+              <UInt16 Name="ID">3</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">12</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">60</Int32>
+            </Group>
+            <Group Name="gMAC01.PcsPerHour">
+              <UInt16 Name="ID">4</UInt16>
+              <UInt16 Name="PVType">4</UInt16>
+              <UInt32 Name="PVOffset">13</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">76</Int32>
+            </Group>
+            <Group Name="gMAC01.MCH_on">
+              <UInt16 Name="ID">5</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">17</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">94</Int32>
+            </Group>
+            <Group Name="gMAC01.Run">
+              <UInt16 Name="ID">6</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">18</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">108</Int32>
+            </Group>
+            <Group Name="gMAC01.Alarm">
+              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">19</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">119</Int32>
+            </Group>
+            <Group Name="gMAC01.ManMode">
+              <UInt16 Name="ID">8</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">20</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">132</Int32>
+            </Group>
+            <Group Name="gMAC01.LiveSignal">
+              <UInt16 Name="ID">9</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">21</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">147</Int32>
+            </Group>
+            <Group Name="gMac01CounterOffset">
+              <UInt16 Name="ID">10</UInt16>
+              <UInt16 Name="PVType">4</UInt16>
+              <UInt32 Name="PVOffset">22</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">165</Int32>
+            </Group>
+            <Group Name="glb_mac_name">
+              <UInt16 Name="ID">11</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">26</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">185</Int32>
+            </Group>
+          </Table>
+          <Binary Name="Name" Encoding="Base64">Z01BQzAxLkxhc3RDeWNsZVRpbWUAZ01BQzAxLkFjdHVhbEN5Y2xlTnIAZ01BQzAxLkxpZmVDeWNsZXMAZ01BQzAxLkF1dG9Nb2RlAGdNQUMwMS5QY3NQZXJIb3VyAGdNQUMwMS5NQ0hfb24AZ01BQzAxLlJ1bgBnTUFDMDEuQWxhcm0AZ01BQzAxLk1hbk1vZGUAZ01BQzAxLkxpdmVTaWduYWwAZ01hYzAxQ291bnRlck9mZnNldABnbGJfbWFjX25hbWUA</Binary>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

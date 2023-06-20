@@ -1,0 +1,12 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="C:/projects/GitH/Various/PLANT_CONTROLLER/WRAPPER_CTRL/Physical/Errepi_P00936/X20CP1301/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="clock" Source="LOGIC.clock.prg" />
+      <Task Name="Varie" Source="VARIOUS.Varie.prg" />
+      <Task Name="Program" Source="" />
+      <Task Name="main" Source="LOGIC.main.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

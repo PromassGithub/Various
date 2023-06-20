@@ -1,0 +1,33 @@
+VAR
+	M1_NewCycle : TON;
+	M2_NewCycle : TON;
+	M3_NewCycle : TON;
+	gCounter01 : BOOL;
+	gCounter02 : BOOL;
+	gCounter03 : BOOL;
+	gPulse_100 : BOOL;
+	gPulse_500 : BOOL;
+	gMAC01raw : typIO;
+	gMAC02raw : typIO;
+	gMAC03raw : typIO;
+	gMAC01 : {REDUND_UNREPLICABLE} typOmronMachine := (0);
+	gMAC02 : {REDUND_UNREPLICABLE} typOmronMachine := (0);
+	gMAC03 : {REDUND_UNREPLICABLE} typOmronMachine := (0);
+	gPWL01_ok : BOOL;
+	gPWL02_ok : BOOL;
+	gPWL03_ok : BOOL;
+	cmdClock : tCmdClock;
+END_VAR
+VAR RETAIN
+	glbClock : tGlbClock;
+	gMac01CounterOffset : DINT;
+	gMac02CounterOffset : DINT;
+	gMac03CounterOffset : DINT;
+	gMac01LifeCounter : DINT;
+	gMac02LifeCounter : DINT;
+	gMac03LifeCounter : DINT;
+END_VAR
+VAR
+	glbMac02On : BOOL;
+	glbMac01On : BOOL;
+END_VAR
