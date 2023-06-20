@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime" TargetIndex="Source[global].TextGroup[MpOeeCoreUITime]">
+      <Object Name="MpOeeCoreUITime" ClsId="0x304" Version="1" TargetIndex="2147484835" Type="TG" RefString="Source[global].TextGroup[MpOeeCoreUITime]">
+        <UInt32 Name="NumberOfTags">13</UInt32>
+        <UInt32 Name="NumberOfTexts">4</UInt32>
+        <Table Name="TextMap" Cols="2">
+          <TableHeader>
+            <Column Name="UserIndex" />
+            <Column Name="TextIndex" />
+          </TableHeader>
+          <TableRow>
+            <UInt32 Name="UserIndex">0</UInt32>
+            <UInt32 Name="TextIndex">156658</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">1</UInt32>
+            <UInt32 Name="TextIndex">156659</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">2</UInt32>
+            <UInt32 Name="TextIndex">156660</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">3</UInt32>
+            <UInt32 Name="TextIndex">156661</UInt32>
+          </TableRow>
+        </Table>
+      </Object>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="ScheduledDowntime_Hours" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[ScheduledDowntime_Hours]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.ScheduledDowntime.Hours]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="ScheduledDowntime_Minutes" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[ScheduledDowntime_Minutes]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.ScheduledDowntime.Minutes]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="ScheduledDowntime_Seconds" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[ScheduledDowntime_Seconds]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.ScheduledDowntime.Seconds]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="UnscheduledDowntime_Hours" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[UnscheduledDowntime_Hours]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.UnscheduledDowntime.Hours]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="UnscheduledDowntime_Minutes" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[UnscheduledDowntime_Minutes]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.UnscheduledDowntime.Minutes]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="UnscheduledDowntime_Seconds" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[UnscheduledDowntime_Seconds]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.UnscheduledDowntime.Seconds]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="TotalTime_Hours" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[TotalTime_Hours]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.TotalTime.Hours]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="TotalTime_Minutes" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[TotalTime_Minutes]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.TotalTime.Minutes]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="TotalTime_Seconds" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[TotalTime_Seconds]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.TotalTime.Seconds]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="Uptime_Hours" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[Uptime_Hours]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.Uptime.Hours]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="Uptime_Minutes" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[Uptime_Minutes]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.Uptime.Minutes]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="Uptime_Seconds" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[Uptime_Seconds]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpOeeCoreUIConnect.ShiftStatistics.Uptime.Seconds]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="MpOeeCoreUITime">
+      <Folder Name="TextSnippets">
+        <Object Name="AverageCycleTime" ClsId="0x2001" Version="1" Type="SNP" RefString="Source[global].TextGroup[MpOeeCoreUITime].Snippet[AverageCycleTime]">
+          <UInt32 Name="Datapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">47</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Content">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="AddFractionDigits">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <SByte Name="Data">0</SByte>
+          </Group>
+          <Group Name="MinIntegerDigits">
+            <UInt16 Name="Offset">8</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="UnitText">
+            <UInt16 Name="Offset">9</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">10</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">2</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="en" TargetIndex="0">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[global].TextGroup[MpOeeCoreUITime]" Type="TG" RefString="Source[global].TextGroup[MpOeeCoreUITime].Language[en]">
+            <UInt32 Name="NumberOfTexts">4</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">156658</UInt32>
+                <UInt32 Name="TextOffset">52</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">156659</UInt32>
+                <UInt32 Name="TextOffset">216</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">156660</UInt32>
+                <UInt32 Name="TextOffset">332</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">156661</UInt32>
+                <UInt32 Name="TextOffset">508</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">"&#x1;ScheduledDowntime_Hours&#x2;:&#x1;ScheduledDowntime_Minutes&#x2;:&#x1;ScheduledDowntime_Seconds&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"&#x1;TotalTime_Hours&#x2;:&#x1;TotalTime_Minutes&#x2;:&#x1;TotalTime_Seconds&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"&#x1;UnscheduledDowntime_Hours&#x2;:&#x1;UnscheduledDowntime_Minutes&#x2;:&#x1;UnscheduledDowntime_Seconds&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"&#x1;Uptime_Hours&#x2;:&#x1;Uptime_Minutes&#x2;:&#x1;Uptime_Seconds&#x2;"</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="de" TargetIndex="1">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[global].TextGroup[MpOeeCoreUITime]" Type="TG" RefString="Source[global].TextGroup[MpOeeCoreUITime].Language[de]">
+            <UInt32 Name="NumberOfTexts">4</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">156658</UInt32>
+                <UInt32 Name="TextOffset">52</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">156659</UInt32>
+                <UInt32 Name="TextOffset">216</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">156660</UInt32>
+                <UInt32 Name="TextOffset">332</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">156661</UInt32>
+                <UInt32 Name="TextOffset">508</UInt32>
+                <Byte Name="SnippetCount">3</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">"&#x1;ScheduledDowntime_Hours&#x2;:&#x1;ScheduledDowntime_Minutes&#x2;:&#x1;ScheduledDowntime_Seconds&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"&#x1;TotalTime_Hours&#x2;:&#x1;TotalTime_Minutes&#x2;:&#x1;TotalTime_Seconds&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"&#x1;UnscheduledDowntime_Hours&#x2;:&#x1;UnscheduledDowntime_Minutes&#x2;:&#x1;UnscheduledDowntime_Seconds&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"&#x1;Uptime_Hours&#x2;:&#x1;Uptime_Minutes&#x2;:&#x1;Uptime_Seconds&#x2;"</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

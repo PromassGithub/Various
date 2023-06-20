@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="AlarmSystems">
+    <Folder Name="AS1" TargetIndex="Source[global].AlarmGroup[AS1.MpTeachPointsUIAlarms]">
+      <Folder Name="AlarmGroups">
+        <Folder Name="POBJ">
+          <Object Name="MpTeachPointsUIAlarms" ClsId="0x109" Version="1" TargetIndex="2003" Type="AG" RefString="Source[global].AlarmGroup[AS1.MpTeachPointsUIAlarms]">
+            <Reference Name="GroupID" Type="AG">Source[global].AlarmGroup[AS1.MpTeachPointsUIAlarms]</Reference>
+            <Reference Name="SystemID" Type="AS">Source[global].AlarmSystem[AS1]</Reference>
+            <UInt32 Name="Priority">1</UInt32>
+            <UInt32 Name="AlarmCount">1</UInt32>
+            <Reference Name="TextGroupID" Type="TG">Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1]</Reference>
+            <UInt32 Name="DefaultBackColor">15</UInt32>
+            <UInt32 Name="DefaultForeColor">0</UInt32>
+            <UInt32 Name="ActiveBackColor">4</UInt32>
+            <UInt32 Name="ActiveForeColor">0</UInt32>
+            <UInt32 Name="QuitBackColor">1</UInt32>
+            <UInt32 Name="QuitForeColor">15</UInt32>
+            <UInt32 Name="BypassBackColor">14</UInt32>
+            <UInt32 Name="BypassForeColor">0</UInt32>
+            <UInt32 Name="LatchedBackColor">2</UInt32>
+            <UInt32 Name="LatchedForeColor">0</UInt32>
+            <Reference Name="AlarmImage" Type="DP">Source[global].Variable[DataSource.MpTeachPointsAlarmUIConnect.AlarmImage]</Reference>
+            <Reference Name="AcknowledgeImage" Type="DP">Source[global].Variable[DataSource.MpFileManagerAlarmUIConnect.AcknowledgeImage]</Reference>
+            <UInt32 Name="BypassImage">4294967295</UInt32>
+            <UInt32 Name="GroupAlarm">4294967295</UInt32>
+            <UInt32 Name="ImageOffset">0</UInt32>
+            <UInt32 Name="AlarmID">0</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">65535</UInt32>
+            <UInt16 Name="Option">168</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpTeachPointsUIAlarms.AS1" TargetIndex="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1]">
+      <Object Name="Embedded" ClsId="0x304" Version="1" Type="TG" RefString="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1]">
+        <UInt32 Name="NumberOfTags">1</UInt32>
+        <UInt32 Name="NumberOfTexts">2</UInt32>
+        <Table Name="TextMap" Cols="2">
+          <TableHeader>
+            <Column Name="UserIndex" />
+            <Column Name="TextIndex" />
+          </TableHeader>
+          <TableRow>
+            <UInt32 Name="UserIndex">0</UInt32>
+            <UInt32 Name="TextIndex">2645</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">65535</UInt32>
+            <UInt32 Name="TextIndex">2644</UInt32>
+          </TableRow>
+        </Table>
+      </Object>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpTeachPointsUIAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo0" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1].Snippet[AddInfo0]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpTeachPointsAlarmUIConnect.AddInfo[0]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="en" TargetIndex="0">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1]" Type="TG" RefString="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1].Language[en]">
+            <UInt32 Name="NumberOfTexts">2</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">2644</UInt32>
+                <UInt32 Name="TextOffset">28</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2645</UInt32>
+                <UInt32 Name="TextOffset">30</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">""</String>
+              <String Name="Text" Encoding="Unicode">"Data storage medium (file device was not found) &#x1;AddInfo0&#x2;"</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="de" TargetIndex="1">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1]" Type="TG" RefString="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1].Language[de]">
+            <UInt32 Name="NumberOfTexts">2</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">2644</UInt32>
+                <UInt32 Name="TextOffset">28</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2645</UInt32>
+                <UInt32 Name="TextOffset">30</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">""</String>
+              <String Name="Text" Encoding="Unicode">"Datenspeichermedium (Speichermedium wurde nicht gefunden) &#x1;AddInfo0&#x2;"</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="AlarmSystems">
+    <Folder Name="SnippetTables">
+      <Folder Name="POBJ">
+        <Object Name="TextSnippetData" ClsId="0x1806" Version="1" Type="TSD" RefString="Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1].TextSnippetData[TextSnippetData]">
+          <Reference Name="TextGroupID" Type="TG">Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1]</Reference>
+          <Int32 Name="Count">1</Int32>
+          <UInt16 Name="AlarmIndex">0</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpTeachPointsUIAlarms.AS1].Snippet[AddInfo0]</Reference>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

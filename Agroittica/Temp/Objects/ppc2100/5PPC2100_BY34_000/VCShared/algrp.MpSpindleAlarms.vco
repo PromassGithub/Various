@@ -1,0 +1,1398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="AlarmSystems">
+    <Folder Name="AS1" TargetIndex="Source[global].AlarmGroup[AS1.MpSpindleAlarms]">
+      <Folder Name="AlarmGroups">
+        <Folder Name="POBJ">
+          <Object Name="MpSpindleAlarms" ClsId="0x109" Version="1" TargetIndex="2004" Type="AG" RefString="Source[global].AlarmGroup[AS1.MpSpindleAlarms]">
+            <Reference Name="GroupID" Type="AG">Source[global].AlarmGroup[AS1.MpSpindleAlarms]</Reference>
+            <Reference Name="SystemID" Type="AS">Source[global].AlarmSystem[AS1]</Reference>
+            <UInt32 Name="Priority">1</UInt32>
+            <UInt32 Name="AlarmCount">19</UInt32>
+            <Reference Name="TextGroupID" Type="TG">Source[global].TextGroup[AG.MpSpindleAlarms.AS1]</Reference>
+            <UInt32 Name="DefaultBackColor">15</UInt32>
+            <UInt32 Name="DefaultForeColor">0</UInt32>
+            <UInt32 Name="ActiveBackColor">4</UInt32>
+            <UInt32 Name="ActiveForeColor">0</UInt32>
+            <UInt32 Name="QuitBackColor">1</UInt32>
+            <UInt32 Name="QuitForeColor">15</UInt32>
+            <UInt32 Name="BypassBackColor">14</UInt32>
+            <UInt32 Name="BypassForeColor">0</UInt32>
+            <UInt32 Name="LatchedBackColor">2</UInt32>
+            <UInt32 Name="LatchedForeColor">0</UInt32>
+            <Reference Name="AlarmImage" Type="DP">Source[global].Variable[DataSource.MpSpindleAlarmUIConnect.AlarmImage]</Reference>
+            <Reference Name="AcknowledgeImage" Type="DP">Source[global].Variable[DataSource.MpSpindleAlarmUIConnect.AcknowledgeImage]</Reference>
+            <UInt32 Name="BypassImage">4294967295</UInt32>
+            <UInt32 Name="GroupAlarm">4294967295</UInt32>
+            <UInt32 Name="ImageOffset">0</UInt32>
+            <UInt32 Name="AlarmID">2</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">3</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">4</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">5</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">6</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">7</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">8</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">9</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">10</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">11</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">12</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">13</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">0</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">1</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">14</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">15</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">16</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">17</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">18</UInt32>
+            <UInt16 Name="Option">152</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+            <UInt32 Name="AlarmID">65535</UInt32>
+            <UInt16 Name="Option">168</UInt16>
+            <UInt16 Name="Register">127</UInt16>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1" TargetIndex="Source[global].TextGroup[AG.MpSpindleAlarms.AS1]">
+      <Object Name="Embedded" ClsId="0x304" Version="1" Type="TG" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1]">
+        <UInt32 Name="NumberOfTags">19</UInt32>
+        <UInt32 Name="NumberOfTexts">20</UInt32>
+        <Table Name="TextMap" Cols="2">
+          <TableHeader>
+            <Column Name="UserIndex" />
+            <Column Name="TextIndex" />
+          </TableHeader>
+          <TableRow>
+            <UInt32 Name="UserIndex">0</UInt32>
+            <UInt32 Name="TextIndex">2783</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">1</UInt32>
+            <UInt32 Name="TextIndex">2784</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">2</UInt32>
+            <UInt32 Name="TextIndex">2771</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">3</UInt32>
+            <UInt32 Name="TextIndex">2772</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">4</UInt32>
+            <UInt32 Name="TextIndex">2773</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">5</UInt32>
+            <UInt32 Name="TextIndex">2774</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">6</UInt32>
+            <UInt32 Name="TextIndex">2775</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">7</UInt32>
+            <UInt32 Name="TextIndex">2776</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">8</UInt32>
+            <UInt32 Name="TextIndex">2777</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">9</UInt32>
+            <UInt32 Name="TextIndex">2778</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">10</UInt32>
+            <UInt32 Name="TextIndex">2779</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">11</UInt32>
+            <UInt32 Name="TextIndex">2780</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">12</UInt32>
+            <UInt32 Name="TextIndex">2781</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">13</UInt32>
+            <UInt32 Name="TextIndex">2782</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">14</UInt32>
+            <UInt32 Name="TextIndex">2785</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">15</UInt32>
+            <UInt32 Name="TextIndex">2786</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">16</UInt32>
+            <UInt32 Name="TextIndex">2839</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">17</UInt32>
+            <UInt32 Name="TextIndex">2840</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">18</UInt32>
+            <UInt32 Name="TextIndex">2841</UInt32>
+          </TableRow>
+          <TableRow>
+            <UInt32 Name="UserIndex">65535</UInt32>
+            <UInt32 Name="TextIndex">2770</UInt32>
+          </TableRow>
+        </Table>
+      </Object>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo0" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo0]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[0]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo1" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo1]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[1]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo2" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo2]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[2]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo3" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo3]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[3]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo4" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo4]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[4]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo5" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo5]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[5]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo6" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo6]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[6]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo7" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo7]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[7]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo8" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo8]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[8]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo9" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo9]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[9]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo10" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo10]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[10]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo11" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo11]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[11]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo12" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo12]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[12]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo13" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo13]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[13]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo14" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo14]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[14]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo15" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo15]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[15]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo16" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo16]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[16]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo17" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo17]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[17]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="TextGroupBase">
+    <Folder Name="AG.MpSpindleAlarms.AS1">
+      <Folder Name="TextSnippets">
+        <Object Name="AddInfo18" ClsId="0x2002" Version="1" Type="SNP" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo18]">
+          <Reference Name="Datapoint" Type="DP">Source[global].Variable[DataSource.MpAxisBasicAlarmUIConnect.AddInfo[18]]</Reference>
+          <Reference Name="StyleClass" Type="SC">None</Reference>
+          <UInt16 Name="StyleTableSize">32</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="MinChars">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MaxChars">
+            <UInt16 Name="Offset">2</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">65535</UInt16>
+          </Group>
+          <Group Name="FillCharacter">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="Alignment">
+            <UInt16 Name="Offset">6</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">0</Byte>
+          </Group>
+          <Group Name="Persistent">
+            <UInt16 Name="Offset">7</UInt16>
+            <UInt16 Name="Size">1</UInt16>
+            <Byte Name="Data">1</Byte>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="en" TargetIndex="0">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[global].TextGroup[AG.MpSpindleAlarms.AS1]" Type="TG" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Language[en]">
+            <UInt32 Name="NumberOfTexts">20</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">2770</UInt32>
+                <UInt32 Name="TextOffset">244</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2771</UInt32>
+                <UInt32 Name="TextOffset">246</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2772</UInt32>
+                <UInt32 Name="TextOffset">320</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2773</UInt32>
+                <UInt32 Name="TextOffset">388</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2774</UInt32>
+                <UInt32 Name="TextOffset">430</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2775</UInt32>
+                <UInt32 Name="TextOffset">538</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2776</UInt32>
+                <UInt32 Name="TextOffset">638</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2777</UInt32>
+                <UInt32 Name="TextOffset">764</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2778</UInt32>
+                <UInt32 Name="TextOffset">930</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2779</UInt32>
+                <UInt32 Name="TextOffset">996</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2780</UInt32>
+                <UInt32 Name="TextOffset">1074</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2781</UInt32>
+                <UInt32 Name="TextOffset">1232</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2782</UInt32>
+                <UInt32 Name="TextOffset">1294</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2783</UInt32>
+                <UInt32 Name="TextOffset">1356</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2784</UInt32>
+                <UInt32 Name="TextOffset">1420</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2785</UInt32>
+                <UInt32 Name="TextOffset">1512</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2786</UInt32>
+                <UInt32 Name="TextOffset">1582</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2839</UInt32>
+                <UInt32 Name="TextOffset">1674</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2840</UInt32>
+                <UInt32 Name="TextOffset">1766</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2841</UInt32>
+                <UInt32 Name="TextOffset">1846</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">""</String>
+              <String Name="Text" Encoding="Unicode">"Input parameters invalid  &#x1;AddInfo2&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Motor overtemperature  &#x1;AddInfo3&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Lag error &#x1;AddInfo4&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Positive or negative limit switch reached  &#x1;AddInfo5&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Voltage sag on the drive enable input  &#x1;AddInfo6&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Error on the encoder happened (signal amplitude, …) &#x1;AddInfo7&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Main voltage problem: DC bus volltage drop, over voltage, over current  &#x1;AddInfo8&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Safety related error  &#x1;AddInfo9&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Problem with holding brake &#x1;AddInfo10&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Communication (powerlink) breakdown, cable unplugged or defective  &#x1;AddInfo11&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Overload on drive  &#x1;AddInfo12&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Overload on motor  &#x1;AddInfo13&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"General drive error &#x1;AddInfo0&#x2; "</String>
+              <String Name="Text" Encoding="Unicode">"Error during initialization phase  &#x1;AddInfo1&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"General drive warning &#x1;AddInfo14&#x2; "</String>
+              <String Name="Text" Encoding="Unicode">"Spindle started from CNC program &#x1;AddInfo15&#x2; "</String>
+              <String Name="Text" Encoding="Unicode">"Spindle stopped from CNC program &#x1;AddInfo16&#x2; "</String>
+              <String Name="Text" Encoding="Unicode">"Spindle turning too slowly &#x1;AddInfo17&#x2; "</String>
+              <String Name="Text" Encoding="Unicode">"Maximum torque exceeded &#x1;AddInfo18&#x2; "</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="Language">
+    <Folder Name="de" TargetIndex="1">
+      <Folder Name="TextGroups">
+        <Folder Name="POBJ">
+          <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[global].TextGroup[AG.MpSpindleAlarms.AS1]" Type="TG" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Language[de]">
+            <UInt32 Name="NumberOfTexts">20</UInt32>
+            <Table Name="TextOffsets" Cols="5">
+              <TableHeader>
+                <Column Name="TextIndex" />
+                <Column Name="TextOffset" />
+                <Column Name="SnippetCount" />
+                <Column Name="Reserved" />
+                <Column Name="Reserved" />
+              </TableHeader>
+              <TableRow>
+                <UInt32 Name="TextIndex">2770</UInt32>
+                <UInt32 Name="TextOffset">244</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2771</UInt32>
+                <UInt32 Name="TextOffset">246</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2772</UInt32>
+                <UInt32 Name="TextOffset">320</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2773</UInt32>
+                <UInt32 Name="TextOffset">384</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2774</UInt32>
+                <UInt32 Name="TextOffset">434</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2775</UInt32>
+                <UInt32 Name="TextOffset">548</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2776</UInt32>
+                <UInt32 Name="TextOffset">668</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2777</UInt32>
+                <UInt32 Name="TextOffset">750</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2778</UInt32>
+                <UInt32 Name="TextOffset">930</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2779</UInt32>
+                <UInt32 Name="TextOffset">1018</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2780</UInt32>
+                <UInt32 Name="TextOffset">1082</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2781</UInt32>
+                <UInt32 Name="TextOffset">1250</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2782</UInt32>
+                <UInt32 Name="TextOffset">1314</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2783</UInt32>
+                <UInt32 Name="TextOffset">1374</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2784</UInt32>
+                <UInt32 Name="TextOffset">1448</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2785</UInt32>
+                <UInt32 Name="TextOffset">1552</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2786</UInt32>
+                <UInt32 Name="TextOffset">1630</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2839</UInt32>
+                <UInt32 Name="TextOffset">1724</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2840</UInt32>
+                <UInt32 Name="TextOffset">1820</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">2841</UInt32>
+                <UInt32 Name="TextOffset">1894</UInt32>
+                <Byte Name="SnippetCount">1</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+            </Table>
+            <Group Name="Texts">
+              <String Name="Text" Encoding="Unicode">""</String>
+              <String Name="Text" Encoding="Unicode">"Eingabeparameter ungültig &#x1;AddInfo2&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Motor Übertemperatur &#x1;AddInfo3&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Schleppfehler &#x1;AddInfo4&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Positiver oder negativer Endschalter erreicht &#x1;AddInfo5&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Spannungseinbruch am Enable Eingang des Antriebs &#x1;AddInfo6&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Geberfehler (Signalamplitude) &#x1;AddInfo7&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Hauptspannungsfehler: Zwischenkreis Spannungseinbruch, Überspannung, Überstrom &#x1;AddInfo8&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Fehler in der Sicherheitstechnik &#x1;AddInfo9&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Haltebremse: Fehler &#x1;AddInfo10&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Kommunikation (Powerlink) abgebrochen, Kabel nicht gesteckt oder defekt &#x1;AddInfo11&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Überlast am Antrieb &#x1;AddInfo12&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Überlast am Motor &#x1;AddInfo13&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Genereller Antriebsfehler &#x1;AddInfo0&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Fehler während der Initialisierungsphase &#x1;AddInfo1&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Genereller Antriebswarnung &#x1;AddInfo14&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Spindel vom CNC-Programm gestartet &#x1;AddInfo15&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Spindel vom CNC-Programm angehalten &#x1;AddInfo16&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Spindel dreht zu langsam &#x1;AddInfo17&#x2;"</String>
+              <String Name="Text" Encoding="Unicode">"Das maximale Drehmoment wurde überschritten &#x1;AddInfo18&#x2;"</String>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+  <Folder Name="AlarmSystems">
+    <Folder Name="SnippetTables">
+      <Folder Name="POBJ">
+        <Object Name="TextSnippetData" ClsId="0x1806" Version="1" Type="TSD" RefString="Source[global].TextGroup[AG.MpSpindleAlarms.AS1].TextSnippetData[TextSnippetData]">
+          <Reference Name="TextGroupID" Type="TG">Source[global].TextGroup[AG.MpSpindleAlarms.AS1]</Reference>
+          <Int32 Name="Count">19</Int32>
+          <UInt16 Name="AlarmIndex">2</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo2]</Reference>
+          <UInt16 Name="AlarmIndex">3</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo3]</Reference>
+          <UInt16 Name="AlarmIndex">4</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo4]</Reference>
+          <UInt16 Name="AlarmIndex">5</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo5]</Reference>
+          <UInt16 Name="AlarmIndex">6</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo6]</Reference>
+          <UInt16 Name="AlarmIndex">7</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo7]</Reference>
+          <UInt16 Name="AlarmIndex">8</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo8]</Reference>
+          <UInt16 Name="AlarmIndex">9</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo9]</Reference>
+          <UInt16 Name="AlarmIndex">10</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo10]</Reference>
+          <UInt16 Name="AlarmIndex">11</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo11]</Reference>
+          <UInt16 Name="AlarmIndex">12</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo12]</Reference>
+          <UInt16 Name="AlarmIndex">13</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo13]</Reference>
+          <UInt16 Name="AlarmIndex">0</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo0]</Reference>
+          <UInt16 Name="AlarmIndex">1</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo1]</Reference>
+          <UInt16 Name="AlarmIndex">14</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo14]</Reference>
+          <UInt16 Name="AlarmIndex">15</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo15]</Reference>
+          <UInt16 Name="AlarmIndex">16</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo16]</Reference>
+          <UInt16 Name="AlarmIndex">17</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo17]</Reference>
+          <UInt16 Name="AlarmIndex">18</UInt16>
+          <UInt16 Name="UniqueSnippetCount">1</UInt16>
+          <Reference Name="TextSnippet" Type="SNP">Source[global].TextGroup[AG.MpSpindleAlarms.AS1].Snippet[AddInfo18]</Reference>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

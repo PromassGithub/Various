@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpData 5.13.1 */
+/* MpData 5.18.0 */
 
 #ifndef _MPDATA_
 #define _MPDATA_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpData_VERSION
-#define _MpData_VERSION 5.13.1
+#define _MpData_VERSION 5.18.0
 #endif
 
 #include <bur/plctypes.h>

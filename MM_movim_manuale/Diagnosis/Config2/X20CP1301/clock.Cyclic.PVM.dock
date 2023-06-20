@@ -1,0 +1,18 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=clock 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=11 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                              dir_create                                DirCreate    0 "                                                               *"    0   24    1    0    1    0         
+                                  enable                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 pDevice                                    UDINT    0 "                                                       101986104"    1    7    1   10    0    0         
+                                   pName                                    UDINT    0 "                                                       101986186"    1    7    1   10    0    0         
+                                  status                                     UINT    0 "                                                               0"    1    6    1   10    0    0         
+                                 i_state                                     UINT    0 "                                                               0"    1    6    1   10    0    0         
+                                i_result                                     UINT    0 "                                                               0"    1    6    1   10    0    0         
+                                   i_tmp                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
+                                       P                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
+                                    nome                               STRING[80]    0 "                                                          'dddd'"    0    9   81    1    1    0         
+                               directory                               STRING[80]    0 "                                                            'HD'"    0    9   81    1    1    0         
+                             DtGetTime_1                                DTGetTime    0 "                                                               *"    0   24    1    0    1    1         
+                                  enable                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                  status                                     UINT    0 "                                                               0"    1    6    1   10    0    0         
+                                     DT1                            DATE_AND_TIME    0 "                                          DT#2000-01-01-21:13:59"    1   11    1    1    0    0         

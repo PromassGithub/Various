@@ -1,0 +1,25 @@
+﻿@import "mixins.scss";
+#content_main_Label1 {
+	@include elemTop(140);
+}
+#content_main_Label1 {
+	@include elemLeft(100);
+}
+#content_main_Label1 {
+	@include elemAutoWidth(300);
+}
+#content_main_Label1 {
+	@include elemAutoHeight(220);
+}
+#content_main_Label1 {
+		z-index: 0;
+}
+#content_main_Label1 {
+	@include text-alignment-all('center');
+}
+#content_main_Label1 {
+		font-size: 50px;
+}
+#content_main_Label1 {
+	@include font-weight-bold(true);
+}

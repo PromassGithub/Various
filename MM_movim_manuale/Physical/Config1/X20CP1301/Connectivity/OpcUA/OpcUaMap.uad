@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="7" ArVersion="E4.83">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="gAlarmXCore">
+          <Variable Name="Internal" />
+        </Variable>
+        <Variable Name="gAlarmXHist">
+          <Variable Name="Internal" />
+        </Variable>
+        <Variable Name="gDataRecorder">
+          <Variable Name="Internal" />
+        </Variable>
+        <Variable Name="glb_io">
+          <Variable Name="inp">
+            <Variable Name="New_Member" />
+          </Variable>
+          <Variable Name="out">
+            <Variable Name="chiusura" />
+            <Variable Name="apertura" />
+            <Variable Name="alta_pressione" />
+            <Variable Name="cut_pessure" />
+            <Variable Name="Scarico_ap" />
+            <Variable Name="Scarico_ch" />
+            <Variable Name="alta_velocita" />
+          </Variable>
+          <Variable Name="Ai">
+            <Variable Name="oil_pressure_conv" />
+            <Variable Name="oil_pressure" />
+            <Variable Name="p_chiusura_conv" />
+            <Variable Name="p_apertura_conv" />
+            <Variable Name="p_chiusura" />
+            <Variable Name="p_apertura" />
+          </Variable>
+        </Variable>
+        <Variable Name="hmi">
+          <Variable Name="configurazione">
+            <Variable Name="martinetti_epp" />
+            <Variable Name="cambiostampo_aut" />
+          </Variable>
+          <Variable Name="cmd">
+            <Variable Name="hmi_oil_control_hide" />
+            <Variable Name="hmi_oil_control_en" />
+            <Variable Name="lame_fisse_close" />
+            <Variable Name="lame_fisse_open" />
+            <Variable Name="lame_mobili_close" />
+            <Variable Name="lame_mobili_open" />
+            <Variable Name="martinetti_close" />
+            <Variable Name="martinetti_open" />
+            <Variable Name="pedana_dw" />
+            <Variable Name="pedana_up" />
+            <Variable Name="scarico_ch" />
+            <Variable Name="scarico_ap" />
+            <Variable Name="chiusura" />
+            <Variable Name="apertura" />
+            <Variable Name="alta_velocita" />
+          </Variable>
+          <Variable Name="inp">
+            <Variable Name="MAX_OIL_MOV_BLADE_C" />
+            <Variable Name="MAX_OIL_FIX_BLADE_C" />
+            <Variable Name="MAX_OIL_JACK_C" />
+            <Variable Name="MAX_OIL_PEDANA_UP" />
+            <Variable Name="MAX_OIL_PEDANA_DW" />
+            <Variable Name="MAX_OIL_PRESSURE" />
+          </Variable>
+        </Variable>
+        <Variable Name="oil_control_enable" />
+        <Variable Name="Report">
+          <Variable Name="oil_pressure" />
+          <Variable Name="p_chiusura" />
+          <Variable Name="p_apertura" />
+        </Variable>
+        <Variable Name="REPORT" />
+      </GlobalVariables>
+      <Task Name="Program" />
+      <Task Name="clock" />
+      <Task Name="Alarm" />
+      <Task Name="Data" />
+    </Module>
+  </DefaultView>
+</OpcUaSource>

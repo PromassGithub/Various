@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout xmlns="http://www.br-automation.com/iat2014/widget" >
+  <StyleProperties>
+    <StyleProperty name="width" type="Size" not_styleable="true" category="Property" default="800">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>outer width of layout</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" not_styleable="true" category="Property" default="600">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>outer height of layout</Description>
+    </StyleProperty>
+
+  </StyleProperties>
+</Layout>

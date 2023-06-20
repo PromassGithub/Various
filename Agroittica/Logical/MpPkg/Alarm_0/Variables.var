@@ -1,0 +1,15 @@
+VAR
+	avvio : BOOL;
+	UserAlarm : BOOL;
+	AckUserStatus : BOOL;
+	AlarmXResetStatus : DINT;
+	AlarmXAckStatus : DINT;
+	MpAlarmXCore_0 : MpAlarmXCore;
+	MpAlarmXHistory_0 : MpAlarmXHistory;
+	MpAlarmXListUI_0 : MpAlarmXListUI;
+	MpAlarmXListUIConnect : MpAlarmXListUIConnectType;
+	AlarmXSetStatus : UDINT;
+	MpAlarmXHistoryUI_0 : MpAlarmXHistoryUI;
+	MpAlarmXHistoryUIConnect : MpAlarmXHistoryUIConnectType;
+	XCoreEn : BOOL;
+END_VAR

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.6.110 SP"?>
+<BitmapGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAlarmXStates">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="1050"/>
+  <Property Name="Translate" Value="False"/>
+  <BitmapLayer LanguageId="neutral">
+    <BitmapRef ID="2121" Value="None"/>
+    <BitmapRef ID="2219" Value="Source[local].Bitmap[MpAlarm_Active]"/>
+    <BitmapRef ID="2220" Value="Source[local].Bitmap[MpAlarm_Inactive]"/>
+    <BitmapRef ID="2221" Value="Source[local].Bitmap[MpAlarm_Quit]"/>
+    <BitmapRef ID="2222" Value="Source[local].Bitmap[MpAlarm_NotQuit]"/>
+  </BitmapLayer>
+  <IndexMap>
+    <Index ID="2121" Value="0"/>
+    <Index ID="2219" Value="2"/>
+    <Index ID="2220" Value="1"/>
+    <Index ID="2221" Value="4"/>
+    <Index ID="2222" Value="3"/>
+  </IndexMap>
+</BitmapGroup>

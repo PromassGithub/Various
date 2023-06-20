@@ -1,0 +1,13 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="C:/projects/Agroittica/Physical/ppc2100/5PPC2100_BY34_000/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="io_drive" Source="IO.io_drive.prg" />
+      <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" />
+      <Task Name="Main" Source="main.Main.prg" />
+      <Task Name="Recipe" Source="MpPkg.Recipe.prg" />
+      <Task Name="Alarm_0" Source="MpPkg.Alarm_0.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

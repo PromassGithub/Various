@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="TrendData">
+    <Object Name="MpOeeTrendUI_Performance" ClsId="0x1803" Version="1" Type="TRD" RefString="Source[local].TrendData[MpOeeTrendUI_Performance]">
+      <UInt16 Name="TrendDataType">2</UInt16>
+      <UInt16 Name="TrendSimulationValue">2</UInt16>
+      <UInt32 Name="ForeColor">0</UInt32>
+      <UInt32 Name="SampleRate">1</UInt32>
+      <Reference Name="TrendMinDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.MinValue]</Reference>
+      <Reference Name="TrendMaxDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.MaxValue]</Reference>
+      <UInt32 Name="Reserved">0</UInt32>
+      <Double Name="TrendMinValue">0</Double>
+      <Double Name="TrendMaxValue">1</Double>
+      <UInt16 Name="RecordMode">1</UInt16>
+      <UInt16 Name="Reserved">0</UInt16>
+      <UInt32 Name="SampleCount">100</UInt32>
+      <UInt32 Name="EnableDatapoint">4294967295</UInt32>
+      <UInt32 Name="TriggerDatapoint">4294967295</UInt32>
+      <UInt32 Name="CommandRequestDatapoint">4294967295</UInt32>
+      <UInt32 Name="CommandResponseDatapoint">4294967295</UInt32>
+      <UInt32 Name="CommandStatusDatapoint">4294967295</UInt32>
+      <UInt32 Name="TrendValueDatapoint">4294967295</UInt32>
+      <Reference Name="TrendSampleDateTimeDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.SampleDateTime]</Reference>
+      <Reference Name="TrendSampleCountDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.SampleCount]</Reference>
+      <Reference Name="TrendValueUserDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.SampleData]</Reference>
+      <UInt32 Name="TrendSampleOffsetDatapoint">4294967295</UInt32>
+      <Reference Name="TrendSampleCountDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.SampleCount]</Reference>
+      <Reference Name="TrendSampleDateTimeDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.SampleDateTime]</Reference>
+      <Reference Name="SampleRateDatapoint" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.SampleRate]</Reference>
+    </Object>
+  </Folder>
+</Intermediate>

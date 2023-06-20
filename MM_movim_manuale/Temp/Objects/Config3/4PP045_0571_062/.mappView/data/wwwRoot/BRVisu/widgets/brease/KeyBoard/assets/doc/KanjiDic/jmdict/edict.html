@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <META NAME="Generator" CONTENT="Jim's Markup Program - V0.99">
+    <TITLE>The EDICT Dictionary File</TITLE>
+    <style>
+        * {
+            pointer-events: none;
+        }
+    </style>
+</HEAD>
+<BODY BGCOLOR="white">
+    <!-- It seems this file is now edited by hand...  -->
+    <H1 ALIGN=CENTER> The EDICT Dictionary File</H1>
+    <P>
+        Welcome to the Home Page of the EDICT file within the JMdict/EDICT Project.
+        This page has been written by Jim Breen
+        (hereafter "I" or "me") and is intended as
+        an overview of the file, with links to more detail elsewhere.
+    </P>
+    <P>
+        <B>Background</B>
+    </P>
+    <P>
+        Way back in 1991 I began to experiment with handling Japanese
+        text in computer files, and decided to try writing a dictionary
+        search program in Turbo C under DOS, which used a simple dictionary file
+        contained in the
+        MOKE (Mark's Own Kanji Editor) package. To make this program more
+        useful, I began to expand the file itself. One thing led to another,
+        until I ended up running a fairly major project which has taken over a
+        large portion of my life.
+        I must acknowledge that the EDICT project has depended on many people who
+        have provided material and editorial assistance. A significant
+        proportion of the
+        compilation process has been carried out using electronic mail and
+        file transfers, and indeed the project would never have occurred
+        without the services provided by the Internet.
+    </P>
+    <P>
+        <B>What is EDICT?</B>
+    </P>
+    <P>
+        EDICT is a Japanese-English Dictionary file. For the full details, see
+        the
+        <a HREF="edict_doc.html">full documentation, </a>
+        or the
+        <a HREF="edict_doc_old.html">old documentation. </a>
+    </P>
+    <P>
+        It is a plain text document in EUC-JP coding, with its own format (which
+        has become known as "EDICT-format").
+        Originally it was compiled and
+        edited in this format, but from 1999 it has been generated as a legacy
+        file from an expanded  database, along with the related
+        <a HREF="j_jmdict.html">JMdict </a>
+        (Japanese-Multilingual Dictionary) project. JMdict is an expanded file,
+        containing French, German, Russian, etc. translation, and is in XML format
+        and UTF-8 coding. In 2010 the maintenance was moved to an online database
+        system.
+    </P>
+    <P>
+        There are now two EDICT versions:
+    </P>
+    <OL type="A">
+        <LI>
+            the plain EDICT file. This is the original format, where there is
+            only one kanji form and one reading per entry. I regard this as a legacy
+            format, and only provide it for older applications. PLEASE do not use
+            this format for new applications, as I would like to withdraw it one
+            day.
+        </LI>
+        <LI>
+            the enhanced "EDICT2" format. This can have multiple kanji forms and
+            readings in an entry, and also has other information such as
+            cross-references, restrictions, etc.  and also uses kanji from the
+            extensions in the JIS X 0212 standard. It has almost all the information
+            in the full JMdict format. This form should be used for all new
+            applications.
+        </LI>
+    </OL>
+    <P>
+        The EDICT2 file currently has about 175,000 entries, and the legacy
+        EDICT format has nearly 200,000 entries (many of which are duplicates
+        as all the permutations of
+        kanji and readings generate distinct entries.)
+    </P>
+    <P>
+        A short overview of the EDICT project as
+        <a HREF="edictinfj.html">parallel English/Japanese text </a>
+        is available.
+    </P>
+    <P>
+        <B>Download</B>
+    </P>
+    <P>
+        You can download the files in  various formats:
+        <a HREF="http://ftp.monash.edu/pub/nihongo/edict2.gz">edict2.gz, </a>
+        <a HREF="http://ftp.monash.edu/pub/nihongo/edict.gz">edict.gz, </a>
+        <a HREF="http://ftp.monash.edu/pub/nihongo/edict.zip">edict.zip </a>
+        These are all on the
+        <a HREF="http://ftp.monash.edu/pub/nihongo/00INDEX.html">Monash ftp site. </a>
+    </P>
+    <P>
+        You can also use EDICT2 online via my
+        <a HREF="http://www.edrdg.org/cgi-bin/wwwjdic/wwwjdic?1C">WWWJDIC server. </a>
+    </P>
+    <P>
+        <B>Is it Public Domain?</B>
+    </P>
+    <P>
+        EDICT can be freely used provided satisfactory acknowledgement is made
+        in any software product, server, etc. that uses it. There are a few other
+        conditions relating to distributing copies of EDICT with or without
+        modification.  Copyright is vested in the
+        <a HREF="http://www.edrdg.org/">EDRG </a>
+        (Electronic Dictionary Research Group) with the
+        file available under a Creative Commons Attribution-ShareAlike Licence (V3.0).
+        You can see the specific
+        <a HREF="http://www.edrdg.org/edrdg/licence.html">licence statement </a>
+        at the Group's site.
+    </P>
+    <P>
+        <B>Other Dictionary Files</B>
+    </P>
+    <P>
+        A number of other dictionary files have been compiled  by me and others
+        as adjuncts or spin-offs from the EDICT file. I will list the major of
+        these below. Another summary can be found be found in the
+        <a HREF="http://www.edrdg.org/wwwjdic/wwwjdicinf.html#dicfil_tag">documentation </a>
+        of my WWWJDIC server.
+    </P>
+    <P>
+        <!-- PROJECT</b>. (<a href="jsaa_paper/hpaper.html">Here</a> is a -->
+        <!-- conference paper about the project, which I wrote in 1995.) -->
+    </P>
+    <P>
+        <!--  I have recently added an <a href="edict_howto.html">overview</a> of -->
+        <!-- how to use the project files on various plaforms. -->
+    </P>
+    <P>
+        <!-- Some of the components of this project, to which many, many -->
+        <!-- people have contributed are: -->
+    </P>
+    <P>
+    </P>
+    <UL>
+        <LI>
+            the KANJIDIC kanji information file.
+            <a HREF="../kanjidic/kanjidic.html">(overview) </a>
+            <a HREF="http://ftp.monash.edu/pub/nihongo/kanjidic.gz">(download) </a>
+            <a HREF="../kanjidic/kanjidic_doc.html">(documentation) </a>
+            This file has an entry for each of the 6,355 kanji in the JIS
+            X 0208-1990 standard.
+            <I>(The KANJIDIC file was cited as a</I>
+            <I>reference in the New Nelson character dictionary published in 1997.)</I>
+            <P>
+            </P>
+        </LI>
+        <LI>
+            A second file, KANJD212, which covers the 5,801 kanji in the JIS X
+            0212-1990 standard has been assembled, and
+            was released early in 1996.
+            <a HREF="../kanjidic/kanjd212_doc.html">(documentation) </a>
+            <a HREF="http://ftp.monash.edu/pub/nihongo/kanjd212.gz">(download) </a>
+            <P>
+            </P>
+        </LI>
+        <LI>
+            the ENAMDICT/JMnedict files of proper names. These now have over 720,000 names. Downloads:
+            <a HREF="http://ftp.monash.edu/pub/nihongo/enamdict.gz">(enamdict.gz) </a>
+            <a HREF="http://ftp.monash.edu/pub/nihongo/enamdict.gz">(JMnedict.xml.gz) </a>
+            or see the
+            <a HREF="../enamdict/enamdict_doc.html">documentation. </a>
+            <P>
+            </P>
+        </LI>
+        <LI>
+            the COMPDIC file of computing and
+            (tele)communications terminology. Has over 12,000 entries.
+            <a HREF="../jmdict/compdic_doc.html">(documentation) </a>
+            <a HREF="http://ftp.monash.edu/pub/nihongo/compdic.gz">(download) </a>
+            <P>
+            </P>
+        </LI>
+        <LI>
+            the EDICLSD3 (Japanese-English Life Science dictionary), which is
+            the EDICT-format version of a major file produced at Kyoto University
+            by a
+            <a HREF="https://lsd-project.jp/en/project/about.html">project group </a>
+            coordinated by Professor Shuji Kaneko..
+        </LI>
+    </UL>
+    <P>
+        <B>Software for using the EDICT files</B>
+    </P>
+    <P>
+    </P>
+    <OL type="A">
+        <LI>
+            <B>WWW</B>
+            <br>
+            There are several WWW options:
+            <UL>
+                <LI>
+                    my own
+                    <a HREF="http://www.edrdg.org/cgi-bin/wwwjdic/wwwjdic?1C">WWWJDIC </a>
+                    server, which has a number of mirrors in Canada, Japan, the US, etc.
+                    (Please note that the WWWJDIC program is
+                    <B>not</B>
+                    available for download. There is no PC version.)
+                </LI>
+                <li>
+                    the excellent <a HREF="http://jisho.org/">Jisho.org</a> server
+                </li>
+                <LI>
+                    Jeffrey Friedl's server at sites in
+                    <a HREF="https://mon.ottix.net/cgi-bin/j-e/dict">Canada (site 1), </a>
+                    <a HREF="http://xolotl.wfms.org/cgi-bin/j-e/dict">(site 2), </a>
+                    <a HREF="http://rut.org/cgi-bin/j-e/dict">the USA, </a>
+                    etc.
+                </LI>
+            </UL>
+            There are many other WWW-based methods, and a larger list can be found
+            on my
+            <a HREF="http://nihongo.monash.edu/onlinejdic.html">online dictionaries </a>
+            page.
+            <P>
+                A very useful site is
+                <a HREF="http://www.rikai.com/cgi-bin/HomePage.pl?Language=En">Rikai, </a>
+                which massages WWW pages, placing popup translations from EDICT behind
+                the Japanese text. As well there is a Rikai-based
+                <a HREF="http://rikaixul.mozdev.org/">Mozilla Plugin </a>
+                that achieves the same without going to the server. Needs Firefox
+                0.8.
+            </P>
+        </LI>
+        <LI>
+            <B>Windows</B>
+            <font size="-1" color="red"> (This section is quite out of date.)</font>
+            <br>
+            While I do not
+            have a lot of direct experience (I don't use Windows much), the
+            following appear to be the options:
+            <UL>
+                <LI>
+                    use the
+                    <a HREF="http://www.coolest.com/jquicktrans/">JquickTrans </a>
+                    program, also available from the
+                    <a HREF="http://ftp.monash.edu/pub/nihongo/00INDEX.html">Monash ftp site. </a>
+                    Despite its name, it is a dictionary client.
+                </LI>
+                <LI>
+                    use the old
+                    <a HREF="ftp://ftp.monash.edu/pub/nihongo/winjdic.lzh">WinJDic </a>
+                    program, also available from the Monash ftp
+                    site. It has the limitation of not being able to handle more than one
+                    dictionary file.
+                </LI>
+                <LI>
+                    use the
+                    <a HREF="http://www.physics.ucla.edu/~grosenth/jwpce.html">JWPce </a>
+                    freeware wordprocessor, also available from the Monash ftp site.
+                    It has a good built-in dictionary function. The author, Glenn Rosenthal,
+                    has promised a stand-alone dictionary version soon. The older JWP
+                    wordprocessor, written by Stephen Chung, is also popular.
+                </LI>
+                <LI>
+                    another WP which uses the EDICT file is
+                    <a HREF="http://www.njstar.com/">NJSTAR. </a>
+                    NJSTAR comes with an early copy of EDICT. If
+                    you want to use a more recent copy, you'll need to create special index
+                    files. I think the utilities for this are in the DOS archive of NJSTAR,
+                    but I cannot confirm this.
+                </LI>
+                <LI>
+                    the Roboword program from
+                    <a HREF="http://www.technocraft.co.jp/english/">Technocraft. </a>
+                </LI>
+                <LI>
+                    use the DOS JDIC mentioned below.
+                </LI>
+            </UL>
+            <P>
+                All of the above work with just "English" versions of Windows.
+            </P>
+            <P>
+            </P>
+        </LI>
+        <LI>
+            <B>WindowsCE/Windows Mobile</B>
+            <UL>
+                <LI>
+                    <a HREF="http://www.physics.ucla.edu/~grosenth/jwpce.html">JWPce </a>
+                    also has versions for handhelds.
+                </LI>
+                <LI>
+                    A new package is Sven Groot's
+                    <a HREF="http://www.ookii.org/software/pocketdictionary/">Pocket Dictionary. </a>
+                    It is accompanied by
+                    <a HREF="http://www.ookii.org/software/japaneseinput/">soft input panel </a>
+                    software.
+                </LI>
+            </UL>
+            <P>
+            </P>
+        </LI>
+        <LI>
+            <B>Unix/Linux (X-Windows)</B>
+            <UL>
+                <LI>
+                    My own
+                    <a HREF="xjdic"><b>xjdic</b> </a>
+                    (V2.4) which is available from the
+                    <a HREF="http://ftp.monash.edu/pub/nihongo/00INDEX.html">Monash ftp site. </a>
+                    It needs to run in a kterm window, and has been used successfully on
+                    virtually every type of Unix &amp; Linux system.
+                </LI>
+                <LI>
+                    the
+                    <a HREF="http://gjiten.sourceforge.net/">Gjiten </a>
+                    package, which is very nice, and has its own flexible GUI. (Gnome)
+                </LI>
+                <LI>
+                    the new
+                    <a HREF="http://gwaei.sourceforge.net/">gWaei, </a>
+                    which aims to be a "dictionary program for the Gnome desktop with support
+                    for regular expressions."
+                </LI>
+                <LI>
+                    the fast and light-weight
+                    <a HREF="http://edu.kde.org/kiten/">Kiten </a>
+                    (KDE).
+                </LI>
+                <LI>
+                    for Emacs/XEmacs users there is
+                    <B>edict.el.</B>
+                    I don't know much about it, but I think it is included in the XEmacs
+                    <I>rpm.</I>
+                    On the Monash ftp site I have some
+                    <a HREF="http://ftp.monash.edu/pub/nihongo/edict_el.inf">information </a>
+                    and the latest
+                    <a HREF="http://ftp.monash.edu/pub/nihongo/edict-1.01-pkg.tar.gz">release. </a>
+                </LI>
+            </UL>
+        </LI>
+        <LI>
+            <B>Smartphones</B>
+            <br>
+            For Android phones there are two main options:
+            <OL type="a">
+                <LI>
+                    the
+                    <a HREF="http://code.google.com/p/aedict/">AEdict app. </a>
+                    This excellent app uses copies of the dictionary files downloaded to the phone, so it
+                    works well offline.
+                </LI>
+                <LI>
+                    the
+                    <a HREF="http://code.google.com/p/wwwjdic/">WWWJDIC for Android app. </a>
+                    This uses the WWWJDIC server via its API, and needs network access. It
+                    has the advantage of always being up-to-date as the dictionary is
+                    expanded and corrected.
+                </LI>
+            </OL>
+            <br>
+            For Apple iPhones two options are:
+            <OL type="a">
+                <LI>
+                    the
+                    <a HREF="https://itunes.apple.com/us/app/imiwa-dictionnaire-japonais/id288499125?mt=8">Imawa app. </a>
+                    (formerly Kotoba)
+                    which is very highly regarded. It is similar to AEdict, but uses the
+                    JMdict data and hence provides all the information from the dictionary.
+                </LI>
+                <LI>
+                    the newer
+                    <a HREF="http://itunes.apple.com/app/edict-with-grammar/id481623106?mt=8">EDICT with Grammar </a>
+                    app. This uses the common words subset in the old EDICT format.
+                </LI>
+            </OL>
+            <P>
+                WWWJDIC itself has a
+                <a HREF="http://www.edrdg.org/cgi-bin/wwwjdic/wwwjdic?1KJ">simple mobile phone </a>
+                interface, which I developed for Japanese keitai many years ago.
+            </P>
+        </LI>
+        <LI>
+            <B>Macintosh</B>
+            <font size="-1" color="red"> (This section is quite out of date.)</font>
+            <br>
+            Mac users have a number of options if they have Japanese support with their
+            OS (I think the support is standard for later versions):
+            <UL>
+                <LI>
+                    the old
+                    <a HREF="http://www.boingo.org/dan/software/MacJDic.html">MacJDic V1.3.4, </a>
+                    available from the
+                    <a HREF="http://ftp.monash.edu/pub/nihongo/00INDEX.html">Monash ftp site. </a>
+                    It is freeware, but can only handle one dictionary file. MacJDic was
+                    written by
+                    <a HREF="http://www.boingo.org/dan/">Dan Crevier, </a>
+                    based on xjdic.
+                    (I have a
+                    <a HREF="macjdic.html">sample of some MacJDic screens </a>
+                    available.)
+                </LI>
+                <LI>
+                    the commercial
+                    <a HREF="http://www.enfour.co.jp/unidict/e/about.html">UniDict </a>
+                    package, also developed by Dan Crevier.
+                </LI>
+                <LI>
+                    the highly regarded
+                    <a HREF="http://www.jedict.com/">JEDict </a>
+                    package developed by Sergey Kurkin.
+                </LI>
+                <LI>
+                    the
+                    <a HREF="http://www.nyctix.com/solutions/software/oridict/">OriDict </a>
+                    package.
+                </LI>
+                <LI>
+                    the
+                    <a HREF="http://www.tensaimac.com/about/">Tensai </a>
+                    Japanese language dictionary and study aid package.
+                </LI>
+            </UL>
+        </LI>
+        <LI>
+            <B>DOS</B>
+            <br>
+            The two main main programs for DOS are:
+            <UL>
+                <LI>
+                    the
+                    <a HREF="jdic.html">JDIC </a>
+                    program which provides a Japanese-English and English-Japanese dictionary function.
+                </LI>
+                <LI>
+                    the
+                    <a HREF="jreader.html">JREADER </a>
+                    text reader,
+                    which includes an integrated dictionary look-up function.
+                </LI>
+            </UL>
+        </LI>
+        <LI>
+            <B>Others</B>
+            <br>
+            There are also programs for Amiga, BeoS, Palm Pilots, etc. Most can be
+            obtained from the Monash ftp site.
+            <P>
+                There is a
+                <a HREF="http://redundancy.redundancy.org/nihongobot.html">Jabber bot </a>
+                that does local EDICT lookups too.
+            </P>
+        </LI>
+    </OL>
+    <B>Romaji?</B>
+    <P>
+        None of the files in the EDICT project use romanized Japanese.
+        I get many requests for a romaji version of EDICT, however as I do not like
+        romaji and do not want to encourage its use, I will not be producing
+        romaji versions. There <b>is</b>
+        a romaji version dating from 1997 on the Monash ftp site. This was
+        prepared for a blind person who was using a non-Japanese Braille
+        interface. I (foolishly) placed it on my ftp site, and I have had a lot
+        of problems since it was not in step with the main file. That file is
+        now withdrawn, and I am asking all sites carrying copies to withdraw it.
+    </P>
+    <P>
+        <B>Publications</B>
+    </P>
+    <P>
+        If you like, you can collect some papers I have written about the project:
+    </P>
+    <UL>
+        <LI>
+            AN early technical report from 1993;
+            <a HREF="ftp://ftp.monash.edu/pub/nihongo/ejdic_report1.ps.gz">(postscript) </a>
+        </LI>
+        <LI>
+            an overview paper from 1995;
+            <a HREF="jsaa_paper/hpaper.html">(html) </a>
+            <a HREF="ftp://ftp.monash.edu/pub/nihongo/elec_dic.ps.gz">(postscript) </a>
+        </LI>
+        <LI>
+            a 1999 conference paper about WWWJDIC;
+            <a HREF="ftp://ftp.monash.edu/pub/nihongo/www-jdict.ps.gz">(postscript) </a>
+            <a HREF="ftp://ftp.monash.edu/pub/nihongo/www-jdict.pdf">(pdf) </a>
+            <a HREF="wwwjdic_article/wwwjdic_article.html">(html). </a>
+        </LI>
+    </UL>
+    <P>
+        Other useful links can be found on my
+        <a HREF="http://nihongo.monash.edu/japanese.html">Japanese Page. </a>
+    </P>
+    <P>
+        Jim Breen
+        <BR>
+        December 2013
+        <BR>
+        July 2017
+    </P>
+</BODY>
+</HTML>

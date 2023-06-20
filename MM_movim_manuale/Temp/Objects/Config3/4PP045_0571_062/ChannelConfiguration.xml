@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
+  <Module ID="$root" Hardware="4PP045.0571-062" HardwareModuleName="4PP045_0571_062" ModuleID="1">
+    <Channel ID="SerialNumber" Description="Serial number" Ext="/HW" Address="0" Direction="IN" Type="UDINT" ChannelType="SerialNumber" />
+    <Channel ID="ModuleID" Description="Module ID" FromVersion="Q2.90" Ext="/HW" Address="5" Direction="IN" Type="UINT" ChannelType="ModuleID" />
+    <Channel ID="BatteryStatusCPU" Description="Battery status CPU (0 = battery low or missing, 1 = battery ok,)" Ext="/HW" Address="1" Direction="IN" Type="USINT" ChannelType="Battery" BatteryDetectionMethod="1" Ordinal="2" />
+    <Channel ID="TemperatureCPU" Description="Temperature CPU [1/10C]" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="Temp" Ordinal="1" />
+    <Channel ID="TemperatureENV" Description="Temperature cooling plate [1/10C]" Ext="/HW" Address="3" Direction="IN" Type="UINT" ChannelType="Temp" Ordinal="2" />
+    <Channel ID="SystemTime" Description="System time at the start of the current task cycle [µs]" FromVersion="S2.90" Ext="/HW" Address="9" Direction="IN" Type="DINT" Sig_St_Dint="1" ChannelType="SystemTime" />
+    <Channel ID="IF1.NodeSwitch" Description="Node switch" Ext="/HW" Address="4" Direction="IN" Type="USINT" ChannelType="Node" Device="PCI.IF1" />
+    <Channel ID="IF2.CycleCount" Description="Number of bus cycles" Ext="/INFO" Address="0x80000100" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.BreakCount" Description="Number of bus cycles with set break signal" Ext="/INFO" Address="0x80000101" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.SyncErrorCount" Description="Number of failed synchronous frames" Ext="/INFO" Address="0x80000102" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.SyncSramErrorCount" Description="Number of memory access errors within synchronous frame (overflow/underrun)" Ext="/INFO" Address="0x80000104" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.SyncBusyErrorCount" Description="Number of not sent synchronous frames (sender not ready)" Ext="/INFO" Address="0x80000105" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.SyncNoRxErrorCount" Description="Number of not received synchronous frames (timeout)" Ext="/INFO" Address="0x80000106" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.SyncFormatErrorCount" Description="Number of faulty synchronous frames" Ext="/INFO" Address="0x80000107" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.SyncPendingErrorCount" Description="Number of synchronous frames which could not be sent because of receiving a frame" Ext="/INFO" Address="0x80000108" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.AsyncErrorCount" Description="Number of failed asynchronous frames" Ext="/INFO" Address="0x80000103" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.AsyncSramErrorCount" Description="Number of memory access errors within asynchronous frame (overflow/underrun)" Ext="/INFO" Address="0x80000109" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.AsyncBusyErrorCount" Description="Number of not sent asynchronous frames (sender not ready)" Ext="/INFO" Address="0x8000010A" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.AsyncNoRxErrorCount" Description="Number of not received asynchronous frames (timeout)" Ext="/INFO" Address="0x8000010B" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.AsyncFormatErrorCount" Description="Number of faulty asynchronous frames" Ext="/INFO" Address="0x8000010C" Direction="IN" Type="DINT" Resource="IF4" />
+    <Channel ID="IF2.AsyncPendingErrorCount" Description="Number of asynchronous frames which could not be sent because of receiving a frame" Ext="/INFO" Address="0x8000010D" Direction="IN" Type="DINT" Resource="IF4" />
+  </Module>
+</ChannelConfiguration>

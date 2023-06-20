@@ -2,13 +2,13 @@
 <Parameters>
   <Connection>
     <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
-    <ConnectionParameters>/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.0.2 /REPO=11159 /ANSL=1</ConnectionParameters>
+    <ConnectionParameters>/COMT=2500 /AM=* /DAIP=192.168.0.100 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\projects\MM_movim_manuale\MM_movim_manuale.apj</ApjFullFileName>
+    <ApjFullFileName>C:\project\GITH_HUB\Various\MM_movim_manuale\MM_movim_manuale.apj</ApjFullFileName>
     <ProjectName>MM_movim_manuale</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>C:\projects\MM_movim_manuale\Temp\Objects\Config1\X20CP1301</LicenseDataFolder>
+    <LicenseDataFolder>C:\project\GITH_HUB\Various\MM_movim_manuale\Temp\Objects\Config1\X20CP1301</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

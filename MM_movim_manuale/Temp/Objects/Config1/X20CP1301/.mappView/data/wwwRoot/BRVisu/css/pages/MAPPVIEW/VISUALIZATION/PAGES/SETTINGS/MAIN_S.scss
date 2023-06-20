@@ -1,0 +1,16 @@
+﻿@import "mixins.scss";
+#content_main_s_Label1 {
+	@include elemAutoWidth(80);
+}
+#content_main_s_Label1 {
+	@include elemAutoHeight(30);
+}
+#content_main_s_Label1 {
+	@include elemTop(220);
+}
+#content_main_s_Label1 {
+	@include elemLeft(220);
+}
+#content_main_s_Label1 {
+		z-index: 0;
+}

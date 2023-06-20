@@ -1,6 +1,19 @@
 VAR
-	DtSetTime_1 : DTSetTime := (0);
+	contatore : DINT;
+	directory : STRING[80];
+	dir_create : DirCreate;
 	DtGetTime_1 : DTGetTime := (0);
+	DtSetTime_1 : DTSetTime := (0);
 	DT_0 : DATE_AND_TIME := DT#1970-01-01-00:00:00;
 	DT_attuale : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	nome : STRING[80];
+	P : BOOL;
+	byReadData : ARRAY[0..109] OF USINT;
+	byWriteData : ARRAY[0..109] OF USINT;
+	i : USINT;
+	strFile : STRING[80];
+	strDevice : STRING[80];
+	byErrorLevel : USINT;
+	byStep : USINT;
+	bOK : BOOL;
 END_VAR

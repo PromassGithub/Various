@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpEnergy 5.13.1 */
+/* MpEnergy 5.18.0 */
 
 #ifndef _MPENERGY_
 #define _MPENERGY_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpEnergy_VERSION
-#define _MpEnergy_VERSION 5.13.1
+#define _MpEnergy_VERSION 5.18.0
 #endif
 
 #include <bur/plctypes.h>
@@ -69,7 +69,8 @@ typedef enum MpEnergyErrorEnum
 	mpENERGY_ERR_INVALID_MODULE_NAME = -1064153084,
 	mpENERGY_ERR_MODULE_EXISTS = -1064153083,
 	mpENERGY_ERR_BUFFER_CREATE = -1064153082,
-	mpENERGY_ERR_MISSING_UICONNECT = -1064153081
+	mpENERGY_ERR_MISSING_UICONNECT = -1064153081,
+	mpENERGY_ERR_RECORDING_SIZE = -1064153080
 } MpEnergyErrorEnum;
 
 typedef struct MpEnergyStatusIDType

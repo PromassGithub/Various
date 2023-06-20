@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationRuntimeIOSystem Version="1.0"?>
+<IO xmlns="http://www.br-automation.com/AR/IO">
+<Links>
+<LN ID="%ID.SerialNumber" Type="UDINT">
+<Prod Device="$root" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%IW.ModuleID" Type="UINT">
+<Prod Device="$root" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%IB.BatteryStatusCPU" Type="USINT">
+<Prod Device="$root" DPName="BatteryStatusCPU" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureCPU" Type="UINT">
+<Prod Device="$root" DPName="TemperatureCPU" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureENV" Type="UINT">
+<Prod Device="$root" DPName="TemperatureENV" Kind="io"/>
+</LN>
+<LN ID="%ID.SystemTime" Type="DINT">
+<Prod Device="$root" DPName="SystemTime" Kind="io"/>
+</LN>
+<LN ID="%IB.IF1.NodeSwitch" Type="USINT">
+<Prod Device="$root" DPName="IF1.NodeSwitch" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.CycleCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.CycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.BreakCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.BreakCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.SyncErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.SyncErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.SyncSramErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.SyncSramErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.SyncBusyErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.SyncBusyErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.SyncNoRxErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.SyncNoRxErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.SyncFormatErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.SyncFormatErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.SyncPendingErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.SyncPendingErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.AsyncErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.AsyncErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.AsyncSramErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.AsyncSramErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.AsyncBusyErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.AsyncBusyErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.AsyncNoRxErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.AsyncNoRxErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.AsyncFormatErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.AsyncFormatErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF2.AsyncPendingErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF2.AsyncPendingErrorCount" Kind="io"/>
+</LN>
+</Links></IO>

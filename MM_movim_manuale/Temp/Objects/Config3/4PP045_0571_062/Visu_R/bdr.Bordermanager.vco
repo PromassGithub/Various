@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="BorderManager">
+    <Folder Name="POBJ">
+      <Object Name="BorderManager" ClsId="0x111" Version="1" Type="MGR" RefString="Source[local].BorderManager[default]">
+        <UInt32 Name="BorderCount">39</UInt32>
+        <Group Name="Button">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">10</UInt16>
+          <UInt16 Name="PaddingVertical">2</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">10</UInt16>
+          <UInt16 Name="SplitRight">125</UInt16>
+          <UInt16 Name="SplitTop">15</UInt16>
+          <UInt16 Name="SplitBottom">54</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">1</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Decrease">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">42</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Decrease_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">43</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Global_Area">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">9</UInt16>
+          <UInt16 Name="PaddingVertical">9</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">10</UInt16>
+          <UInt16 Name="SplitRight">125</UInt16>
+          <UInt16 Name="SplitTop">18</UInt16>
+          <UInt16 Name="SplitBottom">52</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">3</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Global_Area_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">9</UInt16>
+          <UInt16 Name="PaddingVertical">9</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">10</UInt16>
+          <UInt16 Name="SplitRight">125</UInt16>
+          <UInt16 Name="SplitTop">18</UInt16>
+          <UInt16 Name="SplitBottom">52</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">4</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Increase">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">45</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Increase_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">44</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Multi_Scroll_Down">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">28</UInt16>
+          <UInt16 Name="SplitTop">5</UInt16>
+          <UInt16 Name="SplitBottom">26</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">25</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Multi_Scroll_Down_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">28</UInt16>
+          <UInt16 Name="SplitTop">5</UInt16>
+          <UInt16 Name="SplitBottom">26</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">26</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Multi_Scroll_Up">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">28</UInt16>
+          <UInt16 Name="SplitTop">5</UInt16>
+          <UInt16 Name="SplitBottom">26</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">23</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Multi_Scroll_Up_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">28</UInt16>
+          <UInt16 Name="SplitTop">5</UInt16>
+          <UInt16 Name="SplitBottom">26</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">24</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Radio">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">3</UInt16>
+          <UInt16 Name="SplitRight">65</UInt16>
+          <UInt16 Name="SplitTop">5</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">5</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Radio_selected">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">3</UInt16>
+          <UInt16 Name="SplitRight">65</UInt16>
+          <UInt16 Name="SplitTop">5</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">6</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scoll_Up">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">19</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scoll_Up_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">20</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scroll_Down">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">21</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scroll_Down_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">22</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scroll_Left">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">17</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scroll_Left_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">18</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scroll_Right">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">4539717</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">15</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_Scroll_Right_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">4</UInt16>
+          <UInt16 Name="SplitRight">27</UInt16>
+          <UInt16 Name="SplitTop">10</UInt16>
+          <UInt16 Name="SplitBottom">27</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">16</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_pressed">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">10</UInt16>
+          <UInt16 Name="PaddingVertical">2</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">15</UInt16>
+          <UInt16 Name="SplitRight">49</UInt16>
+          <UInt16 Name="SplitTop">15</UInt16>
+          <UInt16 Name="SplitBottom">49</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">2</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="SunkenNG">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">3</UInt16>
+          <UInt16 Name="PaddingVertical">3</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">2</UInt16>
+          <UInt16 Name="SplitRight">22</UInt16>
+          <UInt16 Name="SplitTop">2</UInt16>
+          <UInt16 Name="SplitBottom">22</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">12</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="CheckBox_checked">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">3</UInt16>
+          <UInt16 Name="PaddingVertical">3</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">2</UInt16>
+          <UInt16 Name="SplitRight">23</UInt16>
+          <UInt16 Name="SplitTop">2</UInt16>
+          <UInt16 Name="SplitBottom">23</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">13</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Flat_black">
+          <UInt32 Name="BorderType">12290</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="Color">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt16 Name="BorderWidth">1</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="Flat_grey">
+          <UInt32 Name="BorderType">12290</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="Color">7</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt16 Name="BorderWidth">1</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="FrameHeader">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">8</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">7</UInt16>
+          <UInt16 Name="SplitRight">83</UInt16>
+          <UInt16 Name="SplitTop">20</UInt16>
+          <UInt16 Name="SplitBottom">22</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">28</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="OverdriveBorder">
+          <UInt32 Name="BorderType">12292</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">3</UInt16>
+          <UInt32 Name="InnerLeftTopColor">15</UInt32>
+          <UInt32 Name="InnerRightBottomColor">0</UInt32>
+          <UInt32 Name="OuterLeftTopColor">15</UInt32>
+          <UInt32 Name="OuterRightBottomColor">0</UInt32>
+          <UInt16 Name="InnerWidth">1</UInt16>
+          <UInt16 Name="OuterWidth">1</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="ProgressBarBorder">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">3</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">3</UInt16>
+          <UInt16 Name="SplitRight">314</UInt16>
+          <UInt16 Name="SplitTop">3</UInt16>
+          <UInt16 Name="SplitBottom">10</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">38</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="RaisedInner">
+          <UInt32 Name="BorderType">12291</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="LeftTopColor">59</UInt32>
+          <UInt32 Name="RightBottomColor">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt16 Name="BorderWidth">2</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="Raised">
+          <UInt32 Name="BorderType">12291</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="LeftTopColor">15</UInt32>
+          <UInt32 Name="RightBottomColor">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt16 Name="BorderWidth">2</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="SliderBorder09">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">4</UInt16>
+          <UInt16 Name="PaddingVertical">0</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">3</UInt16>
+          <UInt16 Name="SplitRight">6</UInt16>
+          <UInt16 Name="SplitTop">3</UInt16>
+          <UInt16 Name="SplitBottom">6</UInt16>
+          <Byte Name="BorderBitmapSource">0</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">65535</UInt16>
+          <UInt32 Name="BorderBitmapGroup">4294967295</UInt32>
+          <Reference Name="BorderBitmap" Type="">Source[local].Bitmap[Slider_09x09]</Reference>
+        </Group>
+        <Group Name="SunkenOuter">
+          <UInt32 Name="BorderType">12291</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="LeftTopColor">0</UInt32>
+          <UInt32 Name="RightBottomColor">59</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt16 Name="BorderWidth">2</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="Sunken">
+          <UInt32 Name="BorderType">12291</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="LeftTopColor">0</UInt32>
+          <UInt32 Name="RightBottomColor">16</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt32 Name="Reserved">0</UInt32>
+          <UInt16 Name="BorderWidth">2</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Reserved">0</UInt32>
+        </Group>
+        <Group Name="SunkenNGgray">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">3</UInt16>
+          <UInt16 Name="PaddingVertical">4</UInt16>
+          <UInt32 Name="ReplaceColor">16777215</UInt32>
+          <UInt16 Name="SplitLeft">2</UInt16>
+          <UInt16 Name="SplitRight">22</UInt16>
+          <UInt16 Name="SplitTop">2</UInt16>
+          <UInt16 Name="SplitBottom">22</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">1</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">11</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="FrameGlobal">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">12</UInt16>
+          <UInt16 Name="SplitRight">628</UInt16>
+          <UInt16 Name="SplitTop">42</UInt16>
+          <UInt16 Name="SplitBottom">428</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">0</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[GlobalArea]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="FrameInvisible">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">1</UInt16>
+          <UInt16 Name="SplitRight">54</UInt16>
+          <UInt16 Name="SplitTop">1</UInt16>
+          <UInt16 Name="SplitBottom">55</UInt16>
+          <Byte Name="BorderBitmapSource">0</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">65535</UInt16>
+          <UInt32 Name="BorderBitmapGroup">4294967295</UInt32>
+          <Reference Name="BorderBitmap" Type="">Source[local].Bitmap[FrameInvisible]</Reference>
+        </Group>
+        <Group Name="Button_KeyRingOff">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">1</UInt16>
+          <UInt16 Name="SplitRight">76</UInt16>
+          <UInt16 Name="SplitTop">1</UInt16>
+          <UInt16 Name="SplitBottom">76</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">29</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+        <Group Name="Button_KeyRingOn">
+          <UInt32 Name="BorderType">12293</UInt32>
+          <UInt16 Name="PaddingHorizontal">2</UInt16>
+          <UInt16 Name="PaddingVertical">1</UInt16>
+          <UInt32 Name="ReplaceColor">4294967295</UInt32>
+          <UInt16 Name="SplitLeft">1</UInt16>
+          <UInt16 Name="SplitRight">76</UInt16>
+          <UInt16 Name="SplitTop">1</UInt16>
+          <UInt16 Name="SplitBottom">76</UInt16>
+          <Byte Name="BorderBitmapSource">2</Byte>
+          <Byte Name="ReplaceColorSet">0</Byte>
+          <UInt16 Name="BorderBitmapGroupIndex">30</UInt16>
+          <Reference Name="BorderBitmapGroup" Type="">Source[local].BitmapGroup[Borders]</Reference>
+          <UInt32 Name="BorderBitmap">4294967295</UInt32>
+        </Group>
+      </Object>
+      <Folder Name="BorderObjects">
+        <Object Name="Button" ClsId="0x0" Version="0" TargetIndex="0" Type="BRD" RefString="Source[local].Border[Button]" />
+        <Object Name="Button_Decrease" ClsId="0x0" Version="0" TargetIndex="1" Type="BRD" RefString="Source[local].Border[Button_Decrease]" />
+        <Object Name="Button_Decrease_pressed" ClsId="0x0" Version="0" TargetIndex="2" Type="BRD" RefString="Source[local].Border[Button_Decrease_pressed]" />
+        <Object Name="Button_Global_Area" ClsId="0x0" Version="0" TargetIndex="3" Type="BRD" RefString="Source[local].Border[Button_Global_Area]" />
+        <Object Name="Button_Global_Area_pressed" ClsId="0x0" Version="0" TargetIndex="4" Type="BRD" RefString="Source[local].Border[Button_Global_Area_pressed]" />
+        <Object Name="Button_Increase" ClsId="0x0" Version="0" TargetIndex="5" Type="BRD" RefString="Source[local].Border[Button_Increase]" />
+        <Object Name="Button_Increase_pressed" ClsId="0x0" Version="0" TargetIndex="6" Type="BRD" RefString="Source[local].Border[Button_Increase_pressed]" />
+        <Object Name="Button_Multi_Scroll_Down" ClsId="0x0" Version="0" TargetIndex="7" Type="BRD" RefString="Source[local].Border[Button_Multi_Scroll_Down]" />
+        <Object Name="Button_Multi_Scroll_Down_pressed" ClsId="0x0" Version="0" TargetIndex="8" Type="BRD" RefString="Source[local].Border[Button_Multi_Scroll_Down_pressed]" />
+        <Object Name="Button_Multi_Scroll_Up" ClsId="0x0" Version="0" TargetIndex="9" Type="BRD" RefString="Source[local].Border[Button_Multi_Scroll_Up]" />
+        <Object Name="Button_Multi_Scroll_Up_pressed" ClsId="0x0" Version="0" TargetIndex="10" Type="BRD" RefString="Source[local].Border[Button_Multi_Scroll_Up_pressed]" />
+        <Object Name="Button_Radio" ClsId="0x0" Version="0" TargetIndex="11" Type="BRD" RefString="Source[local].Border[Button_Radio]" />
+        <Object Name="Button_Radio_selected" ClsId="0x0" Version="0" TargetIndex="12" Type="BRD" RefString="Source[local].Border[Button_Radio_selected]" />
+        <Object Name="Button_Scoll_Up" ClsId="0x0" Version="0" TargetIndex="13" Type="BRD" RefString="Source[local].Border[Button_Scoll_Up]" />
+        <Object Name="Button_Scoll_Up_pressed" ClsId="0x0" Version="0" TargetIndex="14" Type="BRD" RefString="Source[local].Border[Button_Scoll_Up_pressed]" />
+        <Object Name="Button_Scroll_Down" ClsId="0x0" Version="0" TargetIndex="15" Type="BRD" RefString="Source[local].Border[Button_Scroll_Down]" />
+        <Object Name="Button_Scroll_Down_pressed" ClsId="0x0" Version="0" TargetIndex="16" Type="BRD" RefString="Source[local].Border[Button_Scroll_Down_pressed]" />
+        <Object Name="Button_Scroll_Left" ClsId="0x0" Version="0" TargetIndex="17" Type="BRD" RefString="Source[local].Border[Button_Scroll_Left]" />
+        <Object Name="Button_Scroll_Left_pressed" ClsId="0x0" Version="0" TargetIndex="18" Type="BRD" RefString="Source[local].Border[Button_Scroll_Left_pressed]" />
+        <Object Name="Button_Scroll_Right" ClsId="0x0" Version="0" TargetIndex="19" Type="BRD" RefString="Source[local].Border[Button_Scroll_Right]" />
+        <Object Name="Button_Scroll_Right_pressed" ClsId="0x0" Version="0" TargetIndex="20" Type="BRD" RefString="Source[local].Border[Button_Scroll_Right_pressed]" />
+        <Object Name="Button_pressed" ClsId="0x0" Version="0" TargetIndex="21" Type="BRD" RefString="Source[local].Border[Button_pressed]" />
+        <Object Name="SunkenNG" ClsId="0x0" Version="0" TargetIndex="22" Type="BRD" RefString="Source[local].Border[SunkenNG]" />
+        <Object Name="CheckBox_checked" ClsId="0x0" Version="0" TargetIndex="23" Type="BRD" RefString="Source[local].Border[CheckBox_checked]" />
+        <Object Name="Flat_black" ClsId="0x0" Version="0" TargetIndex="24" Type="BRD" RefString="Source[local].Border[Flat_black]" />
+        <Object Name="Flat_grey" ClsId="0x0" Version="0" TargetIndex="25" Type="BRD" RefString="Source[local].Border[Flat_grey]" />
+        <Object Name="FrameHeader" ClsId="0x0" Version="0" TargetIndex="26" Type="BRD" RefString="Source[local].Border[FrameHeader]" />
+        <Object Name="OverdriveBorder" ClsId="0x0" Version="0" TargetIndex="27" Type="BRD" RefString="Source[local].Border[OverdriveBorder]" />
+        <Object Name="ProgressBarBorder" ClsId="0x0" Version="0" TargetIndex="28" Type="BRD" RefString="Source[local].Border[ProgressBarBorder]" />
+        <Object Name="RaisedInner" ClsId="0x0" Version="0" TargetIndex="29" Type="BRD" RefString="Source[local].Border[RaisedInner]" />
+        <Object Name="Raised" ClsId="0x0" Version="0" TargetIndex="30" Type="BRD" RefString="Source[local].Border[Raised]" />
+        <Object Name="SliderBorder09" ClsId="0x0" Version="0" TargetIndex="31" Type="BRD" RefString="Source[local].Border[SliderBorder09]" />
+        <Object Name="SunkenOuter" ClsId="0x0" Version="0" TargetIndex="32" Type="BRD" RefString="Source[local].Border[SunkenOuter]" />
+        <Object Name="Sunken" ClsId="0x0" Version="0" TargetIndex="33" Type="BRD" RefString="Source[local].Border[Sunken]" />
+        <Object Name="SunkenNGgray" ClsId="0x0" Version="0" TargetIndex="34" Type="BRD" RefString="Source[local].Border[SunkenNGgray]" />
+        <Object Name="FrameGlobal" ClsId="0x0" Version="0" TargetIndex="35" Type="BRD" RefString="Source[local].Border[FrameGlobal]" />
+        <Object Name="FrameInvisible" ClsId="0x0" Version="0" TargetIndex="36" Type="BRD" RefString="Source[local].Border[FrameInvisible]" />
+        <Object Name="Button_KeyRingOff" ClsId="0x0" Version="0" TargetIndex="37" Type="BRD" RefString="Source[local].Border[Button_KeyRingOff]" />
+        <Object Name="Button_KeyRingOn" ClsId="0x0" Version="0" TargetIndex="38" Type="BRD" RefString="Source[local].Border[Button_KeyRingOn]" />
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

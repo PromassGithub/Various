@@ -1,0 +1,19 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=12 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                  Client                               Client_typ    0 "                                                               *"    0   24    1    0    1    1         
+                                   sStep                                     UINT    0 "                                                              10"    1    6    1   10    0    0         
+                             Eth_connect                          typ_eth_connect    0 "                                                               *"    0   24    1    0    1    1         
+                               tcp_state                            typ_tcp_state    0 "                                                               *"    1   24    1    0    0    1         
+                                 tcpopen                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                tcpioctl                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                               tcpclient                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                                 tcpsend                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                 tcprecv                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                tcpclose                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                tcperror                                     BOOL    0 "                                                            TRUE"    2    1    1    2    0    0         
+                                 disable                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                           Server_Ip_Add                               STRING[15]    0 "                                                '192.168.250.15'"    1    9   16    1    0    0         
+                                  buffer                                  TCP_typ    0 "                                                               *"    0   24    1    0    1    1         
+                               send_data                               Buffer_typ    0 "                                                               *"    1   24    1    0    0    1         
+                              keep_alive                                    UDINT    0 "                                                            2474"    2    7    1   10    0    0         

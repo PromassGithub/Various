@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Trend">
+    <Folder Name="MpOeeTrendUI" TargetIndex="Source[local].Trend[MpOeeTrendUI]">
+      <Folder Name="Config">
+        <Object Name="MpOeeTrendUI" ClsId="0x1802" Version="1" Type="TRE" RefString="Source[local].Trend[MpOeeTrendUI]">
+          <UInt32 Name="Height">768</UInt32>
+          <UInt32 Name="Width">1024</UInt32>
+          <Byte Name="Cursor1">0</Byte>
+          <Byte Name="Cursor2">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <UInt32 Name="Cursor1PositionDatapoint">0</UInt32>
+          <UInt32 Name="Cursor1StatusDatapoint">0</UInt32>
+          <UInt32 Name="Cursor1Color">0</UInt32>
+          <UInt32 Name="Cursor2PositionDatapoint">0</UInt32>
+          <UInt32 Name="Cursor2StatusDatapoint">0</UInt32>
+          <UInt32 Name="Cursor2Color">0</UInt32>
+          <Int32 Name="TrendGridControls">1</Int32>
+          <Reference Name="MpOeeTrendUIGrid" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIGrid]</Reference>
+          <Int32 Name="ScaleContainerControls">2</Int32>
+          <Reference Name="MpOeeTrendUIXScale" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIXScale]</Reference>
+          <Reference Name="MpOeeTrendUIYScale" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIYScale]</Reference>
+          <Int32 Name="TimeScaleControls">4</Int32>
+          <Reference Name="MpOeeTrendUIOEE" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIOEE]</Reference>
+          <Reference Name="MpOeeTrendUIAvalability" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIAvalability]</Reference>
+          <Reference Name="MpOeeTrendUIPerformance" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIPerformance]</Reference>
+          <Reference Name="MpOeeTrendUIQuality" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIQuality]</Reference>
+          <Int32 Name="ValueScaleControls">1</Int32>
+          <Reference Name="MpOeeTrendUIValueScale" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIValueScale]</Reference>
+          <Int32 Name="CurveControls">4</Int32>
+          <Reference Name="MpOeeTrendUIOEEGraph" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIOEEGraph]</Reference>
+          <Reference Name="MpOeeTrendUIAvailabilityGraph" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIAvailabilityGraph]</Reference>
+          <Reference Name="MpOeeTrendUIPerformanceGraph" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIPerformanceGraph]</Reference>
+          <Reference Name="MpOeeTrendUIQualityGraph" Type="CTRL">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIQualityGraph]</Reference>
+        </Object>
+      </Folder>
+      <Folder Name="Controls">
+        <Object Name="MpOeeTrendUIGrid" ClsId="0x1015" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIGrid]">
+          <UInt32 Name="Left">332</UInt32>
+          <UInt32 Name="Top">204</UInt32>
+          <UInt32 Name="Right">691</UInt32>
+          <UInt32 Name="Bottom">563</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001015].StyleClass[TrendGrid]</Reference>
+          <UInt16 Name="StyleTableSize">28</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="ForeColor">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">15</UInt32>
+          </Group>
+          <Group Name="SpacingHorizontal">
+            <UInt16 Name="Offset">12</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">20</UInt32>
+          </Group>
+          <Group Name="SpacingVertical">
+            <UInt16 Name="Offset">16</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">20</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIXScale" ClsId="0x1019" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIXScale]">
+          <UInt32 Name="Left">332</UInt32>
+          <UInt32 Name="Top">564</UInt32>
+          <UInt32 Name="Right">691</UInt32>
+          <UInt32 Name="Bottom">603</UInt32>
+          <Int32 Name="AlignIndex">1</Int32>
+          <Byte Name="Horizontal">1</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001019].StyleClass[TrendScaleContainer]</Reference>
+          <UInt16 Name="StyleTableSize">4</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIYScale" ClsId="0x1019" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIYScale]">
+          <UInt32 Name="Left">292</UInt32>
+          <UInt32 Name="Top">204</UInt32>
+          <UInt32 Name="Right">331</UInt32>
+          <UInt32 Name="Bottom">563</UInt32>
+          <Int32 Name="AlignIndex">-1</Int32>
+          <Byte Name="Horizontal">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001019].StyleClass[TrendScaleContainer]</Reference>
+          <UInt16 Name="StyleTableSize">4</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIOEE" ClsId="0x101A" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIOEE]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIXScale]</Reference>
+          <UInt32 Name="Cursor1TimeDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2TimeDatapoint">4294967295</UInt32>
+          <UInt16 Name="LabelPosition">4</UInt16>
+          <Byte Name="Reserved">0</Byte>
+          <Byte Name="TextSource">2</Byte>
+          <UInt16 Name="TextIndex">0</UInt16>
+          <UInt16 Name="AutomaticScrollOffset">10</UInt16>
+          <Reference Name="TextGroup" Type="TG">Source[global].TextGroup[MpDateTimeFormats]</Reference>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101A].StyleClass[TrendTimeContainer]</Reference>
+          <UInt16 Name="StyleTableSize">52</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="LabelSpacing">
+            <UInt16 Name="Offset">12</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">6</UInt32>
+          </Group>
+          <Group Name="MajorPitchLines">
+            <UInt16 Name="Offset">18</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MajorPitchLinesLength">
+            <UInt16 Name="Offset">20</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">10</UInt16>
+          </Group>
+          <Group Name="MinorPitchLines">
+            <UInt16 Name="Offset">22</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MinorPitchLinesLength">
+            <UInt16 Name="Offset">24</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">2</UInt16>
+          </Group>
+          <Group Name="ScrollDatapoint">
+            <UInt16 Name="Offset">44</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.OEE.TimeScroll]</Reference>
+          </Group>
+          <Group Name="ZoomDatapoint">
+            <UInt16 Name="Offset">48</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.OEE.TimeZoom]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIAvalability" ClsId="0x101A" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIAvalability]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIXScale]</Reference>
+          <UInt32 Name="Cursor1TimeDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2TimeDatapoint">4294967295</UInt32>
+          <UInt16 Name="LabelPosition">1</UInt16>
+          <Byte Name="Reserved">0</Byte>
+          <Byte Name="TextSource">2</Byte>
+          <UInt16 Name="TextIndex">0</UInt16>
+          <UInt16 Name="AutomaticScrollOffset">10</UInt16>
+          <Reference Name="TextGroup" Type="TG">Source[global].TextGroup[MpDateTimeFormats]</Reference>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101A].StyleClass[TrendTimeContainer]</Reference>
+          <UInt16 Name="StyleTableSize">40</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="LabelSpacing">
+            <UInt16 Name="Offset">12</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">6</UInt32>
+          </Group>
+          <Group Name="MajorPitchLines">
+            <UInt16 Name="Offset">18</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MinorPitchLines">
+            <UInt16 Name="Offset">22</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="ScrollDatapoint">
+            <UInt16 Name="Offset">44</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Availability.TimeScroll]</Reference>
+          </Group>
+          <Group Name="ZoomDatapoint">
+            <UInt16 Name="Offset">48</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Availability.TimeZoom]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIPerformance" ClsId="0x101A" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIPerformance]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIXScale]</Reference>
+          <UInt32 Name="Cursor1TimeDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2TimeDatapoint">4294967295</UInt32>
+          <UInt16 Name="LabelPosition">1</UInt16>
+          <Byte Name="Reserved">0</Byte>
+          <Byte Name="TextSource">2</Byte>
+          <UInt16 Name="TextIndex">0</UInt16>
+          <UInt16 Name="AutomaticScrollOffset">10</UInt16>
+          <Reference Name="TextGroup" Type="TG">Source[global].TextGroup[MpDateTimeFormats]</Reference>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101A].StyleClass[TrendTimeContainer]</Reference>
+          <UInt16 Name="StyleTableSize">40</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="LabelSpacing">
+            <UInt16 Name="Offset">12</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">6</UInt32>
+          </Group>
+          <Group Name="MajorPitchLines">
+            <UInt16 Name="Offset">18</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MinorPitchLines">
+            <UInt16 Name="Offset">22</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="ScrollDatapoint">
+            <UInt16 Name="Offset">44</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.TimeScroll]</Reference>
+          </Group>
+          <Group Name="ZoomDatapoint">
+            <UInt16 Name="Offset">48</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.TimeZoom]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIQuality" ClsId="0x101A" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIQuality]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIXScale]</Reference>
+          <UInt32 Name="Cursor1TimeDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2TimeDatapoint">4294967295</UInt32>
+          <UInt16 Name="LabelPosition">1</UInt16>
+          <Byte Name="Reserved">0</Byte>
+          <Byte Name="TextSource">2</Byte>
+          <UInt16 Name="TextIndex">0</UInt16>
+          <UInt16 Name="AutomaticScrollOffset">10</UInt16>
+          <Reference Name="TextGroup" Type="TG">Source[global].TextGroup[MpDateTimeFormats]</Reference>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101A].StyleClass[TrendTimeContainer]</Reference>
+          <UInt16 Name="StyleTableSize">40</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="LabelSpacing">
+            <UInt16 Name="Offset">12</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">6</UInt32>
+          </Group>
+          <Group Name="MajorPitchLines">
+            <UInt16 Name="Offset">18</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="MinorPitchLines">
+            <UInt16 Name="Offset">22</UInt16>
+            <UInt16 Name="Size">2</UInt16>
+            <UInt16 Name="Data">0</UInt16>
+          </Group>
+          <Group Name="ScrollDatapoint">
+            <UInt16 Name="Offset">44</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Quality.TimeScroll]</Reference>
+          </Group>
+          <Group Name="ZoomDatapoint">
+            <UInt16 Name="Offset">48</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Quality.TimeZoom]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIValueScale" ClsId="0x1017" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIValueScale]">
+          <Int32 Name="Left">0</Int32>
+          <Int32 Name="Top">0</Int32>
+          <Int32 Name="Right">0</Int32>
+          <Int32 Name="Bottom">0</Int32>
+          <Reference Name="ScaleContainer" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIYScale]</Reference>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001017].StyleClass[MpDefault]</Reference>
+          <UInt16 Name="StyleTableSize">20</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">8</UInt32>
+          </Group>
+          <Group Name="LabelSpacing">
+            <UInt16 Name="Offset">12</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">20</UInt32>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIOEEGraph" ClsId="0x1016" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIOEEGraph]">
+          <UInt32 Name="Left">332</UInt32>
+          <UInt32 Name="Top">204</UInt32>
+          <UInt32 Name="Right">691</UInt32>
+          <UInt32 Name="Bottom">563</UInt32>
+          <Reference Name="TrendData" Type="TRD">Source[local].TrendData[MpOeeTrendUI_OEE]</Reference>
+          <Byte Name="MarkerType">2</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="ZoomDisplayMode">1</UInt16>
+          <Reference Name="HorizontalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIOEE]</Reference>
+          <Reference Name="VerticalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIValueScale]</Reference>
+          <UInt32 Name="Cursor1ValueDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2ValueDatapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001016].StyleClass[TrendCurve]</Reference>
+          <UInt16 Name="StyleTableSize">28</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="ForeColor">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">2</UInt32>
+          </Group>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">0</UInt32>
+          </Group>
+          <Group Name="StatusDatapoint">
+            <UInt16 Name="Offset">16</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.OEE.HideCurve]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIAvailabilityGraph" ClsId="0x1016" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIAvailabilityGraph]">
+          <UInt32 Name="Left">342</UInt32>
+          <UInt32 Name="Top">299</UInt32>
+          <UInt32 Name="Right">416</UInt32>
+          <UInt32 Name="Bottom">373</UInt32>
+          <Reference Name="TrendData" Type="TRD">Source[local].TrendData[MpOeeTrendUI_Availability]</Reference>
+          <Byte Name="MarkerType">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="ZoomDisplayMode">1</UInt16>
+          <Reference Name="HorizontalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIAvalability]</Reference>
+          <Reference Name="VerticalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIValueScale]</Reference>
+          <UInt32 Name="Cursor1ValueDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2ValueDatapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001016].StyleClass[TrendCurve]</Reference>
+          <UInt16 Name="StyleTableSize">28</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="ForeColor">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">3</UInt32>
+          </Group>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">0</UInt32>
+          </Group>
+          <Group Name="StatusDatapoint">
+            <UInt16 Name="Offset">16</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Availability.HideCurve]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIPerformanceGraph" ClsId="0x1016" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIPerformanceGraph]">
+          <UInt32 Name="Left">342</UInt32>
+          <UInt32 Name="Top">389</UInt32>
+          <UInt32 Name="Right">416</UInt32>
+          <UInt32 Name="Bottom">463</UInt32>
+          <Reference Name="TrendData" Type="TRD">Source[local].TrendData[MpOeeTrendUI_Performance]</Reference>
+          <Byte Name="MarkerType">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="ZoomDisplayMode">1</UInt16>
+          <Reference Name="HorizontalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIPerformance]</Reference>
+          <Reference Name="VerticalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIValueScale]</Reference>
+          <UInt32 Name="Cursor1ValueDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2ValueDatapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001016].StyleClass[TrendCurve]</Reference>
+          <UInt16 Name="StyleTableSize">20</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">0</UInt32>
+          </Group>
+          <Group Name="StatusDatapoint">
+            <UInt16 Name="Offset">16</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Performance.HideCurve]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+        <Object Name="MpOeeTrendUIQualityGraph" ClsId="0x1016" Version="1" Type="CTRL" RefString="Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIQualityGraph]">
+          <UInt32 Name="Left">342</UInt32>
+          <UInt32 Name="Top">479</UInt32>
+          <UInt32 Name="Right">416</UInt32>
+          <UInt32 Name="Bottom">553</UInt32>
+          <Reference Name="TrendData" Type="TRD">Source[local].TrendData[MpOeeTrendUI_Quality]</Reference>
+          <Byte Name="MarkerType">0</Byte>
+          <Byte Name="Reserved">0</Byte>
+          <UInt16 Name="ZoomDisplayMode">1</UInt16>
+          <Reference Name="HorizontalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIQuality]</Reference>
+          <Reference Name="VerticalScale" Type="">Source[local].Trend[MpOeeTrendUI].Control[MpOeeTrendUIValueScale]</Reference>
+          <UInt32 Name="Cursor1ValueDatapoint">4294967295</UInt32>
+          <UInt32 Name="Cursor2ValueDatapoint">4294967295</UInt32>
+          <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001016].StyleClass[TrendCurve]</Reference>
+          <UInt16 Name="StyleTableSize">28</UInt16>
+          <UInt16 Name="Reserved">0</UInt16>
+          <Group Name="ForeColor">
+            <UInt16 Name="Offset">0</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">5</UInt32>
+          </Group>
+          <Group Name="BackColor">
+            <UInt16 Name="Offset">4</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <UInt32 Name="Data">0</UInt32>
+          </Group>
+          <Group Name="StatusDatapoint">
+            <UInt16 Name="Offset">16</UInt16>
+            <UInt16 Name="Size">4</UInt16>
+            <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.MpOeeTrendUIConnect.Quality.HideCurve]</Reference>
+          </Group>
+          <Group Name="End Marker">
+            <UInt16 Name="Offset">65535</UInt16>
+            <UInt16 Name="Size">0</UInt16>
+          </Group>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

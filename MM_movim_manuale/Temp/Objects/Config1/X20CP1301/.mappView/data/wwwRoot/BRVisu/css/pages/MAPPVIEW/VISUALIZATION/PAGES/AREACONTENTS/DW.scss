@@ -1,0 +1,46 @@
+﻿@import "mixins.scss";
+#content_Dw_NavigationBar1 {
+	@include elemTop(0);
+}
+#content_Dw_NavigationBar1 {
+	@include elemLeft(0);
+}
+#content_Dw_NavigationBar1 {
+	@include elemWidth(500);
+}
+#content_Dw_NavigationBar1 {
+	@include elemHeight(100);
+}
+#content_Dw_NavigationBar1 {
+		z-index: 0;
+}
+#content_Dw_NavigationButton1 {
+	@include elemAutoWidth(100);
+}
+#content_Dw_NavigationButton1 {
+	@include elemAutoHeight(30);
+}
+#content_Dw_NavigationButton1 {
+	@include elemTop(20);
+}
+#content_Dw_NavigationButton1 {
+	@include elemLeft(20);
+}
+#content_Dw_NavigationButton1 {
+		z-index: 0;
+}
+#content_Dw_NavigationButton2 {
+	@include elemAutoWidth(100);
+}
+#content_Dw_NavigationButton2 {
+	@include elemAutoHeight(30);
+}
+#content_Dw_NavigationButton2 {
+	@include elemTop(20);
+}
+#content_Dw_NavigationButton2 {
+	@include elemLeft(360);
+}
+#content_Dw_NavigationButton2 {
+		z-index: 1;
+}

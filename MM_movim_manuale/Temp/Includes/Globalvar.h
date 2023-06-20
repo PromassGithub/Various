@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1657286364_2_
-#define _BUR_1657286364_2_
+#ifndef _BUR_1674733256_2_
+#define _BUR_1674733256_2_
 
 #include <bur/plctypes.h>
 
@@ -33,5 +33,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Global.var\\\" scope \\\"global\\\"\\n\"")
 __asm__(".previous");
 
 
-#endif /* _BUR_1657286364_2_ */
+#endif /* _BUR_1674733256_2_ */
 

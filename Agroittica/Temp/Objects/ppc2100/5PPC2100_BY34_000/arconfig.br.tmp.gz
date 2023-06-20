@@ -1,0 +1,3863 @@
+<?xml version="1.0" ?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="5AP923.1906-00">
+    <Parameter ID="HardwareModuleName" Value="5PPC2100_BY34_000" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="on" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+    <Parameter ID="TouchInterface" Value="COMB" />
+    <Parameter ID="Supervision" Value="on" />
+  </Module>
+  <Module ID="CPU" Hardware="5PPC2100.BY34-000" />
+  <Module ID="IF3" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF3.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF3.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF4" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF4.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF4.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF5" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+  </Module>
+  <Module ID="IF6" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+  </Module>
+  <Module ID="SL1" Hardware="5ACCIF01.FPSC-000">
+    <Parameter ID="HardwareModuleName" Value="5ACCIF01.FPSC-000" />
+  </Module>
+  <Module ID="SL1.IF1" Hardware="5ACCIF01.FPSC-000">
+    <Parameter ID="Operation" Value="EPL-V2" />
+    <Parameter ID="MtuSize" Value="300" Type="UDINT" />
+  </Module>
+  <Module ID="SL1.IF1.PLK" Hardware="EPL-V2">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="MuxPrescaler" Value="8" Type="UDINT" />
+    <Parameter ID="Mode" Value="MN" />
+    <Parameter ID="NodeID" Value="240" Type="DINT" />
+    <Parameter ID="AsyncTimeout" Value="25" Type="UDINT" />
+    <Parameter ID="TransferOnlyActive" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="off" />
+    <Parameter ID="BasicEthernetInServiceMode" Value="off" />
+    <Parameter ID="EplNatSubnet" Value="192.168.101.0" />
+    <Parameter ID="EPL_LossFrameTolerance" Value="-1" Type="DINT" />
+    <Parameter ID="ApplSwDate" Value="0" Type="UDINT" />
+    <Parameter ID="ApplSwTime" Value="0" Type="UDINT" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="SL1.IF3.CANIO" Hardware="CANIO">
+    <Parameter ID="Timeout" Value="1000" Type="UDINT" />
+    <Parameter ID="Retries" Value="3" Type="UDINT" />
+    <Parameter ID="Mode" Value="CANIO" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen" Hardware="CANopen">
+    <Parameter ID="pcannodeid" Value="1" Type="UDINT" />
+    <Parameter ID="pIgnSlvConfErr" Value="1" Type="INT" />
+    <Parameter ID="pRegOnlyConfEmcyCOBID" Value="0" Type="INT" />
+    <Parameter ID="procPriority" Value="197" Type="UINT" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1000" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Device type" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x195" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1001" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Error register" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1002" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Manufacturer status register" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1003" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="2" />
+    <Parameter ID="parametername" Value="Pre-defined error field" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1003sub0" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Number of errors" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1003sub1" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Standard error field" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="00" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1005" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="COB-ID SYNC message" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x00000080" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1006" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Communication cycle period" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1007" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Synchronous window length" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p100c" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Guard time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="1000" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p100d" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="Life time factor" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="3" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1014" Hardware="LogicalNode">
+    <Parameter ID="parametername" Value="COB-ID emergency message" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="$NODEID+0x80" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1016" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x2" />
+    <Parameter ID="parametername" Value="Consumer heart beat time" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1016sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1016sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Consumer heart beat time #1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x000203E8" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1017" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x0" />
+    <Parameter ID="parametername" Value="Producer heart beat time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x3E8" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of RPDO 1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000182" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1400sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of RPDO 2" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000282" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1401sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x7D" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of RPDO 3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000382" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1402sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x7D" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1600" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of RPDO 1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1600sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1600sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA5800110" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1600sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA5800210" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1601" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="2" />
+    <Parameter ID="parametername" Value="Mapping of RPDO 2" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1601sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1601sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA6400120" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1602" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of RPDO 3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1602sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1602sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA4800108" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1602sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA6400220" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x202" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1800sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 2" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x302" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1801sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x402" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1802sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 4" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x502" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1803sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 5" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x181" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1804sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x183" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1805sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="parametername" Value="Communication parameter of TPDO 7" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Number of entries" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="COB-ID" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x184" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TransmissionType" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Inhibit time" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Reserved" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1806sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Event timer" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a00" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a00sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a00sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA1000110" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a00sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000120" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a01" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 2" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a01sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a01sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA1C00120" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a01sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000220" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a02" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a02sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a02sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA0000108" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a02sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA1C00220" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a03" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 4" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a03sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a03sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000320" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a03sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000420" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a04" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 5" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a04sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a04sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000520" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a04sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000620" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a05" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a05sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a05sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000720" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a05sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000820" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a06" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="2" />
+    <Parameter ID="parametername" Value="Mapping of TPDO 7" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a06sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfMappedObjects" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1a06sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MappedObject 1" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xA2000920" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1f80" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="nmtstartup" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x00000001" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1f81" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x2" />
+    <Parameter ID="parametername" Value="SlaveAssignment" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1f81sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="SlaveAssignment" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="127" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.p1f81sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="SlaveAssignment" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x00000005" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa000" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x2" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa000sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa000sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="ModesOfOperation_6060_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa100" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x2" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa100sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa100sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Controlword_6040_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa1c0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x3" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa1c0sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa1c0sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TargetPosition_607A_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa1c0sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="TargetVelocity_60FF_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0xA" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x9" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="FeedConstantFeed_6092sub1_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MaxAcceleration_60C5_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="ProfileVelocity_6081_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="ProfileAcceleration_6083_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="FeedConstantShaftRevolutions_6092sub2_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub6" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="HomingSpeedsSpeedDuringSearchForZero_6099sub2_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub7" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="HomingSpeedsSpeedDuringSearchForSwitch_6099sub1_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub8" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="HomingAcceleration_609A_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa200sub9" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="MaxProfileVelocity_607F_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa480" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x2" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa480sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa480sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="ModesOfOperationDisplay_6061_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa580" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x3" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa580sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa580sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="ErrorCode_603F_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa580sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="Statusword_6041_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa640" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0x3" />
+    <Parameter ID="parametername" Value="NetVarArray" />
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa640sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="NrOfElements" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa640sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="PositionActualValue_6064_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pa640sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="parametername" Value="VelocityActualValue_606C_2" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0x1" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pdynamicchannels" Hardware="LogicalNode">
+    <Parameter ID="nrofseg" Value="16" />
+    <Parameter ID="type1" Value="2" />
+    <Parameter ID="dir1" Value="ro" />
+    <Parameter ID="range1" Value="0xA000-0xA03F" />
+    <Parameter ID="maxcnt1" Value="16256" />
+    <Parameter ID="type2" Value="5" />
+    <Parameter ID="dir2" Value="ro" />
+    <Parameter ID="range2" Value="0xA040-0xA07F" />
+    <Parameter ID="maxcnt2" Value="16256" />
+    <Parameter ID="type3" Value="1" />
+    <Parameter ID="dir3" Value="ro" />
+    <Parameter ID="range3" Value="0xA080-0xA0BF" />
+    <Parameter ID="maxcnt3" Value="16256" />
+    <Parameter ID="type4" Value="3" />
+    <Parameter ID="dir4" Value="ro" />
+    <Parameter ID="range4" Value="0xA0C0-0xA0FF" />
+    <Parameter ID="maxcnt4" Value="16256" />
+    <Parameter ID="type5" Value="6" />
+    <Parameter ID="dir5" Value="ro" />
+    <Parameter ID="range5" Value="0xA100-0xA13F" />
+    <Parameter ID="maxcnt5" Value="16256" />
+    <Parameter ID="type6" Value="4" />
+    <Parameter ID="dir6" Value="ro" />
+    <Parameter ID="range6" Value="0xA1C0-0xA1FF" />
+    <Parameter ID="maxcnt6" Value="16256" />
+    <Parameter ID="type7" Value="7" />
+    <Parameter ID="dir7" Value="ro" />
+    <Parameter ID="range7" Value="0xA200-0xA23F" />
+    <Parameter ID="maxcnt7" Value="16256" />
+    <Parameter ID="type8" Value="8" />
+    <Parameter ID="dir8" Value="ro" />
+    <Parameter ID="range8" Value="0xA240-0xA27F" />
+    <Parameter ID="maxcnt8" Value="16256" />
+    <Parameter ID="type9" Value="2" />
+    <Parameter ID="dir9" Value="rww" />
+    <Parameter ID="range9" Value="0xA480-0xA4BF" />
+    <Parameter ID="maxcnt9" Value="16256" />
+    <Parameter ID="type10" Value="5" />
+    <Parameter ID="dir10" Value="rww" />
+    <Parameter ID="range10" Value="0xA4C0-0xA4FF" />
+    <Parameter ID="maxcnt10" Value="16256" />
+    <Parameter ID="type11" Value="1" />
+    <Parameter ID="dir11" Value="rww" />
+    <Parameter ID="range11" Value="0xA500-0A53F" />
+    <Parameter ID="maxcnt11" Value="16256" />
+    <Parameter ID="type12" Value="3" />
+    <Parameter ID="dir12" Value="rww" />
+    <Parameter ID="range12" Value="0xA540-0xA57F" />
+    <Parameter ID="maxcnt12" Value="16256" />
+    <Parameter ID="type13" Value="6" />
+    <Parameter ID="dir13" Value="rww" />
+    <Parameter ID="range13" Value="0xA580-0xA5BF" />
+    <Parameter ID="maxcnt13" Value="16256" />
+    <Parameter ID="type14" Value="4" />
+    <Parameter ID="dir14" Value="rww" />
+    <Parameter ID="range14" Value="0xA640-0xA67F" />
+    <Parameter ID="maxcnt14" Value="16256" />
+    <Parameter ID="type15" Value="7" />
+    <Parameter ID="dir15" Value="rww" />
+    <Parameter ID="range15" Value="0xA680-0xA6BF" />
+    <Parameter ID="maxcnt15" Value="16256" />
+    <Parameter ID="type16" Value="8" />
+    <Parameter ID="dir16" Value="rww" />
+    <Parameter ID="range16" Value="0xA6C0-0xA6FF" />
+    <Parameter ID="maxcnt16" Value="16256" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pmandatoryobjects" Hardware="LogicalNode">
+    <Parameter ID="supportedobjects" Value="2" />
+    <Parameter ID="1" Value="0x1000" />
+    <Parameter ID="2" Value="0x1001" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pmanufacturerobjects" Hardware="LogicalNode">
+    <Parameter ID="supportedobjects" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pnmtstartup" Hardware="LogicalNode">
+    <Parameter ID="maximumbootuptime" Value="60" Type="UINT" />
+    <Parameter ID="pnptimer" Value="10" Type="UINT" />
+    <Parameter ID="cyclicdatatime" Value="10" Type="UINT" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.poptionalobjects" Hardware="LogicalNode">
+    <Parameter ID="supportedobjects" Value="39" />
+    <Parameter ID="1" Value="0x1002" />
+    <Parameter ID="2" Value="0x1003" />
+    <Parameter ID="3" Value="0x1005" />
+    <Parameter ID="4" Value="0x1006" />
+    <Parameter ID="5" Value="0x1007" />
+    <Parameter ID="6" Value="0x100C" />
+    <Parameter ID="7" Value="0x100D" />
+    <Parameter ID="8" Value="0x1014" />
+    <Parameter ID="9" Value="0x1016" />
+    <Parameter ID="10" Value="0x1017" />
+    <Parameter ID="11" Value="0x1400" />
+    <Parameter ID="12" Value="0x1401" />
+    <Parameter ID="13" Value="0x1402" />
+    <Parameter ID="14" Value="0x1600" />
+    <Parameter ID="15" Value="0x1601" />
+    <Parameter ID="16" Value="0x1602" />
+    <Parameter ID="17" Value="0x1800" />
+    <Parameter ID="18" Value="0x1801" />
+    <Parameter ID="19" Value="0x1802" />
+    <Parameter ID="20" Value="0x1803" />
+    <Parameter ID="21" Value="0x1804" />
+    <Parameter ID="22" Value="0x1805" />
+    <Parameter ID="23" Value="0x1806" />
+    <Parameter ID="24" Value="0x1A00" />
+    <Parameter ID="25" Value="0x1A01" />
+    <Parameter ID="26" Value="0x1A02" />
+    <Parameter ID="27" Value="0x1A03" />
+    <Parameter ID="28" Value="0x1A04" />
+    <Parameter ID="29" Value="0x1A05" />
+    <Parameter ID="30" Value="0x1A06" />
+    <Parameter ID="31" Value="0x1F80" />
+    <Parameter ID="32" Value="0x1F81" />
+    <Parameter ID="33" Value="0xA000" />
+    <Parameter ID="34" Value="0xA100" />
+    <Parameter ID="35" Value="0xA1C0" />
+    <Parameter ID="36" Value="0xA200" />
+    <Parameter ID="37" Value="0xA480" />
+    <Parameter ID="38" Value="0xA580" />
+    <Parameter ID="39" Value="0xA640" />
+  </Module>
+  <Module ID="SL1.IF3.CANopen.pstandarddatatypes" Hardware="LogicalNode">
+    <Parameter ID="0x0020" Value="1" />
+    <Parameter ID="0x0021" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2" Hardware="CANopen_any">
+    <Parameter ID="HardwareModuleName" Value="dryve-D1" />
+    <Parameter ID="OrderNumber" Value="dryve-D1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO" Hardware="CANopen_any">
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="pbaudrate10" Value="1" />
+    <Parameter ID="pbaudrate20" Value="1" />
+    <Parameter ID="pbaudrate50" Value="1" />
+    <Parameter ID="pbaudrate125" Value="1" />
+    <Parameter ID="pbaudrate250" Value="1" />
+    <Parameter ID="pbaudrate500" Value="1" />
+    <Parameter ID="pbaudrate800" Value="1" />
+    <Parameter ID="pbaudrate1000" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1000" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1001" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="subnumber" Value="9" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub0" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x00" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub3" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub4" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub5" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub6" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub7" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1003sub8" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1005" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="defaultvalue" Value="0x80" />
+    <Parameter ID="parametervalue" Value="0x80" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1006" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1007" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1008" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="9" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1009" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="9" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p100a" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="9" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p100c" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x00" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p100d" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x00" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1010" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="subnumber" Value="4" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1010sub0" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x03" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1010sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1010sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1010sub3" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1014" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="defaultvalue" Value="$NODEID+0x80" />
+    <Parameter ID="parametervalue" Value="0x82" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1015" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1016" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="8" />
+    <Parameter ID="subnumber" Value="2" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1016sub0" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1016sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x000107D0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1017" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="0x1F4" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1018" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="subnumber" Value="5" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1018sub0" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="4" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1018sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1018sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1018sub3" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1018sub4" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1200" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1200sub0" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="2" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1200sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="const" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="parametervalue" Value="$NODEID+0x600" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1200sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="pdomapping" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x202" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1400sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x302" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1401sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x402" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1402sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x502" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1403sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x181" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1404sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x183" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1405sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x184" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1406sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x80000185" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1407sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1600" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1600sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1600sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60400010" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1600sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60920120" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1601" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1601sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1601sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x607a0020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1601sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60c50020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1602" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1602sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1602sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60600008" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1602sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60ff0020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1603" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1603sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1603sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60810020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1603sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60830020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1604" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1604sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1604sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60920220" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1604sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60990220" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1605" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1605sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1605sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60990120" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1605sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x609a0020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1606" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="2" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1606sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1606sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x607f0020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1607" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1607sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000182" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1800sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000282" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1801sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="100" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000382" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1802sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="100" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x40000482" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1803sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x80000186" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1804sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x80000187" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1805sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x80000188" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1806sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="6" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="32" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="5" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x80000189" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0xFF" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807sub3" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807sub4" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1807sub5" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a00" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a00sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a00sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x603f0010" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a00sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60410010" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a01" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="2" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a01sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a01sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60640020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a02" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="3" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a02sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x2" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a02sub1" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x60610008" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a02sub2" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x606c0020" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a03" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a03sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a04" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a04sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a05" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a05sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a06" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a06sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a07" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="1" />
+    <Parameter ID="objecttype" Value="9" />
+    <Parameter ID="datatype" Value="33" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p1a07sub0" Hardware="LogicalNode">
+    <Parameter ID="subnumber" Value="0" />
+    <Parameter ID="objecttype" Value="7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="pdomapping" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p2000sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p200esub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="8" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p200esub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="8" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p2013" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="8" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p2014" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p603f" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="1" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6040" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6041" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="1" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6060" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6061" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="3" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6064" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="2" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6065" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6066" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6067" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6068" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p606c" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="3" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6073" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="6" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6078" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="3" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p607a" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p607bsub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p607bsub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p607c" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p607f" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x5" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6081" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6083" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6084" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6085" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p608fsub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p608fsub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6091sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6091sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6092sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6092sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x1" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6098" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6099sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6099sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p609a" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60c2sub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="5" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60c2sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="2" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="-3" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60c5" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60f4" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60fd" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60fesub1" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60fesub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="parametervalue" Value="0x0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p60ff" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="4" />
+    <Parameter ID="accesstype" Value="rww" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="objflags" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.p6502" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="7" />
+    <Parameter ID="accesstype" Value="ro" />
+    <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
+    <Parameter ID="pdomapping" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.pdeviceinfo" Hardware="LogicalNode">
+    <Parameter ID="nrofrxpdo" Value="8" />
+    <Parameter ID="nroftxpdo" Value="8" />
+    <Parameter ID="simplebootupmaster" Value="0" />
+    <Parameter ID="simplebootupslave" Value="0" />
+    <Parameter ID="granularity" Value="8" />
+    <Parameter ID="dynamicchannelssupported" Value="0" />
+    <Parameter ID="groupmessaging" Value="0" />
+    <Parameter ID="lss_supported" Value="0" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.pdummyusage" Hardware="LogicalNode">
+    <Parameter ID="dummy0001" Value="0" />
+    <Parameter ID="dummy0002" Value="0" />
+    <Parameter ID="dummy0003" Value="0" />
+    <Parameter ID="dummy0004" Value="0" />
+    <Parameter ID="dummy0005" Value="1" />
+    <Parameter ID="dummy0006" Value="1" />
+    <Parameter ID="dummy0007" Value="1" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.pmandatoryobjects" Hardware="LogicalNode">
+    <Parameter ID="supportedobjects" Value="3" />
+    <Parameter ID="1" Value="0x1000" />
+    <Parameter ID="2" Value="0x1001" />
+    <Parameter ID="3" Value="0x1018" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.pmanufacturerobjects" Hardware="LogicalNode">
+    <Parameter ID="supportedobjects" Value="21" />
+    <Parameter ID="1" Value="0x2000" />
+    <Parameter ID="2" Value="0x2001" />
+    <Parameter ID="3" Value="0x2002" />
+    <Parameter ID="4" Value="0x2003" />
+    <Parameter ID="5" Value="0x2004" />
+    <Parameter ID="6" Value="0x2005" />
+    <Parameter ID="7" Value="0x2006" />
+    <Parameter ID="8" Value="0x2007" />
+    <Parameter ID="9" Value="0x2008" />
+    <Parameter ID="10" Value="0x2009" />
+    <Parameter ID="11" Value="0x200A" />
+    <Parameter ID="12" Value="0x200B" />
+    <Parameter ID="13" Value="0x200C" />
+    <Parameter ID="14" Value="0x200D" />
+    <Parameter ID="15" Value="0x200E" />
+    <Parameter ID="16" Value="0x200F" />
+    <Parameter ID="17" Value="0x2010" />
+    <Parameter ID="18" Value="0x2011" />
+    <Parameter ID="19" Value="0x2012" />
+    <Parameter ID="20" Value="0x2013" />
+    <Parameter ID="21" Value="0x2014" />
+  </Module>
+  <Module ID="SL1.IF3.ST2.IO.poptionalobjects" Hardware="LogicalNode">
+    <Parameter ID="supportedobjects" Value="84" />
+    <Parameter ID="1" Value="0x1003" />
+    <Parameter ID="2" Value="0x1005" />
+    <Parameter ID="3" Value="0x1006" />
+    <Parameter ID="4" Value="0x1007" />
+    <Parameter ID="5" Value="0x1008" />
+    <Parameter ID="6" Value="0x1009" />
+    <Parameter ID="7" Value="0x100A" />
+    <Parameter ID="8" Value="0x100C" />
+    <Parameter ID="9" Value="0x100D" />
+    <Parameter ID="10" Value="0x1010" />
+    <Parameter ID="11" Value="0x1014" />
+    <Parameter ID="12" Value="0x1015" />
+    <Parameter ID="13" Value="0x1016" />
+    <Parameter ID="14" Value="0x1017" />
+    <Parameter ID="15" Value="0x1200" />
+    <Parameter ID="16" Value="0x1400" />
+    <Parameter ID="17" Value="0x1401" />
+    <Parameter ID="18" Value="0x1402" />
+    <Parameter ID="19" Value="0x1403" />
+    <Parameter ID="20" Value="0x1404" />
+    <Parameter ID="21" Value="0x1405" />
+    <Parameter ID="22" Value="0x1406" />
+    <Parameter ID="23" Value="0x1407" />
+    <Parameter ID="24" Value="0x1600" />
+    <Parameter ID="25" Value="0x1601" />
+    <Parameter ID="26" Value="0x1602" />
+    <Parameter ID="27" Value="0x1603" />
+    <Parameter ID="28" Value="0x1604" />
+    <Parameter ID="29" Value="0x1605" />
+    <Parameter ID="30" Value="0x1606" />
+    <Parameter ID="31" Value="0x1607" />
+    <Parameter ID="32" Value="0x1800" />
+    <Parameter ID="33" Value="0x1801" />
+    <Parameter ID="34" Value="0x1802" />
+    <Parameter ID="35" Value="0x1803" />
+    <Parameter ID="36" Value="0x1804" />
+    <Parameter ID="37" Value="0x1805" />
+    <Parameter ID="38" Value="0x1806" />
+    <Parameter ID="39" Value="0x1807" />
+    <Parameter ID="40" Value="0x1A00" />
+    <Parameter ID="41" Value="0x1A01" />
+    <Parameter ID="42" Value="0x1A02" />
+    <Parameter ID="43" Value="0x1A03" />
+    <Parameter ID="44" Value="0x1A04" />
+    <Parameter ID="45" Value="0x1A05" />
+    <Parameter ID="46" Value="0x1A06" />
+    <Parameter ID="47" Value="0x1A07" />
+    <Parameter ID="48" Value="0x603F" />
+    <Parameter ID="49" Value="0x6040" />
+    <Parameter ID="50" Value="0x6041" />
+    <Parameter ID="51" Value="0x6060" />
+    <Parameter ID="52" Value="0x6061" />
+    <Parameter ID="53" Value="0x6064" />
+    <Parameter ID="54" Value="0x6065" />
+    <Parameter ID="55" Value="0x6066" />
+    <Parameter ID="56" Value="0x6067" />
+    <Parameter ID="57" Value="0x6068" />
+    <Parameter ID="58" Value="0x606C" />
+    <Parameter ID="59" Value="0x6073" />
+    <Parameter ID="60" Value="0x6075" />
+    <Parameter ID="61" Value="0x6078" />
+    <Parameter ID="62" Value="0x607A" />
+    <Parameter ID="63" Value="0x607B" />
+    <Parameter ID="64" Value="0x607C" />
+    <Parameter ID="65" Value="0x607F" />
+    <Parameter ID="66" Value="0x6081" />
+    <Parameter ID="67" Value="0x6083" />
+    <Parameter ID="68" Value="0x6084" />
+    <Parameter ID="69" Value="0x6085" />
+    <Parameter ID="70" Value="0x608F" />
+    <Parameter ID="71" Value="0x6091" />
+    <Parameter ID="72" Value="0x6092" />
+    <Parameter ID="73" Value="0x6098" />
+    <Parameter ID="74" Value="0x6099" />
+    <Parameter ID="75" Value="0x609A" />
+    <Parameter ID="76" Value="0x60A8" />
+    <Parameter ID="77" Value="0x60C2" />
+    <Parameter ID="78" Value="0x60C5" />
+    <Parameter ID="79" Value="0x60F4" />
+    <Parameter ID="80" Value="0x60FD" />
+    <Parameter ID="81" Value="0x60FE" />
+    <Parameter ID="82" Value="0x60FF" />
+    <Parameter ID="83" Value="0x6402" />
+    <Parameter ID="84" Value="0x6502" />
+  </Module>
+  <Module ID="SL1.IO" Hardware="5ACCIF01.FPSC-000">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="Supervision" Value="on" />
+  </Module>
+</IOCFG>

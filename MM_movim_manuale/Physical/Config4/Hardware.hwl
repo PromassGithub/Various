@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config4.Hardware.hw" LastWriteTime="01/26/2023 15:22:13" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="5PC600.SX02-01" Type="5PC600.SX02-01" X="58.5" Y="90" />
+    <Module Name="5LS187.6-1" Type="5LS187.6-1" X="100" Y="155" />
+    <Module Name="5PC600_E8xx_00_4" Type="5PC600.E8xx-00.4" X="100" Y="100" />
+    <Module Name="X20BB80a" Type="X20BB80" X="145" Y="330" />
+    <Module Name="X20BM11a" Type="X20BM11" X="183" Y="330" />
+    <Module Name="X20DI9371" Type="X20DI9371" X="183" Y="330" />
+    <Module Name="X20TB12c" Type="X20TB12" X="183" Y="357" />
+    <Module Name="X20BM11b" Type="X20BM11" X="196" Y="330" />
+    <Module Name="X20DO9322" Type="X20DO9322" X="196" Y="330" />
+    <Module Name="X20TB12d" Type="X20TB12" X="196" Y="357" />
+    <Module Name="X20PS9400" Type="X20PS9400" X="170" Y="330" />
+    <Module Name="X20TB12b" Type="X20TB12" X="170" Y="357" />
+    <Module Name="X20BC0083" Type="X20BC0083" X="145" Y="330" />
+  </Modules>
+  <Links>
+    <Link From="5LS187.6-1" To="X20BC0083" FromPort="IF2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="141" Y="175" />
+      <Point X="141" Y="175" />
+      <Point X="146" Y="175" />
+      <Point X="155" Y="175" />
+      <Point X="155" Y="295" />
+      <Point X="135" Y="295" />
+      <Point X="135" Y="405" />
+      <Point X="144" Y="405" />
+      <Point X="159" Y="405" />
+      <Point X="159" Y="405" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

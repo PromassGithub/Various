@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock\cyclic.st.o">
+    <BuildReason>Target "cyclic.st.o" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock\a.out">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock\cyclic.st.o" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock\clock.ox">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock\a.out" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config3\4pp045_0571_062\clock\clock.ox" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config3\4pp045_0571_062\transfer.lst">
+    <BuildReason>Target "transfer.lst" does not exist</BuildReason>
+  </Rule>
+</BuildReasons>

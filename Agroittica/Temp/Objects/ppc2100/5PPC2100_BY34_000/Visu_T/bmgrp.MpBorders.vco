@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Object Name="BitmapGroup" ClsId="0x0" Version="0" TargetIndex="1003" Type="REF" RefString="Source[local].BitmapGroup[MpBorders]" />
+  <Folder Name="Language">
+    <Folder Name="en" TargetIndex="0">
+      <Folder Name="BitmapGroups">
+        <Folder Name="POBJ">
+          <Object Name="MpBorders" ClsId="0x308" Version="1" TargetIndex="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_en]">
+            <UInt32 Name="Count">71</UInt32>
+            <Group Name="MpButton_default">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_default]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="MpButton_default_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_default_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="MpCheckbox_small_gray">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpCheckbox_small_gray]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">11</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">14</UInt16>
+            </Group>
+            <Group Name="MpButton_control">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_control]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
+            </Group>
+            <Group Name="MpButton_control_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_control_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">8</UInt16>
+            </Group>
+            <Group Name="MpInputBorderCenterless">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorderCenterless]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">9</UInt16>
+            </Group>
+            <Group Name="MpInputBorderInactiveCenterless">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorderInactiveCenterless]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">10</UInt16>
+            </Group>
+            <Group Name="MpButton_radio_unselected">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_radio_unselected]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="MpButton_radio_selected">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_radio_selected]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="MpCheckbox_small_checked">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpCheckbox_small_checked]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">13</UInt16>
+            </Group>
+            <Group Name="MpCheckbox_small">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpCheckbox_small]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">12</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">15</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">16</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">17</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">18</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">19</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">20</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">21</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">22</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">23</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up_multi_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up_multi_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">24</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">25</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down_multi_press">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down_multi_press]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">26</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">27</UInt16>
+            </Group>
+            <Group Name="MpFrameHeader">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpFrameHeader]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">28</UInt16>
+            </Group>
+            <Group Name="MpButton_off">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_off]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">29</UInt16>
+            </Group>
+            <Group Name="MpButton_on">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_on]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">30</UInt16>
+            </Group>
+            <Group Name="MpButton_ready">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_ready]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">31</UInt16>
+            </Group>
+            <Group Name="MpInputBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">33</UInt16>
+            </Group>
+            <Group Name="MpButton_error">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_error]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">32</UInt16>
+            </Group>
+            <Group Name="MpOutputBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpOutputBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">34</UInt16>
+            </Group>
+            <Group Name="MpProgressBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpProgressBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">38</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">39</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">40</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">41</UInt16>
+            </Group>
+            <Group Name="MpButton_increase">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_increase]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">45</UInt16>
+            </Group>
+            <Group Name="MpButton_increase_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_increase_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">44</UInt16>
+            </Group>
+            <Group Name="MpButton_decrease">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_decrease]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">42</UInt16>
+            </Group>
+            <Group Name="MpButton_decrease_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_decrease_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">43</UInt16>
+            </Group>
+            <Group Name="MpLabelBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">35</UInt16>
+            </Group>
+            <Group Name="MpGroupControl">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpGroupControl]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">36</UInt16>
+            </Group>
+            <Group Name="MpLabelBorderDown">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorderDown]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">46</UInt16>
+            </Group>
+            <Group Name="MpInputBorderInactive">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorderInactive]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">37</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_left">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_left]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">47</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_press_left">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_press_left]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">48</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">0</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_bottom">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_bottom]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">49</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_pres_bottom">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_pres_bottom]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">50</UInt16>
+            </Group>
+            <Group Name="MpLabelBorderLeft">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorderLeft]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">51</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">52</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">53</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left_multi_press">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left_multi_press]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">54</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">55</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right_multi_pres">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right_multi_pres]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">56</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1000</UInt16>
+            </Group>
+            <Group Name="MpTeach_Point_selected">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpTeach_Point_selected]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">57</UInt16>
+            </Group>
+            <Group Name="MpTeach_Point_unselected_even">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpTeach_Point_unselected_even]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">58</UInt16>
+            </Group>
+            <Group Name="MpTeach_Point_unselected_odd">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpTeach_Point_unselected_odd]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">59</UInt16>
+            </Group>
+            <Group Name="MpLabelBorderSlim">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorderSlim]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">60</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">61</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">62</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_pres_top">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_pres_top]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">63</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_top">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_top]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">64</UInt16>
+            </Group>
+            <Group Name="MpData_MaxBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_MaxBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">65</UInt16>
+            </Group>
+            <Group Name="MpData_MinBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_MinBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">66</UInt16>
+            </Group>
+            <Group Name="MpData_MeanBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_MeanBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">67</UInt16>
+            </Group>
+            <Group Name="MpData_RangeBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_RangeBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">68</UInt16>
+            </Group>
+            <Group Name="MpData_DevBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_DevBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">69</UInt16>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+    <Folder Name="de" TargetIndex="1">
+      <Folder Name="BitmapGroups">
+        <Folder Name="POBJ">
+          <Object Name="MpBorders" ClsId="0x308" Version="1" TargetIndex="1003" Type="BMPG" RefString="Source[local].BitmapGroup[MpBorders_de]">
+            <UInt32 Name="Count">71</UInt32>
+            <Group Name="MpButton_default">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_default]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1</UInt16>
+            </Group>
+            <Group Name="MpButton_default_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_default_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">2</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">3</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">4</UInt16>
+            </Group>
+            <Group Name="MpCheckbox_small_gray">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpCheckbox_small_gray]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">11</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">14</UInt16>
+            </Group>
+            <Group Name="MpButton_control">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_control]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">7</UInt16>
+            </Group>
+            <Group Name="MpButton_control_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_control_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">8</UInt16>
+            </Group>
+            <Group Name="MpInputBorderCenterless">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorderCenterless]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">9</UInt16>
+            </Group>
+            <Group Name="MpInputBorderInactiveCenterless">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorderInactiveCenterless]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">10</UInt16>
+            </Group>
+            <Group Name="MpButton_radio_unselected">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_radio_unselected]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">6</UInt16>
+            </Group>
+            <Group Name="MpButton_radio_selected">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_radio_selected]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">5</UInt16>
+            </Group>
+            <Group Name="MpCheckbox_small_checked">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpCheckbox_small_checked]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">13</UInt16>
+            </Group>
+            <Group Name="MpCheckbox_small">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpCheckbox_small]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">12</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">15</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">16</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">17</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">18</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">19</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">20</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">21</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">22</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">23</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_up_multi_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_up_multi_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">24</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">25</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_down_multi_press">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_down_multi_press]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">26</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">27</UInt16>
+            </Group>
+            <Group Name="MpFrameHeader">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpFrameHeader]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">28</UInt16>
+            </Group>
+            <Group Name="MpButton_off">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_off]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">29</UInt16>
+            </Group>
+            <Group Name="MpButton_on">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_on]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">30</UInt16>
+            </Group>
+            <Group Name="MpButton_ready">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_ready]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">31</UInt16>
+            </Group>
+            <Group Name="MpInputBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">33</UInt16>
+            </Group>
+            <Group Name="MpButton_error">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_error]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">32</UInt16>
+            </Group>
+            <Group Name="MpOutputBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpOutputBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">34</UInt16>
+            </Group>
+            <Group Name="MpProgressBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpProgressBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">38</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">39</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">40</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">41</UInt16>
+            </Group>
+            <Group Name="MpButton_increase">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_increase]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">45</UInt16>
+            </Group>
+            <Group Name="MpButton_increase_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_increase_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">44</UInt16>
+            </Group>
+            <Group Name="MpButton_decrease">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_decrease]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">42</UInt16>
+            </Group>
+            <Group Name="MpButton_decrease_pressed">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_decrease_pressed]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">43</UInt16>
+            </Group>
+            <Group Name="MpLabelBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">35</UInt16>
+            </Group>
+            <Group Name="MpGroupControl">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpGroupControl]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">36</UInt16>
+            </Group>
+            <Group Name="MpLabelBorderDown">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorderDown]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">46</UInt16>
+            </Group>
+            <Group Name="MpInputBorderInactive">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpInputBorderInactive]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">37</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_left">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_left]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">47</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_press_left">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_press_left]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">48</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">0</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_bottom">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_bottom]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">49</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_pres_bottom">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_pres_bottom]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">50</UInt16>
+            </Group>
+            <Group Name="MpLabelBorderLeft">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorderLeft]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">51</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">52</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">53</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_left_multi_press">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_left_multi_press]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">54</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right_multi">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right_multi]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">55</UInt16>
+            </Group>
+            <Group Name="MpButton_scroll_right_multi_pres">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_scroll_right_multi_pres]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">56</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">1000</UInt16>
+            </Group>
+            <Group Name="MpTeach_Point_selected">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpTeach_Point_selected]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">57</UInt16>
+            </Group>
+            <Group Name="MpTeach_Point_unselected_even">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpTeach_Point_unselected_even]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">58</UInt16>
+            </Group>
+            <Group Name="MpTeach_Point_unselected_odd">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpTeach_Point_unselected_odd]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">59</UInt16>
+            </Group>
+            <Group Name="MpLabelBorderSlim">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpLabelBorderSlim]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">60</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">61</UInt16>
+            </Group>
+            <Group Name="">
+              <Reference Name="Bitmap" Type="GFX">None</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">62</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_pres_top">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_pres_top]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">63</UInt16>
+            </Group>
+            <Group Name="MpButton_global_area_top">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpButton_global_area_top]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">64</UInt16>
+            </Group>
+            <Group Name="MpData_MaxBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_MaxBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">65</UInt16>
+            </Group>
+            <Group Name="MpData_MinBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_MinBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">66</UInt16>
+            </Group>
+            <Group Name="MpData_MeanBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_MeanBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">67</UInt16>
+            </Group>
+            <Group Name="MpData_RangeBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_RangeBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">68</UInt16>
+            </Group>
+            <Group Name="MpData_DevBorder">
+              <Reference Name="Bitmap" Type="GFX">Source[local].Bitmap[MpData_DevBorder]</Reference>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt16 Name="Value">69</UInt16>
+            </Group>
+          </Object>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

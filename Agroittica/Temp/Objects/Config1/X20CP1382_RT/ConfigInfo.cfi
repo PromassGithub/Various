@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.9.5.36 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1" />
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Program"
+      Disable="false"
+      Source="Axis.Program"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\Config1\X20CP1382_RT\Program\Cyclic.ld.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\Config1\X20CP1382_RT\Program\Init.ld.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\Config1\X20CP1382_RT\Program\Exit.ld.var" />
+      <File
+        Path="C:\projects\Agroittica\Logical\Axis\Program\Types.typ" />
+      <File
+        Path="C:\projects\Agroittica\Logical\Axis\Program\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

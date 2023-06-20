@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpAuditEventTextSetup">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="0"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="132566" Value="[%[TIME=%u%T]] [%ev$[TEXT=0]]"/>
+    <Text ID="132567" Value="User-Action [%act$[TEXT=g1163]] ([%usr])"/>
+    <Text ID="132568" Value="changed DP:[%dpid$[TEXT=g1161]] [%old$[TEXT=%sel]] to [%new$[TEXT=%sel]]"/>
+    <Text ID="132569" Value="changed VCDP:[%dpid$[TEXT=g1161]] [%old$[TEXT=%sel]] to [%new$[TEXT=%sel]]"/>
+    <Text ID="132570" Value="[%typ$[TEXT=4]]"/>
+    <Text ID="206679" Value="Alarm: [%name], old State: [%stold], new State:[%stnew]"/>
+    <Text ID="206680" Value="[%act$[TEXT=g2129]]"/>
+    <Text ID="206681" Value="PackML mode: Old: [%old] New: [%new]"/>
+    <Text ID="206682" Value="PackML state: Old: [%old] New: [%new]"/>
+    <Text ID="206688" Value="Signatur ID [%act]: [%typ$[TEXT=g2130]] ([%typt])"/>
+    <Text ID="206693" Value="Tweet: [%act$[TEXT=g2131]]"/>
+    <Text ID="206696" Value="[%op] - Buffer was reset"/>
+    <Text ID="206697" Value="User [%op] started batch [%id], last batch [%prev] finished"/>
+    <Text ID="206698" Value="OPC-UA: [%op] - Value [%dpid] changed from [%old] to [%new]"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="132566" Value="[%[TIME=%u%T]] [%ev$[TEXT=0]]"/>
+    <Text ID="132567" Value="Anwender Aktion [%act$[TEXT=g1163]] ([%usr])"/>
+    <Text ID="132568" Value="Geänderter DP:[%dpid$[TEXT=g1161]] [%old$[TEXT=%sel]] to [%new$[TEXT=%sel]]"/>
+    <Text ID="132569" Value="Geänderter VCDP:[%dpid$[TEXT=g1161]] [%old$[TEXT=%sel]] to [%new$[TEXT=%sel]]"/>
+    <Text ID="132570" Value="[%typ$[TEXT=4]]"/>
+    <Text ID="206679" Value="Alarm: [%name], alter Zustand: [%stold], neuer Zustand:[%stnew]"/>
+    <Text ID="206680" Value="[%act$[TEXT=g2129]]"/>
+    <Text ID="206681" Value="PackML Modus: Alt: [%old] Neu: [%new]"/>
+    <Text ID="206682" Value="PackML Zustand: Alt: [%old] Neu: [%new]"/>
+    <Text ID="206688" Value="Signatur ID [%act]: [%typ$[TEXT=g2130]] ([%typt])"/>
+    <Text ID="206693" Value="Tweet: [%act$[TEXT=g2131]]"/>
+    <Text ID="206696" Value="[%op] - Buffer wurde zurückgesetzt"/>
+    <Text ID="206697" Value="Benutzer [%op] startet Batch [%id], vorheriger Batch [%prev] beendet"/>
+    <Text ID="206698" Value="OPC-UA: [%op] - Wert [%dpid] änderte sich von [%old] zu [%new]"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="132566" Value="0"/>
+    <Index ID="132567" Value="2"/>
+    <Index ID="132568" Value="16"/>
+    <Index ID="132569" Value="17"/>
+    <Index ID="132570" Value="18"/>
+    <Index ID="206679" Value="33"/>
+    <Index ID="206680" Value="48"/>
+    <Index ID="206681" Value="64"/>
+    <Index ID="206682" Value="65"/>
+    <Index ID="206688" Value="3"/>
+    <Index ID="206693" Value="80"/>
+    <Index ID="206696" Value="2457"/>
+    <Index ID="206697" Value="20"/>
+    <Index ID="206698" Value="19"/>
+  </IndexMap>
+</TextGroup>

@@ -1,3 +1,15 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=0 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=11 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
+                                  glb_io                                  glb_typ    0 "                                                               *"    0   24    1    0    0    1         
+                                     out                                  out_typ    0 "                                                               *"    1   24    1    0    0    1         
+                                chiusura                                     BOOL    3 "                                                           FALSE"    2    1    1    2    0    0         
+                                apertura                                     BOOL    3 "                                                           FALSE"    2    1    1    2    0    0         
+                          alta_pressione                                     BOOL    3 "                                                           FALSE"    2    1    1    2    0    0         
+                             cut_pessure                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              Scarico_ap                                     BOOL    3 "                                                           FALSE"    2    1    1    2    0    0         
+                              Scarico_ch                                     BOOL    3 "                                                           FALSE"    2    1    1    2    0    0         
+                           alta_velocita                                     BOOL    3 "                                                           FALSE"    2    1    1    2    0    0         
+                                      Ai                                   Ai_typ    0 "                                                               *"    1   24    1    0    0    1         
+                       oil_pressure_conv                                      INT    0 "                                                               0"    2    3    1   10    0    0         
+                            oil_pressure                                      INT    1 "                                                               0"    2    3    1   10    0    0         

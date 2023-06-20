@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="06/14/2023 09:53:45" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20CP1301" Type="X20CP1301" X="100" Y="100" />
+    <Module Name="X3" Type="X3" X="251" Y="103" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
+    <Module Name="X2" Type="X2" X="238" Y="103" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
+    <Module Name="X1" Type="X1" X="225" Y="103" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="ModbusTcp_any" Type="ModbusTcp_any" X="264" Y="252" />
+    <Module Name="ModbusTcp_any1" Type="ModbusTcp_any" X="404" Y="252" />
+  </Modules>
+  <Links>
+    <Link From="X20CP1301" To="ModbusTcp_any" FromPort="IF2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="134" Y="188" />
+      <Point X="134" Y="188" />
+      <Point X="134" Y="203" />
+      <Point X="134" Y="315" />
+      <Point X="298" Y="315" />
+      <Point X="298" Y="303" />
+      <Point X="298" Y="296" />
+      <Point X="298" Y="296" />
+    </Link>
+    <Link From="ModbusTcp_any" To="ModbusTcp_any1" FromPort="ETH2" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="323" Y="296" />
+      <Point X="323" Y="296" />
+      <Point X="323" Y="303" />
+      <Point X="323" Y="315" />
+      <Point X="438" Y="315" />
+      <Point X="438" Y="303" />
+      <Point X="438" Y="296" />
+      <Point X="438" Y="296" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

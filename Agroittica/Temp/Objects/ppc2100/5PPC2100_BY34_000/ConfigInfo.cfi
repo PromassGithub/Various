@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.9.5.36 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1" />
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="io_drive"
+      Disable="false"
+      Source="IO.io_drive"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\io_drive\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\io_drive\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\io_drive\Exit.st.var" />
+      <File
+        Path="C:\projects\Agroittica\Logical\IO\io_drive\Types.typ" />
+      <File
+        Path="C:\projects\Agroittica\Logical\IO\io_drive\Variables.var" />
+    </Task>
+    <Task
+      Name="TCP_IP"
+      Disable="false"
+      Source="Tcp_ip.TCP_IP"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\TCP_IP\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\TCP_IP\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\TCP_IP\Exit.st.var" />
+      <File
+        Path="C:\projects\Agroittica\Logical\Tcp_ip\TCP_IP\Types.typ" />
+      <File
+        Path="C:\projects\Agroittica\Logical\Tcp_ip\TCP_IP\Variables.var" />
+    </Task>
+    <Task
+      Name="Main"
+      Disable="false"
+      Source="main.Main"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Main\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Main\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Main\Exit.st.var" />
+      <File
+        Path="C:\projects\Agroittica\Logical\main\Main\Types.typ" />
+      <File
+        Path="C:\projects\Agroittica\Logical\main\Main\Variables.var" />
+    </Task>
+    <Task
+      Name="Recipe"
+      Disable="false"
+      Source="MpPkg.Recipe"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Recipe\Cyclic.ld.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Recipe\Init.ld.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Recipe\Exit.ld.var" />
+      <File
+        Path="C:\projects\Agroittica\Logical\MpPkg\Recipe\Types.typ" />
+      <File
+        Path="C:\projects\Agroittica\Logical\MpPkg\Recipe\Variables.var" />
+    </Task>
+    <Task
+      Name="Alarm_0"
+      Disable="false"
+      Source="MpPkg.Alarm_0"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Alarm_0\Cyclic.ld.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Alarm_0\Init.ld.var" />
+      <InternalFile
+        Path="C:\projects\Agroittica\Temp\Objects\ppc2100\5PPC2100_BY34_000\Alarm_0\Exit.ld.var" />
+      <File
+        Path="C:\projects\Agroittica\Logical\MpPkg\Alarm_0\Types.typ" />
+      <File
+        Path="C:\projects\Agroittica\Logical\MpPkg\Alarm_0\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="DPV">
+    <Folder Name="Drivers">
+      <Folder Name="POBJ">
+        <Object Name="DataSource" ClsId="0x200" Version="1" Type="DS" RefString="Source[global].DataSource[DataSource]">
+          <Reference Name="DriverID" Type="DS">Source[global].DataSource[DataSource]</Reference>
+          <Reference Name="TextGroup" Type="TG">None</Reference>
+          <UInt32 Name="PVCount">34</UInt32>
+          <UInt32 Name="ImageSize">28195</UInt32>
+          <Table Name="Variables" Cols="5">
+            <TableHeader>
+              <Column Name="PVID" />
+              <Column Name="PVType" />
+              <Column Name="PVOffset" />
+              <Column Name="PVDim" />
+              <Column Name="PVName" />
+            </TableHeader>
+            <Group Name="Alarm:MpAlarmXHistoryUIConnect.AlarmList.Message">
+              <UInt16 Name="ID">0</UInt16>
+              <UInt16 Name="PVType">9</UInt16>
+              <UInt32 Name="PVOffset">0</UInt32>
+              <UInt32 Name="PVDim">50</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">0</Int32>
+            </Group>
+            <Group Name="Alarm:MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex">
+              <UInt16 Name="ID">1</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">25600</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">49</Int32>
+            </Group>
+            <Group Name="Alarm:MpAlarmXHistoryUIConnect.AlarmList.MaxSelection">
+              <UInt16 Name="ID">2</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">25602</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">104</Int32>
+            </Group>
+            <Group Name="Alarm:MpAlarmXHistoryUIConnect.AlarmList.Timestamp">
+              <UInt16 Name="ID">3</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">25604</UInt32>
+              <UInt32 Name="PVDim">50</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">158</Int32>
+            </Group>
+            <Group Name="hmi.configurazione.martinetti_epp">
+              <UInt16 Name="ID">4</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28154</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">209</Int32>
+            </Group>
+            <Group Name="hmi.configurazione.cambiostampo_aut">
+              <UInt16 Name="ID">5</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28155</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">243</Int32>
+            </Group>
+            <Group Name="hmi.cmd.lame_fisse_close">
+              <UInt16 Name="ID">6</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28156</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">279</Int32>
+            </Group>
+            <Group Name="hmi.cmd.lame_fisse_open">
+              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28157</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">304</Int32>
+            </Group>
+            <Group Name="hmi.cmd.lame_mobili_close">
+              <UInt16 Name="ID">8</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28158</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">328</Int32>
+            </Group>
+            <Group Name="hmi.cmd.lame_mobili_open">
+              <UInt16 Name="ID">9</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28159</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">354</Int32>
+            </Group>
+            <Group Name="hmi.cmd.martinetti_close">
+              <UInt16 Name="ID">10</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28160</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">379</Int32>
+            </Group>
+            <Group Name="hmi.cmd.martinetti_open">
+              <UInt16 Name="ID">11</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28161</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">404</Int32>
+            </Group>
+            <Group Name="hmi.cmd.pedana_dw">
+              <UInt16 Name="ID">12</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28162</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">428</Int32>
+            </Group>
+            <Group Name="hmi.cmd.pedana_up">
+              <UInt16 Name="ID">13</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28163</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">446</Int32>
+            </Group>
+            <Group Name="hmi.cmd.chiusura">
+              <UInt16 Name="ID">14</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28164</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">464</Int32>
+            </Group>
+            <Group Name="hmi.cmd.apertura">
+              <UInt16 Name="ID">15</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28165</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">481</Int32>
+            </Group>
+            <Group Name="hmi.cmd.hmi_oil_control_hide">
+              <UInt16 Name="ID">16</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28166</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">498</Int32>
+            </Group>
+            <Group Name="hmi.cmd.hmi_oil_control_en">
+              <UInt16 Name="ID">17</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28167</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">527</Int32>
+            </Group>
+            <Group Name="hmi.cmd.scarico_ch">
+              <UInt16 Name="ID">18</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28168</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">554</Int32>
+            </Group>
+            <Group Name="hmi.cmd.scarico_ap">
+              <UInt16 Name="ID">19</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28169</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">573</Int32>
+            </Group>
+            <Group Name="hmi.cmd.alta_velocita">
+              <UInt16 Name="ID">20</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28170</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">592</Int32>
+            </Group>
+            <Group Name="hmi.inp.MAX_OIL_PRESSURE">
+              <UInt16 Name="ID">21</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28171</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">614</Int32>
+            </Group>
+            <Group Name="hmi.inp.MAX_OIL_MOV_BLADE_C">
+              <UInt16 Name="ID">22</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28173</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">639</Int32>
+            </Group>
+            <Group Name="hmi.inp.MAX_OIL_FIX_BLADE_C">
+              <UInt16 Name="ID">23</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28175</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">667</Int32>
+            </Group>
+            <Group Name="hmi.inp.MAX_OIL_JACK_C">
+              <UInt16 Name="ID">24</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28177</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">695</Int32>
+            </Group>
+            <Group Name="hmi.inp.MAX_OIL_PEDANA_UP">
+              <UInt16 Name="ID">25</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28179</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">718</Int32>
+            </Group>
+            <Group Name="hmi.inp.MAX_OIL_PEDANA_DW">
+              <UInt16 Name="ID">26</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28181</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">744</Int32>
+            </Group>
+            <Group Name="glb_io.Ai.oil_pressure_conv">
+              <UInt16 Name="ID">27</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28183</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">770</Int32>
+            </Group>
+            <Group Name="glb_io.Ai.p_chiusura_conv">
+              <UInt16 Name="ID">28</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28185</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">798</Int32>
+            </Group>
+            <Group Name="glb_io.Ai.p_apertura_conv">
+              <UInt16 Name="ID">29</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28187</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">824</Int32>
+            </Group>
+            <Group Name="oil_pressure_conv">
+              <UInt16 Name="ID">30</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28189</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">850</Int32>
+            </Group>
+            <Group Name="MAX_OIL_PRESSURE">
+              <UInt16 Name="ID">31</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">28191</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">868</Int32>
+            </Group>
+            <Group Name="hmi_oil_control_hide">
+              <UInt16 Name="ID">32</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28193</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">885</Int32>
+            </Group>
+            <Group Name="REPORT">
+              <UInt16 Name="ID">33</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">28194</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">906</Int32>
+            </Group>
+          </Table>
+          <Binary Name="Name" Encoding="Base64">QWxhcm06TXBBbGFybVhIaXN0b3J5VUlDb25uZWN0LkFsYXJtTGlzdC5NZXNzYWdlAEFsYXJtOk1wQWxhcm1YSGlzdG9yeVVJQ29ubmVjdC5BbGFybUxpc3QuU2VsZWN0ZWRJbmRleABBbGFybTpNcEFsYXJtWEhpc3RvcnlVSUNvbm5lY3QuQWxhcm1MaXN0Lk1heFNlbGVjdGlvbgBBbGFybTpNcEFsYXJtWEhpc3RvcnlVSUNvbm5lY3QuQWxhcm1MaXN0LlRpbWVzdGFtcABobWkuY29uZmlndXJhemlvbmUubWFydGluZXR0aV9lcHAAaG1pLmNvbmZpZ3VyYXppb25lLmNhbWJpb3N0YW1wb19hdXQAaG1pLmNtZC5sYW1lX2Zpc3NlX2Nsb3NlAGhtaS5jbWQubGFtZV9maXNzZV9vcGVuAGhtaS5jbWQubGFtZV9tb2JpbGlfY2xvc2UAaG1pLmNtZC5sYW1lX21vYmlsaV9vcGVuAGhtaS5jbWQubWFydGluZXR0aV9jbG9zZQBobWkuY21kLm1hcnRpbmV0dGlfb3BlbgBobWkuY21kLnBlZGFuYV9kdwBobWkuY21kLnBlZGFuYV91cABobWkuY21kLmNoaXVzdXJhAGhtaS5jbWQuYXBlcnR1cmEAaG1pLmNtZC5obWlfb2lsX2NvbnRyb2xfaGlkZQBobWkuY21kLmhtaV9vaWxfY29udHJvbF9lbgBobWkuY21kLnNjYXJpY29fY2gAaG1pLmNtZC5zY2FyaWNvX2FwAGhtaS5jbWQuYWx0YV92ZWxvY2l0YQBobWkuaW5wLk1BWF9PSUxfUFJFU1NVUkUAaG1pLmlucC5NQVhfT0lMX01PVl9CTEFERV9DAGhtaS5pbnAuTUFYX09JTF9GSVhfQkxBREVfQwBobWkuaW5wLk1BWF9PSUxfSkFDS19DAGhtaS5pbnAuTUFYX09JTF9QRURBTkFfVVAAaG1pLmlucC5NQVhfT0lMX1BFREFOQV9EVwBnbGJfaW8uQWkub2lsX3ByZXNzdXJlX2NvbnYAZ2xiX2lvLkFpLnBfY2hpdXN1cmFfY29udgBnbGJfaW8uQWkucF9hcGVydHVyYV9jb252AG9pbF9wcmVzc3VyZV9jb252AE1BWF9PSUxfUFJFU1NVUkUAaG1pX29pbF9jb250cm9sX2hpZGUAUkVQT1JUAA==</Binary>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

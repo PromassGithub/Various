@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.5.36 SP"?>
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="tmpl20_MartinettiPage">
+  <Property Name="Description" Value="Template trend page - visualisation of temperature" />
+  <Property Name="Height" Value="240" />
+  <Property Name="Index" Value="20" />
+  <Property Name="MoveFocus" Value="Circular" />
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+  <Property Name="Width" Value="320" />
+  <Layers>
+    <LayerRef Source="Source[local].Layer[Background]">
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="Background" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="0" />
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[globalArea]">
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="globalArea" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="1" />
+    </LayerRef>
+    <Layer Name="Default">
+      <Property Name="BackColor" Value="9" />
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Normal" />
+      <Property Name="Height" Value="240" />
+      <Property Name="Left" Value="0" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="StatusDatapoint" Value="None" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Width" Value="320" />
+      <Property Name="Z-Order" Value="2" />
+      <TextGroup>
+        <TextLayer LanguageId="en">
+          <Text ID="96447" Value="MARTINETTI\nCHIUSURA" />
+          <Text ID="96448" Value="MARTINETTI\nAPERTURA" />
+          <Text ID="96449" Value="COLLEGARE I CONNETTORI DELLE VALVOLE E DEI TRASDUTTORI NELLE POSIZIONI CORRETTE\n\nAPERTURA E CHIUSURA MARTINETTI" />
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="96447" Value="MARTINETTI\nCHIUSURA" />
+          <Text ID="96448" Value="MARTINETTI\nAPERTURA" />
+          <Text ID="96449" Value="COLLEGARE I CONNETTORI DELLE VALVOLE E DEI TRASDUTTORI NELLE POSIZIONI CORRETTE\n\nAPERTURA E CHIUSURA MARTINETTI" />
+        </TextLayer>
+        <IndexMap>
+          <Index ID="96447" Value="6" />
+          <Index ID="96448" Value="7" />
+          <Index ID="96449" Value="8" />
+        </IndexMap>
+      </TextGroup>
+      <Controls>
+        <Control ClassId="0x00001002" Name="Button_4">
+          <Property Name="BitmapIndexDatapoint" Value="None" />
+          <Property Name="BitmapSource" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27]" />
+          <Property Name="Height" Value="56" />
+          <Property Name="KeyMatrixOffset" Value="None" />
+          <Property Name="Left" Value="33" />
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]" />
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]" />
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.hmi.configurazione.martinetti_epp]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextIndexDatapoint" Value="None" />
+          <Property Name="TextSimulationValue" Value="0" />
+          <Property Name="TextSource" Value="None" />
+          <Property Name="Top" Value="265" />
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27]" />
+          <Property Name="Width" Value="61" />
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_9">
+          <Property Name="BitmapIndexDatapoint" Value="None" />
+          <Property Name="BitmapSource" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]" />
+          <Property Name="Height" Value="56" />
+          <Property Name="KeyMatrixOffset" Value="None" />
+          <Property Name="Left" Value="399" />
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]" />
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]" />
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.hmi.configurazione.martinetti_epp]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextIndexDatapoint" Value="None" />
+          <Property Name="TextSimulationValue" Value="0" />
+          <Property Name="TextSource" Value="None" />
+          <Property Name="Top" Value="265" />
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]" />
+          <Property Name="Width" Value="61" />
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="AlignmentVertical" Value="Center" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="42" />
+          <Property Name="Left" Value="146" />
+          <Property Name="Multiline" Value="Automatic" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="" />
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.hmi.configurazione.martinetti_epp]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup" />
+          <Property Name="TextIndexOffset" Value="6" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="271" />
+          <Property Name="Width" Value="100" />
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_9">
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="AlignmentVertical" Value="Center" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="42" />
+          <Property Name="Left" Value="243" />
+          <Property Name="Multiline" Value="Automatic" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="" />
+          <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.hmi.configurazione.martinetti_epp]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup" />
+          <Property Name="TextIndexOffset" Value="7" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="271" />
+          <Property Name="Width" Value="100" />
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_2">
+          <Property Name="Border" Value="Source[local].Border[SliderBorder09]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="ForeColor" Value="0" />
+          <Property Name="Height" Value="35" />
+          <Property Name="Left" Value="96" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="-1" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="275" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_io.Ai.p_chiusura_conv]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="65" />
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_5">
+          <Property Name="Border" Value="Source[local].Border[SliderBorder09]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="ForeColor" Value="0" />
+          <Property Name="Height" Value="35" />
+          <Property Name="Left" Value="331" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="-1" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="275" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_io.Ai.p_apertura_conv]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="65" />
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_1">
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Font" Value="Source[local].Font[Input]" />
+          <Property Name="Height" Value="150" />
+          <Property Name="Left" Value="65" />
+          <Property Name="Multiline" Value="Automatic" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup" />
+          <Property Name="TextIndexOffset" Value="8" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="79" />
+          <Property Name="Width" Value="362" />
+        </Control>
+      </Controls>
+      <KeyMapping>
+        <VirtualKey Name="%embVirtualKey_27">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016B">
+              <Property Name="CompletionDatapoint" Value="None" />
+              <Property Name="CompletionValue" Value="0" />
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="ResetValue" Value="0" />
+              <Property Name="SetValue" Value="1" />
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.hmi.cmd.martinetti_close]" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_28">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016B">
+              <Property Name="CompletionDatapoint" Value="None" />
+              <Property Name="CompletionValue" Value="0" />
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="ResetValue" Value="0" />
+              <Property Name="SetValue" Value="1" />
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.hmi.cmd.martinetti_open]" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+      </KeyMapping>
+    </Layer>
+  </Layers>
+  <MovementOrder />
+  <TabSequence>
+    <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Numeric_2]" />
+    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_5]" />
+    <TabSeqItem Index="2" Value="Source[local].Layer[globalArea].Control[Numeric_1]" />
+  </TabSequence>
+</Page>

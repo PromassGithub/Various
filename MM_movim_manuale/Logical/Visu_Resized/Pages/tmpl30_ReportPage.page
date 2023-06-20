@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.9.5.36 SP"?>
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="tmpl30_ReportPage">
+  <Property Name="Description" Value="Template alarm page - current alarms" />
+  <Property Name="Height" Value="240" />
+  <Property Name="Index" Value="30" />
+  <Property Name="MoveFocus" Value="Circular" />
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+  <Property Name="Width" Value="320" />
+  <Layers>
+    <LayerRef Source="Source[local].Layer[Background]">
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="Background" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="0" />
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[globalArea]">
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Frozen" />
+      <Property Name="Left" Value="0" />
+      <Property Name="Name" Value="globalArea" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Z-Order" Value="1" />
+    </LayerRef>
+    <Layer Name="Default">
+      <Property Name="BackColor" Value="9" />
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Normal" />
+      <Property Name="Height" Value="240" />
+      <Property Name="Left" Value="0" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="StatusDatapoint" Value="None" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Width" Value="320" />
+      <Property Name="Z-Order" Value="2" />
+      <TextGroup>
+        <TextLayer LanguageId="en" />
+        <TextLayer LanguageId="de" />
+        <IndexMap />
+      </TextGroup>
+      <Controls>
+        <Control ClassId="0x00001008" Name="Listbox_1">
+          <Property Name="ButtonsBitmapGroup" Value="None" />
+          <Property Name="ButtonsPressedBitmapGroup" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="150" />
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Alarm.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]" />
+          <Property Name="Left" Value="23" />
+          <Property Name="LeftBitmap" Value="None" />
+          <Property Name="LeftTextGroup" Value="None" />
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.Alarm.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]" />
+          <Property Name="MaxIndex" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinIndex" Value="None" />
+          <Property Name="OptionDatapoint" Value="None" />
+          <Property Name="RightBitmap" Value="None" />
+          <Property Name="RightTextGroup" Value="None" />
+          <Property Name="SimulationValue" Value="" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Alarm.MpAlarmXHistoryUIConnect.AlarmList.Message]" />
+          <Property Name="TextIndexOffset" Value="0" />
+          <Property Name="TextSource" Value="MultipleStrings" />
+          <Property Name="Top" Value="203" />
+          <Property Name="Width" Value="302" />
+        </Control>
+        <Control ClassId="0x00001011" Name="Trend_1">
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="170" />
+          <Property Name="Left" Value="73" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="Top" Value="405" />
+          <Property Name="TrendConfig" Value="Source[local].Trend[Trend_1]" />
+          <Property Name="Width" Value="345" />
+        </Control>
+        <Control ClassId="0x00001008" Name="Listbox_2">
+          <Property Name="ButtonsBitmapGroup" Value="None" />
+          <Property Name="ButtonsPressedBitmapGroup" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="150" />
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.Alarm.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]" />
+          <Property Name="Left" Value="329" />
+          <Property Name="LeftBitmap" Value="None" />
+          <Property Name="LeftTextGroup" Value="None" />
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.Alarm.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]" />
+          <Property Name="MaxIndex" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinIndex" Value="None" />
+          <Property Name="OptionDatapoint" Value="None" />
+          <Property Name="RightBitmap" Value="None" />
+          <Property Name="RightTextGroup" Value="None" />
+          <Property Name="SimulationValue" Value="" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Default]" />
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Alarm.MpAlarmXHistoryUIConnect.AlarmList.Timestamp]" />
+          <Property Name="TextIndexOffset" Value="0" />
+          <Property Name="TextSource" Value="MultipleStrings" />
+          <Property Name="Top" Value="203" />
+          <Property Name="Width" Value="131" />
+        </Control>
+      </Controls>
+      <KeyMapping>
+        <VirtualKey Name="AlarmUp">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016E">
+              <Property Name="Control" Value="None" />
+              <Property Name="Description" Value="" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="AlarmPgUp">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016E">
+              <Property Name="Control" Value="None" />
+              <Property Name="Description" Value="" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="AlarmPgDown">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016E">
+              <Property Name="Control" Value="None" />
+              <Property Name="Description" Value="" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="AlarmDown">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016E">
+              <Property Name="Control" Value="None" />
+              <Property Name="Description" Value="" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="AlarmAcknowledge">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x0000016E">
+              <Property Name="Control" Value="None" />
+              <Property Name="Description" Value="" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="pageAlarmHistory">
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="Page" Value="Source[local].Page[tmpl31_CStampoPage]" />
+              <Property Name="Target" Value="Page" />
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+      </KeyMapping>
+    </Layer>
+  </Layers>
+  <MovementOrder />
+  <TabSequence>
+    <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Listbox_1]" />
+    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Trend_1]" />
+    <TabSeqItem Index="2" Value="Source[local].Layer[globalArea].Control[Numeric_1]" />
+    <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Listbox_2]" />
+  </TabSequence>
+</Page>

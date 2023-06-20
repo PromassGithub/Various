@@ -23,6 +23,7 @@ TYPE
         mpASSETINT_ERR_MISSING_UICONNECT := -1064136700, (* Missing value on UIConnect [Error: 36868, 0xc0929004] *)
         mpASSETINT_INF_WAIT_CORE_FB := 1083346949, (* Core is not active [Informational: 36869, 0x40929005] *)
         mpASSETINT_ERR_EVENT_RECORDER := -1064136698, (* Event not recorded (ErrorCause: {1:ErrorNumber}) [Error: 36870, 0xc0929006] *)
-        mpASSETINT_ERR_INVALID_SHIFT := -1064136697 (* Invalid shift {2:ShiftName} in configuration: {3:Cause} [Error: 36871, 0xc0929007] *)
+        mpASSETINT_ERR_INVALID_SHIFT := -1064136697, (* Invalid shift {2:ShiftName} in configuration: {3:Cause} [Error: 36871, 0xc0929007] *)
+        mpASSETINT_ERR_BUFFER_RESET := -1064136696 (* Could not reset buffer {2:BufferName} (ErrorCause: {1:ErrorNumber}) [Error: 36872, 0xc0929008] *)
         );
 END_TYPE

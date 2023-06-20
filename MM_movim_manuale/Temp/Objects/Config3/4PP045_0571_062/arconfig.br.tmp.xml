@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="4PP045.0571-062">
+    <Parameter ID="HardwareModuleName" Value="4PP045_0571_062" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+  </Module>
+  <Module ID="$root.IO" Hardware="4PP045.0571-062">
+    <Parameter ID="ActivateOpc" Value="0" />
+    <Parameter ID="OpcServerName" Value="BR.OPC.Server_AR" />
+  </Module>
+  <Module ID="IF2.X2X" Hardware="X2X">
+    <Parameter ID="CycleTime" Value="4000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="BusLength" Value="1000" Type="UDINT" />
+    <Parameter ID="Stations" Value="64" Type="UDINT" />
+    <Parameter ID="AsyncPayload" Value="80" Type="UDINT" />
+    <Parameter ID="Asymmetric" Value="off" />
+  </Module>
+</IOCFG>

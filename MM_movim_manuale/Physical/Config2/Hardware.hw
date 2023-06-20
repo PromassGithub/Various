@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20CP1301" Type="X20CP1301" Version="1.7.0.0">
+    <Module Name="X1a" Type="X1" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2a" Type="X2" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3a" Type="X3" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F3" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1a" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2a" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3a" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.2" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="MM_movim_manuale_Config2" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="HD" />
+    <Parameter ID="FileDevicePath1" Value="D:\" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="bazzica" />
+    <Parameter ID="FtpUserPassword1" Value="/B9grH588wYOgtNVh00RupCzqu4Dz7caaG4eTwiTtv8=" />
+    <Parameter ID="FtpUserSalt1" Value="WCs4G3jD" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPMSPartition1" Value="DATA" />
+  </Module>
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F3" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>

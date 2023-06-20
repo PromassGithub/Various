@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.9.5.36 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1" />
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3">
+    <Task
+      Name="Program"
+      Disable="false"
+      Source="Program"
+      Language="ANSIC">
+      <File
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Logical\Program\Types.typ" />
+      <File
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Logical\Program\Variables.var" />
+    </Task>
+    <Task
+      Name="clock"
+      Disable="false"
+      Source="clock"
+      Language="IEC">
+      <InternalFile
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Temp\Objects\Config3\4PP045_0571_062\clock\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Temp\Objects\Config3\4PP045_0571_062\clock\Init.st.var" />
+      <InternalFile
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Temp\Objects\Config3\4PP045_0571_062\clock\Exit.st.var" />
+      <File
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Logical\clock\Types.typ" />
+      <File
+        Path="C:\project\GITH_HUB\Various\MM_movim_manuale\Logical\clock\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#4" />
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>
