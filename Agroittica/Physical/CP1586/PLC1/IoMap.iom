@@ -1,0 +1,20 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: leesa
+ * Created: March 27, 2009
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.ModuleOK AT %IX."80SD100XD.C044-01".ModuleOk;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.AbsPos AT %QD."80SD100XD.C044-01".AbsPos01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.MpGenControl AT %QW."80SD100XD.C044-01".MpGenControl01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.MpGenMode AT %QB."80SD100XD.C044-01".MpGenMode01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.AbsPosActVal AT %ID."80SD100XD.C044-01".AbsPos01ActVal;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.InputStatus AT %IB."80SD100XD.C044-01".InputStatus;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.ModuleID AT %IW."80SD100XD.C044-01".ModuleID;
+	::xsm_demo:XSM_Ctrl_0.Enable AT %QX."X3".DigitalOutput07;
+END_VAR

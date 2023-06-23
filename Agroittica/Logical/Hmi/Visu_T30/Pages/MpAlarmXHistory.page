@@ -114,10 +114,10 @@
           <Property Name="MinorPitchLines" Value="1"/>
           <Property Name="Orientation" Value="Left"/>
           <Property Name="RangeColor" Value="253"/>
-          <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.RangeEnd]"/>
+          <Property Name="RangeEndDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.RangeEnd]"/>
           <Property Name="RangeEndValue" Value="90"/>
           <Property Name="RangeSpacing" Value="0"/>
-          <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.RangeStart]"/>
+          <Property Name="RangeStartDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.RangeStart]"/>
           <Property Name="RangeStartValue" Value="30"/>
           <Property Name="RangeWidth" Value="32"/>
           <Property Name="Spacing" Value="0"/>
@@ -187,7 +187,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="ForeColor" Value="254"/>
           <Property Name="Height" Value="26"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.Status]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.Status]"/>
           <Property Name="Left" Value="490"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -224,12 +224,12 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="205"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
           <Property Name="Input" Value="False"/>
           <Property Name="Left" Value="120"/>
           <Property Name="LeftBitmap" Value="None"/>
           <Property Name="LeftTextGroup" Value="None"/>
-          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
           <Property Name="MaxIndex" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinIndex" Value="0"/>
@@ -241,7 +241,7 @@
           <Property Name="SliderForeColor" Value="240"/>
           <Property Name="SpacingVertical" Value="7"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.Name]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.Name]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleStrings"/>
           <Property Name="Top" Value="123"/>
@@ -257,12 +257,12 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="205"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
           <Property Name="Input" Value="False"/>
           <Property Name="Left" Value="259"/>
           <Property Name="LeftBitmap" Value="None"/>
           <Property Name="LeftTextGroup" Value="None"/>
-          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
           <Property Name="MaxIndex" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinIndex" Value="0"/>
@@ -274,7 +274,7 @@
           <Property Name="SliderForeColor" Value="240"/>
           <Property Name="SpacingVertical" Value="7"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.Message]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.Message]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleStrings"/>
           <Property Name="Top" Value="123"/>
@@ -291,12 +291,12 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="205"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
           <Property Name="Input" Value="False"/>
           <Property Name="Left" Value="448"/>
           <Property Name="LeftBitmap" Value="None"/>
           <Property Name="LeftTextGroup" Value="None"/>
-          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
           <Property Name="MaxIndex" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinIndex" Value="0"/>
@@ -324,12 +324,12 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="205"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
           <Property Name="Input" Value="False"/>
           <Property Name="Left" Value="508"/>
           <Property Name="LeftBitmap" Value="None"/>
           <Property Name="LeftTextGroup" Value="None"/>
-          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
           <Property Name="MaxIndex" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinIndex" Value="0"/>
@@ -357,7 +357,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="38"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[0]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[0]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="3"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -375,7 +375,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="38"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[0]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[0]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="4"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -393,7 +393,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="39"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[1]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[1]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="2"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -411,7 +411,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="39"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[1]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[1]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -429,7 +429,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="79"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[2]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[2]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -447,7 +447,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="79"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[2]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[2]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -465,7 +465,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="78"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[3]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[3]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -483,7 +483,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="78"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[3]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[3]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -501,7 +501,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="77"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[4]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[4]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -519,7 +519,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="77"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[4]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[4]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -537,7 +537,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="76"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[5]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[5]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -555,7 +555,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="76"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[5]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[5]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -573,7 +573,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="75"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[6]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[6]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -591,7 +591,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="75"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[6]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[6]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -609,7 +609,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="74"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[7]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[7]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -627,7 +627,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="74"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[7]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[7]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -645,7 +645,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="73"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[8]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[8]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -663,7 +663,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="73"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[8]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[8]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -681,7 +681,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="72"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.OldState[9]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.OldState[9]]"/>
           <Property Name="Left" Value="513"/>
           <Property Name="SimulationValue" Value="2"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -699,7 +699,7 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="GroupID" Value="72"/>
           <Property Name="Height" Value="18"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.NewState[9]]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.NewState[9]]"/>
           <Property Name="Left" Value="545"/>
           <Property Name="SimulationValue" Value="1"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
@@ -806,12 +806,12 @@
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Height" Value="205"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.SelectedIndex]"/>
           <Property Name="Input" Value="False"/>
           <Property Name="Left" Value="1"/>
           <Property Name="LeftBitmap" Value="None"/>
           <Property Name="LeftTextGroup" Value="None"/>
-          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
+          <Property Name="MaxDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.MaxSelection]"/>
           <Property Name="MaxIndex" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinIndex" Value="0"/>
@@ -823,7 +823,7 @@
           <Property Name="SliderForeColor" Value="240"/>
           <Property Name="SpacingVertical" Value="7"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.Timestamp]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.Timestamp]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleStrings"/>
           <Property Name="Top" Value="123"/>
@@ -971,7 +971,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.PageUp]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.PageUp]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -986,7 +986,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.PageDown]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.PageDown]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1001,7 +1001,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.StepUp]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.StepUp]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -1016,7 +1016,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpAlarmXHistoryUIConnect.AlarmList.StepDown]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Alarm_0.MpAlarmXHistoryUIConnect.AlarmList.StepDown]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

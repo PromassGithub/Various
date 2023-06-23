@@ -12,7 +12,7 @@
   <Property Name="DefaultKeyLevelNumeric" Value="0"/>
   <Property Name="DefaultKeyLevelString" Value="0"/>
   <Property Name="DefaultLanguage" Value="en"/>
-  <Property Name="DefaultPage" Value="Source[local].Page[MpRecipeUI]"/>
+  <Property Name="DefaultPage" Value="Source[local].Page[mapp1StartPage]"/>
   <Property Name="DefaultStyleSheet" Value="Source[local].StyleSheet[mapp]"/>
   <Property Name="FocusControlDatapoint" Value="None"/>
   <Property Name="FontAntialiasing" Value="Off"/>
@@ -371,18 +371,17 @@
     <Source File="BitmapGroups\MpDataLimitViolation.bmgrp"/>
     <Source File="BitmapGroups\MpBorders.bmgrp"/>
     <Source File="BitmapGroups\MpTweetLock.bmgrp"/>
-    <Source File="Pages\MpUserManagerUI_Users.page"/>
-    <Source File="Pages\MpUserManagerUI_Groups.page"/>
-    <Source File="Pages\MpUserLoginUI.page"/>
     <Source File="Pages\MpRecipeUI.page"/>
-    <Source File="Pages\MpAlarmBasicUI_List.page"/>
-    <Source File="Pages\MpAlarmBasicUI_History.page"/>
+    <Source File="Pages\MpSetup.page"/>
+    <Source File="Pages\MpSystemDiagnostics.page"/>
     <Source File="Pages\mapp1StartPage.page"/>
     <Source File="Pages\MpAlarmXList.page"/>
     <Source File="Pages\MpAlarmXHistory.page"/>
-    <Source File="Pages\MpDataStatisticsUI.page"/>
+    <Source File="Pages\MpUserXLoginUI.page"/>
+    <Source File="Pages\MpUserXManagerUI_Users.page"/>
+    <Source File="Pages\MpUserXManagerUI_Roles.page"/>
     <Source File="Pages\MpAlarmXListUI_Backtrace.page"/>
-    <Source File="Pages\Page_1.page"/>
+    <Source File="Pages\TCP_IP.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
     <Source File="Layers\MpOeeControl.layer"/>

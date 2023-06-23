@@ -1,0 +1,33 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: ramp_sg4
+ * File: ramp_sg4.var
+ * Author: leesa
+ * Created: March 27, 2009
+ ********************************************************************
+ * Local variables of program ramp_sg4
+ ********************************************************************)
+VAR
+	CMD_Reboot_pos : BOOL := FALSE;
+	CMD_Reboot_pos_status : USINT := 0;
+	Actual_Position_0 : UDINT := 0;
+	old_pos : DINT := 0;
+	Motor_state : En_status := STOP;
+END_VAR
+VAR RETAIN
+	posizione_salvata : DINT := 0;
+END_VAR
+VAR
+	init_motor_complete : BOOL := FALSE;
+	CMD_home_status : USINT := 0;
+	Homed : BOOL := FALSE;
+	motor_init : BOOL := FALSE;
+	Init_motor_status : USINT := 0;
+	Dim_etichetta : USINT := 7;
+	FW_step_status : USINT := 0;
+	Homing_status : USINT := 0;
+	XSM_Ctrl_0 : XSM_Ctrl := (0);
+	XSM_IO_Cfg_0 : XSM_IO_Cfg := (0);
+	XSM_AcyclicRead_0 : XSM_AcyclicRead := (0);
+END_VAR

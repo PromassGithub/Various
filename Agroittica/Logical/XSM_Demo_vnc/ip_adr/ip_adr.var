@@ -1,0 +1,15 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: ip_adr
+ * File: ip_adr.var
+ * Author: leesa
+ * Created: July 21, 2009
+ ********************************************************************
+ * Local variables of program ip_adr
+ ********************************************************************)
+VAR
+	CfgGetIPAddr_0 : CfgGetIPAddr;
+	IP_Address : STRING[20];
+	GetIPAddress : BOOL;
+END_VAR

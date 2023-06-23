@@ -1,28 +1,27 @@
-/* Automation Studio generated header file */
-/* Do not edit ! */
+/* Automation Studio Generated Header File, Format Version 1.00 */
+/* do not change */
+#ifndef ASSTRING_H_
+#define ASSTRING_H_
+#define _WEAK	__attribute__((__weak__))
 
-#ifndef _ASSTRING_
-#define _ASSTRING_
-#ifdef __cplusplus
-extern "C" 
-{
-#endif
+#include <bur/plc.h>
 
-#include <bur/plctypes.h>
 
-#ifndef _BUR_PUBLIC
-#define _BUR_PUBLIC
-#endif
+
+/* Constants */
+
+
+/* Datatypes */
+
+
+/* Datatypes of function blocks */
+
 
 /* Prototyping of functions and function blocks */
-_BUR_PUBLIC unsigned short ftoa(float value, unsigned long pString);
-_BUR_PUBLIC float atof(unsigned long pString);
-_BUR_PUBLIC unsigned short itoa(signed long value, unsigned long pString);
-_BUR_PUBLIC signed long atoi(unsigned long pString);
+unsigned short ftoa(float value, unsigned long pString);
+unsigned short itoa(signed long value, unsigned long pString);
+float atof(unsigned long pString);
+signed long atoi(unsigned long pString);
 
-
-#ifdef __cplusplus
-};
-#endif
-#endif /* _ASSTRING_ */
+#endif /* ASSTRING_H_ */
 

@@ -1,20 +1,72 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * File: Global.typ
+ * Author: leesa
+ * Created: March 27, 2009
+ ********************************************************************
+ * Global data types of project as3_xsm_ramp
+ ********************************************************************)
 
 TYPE
-	typ_tcp_state : 	STRUCT 
-		tcpopen : BOOL;
-		tcpioctl : BOOL;
-		tcpclient : BOOL;
-		tcpsend : BOOL;
-		tcprecv : BOOL;
-		tcpclose : BOOL;
-		tcperror : BOOL;
+	typ_glb_enc_sta : 	STRUCT 
+		range : REAL;
+		pinion_diam : REAL;
+		enc_rev : UINT;
+		bit_res : INT;
+		gry : ARRAY[0..11]OF BOOL;
+		b_enable : BOOL;
+		calib : BOOL;
+		words : DINT;
+		enc_range : REAL;
+		res : REAL;
+		act_quote : REAL;
+		x : DINT;
+		x1 : DINT;
+		error : BOOL;
+	END_STRUCT;
+	typ_cmd : 	STRUCT 
+		Reboot_pos : BOOL;
+		btn_homing : BOOL;
+		Torna_a_casa : BOOL;
+		sparo : BOOL;
+	END_STRUCT;
+	typ_err : 	STRUCT 
+		Drive2 : BOOL;
+		Drive1 : BOOL;
+		pending_alarms : UDINT;
+	END_STRUCT;
+	typ_hmi_out : 	STRUCT 
+		Reset : BOOL;
+	END_STRUCT;
+	typ_hmi_inp : 	STRUCT 
+		New_Member : USINT;
+	END_STRUCT;
+	typ_hmi : 	STRUCT 
+		Inp : typ_hmi_inp;
+		Out : typ_hmi_out;
+	END_STRUCT;
+	En_AcpMicro_Err : 
+		(
+		no_error := 0,
+		Module_not_enable := 65282,
+		Overvoltage_on_dc_bus := 12560,
+		Module_power_supply_voltage := 12544,
+		Overtemperature := 16896,
+		Overtemperature_encoder := 65302,
+		Negative_limit_switch_reached := 65312,
+		Positive_limit_switch_reached := 65313,
+		Overcurrent := 8960,
+		Undervoltage_on_the_dc_bus := 12832,
+		Undercurrent := 65280,
+		Encoder_power_supply := 65296,
+		Encoder_open_circuit := 65297
+		);
+	typ_AcoposMicro_err : 	STRUCT 
+		Error : En_AcpMicro_Err;
 	END_STRUCT;
 	typ_tcp_protocol_state : 	STRUCT 
 		place_older : BOOL;
-	END_STRUCT;
-	typ_io : 	STRUCT 
-		Do : typ_Do;
-		Di : typ_Di;
 	END_STRUCT;
 	typ_eth_connect : 	STRUCT 
 		machine_in_auto : BOOL;
@@ -31,64 +83,14 @@ TYPE
 		disable : BOOL; (*Disabilito il protocollo di comunicazione*)
 		Server_Ip_Add : STRING[15] := '192.168.250.15';
 	END_STRUCT;
-	typ_drv_out : 	STRUCT 
-		ContolWord6040 : UINT;
-		ModesOfOperation_6060 : SINT;
-		TargetTorque_6071 : INT;
-		TargetPosition607A : DINT;
-		FollowingErrorWindow6065 : DINT;
-		PositionWindow6067 : DINT;
-		PositionWindowTime6068 : INT;
-		ProfileVelocity6081 : UDINT;
-		ProfileAcceleration6083 : UDINT;
-		ProfileDeceleration6084 : UDINT;
-		PositonFactor6093_sub1 : UDINT;
-		PositonFactor6093_sub2 : UDINT;
-		TorqueSlope_6087 : UDINT;
-		HomingMethod6098 : SINT;
-		HomeOffset607C : DINT;
-		HomeHighSpeed6099_sub1 : UDINT;
-		HomeLowSpeed6099_sub2 : UDINT;
-		HomingAcceleration609A : UDINT;
-		TargetVelocity60FF : DINT;
-		FeedConstantFeed6092_sub1 : UDINT;
-		FeedConstantShaftRev6092_sub2 : UDINT;
-		DRV_ON_CMD : BOOL; (*BIT 0 DELLA CONTROL WORD 6040*)
-		DRV_ENABLE_VOLT_CMD : BOOL; (*BIT 1 DELLA CONTROL WORD 6040*)
-		DRV_QUICK_STOP_CMD : BOOL; (*BIT 2 DELLA CONTROL WORD 6040*)
-		DRV_EN_OP_CMD : BOOL; (*BIT 3 DELLA CONTROL WORD 6040*)
-		DRV_START_HM_NEW_PP_CMD : BOOL; (*BIT 4 DELLA CONTROL WORD 6040 (NOTA BENE: IN HM VALE HOMING OPERATION START POSITIVE TRIGGER; IN PROFILE POSITION MODE VALE "NEW SETPOINT [POSITIVE TRIGGER]"*)
-		DRV_CHANGE_SET_IMM : BOOL; (*BIT 5 DELLA CONTROL WORD 6040-FUNZIONA SOLO CON IL PROFILE POSITION E SERVE PER SETTARE IMMEDIATAMENTE LA POSIZIONE*)
-		DRV_TOGGLE_ABS_REL : BOOL; (*BIT 6 DELLA CONTROL WORD 6040- 0=ASSOLUTO; 1=RELATIVO (ENCODER?)*)
-		DRV_FAULT_RESET_CMD : BOOL; (*BIT 7 DELLA CONTROL WORD 6040*)
-		DRV_HALT_CMD : BOOL; (*BIT 8 DELLA CONTROL WORD 6040*)
-	END_STRUCT;
-	typ_drv_inp : 	STRUCT 
-		DRV_READY : BOOL;
-		DRV_ON : BOOL;
-		DRV_OPERATION_ENABLED : BOOL;
-		DRV_FAULT : BOOL;
-		DRV_VOLT_ENABLE : BOOL;
-		DRV_SWITCH_ON_DISABLED : BOOL;
-		DRV_WARNING : BOOL;
-		DRV_REMOTE : BOOL;
-		DRV_TARGET_REACHED : BOOL;
-		DRV_TARGET_STATUS : BOOL;
-		DRV_MOVE_ERROR : BOOL;
-		DRV_QUICK_STOP : BOOL;
-		StatusWord6041 : UINT;
-		ModesOfOperationDisplay_6061 : SINT;
-		PositionActualValue6064 : DINT;
-		VelocityActualValue606C : DINT;
-		TorqueDemandValue_6074 : INT;
-		MotorRatedCurrent_6075 : UDINT;
-		TorqueActualValue_6077 : INT;
-		CurrentActualValue_6078 : INT;
-		ErrorCode_603f : UINT;
-	END_STRUCT;
-	typ_drv : 	STRUCT 
-		inp : typ_drv_inp;
-		out : typ_drv_out;
+	typ_tcp_state : 	STRUCT 
+		tcpopen : BOOL;
+		tcpioctl : BOOL;
+		tcpclient : BOOL;
+		tcpsend : BOOL;
+		tcprecv : BOOL;
+		tcpclose : BOOL;
+		tcperror : BOOL;
 	END_STRUCT;
 	typ_Do : 	STRUCT 
 		Piston_up : BOOL;
@@ -102,6 +104,22 @@ TYPE
 		Start : BOOL;
 		Stop : BOOL;
 		Automatic : BOOL;
+		enc_sta_bit_00 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_01 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_02 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_03 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_04 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_05 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_06 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_07 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_08 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_09 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_10 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		enc_sta_bit_11 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+	END_STRUCT;
+	typ_io : 	STRUCT 
+		Do : typ_Do;
+		Di : typ_Di;
 	END_STRUCT;
 	En_status : 
 		(

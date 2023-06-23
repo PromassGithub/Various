@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="1.00.5" SubType="IEC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>XSM_Ramp.fun</File>
+    <File>XSM_Ramp.typ</File>
+    <File>XSM_Ramp.var</File>
+    <File Description="Control the stepper motor modules in ramp control mode, simple control.">XSM_Ctrl.st</File>
+    <File Description="Provide IO configuration for SG4 CPu targets only.">XSM_IO_Cfg.st</File>
+    <File Description="Provide alarm detail in form of BOOLEAN array for VC &amp; User.">XSM_AcyclicRead.st</File>
+    <File>LibXSM_Ramp.chm</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="brsystem" />
+    <Dependency ObjectName="AsIOAcc" />
+    <Dependency ObjectName="asstring" />
+    <Dependency ObjectName="AsMath" />
+  </Dependencies>
+</Library>

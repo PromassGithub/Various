@@ -1,7 +1,20 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * File: Global.var
+ * Author: leesa
+ * Created: March 27, 2009
+ ********************************************************************
+ * Global variables of project as3_xsm_ramp
+ ********************************************************************)
 VAR
+	glb_hmi : typ_hmi := (0);
+	Drive_Err : typ_AcoposMicro_err := (0);
 	Ricetta : USINT;
 	Status : En_status;
-	glb_io : typ_io;
-	glb_drv : typ_drv;
 	Eth_connect : typ_eth_connect;
+	glb_io : typ_io;
+	glb_enc_sta : typ_glb_enc_sta := (0);
+	glb_cmd : typ_cmd := (0);
+	glb_err : typ_err := (0);
 END_VAR

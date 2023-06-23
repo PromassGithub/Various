@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.3.5.113 SP"?>
+<DataSource xmlns="http://br-automation.co.at/AS/VC/Project" Name="Local">
+  <Property Name="AutoRefresh" Value="True" />
+  <Property Name="DefaultUpdateTime" Value="200" />
+  <Property Name="Description" Value="" />
+  <Property Name="IsIntern" Value="False" />
+  <Property Name="TextGroup" Value="None" />
+  <DataPoints>
+    <Folder Name="XSM_Demo_vnc">
+      <Property Name="Description" Value="" />
+      <Property Name="FolderType" Value="Package" />
+      <Folder Name="xsm_demo">
+        <Property Name="Description" Value="" />
+        <Property Name="FolderType" Value="Program" />
+        <Folder Name="XSM_Ctrl_0">
+          <Property Name="Description" Value="" />
+          <Property Name="FolderType" Value="FunctionBlock" />
+          <Folder Name="IO_Mapping">
+            <Property Name="Description" Value="" />
+            <Property Name="FolderType" Value="Struct" />
+            <DataPoint Name="InputStatus">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="USINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="AbsPos">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="MpGenMode">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="SINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="ModuleID">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="UINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Channel">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="INT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="ModuleOK">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="MpGenStatus">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="UINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="AbsPosActVal">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="DeviceName">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="STRING" />
+              <Property Name="StringLength" Value="80" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="STRING" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="MpGenControl">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="UINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+          </Folder>
+          <Folder Name="Cmd">
+            <Property Name="Description" Value="" />
+            <Property Name="FolderType" Value="Struct" />
+            <DataPoint Name="Reset">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Position">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Move_Additive">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Move_Absolute">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Velocity">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Move_Velocity">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Distance">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Home">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Stop">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+          </Folder>
+          <DataPoint Name="Error">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <Folder Name="Parameters">
+            <Property Name="Description" Value="" />
+            <Property Name="FolderType" Value="Struct" />
+            <DataPoint Name="Ignore_HWLimits">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="NegSWLimit">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="HomeMode">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="USINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="HomePosition">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Units_rev">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="UINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Ignore_SWLimits">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="PosSWLimit">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="UnderCurrentDetectionEnable">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="StallDetectionEnable">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+          </Folder>
+          <DataPoint Name="Power">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Status">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="UINT" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="INTEGER" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="PowerOn">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <Folder Name="Monitor">
+            <Property Name="Description" Value="" />
+            <Property Name="FolderType" Value="Struct" />
+            <DataPoint Name="Actual_Velocity">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Input_3">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Input_1">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Input_2">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="StandStill">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Target_Reached">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Input_4">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Actual_Position">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Home_OK">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="BOOL" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="BOOL" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+          </Folder>
+        </Folder>
+        <Folder Name="XSM_IO_Cfg_0">
+          <Property Name="Description" Value="" />
+          <Property Name="FolderType" Value="FunctionBlock" />
+          <DataPoint Name="Reset">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Enable">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Config">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Mode">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="USINT" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="INTEGER" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Done">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Status">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="UINT" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="INTEGER" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <Folder Name="IO_Cfg">
+            <Property Name="Description" Value="" />
+            <Property Name="FolderType" Value="Struct" />
+            <Folder Name="MPGen">
+              <Property Name="Description" Value="" />
+              <Property Name="FolderType" Value="Struct" />
+              <DataPoint Name="RefSpeed">
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="DINT" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="INTEGER" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+              <DataPoint Name="MaxAcc">
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="UINT" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="INTEGER" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+              <DataPoint Name="MaxSpeed">
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="UINT" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="INTEGER" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+              <DataPoint Name="JoltTimeLimitation">
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="SINT" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="INTEGER" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+              <DataPoint Name="MaxDec">
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="UINT" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="INTEGER" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+            </Folder>
+            <Folder Name="Current">
+              <Property Name="Description" Value="" />
+              <Property Name="FolderType" Value="Struct" />
+              <DataPoint Name="Holding">
+                <Property Name="DPLimit" Value="None" />
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="REAL" />
+                <Property Name="PLCUnit" Value="None" />
+                <Property Name="UnitGroup" Value="None" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="SCALED" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+              <DataPoint Name="Maximum">
+                <Property Name="DPLimit" Value="None" />
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="REAL" />
+                <Property Name="PLCUnit" Value="None" />
+                <Property Name="UnitGroup" Value="None" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="SCALED" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+              <DataPoint Name="Rated">
+                <Property Name="DPLimit" Value="None" />
+                <Property Name="Description" Value="" />
+                <Property Name="PLCType" Value="REAL" />
+                <Property Name="PLCUnit" Value="None" />
+                <Property Name="UnitGroup" Value="None" />
+                <Property Name="UpdateTime" Value="Default" />
+                <Property Name="UserID" Value="None" />
+                <Property Name="VCType" Value="SCALED" />
+                <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+                <Property Name="ConnectedBySharedResource" Value="False" />
+              </DataPoint>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="XSM_AcyclicRead_0">
+          <Property Name="Description" Value="" />
+          <Property Name="FolderType" Value="FunctionBlock" />
+          <Folder Name="ReadData">
+            <Property Name="Description" Value="" />
+            <Property Name="FolderType" Value="Struct" />
+            <DataPoint Name="Encoder_RefPosCyclicCounter">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Module_Temperature">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="SINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="PowerStage_Temperature">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="SINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="DC_BusVoltage">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="UINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Encoder_ActualValue">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+            <DataPoint Name="Encoder_RefPosAcyclicCounter">
+              <Property Name="Description" Value="" />
+              <Property Name="PLCType" Value="DINT" />
+              <Property Name="UpdateTime" Value="Default" />
+              <Property Name="UserID" Value="None" />
+              <Property Name="VCType" Value="INTEGER" />
+              <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+              <Property Name="ConnectedBySharedResource" Value="False" />
+            </DataPoint>
+          </Folder>
+          <DataPoint Name="Reset">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Status">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="UINT" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="INTEGER" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Mode">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="USINT" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="INTEGER" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Read">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+          <DataPoint Name="Enable">
+            <Property Name="Description" Value="" />
+            <Property Name="PLCType" Value="BOOL" />
+            <Property Name="UpdateTime" Value="Default" />
+            <Property Name="UserID" Value="None" />
+            <Property Name="VCType" Value="BOOL" />
+            <Property Name="ConnectingVisus" Value="XSM_Demo_vnc\VGAvnc" />
+            <Property Name="ConnectedBySharedResource" Value="False" />
+          </DataPoint>
+        </Folder>
+      </Folder>
+    </Folder>
+  </DataPoints>
+</DataSource>

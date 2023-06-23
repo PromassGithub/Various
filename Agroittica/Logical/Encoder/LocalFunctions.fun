@@ -1,0 +1,31 @@
+
+FUNCTION_BLOCK Int_to_vel
+	VAR_INPUT
+		Pos : DINT;
+	END_VAR
+	VAR_OUTPUT
+		Vel : REAL;
+	END_VAR
+	VAR_INPUT
+		Maxim : DINT;
+	END_VAR
+	VAR
+		Ton_0 : TON;
+		pos_b : DINT;
+		pos_a : DINT;
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_ERROR} FUNCTION_BLOCK gray_to_int (*TODO: Add your comment here*) (*$GROUP=User,$CAT=User,$GROUPICON=User.png,$CATICON=User.png*)
+	VAR_INPUT
+		gry : {REDUND_UNREPLICABLE} ARRAY[0..11] OF BOOL;
+	END_VAR
+	VAR_OUTPUT
+		x : {REDUND_UNREPLICABLE} DINT;
+	END_VAR
+	VAR
+		i : SINT;
+		bin : ARRAY[0..11] OF BOOL;
+		New_Member : USINT;
+	END_VAR
+END_FUNCTION_BLOCK

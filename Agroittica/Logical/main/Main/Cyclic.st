@@ -5,25 +5,34 @@ PROGRAM _CYCLIC
 	CASE Status OF
 		
 		STOP:
-			IF glb_io.Di.Automatic AND glb_io.Di.Start THEN 
+			IF (glb_io.Di.Automatic AND glb_io.Di.Start) AND (glb_err.pending_alarms = 0) THEN 
 				Status := AUTO;
 				
-			ELSIF NOT glb_io.Di.Automatic AND glb_io.Di.Start THEN
+			ELSIF (NOT glb_io.Di.Automatic AND glb_io.Di.Start) AND (glb_err.pending_alarms = 0) THEN
 				Status := MANUAL;
-				
+			ELSIF (glb_err.pending_alarms <> 0) THEN
+				Status := ERR;
 			END_IF
 			
 		AUTO: 
 			IF glb_io.Di.Stop THEN 
 				Status := STOP;
 				last_cycle := 1;
+			ELSIF (glb_err.pending_alarms <> 0) THEN
+				Status := ERR;
 			END_IF
 			
 		MANUAL:
 			IF glb_io.Di.Stop THEN 
 				Status := STOP;
+			ELSIF (glb_err.pending_alarms <> 0) THEN
+				Status := ERR;
 			END_IF
 		ERR:
+			IF (glb_err.pending_alarms = 0) THEN 
+				Status := STOP;
+			END_IF
+			
 		  
 	END_CASE;
 	
