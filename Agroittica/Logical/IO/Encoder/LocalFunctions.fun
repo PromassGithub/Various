@@ -2,17 +2,16 @@
 FUNCTION_BLOCK Int_to_vel
 	VAR_INPUT
 		Pos : DINT;
+		Maxim : DINT;
 	END_VAR
 	VAR_OUTPUT
 		Vel : REAL;
-	END_VAR
-	VAR_INPUT
-		Maxim : DINT;
 	END_VAR
 	VAR
 		Ton_0 : TON;
 		pos_b : DINT;
 		pos_a : DINT;
+		Delta_pos : REAL;
 	END_VAR
 END_FUNCTION_BLOCK
 

@@ -8,6 +8,11 @@
         <Property ID="Message" Value="motor fault" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="motor 2 fault" />
+        <Property ID="Message" Value="sto cazzo" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

@@ -5,10 +5,10 @@ PROGRAM _CYCLIC
 	CASE Status OF
 		
 		STOP:
-			IF (glb_io.Di.Automatic AND glb_io.Di.Start) AND (glb_err.pending_alarms = 0) THEN 
+			IF (glb_io.Di.Automatic AND (NOT glb_io.Di.Manual) AND glb_io.Di.Start) AND (glb_err.pending_alarms = 0) THEN 
 				Status := AUTO;
 				
-			ELSIF (NOT glb_io.Di.Automatic AND glb_io.Di.Start) AND (glb_err.pending_alarms = 0) THEN
+			ELSIF ((NOT glb_io.Di.Automatic) AND glb_io.Di.Manual AND glb_io.Di.Start) AND (glb_err.pending_alarms = 0) THEN
 				Status := MANUAL;
 			ELSIF (glb_err.pending_alarms <> 0) THEN
 				Status := ERR;
@@ -82,7 +82,7 @@ PROGRAM _CYCLIC
 	TON_03;
 	
 	TON_01.PT := T#1s;
-	TON_02.PT := T#1s;
+	TON_02.PT := T#50ms;
 	TON_03.PT := T#1s;
 	 
 END_PROGRAM

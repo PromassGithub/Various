@@ -103,6 +103,7 @@ TYPE
 		Si_02 : BOOL;
 		Start : BOOL;
 		Stop : BOOL;
+		Manual : BOOL;
 		Automatic : BOOL;
 		enc_sta_bit_00 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
 		enc_sta_bit_01 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)

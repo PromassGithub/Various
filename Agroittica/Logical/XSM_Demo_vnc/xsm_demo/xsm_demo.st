@@ -32,7 +32,7 @@ PROGRAM _INIT
 	XSM_IO_Cfg_0.IO_Cfg.MixedDecayCfg := 15;							(* AS Default, change to suit application. *)
 
 	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 0.20;						(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 0.80;							(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 1.20;							(* A, Change to suit motor/application. *)
 	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 1.50;						(* A, Change to suit motor/application. *)
 
 	XSM_IO_Cfg_0.IO_Cfg.FullStepThreshold := 0;							(* Also sets to AS Default of 65535, change to suit application. *)
@@ -184,6 +184,7 @@ PROGRAM _CYCLIC
 				XSM_Ctrl_0.Parameters.Ignore_HWLimits := FALSE;
 				Homed := 1;
 				Homing_status := 0;
+				old_pos := 0;
 			END_IF	
 	END_CASE;  
 	
@@ -218,8 +219,9 @@ PROGRAM _CYCLIC
 			IF (Status = AUTO) THEN CMD_home_status := 1; END_IF
 			
 		1: // idle auto
-			XSM_Ctrl_0.Cmd.Position := 0;
+			
 			IF (glb_cmd.Torna_a_casa AND XSM_Ctrl_0.PowerOn AND Homed) THEN 
+				XSM_Ctrl_0.Cmd.Position := 0;
 				CMD_home_status := 10; 
 				glb_cmd.Torna_a_casa := 0; 
 			END_IF
@@ -253,7 +255,10 @@ PROGRAM _CYCLIC
 			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status := 20; END_IF
 		10:
 			XSM_Ctrl_0.Cmd.Move_Absolute := TRUE;
-			IF (XSM_Ctrl_0.Monitor.Actual_Position = 0) THEN CMD_Reboot_pos_status := 20; END_IF
+			IF (XSM_Ctrl_0.Monitor.Actual_Position = Actual_Position_0) THEN 
+				old_pos := XSM_Ctrl_0.Monitor.Actual_Position;
+				CMD_Reboot_pos_status := 20; 
+			END_IF
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status := 20; END_IF
 		20:

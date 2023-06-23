@@ -27,17 +27,28 @@ FUNCTION_BLOCK Int_to_vel
 	
 	IF (Ton_0.Q) THEN
 		Ton_0.IN := 0;
-		IF (pos_b >= pos_a) THEN
-			Vel := (pos_b - pos_a)/0.12;
-		ELSIF (pos_a > pos_b) THEN
-			Vel := (pos_b + (Maxim - pos_a))/0.12;
+		
+		Delta_pos := pos_b - pos_a;
+		
+		Delta_pos := SQRT(pow(Delta_pos, 2));
+		
+		IF (pos_a > pos_b) THEN
+			
+			Delta_pos := pos_b + (Maxim - pos_a);
+		
+			Delta_pos := SQRT(pow(Delta_pos, 2));
+			
+			Vel := (Delta_pos)/0.42;
+		ELSE
+			Vel := Delta_pos / 0.42;
 		END_IF
+		
 		pos_a := pos_b;
 		
 	END_IF
 	
 	Ton_0;
-	Ton_0.PT := T#100ms;
+	Ton_0.PT := T#400ms;
 	
 	
 END_FUNCTION_BLOCK

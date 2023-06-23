@@ -17,4 +17,16 @@ VAR_CONFIG
 	::xsm_demo:XSM_Ctrl_0.IO_Mapping.InputStatus AT %IB."80SD100XD.C044-01".InputStatus;
 	::xsm_demo:XSM_Ctrl_0.IO_Mapping.ModuleID AT %IW."80SD100XD.C044-01".ModuleID;
 	::xsm_demo:XSM_Ctrl_0.Enable AT %QX."X3".DigitalOutput07;
+	Cyclic#1.glb_io.Di.enc_sta_bit_00 AT %IX."X2".DigitalInput01;
+	Cyclic#1.glb_io.Di.enc_sta_bit_01  AT %IX."X2".DigitalInput02;
+	Cyclic#1.glb_io.Di.enc_sta_bit_02  AT %IX."X2".DigitalInput03;
+	Cyclic#1.glb_io.Di.enc_sta_bit_03  AT %IX."X2".DigitalInput04;
+	Cyclic#1.glb_io.Di.enc_sta_bit_04  AT %IX."X2".DigitalInput05;
+	Cyclic#1.glb_io.Di.enc_sta_bit_05  AT %IX."X2".DigitalInput06;
+	Cyclic#1.glb_io.Di.enc_sta_bit_06  AT %IX."X2".DigitalInput07;
+	Cyclic#1.glb_io.Di.enc_sta_bit_07  AT %IX."X2".DigitalInput08;
+	Cyclic#1.glb_io.Di.enc_sta_bit_08  AT %IX."X2".DigitalInput09;
+	Cyclic#1.glb_io.Di.enc_sta_bit_09  AT %IX."X2".DigitalInput10;
+	Cyclic#1.glb_io.Di.enc_sta_bit_10 AT %IX."X2".DigitalInput11;
+	Cyclic#1.glb_io.Di.enc_sta_bit_11  AT %IX."X2".DigitalInput12;
 END_VAR

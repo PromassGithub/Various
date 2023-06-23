@@ -21,6 +21,19 @@
       <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Z-Order" Value="0"/>
     </LayerRef>
+    <LayerRef Source="Source[local].Layer[MpPageControl]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="MpPageControl"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Normal"/>
+      <Property Name="Z-Order" Value="1"/>
+    </LayerRef>
     <Layer Name="Default">
       <Property Name="BackColor" Value="9"/>
       <Property Name="Description" Value=""/>
@@ -35,7 +48,7 @@
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
       <Property Name="Width" Value="640"/>
-      <Property Name="Z-Order" Value="1"/>
+      <Property Name="Z-Order" Value="2"/>
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="208320" Value="TcpOpen:"/>
@@ -46,6 +59,8 @@
           <Text ID="208325" Value="TcpClose:"/>
           <Text ID="208326" Value="RESET TCP"/>
           <Text ID="208328" Value="ENABLE DISEBLE TCP"/>
+          <Text ID="210158" Value="TCP Status"/>
+          <Text ID="210159" Value="TCP CMD"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="208320" Value="TcpOpen:"/>
@@ -56,6 +71,8 @@
           <Text ID="208325" Value="TcpClose:"/>
           <Text ID="208326" Value="RESET TCP"/>
           <Text ID="208328" Value="ENABLE DISEBLE TCP"/>
+          <Text ID="210158" Value="TCP Status"/>
+          <Text ID="210159" Value="TCP CMD"/>
         </TextLayer>
         <IndexMap>
           <Index ID="208320" Value="0"/>
@@ -66,6 +83,8 @@
           <Index ID="208325" Value="5"/>
           <Index ID="208326" Value="6"/>
           <Index ID="208328" Value="8"/>
+          <Index ID="210158" Value="7"/>
+          <Index ID="210159" Value="9"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -79,8 +98,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="21"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="7"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="62"/>
           <Property Name="Width" Value="350"/>
@@ -329,8 +348,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="21"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="9"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="62"/>
           <Property Name="Width" Value="223"/>
