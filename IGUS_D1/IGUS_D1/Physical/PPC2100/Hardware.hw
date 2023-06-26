@@ -1,8 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="5ACCIF01.FPSC-000" Type="5ACCIF01.FPSC-000" Version="1.8.1.0">
+    <Connection Connector="SL" TargetModule="5PPC2100_BY34_000" TargetConnector="SL1" />
+    <Connector Name="IF3">
+      <Parameter ID="ActivateCanOpen" Value="1" />
+    </Connector>
+  </Module>
   <Module Name="5AP923.1906-00" Type="5AP923.1906-00" Version="2.0.0.0" />
   <Module Name="5PPC2100_BY34_000" Type="5PPC2100.BY34-000" Version="2.1.0.0">
     <Connection Connector="SY" TargetModule="5AP923.1906-00" TargetConnector="SY1" />
+    <Connector Name="IF3">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Connector Name="IF4">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Connector Name="IF5">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+    </Connector>
+    <Connector Name="IF6">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="IGUS_D1_PPC2100" />
+  </Module>
+  <Module Name="8I66xxxxxxx.0P-xxx" Type="8I66xxxxxxx.0P-xxx" Version="2.3.0.0">
+    <Connection Connector="PLK1" TargetModule="8I86xxxxxxx.0P-1xx" TargetConnector="PLK2" NodeNumber="1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+    <Parameter ID="IOM_AIDP1" Value="ETAD_u" />
+  </Module>
+  <Module Name="8I86xxxxxxx.0P-1xx" Type="8I86xxxxxxx.0P-1xx" Version="2.3.0.0">
+    <Connection Connector="PLK1" TargetModule="5ACCIF01.FPSC-000" TargetConnector="IF1" NodeNumber="2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8I66xxxxxxx.0P-xxx" TargetConnector="PLK1" NodeNumber="2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="FunctionModel" Value="MotionConfig" />
+    <Parameter ID="UnitOfSetpoint" Value="Rpm" />
+  </Module>
+  <Module Name="dryve-D1" Type="FBC.0x000003FE.1.20220118-dryve-D1-8PDO" Version="1.13" OrderNumber="dryve-D1">
+    <Connection Connector="CAN1" TargetModule="5ACCIF01.FPSC-000" TargetConnector="IF3" />
+    <Parameter ID="p60c5_connecttomaster" Value="1" />
+    <Parameter ID="pnodeobservation" Value="plifeguarding" />
+    <Parameter ID="plifeguarding_guardtime" Value="500" />
+    <Parameter ID="plifeguarding_retryfactor" Value="5" />
+    <Parameter ID="p1010_objflags" Value="1" />
+    <Parameter ID="p1010sub1_objflags" Value="1" />
+    <Parameter ID="p1010sub2_objflags" Value="1" />
+    <Parameter ID="p1010sub3_objflags" Value="1" />
+    <Group ID="p2000" Disabled="true" />
+    <Group ID="p2000sub0" Disabled="true" />
+    <Group ID="p2000sub2" Disabled="true" />
+    <Group ID="p2000sub3" Disabled="true" />
+    <Group ID="p2001" Disabled="true" />
+    <Group ID="p2002" Disabled="true" />
+    <Group ID="p2003" Disabled="true" />
+    <Group ID="p2003sub0" Disabled="true" />
+    <Group ID="p2003sub1" Disabled="true" />
+    <Group ID="p2003sub2" Disabled="true" />
+    <Group ID="p2003sub3" Disabled="true" />
+    <Group ID="p2004" Disabled="true" />
+    <Group ID="p2005" Disabled="true" />
+    <Group ID="p2005sub0" Disabled="true" />
+    <Group ID="p2005sub1" Disabled="true" />
+    <Group ID="p2005sub2" Disabled="true" />
+    <Group ID="p2005sub3" Disabled="true" />
+    <Group ID="p2005sub4" Disabled="true" />
+    <Group ID="p2006" Disabled="true" />
+    <Group ID="p2007" Disabled="true" />
+    <Group ID="p2008" Disabled="true" />
+    <Group ID="p2009" Disabled="true" />
+    <Group ID="p2009sub0" Disabled="true" />
+    <Group ID="p2009sub1" Disabled="true" />
+    <Group ID="p2009sub2" Disabled="true" />
+    <Group ID="p200a" Disabled="true" />
+    <Group ID="p200asub0" Disabled="true" />
+    <Group ID="p200asub1" Disabled="true" />
+    <Group ID="p200asub2" Disabled="true" />
+    <Group ID="p200b" Disabled="true" />
+    <Group ID="p200bsub0" Disabled="true" />
+    <Group ID="p200bsub1" Disabled="true" />
+    <Group ID="p200bsub2" Disabled="true" />
+    <Group ID="p200c" Disabled="true" />
+    <Group ID="p200csub0" Disabled="true" />
+    <Group ID="p200csub1" Disabled="true" />
+    <Group ID="p200csub2" Disabled="true" />
+    <Group ID="p200d" Disabled="true" />
+    <Group ID="p200dsub0" Disabled="true" />
+    <Group ID="p200dsub1" Disabled="true" />
+    <Group ID="p200dsub2" Disabled="true" />
+    <Group ID="p200e" Disabled="true" />
+    <Group ID="p200esub0" Disabled="true" />
+    <Group ID="p200f" Disabled="true" />
+    <Group ID="p2010" Disabled="true" />
+    <Group ID="p2011" Disabled="true" />
+    <Group ID="p2012" Disabled="true" />
+    <Group ID="p2012sub0" Disabled="true" />
+    <Group ID="p2012sub1" Disabled="true" />
+    <Group ID="p2012sub2" Disabled="true" />
+    <Group ID="p2012sub3" Disabled="true" />
+    <Group ID="p2012sub4" Disabled="true" />
+    <Group ID="p2012sub5" Disabled="true" />
+    <Group ID="p6075" Disabled="true" />
+    <Group ID="p607b" Disabled="true" />
+    <Group ID="p607bsub0" Disabled="true" />
+    <Group ID="p608f" Disabled="true" />
+    <Group ID="p608fsub0" Disabled="true" />
+    <Group ID="p6091" Disabled="true" />
+    <Group ID="p6091sub0" Disabled="true" />
+    <Group ID="p6092" Disabled="true" />
+    <Group ID="p6092sub0" Disabled="true" />
+    <Group ID="p6099" Disabled="true" />
+    <Group ID="p6099sub0" Disabled="true" />
+    <Group ID="p60a8" Disabled="true" />
+    <Group ID="p60c2" Disabled="true" />
+    <Group ID="p60c2sub0" Disabled="true" />
+    <Group ID="p60fe" Disabled="true" />
+    <Group ID="p60fesub0" Disabled="true" />
+    <Group ID="p6402" Disabled="true" />
   </Module>
 </Hardware>
