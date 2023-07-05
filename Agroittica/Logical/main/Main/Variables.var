@@ -4,4 +4,7 @@ VAR
 	TON_02 : TON;
 	TON_01 : TON;
 	St_Gun : USINT;
+	Tempo : REAL := 0.0;
+	Tempo_Delay : TIME;
+	Distanza_Sensore_Gun : REAL := 70;
 END_VAR

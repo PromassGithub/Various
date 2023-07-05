@@ -2,8 +2,8 @@
 <?AutomationStudio Version="4.9.5.36 SP" WorkingVersion="4.9"?>
 <Project Description="Default project" Version="1.00.0" Edition="Standard" EditionComment="Standard" xmlns="http://br-automation.co.at/AS/Project">
   <Communication>
-    <OnlineConfiguration Name="TCPIP" DeviceType="TCPIP" DeviceParameters="/IF=Tcpip /SA=72" ConnectionParameters="/DA=35 /AM=*" Description="" />
-    <OnlineConfiguration Name="NewTCPIPConnection_2" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=78" ConnectionParameters="/RT=1000  /DAIP=AndySimTest /CKDA=0 /REPO=11159 /ANSL=1 /AM=*" Description="" />
+    <OnlineConfiguration Name="TCPIP_1" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=72" ConnectionParameters="/COMT=2500 /AM=* /DA=35 /REPO=11159 /ANSL=1" Description="" />
+    <OnlineConfiguration Name="NewTCPIPConnection_2" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=78" ConnectionParameters="/COMT=2500 /RT=1000 /CKDA=0 /AM=* /DAIP=AndySimTest /REPO=11159 /ANSL=1" Description="" />
   </Communication>
   <ANSIC DefaultIncludes="true" />
   <IEC ExtendedConstants="true" IecBitOperations="true" IecExtendedComments="true" KeywordsAsStructureMembers="false" NamingConventions="true" Pointers="true" Preprocessor="true" />

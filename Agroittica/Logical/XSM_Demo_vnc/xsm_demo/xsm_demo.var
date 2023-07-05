@@ -9,25 +9,43 @@
  * Local variables of program ramp_sg4
  ********************************************************************)
 VAR
+	Auto_Homing_Ack_2 : BOOL := FALSE;
+	Auto_Homing_Ack : BOOL := FALSE;
+	CMD_Reboot_pos_2 : BOOL := FALSE;
 	CMD_Reboot_pos : BOOL := FALSE;
+	CMD_Reboot_pos_status_2 : USINT := 0;
 	CMD_Reboot_pos_status : USINT := 0;
+	Actual_position_2 : UDINT := 0;
 	Actual_Position_0 : UDINT := 0;
+	old_pos_2 : DINT := 0;
 	old_pos : DINT := 0;
+	Motor_state_2 : En_status := STOP;
 	Motor_state : En_status := STOP;
 END_VAR
 VAR RETAIN
+	posizione_salvata_2 : DINT := 0;
 	posizione_salvata : DINT := 0;
 END_VAR
 VAR
+	init_motor_complete_2 : BOOL := FALSE;
 	init_motor_complete : BOOL := FALSE;
+	CMD_home_status_2 : USINT := 0;
 	CMD_home_status : USINT := 0;
+	Homed_2 : BOOL := FALSE;
 	Homed : BOOL := FALSE;
+	motor_init_2 : BOOL := FALSE;
 	motor_init : BOOL := FALSE;
+	Init_motor_status_2 : USINT := 0;
 	Init_motor_status : USINT := 0;
-	Dim_etichetta : USINT := 7;
+	Dim_etichetta : DINT := 7;
+	FW_step_status_2 : USINT := 0;
 	FW_step_status : USINT := 0;
+	Homing_status_2 : USINT := 0;
 	Homing_status : USINT := 0;
+	XSM_Ctrl_2 : XSM_Ctrl := (0);
 	XSM_Ctrl_0 : XSM_Ctrl := (0);
+	XSM_IO_Cfg_2 : XSM_IO_Cfg := (0);
 	XSM_IO_Cfg_0 : XSM_IO_Cfg := (0);
+	XSM_AcyclicRead_2 : XSM_AcyclicRead := (0);
 	XSM_AcyclicRead_0 : XSM_AcyclicRead := (0);
 END_VAR

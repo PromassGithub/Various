@@ -9,6 +9,55 @@
  ********************************************************************)
 
 TYPE
+	Pesi : 	STRUCT 
+		Weight_Status : USINT;
+		Max_Weight : UINT;
+		Min_Weight : UINT;
+		Marel_Weight : ARRAY[0..5]OF REAL;
+	END_STRUCT;
+	Gun_Switch : 	STRUCT 
+		Gun_Switch_Status : USINT;
+		Gun_1_Active : BOOL;
+		Gun_2_Active : BOOL;
+	END_STRUCT;
+	Auto_fish : 	STRUCT 
+		Fish_status : USINT;
+		Fish_Start : BOOL;
+	END_STRUCT;
+	Manual_Gun_Selection : 	STRUCT 
+		Gun_Pop_up : USINT;
+		Gun_Status : USINT;
+	END_STRUCT;
+	Flap_MM_Ctrl : 	STRUCT 
+		Flap_Left : BOOL;
+		Flap_Right : BOOL;
+		Flap_status : USINT;
+	END_STRUCT;
+	Empty_Mag_2 : 	STRUCT 
+		Empty_Mag_Status : USINT;
+		Empty_Mag_Pop_Up : USINT;
+		Empty_Mag_Ack : BOOL;
+		Empty_Mag_Sensor : BOOL;
+	END_STRUCT;
+	Empty_Mag_1 : 	STRUCT 
+		Empty_Mag_Status : USINT;
+		Empty_Mag_Pop_Up : USINT;
+		Empty_Mag_Ack : BOOL;
+		Empty_Mag_Sensor : BOOL;
+	END_STRUCT;
+	Auto_Homing_Ctrl : 	STRUCT 
+		Auto_Homing_Status : USINT;
+		Pop_Up : USINT;
+		Auto_Homing_Ack_Pop_Up : BOOL;
+	END_STRUCT;
+	MM : 	STRUCT 
+		MM_Avanti : BOOL;
+		MM_Indietro : BOOL;
+		MM_status : USINT;
+		MM_Avanti_Vel : BOOL;
+		MM_Indietro_Vel : BOOL;
+		MM_Back_Home : BOOL;
+	END_STRUCT;
 	typ_glb_enc_sta : 	STRUCT 
 		range : REAL;
 		pinion_diam : REAL;
@@ -30,6 +79,7 @@ TYPE
 		btn_homing : BOOL;
 		Torna_a_casa : BOOL;
 		sparo : BOOL;
+		CMD_Sparo : BOOL;
 	END_STRUCT;
 	typ_err : 	STRUCT 
 		Drive2 : BOOL;
@@ -40,7 +90,12 @@ TYPE
 		Reset : BOOL;
 	END_STRUCT;
 	typ_hmi_inp : 	STRUCT 
-		New_Member : USINT;
+		Gun_1_HMI : BOOL;
+		Gun_2_HMI : BOOL;
+		Start_HMI : BOOL;
+		Stop_HMI : BOOL;
+		Auto_HMI : BOOL;
+		Manual_HMI : BOOL;
 	END_STRUCT;
 	typ_hmi : 	STRUCT 
 		Inp : typ_hmi_inp;
@@ -92,10 +147,16 @@ TYPE
 		tcpclose : BOOL;
 		tcperror : BOOL;
 	END_STRUCT;
+	Math : 	STRUCT 
+		Dist_Si02_Pistola : REAL;
+		Tempo_delay_soll_real : REAL;
+		Tempo_delay_soll : TIME;
+	END_STRUCT;
 	typ_Do : 	STRUCT 
 		Piston_up : BOOL;
 		Piston_gun_2 : BOOL;
 		Piston_gun_1 : BOOL;
+		Piston_Flap_Dx_Sx : BOOL;
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;

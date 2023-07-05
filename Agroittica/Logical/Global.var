@@ -8,13 +8,30 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Auto_fish_0 : Auto_fish := (0);
+	Pesi_0 : Pesi := (0);
+	Gun_Switch_0 : Gun_Switch := (0);
+	R_TRIG_02 : R_TRIG := (0);
+	R_TRIG_01 : R_TRIG := (0);
+	STP_01_Pos : DINT := 0;
+	Manual_Gun_0 : Manual_Gun_Selection := (0);
+	Flap_MM_0 : Flap_MM_Ctrl := (0);
+	Empty_Mag_22 : Empty_Mag_2 := (0);
+	Empty_Mag_1_0 : Empty_Mag_1 := (0);
+	Auto_Homing_Ctrl_2 : Auto_Homing_Ctrl := (0);
+	Auto_Homing_Ctrl_0 : Auto_Homing_Ctrl := (0);
+	MM_2 : MM := (0);
+	MM_0 : MM := (0);
 	glb_hmi : typ_hmi := (0);
 	Drive_Err : typ_AcoposMicro_err := (0);
 	Ricetta : USINT;
 	Status : En_status;
 	Eth_connect : typ_eth_connect;
+	glb_math : Math := (0);
 	glb_io : typ_io;
 	glb_enc_sta : typ_glb_enc_sta := (0);
+	glb_cmd_2 : typ_cmd := (0);
 	glb_cmd : typ_cmd := (0);
 	glb_err : typ_err := (0);
+	STP_01_Vel : REAL := 0.0;
 END_VAR

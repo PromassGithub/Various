@@ -20,7 +20,11 @@
     <Module Name="X3" Type="X3" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="PLC1" TargetConnector="X3" />
-    </Module>
+    <Parameter ID="X3Channel05Config" Value="input" />
+    <Parameter ID="X3Channel06Config" Value="input" />
+    <Parameter ID="X3Channel07Config" Value="input" />
+    <Parameter ID="X3Channel08Config" Value="input" />
+  </Module>
     <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
     <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
     <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />

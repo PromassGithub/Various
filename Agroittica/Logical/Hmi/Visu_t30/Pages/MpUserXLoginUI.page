@@ -359,6 +359,19 @@
         </VirtualKey>
       </KeyMapping>
     </Layer>
+    <LayerRef Source="Source[local].Layer[Empty_Mag_Pop_Up]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="Empty_Mag_Pop_Up"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="2"/>
+    </LayerRef>
     <Layer Name="MpPwdChange">
       <Property Name="BackColor" Value="9"/>
       <Property Name="Description" Value=""/>
@@ -373,7 +386,7 @@
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Hidden"/>
       <Property Name="Width" Value="640"/>
-      <Property Name="Z-Order" Value="2"/>
+      <Property Name="Z-Order" Value="3"/>
       <TextGroup>
         <TextLayer LanguageId="en"/>
         <TextLayer LanguageId="de"/>
@@ -673,7 +686,7 @@
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="3"/>
+      <Property Name="Z-Order" Value="4"/>
     </LayerRef>
     <Layer Name="MpMsgBox">
       <Property Name="BackColor" Value="9"/>
@@ -689,7 +702,7 @@
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Hidden"/>
       <Property Name="Width" Value="640"/>
-      <Property Name="Z-Order" Value="4"/>
+      <Property Name="Z-Order" Value="5"/>
       <TextGroup>
         <TextLayer LanguageId="en"/>
         <TextLayer LanguageId="de"/>

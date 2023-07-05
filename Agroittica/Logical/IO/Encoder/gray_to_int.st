@@ -50,5 +50,4 @@ FUNCTION_BLOCK Int_to_vel
 	Ton_0;
 	Ton_0.PT := T#400ms;
 	
-	
 END_FUNCTION_BLOCK
