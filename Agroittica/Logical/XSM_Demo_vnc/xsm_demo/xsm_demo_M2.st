@@ -11,7 +11,7 @@
 
 PROGRAM _INIT
 	
-	IF (posizione_salvata_2 <> 0) THEN Actual_position_2 := posizione_salvata_2; END_IF
+	IF (posizione_salvata_2_2 <> 0) THEN Actual_position_2 := posizione_salvata_2_2; END_IF
 
 	(* Set up XSM Control parameters. *)
 	XSM_Ctrl_2.IO_Mapping.DeviceName := 'IF6.ST2';					(* Location of SM module on X20 CPU. *)
@@ -466,36 +466,36 @@ PROGRAM _CYCLIC
 		
 	END_CASE
 	
-	CASE CMD_Reboot_pos_status OF
+	CASE CMD_Reboot_pos_status_2 OF
 		0: // idle
-			IF (Status = AUTO OR Status = MANUAL) THEN CMD_Reboot_pos_status := 1; END_IF;
+			IF (Status = AUTO OR Status = MANUAL) THEN CMD_Reboot_pos_status_2 := 1; END_IF;
 			
 		1:
-			IF (glb_cmd_2.Reboot_pos) THEN CMD_Reboot_pos_status := 2; END_IF;
+			IF (glb_cmd_2.Reboot_pos) THEN CMD_Reboot_pos_status_2 := 2; END_IF;
 			
 		2: // idle auto
-			XSM_Ctrl_2.Cmd.Position := Actual_Position_0;
+			XSM_Ctrl_2.Cmd.Position := Actual_position_2;
 			IF (XSM_Ctrl_2.PowerOn AND Homed_2) THEN 
-				CMD_Reboot_pos_status := 10; 
+				CMD_Reboot_pos_status_2 := 10; 
 				glb_cmd_2.Reboot_pos := 0; 
 			END_IF;
 			
-			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status := 20; END_IF;
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status_2 := 20; END_IF;
 		10:
 			XSM_Ctrl_2.Cmd.Move_Absolute := TRUE;
-			IF (XSM_Ctrl_2.Monitor.Actual_Position = Actual_Position_0) THEN 
+			IF (XSM_Ctrl_2.Monitor.Actual_Position = Actual_Position_2) THEN 
 				old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
-				CMD_Reboot_pos_status := 20; 
+				CMD_Reboot_pos_status_2 := 20; 
 			END_IF;
 			
-			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status := 20; END_IF;
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status_2 := 20; END_IF;
 		20:
 			XSM_Ctrl_2.Cmd.Move_Absolute := FALSE;
-			CMD_Reboot_pos_status := 0;
+			CMD_Reboot_pos_status_2 := 0;
 		
 	END_CASE
 	
-	posizione_salvata := XSM_Ctrl_2.Monitor.Actual_Position;
+	posizione_salvata_2 := XSM_Ctrl_2.Monitor.Actual_Position;
 	
 	
 END_PROGRAM
