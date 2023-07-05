@@ -14,6 +14,7 @@ TYPE
 		Max_Weight : UINT;
 		Min_Weight : UINT;
 		Marel_Weight : ARRAY[0..5]OF REAL;
+		Cmd_Shoot : BOOL;
 	END_STRUCT;
 	Gun_Switch : 	STRUCT 
 		Gun_Switch_Status : USINT;

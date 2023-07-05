@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.9.5.36 SP"?>
-<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="MOTOR_1">
+<Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="MOTOR_2">
   <Property Name="Description" Value=""/>
   <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="3"/>
+  <Property Name="Index" Value="4"/>
   <Property Name="MoveFocus" Value="Circular"/>
   <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
   <Property Name="Width" Value="640"/>
@@ -38,46 +38,46 @@
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
         <TextLayer LanguageId="en">
-          <Text ID="212165" Value="MOTOR 1"/>
-          <Text ID="217748" Value="Actual Position"/>
-          <Text ID="217749" Value="Actual Velocity"/>
-          <Text ID="217750" Value="Motor Status"/>
-          <Text ID="219611" Value="Manual_Homing"/>
-          <Text ID="219617" Value="Reset"/>
-          <Text ID="219623" Value="Stand Still"/>
-          <Text ID="219624" Value="Home OK"/>
-          <Text ID="219625" Value="Homing Sensor"/>
-          <Text ID="223455" Value="Power ON"/>
-          <Text ID="223456" Value="Empty Mag Sensor"/>
-          <Text ID="234851" Value="Back Home"/>
+          <Text ID="242518" Value="MOTOR 2"/>
+          <Text ID="242523" Value="Actual Position"/>
+          <Text ID="242524" Value="Actual Velocity"/>
+          <Text ID="242525" Value="Motor Status"/>
+          <Text ID="242526" Value="Manual_Homing"/>
+          <Text ID="242528" Value="Reset"/>
+          <Text ID="242530" Value="Stand Still"/>
+          <Text ID="242531" Value="Home OK"/>
+          <Text ID="242532" Value="Homing Sensor"/>
+          <Text ID="242534" Value="Power ON"/>
+          <Text ID="242535" Value="Empty Mag Sensor"/>
+          <Text ID="242536" Value="Back Home"/>
         </TextLayer>
         <TextLayer LanguageId="de">
-          <Text ID="212165" Value="Drive"/>
-          <Text ID="217748" Value="Actual Position"/>
-          <Text ID="217749" Value="Actual Velocity"/>
-          <Text ID="217750" Value="Motor Status"/>
-          <Text ID="219611" Value="Manual_Homing"/>
-          <Text ID="219617" Value="Reset_Motor"/>
-          <Text ID="219623" Value="Stand Still"/>
-          <Text ID="219624" Value="Home OK"/>
-          <Text ID="219625" Value="Homing Sensor"/>
-          <Text ID="223455" Value="Power ON"/>
-          <Text ID="223456" Value="Empty Mag Sensor"/>
-          <Text ID="234851" Value="Back Home"/>
+          <Text ID="242518" Value="Drive"/>
+          <Text ID="242523" Value="Actual Position"/>
+          <Text ID="242524" Value="Actual Velocity"/>
+          <Text ID="242525" Value="Motor Status"/>
+          <Text ID="242526" Value="Manual_Homing"/>
+          <Text ID="242528" Value="Reset_Motor"/>
+          <Text ID="242530" Value="Stand Still"/>
+          <Text ID="242531" Value="Home OK"/>
+          <Text ID="242532" Value="Homing Sensor"/>
+          <Text ID="242534" Value="Power ON"/>
+          <Text ID="242535" Value="Empty Mag Sensor"/>
+          <Text ID="242536" Value="Back Home"/>
         </TextLayer>
         <IndexMap>
-          <Index ID="212165" Value="45"/>
-          <Index ID="217748" Value="4"/>
-          <Index ID="217749" Value="5"/>
-          <Index ID="217750" Value="6"/>
-          <Index ID="219611" Value="7"/>
-          <Index ID="219617" Value="14"/>
-          <Index ID="219623" Value="16"/>
-          <Index ID="219624" Value="17"/>
-          <Index ID="219625" Value="18"/>
-          <Index ID="223455" Value="11"/>
-          <Index ID="223456" Value="12"/>
-          <Index ID="234851" Value="21"/>
+          <Index ID="242518" Value="15"/>
+          <Index ID="242523" Value="24"/>
+          <Index ID="242524" Value="25"/>
+          <Index ID="242525" Value="26"/>
+          <Index ID="242526" Value="27"/>
+          <Index ID="242528" Value="29"/>
+          <Index ID="242530" Value="31"/>
+          <Index ID="242531" Value="32"/>
+          <Index ID="242532" Value="33"/>
+          <Index ID="242534" Value="35"/>
+          <Index ID="242535" Value="36"/>
+          <Index ID="242536" Value="37"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -92,7 +92,7 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="45"/>
+          <Property Name="TextIndexOffset" Value="15"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="47"/>
           <Property Name="Width" Value="640"/>
@@ -102,7 +102,7 @@
           <Property Name="BitmapSource" Value="None"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="21"/>
@@ -113,7 +113,7 @@
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
           <Property Name="Top" Value="93"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_2">
@@ -121,7 +121,7 @@
           <Property Name="BitmapSource" Value="None"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="78"/>
@@ -132,7 +132,7 @@
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="None"/>
           <Property Name="Top" Value="93"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_12]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_17]"/>
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
@@ -145,7 +145,7 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="4"/>
+          <Property Name="TextIndexOffset" Value="24"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="207"/>
           <Property Name="Width" Value="135"/>
@@ -165,7 +165,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="210"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.Monitor.Actual_Position]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.Monitor.Actual_Position]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="90"/>
         </Control>
@@ -179,7 +179,7 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="5"/>
+          <Property Name="TextIndexOffset" Value="25"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="254"/>
           <Property Name="Width" Value="135"/>
@@ -199,7 +199,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="257"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.Monitor.Actual_Velocity]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.Monitor.Actual_Velocity]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="90"/>
         </Control>
@@ -213,7 +213,7 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="6"/>
+          <Property Name="TextIndexOffset" Value="26"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="160"/>
           <Property Name="Width" Value="135"/>
@@ -224,7 +224,7 @@
           <Property Name="BitmapSource" Value="None"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_13]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_20]"/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
@@ -233,12 +233,12 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="7"/>
+          <Property Name="TextIndex" Value="27"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="95"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_13]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_20]"/>
           <Property Name="Width" Value="121"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_5">
@@ -247,7 +247,7 @@
           <Property Name="BitmapSource" Value="None"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_15]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27]"/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
@@ -256,12 +256,12 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="14"/>
+          <Property Name="TextIndex" Value="29"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="95"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_15]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_27]"/>
           <Property Name="Width" Value="121"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_4">
@@ -274,13 +274,13 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="16"/>
+          <Property Name="TextIndexOffset" Value="31"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="300"/>
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.Monitor.StandStill]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.Monitor.StandStill]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -301,13 +301,13 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="17"/>
+          <Property Name="TextIndexOffset" Value="32"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="344"/>
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_2">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.Monitor.Home_OK]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.Monitor.Home_OK]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -328,13 +328,13 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="18"/>
+          <Property Name="TextIndexOffset" Value="33"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="390"/>
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_3">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.Monitor.Input_1]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.Monitor.Input_1]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -352,7 +352,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader]"/>
           <Property Name="Height" Value="41"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.Motor_state]"/>
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.Motor_state_2]"/>
           <Property Name="Left" Value="217"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -373,13 +373,13 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="11"/>
+          <Property Name="TextIndexOffset" Value="35"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="300"/>
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_4">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.PowerOn]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.PowerOn]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -400,13 +400,13 @@
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="12"/>
+          <Property Name="TextIndexOffset" Value="36"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="344"/>
           <Property Name="Width" Value="135"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_5">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.Empty_Mag_1_0.Empty_Mag_Sensor]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.Empty_Mag_22.Empty_Mag_Sensor]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -423,7 +423,7 @@
           <Property Name="BitmapSource" Value="None"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="37"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
@@ -432,17 +432,17 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="21"/>
+          <Property Name="TextIndex" Value="37"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="95"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_28]"/>
           <Property Name="Width" Value="121"/>
         </Control>
       </Controls>
       <KeyMapping>
-        <VirtualKey Name="%embVirtualKey_11">
+        <VirtualKey Name="%embVirtualKey_10">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -459,7 +459,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_12">
+        <VirtualKey Name="%embVirtualKey_17">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -476,7 +476,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_13">
+        <VirtualKey Name="%embVirtualKey_20">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -488,11 +488,11 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd.btn_homing]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd_2.btn_homing]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_15">
+        <VirtualKey Name="%embVirtualKey_27">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -504,11 +504,11 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.Cmd.Reset]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.XSM_Ctrl_2.Cmd.Reset]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_16">
+        <VirtualKey Name="%embVirtualKey_28">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -520,7 +520,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd.Torna_a_casa]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd_2.Torna_a_casa]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

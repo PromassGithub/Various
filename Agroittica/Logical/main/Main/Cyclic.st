@@ -62,9 +62,9 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		30: //shoot 
-			IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active)) THEN
+			IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active) AND Pesi_0.Cmd_Shoot) THEN
 				glb_io.Do.Piston_gun_1 := 1;
-			ELSIF (Gun_Switch_0.Gun_2_Active AND (NOT Gun_Switch_0.Gun_1_Active)) THEN
+			ELSIF (Gun_Switch_0.Gun_2_Active AND (NOT Gun_Switch_0.Gun_1_Active)AND Pesi_0.Cmd_Shoot) THEN
 				glb_io.Do.Piston_gun_2 :=1;
 			END_IF;
 			
@@ -133,17 +133,17 @@ PROGRAM _CYCLIC
 	
 	CASE Gun_Switch_0.Gun_Switch_Status OF
 		
-		0:
+		0:									//Start
 			IF ( Status = AUTO OR Status = MANUAL) AND (glb_err.pending_alarms = 0) THEN
 				Gun_Switch_0.Gun_Switch_Status := 1;
 			END_IF;
 			
-		1:	
+		1:									//Controllo sensori
 			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor) THEN
 				Gun_Switch_0.Gun_Switch_Status := 10;
 			END_IF;
 		
-		10:
+		10:									//Gun_1 attiva
 			Gun_Switch_0.Gun_1_Active := 1;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
@@ -151,7 +151,7 @@ PROGRAM _CYCLIC
 			
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
-		20:
+		20:									//Gun_2 attiva
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
@@ -159,7 +159,7 @@ PROGRAM _CYCLIC
 		
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
-		30:
+		30:									//Reset & Back to start
 			Gun_Switch_0.Gun_1_Active := 0;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
@@ -169,14 +169,14 @@ PROGRAM _CYCLIC
 	
 	//--------------------FLAP DIRECTION-----------------------
 	
-	CASE Flap_MM_0.Flap_status OF
+	CASE Flap_MM_0.Flap_status OF									//sincronizzazione convogliatore con pistole
 		
-		0:
+		0:									//Start
 			IF ( Status = AUTO OR Status = MANUAL) AND ( glb_err.pending_alarms = 0) THEN
 				Flap_MM_0.Flap_status := 10;
 			END_IF;
 			
-		10:
+		10:									//Gun Active check
 			IF Gun_Switch_0.Gun_1_Active THEN
 				Flap_MM_0.Flap_status := 20;
 			ELSIF Gun_Switch_0.Gun_2_Active THEN
@@ -185,7 +185,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
-		20:
+		20:									//Convogliatore verso Gun_1
 			Flap_MM_0.Flap_Right := 1;
 			Flap_MM_0.Flap_Left := 0;
 			
@@ -197,7 +197,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
-		30:
+		30:									//Convogliatore verso Gun_2
 			Flap_MM_0.Flap_Left := 1;
 			Flap_MM_0.Flap_Right := 0;
 			
@@ -209,7 +209,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
-		40:
+		40:									//Reset & back to start
 			Flap_MM_0.Flap_Left := 0;
 			Flap_MM_0.Flap_Right := 0;
 			
@@ -221,16 +221,35 @@ PROGRAM _CYCLIC
 	
 	//--------------------PESI---------------------------------
 	
-	CASE Pesi_0.Weight_Status OF
+	CASE Pesi_0.Weight_Status OF							//Gestione peso pesci
 		
-		0:
+		0: 							//Start
+			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN
+				Pesi_0.Weight_Status := 10;
+			END_IF;
+			Pesi_0.Cmd_Shoot := 0;
+		
+		10:							//Controllo pesi
+			IF (Pesi_0.Marel_Weight[0] <= Pesi_0.Max_Weight AND Pesi_0.Marel_Weight[0] >= Pesi_0.Min_Weight) THEN
+				Pesi_0.Weight_Status := 20;
+			ELSE
+				Pesi_0.Weight_Status := 30;
+			END_IF;
+			
+		20:							//Abilitato allo sparo & back to start
+			Pesi_0.Cmd_Shoot := 1;
+			Pesi_0.Weight_Status := 0;
+		
+		30:							//Non abilitato allo sparo & back to start
+			Pesi_0.Weight_Status := 0;
+				
 			
 	END_CASE;
 	
 	
 	//--------------------AUTO-FISH-----------------------------
 	
-	CASE Auto_fish_0.Fish_status OF
+	CASE Auto_fish_0.Fish_status OF				//Simulatore Pesce per TEST binario caricatore
 		
 		0:
 			TON_03.IN := 0;
@@ -282,7 +301,7 @@ PROGRAM _CYCLIC
 	
 	Tempo_Delay := REAL_TO_TIME (Tempo);
 	
-	STP_01_Pos;
+	//STP_01_Pos;
 	
 	 
 END_PROGRAM

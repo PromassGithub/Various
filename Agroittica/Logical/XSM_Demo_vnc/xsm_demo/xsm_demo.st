@@ -215,6 +215,10 @@ PROGRAM _CYCLIC
 				MM_0.MM_status := 30;
 			END_IF;
 			
+			IF (XSM_Ctrl_0.Monitor.Actual_Position = XSM_Ctrl_0.Parameters.HomePosition) THEN
+				MM_0.MM_status := 31;
+			END_IF;
+			
 		30:					//Reset and back to safety
 			XSM_Ctrl_0.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_0.Cmd.Velocity := 0;
@@ -412,7 +416,7 @@ PROGRAM _CYCLIC
 			
 		1: // idle auto
 			XSM_Ctrl_0.Cmd.Distance := Dim_etichetta;
-			IF ((glb_cmd.sparo OR glb_cmd.sparo_2) AND XSM_Ctrl_0.PowerOn AND Homed) THEN FW_step_status := 10; glb_cmd.sparo := 0; glb_cmd.sparo_2 := 0; END_IF;
+			IF ((glb_cmd.sparo) AND XSM_Ctrl_0.PowerOn AND Homed) THEN FW_step_status := 10; glb_cmd.sparo := 0; END_IF;
 			
 			IF (Empty_Mag_1_0.Empty_Mag_Sensor) THEN FW_step_status := 20; END_IF;
 			

@@ -11,7 +11,7 @@
 
 PROGRAM _INIT
 	
-	IF (posizione_salvata_2_2 <> 0) THEN Actual_position_2 := posizione_salvata_2_2; END_IF
+	IF (posizione_salvata_2 <> 0) THEN Actual_Position_2 := posizione_salvata_2; END_IF
 
 	(* Set up XSM Control parameters. *)
 	XSM_Ctrl_2.IO_Mapping.DeviceName := 'IF6.ST2';					(* Location of SM module on X20 CPU. *)
@@ -141,7 +141,7 @@ PROGRAM _CYCLIC
 	CASE MM_2.MM_status OF		//Marcia Motore in manuale
 		
 		0:					//Safety check
-			IF (Status = MANUAL AND glb_err.pending_alarms = 0 AND Homed_2_2 AND (NOT glb_err.Drive2)) THEN
+			IF (Status = MANUAL AND glb_err.pending_alarms = 0 AND Homed_2 AND (NOT glb_err.Drive2)) THEN
 				MM_2.MM_status := 1;
 			END_IF;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
@@ -215,11 +215,15 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 30;
 			END_IF;
 			
+			IF (XSM_Ctrl_2.Monitor.Actual_Position = XSM_Ctrl_2.Parameters.HomePosition) THEN
+				MM_2.MM_status := 31;
+			END_IF;
+			
 		30:					//Reset and back to safety
 			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_2.Cmd.Velocity := 0;
 			XSM_Ctrl_2.Cmd.Stop := TRUE;
-			old_pos_2_2 := XSM_Ctrl_2.Monitor.Actual_Position;
+			old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
 			Status := STOP;
 			MM_2.MM_status := 0;
 					
@@ -274,46 +278,46 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
-	CASE Auto_Homing_Ctrl_2.Auto_Homing_status_2 OF  //Pop Up di Auto Homing
+	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
 		
 		0:					//Start
 			IF ((NOT Homed_2) AND Status = AUTO) THEN
-				Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 1;
+				Auto_Homing_Ctrl_2.Auto_Homing_Status := 1;
 			END_IF;
 			Auto_Homing_Ctrl_2.Pop_Up := 1;
 			Auto_Homing_Ack_2 := 0;
-			Auto_Homing_Ctrl_2.Auto_Homing_Ack_2_Pop_Up := FALSE;
+			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := FALSE;
 			
 		1:					//Pop Up
 			Auto_Homing_Ctrl_2.Pop_Up := 0;
-			Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 10;
+			Auto_Homing_Ctrl_2.Auto_Homing_Status := 10;
 			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 40; END_IF;
+			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 			
 		10:					//Ack Pop Up
 			IF (Auto_Homing_Ack_2) THEN
 				Auto_Homing_Ctrl_2.Pop_Up := 1;
-				Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 20;
+				Auto_Homing_Ctrl_2.Auto_Homing_Status := 20;
 			END_IF;
 			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 40; END_IF;
+			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 		
 		20:					//Movement
-			Auto_Homing_Ctrl_2.Auto_Homing_Ack_2_Pop_Up := TRUE;
-			Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 30;
+			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := TRUE;
+			Auto_Homing_Ctrl_2.Auto_Homing_Status := 30;
 			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 40; END_IF;
+			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 		
 		30:					//Back to start
 			IF (Homed_2) THEN
-				Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 40;
+				Auto_Homing_Ctrl_2.Auto_Homing_Status := 40;
 			END_IF;
 			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 40; END_IF;
+			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 			
 		40:
 			//Status := STOP;
-			Auto_Homing_Ctrl_2.Auto_Homing_status_2 := 0;
+			Auto_Homing_Ctrl_2.Auto_Homing_Status := 0;
 		
 	END_CASE;
 	
@@ -357,7 +361,7 @@ PROGRAM _CYCLIC
 	CASE Homing_status_2 OF
 		
 		0: 
-			IF (((glb_cmd_2.btn_homing AND Status = MANUAL) OR ((NOT Homed_2) AND Status = AUTO AND Auto_Homing_Ctrl_2.Auto_Homing_Ack_2_Pop_Up)) AND XSM_Ctrl_2.PowerOn) THEN
+			IF (((glb_cmd_2.btn_homing AND Status = MANUAL) OR ((NOT Homed_2) AND Status = AUTO AND Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up)) AND XSM_Ctrl_2.PowerOn) THEN
 				Homing_status_2 := 1; 
 				glb_cmd_2.btn_homing := 0;
 			END_IF;
@@ -474,7 +478,7 @@ PROGRAM _CYCLIC
 			IF (glb_cmd_2.Reboot_pos) THEN CMD_Reboot_pos_status_2 := 2; END_IF;
 			
 		2: // idle auto
-			XSM_Ctrl_2.Cmd.Position := Actual_position_2;
+			XSM_Ctrl_2.Cmd.Position := Actual_Position_2;
 			IF (XSM_Ctrl_2.PowerOn AND Homed_2) THEN 
 				CMD_Reboot_pos_status_2 := 10; 
 				glb_cmd_2.Reboot_pos := 0; 

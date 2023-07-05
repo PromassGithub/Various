@@ -38,5 +38,5 @@ VAR_CONFIG
 	glb_io.Do.Piston_gun_2 AT %QX."X3".DigitalOutput04;
 	glb_io.Do.Piston_Flap_Dx_Sx AT %QX."X3".DigitalOutput09;
 	Cyclic#1.Empty_Mag_1_0.Empty_Mag_Sensor AT %IX."X1".DigitalInput03;
-	Empty_Mag_22.Empty_Mag_Sensor AT %IX."X1".DigitalInput04;
+	Cyclic#1.Empty_Mag_22.Empty_Mag_Sensor AT %IX."X1".DigitalInput04;
 END_VAR
