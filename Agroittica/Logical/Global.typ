@@ -36,7 +36,7 @@ TYPE
 	END_STRUCT;
 	Empty_Mag_2 : 	STRUCT 
 		Empty_Mag_Status : USINT;
-		Empty_Mag_Pop_Up : USINT;
+		Empty_Mag_Pop_Up : USINT := 1;
 		Empty_Mag_Ack : BOOL;
 		Empty_Mag_Sensor : BOOL;
 	END_STRUCT;

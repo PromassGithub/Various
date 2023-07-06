@@ -274,8 +274,6 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 0;
 			END_IF;
 		
-			
-		
 	END_CASE;
 	
 	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
