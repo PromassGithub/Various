@@ -15,7 +15,7 @@ PROGRAM _INIT
 
 	(* Set up XSM Control parameters. *)
 	XSM_Ctrl_2.IO_Mapping.DeviceName := 'IF6.ST2';					(* Location of SM module on X20 CPU. *)
-	XSM_Ctrl_2.IO_Mapping.Channel := 1;								(* Channel number, motor 1 on the module. *)
+	XSM_Ctrl_2.IO_Mapping.Channel := 2;								(* Channel number, motor 1 on the module. *)
 
 	XSM_Ctrl_2.Parameters.Units_rev := 700;							(* User scaling, units per rev. *)
 	XSM_Ctrl_2.Parameters.PosSWLimit := 19000;						(* Units based on user scaling, change to suit application. *)

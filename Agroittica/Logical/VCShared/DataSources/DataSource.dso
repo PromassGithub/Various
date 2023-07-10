@@ -9499,23 +9499,25 @@
         <Property Name="VCType" Value="BOOL"/>
       </DataPoint>
     </Folder>
-    <DataPoint Name="Lock_left_button">
-      <Property Name="ConnectedBySharedResource" Value="False"/>
-      <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+    <Folder Name="main">
       <Property Name="Description" Value=""/>
-      <Property Name="PLCType" Value="USINT"/>
-      <Property Name="UpdateTime" Value="Default"/>
-      <Property Name="UserID" Value="None"/>
-      <Property Name="VCType" Value="INTEGER"/>
-    </DataPoint>
-    <DataPoint Name="Lock_right_button">
-      <Property Name="ConnectedBySharedResource" Value="False"/>
-      <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="PLCType" Value="USINT"/>
-      <Property Name="UpdateTime" Value="Default"/>
-      <Property Name="UserID" Value="None"/>
-      <Property Name="VCType" Value="INTEGER"/>
-    </DataPoint>
+      <Property Name="FolderType" Value="Package"/>
+      <Folder Name="Main">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Program"/>
+        <DataPoint Name="Distanza_Sensore_Gun">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="DPLimit" Value="None"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="REAL"/>
+          <Property Name="PLCUnit" Value="None"/>
+          <Property Name="UnitGroup" Value="None"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="SCALED"/>
+        </DataPoint>
+      </Folder>
+    </Folder>
   </DataPoints>
 </DataSource>

@@ -64,7 +64,7 @@ PROGRAM _CYCLIC
 		30: //shoot 
 			IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active) AND Pesi_0.Cmd_Shoot) THEN
 				glb_io.Do.Piston_gun_1 := 1;
-			ELSIF (Gun_Switch_0.Gun_2_Active AND (NOT Gun_Switch_0.Gun_1_Active)AND Pesi_0.Cmd_Shoot) THEN
+			ELSIF (Gun_Switch_0.Gun_2_Active AND (NOT Gun_Switch_0.Gun_1_Active) AND Pesi_0.Cmd_Shoot) THEN
 				glb_io.Do.Piston_gun_2 :=1;
 			END_IF;
 			
@@ -227,7 +227,6 @@ PROGRAM _CYCLIC
 			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN
 				Pesi_0.Weight_Status := 10;
 			END_IF;
-			Pesi_0.Cmd_Shoot := 0;
 		
 		10:							//Controllo pesi
 			IF (Pesi_0.Marel_Weight[0] <= Pesi_0.Max_Weight AND Pesi_0.Marel_Weight[0] >= Pesi_0.Min_Weight) THEN
@@ -241,6 +240,7 @@ PROGRAM _CYCLIC
 			Pesi_0.Weight_Status := 0;
 		
 		30:							//Non abilitato allo sparo & back to start
+			Pesi_0.Cmd_Shoot := 0;
 			Pesi_0.Weight_Status := 0;
 				
 			

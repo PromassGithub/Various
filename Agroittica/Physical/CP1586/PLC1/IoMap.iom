@@ -37,8 +37,11 @@ VAR_CONFIG
 	glb_io.Do.Piston_up AT %QX."X3".DigitalOutput03;
 	glb_io.Do.Piston_gun_2 AT %QX."X3".DigitalOutput04;
 	glb_io.Do.Piston_Flap_Dx_Sx AT %QX."X3".DigitalOutput09;
-	Cyclic#1.glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
 	Cyclic#1.Empty_Mag_22.Empty_Mag_Sensor AT %IX."X1".DigitalInput04;
-	glb_io.Di.Finecorsa AT %IX."X1".DigitalInput01;
-	Empty_Mag_1_0.Empty_Mag_Sensor AT %IX."X1".DigitalInput02;
+	Cyclic#1.Empty_Mag_1_0.Empty_Mag_Sensor AT %IX."X1".DigitalInput02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.AbsPos AT %QD."80SD100XD.C044-01".AbsPos02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenControl AT %QW."80SD100XD.C044-01".MpGenControl02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenMode AT %QB."80SD100XD.C044-01".MpGenMode02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.AbsPosActVal AT %ID."80SD100XD.C044-01".AbsPos02ActVal;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus02;
 END_VAR

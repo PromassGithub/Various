@@ -106,8 +106,6 @@
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="21"/>
-          <Property Name="Locking" Value="Datapoint = 0"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Lock_left_button]"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollLeft]"/>
@@ -127,8 +125,6 @@
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
           <Property Name="Left" Value="78"/>
-          <Property Name="Locking" Value="Datapoint = 0"/>
-          <Property Name="LockingDatapoint" Value="Source[global].Variable[DataSource.Lock_right_button]"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollRight]"/>
@@ -454,8 +450,7 @@
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Datapoint = 0"/>
-              <Property Name="LockingDatapoint" Value="None"/>
+              <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
@@ -471,8 +466,7 @@
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Datapoint = 0"/>
-              <Property Name="LockingDatapoint" Value="None"/>
+              <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>

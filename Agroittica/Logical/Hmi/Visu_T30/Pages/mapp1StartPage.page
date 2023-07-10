@@ -48,6 +48,7 @@
           <Text ID="238672" Value="Weight Range Selection"/>
           <Text ID="238673" Value="Min"/>
           <Text ID="238674" Value="Max"/>
+          <Text ID="246458" Value="Programming"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="219681" Value="Machine Status"/>
@@ -60,6 +61,7 @@
           <Text ID="238672" Value="Weight Range Selection"/>
           <Text ID="238673" Value="Min"/>
           <Text ID="238674" Value="Max"/>
+          <Text ID="246458" Value="Programming"/>
         </TextLayer>
         <IndexMap>
           <Index ID="219681" Value="30"/>
@@ -72,6 +74,7 @@
           <Index ID="238672" Value="10"/>
           <Index ID="238673" Value="11"/>
           <Index ID="238674" Value="13"/>
+          <Index ID="246458" Value="14"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -246,7 +249,7 @@
           <Property Name="ForeColor" Value="0"/>
           <Property Name="Height" Value="36"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="72"/>
+          <Property Name="Left" Value="89"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedForeColor" Value="2"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -256,7 +259,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="346"/>
+          <Property Name="Top" Value="310"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
           <Property Name="Width" Value="123"/>
         </Control>
@@ -420,6 +423,32 @@
           <Property Name="Top" Value="385"/>
           <Property Name="Width" Value="41"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_10">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BackColor" Value="16"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_38]"/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="36"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="89"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedForeColor" Value="2"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="14"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="360"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_38]"/>
+          <Property Name="Width" Value="123"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_18">
@@ -448,6 +477,19 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Auto_fish_0.Fish_Start]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_38">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[Programming]"/>
+              <Property Name="Target" Value="Page"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

@@ -8,6 +8,7 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Glb_XSM_ctrl : XSM_Ctrl := (0);
 	Lock_right_button : USINT := 0;
 	Lock_left_button : USINT := 0;
 	Auto_fish_0 : Auto_fish := (0);

@@ -224,7 +224,7 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_0.Cmd.Velocity := 0;
 			XSM_Ctrl_0.Cmd.Stop := TRUE;
 			old_pos := XSM_Ctrl_0.Monitor.Actual_Position;
-			Status := STOP;
+			(*Status := STOP;*)
 			MM_0.MM_status := 0;
 					
 		31:					//Left Stop
@@ -376,16 +376,19 @@ PROGRAM _CYCLIC
 		10:
 			XSM_Ctrl_0.Cmd.Move_Velocity := TRUE;
 			Homing_status := 20;
+			
 		20:
 			IF (XSM_Ctrl_0.IO_Mapping.InputStatus = 1) THEN
 				XSM_Ctrl_0.Cmd.Stop := TRUE;
 				XSM_Ctrl_0.Cmd.Velocity := 200;
 				Homing_status := 30;
 			END_IF;
+			
 		30:
 			XSM_Ctrl_0.Cmd.Stop := FALSE;
 			XSM_Ctrl_0.Cmd.Move_Velocity := TRUE;
 			Homing_status := 40;
+			
 		40:
 			IF (NOT (XSM_Ctrl_0.IO_Mapping.InputStatus = 1)) THEN
 				XSM_Ctrl_0.Cmd.Stop := TRUE;
@@ -432,6 +435,7 @@ PROGRAM _CYCLIC
 			IF (Empty_Mag_1_0.Empty_Mag_Sensor) THEN FW_step_status := 20; END_IF;
 			
 			IF (Status <> AUTO) THEN FW_step_status := 20; END_IF;
+			
 		20:
 			XSM_Ctrl_0.Cmd.Move_Additive := FALSE;
 			FW_step_status := 0;
@@ -472,7 +476,7 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_0.Cmd.Move_Absolute := FALSE;
 			CMD_home_status := 0;
 		
-	END_CASE
+	END_CASE;
 	
 	CASE CMD_Reboot_pos_status OF
 		0: // idle
@@ -489,6 +493,7 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status := 20; END_IF;
+			
 		10:
 			XSM_Ctrl_0.Cmd.Move_Absolute := TRUE;
 			IF (XSM_Ctrl_0.Monitor.Actual_Position = Actual_Position_0) THEN 
@@ -497,11 +502,12 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_Reboot_pos_status := 20; END_IF;
+			
 		20:
 			XSM_Ctrl_0.Cmd.Move_Absolute := FALSE;
 			CMD_Reboot_pos_status := 0;
 		
-	END_CASE
+	END_CASE;
 	
 	posizione_salvata := XSM_Ctrl_0.Monitor.Actual_Position;
 	
