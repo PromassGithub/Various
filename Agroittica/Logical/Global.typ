@@ -9,6 +9,10 @@
  ********************************************************************)
 
 TYPE
+	Feedback : 	STRUCT 
+		Feedback_Air : BOOL;
+		Feedback_PLC : BOOL;
+	END_STRUCT;
 	Pesi : 	STRUCT 
 		Weight_Status : USINT;
 		Max_Weight : UINT;
