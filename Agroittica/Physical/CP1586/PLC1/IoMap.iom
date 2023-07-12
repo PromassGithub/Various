@@ -44,4 +44,8 @@ VAR_CONFIG
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenMode AT %QB."80SD100XD.C044-01".MpGenMode02;
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.AbsPosActVal AT %ID."80SD100XD.C044-01".AbsPos02ActVal;
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus02;
+	Cyclic#1.::glb_io.Di.Finecorsa AT %IX."X1".DigitalInput01;
+	Cyclic#1.::glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
+	Cyclic#1.Feedback_0.Feedback_PLC AT %IX."X2".DigitalInput13;
+	Cyclic#1.Feedback_0.Feedback_Air AT %IX."X2".DigitalInput14;
 END_VAR

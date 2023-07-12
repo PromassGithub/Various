@@ -90,6 +90,8 @@ TYPE
 		Drive2 : BOOL;
 		Drive1 : BOOL;
 		pending_alarms : UDINT;
+		Air : BOOL;
+		PLC : BOOL;
 	END_STRUCT;
 	typ_hmi_out : 	STRUCT 
 		Reset : BOOL;

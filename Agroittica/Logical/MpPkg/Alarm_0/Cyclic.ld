@@ -75,7 +75,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXSetStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'motor 1 fault'"/>
+			<analog type="input" name="'Motor 1 fault'"/>
 			<function position="bottom" type="MpAlarmXSet"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -92,7 +92,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXResetStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'motor 1 fault'"/>
+			<analog type="input" name="'Motor 1 fault'"/>
 			<function position="bottom" type="MpAlarmXReset"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -109,7 +109,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXAckStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'motor 1 fault'"/>
+			<analog type="input" name="'Motor 1 fault'"/>
 			<function position="bottom" type="MpAlarmXAcknowledge"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -126,7 +126,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXSetStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'motor 2 fault'"/>
+			<analog type="input" name="'Motor 2 fault'"/>
 			<function position="bottom" type="MpAlarmXSet"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -143,7 +143,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXResetStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'motor 2 fault'"/>
+			<analog type="input" name="'Motor 2 fault'"/>
 			<function position="bottom" type="MpAlarmXReset"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -160,7 +160,109 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXAckStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'motor 2 fault'"/>
+			<analog type="input" name="'Motor 2 fault'"/>
+			<function position="bottom" type="MpAlarmXAcknowledge"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="0">
+		<row>
+			<contact type="positive transition" name="glb_err.Air"/>
+			<function position="top" type="MpAlarmXSet"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="7"/></function>
+			<analog type="output" name="AlarmXSetStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Air supply fault'"/>
+			<function position="bottom" type="MpAlarmXSet"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="0">
+		<row>
+			<contact type="negative transition" name="glb_err.Air"/>
+			<function position="top" type="MpAlarmXReset"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="4"/></function>
+			<analog type="output" name="AlarmXResetStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Air supply fault'"/>
+			<function position="bottom" type="MpAlarmXReset"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="0">
+		<row>
+			<contact type="positive transition" name="AckUserStatus"/>
+			<function position="top" type="MpAlarmXAcknowledge"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="4"/></function>
+			<analog type="output" name="AlarmXAckStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Air supply fault'"/>
+			<function position="bottom" type="MpAlarmXAcknowledge"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="0">
+		<row>
+			<contact type="positive transition" name="glb_err.PLC"/>
+			<function position="top" type="MpAlarmXSet"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="7"/></function>
+			<analog type="output" name="AlarmXSetStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Emergency Button pressed'"/>
+			<function position="bottom" type="MpAlarmXSet"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="0">
+		<row>
+			<contact type="negative transition" name="glb_err.PLC"/>
+			<function position="top" type="MpAlarmXReset"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="4"/></function>
+			<analog type="output" name="AlarmXResetStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Emergency Button pressed'"/>
+			<function position="bottom" type="MpAlarmXReset"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="0">
+		<row>
+			<contact type="positive transition" name="AckUserStatus"/>
+			<function position="top" type="MpAlarmXAcknowledge"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="4"/></function>
+			<analog type="output" name="AlarmXAckStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Emergency Button pressed'"/>
 			<function position="bottom" type="MpAlarmXAcknowledge"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -287,6 +389,8 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
+
 
 
 

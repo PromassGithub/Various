@@ -4,13 +4,23 @@
   <Element ID="gAlarmXCore" Type="mpalarmxcore">
     <Group ID="mapp.AlarmX.Core.Configuration">
       <Group ID="[0]">
-        <Property ID="Name" Value="motor fault" />
-        <Property ID="Message" Value="motor fault" />
+        <Property ID="Name" Value="Motor fault" />
+        <Property ID="Message" Value="Motor fault" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
       <Group ID="[1]">
-        <Property ID="Name" Value="motor 2 fault" />
-        <Property ID="Message" Value="motor fault" />
+        <Property ID="Name" Value="Motor 2 fault" />
+        <Property ID="Message" Value="Motor fault" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="Air supply fault" />
+        <Property ID="Message" Value="Air supply not connected" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="Emergency Button" />
+        <Property ID="Message" Value="Emergency Button pressed" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
     </Group>

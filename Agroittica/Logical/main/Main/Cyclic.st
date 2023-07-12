@@ -303,5 +303,25 @@ PROGRAM _CYCLIC
 	
 	//STP_01_Pos;
 	
+	//--------------------AIR------------------------------------
+	
+	//Feedback air supply
+	
+	IF (NOT Feedback_0.Feedback_Air) THEN
+		glb_err.Air := TRUE;
+	ELSE
+		glb_err.Air := FALSE;
+	END_IF;
+	
+	//--------------------PLC------------------------------------
+	
+	//Feedback fungo emergenza
+	
+	IF ( Feedback_0.Feedback_PLC ) THEN
+		glb_err.PLC := TRUE;
+	ELSE
+		glb_err.PLC := FALSE;
+	END_IF;
+	
 	 
 END_PROGRAM
