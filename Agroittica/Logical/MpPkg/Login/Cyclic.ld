@@ -15,7 +15,7 @@ PROGRAM _CYCLIC
 			<empty/>
 		</row>
 		<row>
-			<analog type="input"/>
+			<empty/>
 			<functionblock position="middle" type="MpUserLoginUI"><input name="MpLink" vardynamic="true"/><output name="Active"/></functionblock>
 			<empty/>
 		</row>
@@ -37,4 +37,5 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
 

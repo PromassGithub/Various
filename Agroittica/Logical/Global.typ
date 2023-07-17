@@ -103,6 +103,9 @@ TYPE
 		Stop_HMI : BOOL;
 		Auto_HMI : BOOL;
 		Manual_HMI : BOOL;
+		Gun_1_Valve_HMI : BOOL;
+		Gun_2_Valve_HMI : BOOL;
+		Soll_Valve_HMI : BOOL;
 	END_STRUCT;
 	typ_hmi : 	STRUCT 
 		Inp : typ_hmi_inp;

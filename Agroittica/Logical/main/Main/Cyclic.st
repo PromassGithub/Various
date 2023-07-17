@@ -46,7 +46,7 @@ PROGRAM _CYCLIC
 			TON_01.IN 		:= 0;
 			TON_02.IN 		:= 0;
 			
-			IF glb_io.Di.Si_01 THEN St_Gun := 10; END_IF;
+			IF (glb_io.Di.Si_01) THEN St_Gun := 10; END_IF;
 		
 		10:	//
 			
@@ -76,14 +76,19 @@ PROGRAM _CYCLIC
 			
 			TON_02.IN := 1;
 			
-			IF TON_02.Q THEN St_Gun := 40; END_IF;
+			IF TON_02.Q THEN 
+				glb_io.Do.Piston_up		:= 0;
+				St_Gun := 40; 
+			END_IF;
 		
 		40: 
-			IF NOT glb_io.Di.Si_01 THEN St_Gun := 50; END_IF;
+			TON_03.IN := 1;
+			IF(NOT glb_io.Di.Si_01 AND TON_03.Q) THEN St_Gun := 50; END_IF;
 		
 		50: // end & reset
 			TON_01.IN 				:= 0;
 			TON_02.IN 				:= 0;
+			TON_03.IN 				:= 0;
 			glb_io.Do.Piston_gun_1 	:= 0;
 			glb_io.Do.Piston_gun_2 	:= 0;
 			glb_io.Do.Piston_up		:= 0;
@@ -99,8 +104,8 @@ PROGRAM _CYCLIC
 	TON_03;
 	
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#50ms;
-	TON_03.PT := T#250ms;
+	TON_02.PT := T#10ms; 	// tempo di sparo
+	TON_03.PT := T#1000ms; 	// tempo di attesa dopo lo sparo
 	
 	R_TRIG_01;
 	R_TRIG_02;
@@ -186,11 +191,11 @@ PROGRAM _CYCLIC
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
 		20:									//Convogliatore verso Gun_1
-			Flap_MM_0.Flap_Right := 1;
-			Flap_MM_0.Flap_Left := 0;
+			Flap_MM_0.Flap_Right := 0;
+			Flap_MM_0.Flap_Left := 1;
 			
-			IF Flap_MM_0.Flap_Right THEN
-				glb_io.Do.Piston_Flap_Dx_Sx := 1;
+			IF Flap_MM_0.Flap_Left THEN
+				glb_io.Do.Piston_Flap_Dx_Sx := 0;
 			END_IF;
 			
 			IF Gun_Switch_0.Gun_2_Active THEN Flap_MM_0.Flap_status := 30; END_IF;
@@ -198,11 +203,11 @@ PROGRAM _CYCLIC
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
 		30:									//Convogliatore verso Gun_2
-			Flap_MM_0.Flap_Left := 1;
-			Flap_MM_0.Flap_Right := 0;
+			Flap_MM_0.Flap_Left := 0;
+			Flap_MM_0.Flap_Right := 1;
 			
-			IF Flap_MM_0.Flap_Left THEN
-				glb_io.Do.Piston_Flap_Dx_Sx := 0;
+			IF Flap_MM_0.Flap_Right THEN
+				glb_io.Do.Piston_Flap_Dx_Sx := 1;
 			END_IF;
 			
 			IF Gun_Switch_0.Gun_1_Active THEN Flap_MM_0.Flap_status := 20; END_IF;
@@ -317,11 +322,15 @@ PROGRAM _CYCLIC
 	
 	//Feedback fungo emergenza
 	
-	IF ( Feedback_0.Feedback_PLC ) THEN
+	IF ( NOT Feedback_0.Feedback_PLC ) THEN
 		glb_err.PLC := TRUE;
 	ELSE
 		glb_err.PLC := FALSE;
 	END_IF;
+	
+	//-------------------HMI-------------------------------------
+	
+	
 	
 	 
 END_PROGRAM
