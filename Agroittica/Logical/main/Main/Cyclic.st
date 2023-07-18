@@ -61,6 +61,20 @@ PROGRAM _CYCLIC
 				St_Gun := 30; 
 			END_IF;
 			
+//			IF glb_io.Do.Piston_up THEN
+//				TON_04.IN := 1;
+//			END_IF;
+//			
+//			IF TON_04.Q THEN
+//				St_Gun := 50;
+//			END_IF;
+			
+			
+//			IF (glb_io.Do.Piston_up AND (NOT glb_io.Di.Finecorsa)) THEN
+//				St_Gun := 50;
+//			END_IF;
+			
+			
 		30: //shoot 
 			IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active) AND Pesi_0.Cmd_Shoot) THEN
 				glb_io.Do.Piston_gun_1 := 1;
@@ -89,6 +103,7 @@ PROGRAM _CYCLIC
 			TON_01.IN 				:= 0;
 			TON_02.IN 				:= 0;
 			TON_03.IN 				:= 0;
+			TON_04.IN 				:= 0;
 			glb_io.Do.Piston_gun_1 	:= 0;
 			glb_io.Do.Piston_gun_2 	:= 0;
 			glb_io.Do.Piston_up		:= 0;
@@ -102,10 +117,12 @@ PROGRAM _CYCLIC
 	TON_01;
 	TON_02;
 	TON_03;
+	TON_04;
 	
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#10ms; 	// tempo di sparo
+	TON_02.PT := T#150ms; 	// tempo di sparo
 	TON_03.PT := T#1000ms; 	// tempo di attesa dopo lo sparo
+	TON_04.PT := T#1000ms;
 	
 	R_TRIG_01;
 	R_TRIG_02;
@@ -152,7 +169,11 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_1_Active := 1;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
-			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN Gun_Switch_0.Gun_Switch_Status := 20; END_IF;
+			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN 
+				Gun_Switch_0.Gun_Switch_Status := 20;
+			ELSIF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_2) THEN
+				Gun_Switch_0.Gun_Switch_Status := 10;	
+			END_IF;
 			
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
@@ -160,7 +181,11 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
-			IF Empty_Mag_22.Empty_Mag_Sensor THEN Gun_Switch_0.Gun_Switch_Status := 10; END_IF;
+			IF Empty_Mag_22.Empty_Mag_Sensor THEN 
+				Gun_Switch_0.Gun_Switch_Status := 10;
+			ELSIF (Empty_Mag_22.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_1) THEN
+				Gun_Switch_0.Gun_Switch_Status := 20;	
+			END_IF;
 		
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
@@ -254,47 +279,47 @@ PROGRAM _CYCLIC
 	
 	//--------------------AUTO-FISH-----------------------------
 	
-	CASE Auto_fish_0.Fish_status OF				//Simulatore Pesce per TEST binario caricatore
-		
-		0:
-			TON_03.IN := 0;
-			
-			IF ( Status = AUTO AND Auto_fish_0.Fish_Start) THEN
-				Auto_fish_0.Fish_status := 10;
-			END_IF;
-			
-			
-		10:
-			glb_io.Di.Si_01 :=1;
-			
-			TON_03.IN := 1;
-			
-			IF TON_03.Q THEN
-				Auto_fish_0.Fish_status := 20;
-			END_IF;
-	
-			IF ( Status <> AUTO) THEN Auto_fish_0.Fish_status := 31; END_IF;
-			
-		20:
-			glb_io.Di.Finecorsa := 1;
-			Auto_fish_0.Fish_status := 30;
-			
-			IF ( Status <> AUTO) THEN Auto_fish_0.Fish_status := 31; END_IF;
-			
-		30:
-			glb_io.Di.Si_01 := 0;
-			glb_io.Di.Finecorsa := 0;
-			
-			Auto_fish_0.Fish_status := 0;
-			
-		31:
-			glb_io.Di.Si_01 := 0;
-			glb_io.Di.Finecorsa := 0;
-			Auto_fish_0.Fish_Start := 0;
-		
-			Auto_fish_0.Fish_status := 0;
-		
-	END_CASE;
+//	CASE Auto_fish_0.Fish_status OF				//Simulatore Pesce per TEST binario caricatore
+//		
+//		0:
+//			TON_03.IN := 0;
+//			
+//			IF ( Status = AUTO AND Auto_fish_0.Fish_Start) THEN
+//				Auto_fish_0.Fish_status := 10;
+//			END_IF;
+//			
+//			
+//		10:
+//			glb_io.Di.Si_01 :=1;
+//			
+//			TON_03.IN := 1;
+//			
+//			IF TON_03.Q THEN
+//				Auto_fish_0.Fish_status := 20;
+//			END_IF;
+//	
+//			IF ( Status <> AUTO) THEN Auto_fish_0.Fish_status := 31; END_IF;
+//			
+//		20:
+//			glb_io.Di.Finecorsa := 1;
+//			Auto_fish_0.Fish_status := 30;
+//			
+//			IF ( Status <> AUTO) THEN Auto_fish_0.Fish_status := 31; END_IF;
+//			
+//		30:
+//			glb_io.Di.Si_01 := 0;
+//			glb_io.Di.Finecorsa := 0;
+//			
+//			Auto_fish_0.Fish_status := 0;
+//			
+//		31:
+//			glb_io.Di.Si_01 := 0;
+//			glb_io.Di.Finecorsa := 0;
+//			Auto_fish_0.Fish_Start := 0;
+//		
+//			Auto_fish_0.Fish_status := 0;
+//		
+//	END_CASE;
 	
 	
 	
@@ -302,7 +327,7 @@ PROGRAM _CYCLIC
 	
 	//Calcolo tempo delay sollevamento pesce
 	
-	Tempo := (Distanza_Sensore_Gun/STP_01_Vel)*1000;
+	Tempo := Distanza_Sensore_Gun/STP_01_Vel*1000;
 	
 	Tempo_Delay := REAL_TO_TIME (Tempo);
 	
@@ -328,8 +353,96 @@ PROGRAM _CYCLIC
 		glb_err.PLC := FALSE;
 	END_IF;
 	
-	//-------------------HMI-------------------------------------
+	//-------------------TEST-ELETTROVALVOLE---------------------
+//	CASE St_Valve OF
+//		
+//		0:
+//			IF ( Status = MANUAL) AND (glb_err.pending_alarms = 0) THEN
+//				St_Valve := 10;
+//			END_IF;
+//			
+//		1:
+//			
+//			IF (glb_hmi.Inp.Gun_1_Valve_HMI) THEN
+//				St_Valve := 10;
+//			END_IF;
+//	
+//			IF (glb_hmi.Inp.Gun_2_Valve_HMI) THEN
+//				St_Valve := 20;
+//			END_IF;
+//	
+//			IF (glb_hmi.Inp.Soll_Valve_HMI) THEN
+//				St_Valve := 30;
+//			END_IF;
+//			
+//			IF (glb_hmi.Inp.Sx_Dx_Valve_HMI) THEN
+//				St_Valve := 40;
+//			END_IF;
+//			
+//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
+//			
+//			
+//		10:
+//			glb_io.Do.Piston_gun_1 := 1;
+//			
+//			IF (NOT glb_hmi.Inp.Gun_1_Valve_HMI) THEN
+//				St_Valve := 50;
+//			END_IF;
+//			
+//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
+//			
+//		20: 
+//			glb_io.Do.Piston_gun_2 := 1;
+//			
+//			IF (NOT glb_hmi.Inp.Gun_1_Valve_HMI) THEN
+//				St_Valve := 50;
+//			END_IF;
+//			
+//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
+//			
+//		30:
+//			glb_io.Do.Piston_up := 1;
+//			
+//			IF (NOT glb_hmi.Inp.Gun_1_Valve_HMI) THEN
+//				St_Valve := 50;
+//			END_IF;
+//			
+//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
+//			
+//		40:
+//			glb_io.Do.Piston_Flap_Dx_Sx := 1;
+//			
+//			IF (NOT glb_hmi.Inp.Sx_Dx_Valve_HMI) THEN
+//				St_Valve := 50;
+//			END_IF;
+//			
+//			
+//		50:
+//			glb_io.Do.Piston_gun_1 := 0;
+//			glb_io.Do.Piston_gun_2 := 0;
+//			glb_io.Do.Piston_up := 0;
+//			St_Valve := 0;
+//			
+//	END_CASE;
 	
+	
+	//-------------------RECIPE-----------------------------------
+	
+	IF (glb_hmi.Inp.Orata_HMI) THEN
+		Distanza_Sensore_Gun := 70;
+	END_IF;
+	
+	IF (glb_hmi.Inp.Branzino_HMI) THEN
+		Distanza_Sensore_Gun := 80;
+	END_IF;
+	
+	IF (glb_hmi.Inp.Orata_HMI) THEN
+		glb_hmi.Inp.Branzino_HMI := 0;
+	END_IF;
+	
+	IF (glb_hmi.Inp.Branzino_HMI) THEN
+		glb_hmi.Inp.Orata_HMI := 0;
+	END_IF;
 	
 	
 	 

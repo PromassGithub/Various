@@ -74,7 +74,7 @@ PROGRAM _CYCLIC
 	
 	XSM_Ctrl_2.Cmd.Reset := glb_hmi.Out.Reset;
 
-	glb_err.Drive2 := XSM_Ctrl_2.Error;
+	(*glb_err.Drive2 := XSM_Ctrl_2.Error;*)
 	
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF

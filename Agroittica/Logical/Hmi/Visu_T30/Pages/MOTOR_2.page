@@ -42,7 +42,7 @@
           <Text ID="242523" Value="Actual Position"/>
           <Text ID="242524" Value="Actual Velocity"/>
           <Text ID="242525" Value="Motor Status"/>
-          <Text ID="242526" Value="Manual_Homing"/>
+          <Text ID="242526" Value="Manual Homing"/>
           <Text ID="242528" Value="Reset"/>
           <Text ID="242530" Value="Stand Still"/>
           <Text ID="242531" Value="Home OK"/>
@@ -56,7 +56,7 @@
           <Text ID="242523" Value="Actual Position"/>
           <Text ID="242524" Value="Actual Velocity"/>
           <Text ID="242525" Value="Motor Status"/>
-          <Text ID="242526" Value="Manual_Homing"/>
+          <Text ID="242526" Value="Manual Homing"/>
           <Text ID="242528" Value="Reset_Motor"/>
           <Text ID="242530" Value="Stand Still"/>
           <Text ID="242531" Value="Home OK"/>
@@ -136,6 +136,7 @@
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -170,6 +171,7 @@
           <Property Name="Width" Value="90"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_2">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -204,6 +206,7 @@
           <Property Name="Width" Value="90"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_3">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -265,6 +268,7 @@
           <Property Name="Width" Value="121"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -292,6 +296,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_5">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -319,6 +324,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_6">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -364,6 +370,7 @@
           <Property Name="Width" Value="71"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_7">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -391,6 +398,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_9">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>

@@ -42,7 +42,7 @@
           <Text ID="217748" Value="Actual Position"/>
           <Text ID="217749" Value="Actual Velocity"/>
           <Text ID="217750" Value="Motor Status"/>
-          <Text ID="219611" Value="Manual_Homing"/>
+          <Text ID="219611" Value="Manual Homing"/>
           <Text ID="219617" Value="Reset"/>
           <Text ID="219623" Value="Stand Still"/>
           <Text ID="219624" Value="Home OK"/>
@@ -50,13 +50,14 @@
           <Text ID="223455" Value="Power ON"/>
           <Text ID="223456" Value="Empty Mag Sensor"/>
           <Text ID="234851" Value="Back Home"/>
+          <Text ID="254231" Value="Reboot position"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="212165" Value="Drive"/>
           <Text ID="217748" Value="Actual Position"/>
           <Text ID="217749" Value="Actual Velocity"/>
           <Text ID="217750" Value="Motor Status"/>
-          <Text ID="219611" Value="Manual_Homing"/>
+          <Text ID="219611" Value="Manual Homing"/>
           <Text ID="219617" Value="Reset_Motor"/>
           <Text ID="219623" Value="Stand Still"/>
           <Text ID="219624" Value="Home OK"/>
@@ -64,6 +65,7 @@
           <Text ID="223455" Value="Power ON"/>
           <Text ID="223456" Value="Empty Mag Sensor"/>
           <Text ID="234851" Value="Back Home"/>
+          <Text ID="254231" Value="Reboot position"/>
         </TextLayer>
         <IndexMap>
           <Index ID="212165" Value="45"/>
@@ -78,6 +80,7 @@
           <Index ID="223455" Value="11"/>
           <Index ID="223456" Value="12"/>
           <Index ID="234851" Value="21"/>
+          <Index ID="254231" Value="15"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -136,6 +139,7 @@
           <Property Name="Width" Value="40"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -170,6 +174,7 @@
           <Property Name="Width" Value="90"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_2">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -204,6 +209,7 @@
           <Property Name="Width" Value="90"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_3">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -265,6 +271,7 @@
           <Property Name="Width" Value="121"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -292,6 +299,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_5">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -319,6 +327,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_6">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -364,6 +373,7 @@
           <Property Name="Width" Value="71"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_7">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -391,6 +401,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_9">
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
@@ -438,6 +449,29 @@
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="95"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_16]"/>
+          <Property Name="Width" Value="121"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_8">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_43]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="420"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="15"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="157"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_43]"/>
           <Property Name="Width" Value="121"/>
         </Control>
       </Controls>
@@ -519,6 +553,22 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd.Torna_a_casa]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_43">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016B">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd.Reboot_pos]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

@@ -106,6 +106,11 @@ TYPE
 		Gun_1_Valve_HMI : BOOL;
 		Gun_2_Valve_HMI : BOOL;
 		Soll_Valve_HMI : BOOL;
+		Branzino_HMI : BOOL;
+		Orata_HMI : BOOL;
+		Lock_Gun_2 : BOOL;
+		Lock_Gun_1 : BOOL;
+		Sx_Dx_Valve_HMI : BOOL;
 	END_STRUCT;
 	typ_hmi : 	STRUCT 
 		Inp : typ_hmi_inp;

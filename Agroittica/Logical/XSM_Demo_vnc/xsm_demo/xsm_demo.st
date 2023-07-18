@@ -31,9 +31,9 @@ PROGRAM _INIT
 	(* Set up I/O configuration - No need to defind in AS I/O Configuration for module. *)
 	XSM_IO_Cfg_0.IO_Cfg.MixedDecayCfg := 15;							(* AS Default, change to suit application. *)
 
-	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 0.20;						(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 1.20;							(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 1.50;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 0.8;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 1.7;							(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 2.2;						(* A, Change to suit motor/application. *)
 
 	XSM_IO_Cfg_0.IO_Cfg.FullStepThreshold := 0;							(* Also sets to AS Default of 65535, change to suit application. *)
 
@@ -367,33 +367,43 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		1:
-			XSM_Ctrl_0.Cmd.Velocity := -200;
+			XSM_Ctrl_0.Cmd.Velocity := -500;
 			Homing_status := 10;
 			XSM_Ctrl_0.Cmd.Stop := FALSE;
 			XSM_Ctrl_0.Parameters.Ignore_SWLimits := TRUE;	
 			XSM_Ctrl_0.Parameters.Ignore_HWLimits := TRUE;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status:= 50; END_IF;
 				
 		10:
 			XSM_Ctrl_0.Cmd.Move_Velocity := TRUE;
 			Homing_status := 20;
 			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status:= 50; END_IF;
+			
 		20:
 			IF (XSM_Ctrl_0.IO_Mapping.InputStatus = 1) THEN
 				XSM_Ctrl_0.Cmd.Stop := TRUE;
-				XSM_Ctrl_0.Cmd.Velocity := 200;
+				XSM_Ctrl_0.Cmd.Velocity := 500;
 				Homing_status := 30;
 			END_IF;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status:= 50; END_IF;
 			
 		30:
 			XSM_Ctrl_0.Cmd.Stop := FALSE;
 			XSM_Ctrl_0.Cmd.Move_Velocity := TRUE;
 			Homing_status := 40;
 			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status:= 50; END_IF;
+			
 		40:
 			IF (NOT (XSM_Ctrl_0.IO_Mapping.InputStatus = 1)) THEN
 				XSM_Ctrl_0.Cmd.Stop := TRUE;
 				Homing_status := 50;
 			END_IF;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status:= 50; END_IF;
 			
 		50: 
 			XSM_Ctrl_0.Cmd.Stop := FALSE;
@@ -480,7 +490,7 @@ PROGRAM _CYCLIC
 	
 	CASE CMD_Reboot_pos_status OF
 		0: // idle
-			IF (Status = AUTO OR Status = MANUAL) THEN CMD_Reboot_pos_status := 1; END_IF;
+			IF (Status = AUTO OR Status = MANUAL) AND (Homed) THEN CMD_Reboot_pos_status := 1; END_IF;
 			
 		1:
 			IF (glb_cmd.Reboot_pos) THEN CMD_Reboot_pos_status := 2; END_IF;

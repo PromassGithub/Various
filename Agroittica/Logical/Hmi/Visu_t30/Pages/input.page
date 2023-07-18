@@ -52,16 +52,18 @@
           <Text ID="210192" Value="Bit 10"/>
           <Text ID="210193" Value="Bit 11"/>
           <Text ID="210194" Value="Input"/>
-          <Text ID="210196" Value="S01"/>
-          <Text ID="210197" Value="S02"/>
-          <Text ID="210198" Value="Automatico"/>
-          <Text ID="210199" Value="Manuale"/>
+          <Text ID="210196" Value="S1"/>
+          <Text ID="210197" Value="S2"/>
+          <Text ID="210198" Value="Automatic"/>
+          <Text ID="210199" Value="Manual"/>
           <Text ID="210200" Value="Start"/>
           <Text ID="210201" Value="Stop"/>
           <Text ID="210202" Value="Drive"/>
           <Text ID="210266" Value="OUT"/>
-          <Text ID="231011" Value="S03"/>
-          <Text ID="231012" Value="S04"/>
+          <Text ID="231011" Value="S3"/>
+          <Text ID="231012" Value="S4"/>
+          <Text ID="252274" Value="Error Drive 1"/>
+          <Text ID="252275" Value="Error Drive 2"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="210162" Value="TcpOpen:"/>
@@ -80,14 +82,16 @@
           <Text ID="210194" Value="Vari"/>
           <Text ID="210196" Value="S01"/>
           <Text ID="210197" Value="S02"/>
-          <Text ID="210198" Value="Automatico"/>
-          <Text ID="210199" Value="Manuale"/>
+          <Text ID="210198" Value="Automatic"/>
+          <Text ID="210199" Value="Manual"/>
           <Text ID="210200" Value="Start"/>
           <Text ID="210201" Value="Stop"/>
           <Text ID="210202" Value="Drive"/>
           <Text ID="210266" Value="OUT"/>
-          <Text ID="231011" Value="Stop"/>
-          <Text ID="231012" Value="S04"/>
+          <Text ID="231011" Value="S3"/>
+          <Text ID="231012" Value="S4"/>
+          <Text ID="252274" Value="TcpOpen:"/>
+          <Text ID="252275" Value="TcpOpen:"/>
         </TextLayer>
         <IndexMap>
           <Index ID="210162" Value="0"/>
@@ -114,6 +118,8 @@
           <Index ID="210266" Value="35"/>
           <Index ID="231011" Value="4"/>
           <Index ID="231012" Value="5"/>
+          <Index ID="252274" Value="6"/>
+          <Index ID="252275" Value="7"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -770,6 +776,64 @@
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="199"/>
           <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_30">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="23"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="6"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="349"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_13">
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_err.Drive1]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="181"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="349"/>
+          <Property Name="Width" Value="30"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_39">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="23"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="7"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="388"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_22">
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_err.Drive2]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="181"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="388"/>
+          <Property Name="Width" Value="30"/>
         </Control>
       </Controls>
       <KeyMapping>
