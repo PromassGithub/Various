@@ -51,6 +51,8 @@
           <Text ID="223456" Value="Empty Mag Sensor"/>
           <Text ID="234851" Value="Back Home"/>
           <Text ID="254231" Value="Reboot position"/>
+          <Text ID="260086" Value="Premi dopo ricarica"/>
+          <Text ID="260087" Value="Ricarica effettuata"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="212165" Value="Drive"/>
@@ -66,6 +68,8 @@
           <Text ID="223456" Value="Empty Mag Sensor"/>
           <Text ID="234851" Value="Back Home"/>
           <Text ID="254231" Value="Reboot position"/>
+          <Text ID="260086" Value="Premi dopo ricarica"/>
+          <Text ID="260087" Value="Ricarica effettuata"/>
         </TextLayer>
         <IndexMap>
           <Index ID="212165" Value="45"/>
@@ -81,6 +85,8 @@
           <Index ID="223456" Value="12"/>
           <Index ID="234851" Value="21"/>
           <Index ID="254231" Value="15"/>
+          <Index ID="260086" Value="20"/>
+          <Index ID="260087" Value="22"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -474,6 +480,32 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_43]"/>
           <Property Name="Width" Value="121"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="420"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedForeColor" Value="1"/>
+          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="PressedTextIndex" Value="22"/>
+          <Property Name="PressedTextSource" Value="SingleText"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="20"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="214"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_37]"/>
+          <Property Name="Width" Value="153"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_11">
@@ -569,6 +601,22 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd.Reboot_pos]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_37">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_cmd.Cartridge_loaded]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

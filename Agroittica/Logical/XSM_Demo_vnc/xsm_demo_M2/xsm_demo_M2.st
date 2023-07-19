@@ -67,6 +67,9 @@ PROGRAM _CYCLIC
 	(* You need to make required state machine and error handling for your application. *)
 	
 	
+	//2023 - temporary to disable popup
+	Empty_Mag_22.Empty_Mag_Pop_Up := 1;
+	//2023 - end mod
 	
 	XSM_Ctrl_2(); (* Call function. *)
 	XSM_IO_Cfg_2(); (* Call function. *)
@@ -74,8 +77,8 @@ PROGRAM _CYCLIC
 	
 	XSM_Ctrl_2.Cmd.Reset := glb_hmi.Out.Reset;
 
-	(*glb_err.Drive2 := XSM_Ctrl_2.Error;*)
-	
+	glb_err.Drive2 := XSM_Ctrl_2.Error;
+	glb_err.Drive2 := 0;
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF
 	

@@ -47,6 +47,7 @@
           <Text ID="256183" Value="Tempo discesa"/>
           <Text ID="256184" Value="Tempo di delay"/>
           <Text ID="256185" Value="Attesa tra cicli"/>
+          <Text ID="258135" Value="St_Gun"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="244517" Value="Gun-Sensor Distance"/>
@@ -58,6 +59,7 @@
           <Text ID="256183" Value="Gun-Sensor Distance"/>
           <Text ID="256184" Value="Gun-Sensor Distance"/>
           <Text ID="256185" Value="Gun-Sensor Distance"/>
+          <Text ID="258135" Value="Gun-Sensor Distance"/>
         </TextLayer>
         <IndexMap>
           <Index ID="244517" Value="50"/>
@@ -69,6 +71,7 @@
           <Index ID="256183" Value="14"/>
           <Index ID="256184" Value="15"/>
           <Index ID="256185" Value="16"/>
+          <Index ID="258135" Value="8"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -409,6 +412,53 @@
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="63"/>
         </Control>
+        <Control ClassId="0x00001004" Name="Text_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="Left" Value="348"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="8"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="289"/>
+          <Property Name="Width" Value="153"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="Input" Value="True"/>
+          <Property Name="InputCancel" Value="Lost Focus"/>
+          <Property Name="InputComma" Value="Explicit"/>
+          <Property Name="InputConfirm" Value="Enter"/>
+          <Property Name="InputMinus" Value="Normal"/>
+          <Property Name="InputNext" Value="Enter"/>
+          <Property Name="InputStart" Value="Any Key"/>
+          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
+          <Property Name="InputUpDown" Value="Disabled"/>
+          <Property Name="Left" Value="548"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="1000"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="289"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.main.Main.St_Gun]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="63"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_31">
@@ -522,19 +572,25 @@
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_2]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_4]">
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+    </MovementEntry>
+    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_5]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
       <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
@@ -543,5 +599,6 @@
     <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
     <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
+    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
   </TabSequence>
 </Page>

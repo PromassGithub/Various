@@ -85,6 +85,7 @@ TYPE
 		Torna_a_casa : BOOL;
 		sparo : BOOL;
 		CMD_Sparo : BOOL;
+		Cartridge_loaded : BOOL;
 	END_STRUCT;
 	typ_err : 	STRUCT 
 		Drive2 : BOOL;

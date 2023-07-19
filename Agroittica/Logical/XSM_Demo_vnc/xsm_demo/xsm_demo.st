@@ -141,7 +141,7 @@ PROGRAM _CYCLIC
 	CASE MM_0.MM_status OF		//Marcia Motore in manuale
 		
 		0:					//Safety check
-			IF (Status = MANUAL AND glb_err.pending_alarms = 0 AND Homed AND (NOT glb_err.Drive1)) THEN
+			IF ((Status = MANUAL OR Status = AUTO) AND glb_err.pending_alarms = 0 AND Homed AND (NOT glb_err.Drive1)) THEN
 				MM_0.MM_status := 1;
 			END_IF;
 			XSM_Ctrl_0.Cmd.Stop := FALSE;
@@ -518,8 +518,7 @@ PROGRAM _CYCLIC
 			CMD_Reboot_pos_status := 0;
 		
 	END_CASE;
-	
-	posizione_salvata := XSM_Ctrl_0.Monitor.Actual_Position;
+	IF (XSM_Ctrl_0.Monitor.Home_OK) THEN 	posizione_salvata := XSM_Ctrl_0.Monitor.Actual_Position; END_IF;
 	
 	
 END_PROGRAM

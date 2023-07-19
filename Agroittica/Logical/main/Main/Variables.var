@@ -8,5 +8,7 @@ VAR
 	St_Gun : USINT;
 	Tempo : REAL := 0.0;
 	Tempo_Delay : TIME;
-	Distanza_Sensore_Gun : REAL := 200;
+END_VAR
+VAR RETAIN
+	Distanza_Sensore_Gun : REAL := 120;
 END_VAR

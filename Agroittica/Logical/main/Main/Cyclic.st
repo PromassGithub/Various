@@ -1,6 +1,7 @@
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	glb_err.pending_alarms := 0;
 	
 	CASE Status OF
 		
@@ -39,6 +40,18 @@ PROGRAM _CYCLIC
 	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
 	
 	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
+	
+	//2023 - FORZATURA SPEGNIMENTO PISTONE SOLLEVAMENTO
+	IF (glb_io.Do.Piston_up) THEN
+		TON_04.IN := 1;
+	END_IF;
+	
+	IF TON_04.Q THEN
+		glb_io.Do.Piston_up := 0;
+		St_Gun := 50;
+	END_IF;
+			
+	
 	
 	CASE St_Gun OF
 			
@@ -122,7 +135,7 @@ PROGRAM _CYCLIC
 	TON_01.PT := Tempo_Delay;
 	TON_02.PT := T#150ms; 	// tempo di sparo
 	TON_03.PT := T#1000ms; 	// tempo di attesa dopo lo sparo
-	TON_04.PT := T#1000ms;
+	TON_04.PT := T#2000ms;
 	
 	R_TRIG_01;
 	R_TRIG_02;
@@ -170,6 +183,7 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_2_Active := 0;
 			
 			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN 
+				glb_cmd.Cartridge_loaded := 0;
 				Gun_Switch_0.Gun_Switch_Status := 20;
 			ELSIF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_2) THEN
 				Gun_Switch_0.Gun_Switch_Status := 10;	
@@ -181,7 +195,8 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
-			IF Empty_Mag_22.Empty_Mag_Sensor THEN 
+			// 2023 - provvisorio quando la cartuccia è ricaricata torna a utilizzare la pistola 1
+			IF (Empty_Mag_22.Empty_Mag_Sensor OR (glb_cmd.Cartridge_loaded = 1)) THEN 
 				Gun_Switch_0.Gun_Switch_Status := 10;
 			ELSIF (Empty_Mag_22.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_1) THEN
 				Gun_Switch_0.Gun_Switch_Status := 20;	
@@ -326,7 +341,7 @@ PROGRAM _CYCLIC
 	//--------------------MATH-----------1-----------------------
 	
 	//Calcolo tempo delay sollevamento pesce
-	
+	IF (STP_01_Vel = 0) THEN STP_01_Vel:= 0.5; END_IF;
 	Tempo := Distanza_Sensore_Gun/STP_01_Vel*1000;
 	
 	Tempo_Delay := REAL_TO_TIME (Tempo);
@@ -428,21 +443,21 @@ PROGRAM _CYCLIC
 	
 	//-------------------RECIPE-----------------------------------
 	
-	IF (glb_hmi.Inp.Orata_HMI) THEN
-		Distanza_Sensore_Gun := 70;
-	END_IF;
-	
-	IF (glb_hmi.Inp.Branzino_HMI) THEN
-		Distanza_Sensore_Gun := 80;
-	END_IF;
-	
-	IF (glb_hmi.Inp.Orata_HMI) THEN
-		glb_hmi.Inp.Branzino_HMI := 0;
-	END_IF;
-	
-	IF (glb_hmi.Inp.Branzino_HMI) THEN
-		glb_hmi.Inp.Orata_HMI := 0;
-	END_IF;
+//	IF (glb_hmi.Inp.Orata_HMI) THEN
+//		Distanza_Sensore_Gun := 120;
+//	END_IF;
+//	
+//	IF (glb_hmi.Inp.Branzino_HMI) THEN
+//		Distanza_Sensore_Gun := 80;
+//	END_IF;
+//	
+//	IF (glb_hmi.Inp.Orata_HMI) THEN
+//		glb_hmi.Inp.Branzino_HMI := 0;
+//	END_IF;
+//	
+//	IF (glb_hmi.Inp.Branzino_HMI) THEN
+//		glb_hmi.Inp.Orata_HMI := 0;
+//	END_IF;
 	
 	
 	 

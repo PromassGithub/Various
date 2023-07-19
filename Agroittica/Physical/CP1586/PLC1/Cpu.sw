@@ -25,7 +25,7 @@
   </DataObjects>
   <VcDataObjects>
     <VcDataObject Name="Visu_t" Source="Hmi.Visu_t30.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
-    <VcDataObject Name="VGAvnc" Source="XSM_Demo_vnc.VGAvnc.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
+    <VcDataObject Name="VGAvnc" Source="XSM_Demo_vnc.VGAvnc.dob" Memory="UserROM" Language="Vc" Disabled="true" WarningLevel="2" />
   </VcDataObjects>
   <Binaries>
     <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
