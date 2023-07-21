@@ -134,7 +134,7 @@ PROGRAM _CYCLIC
 	
 	TON_01.PT := Tempo_Delay;
 	TON_02.PT := T#150ms; 	// tempo di sparo
-	TON_03.PT := T#1000ms; 	// tempo di attesa dopo lo sparo
+	//TON_03.PT := T#1000ms; 	// tempo di attesa dopo lo sparo
 	TON_04.PT := T#2000ms;
 	
 	R_TRIG_01;
