@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="80SD100XD.C044-01" Type="80SD100XD.C044-01" Version="2.2.0.0">
-    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1">
+    <Connection Connector="X2X1" TargetModule="X67DM1321" TargetConnector="X2X2">
       <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Parameter ID="FunctionModel" Value="Ramp" />
@@ -25,6 +25,7 @@
     <Parameter ID="X3Channel06Config" Value="input" />
     <Parameter ID="X3Channel07Config" Value="input" />
     <Parameter ID="X3Channel08Config" Value="input" />
+    <Parameter ID="X3Channel10Source" Value="reACTION" />
   </Module>
     <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
     <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
@@ -77,4 +78,9 @@
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X67DM1321" Type="X67DM1321" Version="1.2.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
 </Hardware>
