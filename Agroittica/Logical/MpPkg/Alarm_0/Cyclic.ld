@@ -3,12 +3,36 @@ PROGRAM _CYCLIC
 <?AutomationStudio FileVersion="4.9"?>
 <!-- Automation Studio Generated XML Section -->
 <networks maxcolumn="0">
-	<network label="" comment="" row="1" column="0" commented="0">
+	<network label="" comment="" row="5" column="0" commented="0">
 		<row>
 			<contact type="closed" name="avvio"/>
 			<line/>
 			<line/>
-			<coil type="open" name="avvio"/>
+			<coil type="set" name="avvio"/>
+		</row>
+		<row>
+			<empty or="true"/>
+			<line/>
+			<line/>
+			<coil type="reset" name="glb_err.Drive1"/>
+		</row>
+		<row>
+			<empty or="true"/>
+			<line/>
+			<line/>
+			<coil type="reset" name="glb_err.Drive2"/>
+		</row>
+		<row>
+			<empty or="true"/>
+			<line/>
+			<line/>
+			<coil type="reset" name="glb_err.Air"/>
+		</row>
+		<row>
+			<empty or="true"/>
+			<line/>
+			<line/>
+			<coil type="reset" name="glb_err.Em_Bt"/>
 		</row>
 	</network>
 	<network label="" comment="" row="1" column="0" commented="0">
@@ -17,6 +41,38 @@ PROGRAM _CYCLIC
 			<line/>
 			<line/>
 			<coil type="open" name="AckUserStatus"/>
+		</row>
+	</network>
+	<network label="" comment="" row="1" column="0" commented="1">
+		<row>
+			<contact type="open" name="a"/>
+			<line/>
+			<line/>
+			<coil type="open" name="glb_err.Drive1"/>
+		</row>
+	</network>
+	<network label="" comment="" row="1" column="0" commented="1">
+		<row>
+			<contact type="open" name="a1"/>
+			<line/>
+			<line/>
+			<coil type="open" name="glb_err.Drive2"/>
+		</row>
+	</network>
+	<network label="" comment="" row="1" column="0" commented="1">
+		<row>
+			<contact type="open" name="a2"/>
+			<line/>
+			<line/>
+			<coil type="open" name="glb_err.Air"/>
+		</row>
+	</network>
+	<network label="" comment="" row="1" column="0" commented="1">
+		<row>
+			<contact type="open" name="a3"/>
+			<line/>
+			<line/>
+			<coil type="open" name="glb_err.Em_Bt"/>
 		</row>
 	</network>
 	<network label="" comment="" row="7" column="0" commented="0">
@@ -114,6 +170,57 @@ PROGRAM _CYCLIC
 			<empty/>
 		</row>
 	</network>
+	<network label="" comment="" row="3" column="0" commented="1">
+		<row>
+			<contact type="positive transition" name="glb_err.Drive2"/>
+			<function position="top" type="MpAlarmXSet"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="7"/></function>
+			<analog type="output" name="AlarmXSetStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Motor 2 fault'"/>
+			<function position="bottom" type="MpAlarmXSet"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="1">
+		<row>
+			<contact type="negative transition" name="glb_err.Drive2"/>
+			<function position="top" type="MpAlarmXReset"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="4"/></function>
+			<analog type="output" name="AlarmXResetStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Motor 2 fault'"/>
+			<function position="bottom" type="MpAlarmXReset"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
+	<network label="" comment="" row="3" column="0" commented="1">
+		<row>
+			<contact type="positive transition" name="AckUserStatus"/>
+			<function position="top" type="MpAlarmXAcknowledge"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
+			<empty/>
+		</row>
+		<row>
+			<analog type="input" name="gAlarmXCore"/>
+			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="4"/></function>
+			<analog type="output" name="AlarmXAckStatus"/>
+		</row>
+		<row>
+			<analog type="input" name="'Motor 2 fault'"/>
+			<function position="bottom" type="MpAlarmXAcknowledge"><input name="Name"/></function>
+			<empty/>
+		</row>
+	</network>
 	<network label="" comment="" row="3" column="0" commented="0">
 		<row>
 			<contact type="positive transition" name="glb_err.Air"/>
@@ -167,7 +274,7 @@ PROGRAM _CYCLIC
 	</network>
 	<network label="" comment="" row="3" column="0" commented="0">
 		<row>
-			<contact type="positive transition" name="glb_err.PLC"/>
+			<contact type="positive transition" name="glb_err.Em_Bt"/>
 			<function position="top" type="MpAlarmXSet"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
 			<empty/>
 		</row>
@@ -177,14 +284,14 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXSetStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'Emergency Button pressed'"/>
+			<analog type="input" name="'Emergency Button'"/>
 			<function position="bottom" type="MpAlarmXSet"><input name="Name"/></function>
 			<empty/>
 		</row>
 	</network>
 	<network label="" comment="" row="3" column="0" commented="0">
 		<row>
-			<contact type="negative transition" name="glb_err.PLC"/>
+			<contact type="negative transition" name="glb_err.Em_Bt"/>
 			<function position="top" type="MpAlarmXReset"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
 			<empty/>
 		</row>
@@ -194,7 +301,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXResetStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'Emergency Button pressed'"/>
+			<analog type="input" name="'Emergency Button'"/>
 			<function position="bottom" type="MpAlarmXReset"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -211,7 +318,7 @@ PROGRAM _CYCLIC
 			<analog type="output" name="AlarmXAckStatus"/>
 		</row>
 		<row>
-			<analog type="input" name="'Emergency Button pressed'"/>
+			<analog type="input" name="'Emergency Button'"/>
 			<function position="bottom" type="MpAlarmXAcknowledge"><input name="Name"/></function>
 			<empty/>
 		</row>
@@ -338,6 +445,9 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
+
+
 
 
 

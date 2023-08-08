@@ -9,9 +9,30 @@
  ********************************************************************)
 
 TYPE
+	Ricetta : 	STRUCT 
+		D_Sens_Gun : INT;
+		TON_04 : TON;
+		TON_03 : TON;
+		Laser_Depth : INT;
+	END_STRUCT;
+	Allarm : 	STRUCT 
+		St_allarm : UINT;
+		Main_Allarm : BOOL;
+		Ack : BOOL;
+	END_STRUCT;
+	Lamp2 : 	STRUCT 
+		Lamp2Verde : BOOL;
+		Lamp2Bianco : BOOL;
+		Lamp2Allarme : BOOL;
+	END_STRUCT;
+	Lamp1 : 	STRUCT 
+		Lamp1Verde : BOOL;
+		Lamp1Bianco : BOOL;
+		Lamp1Allarme : BOOL;
+	END_STRUCT;
 	Feedback : 	STRUCT 
 		Feedback_Air : BOOL;
-		Feedback_PLC : BOOL;
+		Feedback_Em_Bt : BOOL;
 	END_STRUCT;
 	Pesi : 	STRUCT 
 		Weight_Status : USINT;
@@ -40,7 +61,7 @@ TYPE
 	END_STRUCT;
 	Empty_Mag_2 : 	STRUCT 
 		Empty_Mag_Status : USINT;
-		Empty_Mag_Pop_Up : USINT := 1;
+		Empty_Mag_Pop_Up : USINT;
 		Empty_Mag_Ack : BOOL;
 		Empty_Mag_Sensor : BOOL;
 	END_STRUCT;
@@ -86,13 +107,16 @@ TYPE
 		sparo : BOOL;
 		CMD_Sparo : BOOL;
 		Cartridge_loaded : BOOL;
+		Reload_complete_2 : BOOL;
+		Reload_complete_1 : BOOL;
 	END_STRUCT;
 	typ_err : 	STRUCT 
 		Drive2 : BOOL;
 		Drive1 : BOOL;
 		pending_alarms : UDINT;
 		Air : BOOL;
-		PLC : BOOL;
+		Em_Bt : BOOL;
+		Fish : BOOL;
 	END_STRUCT;
 	typ_hmi_out : 	STRUCT 
 		Reset : BOOL;
@@ -112,6 +136,8 @@ TYPE
 		Lock_Gun_2 : BOOL;
 		Lock_Gun_1 : BOOL;
 		Sx_Dx_Valve_HMI : BOOL;
+		Zero_act_pos : BOOL;
+		Lamp_alarm_block : BOOL;
 	END_STRUCT;
 	typ_hmi : 	STRUCT 
 		Inp : typ_hmi_inp;
@@ -173,11 +199,13 @@ TYPE
 		Piston_gun_2 : BOOL;
 		Piston_gun_1 : BOOL;
 		Piston_Flap_Dx_Sx : BOOL;
+		MainAllarm : BOOL;
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;
 		Si_01 : BOOL;
 		Si_02 : BOOL;
+		Si_03 : BOOL;
 		Start : BOOL;
 		Stop : BOOL;
 		Manual : BOOL;
@@ -194,6 +222,7 @@ TYPE
 		enc_sta_bit_09 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
 		enc_sta_bit_10 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
 		enc_sta_bit_11 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
+		Powerlink : BOOL;
 	END_STRUCT;
 	typ_io : 	STRUCT 
 		Do : typ_Do;

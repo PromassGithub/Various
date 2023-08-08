@@ -39,7 +39,6 @@
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="219681" Value="Machine Status"/>
-          <Text ID="223066" Value="User Login"/>
           <Text ID="225339" Value="Motor 1 Status"/>
           <Text ID="225341" Value="Motor 2 Status"/>
           <Text ID="231020" Value="Flap Direction"/>
@@ -47,10 +46,10 @@
           <Text ID="238672" Value="Weight Range Selection"/>
           <Text ID="238673" Value="Min"/>
           <Text ID="238674" Value="Max"/>
+          <Text ID="270117" Value="Loaded recipe"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="219681" Value="Machine Status"/>
-          <Text ID="223066" Value="User Login"/>
           <Text ID="225339" Value="Motor 1 Status"/>
           <Text ID="225341" Value="Motor 2 Status"/>
           <Text ID="231020" Value="Flap Direction"/>
@@ -58,10 +57,10 @@
           <Text ID="238672" Value="Weight Range Selection"/>
           <Text ID="238673" Value="Min"/>
           <Text ID="238674" Value="Max"/>
+          <Text ID="270117" Value="Loaded recipe"/>
         </TextLayer>
         <IndexMap>
           <Index ID="219681" Value="30"/>
-          <Index ID="223066" Value="2"/>
           <Index ID="225339" Value="7"/>
           <Index ID="225341" Value="9"/>
           <Index ID="231020" Value="22"/>
@@ -69,6 +68,7 @@
           <Index ID="238672" Value="10"/>
           <Index ID="238673" Value="11"/>
           <Index ID="238674" Value="13"/>
+          <Index ID="270117" Value="6"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -86,36 +86,6 @@
           <Property Name="Top" Value="112"/>
           <Property Name="Width" Value="519"/>
         </Control>
-        <Control ClassId="0x00001002" Name="cmdUserLoginPage">
-          <Property Name="BackColor" Value="0"/>
-          <Property Name="BitmapAlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapAlignmentVertical" Value="Above Text"/>
-          <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[MpIconsClick]"/>
-          <Property Name="BitmapIndex" Value="33"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="BitmapGroup"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_FrameInvisible]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_18]"/>
-          <Property Name="Font" Value="Source[local].Font[MpHtml_SDM]"/>
-          <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="65"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="232"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[embedded].Property[Border]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpControlButton]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="2"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="2"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_18]"/>
-          <Property Name="Width" Value="56"/>
-        </Control>
         <Control ClassId="0x00001004" Name="Text_8">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
@@ -131,7 +101,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[Status]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="107"/>
+          <Property Name="Top" Value="78"/>
           <Property Name="Width" Value="71"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_1">
@@ -146,7 +116,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="30"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="100"/>
+          <Property Name="Top" Value="71"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_2">
@@ -161,7 +131,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="7"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="173"/>
+          <Property Name="Top" Value="147"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_9">
@@ -179,7 +149,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[Status]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="180"/>
+          <Property Name="Top" Value="154"/>
           <Property Name="Width" Value="71"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_3">
@@ -194,7 +164,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="9"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="247"/>
+          <Property Name="Top" Value="223"/>
           <Property Name="Width" Value="110"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_10">
@@ -212,7 +182,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[Status]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="254"/>
+          <Property Name="Top" Value="230"/>
           <Property Name="Width" Value="71"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_5">
@@ -228,7 +198,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="22"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="194"/>
+          <Property Name="Top" Value="165"/>
           <Property Name="Width" Value="112"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_6">
@@ -244,7 +214,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="12"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="82"/>
+          <Property Name="Top" Value="53"/>
           <Property Name="Width" Value="132"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_11">
@@ -262,7 +232,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[GUN_Status]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="123"/>
+          <Property Name="Top" Value="94"/>
           <Property Name="Width" Value="166"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_12">
@@ -280,7 +250,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[FLAP_status]"/>
           <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="236"/>
+          <Property Name="Top" Value="207"/>
           <Property Name="Width" Value="212"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_7">
@@ -296,7 +266,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="10"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="300"/>
+          <Property Name="Top" Value="265"/>
           <Property Name="Width" Value="170"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
@@ -324,7 +294,7 @@
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="342"/>
+          <Property Name="Top" Value="307"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Pesi_0.Min_Weight]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="101"/>
@@ -354,7 +324,7 @@
           <Property Name="SimulationValue" Value="2000"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="342"/>
+          <Property Name="Top" Value="307"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Pesi_0.Max_Weight]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="101"/>
@@ -372,7 +342,7 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="11"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="385"/>
+          <Property Name="Top" Value="350"/>
           <Property Name="Width" Value="41"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_14">
@@ -388,25 +358,42 @@
           <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="13"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="385"/>
+          <Property Name="Top" Value="350"/>
           <Property Name="Width" Value="41"/>
         </Control>
-      </Controls>
-      <KeyMapping>
-        <VirtualKey Name="%embVirtualKey_18">
+        <Control ClassId="0x00001004" Name="Text_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
+          <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000160">
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[MpUserXLoginUI]"/>
-              <Property Name="Target" Value="Page"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-      </KeyMapping>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="Height" Value="41"/>
+          <Property Name="Left" Value="171"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="R_1"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.MpPkg.Recipe.MpRecipeXml_0.Info.LastLoadedRecipe]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="307"/>
+          <Property Name="Width" Value="71"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_15">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="Height" Value="54"/>
+          <Property Name="Left" Value="23"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="6"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="300"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+      </Controls>
+      <KeyMapping/>
     </Layer>
     <LayerRef Source="Source[local].Layer[Empty_Mag_2_Pop_Up]">
       <Property Name="Description" Value=""/>

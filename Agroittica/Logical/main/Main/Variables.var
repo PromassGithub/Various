@@ -1,5 +1,6 @@
 VAR
 	last_cycle : BOOL;
+	TON_05 : TON := (0);
 	TON_04 : TON := (0);
 	TON_03 : TON;
 	TON_02 : TON;
@@ -10,5 +11,5 @@ VAR
 	Tempo_Delay : TIME;
 END_VAR
 VAR RETAIN
-	Distanza_Sensore_Gun : REAL := 120;
+	Distanza_Sensore_Gun : REAL;
 END_VAR

@@ -1,7 +1,7 @@
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
-	glb_err.pending_alarms := 0;
+	(*glb_err.pending_alarms := 0;*)
 	
 	CASE Status OF
 		
@@ -37,21 +37,70 @@ PROGRAM _CYCLIC
 		  
 	END_CASE;
 	
-	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
-	
-	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
-	
 	//2023 - FORZATURA SPEGNIMENTO PISTONE SOLLEVAMENTO
 	IF (glb_io.Do.Piston_up) THEN
-		TON_04.IN := 1;
+		Ricette.TON_04.IN := 1;
 	END_IF;
 	
-	IF TON_04.Q THEN
+	IF Ricette.TON_04.Q THEN
 		glb_io.Do.Piston_up := 0;
 		St_Gun := 50;
 	END_IF;
-			
 	
+	//2023 - FORZATURA MAG2 POP UP
+	
+	Empty_Mag_22.Empty_Mag_Pop_Up := 1;
+	
+	//2023 - SICUREZZA PESCE INCASTRATO
+	
+	CASE St_Fish OF
+		
+		0:
+			IF (Status = AUTO OR Status = MANUAL) THEN
+				St_Fish := 10;
+			END_IF;
+			
+		10:
+			
+			R_TRIG_03 (CLK := glb_io.Di.Si_01);
+			Start_Safety := R_TRIG_03.Q;
+		
+			R_TRIG_04 (CLK := glb_io.Di.Si_03);
+			Stop_Safety := R_TRIG_04.Q;
+		
+			IF (Start_Safety) THEN
+				TON_05.IN := 1;
+				St_Fish := 20;
+			END_IF;
+			
+			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
+		
+		20:
+			IF (TON_05.Q) THEN
+				glb_err.Fish := 1;
+				glb_io.Do.MainAllarm:= 1;
+				R_TRIG_03.CLK := 0;
+			END_IF;
+			
+			IF (Stop_Safety) OR (Allarm_0.Ack) THEN
+				St_Fish := 30;
+				R_TRIG_04.CLK := 0;
+			END_IF;
+			
+			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
+			
+		30:
+			TON_05.IN := 0;	
+			R_TRIG_03.CLK := 0;
+			R_TRIG_04.CLK := 0;
+			glb_io.Do.MainAllarm := 0;
+			St_Fish := 0;
+		
+	END_CASE;
+	
+	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
+	
+	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
 	
 	CASE St_Gun OF
 			
@@ -74,20 +123,6 @@ PROGRAM _CYCLIC
 				St_Gun := 30; 
 			END_IF;
 			
-//			IF glb_io.Do.Piston_up THEN
-//				TON_04.IN := 1;
-//			END_IF;
-//			
-//			IF TON_04.Q THEN
-//				St_Gun := 50;
-//			END_IF;
-			
-			
-//			IF (glb_io.Do.Piston_up AND (NOT glb_io.Di.Finecorsa)) THEN
-//				St_Gun := 50;
-//			END_IF;
-			
-			
 		30: //shoot 
 			IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active) AND Pesi_0.Cmd_Shoot) THEN
 				glb_io.Do.Piston_gun_1 := 1;
@@ -109,14 +144,14 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		40: 
-			TON_03.IN := 1;
-			IF(NOT glb_io.Di.Si_01 AND TON_03.Q) THEN St_Gun := 50; END_IF;
+			Ricette.TON_03.IN := 1;
+			IF(NOT glb_io.Di.Si_01 AND Ricette.TON_03.Q) THEN St_Gun := 50; END_IF;
 		
 		50: // end & reset
 			TON_01.IN 				:= 0;
 			TON_02.IN 				:= 0;
-			TON_03.IN 				:= 0;
-			TON_04.IN 				:= 0;
+			Ricette.TON_03.IN 		:= 0;
+			Ricette.TON_04.IN		:= 0;
 			glb_io.Do.Piston_gun_1 	:= 0;
 			glb_io.Do.Piston_gun_2 	:= 0;
 			glb_io.Do.Piston_up		:= 0;
@@ -129,16 +164,20 @@ PROGRAM _CYCLIC
 	
 	TON_01;
 	TON_02;
-	TON_03;
-	TON_04;
+	Ricette.TON_03;
+	Ricette.TON_04;
+	TON_05;
+			
 	
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#150ms; 	// tempo di sparo
-	//TON_03.PT := T#1000ms; 	// tempo di attesa dopo lo sparo
-	TON_04.PT := T#2000ms;
+	TON_02.PT := T#150ms; 		// tempo discesa pist soll
+	//TON_04.PT := T#1000ms;	// Sicurezza pistone soll
+	TON_05.PT := T#1500ms;		// Sicurezza pesci
 	
 	R_TRIG_01;
 	R_TRIG_02;
+	R_TRIG_03;
+	R_TRIG_04;
 	
 //	CASE Manual_Gun_0.Gun_Status OF		//Gun Selection at boot up
 //		
@@ -168,17 +207,17 @@ PROGRAM _CYCLIC
 	
 	CASE Gun_Switch_0.Gun_Switch_Status OF
 		
-		0:									//Start
+		0:	//Start
 			IF ( Status = AUTO OR Status = MANUAL) AND (glb_err.pending_alarms = 0) THEN
 				Gun_Switch_0.Gun_Switch_Status := 1;
 			END_IF;
 			
-		1:									//Controllo sensori
+		1:	//Controllo sensori
 			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor) THEN
 				Gun_Switch_0.Gun_Switch_Status := 10;
 			END_IF;
 		
-		10:									//Gun_1 attiva
+		10:	//Gun_1 attiva
 			Gun_Switch_0.Gun_1_Active := 1;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
@@ -191,7 +230,7 @@ PROGRAM _CYCLIC
 			
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
-		20:									//Gun_2 attiva
+		20:	//Gun_2 attiva
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
@@ -204,7 +243,7 @@ PROGRAM _CYCLIC
 		
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
-		30:									//Reset & Back to start
+		30:	//Reset & Back to start
 			Gun_Switch_0.Gun_1_Active := 0;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
@@ -214,14 +253,14 @@ PROGRAM _CYCLIC
 	
 	//--------------------FLAP DIRECTION-----------------------
 	
-	CASE Flap_MM_0.Flap_status OF									//sincronizzazione convogliatore con pistole
+	CASE Flap_MM_0.Flap_status OF	//sincronizzazione convogliatore con pistole
 		
-		0:									//Start
+		0:	//Start
 			IF ( Status = AUTO OR Status = MANUAL) AND ( glb_err.pending_alarms = 0) THEN
 				Flap_MM_0.Flap_status := 10;
 			END_IF;
 			
-		10:									//Gun Active check
+		10:	//Gun Active check
 			IF Gun_Switch_0.Gun_1_Active THEN
 				Flap_MM_0.Flap_status := 20;
 			ELSIF Gun_Switch_0.Gun_2_Active THEN
@@ -230,7 +269,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
-		20:									//Convogliatore verso Gun_1
+		20:	//Convogliatore verso Gun_1
 			Flap_MM_0.Flap_Right := 0;
 			Flap_MM_0.Flap_Left := 1;
 			
@@ -242,7 +281,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
-		30:									//Convogliatore verso Gun_2
+		30:	//Convogliatore verso Gun_2
 			Flap_MM_0.Flap_Left := 0;
 			Flap_MM_0.Flap_Right := 1;
 			
@@ -254,7 +293,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN Flap_MM_0.Flap_status := 40; END_IF;
 			
-		40:									//Reset & back to start
+		40:	//Reset & back to start
 			Flap_MM_0.Flap_Left := 0;
 			Flap_MM_0.Flap_Right := 0;
 			
@@ -266,25 +305,25 @@ PROGRAM _CYCLIC
 	
 	//--------------------PESI---------------------------------
 	
-	CASE Pesi_0.Weight_Status OF							//Gestione peso pesci
+	CASE Pesi_0.Weight_Status OF	//Gestione peso pesci
 		
-		0: 							//Start
+		0: 	//Start
 			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN
 				Pesi_0.Weight_Status := 10;
 			END_IF;
 		
-		10:							//Controllo pesi
+		10:	//Controllo pesi
 			IF (Pesi_0.Marel_Weight[0] <= Pesi_0.Max_Weight AND Pesi_0.Marel_Weight[0] >= Pesi_0.Min_Weight) THEN
 				Pesi_0.Weight_Status := 20;
 			ELSE
 				Pesi_0.Weight_Status := 30;
 			END_IF;
 			
-		20:							//Abilitato allo sparo & back to start
+		20:	//Abilitato allo sparo & back to start
 			Pesi_0.Cmd_Shoot := 1;
 			Pesi_0.Weight_Status := 0;
 		
-		30:							//Non abilitato allo sparo & back to start
+		30:	//Non abilitato allo sparo & back to start
 			Pesi_0.Cmd_Shoot := 0;
 			Pesi_0.Weight_Status := 0;
 				
@@ -342,7 +381,7 @@ PROGRAM _CYCLIC
 	
 	//Calcolo tempo delay sollevamento pesce
 	IF (STP_01_Vel = 0) THEN STP_01_Vel:= 0.5; END_IF;
-	Tempo := Distanza_Sensore_Gun/STP_01_Vel*1000;
+	Tempo := Ricette.D_Sens_Gun/STP_01_Vel*1000;
 	
 	Tempo_Delay := REAL_TO_TIME (Tempo);
 	
@@ -362,10 +401,10 @@ PROGRAM _CYCLIC
 	
 	//Feedback fungo emergenza
 	
-	IF ( NOT Feedback_0.Feedback_PLC ) THEN
-		glb_err.PLC := TRUE;
+	IF (NOT Feedback_0.Feedback_Em_Bt) THEN
+		glb_err.Em_Bt := TRUE;
 	ELSE
-		glb_err.PLC := FALSE;
+		glb_err.Em_Bt:= FALSE;
 	END_IF;
 	
 	//-------------------TEST-ELETTROVALVOLE---------------------
@@ -439,26 +478,6 @@ PROGRAM _CYCLIC
 //			St_Valve := 0;
 //			
 //	END_CASE;
-	
-	
-	//-------------------RECIPE-----------------------------------
-	
-//	IF (glb_hmi.Inp.Orata_HMI) THEN
-//		Distanza_Sensore_Gun := 120;
-//	END_IF;
-//	
-//	IF (glb_hmi.Inp.Branzino_HMI) THEN
-//		Distanza_Sensore_Gun := 80;
-//	END_IF;
-//	
-//	IF (glb_hmi.Inp.Orata_HMI) THEN
-//		glb_hmi.Inp.Branzino_HMI := 0;
-//	END_IF;
-//	
-//	IF (glb_hmi.Inp.Branzino_HMI) THEN
-//		glb_hmi.Inp.Orata_HMI := 0;
-//	END_IF;
-	
 	
 	 
 END_PROGRAM

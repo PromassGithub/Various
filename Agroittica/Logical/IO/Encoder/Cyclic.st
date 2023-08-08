@@ -28,9 +28,18 @@ PROGRAM _CYCLIC
 		glb_enc_sta.gry[10] := glb_io.Di.enc_sta_bit_10;
 		glb_enc_sta.gry[11] := glb_io.Di.enc_sta_bit_11;
 		
+
+		
+		
 		gray_to_int_0.gry := glb_enc_sta.gry;
 		glb_enc_sta.x := gray_to_int_0.x;
 		gray_to_int_0;
+		
+		IF (glb_sim = 1) THEN
+			
+			glb_enc_sta.x := glb_enc_sim.x;
+			
+		END_IF;
 		
 		Int_to_vel_0.Maxim := glb_enc_sta.words;
 		Int_to_vel_0.Pos := glb_enc_sta.x;

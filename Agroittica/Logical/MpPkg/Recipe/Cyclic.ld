@@ -3,7 +3,7 @@ PROGRAM _CYCLIC
 <?AutomationStudio FileVersion="4.9"?>
 <!-- Automation Studio Generated XML Section -->
 <networks maxcolumn="0">
-	<network label="" comment="" row="13" column="0" commented="0">
+	<network label="" comment="" row="12" column="0" commented="0">
 		<row>
 			<empty/>
 			<empty/>
@@ -11,15 +11,9 @@ PROGRAM _CYCLIC
 			<empty/>
 		</row>
 		<row>
-			<line/>
-			<line/>
-			<functionblock position="top" type="MpRecipeXml"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></functionblock>
-			<empty/>
-		</row>
-		<row>
 			<empty/>
 			<contact type="address" name="gRecipeXml"/>
-			<functionblock position="middle" type="MpRecipeXml"><input name="MpLink" vardynamic="true"/><output name="Active"/></functionblock>
+			<functionblock position="top" type="MpRecipeXml"><input name="MpLink" vardynamic="true"/><output name="Active"/></functionblock>
 			<empty/>
 		</row>
 		<row>
@@ -110,7 +104,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<empty/>
-			<contact type="address" name="'Ricetta'"/>
+			<contact type="address" name="'Ricette'"/>
 			<functionblock position="middle" type="MpRecipeRegPar"><input name="PVName" vardynamic="true"/><output name="UpdateNotification"/></functionblock>
 			<empty/>
 		</row>
@@ -161,4 +155,8 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
+
+
+
 

@@ -59,7 +59,6 @@
           <Text ID="210200" Value="Start"/>
           <Text ID="210201" Value="Stop"/>
           <Text ID="210202" Value="Drive"/>
-          <Text ID="210266" Value="OUT"/>
           <Text ID="231011" Value="S3"/>
           <Text ID="231012" Value="S4"/>
           <Text ID="252274" Value="Error Drive 1"/>
@@ -87,7 +86,6 @@
           <Text ID="210200" Value="Start"/>
           <Text ID="210201" Value="Stop"/>
           <Text ID="210202" Value="Drive"/>
-          <Text ID="210266" Value="OUT"/>
           <Text ID="231011" Value="S3"/>
           <Text ID="231012" Value="S4"/>
           <Text ID="252274" Value="TcpOpen:"/>
@@ -115,7 +113,6 @@
           <Index ID="210200" Value="32"/>
           <Index ID="210201" Value="33"/>
           <Index ID="210202" Value="34"/>
-          <Index ID="210266" Value="35"/>
           <Index ID="231011" Value="4"/>
           <Index ID="231012" Value="5"/>
           <Index ID="252274" Value="6"/>
@@ -693,32 +690,6 @@
           <Property Name="Top" Value="303"/>
           <Property Name="Width" Value="404"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_3">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
-          <Property Name="Font" Value="Source[local].Font[MpButton]"/>
-          <Property Name="ForeColor" Value="239"/>
-          <Property Name="Height" Value="40"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="64"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="35"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="435"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_7]"/>
-          <Property Name="Width" Value="80"/>
-        </Control>
         <Control ClassId="0x00001004" Name="Text_37">
           <Property Name="AlignmentVertical" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
@@ -836,21 +807,7 @@
           <Property Name="Width" Value="30"/>
         </Control>
       </Controls>
-      <KeyMapping>
-        <VirtualKey Name="%embVirtualKey_7">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000160">
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[output]"/>
-              <Property Name="Target" Value="Page"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-      </KeyMapping>
+      <KeyMapping/>
     </Layer>
     <LayerRef Source="Source[local].Layer[Empty_Mag_Pop_Up]">
       <Property Name="Description" Value=""/>
@@ -878,11 +835,11 @@
       <Property Name="VisibilityMode" Value="Hidden"/>
       <Property Name="Z-Order" Value="3"/>
     </LayerRef>
-    <LayerRef Source="Source[local].Layer[MpPageControl]">
+    <LayerRef Source="Source[local].Layer[MpPageControl_IN]">
       <Property Name="Description" Value=""/>
       <Property Name="EditingMode" Value="Frozen"/>
       <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="MpPageControl"/>
+      <Property Name="Name" Value="MpPageControl_IN"/>
       <Property Name="OutlineColor" Value="0"/>
       <Property Name="OutlineDisplayControl" Value="False"/>
       <Property Name="OutlineDisplayName" Value="True"/>

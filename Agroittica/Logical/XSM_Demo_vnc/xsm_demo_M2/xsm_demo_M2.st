@@ -66,6 +66,12 @@ PROGRAM _CYCLIC
 	(* ONLY FOR DEMO PURPOSES WITH VCN & SG4 OR WATCH & SGC. *)
 	(* You need to make required state machine and error handling for your application. *)
 	
+	//2023 - set variables of FB
+	
+	XSM_Ctrl_2.IO_Mapping.ModuleOK := Module_OK;
+	XSM_Ctrl_2.IO_Mapping.ModuleID := Module_ID;
+	XSM_Ctrl_2.IO_Mapping.InputStatus := Input_Status;
+	
 	
 	//2023 - temporary to disable popup
 	Empty_Mag_22.Empty_Mag_Pop_Up := 1;
@@ -78,9 +84,8 @@ PROGRAM _CYCLIC
 	XSM_Ctrl_2.Cmd.Reset := glb_hmi.Out.Reset;
 
 	glb_err.Drive2 := XSM_Ctrl_2.Error;
-	glb_err.Drive2 := 0;
 	
-	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF
+	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF;
 	
 	CASE Init_motor_status_2 OF
 		
@@ -143,13 +148,13 @@ PROGRAM _CYCLIC
 	
 	CASE MM_2.MM_status OF		//Marcia Motore in manuale
 		
-		0:					//Safety check
+		0:	//Safety check
 			IF (Status = MANUAL AND glb_err.pending_alarms = 0 AND Homed_2 AND (NOT glb_err.Drive2)) THEN
 				MM_2.MM_status := 1;
 			END_IF;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			
-		1:					//Wait for input
+		1:	//Wait for input
 			IF (MM_2.MM_Avanti AND (NOT MM_2.MM_Avanti_Vel) AND (NOT MM_2.MM_Indietro) AND ( NOT MM_2.MM_Indietro_Vel)) THEN
 				MM_2.MM_status := 10;
 			END_IF;
@@ -166,7 +171,7 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 21;
 			END_IF;
 		
-		10:					//Forward
+		10:	//Forward
 			XSM_Ctrl_2.Cmd.Velocity := 200;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
@@ -179,7 +184,7 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 40;
 			END_IF;
 			
-		11:					//Fast Forward
+		11:	//Fast Forward
 			XSM_Ctrl_2.Cmd.Velocity := 500;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
@@ -192,7 +197,7 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 40;
 			END_IF;
 		
-		20:					//Backward
+		20:	//Backward
 			XSM_Ctrl_2.Cmd.Velocity := -200;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
@@ -209,7 +214,7 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 41;
 			END_IF;
 			
-		21:					//Fast Backward
+		21:	//Fast Backward
 			XSM_Ctrl_2.Cmd.Velocity := -500;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
@@ -222,7 +227,7 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 31;
 			END_IF;
 			
-		30:					//Reset and back to safety
+		30:	//Reset and back to safety
 			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_2.Cmd.Velocity := 0;
 			XSM_Ctrl_2.Cmd.Stop := TRUE;
@@ -230,36 +235,36 @@ PROGRAM _CYCLIC
 			Status := STOP;
 			MM_2.MM_status := 0;
 					
-		31:					//Left Stop
+		31:	//Left Stop
 			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Cmd.Velocity := 0;
 			Status := STOP;
 			MM_2.MM_status := 0;
 		
-		40:					//StepBack after sensor touch
+		40:	//StepBack after sensor touch
 			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_2.Cmd.Velocity := -1000;
 			XSM_Ctrl_2.Cmd.Stop := TRUE;
 			MM_2.MM_status := 50;
 			
-		41:					//StepForward after sensor touch
+		41:	//StepForward after sensor touch
 			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_2.Cmd.Velocity := 1000;
 			XSM_Ctrl_2.Cmd.Stop := TRUE;
 			MM_2.MM_status := 51;
 		
-		50:					//Stepback start move
+		50:	//Stepback start move
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			MM_2.MM_status := 60;
 			
-		51:					//Stepforward start move
+		51:	//Stepforward start move
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			MM_2.MM_status := 61;
 		
-		60:					//Stepback reset back to start
+		60:	//Stepback reset back to start
 			IF (NOT Empty_Mag_22.Empty_Mag_Sensor) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
 				XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
@@ -268,7 +273,7 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 0;
 			END_IF;
 			
-		61:					//Stepforward reset back to start
+		61:	//Stepforward reset back to start
 			IF (NOT XSM_Ctrl_2.Monitor.Input_1) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
 				XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
@@ -281,7 +286,7 @@ PROGRAM _CYCLIC
 	
 	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
 		
-		0:					//Start
+		0:	//Start
 			IF ((NOT Homed_2) AND Status = AUTO) THEN
 				Auto_Homing_Ctrl_2.Auto_Homing_Status := 1;
 			END_IF;
@@ -289,13 +294,13 @@ PROGRAM _CYCLIC
 			Auto_Homing_Ack_2 := 0;
 			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := FALSE;
 			
-		1:					//Pop Up
+		1:	//Pop Up
 			Auto_Homing_Ctrl_2.Pop_Up := 0;
 			Auto_Homing_Ctrl_2.Auto_Homing_Status := 10;
 			
 			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 			
-		10:					//Ack Pop Up
+		10:	//Ack Pop Up
 			IF (Auto_Homing_Ack_2) THEN
 				Auto_Homing_Ctrl_2.Pop_Up := 1;
 				Auto_Homing_Ctrl_2.Auto_Homing_Status := 20;
@@ -303,13 +308,13 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 		
-		20:					//Movement
+		20:	//Movement
 			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := TRUE;
 			Auto_Homing_Ctrl_2.Auto_Homing_Status := 30;
 			
 			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 		
-		30:					//Back to start
+		30:	//Back to start
 			IF (Homed_2) THEN
 				Auto_Homing_Ctrl_2.Auto_Homing_Status := 40;
 			END_IF;
@@ -317,27 +322,26 @@ PROGRAM _CYCLIC
 			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
 			
 		40:
-			//Status := STOP;
 			Auto_Homing_Ctrl_2.Auto_Homing_Status := 0;
 		
 	END_CASE;
 	
 	CASE Empty_Mag_22.Empty_Mag_Status OF      //Ricarica
 		
-		0:							//Start
+		0:	//Start
 			IF (Status = AUTO AND Homed_2 AND XSM_Ctrl_2.PowerOn AND Empty_Mag_22.Empty_Mag_Sensor AND glb_err.pending_alarms = 0) THEN
 				Empty_Mag_22.Empty_Mag_Status := 10;
 			END_IF;
 			Empty_Mag_22.Empty_Mag_Pop_Up := 1;
 			XSM_Ctrl_2.Cmd.Move_Absolute := FALSE;
 			
-		10:							//Pop up
+		10:	//Pop up
 			Empty_Mag_22.Empty_Mag_Pop_Up := 0;
 			Empty_Mag_22.Empty_Mag_Status := 20;
 			
 			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
 			
-		20:							//Pop up Ack & Start Movement
+		20:	//Pop up Ack & Start Movement
 			IF (Empty_Mag_22.Empty_Mag_Ack) THEN
 				glb_cmd_2.Torna_a_casa := TRUE;
 				Empty_Mag_22.Empty_Mag_Pop_Up := 1;
@@ -349,8 +353,7 @@ PROGRAM _CYCLIC
 			
 			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
 			
-		30:							//Back to start
-			//Status := STOP;
+		30:	//Back to start
 			old_pos_2 := 0;
 			Empty_Mag_22.Empty_Mag_Ack := FALSE;
 			Empty_Mag_22.Empty_Mag_Status := 0;
