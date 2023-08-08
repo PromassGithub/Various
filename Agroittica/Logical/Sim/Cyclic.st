@@ -9,5 +9,12 @@ PROGRAM _CYCLIC
 		glb_enc_sim.x := 0;
 	END_IF;
 	
+	IF (Second_Scan = 0) THEN
+		Second_Scan := 1;
+		Auto_Homing_Ctrl_0.Auto_Homing_Status := 0;
+	END_IF;
+	
+
+		
 	
 END_PROGRAM

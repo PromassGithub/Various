@@ -9751,5 +9751,18 @@
       <Property Name="UserID" Value="None"/>
       <Property Name="VCType" Value="BOOL"/>
     </DataPoint>
+    <Folder Name="glb_enc_sta">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="x">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="DINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+    </Folder>
   </DataPoints>
 </DataSource>

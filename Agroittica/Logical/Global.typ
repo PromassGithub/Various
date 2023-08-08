@@ -100,6 +100,18 @@ TYPE
 		x1 : DINT;
 		error : BOOL;
 	END_STRUCT;
+	typ_glb_enc_laser : 	STRUCT 
+		quote_min : REAL;
+		quote_max : REAL;
+		volts_min : REAL;
+		volts_max : REAL;
+		volts : INT;
+		b_enable : BOOL;
+		calib : BOOL;
+		int_min : INT;
+		act_quote : REAL;
+		x1 : INT;
+	END_STRUCT;
 	typ_cmd : 	STRUCT 
 		Reboot_pos : BOOL;
 		btn_homing : BOOL;

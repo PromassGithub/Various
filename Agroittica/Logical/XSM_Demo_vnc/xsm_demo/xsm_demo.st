@@ -389,6 +389,23 @@ PROGRAM _CYCLIC
 		Homing_status := Homing_status_sim;
 	END_IF;
 	
+	Homing_status_sim := Homing_status;
+	
+	IF glb_sim = 1 THEN
+		IF Homing_status = 0 THEN
+//			XSM_Ctrl_0.PowerOn := 1;
+		END_IF;
+		
+		IF Homing_status = 20 THEN
+			XSM_Ctrl_0.IO_Mapping.InputStatus := 1;
+		END_IF;
+		
+		IF Homing_status = 40 THEN
+			XSM_Ctrl_0.IO_Mapping.InputStatus := 0;
+		END_IF;
+		
+	END_IF;
+
 		
 	CASE Homing_status OF
 		
@@ -596,7 +613,7 @@ PROGRAM _CYCLIC
 	END_CASE;
 	
 	IF ( glb_sim = 1) THEN
-		XSM_Ctrl_0.Monitor.Actual_Position := Stepper_1_position;
+//		XSM_Ctrl_0.Monitor.Actual_Position := Stepper_1_position;
 	END_IF;
 	
 		

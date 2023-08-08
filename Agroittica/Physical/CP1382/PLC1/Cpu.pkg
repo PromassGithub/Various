@@ -12,7 +12,7 @@
   </Objects>
   <Configuration ClassID="X20CP1485" GeneratePPCode="false" HasNcOperatingSystem="true" LocalVariablesMemory="MemoryPool" ModuleID="CP1485" OnlineConfigurationName="TCPIP" Target="SG4" ModuleId="X20CP1382-RT">
     <AutomationRuntime Version="E4.83" />
-    <Build GccVersion="4.1.2" />
+    <Build AnsicIncludeDirectories="\Logical\GlobalIncludes\" GccVersion="4.1.2" />
     <DefaultTargetMemory DataObjects="UserROM" Libraries="UserROM" Tasks="UserROM" />
     <Io ArConfigDataModule="false" ArConfigDataModulePath="$(AS_CPU_PATH)\AS\CfgData.br" IoMapDataModule="false" IoMapDataModulePath="$(AS_CPU_PATH)\AS\IomData.br" />
     <Safety SafetyRelease="0.0" />

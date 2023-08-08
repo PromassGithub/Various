@@ -8,6 +8,10 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	m_laser_enc : REAL := 0.0;
+	Enc_laser_offset : REAL := 0.0;
+	Enc_laser_dist_conv : REAL := 0.0;
+	Enc_laser_dist_raw : INT := 0;
 	Laser_Teach : BOOL := FALSE;
 	Input_Status : USINT := 0;
 	Module_ID : UINT := 0;
@@ -53,6 +57,11 @@ VAR
 	glb_io : typ_io;
 	glb_enc_sta : typ_glb_enc_sta := (0);
 	glb_enc_sim : typ_glb_enc_sta := (0);
+END_VAR
+VAR RETAIN
+	glb_enc_laser : typ_glb_enc_laser;
+END_VAR
+VAR
 	glb_cmd_2 : typ_cmd := (0);
 	glb_cmd : typ_cmd := (0);
 	glb_err : typ_err := (0);

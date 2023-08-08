@@ -173,6 +173,7 @@
           <Property Name="Width" Value="63"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
           <Property Name="ControlID" Value="0"/>
           <Property Name="Description" Value=""/>
@@ -183,7 +184,7 @@
           <Property Name="MaxValue" Value="9999999"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinValue" Value="-9999999"/>
-          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="SimulationValue" Value="10000"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="139"/>
