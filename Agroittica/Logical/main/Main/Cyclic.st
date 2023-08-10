@@ -53,50 +53,50 @@ PROGRAM _CYCLIC
 	
 	//2023 - SICUREZZA PESCE INCASTRATO
 	
-	CASE St_Fish OF
-		
-		0:
-			IF (Status = AUTO OR Status = MANUAL) THEN
-				St_Fish := 10;
-			END_IF;
-			
-		10:
-			
-			R_TRIG_03 (CLK := glb_io.Di.Si_01);
-			Start_Safety := R_TRIG_03.Q;
-		
-			R_TRIG_04 (CLK := glb_io.Di.Si_03);
-			Stop_Safety := R_TRIG_04.Q;
-		
-			IF (Start_Safety) THEN
-				TON_05.IN := 1;
-				St_Fish := 20;
-			END_IF;
-			
-			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
-		
-		20:
-			IF (TON_05.Q) THEN
-				glb_err.Fish := 1;
-				glb_io.Do.MainAllarm:= 1;
-				R_TRIG_03.CLK := 0;
-			END_IF;
-			
-			IF (Stop_Safety) OR (Allarm_0.Ack) THEN
-				St_Fish := 30;
-				R_TRIG_04.CLK := 0;
-			END_IF;
-			
-			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
-			
-		30:
-			TON_05.IN := 0;	
-			R_TRIG_03.CLK := 0;
-			R_TRIG_04.CLK := 0;
-			glb_io.Do.MainAllarm := 0;
-			St_Fish := 0;
-		
-	END_CASE;
+//	CASE St_Fish OF
+//		
+//		0:
+//			IF (Status = AUTO OR Status = MANUAL) THEN
+//				St_Fish := 10;
+//			END_IF;
+//			
+//		10:
+//			
+//			R_TRIG_03 (CLK := glb_io.Di.Si_01);
+//			Start_Safety := R_TRIG_03.Q;
+//		
+//			R_TRIG_04 (CLK := glb_io.Di.Si_03);
+//			Stop_Safety := R_TRIG_04.Q;
+//		
+//			IF (Start_Safety) THEN
+//				TON_05.IN := 1;
+//				St_Fish := 20;
+//			END_IF;
+//			
+//			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
+//		
+//		20:
+//			IF (TON_05.Q) THEN
+//				glb_err.Fish := 1;
+//				glb_io.Do.MainAllarm:= 1;
+//				R_TRIG_03.CLK := 0;
+//			END_IF;
+//			
+//			IF (Stop_Safety) OR (Allarm_0.Ack) THEN
+//				St_Fish := 30;
+//				R_TRIG_04.CLK := 0;
+//			END_IF;
+//			
+//			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
+//			
+//		30:
+//			TON_05.IN := 0;	
+//			R_TRIG_03.CLK := 0;
+//			R_TRIG_04.CLK := 0;
+//			glb_io.Do.MainAllarm := 0;
+//			St_Fish := 0;
+//		
+//	END_CASE;
 	
 	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
 	
@@ -140,12 +140,16 @@ PROGRAM _CYCLIC
 			
 			IF TON_02.Q THEN 
 				glb_io.Do.Piston_up		:= 0;
+				glb_io.Di.Finecorsa		:= 0;
 				St_Gun := 40; 
 			END_IF;
 		
 		40: 
 			Ricette.TON_03.IN := 1;
-			IF(NOT glb_io.Di.Si_01 AND Ricette.TON_03.Q) THEN St_Gun := 50; END_IF;
+			IF(NOT glb_io.Di.Si_01 AND Ricette.TON_03.Q) THEN 
+				St_Gun := 50;
+				glb_fish_shot_ons := 0;
+			END_IF;
 		
 		50: // end & reset
 			TON_01.IN 				:= 0;

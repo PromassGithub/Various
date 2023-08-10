@@ -236,36 +236,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_71]"/>
           <Property Name="Width" Value="153"/>
         </Control>
-        <Control ClassId="0x00001007" Name="Numeric_4">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="39"/>
-          <Property Name="Input" Value="True"/>
-          <Property Name="InputCancel" Value="Lost Focus"/>
-          <Property Name="InputComma" Value="Explicit"/>
-          <Property Name="InputConfirm" Value="Enter"/>
-          <Property Name="InputMinus" Value="Normal"/>
-          <Property Name="InputNext" Value="Enter"/>
-          <Property Name="InputStart" Value="Any Key"/>
-          <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
-          <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="211"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="2300"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="150"/>
-          <Property Name="SimulationValue" Value="1000"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="278"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Ricette.Laser_Depth]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="63"/>
-        </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
@@ -347,6 +317,26 @@
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="333"/>
           <Property Name="Width" Value="153"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="Left" Value="211"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="9999999"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="-9999999"/>
+          <Property Name="SimulationValue" Value="10000"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="278"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Enc_laser_dist_conv]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="63"/>
         </Control>
       </Controls>
       <KeyMapping>
@@ -482,17 +472,10 @@
       <Property Name="Z-Order" Value="4"/>
     </LayerRef>
   </Layers>
-  <MovementOrder>
-    <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_4]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-    </MovementEntry>
-  </MovementOrder>
+  <MovementOrder/>
   <TabSequence>
     <TabSeqItem Index="0" Value="Source[local].Layer[MpBackground].Control[strUserName]"/>
-    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
-    <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+    <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
   </TabSequence>
 </Page>

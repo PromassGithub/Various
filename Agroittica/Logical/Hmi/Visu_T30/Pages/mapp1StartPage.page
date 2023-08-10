@@ -47,6 +47,7 @@
           <Text ID="238673" Value="Min"/>
           <Text ID="238674" Value="Max"/>
           <Text ID="270117" Value="Loaded recipe"/>
+          <Text ID="280205" Value="Reset Sirena"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="219681" Value="Machine Status"/>
@@ -58,6 +59,7 @@
           <Text ID="238673" Value="Min"/>
           <Text ID="238674" Value="Max"/>
           <Text ID="270117" Value="Loaded recipe"/>
+          <Text ID="280205" Value="Reset Sirena"/>
         </TextLayer>
         <IndexMap>
           <Index ID="219681" Value="30"/>
@@ -69,6 +71,7 @@
           <Index ID="238673" Value="11"/>
           <Index ID="238674" Value="13"/>
           <Index ID="270117" Value="6"/>
+          <Index ID="280205" Value="8"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -392,8 +395,47 @@
           <Property Name="Top" Value="300"/>
           <Property Name="Width" Value="110"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_1">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_75]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="41"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="68"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="8"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="366"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_75]"/>
+          <Property Name="Width" Value="140"/>
+        </Control>
       </Controls>
-      <KeyMapping/>
+      <KeyMapping>
+        <VirtualKey Name="%embVirtualKey_75">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000161">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Stop_Safety]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+      </KeyMapping>
     </Layer>
     <LayerRef Source="Source[local].Layer[Empty_Mag_2_Pop_Up]">
       <Property Name="Description" Value=""/>

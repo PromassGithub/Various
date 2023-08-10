@@ -8,8 +8,10 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Dist_Trig : REAL := 0.0;
 	m_laser_enc : REAL := 0.0;
-	Enc_laser_offset : REAL := 0.0;
+	Enc_laser_arr_dist : ARRAY[0..3] OF REAL := [4(0.0)];
+	Enc_laser_offset : REAL := 150;
 	Enc_laser_dist_conv : REAL := 0.0;
 	Enc_laser_dist_raw : INT := 0;
 	Laser_Teach : BOOL := FALSE;
@@ -71,5 +73,7 @@ VAR
 	Init_motor_status_1_sim : USINT := 0;
 	Stepper_2_position : DINT := 0;
 	Stepper_1_position : DINT := 0;
+	glb_fish_pos_trigger : REAL := 283;
+	glb_fish_shot_ons : BOOL := FALSE;
 	STP_01_Vel : REAL := 0.0;
 END_VAR

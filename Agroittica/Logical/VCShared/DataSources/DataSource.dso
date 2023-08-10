@@ -9657,15 +9657,6 @@
           <Property Name="VCType" Value="INTEGER"/>
         </DataPoint>
       </Folder>
-      <DataPoint Name="Laser_Depth">
-        <Property Name="ConnectedBySharedResource" Value="False"/>
-        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-        <Property Name="Description" Value=""/>
-        <Property Name="PLCType" Value="INT"/>
-        <Property Name="UpdateTime" Value="Default"/>
-        <Property Name="UserID" Value="None"/>
-        <Property Name="VCType" Value="INTEGER"/>
-      </DataPoint>
     </Folder>
     <Folder Name="Lamp_01">
       <Property Name="Description" Value=""/>
@@ -9764,5 +9755,26 @@
         <Property Name="VCType" Value="INTEGER"/>
       </DataPoint>
     </Folder>
+    <DataPoint Name="Stop_Safety">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="BOOL"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="BOOL"/>
+    </DataPoint>
+    <DataPoint Name="Enc_laser_dist_conv">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+      <Property Name="DPLimit" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="REAL"/>
+      <Property Name="PLCUnit" Value="None"/>
+      <Property Name="UnitGroup" Value="None"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="SCALED"/>
+    </DataPoint>
   </DataPoints>
 </DataSource>

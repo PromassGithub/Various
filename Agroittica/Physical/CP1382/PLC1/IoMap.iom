@@ -44,7 +44,6 @@ VAR_CONFIG
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenMode AT %QB."80SD100XD.C044-01".MpGenMode02;
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.AbsPosActVal AT %ID."80SD100XD.C044-01".AbsPos02ActVal;
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus02;
-	Cyclic#1.::glb_io.Di.Finecorsa AT %IX."X1".DigitalInput01;
 	Cyclic#1.::glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
 	Cyclic#1.Feedback_0.Feedback_Em_Bt AT %IX."X2".DigitalInput13;
 	Cyclic#1.Feedback_0.Feedback_Air AT %IX."X2".DigitalInput14;
@@ -57,4 +56,5 @@ VAR_CONFIG
 	Cyclic#1.glb_io.Di.Si_03 AT %IX."X67BC8321-1".IF1.ST1.DigitalInput08;
 	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
 	glb_io.Do.MainAllarm AT %QX."X3".DigitalOutput12;
+	Cyclic#1.::Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
 END_VAR

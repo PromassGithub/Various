@@ -13,7 +13,9 @@
     <Module Name="X1" Type="X1" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="PLC1" TargetConnector="X1" />
-    </Module>
+    <Parameter ID="X1AI1_InputFilter" Value="level 128" />
+    <Parameter ID="X1AI1_InputLimitation" Value="4095" />
+  </Module>
     <Module Name="X2" Type="X2" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="PLC1" TargetConnector="X2" />
@@ -57,7 +59,6 @@
       <Parameter ID="InaNodeNumber" Value="3" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Agroittica_CP1382" />
-    <Parameter ID="Simulation" Value="1" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="Recipe" />
     <Parameter ID="FileDevicePath1" Value="D:\RECIPES" />
