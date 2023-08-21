@@ -12,8 +12,6 @@ VAR
 	m_laser_enc : REAL := 0.0;
 	Enc_laser_arr_dist : ARRAY[0..3] OF REAL := [4(0.0)];
 	Enc_laser_offset : REAL := 150;
-	Enc_laser_dist_conv : REAL := 0.0;
-	Enc_laser_dist_raw : INT := 0;
 	Laser_Teach : BOOL := FALSE;
 	Input_Status : USINT := 0;
 	Module_ID : UINT := 0;

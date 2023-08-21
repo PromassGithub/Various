@@ -44,8 +44,33 @@ PROGRAM _CYCLIC
 	
 	IF Ricette.TON_04.Q THEN
 		glb_io.Do.Piston_up := 0;
+		glb_io.Do.Piston_down := 1;
 		St_Gun := 50;
 	END_IF;
+	
+	
+	//TIMER ATTIVAZIONE/SPEGNIMENTO BOBINE PNEUMATICA
+	
+	IF (glb_io.Do.Piston_up) THEN
+		glb_io.Do.Main_Piston_Up := 1;
+		glb_io.Do.Main_Piston_Down := 0;
+		(*TON_06.IN := TRUE;*)
+	END_IF;
+	
+//	IF (TON_06.Q) THEN
+//		glb_io.Do.Main_Piston_Up := 0;
+//	END_IF;
+	
+	IF (NOT glb_io.Do.Piston_up) THEN
+		glb_io.Do.Main_Piston_Down := 1;
+		glb_io.Do.Main_Piston_Up := 0;
+		(*TON_07.IN := TRUE;*)
+	END_IF;
+	
+//	IF (TON_07.Q) THEN
+//		glb_io.Do.Main_Piston_Down := 0;
+//	END_IF;
+	
 	
 	//2023 - FORZATURA MAG2 POP UP
 	
@@ -108,6 +133,7 @@ PROGRAM _CYCLIC
 			TON_01.IN 		:= 0;
 			TON_02.IN 		:= 0;
 			
+			
 			IF (glb_io.Di.Si_01) THEN St_Gun := 10; END_IF;
 		
 		10:	//
@@ -139,7 +165,7 @@ PROGRAM _CYCLIC
 			TON_02.IN := 1;
 			
 			IF TON_02.Q THEN 
-				glb_io.Do.Piston_up		:= 0;
+				glb_io.Do.Piston_down	:= 1;
 				glb_io.Di.Finecorsa		:= 0;
 				St_Gun := 40; 
 			END_IF;
@@ -174,7 +200,7 @@ PROGRAM _CYCLIC
 			
 	
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#150ms; 		// tempo discesa pist soll
+	//TON_02.PT := T#150ms; 		// tempo discesa pist soll
 	//TON_04.PT := T#1000ms;	// Sicurezza pistone soll
 	TON_05.PT := T#1500ms;		// Sicurezza pesci
 	

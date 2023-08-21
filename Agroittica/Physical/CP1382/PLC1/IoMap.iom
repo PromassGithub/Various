@@ -34,7 +34,6 @@ VAR_CONFIG
 	glb_io.Di.Stop AT %IX."X3".DigitalInput07;
 	glb_io.Di.Manual AT %IX."X3".DigitalInput08;
 	glb_io.Do.Piston_gun_1 AT %QX."X3".DigitalOutput02;
-	glb_io.Do.Piston_up AT %QX."X3".DigitalOutput03;
 	glb_io.Do.Piston_gun_2 AT %QX."X3".DigitalOutput04;
 	glb_io.Do.Piston_Flap_Dx_Sx AT %QX."X3".DigitalOutput09;
 	Cyclic#1.Empty_Mag_22.Empty_Mag_Sensor AT %IX."X1".DigitalInput04;
@@ -55,6 +54,7 @@ VAR_CONFIG
 	Cyclic#1.Lamp_01.Lamp1Verde AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput06;
 	Cyclic#1.glb_io.Di.Si_03 AT %IX."X67BC8321-1".IF1.ST1.DigitalInput08;
 	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
-	glb_io.Do.MainAllarm AT %QX."X3".DigitalOutput12;
 	Cyclic#1.::Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
+	glb_io.Do.Main_Piston_Down AT %QX."X3".DigitalOutput10;
+	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput11;
 END_VAR

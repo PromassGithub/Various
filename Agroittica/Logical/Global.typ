@@ -212,6 +212,9 @@ TYPE
 		Piston_gun_1 : BOOL;
 		Piston_Flap_Dx_Sx : BOOL;
 		MainAllarm : BOOL;
+		Piston_down : BOOL;
+		Main_Piston_Down : BOOL;
+		Main_Piston_Up : BOOL;
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;
@@ -236,9 +239,16 @@ TYPE
 		enc_sta_bit_11 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
 		Powerlink : BOOL;
 	END_STRUCT;
+	typ_Ai : 	STRUCT 
+		Enc_laser_dist_conv1 : REAL;
+		Enc_laser_dist_raw1 : INT;
+		Enc_laser_dist_conv : REAL;
+		Enc_laser_dist_raw : INT;
+	END_STRUCT;
 	typ_io : 	STRUCT 
 		Do : typ_Do;
 		Di : typ_Di;
+		Ai : typ_Ai;
 	END_STRUCT;
 	En_status : 
 		(
