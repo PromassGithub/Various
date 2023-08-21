@@ -11,9 +11,8 @@
 TYPE
 	Ricetta : 	STRUCT 
 		D_Sens_Gun : INT;
-		TON_04 : TON;
-		TON_03 : TON;
 		Laser_Depth : INT;
+		PT_end_stop : TIME;
 	END_STRUCT;
 	Allarm : 	STRUCT 
 		St_allarm : UINT;
@@ -218,7 +217,7 @@ TYPE
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;
-		Si_01 : BOOL;
+		Si_01 : BOOL; (*sensore di avvicinamento dei pesci, parte il timer per la pistola*)
 		Si_02 : BOOL;
 		Si_03 : BOOL;
 		Start : BOOL;

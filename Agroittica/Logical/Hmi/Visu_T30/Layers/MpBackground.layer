@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.9.5.36 SP"?>
+<?AutomationStudio Version="4.9.6.42 SP"?>
 <Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpBackground">
   <Property Name="BackColor" Value="9"/>
   <Property Name="Description" Value="Background for all pages"/>
@@ -59,46 +59,6 @@
       <Property Name="ValueDatapoint" Value="None"/>
       <Property Name="Width" Value="81"/>
     </Control>
-    <Control ClassId="0x00001004" Name="txtLabel">
-      <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Height" Value="28"/>
-      <Property Name="Left" Value="2"/>
-      <Property Name="Multiline" Value="Automatic"/>
-      <Property Name="SimulationIndex" Value="0"/>
-      <Property Name="SimulationValue" Value=""/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-      <Property Name="TextIndexOffset" Value="15"/>
-      <Property Name="TextSource" Value="SingleText"/>
-      <Property Name="Top" Value="8"/>
-      <Property Name="Width" Value="118"/>
-    </Control>
-    <Control ClassId="0x0000100B" Name="strUserName">
-      <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="Height" Value="28"/>
-      <Property Name="Left" Value="120"/>
-      <Property Name="SimulationValue" Value="ABC"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="8"/>
-      <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.MpUserXLoginUIConnect.CurrentUser]"/>
-      <Property Name="Width" Value="109"/>
-    </Control>
-    <Control ClassId="0x00001003" Name="htsLogin">
-      <Property Name="ControlID" Value="0"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
-      <Property Name="Height" Value="33"/>
-      <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="1"/>
-      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-      <Property Name="Top" Value="5"/>
-      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
-      <Property Name="Width" Value="232"/>
-    </Control>
     <Control ClassId="0x00001001" Name="Shape_1">
       <Property Name="BackColor" Value="15"/>
       <Property Name="ControlID" Value="0"/>
@@ -111,19 +71,5 @@
       <Property Name="Width" Value="108"/>
     </Control>
   </Controls>
-  <KeyMapping>
-    <VirtualKey Name="%embVirtualKey_4">
-      <Property Name="Description" Value=""/>
-      <Property Name="VirtualKey_LED" Value="False"/>
-      <KeyActions>
-        <KeyAction ClassId="0x00000160">
-          <Property Name="Description" Value=""/>
-          <Property Name="Locking" Value="Never"/>
-          <Property Name="Name" Value="Action_0"/>
-          <Property Name="Page" Value="Source[local].Page[MpUserXLoginUI]"/>
-          <Property Name="Target" Value="Page"/>
-        </KeyAction>
-      </KeyActions>
-    </VirtualKey>
-  </KeyMapping>
+  <KeyMapping/>
 </Layer>

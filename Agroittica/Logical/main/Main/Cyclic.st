@@ -3,6 +3,7 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	(*glb_err.pending_alarms := 0;*)
 	
+	// stato generale STOP-AUTO-MANUAL-ERR
 	CASE Status OF
 		
 		STOP:
@@ -29,48 +30,25 @@ PROGRAM _CYCLIC
 			ELSIF (glb_err.pending_alarms <> 0) THEN
 				Status := ERR;
 			END_IF;
+			
 		ERR:
 			IF (glb_err.pending_alarms = 0) THEN 
 				Status := STOP;
 			END_IF;
-			
-		  
 	END_CASE;
 	
-	//2023 - FORZATURA SPEGNIMENTO PISTONE SOLLEVAMENTO
-	IF (glb_io.Do.Piston_up) THEN
-		Ricette.TON_04.IN := 1;
+	// 2023 - FORZATURA SPEGNIMENTO PISTONE SOLLEVAMENTO
+	IF (Piston_st) THEN
+		TON_04.IN := 1;
 	END_IF;
 	
-	IF Ricette.TON_04.Q THEN
-		glb_io.Do.Piston_up := 0;
-		glb_io.Do.Piston_down := 1;
+	IF TON_04.Q THEN
+		Piston_st := 0;
 		St_Gun := 50;
-	END_IF;
+	END_IF;		
+
 	
-	
-	//TIMER ATTIVAZIONE/SPEGNIMENTO BOBINE PNEUMATICA
-	
-	IF (glb_io.Do.Piston_up) THEN
-		glb_io.Do.Main_Piston_Up := 1;
-		glb_io.Do.Main_Piston_Down := 0;
-		(*TON_06.IN := TRUE;*)
-	END_IF;
-	
-//	IF (TON_06.Q) THEN
-//		glb_io.Do.Main_Piston_Up := 0;
-//	END_IF;
-	
-	IF (NOT glb_io.Do.Piston_up) THEN
-		glb_io.Do.Main_Piston_Down := 1;
-		glb_io.Do.Main_Piston_Up := 0;
-		(*TON_07.IN := TRUE;*)
-	END_IF;
-	
-//	IF (TON_07.Q) THEN
-//		glb_io.Do.Main_Piston_Down := 0;
-//	END_IF;
-	
+
 	
 	//2023 - FORZATURA MAG2 POP UP
 	
@@ -143,7 +121,7 @@ PROGRAM _CYCLIC
 			IF TON_01.Q THEN St_Gun := 20; END_IF;
 			
 		20:
-			glb_io.Do.Piston_up := 1;
+			Piston_st := 1;
 			
 			IF (glb_io.Di.Finecorsa) THEN 
 				St_Gun := 30; 
@@ -165,14 +143,14 @@ PROGRAM _CYCLIC
 			TON_02.IN := 1;
 			
 			IF TON_02.Q THEN 
-				glb_io.Do.Piston_down	:= 1;
+				Piston_st				:= 0;
 				glb_io.Di.Finecorsa		:= 0;
 				St_Gun := 40; 
 			END_IF;
 		
 		40: 
-			Ricette.TON_03.IN := 1;
-			IF(NOT glb_io.Di.Si_01 AND Ricette.TON_03.Q) THEN 
+			TON_03.IN := 1;
+			IF(NOT glb_io.Di.Si_01 AND TON_03.Q) THEN 
 				St_Gun := 50;
 				glb_fish_shot_ons := 0;
 			END_IF;
@@ -180,58 +158,16 @@ PROGRAM _CYCLIC
 		50: // end & reset
 			TON_01.IN 				:= 0;
 			TON_02.IN 				:= 0;
-			Ricette.TON_03.IN 		:= 0;
-			Ricette.TON_04.IN		:= 0;
+			TON_03.IN 		:= 0;
+			TON_04.IN		:= 0;
 			glb_io.Do.Piston_gun_1 	:= 0;
 			glb_io.Do.Piston_gun_2 	:= 0;
-			glb_io.Do.Piston_up		:= 0;
+			Piston_st				:= 0;
 			St_Gun 					:= 0;
 			R_TRIG_01.CLK 			:= 0;
 			R_TRIG_02.CLK			:= 0;
 		
 	END_CASE;
-	
-	
-	TON_01;
-	TON_02;
-	Ricette.TON_03;
-	Ricette.TON_04;
-	TON_05;
-			
-	
-	TON_01.PT := Tempo_Delay;
-	//TON_02.PT := T#150ms; 		// tempo discesa pist soll
-	//TON_04.PT := T#1000ms;	// Sicurezza pistone soll
-	TON_05.PT := T#1500ms;		// Sicurezza pesci
-	
-	R_TRIG_01;
-	R_TRIG_02;
-	R_TRIG_03;
-	R_TRIG_04;
-	
-//	CASE Manual_Gun_0.Gun_Status OF		//Gun Selection at boot up
-//		
-//		0:						//Start
-//			IF (Status = STOP AND glb_err.pending_alarms = 0 AND (NOT Empty_Mag_1_0.Empty_Mag_Sensor) AND (NOT Empty_Mag_22.Empty_Mag_Sensor) AND (NOT glb_hmi.Inp.Gun_1_HMI) AND (NOT glb_hmi.Inp.Gun_2_HMI)) THEN
-//				Manual_Gun_0.Gun_Status := 1;
-//			END_IF;
-//			
-//			Manual_Gun_0.Gun_Pop_up := 1;
-//			
-//		1:						//Pop up
-//			Manual_Gun_0.Gun_Pop_up := 0;
-//			Manual_Gun_0.Gun_Status := 10;
-//			
-//		10:						//Choose gun
-//			IF (glb_hmi.Inp.Gun_1_HMI OR glb_hmi.Inp.Gun_2_HMI) THEN
-//				Manual_Gun_0.Gun_Pop_up := 1;
-//				Manual_Gun_0.Gun_Status:= 20;
-//			END_IF;
-//			
-//		20:						//Back to start
-//			Manual_Gun_0.Gun_Status:= 0;
-//			
-//	END_CASE;
 	
 	//--------------------SWITCH PISTOLE-----------------------
 	
@@ -358,54 +294,7 @@ PROGRAM _CYCLIC
 			Pesi_0.Weight_Status := 0;
 				
 			
-	END_CASE;
-	
-	
-	//--------------------AUTO-FISH-----------------------------
-	
-//	CASE Auto_fish_0.Fish_status OF				//Simulatore Pesce per TEST binario caricatore
-//		
-//		0:
-//			TON_03.IN := 0;
-//			
-//			IF ( Status = AUTO AND Auto_fish_0.Fish_Start) THEN
-//				Auto_fish_0.Fish_status := 10;
-//			END_IF;
-//			
-//			
-//		10:
-//			glb_io.Di.Si_01 :=1;
-//			
-//			TON_03.IN := 1;
-//			
-//			IF TON_03.Q THEN
-//				Auto_fish_0.Fish_status := 20;
-//			END_IF;
-//	
-//			IF ( Status <> AUTO) THEN Auto_fish_0.Fish_status := 31; END_IF;
-//			
-//		20:
-//			glb_io.Di.Finecorsa := 1;
-//			Auto_fish_0.Fish_status := 30;
-//			
-//			IF ( Status <> AUTO) THEN Auto_fish_0.Fish_status := 31; END_IF;
-//			
-//		30:
-//			glb_io.Di.Si_01 := 0;
-//			glb_io.Di.Finecorsa := 0;
-//			
-//			Auto_fish_0.Fish_status := 0;
-//			
-//		31:
-//			glb_io.Di.Si_01 := 0;
-//			glb_io.Di.Finecorsa := 0;
-//			Auto_fish_0.Fish_Start := 0;
-//		
-//			Auto_fish_0.Fish_status := 0;
-//		
-//	END_CASE;
-	
-	
+	END_CASE;	
 	
 	//--------------------MATH-----------1-----------------------
 	
@@ -414,8 +303,6 @@ PROGRAM _CYCLIC
 	Tempo := Ricette.D_Sens_Gun/STP_01_Vel*1000;
 	
 	Tempo_Delay := REAL_TO_TIME (Tempo);
-	
-	//STP_01_Pos;
 	
 	//--------------------AIR------------------------------------
 	
@@ -427,7 +314,7 @@ PROGRAM _CYCLIC
 		glb_err.Air := FALSE;
 	END_IF;
 	
-	//--------------------PLC------------------------------------
+	//--------------------Emergenze------------------------------------
 	
 	//Feedback fungo emergenza
 	
@@ -435,79 +322,41 @@ PROGRAM _CYCLIC
 		glb_err.Em_Bt := TRUE;
 	ELSE
 		glb_err.Em_Bt:= FALSE;
+	END_IF;	
+	
+	
+	// ATTIVAZIONE/SPEGNIMENTO BOBINE PNEUMATICA
+	IF (Status = AUTO) THEN
+		IF (Piston_st) THEN
+			glb_io.Do.Main_Piston_Up 	:= 1;
+			glb_io.Do.Main_Piston_Down 	:= 0;
+		ELSE
+			glb_io.Do.Main_Piston_Up 	:= 0;
+			glb_io.Do.Main_Piston_Down 	:= 1;
+		END_IF;
+		
+	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
+		glb_io.Do.Main_Piston_Up 	:= 0;
+		glb_io.Do.Main_Piston_Down 	:= 0;
 	END_IF;
 	
-	//-------------------TEST-ELETTROVALVOLE---------------------
-//	CASE St_Valve OF
-//		
-//		0:
-//			IF ( Status = MANUAL) AND (glb_err.pending_alarms = 0) THEN
-//				St_Valve := 10;
-//			END_IF;
-//			
-//		1:
-//			
-//			IF (glb_hmi.Inp.Gun_1_Valve_HMI) THEN
-//				St_Valve := 10;
-//			END_IF;
-//	
-//			IF (glb_hmi.Inp.Gun_2_Valve_HMI) THEN
-//				St_Valve := 20;
-//			END_IF;
-//	
-//			IF (glb_hmi.Inp.Soll_Valve_HMI) THEN
-//				St_Valve := 30;
-//			END_IF;
-//			
-//			IF (glb_hmi.Inp.Sx_Dx_Valve_HMI) THEN
-//				St_Valve := 40;
-//			END_IF;
-//			
-//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
-//			
-//			
-//		10:
-//			glb_io.Do.Piston_gun_1 := 1;
-//			
-//			IF (NOT glb_hmi.Inp.Gun_1_Valve_HMI) THEN
-//				St_Valve := 50;
-//			END_IF;
-//			
-//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
-//			
-//		20: 
-//			glb_io.Do.Piston_gun_2 := 1;
-//			
-//			IF (NOT glb_hmi.Inp.Gun_1_Valve_HMI) THEN
-//				St_Valve := 50;
-//			END_IF;
-//			
-//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
-//			
-//		30:
-//			glb_io.Do.Piston_up := 1;
-//			
-//			IF (NOT glb_hmi.Inp.Gun_1_Valve_HMI) THEN
-//				St_Valve := 50;
-//			END_IF;
-//			
-//			IF ( Status <> MANUAL) THEN St_Valve := 50; END_IF;
-//			
-//		40:
-//			glb_io.Do.Piston_Flap_Dx_Sx := 1;
-//			
-//			IF (NOT glb_hmi.Inp.Sx_Dx_Valve_HMI) THEN
-//				St_Valve := 50;
-//			END_IF;
-//			
-//			
-//		50:
-//			glb_io.Do.Piston_gun_1 := 0;
-//			glb_io.Do.Piston_gun_2 := 0;
-//			glb_io.Do.Piston_up := 0;
-//			St_Valve := 0;
-//			
-//	END_CASE;
 	
+	// temporizzatori
+	TON_01;
+	TON_02;
+	TON_03;
+	TON_04;
+	TON_05;
+			
+	TON_01.PT := Tempo_Delay;
+	TON_02.PT := T#100ms; 					// tempo discesa pist soll
+	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
+	TON_04.PT := T#500ms;					// Sicurezza pistone soll
+	TON_05.PT := T#1500ms;					// Sicurezza pesci
+	
+	R_TRIG_01;
+	R_TRIG_02;
+	R_TRIG_03;
+	R_TRIG_04;
 	 
 END_PROGRAM

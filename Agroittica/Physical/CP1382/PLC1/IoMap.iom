@@ -54,7 +54,7 @@ VAR_CONFIG
 	Cyclic#1.Lamp_01.Lamp1Verde AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput06;
 	Cyclic#1.glb_io.Di.Si_03 AT %IX."X67BC8321-1".IF1.ST1.DigitalInput08;
 	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
-	Cyclic#1.::Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
+	Cyclic#1.::glb_io.Ai.Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
 	glb_io.Do.Main_Piston_Down AT %QX."X3".DigitalOutput10;
 	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput11;
 END_VAR
