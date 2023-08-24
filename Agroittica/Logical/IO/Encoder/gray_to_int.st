@@ -38,9 +38,9 @@ FUNCTION_BLOCK Int_to_vel
 		
 			Delta_pos := SQRT(pow(Delta_pos, 2));
 			
-			Vel := (Delta_pos)/0.42;
+			Vel := (Delta_pos)/0.408;
 		ELSE
-			Vel := Delta_pos / 0.42;
+			Vel := Delta_pos / 0.408;
 		END_IF
 		
 		pos_a := pos_b;

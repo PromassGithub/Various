@@ -59,6 +59,13 @@
       <Parameter ID="InaNodeNumber" Value="3" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Agroittica_CP1382" />
+    <Parameter ID="SystemTick" Value="4000" />
+    <Parameter ID="TaskClassIdleTime" Value="4000" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="4000" />
+    <Parameter ID="Cyclic3Duration" Value="48000" />
+    <Parameter ID="Cyclic3Tolerance" Value="48000" />
+    <Parameter ID="Cyclic8Duration" Value="8000" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="Recipe" />
     <Parameter ID="FileDevicePath1" Value="C:\RECIPES" />
