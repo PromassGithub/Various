@@ -13,6 +13,7 @@ TYPE
 		D_Sens_Gun : INT;
 		Laser_Depth : INT;
 		PT_end_stop : TIME;
+		Laser_trigger : INT;
 	END_STRUCT;
 	Allarm : 	STRUCT 
 		St_allarm : UINT;

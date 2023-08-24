@@ -56,5 +56,5 @@ VAR_CONFIG
 	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
 	Cyclic#1.::glb_io.Ai.Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
 	glb_io.Do.Main_Piston_Down AT %QX."X3".DigitalOutput10;
-	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput11;
+	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput03;
 END_VAR

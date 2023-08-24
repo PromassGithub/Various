@@ -35,7 +35,7 @@
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="HostName" Value="a07151" />
       <Parameter ID="Mode" Value="Manual" />
-      <Parameter ID="InternetAddress" Value="111.111.111.111" />
+      <Parameter ID="InternetAddress" Value="192.168.32.205" />
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
       <Group ID="Vnc1" />
       <Parameter ID="VncVcObjectName1" Value="Visu_t" />
@@ -61,15 +61,20 @@
     <Parameter ID="ConfigurationID" Value="Agroittica_CP1382" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="Recipe" />
-    <Parameter ID="FileDevicePath1" Value="D:\RECIPES" />
+    <Parameter ID="FileDevicePath1" Value="C:\RECIPES" />
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="Alarm" />
-    <Parameter ID="FileDevicePath2" Value="D:\ALARM" />
+    <Parameter ID="FileDevicePath2" Value="C:\ALARM" />
     <Group ID="FtpUser1" />
-    <Parameter ID="FtpUsername1" Value="Agroittica" />
-    <Parameter ID="FtpUserPassword1" Value="BjsQgnmS4L+fNBNkp3IDPel/oRBcgDXKTfZqVHWIsTo=" Description="Promass" />
-    <Parameter ID="FtpUserSalt1" Value="8HI+o2ww" />
+    <Parameter ID="FtpUsername1" Value="agroittica" />
+    <Parameter ID="FtpUserPassword1" Value="nk5s+iGbE2G3Lss4ijbEM8RmwsHwW5FetzKLdq3raQk=" Description="promass" />
+    <Parameter ID="FtpUserSalt1" Value="6BcZ9bjL" />
     <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
+    <Group ID="FtpUser2" />
+    <Parameter ID="FtpUsername2" Value="bazzica" />
+    <Parameter ID="FtpUserPassword2" Value="xgGZPKLqbdu5q4OkAcKaQyOUyno/5sjZu4T7S2DSwEQ=" />
+    <Parameter ID="FtpUserSalt2" Value="nlL0YWjS" />
     <Parameter ID="ReActionTaskDisabled" Value="FALSE" />
   </Module>
   <Module Name="X20BM11a" Type="X20BM11" Version="1.0.0.1">

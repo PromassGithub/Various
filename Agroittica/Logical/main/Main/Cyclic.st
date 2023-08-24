@@ -349,9 +349,9 @@ PROGRAM _CYCLIC
 	TON_05;
 			
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#100ms; 					// tempo discesa pist soll
+	TON_02.PT := T#50ms; 					// tempo discesa pist soll
 	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
-	TON_04.PT := T#500ms;					// Sicurezza pistone soll
+	TON_04.PT := T#1000ms;					// Sicurezza pistone soll
 	TON_05.PT := T#1500ms;					// Sicurezza pesci
 	
 	R_TRIG_01;
