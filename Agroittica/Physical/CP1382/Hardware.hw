@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="80SD100XD.C044-01" Type="80SD100XD.C044-01" Version="2.2.0.0">
     <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1">
@@ -59,8 +59,10 @@
       <Parameter ID="InaNodeNumber" Value="3" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Agroittica_CP1382" />
-    <Parameter ID="SystemTick" Value="4000" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="PLC1.IF3" />
     <Parameter ID="TaskClassIdleTime" Value="4000" />
+    <Parameter ID="CyclicTaskClassCount" Value="4" />
     <Parameter ID="Cyclic1Duration" Value="4000" />
     <Parameter ID="Cyclic1Tolerance" Value="4000" />
     <Parameter ID="Cyclic3Duration" Value="48000" />
