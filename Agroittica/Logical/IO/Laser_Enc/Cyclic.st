@@ -18,7 +18,7 @@ PROGRAM _CYCLIC
 		glb_fish_shot_ons    := 1;
 	END_IF;
 	
-	IF ((glb_io.Ai.Enc_laser_dist_conv > 400) AND (glb_fish_shot_ons)) THEN
+	IF ((glb_io.Ai.Enc_laser_dist_conv > 390) AND (glb_fish_shot_ons)) THEN
 		glb_fish_shot_ons := 0;
 		glb_io.Di.Finecorsa  := 0;
 	END_IF;

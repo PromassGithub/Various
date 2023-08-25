@@ -255,6 +255,7 @@ TYPE
 		STOP := 0,
 		AUTO := 10,
 		MANUAL := 20,
-		ERR := 30
+		ERR := 30,
+		TEST := 40
 		);
 END_TYPE

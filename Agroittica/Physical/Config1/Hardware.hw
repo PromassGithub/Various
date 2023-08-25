@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="X20AI4632" Type="X20AI4632" Version="1.2.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
     <Parameter ID="FilterConstant01" Value="20" />
     <Parameter ID="Channel02enable" Value="off" />
     <Parameter ID="Channel03enable" Value="off" />
@@ -39,11 +40,21 @@
       <Parameter ID="VncMaxConnections1" Value="4" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Agroittica_Config1" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP1382.IF6" />
+    <Parameter ID="TaskClassIdleTime" Value="4000" />
+    <Parameter ID="CyclicTaskClassCount" Value="4" />
+    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Tolerance" Value="4000" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="Recipe" />
+    <Parameter ID="FileDevicePath1" Value="C:\RECIPES" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="Agroittica" />
     <Parameter ID="FtpUserPassword1" Value="8BO36D9v10FahVI/35UC5LiHpRd4DpSI5ha+v2ZAxVk=" Description="Promass" />
     <Parameter ID="FtpUserSalt1" Value="kTVKBWu9" />
     <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />

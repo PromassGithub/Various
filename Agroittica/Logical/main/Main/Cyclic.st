@@ -40,6 +40,8 @@ PROGRAM _CYCLIC
 	// 2023 - FORZATURA SPEGNIMENTO PISTONE SOLLEVAMENTO
 	IF (Piston_st) THEN
 		TON_04.IN := 1;
+	ELSE
+		TON_04.IN := 0;
 	END_IF;
 	
 	IF TON_04.Q THEN
@@ -103,7 +105,7 @@ PROGRAM _CYCLIC
 	
 	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
 	
-	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
+//	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
 	
 	CASE St_Gun OF
 			
@@ -150,7 +152,7 @@ PROGRAM _CYCLIC
 		
 		40: 
 			TON_03.IN := 1;
-			IF(NOT glb_io.Di.Si_01 AND TON_03.Q) THEN 
+			IF((NOT glb_io.Di.Si_01) AND TON_03.Q) THEN 
 				St_Gun := 50;
 				glb_fish_shot_ons := 0;
 			END_IF;
@@ -335,6 +337,27 @@ PROGRAM _CYCLIC
 			glb_io.Do.Main_Piston_Down 	:= 1;
 		END_IF;
 		
+	ELSIF (Status = TEST) THEN
+		
+		IF (Piston_st) THEN
+			glb_io.Do.Main_Piston_Up 	:= 1;
+			glb_io.Do.Main_Piston_Down 	:= 0;
+		ELSE
+			glb_io.Do.Main_Piston_Up 	:= 0;
+			glb_io.Do.Main_Piston_Down 	:= 1;
+		END_IF;
+		
+//		IF (TON_06.Q) THEN
+//			TON_06.IN := 0;
+//			TON_07.IN := 1;
+//			glb_io.Do.Main_Piston_Up 	:= 1;
+//		ELSIF (TON_07.Q) THEN
+//			TON_06.IN := 1;
+//			TON_07.IN := 0;
+//			glb_io.Do.Main_Piston_Up 	:= 0;
+//		END_IF
+		
+		
 	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
 		glb_io.Do.Main_Piston_Up 	:= 0;
 		glb_io.Do.Main_Piston_Down 	:= 0;
@@ -347,9 +370,11 @@ PROGRAM _CYCLIC
 	TON_03;
 	TON_04;
 	TON_05;
+	TON_06;
+	TON_07;
 			
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#50ms; 					// tempo discesa pist soll
+	TON_02.PT := T#0ms; 					// tempo discesa pist soll
 	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll
 	TON_05.PT := T#1500ms;					// Sicurezza pesci
