@@ -14,6 +14,7 @@ TYPE
 		Laser_Depth : INT;
 		PT_end_stop : TIME;
 		Laser_trigger : INT;
+		PT_piston_up : TIME;
 	END_STRUCT;
 	Allarm : 	STRUCT 
 		St_allarm : UINT;

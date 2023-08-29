@@ -40,6 +40,8 @@ PROGRAM _CYCLIC
 	// 2023 - FORZATURA SPEGNIMENTO PISTONE SOLLEVAMENTO
 	IF (Piston_st) THEN
 		TON_04.IN := 1;
+	ELSE 
+		TON_04.IN := 0;
 	END_IF;
 	
 	IF TON_04.Q THEN
@@ -122,8 +124,10 @@ PROGRAM _CYCLIC
 			
 		20:
 			Piston_st := 1;
+			TON_08.IN := 1;
 			
-			IF (glb_io.Di.Finecorsa) THEN 
+			IF (glb_io.Di.Finecorsa AND (Ricette.PT_piston_up = 0)) OR (TON_08.Q AND (Ricette.PT_piston_up > 0)) THEN
+				TON_08.IN := 0;
 				St_Gun := 30; 
 			END_IF;
 			
@@ -353,6 +357,7 @@ PROGRAM _CYCLIC
 	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll
 	TON_05.PT := T#1500ms;					// Sicurezza pesci
+	TON_08.PT := Ricette.PT_piston_up		// Se imposto questo tempo il ritorno del pistone è comandato da queto timer + il tempo della pistola (ton_2)
 	
 	R_TRIG_01;
 	R_TRIG_02;
