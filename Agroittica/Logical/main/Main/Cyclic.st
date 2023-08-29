@@ -347,14 +347,20 @@ PROGRAM _CYCLIC
 			glb_io.Do.Main_Piston_Down 	:= 1;
 		END_IF;
 		
-//		IF (TON_06.Q) THEN
-//			TON_06.IN := 0;
-//			TON_07.IN := 1;
-//			glb_io.Do.Main_Piston_Up 	:= 1;
-//		ELSIF (TON_07.Q) THEN
-//			TON_06.IN := 1;
-//			TON_07.IN := 0;
-//			glb_io.Do.Main_Piston_Up 	:= 0;
+		
+//		IF (glb_io.Di.Si_01) THEN
+//			IF (TON_06.Q) THEN
+//				TON_06.IN := 0;
+//				TON_07.IN := 1;
+//				glb_io.Do.Main_Piston_Up 	:= 1;
+//			ELSIF (TON_07.Q) THEN
+//				TON_06.IN := 1;
+//				TON_07.IN := 0;
+//				glb_io.Do.Main_Piston_Up 	:= 0;
+//			END_IF
+//		ELSE
+////			TON_06.IN := 0;
+////			TON_07.IN := 0;
 //		END_IF
 		
 		
@@ -374,7 +380,7 @@ PROGRAM _CYCLIC
 	TON_07;
 			
 	TON_01.PT := Tempo_Delay;
-	TON_02.PT := T#0ms; 					// tempo discesa pist soll
+	TON_02.PT := T#50ms; 					// tempo discesa pist soll
 	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll
 	TON_05.PT := T#1500ms;					// Sicurezza pesci

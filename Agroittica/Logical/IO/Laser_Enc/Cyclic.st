@@ -22,6 +22,9 @@ PROGRAM _CYCLIC
 		glb_fish_shot_ons := 0;
 		glb_io.Di.Finecorsa  := 0;
 	END_IF;
+	IF (glb_io.Ai.Enc_laser_dist_conv < old) THEN
+		old := glb_io.Ai.Enc_laser_dist_conv;
+		END_IF;
 	
 	
 END_PROGRAM
