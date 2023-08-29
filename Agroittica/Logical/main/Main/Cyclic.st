@@ -125,8 +125,8 @@ PROGRAM _CYCLIC
 		20:
 			Piston_st := 1;
 			
-			IF (glb_io.Di.Finecorsa) THEN 
-				St_Gun := 30; 
+			IF (glb_io.Di.Finecorsa AND (NOT tempo_pistone)) OR (TON_08.Q AND tempo_pistone) THEN 
+				St_Gun := 30;
 			END_IF;
 			
 		30: //shoot 
@@ -378,6 +378,7 @@ PROGRAM _CYCLIC
 	TON_05;
 	TON_06;
 	TON_07;
+	TON_08;
 			
 	TON_01.PT := Tempo_Delay;
 	TON_02.PT := T#50ms; 					// tempo discesa pist soll
