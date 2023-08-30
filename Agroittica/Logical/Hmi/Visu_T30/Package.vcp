@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.9.5.36 SP"?>
+<?AutomationStudio Version="4.9.6.42 SP"?>
 <Project xmlns="http://br-automation.co.at/AS/VC/Project">
   <Property Name="Backlight" Value="False"/>
   <Property Name="BeepKey" Value="False"/>
@@ -390,15 +390,15 @@
     <Source File="Pages\Progr2.page"/>
     <Source File="Layers\MpPageControl.layer"/>
     <Source File="Layers\MpBackground.layer"/>
-    <Source File="Layers\MpOeeControl.layer"/>
     <Source File="Layers\MpUserXSign.layer"/>
     <Source File="Layers\MpUserXSignMessageBox.layer"/>
     <Source File="Layers\Auto_Homing_pop_up.layer"/>
     <Source File="Layers\Empty_Mag_Pop_Up.layer"/>
     <Source File="Layers\Gun_Select.layer"/>
     <Source File="Layers\Empty_Mag_2_Pop_Up.layer"/>
-    <Source File="Layers\MpPageControl_IN.layer"/>
-    <Source File="Layers\MpPageControl_OUT.layer"/>
+    <Source File="Layers\PageControl_INput.layer"/>
+    <Source File="Layers\PageControl_OUTput.layer"/>
+    <Source File="Layers\PageControl_MOTOR.layer"/>
     <Source File="StyleSheets\Color.vcs"/>
     <Source File="StyleSheets\mapp.vcs"/>
     <Source File="Borders\Mp_AttentionOff.bdr"/>
@@ -476,6 +476,7 @@
     <Source File="ColorMaps\MpPMLStateColors.clm"/>
     <Source File="ColorMaps\MpEnergyChartData.clm"/>
     <Source File="ColorMaps\IO_on_off.clm"/>
+    <Source File="ColorMaps\STATUS.clm"/>
     <Source File="VirtualKeys.vcvk"/>
     <Source File="Palette.vcr"/>
   </SourceFiles>

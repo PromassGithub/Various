@@ -154,7 +154,7 @@ PROGRAM _CYCLIC
 		
 		40: 
 			TON_03.IN := 1;
-			IF(NOT glb_io.Di.Si_01 AND TON_03.Q) THEN 
+			IF((NOT glb_io.Di.Si_01) AND TON_03.Q) THEN 
 				St_Gun := 50;
 				glb_fish_shot_ons := 0;
 			END_IF;
@@ -357,7 +357,7 @@ PROGRAM _CYCLIC
 	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll
 	TON_05.PT := T#1500ms;					// Sicurezza pesci
-	TON_08.PT := Ricette.PT_piston_up		// Se imposto questo tempo il ritorno del pistone è comandato da queto timer + il tempo della pistola (ton_2)
+	TON_08.PT := Ricette.PT_piston_up;		// Se imposto questo tempo il ritorno del pistone è comandato da queto timer + il tempo della pistola (ton_2)
 	
 	R_TRIG_01;
 	R_TRIG_02;

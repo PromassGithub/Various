@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?AutomationStudio Version="4.9.5.36 SP"?>
+<?AutomationStudio Version="4.9.6.42 SP"?>
 <AlarmGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpOeeAlarms">
   <Property Name="AcknowledgeImage" Value="Source[global].Variable[DataSource.MpOeeAlarmUIConnect.AcknowledgeImage]"/>
   <Property Name="ActiveBackColor" Value="4"/>
@@ -108,6 +108,12 @@
       <Text ID="2384" Value="Exporttieren der Schichtstatistik fehlgeschlagen {AddInfo0}"/>
       <Text ID="2385" Value="Exporttieren der Timeling fehlgeschlagen {AddInfo1}"/>
       <Text ID="2386" Value="Maschine ist in einer ungeplanten Ausfallzeit {AddInfo2}"/>
+      <Text ID="2383" Value=""/>
+    </TextLayer>
+    <TextLayer LanguageId="it-IT">
+      <Text ID="2384" Value=""/>
+      <Text ID="2385" Value=""/>
+      <Text ID="2386" Value=""/>
       <Text ID="2383" Value=""/>
     </TextLayer>
     <IndexMap>
