@@ -59,7 +59,6 @@
       <Parameter ID="InaNodeNumber" Value="3" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Agroittica_CP1382" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="PLC1.IF3" />
     <Parameter ID="TaskClassIdleTime" Value="4000" />
@@ -80,11 +79,11 @@
     <Parameter ID="FtpUserPassword1" Value="nk5s+iGbE2G3Lss4ijbEM8RmwsHwW5FetzKLdq3raQk=" Description="promass" />
     <Parameter ID="FtpUserSalt1" Value="6BcZ9bjL" />
     <Parameter ID="FTPAccessRight1" Value="0" />
-    <Parameter ID="FTPdevice1" Value="ALL" />
     <Group ID="FtpUser2" />
     <Parameter ID="FtpUsername2" Value="bazzica" />
     <Parameter ID="FtpUserPassword2" Value="xgGZPKLqbdu5q4OkAcKaQyOUyno/5sjZu4T7S2DSwEQ=" />
     <Parameter ID="FtpUserSalt2" Value="nlL0YWjS" />
+    <Parameter ID="FTPMSPartition2" Value="DATA" />
     <Parameter ID="ReActionTaskDisabled" Value="FALSE" />
   </Module>
   <Module Name="X20BM11a" Type="X20BM11" Version="1.0.0.1">

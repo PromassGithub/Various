@@ -8,6 +8,7 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Manual_Valve : Valves := (0);
 	Dist_Trig : REAL := 0.0;
 	m_laser_enc : REAL := 0.0;
 	Enc_laser_arr_dist : ARRAY[0..3] OF REAL := [4(0.0)];
@@ -16,6 +17,7 @@ VAR
 	Input_Status : USINT := 0;
 	Module_ID : UINT := 0;
 	Module_OK : BOOL := FALSE;
+	Disable_refresh_pos_2 : BOOL := FALSE;
 	Disable_refresh_pos : BOOL := FALSE;
 	Allarm_0 : Allarm := (0);
 	Lamp_02 : Lamp2 := (0);

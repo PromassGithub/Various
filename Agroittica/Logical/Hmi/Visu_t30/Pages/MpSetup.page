@@ -37,14 +37,14 @@
       <Property Name="Width" Value="640"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
-        <TextLayer LanguageId="en">
+        <TextLayer LanguageId="en-US">
           <Text ID="210270" Value="TCP IP"/>
         </TextLayer>
-        <TextLayer LanguageId="de">
-          <Text ID="210270" Value=""/>
+        <TextLayer LanguageId="de-DE">
+          <Text ID="210270" Value="TCP IP"/>
         </TextLayer>
         <TextLayer LanguageId="it-IT">
-          <Text ID="210270" Value=""/>
+          <Text ID="210270" Value="TCP IP"/>
         </TextLayer>
         <IndexMap>
           <Index ID="210270" Value="17"/>
@@ -597,7 +597,7 @@
           <KeyActions>
             <KeyAction ClassId="0x0000016C">
               <Property Name="Description" Value=""/>
-              <Property Name="Language" Value="en"/>
+              <Property Name="Language" Value="en-US"/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Mode" Value="Set"/>
             </KeyAction>
@@ -609,7 +609,7 @@
           <KeyActions>
             <KeyAction ClassId="0x0000016C">
               <Property Name="Description" Value=""/>
-              <Property Name="Language" Value="de"/>
+              <Property Name="Language" Value="de-DE"/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Mode" Value="Set"/>
             </KeyAction>

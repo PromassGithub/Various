@@ -18,7 +18,7 @@ PROGRAM _INIT
 	XSM_Ctrl_0.IO_Mapping.Channel := 1;								(* Channel number, motor 1 on the module. *)
 
 	XSM_Ctrl_0.Parameters.Units_rev := 700;							(* User scaling, units per rev. *)
-	XSM_Ctrl_0.Parameters.PosSWLimit := 19000;						(* Units based on user scaling, change to suit application. *)
+	XSM_Ctrl_0.Parameters.PosSWLimit := 100000;						(* Units based on user scaling, change to suit application. *)
 	XSM_Ctrl_0.Parameters.NegSWLimit := -100;						(* Units based on user scaling, change to suit application. *)
 	XSM_Ctrl_0.Parameters.HomePosition := 0;						(* Units based on user scaling, change to suit application. *)
 	XSM_Ctrl_0.Parameters.HomeMode := 0;							(* Required homing mode, change to suit application. *)
@@ -66,6 +66,8 @@ PROGRAM _CYCLIC
 	(* ONLY FOR DEMO PURPOSES WITH VCN & SG4 OR WATCH & SGC. *)
 	(* You need to make required state machine and error handling for your application. *)
 	
+	//2023 - set variables of FB
+	
 	Module_OK := XSM_Ctrl_0.IO_Mapping.ModuleOK;
 	Module_ID := XSM_Ctrl_0.IO_Mapping.ModuleID;
 	Input_Status := XSM_Ctrl_0.IO_Mapping.InputStatus;
@@ -80,6 +82,19 @@ PROGRAM _CYCLIC
 	XSM_Ctrl_0.Cmd.Reset := glb_hmi.Out.Reset;
 
 	glb_err.Drive1 := XSM_Ctrl_0.Error;
+	
+	//-----------------------------LAMPEGGIANTI----------------------------
+	
+	// Forzatura lampeggiante secondo caricatore
+	
+	Lamp_01.Lamp1Bianco := 1;
+	
+	// accensione lampeggiante ricarica mag 1 effettuata
+	
+	IF ( glb_cmd.Cartridge_loaded) THEN
+		Lamp_02.Lamp2Verde := 1;
+	END_IF;
+	
 	
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_0.Enable := TRUE; END_IF
@@ -142,8 +157,8 @@ PROGRAM _CYCLIC
 
 	END_CASE;
 	
-	
-	CASE MM_0.MM_status OF		//Marcia Motore in manuale
+	//MARCIA MOTORE IN MANUALE
+	CASE MM_0.MM_status OF		
 		
 		0:	//Safety check
 			IF ((Status = MANUAL OR Status = AUTO) AND glb_err.pending_alarms = 0 AND Homed AND (NOT glb_err.Drive1)) THEN
@@ -283,7 +298,8 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
-	CASE Auto_Homing_Ctrl_0.Auto_Homing_Status OF  //Pop Up di Auto Homing
+	//POP UP DI AUTO HOMING
+	CASE Auto_Homing_Ctrl_0.Auto_Homing_Status OF  
 		
 		0:	//Start
 			IF ((NOT Homed) AND Status = AUTO) THEN
@@ -325,16 +341,8 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
-	// 2023 - FORZATURA LAMPEGGIANTI
-	
-	IF ( glb_cmd.Cartridge_loaded) THEN
-		Lamp_02.Lamp2Verde := 1;
-	END_IF;
-	
-	Lamp_01.Lamp1Bianco := 1;
-
-	
-	CASE Empty_Mag_1_0.Empty_Mag_Status OF      //Ricarica
+	//RICARICA
+	CASE Empty_Mag_1_0.Empty_Mag_Status OF      
 		
 		0:	//Start
 			IF (Status = AUTO AND Homed AND XSM_Ctrl_0.PowerOn AND Empty_Mag_1_0.Empty_Mag_Sensor AND glb_err.pending_alarms = 0) THEN
@@ -349,7 +357,10 @@ PROGRAM _CYCLIC
 			Lamp_02.Lamp2Bianco := 1;
 			IF (NOT glb_hmi.Inp.Lamp_alarm_block) THEN
 				Lamp_02.Lamp2Allarme := 1;
+			ELSE 
+				Lamp_02.Lamp2Allarme := 0;
 			END_IF;
+			
 			Empty_Mag_1_0.Empty_Mag_Status := 20;
 			
 			IF (Status <> AUTO) THEN Empty_Mag_1_0.Empty_Mag_Status := 30; END_IF;
@@ -360,6 +371,7 @@ PROGRAM _CYCLIC
 				Lamp_02.Lamp2Allarme := 0;
 				Empty_Mag_1_0.Empty_Mag_Pop_Up := 1;
 			END_IF;
+			
 			
 			IF (XSM_Ctrl_0.Monitor.Actual_Position = XSM_Ctrl_0.Parameters.HomePosition OR glb_cmd.Cartridge_loaded) THEN
 				Empty_Mag_1_0.Empty_Mag_Status := 21;
@@ -385,28 +397,28 @@ PROGRAM _CYCLIC
 				
 	END_CASE;
 	
-	IF (glb_sim = 1) THEN
-		Homing_status := Homing_status_sim;
-	END_IF;
-	
-	Homing_status_sim := Homing_status;
-	
-	IF glb_sim = 1 THEN
-		IF Homing_status = 0 THEN
-//			XSM_Ctrl_0.PowerOn := 1;
-		END_IF;
-		
-		IF Homing_status = 20 THEN
-			XSM_Ctrl_0.IO_Mapping.InputStatus := 1;
-		END_IF;
-		
-		IF Homing_status = 40 THEN
-			XSM_Ctrl_0.IO_Mapping.InputStatus := 0;
-		END_IF;
-		
-	END_IF;
+//	IF (glb_sim = 1) THEN
+//		Homing_status := Homing_status_sim;
+//	END_IF;
+//	
+//	Homing_status_sim := Homing_status;
+//	
+//	IF glb_sim = 1 THEN
+//		IF Homing_status = 0 THEN
+////			XSM_Ctrl_0.PowerOn := 1;
+//		END_IF;
+//		
+//		IF Homing_status = 20 THEN
+//			XSM_Ctrl_0.IO_Mapping.InputStatus := 1;
+//		END_IF;
+//		
+//		IF Homing_status = 40 THEN
+//			XSM_Ctrl_0.IO_Mapping.InputStatus := 0;
+//		END_IF;
+//		
+//	END_IF;
 
-		
+	//GESTIONE HOMING
 	CASE Homing_status OF
 		
 		0: 
@@ -470,7 +482,7 @@ PROGRAM _CYCLIC
 		
 	END_CASE;  
 	
-	
+	//PASSO AUTOMATICO
 	CASE FW_step_status OF
 		
 		0: // idle
@@ -501,7 +513,7 @@ PROGRAM _CYCLIC
 		  
 	END_CASE;
 		
-	
+	//RITORNO AUTOMATICO ALLA HOME
 	CASE CMD_home_status OF
 		0: // idle
 			IF (Status = AUTO OR Status = MANUAL) THEN CMD_home_status := 1; END_IF
@@ -516,11 +528,10 @@ PROGRAM _CYCLIC
 				glb_cmd.Torna_a_casa := 0; 
 			END_IF;
 			
-			Disable_refresh_pos := 1;
-			
 			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status := 60; END_IF;
 			
 		10:
+			Disable_refresh_pos := 1;
 			XSM_Ctrl_0.Cmd.Move_Absolute := TRUE;
 			XSM_Ctrl_0.Parameters.Ignore_HWLimits := TRUE;
 			IF (XSM_Ctrl_0.Monitor.Actual_Position = 0) THEN 
@@ -574,6 +585,7 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
+	//REBOOT TO PREVIOUS POSITION
 	CASE CMD_Reboot_pos_status OF
 		0: // idle
 			IF (Status = AUTO OR Status = MANUAL) AND (Homed) THEN 

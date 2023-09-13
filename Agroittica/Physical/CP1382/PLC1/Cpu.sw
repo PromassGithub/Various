@@ -18,10 +18,6 @@
     <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Login" Source="MpPkg.Login.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
   </TaskClass>
-  <TaskClass Name="Cyclic#5" />
-  <TaskClass Name="Cyclic#6" />
-  <TaskClass Name="Cyclic#7" />
-  <TaskClass Name="Cyclic#8" />
   <DataObjects>
     <DataObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />
   </DataObjects>
@@ -71,7 +67,6 @@
     <BinaryObject Name="vccurl" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpkat" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcchspot" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
@@ -84,6 +79,7 @@
     <BinaryObject Name="AlarmHist" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Alarm" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />

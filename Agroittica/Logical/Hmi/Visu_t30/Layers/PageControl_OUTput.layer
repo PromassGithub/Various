@@ -9,18 +9,10 @@
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="640"/>
   <TextGroup>
-    <TextLayer LanguageId="en">
-      <Text ID="268133" Value="Input"/>
-    </TextLayer>
-    <TextLayer LanguageId="de">
-      <Text ID="268133" Value="Input"/>
-    </TextLayer>
-    <TextLayer LanguageId="it-IT">
-      <Text ID="268133" Value=""/>
-    </TextLayer>
-    <IndexMap>
-      <Index ID="268133" Value="38"/>
-    </IndexMap>
+    <TextLayer LanguageId="en-US"/>
+    <TextLayer LanguageId="de-DE"/>
+    <TextLayer LanguageId="it-IT"/>
+    <IndexMap/>
   </TextGroup>
   <Controls>
     <Control ClassId="0x00001002" Name="IO5">
@@ -40,11 +32,11 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndex" Value="38"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[IO]"/>
+      <Property Name="TextIndex" Value="27"/>
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="380"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_63]"/>
       <Property Name="Width" Value="80"/>

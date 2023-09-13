@@ -9,6 +9,12 @@
  ********************************************************************)
 
 TYPE
+	Valves : 	STRUCT 
+		Gun2_Valve : BOOL;
+		Lift_Valve : BOOL;
+		Valve_St : USINT;
+		Gun1_Valve : BOOL;
+	END_STRUCT;
 	Ricetta : 	STRUCT 
 		D_Sens_Gun : INT;
 		Laser_Depth : INT;

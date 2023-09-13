@@ -9,30 +9,10 @@
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="640"/>
   <TextGroup>
-    <TextLayer LanguageId="en">
-      <Text ID="223449" Value="IO"/>
-      <Text ID="223451" Value="MOTOR"/>
-      <Text ID="248392" Value="Recipe"/>
-      <Text ID="268051" Value="Set Up"/>
-    </TextLayer>
-    <TextLayer LanguageId="de">
-      <Text ID="223449" Value="IO"/>
-      <Text ID="223451" Value="MOTOR"/>
-      <Text ID="248392" Value="Recipe"/>
-      <Text ID="268051" Value="Set Up"/>
-    </TextLayer>
-    <TextLayer LanguageId="it-IT">
-      <Text ID="223449" Value=""/>
-      <Text ID="223451" Value=""/>
-      <Text ID="248392" Value=""/>
-      <Text ID="268051" Value=""/>
-    </TextLayer>
-    <IndexMap>
-      <Index ID="223449" Value="10"/>
-      <Index ID="223451" Value="12"/>
-      <Index ID="248392" Value="16"/>
-      <Index ID="268051" Value="15"/>
-    </IndexMap>
+    <TextLayer LanguageId="en-US"/>
+    <TextLayer LanguageId="de-DE"/>
+    <TextLayer LanguageId="it-IT"/>
+    <IndexMap/>
   </TextGroup>
   <Controls>
     <Control ClassId="0x00001002" Name="cmdSDMpage">
@@ -156,11 +136,11 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndex" Value="10"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[NAV_BUTTON]"/>
+      <Property Name="TextIndex" Value="0"/>
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="435"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_21]"/>
       <Property Name="Width" Value="80"/>
@@ -182,11 +162,11 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndex" Value="12"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[NAV_BUTTON]"/>
+      <Property Name="TextIndex" Value="2"/>
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="435"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_22]"/>
       <Property Name="Width" Value="80"/>
@@ -208,11 +188,11 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndex" Value="16"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[NAV_BUTTON]"/>
+      <Property Name="TextIndex" Value="1"/>
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="435"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_30]"/>
       <Property Name="Width" Value="80"/>
@@ -234,11 +214,11 @@
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndex" Value="15"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[NAV_BUTTON]"/>
+      <Property Name="TextIndex" Value="3"/>
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="435"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_64]"/>
       <Property Name="Width" Value="80"/>
@@ -344,7 +324,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
-          <Property Name="Page" Value="Source[local].Page[Progr1]"/>
+          <Property Name="Page" Value="Source[local].Page[SetUp_1]"/>
           <Property Name="Target" Value="Page"/>
         </KeyAction>
       </KeyActions>

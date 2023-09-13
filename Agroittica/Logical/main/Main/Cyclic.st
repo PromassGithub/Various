@@ -48,9 +48,6 @@ PROGRAM _CYCLIC
 		Piston_st := 0;
 		St_Gun := 50;
 	END_IF;		
-
-	
-
 	
 	//2023 - FORZATURA MAG2 POP UP
 	
@@ -103,6 +100,7 @@ PROGRAM _CYCLIC
 //		
 //	END_CASE;
 	
+	// Main cycle
 	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
 	
 	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
@@ -116,13 +114,13 @@ PROGRAM _CYCLIC
 			
 			IF (glb_io.Di.Si_01) THEN St_Gun := 10; END_IF;
 		
-		10:	//
+		10:	// 
 			
 			TON_01.IN := 1;
 			
 			IF TON_01.Q THEN St_Gun := 20; END_IF;
 			
-		20:
+		20: // Piston up
 			Piston_st := 1;
 			TON_08.IN := 1;
 			
@@ -311,7 +309,6 @@ PROGRAM _CYCLIC
 	//--------------------AIR------------------------------------
 	
 	//Feedback air supply
-	
 	IF (NOT Feedback_0.Feedback_Air) THEN
 		glb_err.Air := TRUE;
 	ELSE
@@ -321,13 +318,13 @@ PROGRAM _CYCLIC
 	//--------------------Emergenze------------------------------------
 	
 	//Feedback fungo emergenza
-	
 	IF (NOT Feedback_0.Feedback_Em_Bt) THEN
 		glb_err.Em_Bt := TRUE;
 	ELSE
 		glb_err.Em_Bt:= FALSE;
-	END_IF;	
+	END_IF;
 	
+	//------------------ELETTROVALVOLE---------------------------------
 	
 	// ATTIVAZIONE/SPEGNIMENTO BOBINE PNEUMATICA
 	IF (Status = AUTO) THEN
@@ -344,6 +341,36 @@ PROGRAM _CYCLIC
 		glb_io.Do.Main_Piston_Down 	:= 0;
 	END_IF;
 	
+	//Controllo manuale valvola pistone soll
+	IF ( Status = MANUAL AND glb_err.pending_alarms = 0) THEN
+		IF ( glb_hmi.Inp.Soll_Valve_HMI ) THEN 
+			Piston_st := 1; 
+		ELSE 
+			Piston_st := 0; 
+		END_IF;
+		
+	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
+		glb_io.Do.Main_Piston_Up 	:= 0;
+		glb_io.Do.Main_Piston_Down 	:= 0;
+	END_IF;
+	
+	//Controllo manuale valvole pistoni grilletti pistole
+	IF ( Status = MANUAL AND glb_err.pending_alarms = 0 ) THEN
+		IF ( glb_hmi.Inp.Gun_1_Valve_HMI ) THEN
+			glb_io.Do.Piston_gun_1 := 1;
+		ELSE
+			glb_io.Do.Piston_gun_1 := 0;
+		END_IF;
+		IF (glb_hmi.Inp.Gun_2_Valve_HMI) THEN
+			glb_io.Do.Piston_gun_2 := 1;
+		ELSE
+			glb_io.Do.Piston_gun_2 := 0;
+		END_IF;
+		
+	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
+		glb_io.Do.Piston_gun_1 := 0;
+		glb_io.Do.Piston_gun_2 := 0;
+	END_IF;
 	
 	// temporizzatori
 	TON_01;
@@ -351,8 +378,9 @@ PROGRAM _CYCLIC
 	TON_03;
 	TON_04;
 	TON_05;
+	TON_08;
 			
-	TON_01.PT := Tempo_Delay;
+	TON_01.PT := Tempo_Delay;				// tempo delay pistone sollevamento pesce
 	TON_02.PT := T#50ms; 					// tempo discesa pist soll
 	TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll

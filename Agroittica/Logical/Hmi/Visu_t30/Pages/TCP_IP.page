@@ -50,54 +50,10 @@
       <Property Name="Width" Value="640"/>
       <Property Name="Z-Order" Value="2"/>
       <TextGroup>
-        <TextLayer LanguageId="en">
-          <Text ID="208320" Value="TcpOpen:"/>
-          <Text ID="208321" Value="TcpIoctl:"/>
-          <Text ID="208322" Value="TcpClient:"/>
-          <Text ID="208323" Value="TcpSend:"/>
-          <Text ID="208324" Value="TcpRecv:"/>
-          <Text ID="208325" Value="TcpClose:"/>
-          <Text ID="208326" Value="RESET TCP"/>
-          <Text ID="208328" Value="ENABLE DISABLE TCP"/>
-          <Text ID="210158" Value="TCP Status"/>
-          <Text ID="210159" Value="TCP CMD"/>
-        </TextLayer>
-        <TextLayer LanguageId="de">
-          <Text ID="208320" Value="TcpOpen:"/>
-          <Text ID="208321" Value="TcpIoctl:"/>
-          <Text ID="208322" Value="TcpClient:"/>
-          <Text ID="208323" Value="TcpSend:"/>
-          <Text ID="208324" Value="TcpRecv:"/>
-          <Text ID="208325" Value="TcpClose:"/>
-          <Text ID="208326" Value="RESET TCP"/>
-          <Text ID="208328" Value="ENABLE DISABLE TCP"/>
-          <Text ID="210158" Value="TCP Status"/>
-          <Text ID="210159" Value="TCP CMD"/>
-        </TextLayer>
-        <TextLayer LanguageId="it-IT">
-          <Text ID="208320" Value=""/>
-          <Text ID="208321" Value=""/>
-          <Text ID="208322" Value=""/>
-          <Text ID="208323" Value=""/>
-          <Text ID="208324" Value=""/>
-          <Text ID="208325" Value=""/>
-          <Text ID="208326" Value=""/>
-          <Text ID="208328" Value=""/>
-          <Text ID="210158" Value=""/>
-          <Text ID="210159" Value=""/>
-        </TextLayer>
-        <IndexMap>
-          <Index ID="208320" Value="0"/>
-          <Index ID="208321" Value="1"/>
-          <Index ID="208322" Value="2"/>
-          <Index ID="208323" Value="3"/>
-          <Index ID="208324" Value="4"/>
-          <Index ID="208325" Value="5"/>
-          <Index ID="208326" Value="6"/>
-          <Index ID="208328" Value="8"/>
-          <Index ID="210158" Value="7"/>
-          <Index ID="210159" Value="9"/>
-        </IndexMap>
+        <TextLayer LanguageId="en-US"/>
+        <TextLayer LanguageId="de-DE"/>
+        <TextLayer LanguageId="it-IT"/>
+        <IndexMap/>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001004" Name="txtStatisticsHeader">
@@ -110,8 +66,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="7"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="62"/>
           <Property Name="Width" Value="350"/>
@@ -127,8 +83,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="0"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="2"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="111"/>
           <Property Name="Width" Value="150"/>
@@ -144,8 +100,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="1"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="3"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="143"/>
           <Property Name="Width" Value="150"/>
@@ -161,8 +117,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="2"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="4"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="175"/>
           <Property Name="Width" Value="150"/>
@@ -178,8 +134,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="3"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="5"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="207"/>
           <Property Name="Width" Value="150"/>
@@ -195,8 +151,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="4"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="6"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="239"/>
           <Property Name="Width" Value="150"/>
@@ -212,8 +168,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="5"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="7"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="271"/>
           <Property Name="Width" Value="150"/>
@@ -360,8 +316,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndexOffset" Value="9"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndexOffset" Value="1"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="62"/>
           <Property Name="Width" Value="223"/>
@@ -382,8 +338,8 @@
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="6"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndex" Value="8"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
@@ -407,8 +363,8 @@
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="8"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[TCP_IP]"/>
+          <Property Name="TextIndex" Value="9"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>

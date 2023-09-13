@@ -18,7 +18,7 @@ PROGRAM _INIT
 	XSM_Ctrl_2.IO_Mapping.Channel := 2;								(* Channel number, motor 1 on the module. *)
 
 	XSM_Ctrl_2.Parameters.Units_rev := 700;							(* User scaling, units per rev. *)
-	XSM_Ctrl_2.Parameters.PosSWLimit := 19000;						(* Units based on user scaling, change to suit application. *)
+	XSM_Ctrl_2.Parameters.PosSWLimit := 100000;						(* Units based on user scaling, change to suit application. *)
 	XSM_Ctrl_2.Parameters.NegSWLimit := -100;						(* Units based on user scaling, change to suit application. *)
 	XSM_Ctrl_2.Parameters.HomePosition := 0;						(* Units based on user scaling, change to suit application. *)
 	XSM_Ctrl_2.Parameters.HomeMode := 0;							(* Required homing mode, change to suit application. *)
@@ -84,6 +84,14 @@ PROGRAM _CYCLIC
 	XSM_Ctrl_2.Cmd.Reset := glb_hmi.Out.Reset;
 
 	glb_err.Drive2 := XSM_Ctrl_2.Error;
+	
+	//-----------------------------LAMPEGGIANTI----------------------------
+	
+	// accensione lampeggiante ricarica effettuata
+	
+	IF ( glb_cmd_2.Cartridge_loaded) THEN
+		Lamp_01.Lamp1Verde := 1;
+	END_IF;
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF;
 	
@@ -337,6 +345,11 @@ PROGRAM _CYCLIC
 			
 		10:	//Pop up
 			Empty_Mag_22.Empty_Mag_Pop_Up := 0;
+			Lamp_01.Lamp1Verde := 0;
+			Lamp_01.Lamp1Bianco := 1;
+			IF (NOT glb_hmi.Inp.Lamp_alarm_block) THEN
+				Lamp_01.Lamp1Allarme := 1;
+			END_IF;
 			Empty_Mag_22.Empty_Mag_Status := 20;
 			
 			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
@@ -344,17 +357,28 @@ PROGRAM _CYCLIC
 		20:	//Pop up Ack & Start Movement
 			IF (Empty_Mag_22.Empty_Mag_Ack) THEN
 				glb_cmd_2.Torna_a_casa := TRUE;
+				Lamp_01.Lamp1Allarme := 0;
 				Empty_Mag_22.Empty_Mag_Pop_Up := 1;
 			END_IF;
 			
-			IF (XSM_Ctrl_2.Monitor.Actual_Position = XSM_Ctrl_2.Parameters.HomePosition) THEN
-				Empty_Mag_22.Empty_Mag_Status := 30;
+			IF (XSM_Ctrl_2.Monitor.Actual_Position = XSM_Ctrl_2.Parameters.HomePosition OR glb_cmd_2.Cartridge_loaded) THEN
+				Empty_Mag_22.Empty_Mag_Status := 21;
+			END_IF;
+			
+			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
+			
+		21:
+			IF (glb_cmd_2.Cartridge_loaded) THEN
+				Empty_Mag_1_0.Empty_Mag_Status := 30;
 			END_IF;
 			
 			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
 			
 		30:	//Back to start
-			old_pos_2 := 0;
+			Lamp_01.Lamp1Allarme := 0;
+			Lamp_01.Lamp1Bianco := 0;
+			Lamp_01.Lamp1Verde := 1;
+			old_pos_2 := 10;
 			Empty_Mag_22.Empty_Mag_Ack := FALSE;
 			Empty_Mag_22.Empty_Mag_Status := 0;
 			
@@ -371,35 +395,48 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		1:
-			XSM_Ctrl_2.Cmd.Velocity := -200;
+			XSM_Ctrl_2.Cmd.Velocity := -500;
 			Homing_status_2 := 10;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Parameters.Ignore_SWLimits := TRUE;	
 			XSM_Ctrl_2.Parameters.Ignore_HWLimits := TRUE;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
 				
 		10:
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			Homing_status_2 := 20;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
+			
 		20:
 			IF (XSM_Ctrl_2.IO_Mapping.InputStatus = 1) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
-				XSM_Ctrl_2.Cmd.Velocity := 200;
+				XSM_Ctrl_2.Cmd.Velocity := 500;
 				Homing_status_2 := 30;
 			END_IF;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
+			
 		30:
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
 			Homing_status_2 := 40;
+			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
+			
 		40:
 			IF (NOT (XSM_Ctrl_2.IO_Mapping.InputStatus = 1)) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
 				Homing_status_2 := 50;
 			END_IF;
 			
+			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
+			
 		50: 
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Cmd.Home := TRUE;
-			IF XSM_Ctrl_2.Monitor.Home_OK THEN 
+			IF (XSM_Ctrl_2.Monitor.Home_OK AND XSM_Ctrl_2.Monitor.Actual_Position = 0) THEN 
 				XSM_Ctrl_2.Cmd.Home := FALSE;
 				XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 				XSM_Ctrl_2.Parameters.Ignore_SWLimits := FALSE;	
@@ -436,6 +473,7 @@ PROGRAM _CYCLIC
 			IF (Empty_Mag_22.Empty_Mag_Sensor) THEN FW_step_status_2 := 20; END_IF;
 			
 			IF (Status <> AUTO) THEN FW_step_status_2 := 20; END_IF;
+			
 		20:
 			XSM_Ctrl_2.Cmd.Move_Additive := FALSE;
 			FW_step_status_2 := 0;
@@ -446,6 +484,8 @@ PROGRAM _CYCLIC
 		0: // idle
 			IF (Status = AUTO OR Status = MANUAL) THEN CMD_home_status_2 := 1; END_IF
 			
+			IF (posizione_salvata_2 <> 0) THEN Actual_Position_2 := posizione_salvata_2; END_IF;
+			
 		1: // idle auto
 			
 			IF (glb_cmd_2.Torna_a_casa AND XSM_Ctrl_2.PowerOn AND Homed_2) THEN 
@@ -454,21 +494,59 @@ PROGRAM _CYCLIC
 				glb_cmd_2.Torna_a_casa := 0; 
 			END_IF;
 			
-			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 21; END_IF;
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 60; END_IF;
 			
 		10:
+			Disable_refresh_pos_2 := 1;
 			XSM_Ctrl_2.Cmd.Move_Absolute := TRUE;
-			IF (XSM_Ctrl_2.Monitor.Actual_Position = 0) THEN CMD_home_status_2 := 20; END_IF;
+			XSM_Ctrl_2.Parameters.Ignore_HWLimits := TRUE;
+			IF (XSM_Ctrl_2.Monitor.Actual_Position = 0) THEN 
+				CMD_home_status_2 := 20;
+			ELSIF (XSM_Ctrl_2.Monitor.Input_1) THEN
+				CMD_home_status_2 := 30;
+			END_IF;
 			
-			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 21; END_IF;
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 60; END_IF;
 			
 		20:
 			XSM_Ctrl_2.Cmd.Move_Absolute := FALSE;
 			old_pos_2 := 0;
-			//Status := STOP;
 			CMD_home_status_2 := 0;
+			
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 60; END_IF;
+			
+		30:
+			XSM_Ctrl_2.Cmd.Stop := TRUE;
+			XSM_Ctrl_2.Cmd.Velocity := 1000;
+			CMD_home_status_2 := 40;
+			
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 60; END_IF;
+			
+		40:
+			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
+			IF (NOT XSM_Ctrl_2.Monitor.Input_1) THEN
+				XSM_Ctrl_2.Cmd.Stop := TRUE;
+				CMD_home_status_2 := 50;
+			END_IF;
+			
+			IF (Status <> AUTO AND Status <> MANUAL) THEN CMD_home_status_2 := 60; END_IF;
+			
+		50:
+			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
+			XSM_Ctrl_2.Cmd.Stop := FALSE;
+			XSM_Ctrl_2.Cmd.Home := TRUE;
+			IF (XSM_Ctrl_2.Monitor.Home_OK AND XSM_Ctrl_2.Monitor.Actual_Position = 0) THEN 
+				XSM_Ctrl_2.Cmd.Home := FALSE;
+				XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
+				XSM_Ctrl_2.Parameters.Ignore_SWLimits := FALSE;	
+				XSM_Ctrl_2.Parameters.Ignore_HWLimits := FALSE;
+				Homed_2 := 1;
+				CMD_home_status_2 := 0;
+				old_pos_2 := 0;
+				Status := STOP;
+			END_IF;
 		
-		21:
+		60:
 			XSM_Ctrl_2.Cmd.Move_Absolute := FALSE;
 			CMD_home_status_2 := 0;
 		
@@ -476,10 +554,14 @@ PROGRAM _CYCLIC
 	
 	CASE CMD_Reboot_pos_status_2 OF
 		0: // idle
-			IF (Status = AUTO OR Status = MANUAL) THEN CMD_Reboot_pos_status_2 := 1; END_IF;
+			IF (Status = AUTO OR Status = MANUAL) AND (Homed_2) THEN CMD_Reboot_pos_status_2 := 1; END_IF;
+			
+			IF (posizione_salvata_2 <> 0) THEN Actual_Position_2 := posizione_salvata_2; END_IF
 			
 		1:
-			IF (glb_cmd_2.Reboot_pos) THEN CMD_Reboot_pos_status_2 := 2; END_IF;
+			IF (glb_cmd_2.Reboot_pos) THEN 
+				CMD_Reboot_pos_status_2 := 2; 
+			END_IF;
 			
 		2: // idle auto
 			XSM_Ctrl_2.Cmd.Position := Actual_Position_2;
@@ -493,6 +575,7 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_2.Cmd.Move_Absolute := TRUE;
 			IF (XSM_Ctrl_2.Monitor.Actual_Position = Actual_Position_2) THEN 
 				old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
+				Disable_refresh_pos_2 := 0;
 				CMD_Reboot_pos_status_2 := 20; 
 			END_IF;
 			
@@ -504,6 +587,8 @@ PROGRAM _CYCLIC
 	END_CASE
 	
 	posizione_salvata_2 := XSM_Ctrl_2.Monitor.Actual_Position;
+	
+	IF (XSM_Ctrl_2.Monitor.Home_OK AND (NOT Disable_refresh_pos_2)) THEN 	posizione_salvata_2 := XSM_Ctrl_2.Monitor.Actual_Position; END_IF;
 	
 	
 END_PROGRAM
