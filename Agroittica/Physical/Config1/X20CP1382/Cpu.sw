@@ -20,7 +20,7 @@
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8" />
   <VcDataObjects>
-    <VcDataObject Name="Visu_t" Source="Hmi.Visu_t30.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
+    <VcDataObject Name="Visu_t" Source="main.Main.Hmi.Visu_t30.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
   </VcDataObjects>
   <Binaries>
     <BinaryObject Name="vcnet" Source="" Memory="UserROM" Language="Binary" />

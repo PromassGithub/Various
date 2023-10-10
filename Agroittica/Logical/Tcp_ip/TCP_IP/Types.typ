@@ -36,19 +36,8 @@ TYPE
 		connected : BOOL; (*a 1 se connesso*)
 	END_STRUCT;
 	Buffer_typ : 	STRUCT 
-		machine_in_auto : BOOL;
-		machine_in_man : BOOL;
-		machine_stopped : BOOL;
-		machine_in_error : BOOL;
-		last_cycle_request : BOOL;
-		stop_request : BOOL;
-		reserve1 : BOOL;
-		reserve2 : BOOL;
-		reserve3 : BOOL;
-		client_id : USINT;
-		stacksize : USINT;
-		reserve6 : USINT;
-		reserve4 : USINT;
+		Marel_Weight : STRING[50];
+		Belt_Speed : STRING[50];
 		keep_alive : UDINT;
 	END_STRUCT;
 	TCP_typ : 	STRUCT  (*Datatyp for global Variables*)

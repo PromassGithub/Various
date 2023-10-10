@@ -198,6 +198,8 @@ TYPE
 		tcp_state : typ_tcp_state; (*Stato della comunicazione tcp*)
 		disable : BOOL; (*Disabilito il protocollo di comunicazione*)
 		Server_Ip_Add : STRING[15] := '192.168.250.15';
+		Belt_Speed : STRING[50];
+		Marel_Weight : STRING[50];
 	END_STRUCT;
 	typ_tcp_state : 	STRUCT 
 		tcpopen : BOOL;

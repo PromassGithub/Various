@@ -7,11 +7,12 @@ PROGRAM _CYCLIC
 
 
 	(* DATA TO SEND*)
-	buffer.send_data.keep_alive 		:= buffer.send_data.keep_alive + 1; 								(* Generate a "running" variable for Data transfer *)	
-	buffer.send_data.machine_in_auto 	:= Eth_connect.machine_in_auto;
-	buffer.send_data.machine_in_man  	:= Eth_connect.machine_in_man;
-	buffer.send_data.machine_stopped 	:= Eth_connect.machine_stopped;
-	buffer.send_data.machine_in_error	:= Eth_connect.machine_in_error;
+	buffer.send_data.keep_alive 		:= buffer.send_data.keep_alive + 1; 								(* Generate a "running" variable for Data transfer *)
+	buffer.send_data.Belt_Speed			:= Eth_connect.Belt_Speed;
+//	buffer.send_data.machine_in_auto 	:= Eth_connect.machine_in_auto;
+//	buffer.send_data.machine_in_man  	:= Eth_connect.machine_in_man;
+//	buffer.send_data.machine_stopped 	:= Eth_connect.machine_stopped;
+//	buffer.send_data.machine_in_error	:= Eth_connect.machine_in_error;
 	
 //	IF 	  strcmp(ADR(glb_nome_macchina), ADR("P01056")) = 0 THEN
 //		buffer.send_data.client_id := 1;
@@ -26,8 +27,9 @@ PROGRAM _CYCLIC
 //	END_IF
 				
 	(* DATA RECEIVED *)
-	Eth_connect.stop_request 			:= buffer.receive_data.stop_request;
-	Eth_connect.last_cycle_request 		:= buffer.receive_data.last_cycle_request;
+	Eth_connect.Marel_Weight			:= buffer.receive_data.Marel_Weight;		
+//	Eth_connect.stop_request 			:= buffer.receive_data.stop_request;
+//	Eth_connect.last_cycle_request 		:= buffer.receive_data.last_cycle_request;
 	
 
 	(* AZZERO GLI STATI DEL PROTOCOLLO DI COMUNICAZIONE E DELLA LIBRERIA TCP *)

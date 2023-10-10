@@ -273,6 +273,9 @@ PROGRAM _CYCLIC
 	
 	//--------------------PESI---------------------------------
 	
+	
+	Pesi_0.Marel_Weight[0] := Eth_connect.Marel_Weight;
+	
 	CASE Pesi_0.Weight_Status OF	//Gestione peso pesci
 		
 		0: 	//Start
