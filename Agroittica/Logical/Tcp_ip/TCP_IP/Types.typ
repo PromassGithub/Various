@@ -37,7 +37,6 @@ TYPE
 	END_STRUCT;
 	Buffer_typ : 	STRUCT 
 		Marel_Weight : STRING[50];
-		Belt_Speed : STRING[50];
 		keep_alive : UDINT;
 	END_STRUCT;
 	TCP_typ : 	STRUCT  (*Datatyp for global Variables*)

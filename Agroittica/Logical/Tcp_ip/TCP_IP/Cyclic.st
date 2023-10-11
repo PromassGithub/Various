@@ -8,7 +8,7 @@ PROGRAM _CYCLIC
 
 	(* DATA TO SEND*)
 	buffer.send_data.keep_alive 		:= buffer.send_data.keep_alive + 1; 								(* Generate a "running" variable for Data transfer *)
-	buffer.send_data.Belt_Speed			:= Eth_connect.Belt_Speed;
+//	buffer.send_data.Belt_Speed			:= Eth_connect.Belt_Speed;
 //	buffer.send_data.machine_in_auto 	:= Eth_connect.machine_in_auto;
 //	buffer.send_data.machine_in_man  	:= Eth_connect.machine_in_man;
 //	buffer.send_data.machine_stopped 	:= Eth_connect.machine_stopped;
@@ -91,7 +91,7 @@ PROGRAM _CYCLIC
 			Client.TcpClient_0.enable := 1;
 			Client.TcpClient_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
 			Client.TcpClient_0.portserv := 12000;  (* Port on server side to use *)
-			Client.TcpClient_0.pServer := (*ADR('192.168.250.15');*) ADR(Eth_connect.Server_Ip_Add);  (* Server Address *)
+			Client.TcpClient_0.pServer := (*ADR('127.0.0.1');*) ADR(Eth_connect.Server_Ip_Add);  (* Server Address *)
 			Client.TcpClient_0;  (* Call the Function*)
 			
 			IF Client.TcpClient_0.status = 0 THEN  (* Open ok -> Send Data *)
