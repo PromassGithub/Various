@@ -346,6 +346,7 @@ PROGRAM _CYCLIC
 		
 		0:	//Start
 			IF (Status = AUTO AND Homed AND XSM_Ctrl_0.PowerOn AND Empty_Mag_1_0.Empty_Mag_Sensor AND glb_err.pending_alarms = 0) THEN
+				glb_cmd.Cartridge_loaded := 0;
 				Empty_Mag_1_0.Empty_Mag_Status := 10;
 			END_IF;
 			Empty_Mag_1_0.Empty_Mag_Pop_Up := 1;
