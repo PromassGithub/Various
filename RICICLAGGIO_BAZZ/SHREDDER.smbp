@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ProjectDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProjectVersion>2.7.0.0</ProjectVersion>
+  <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>SHREDDER</Name>
-  <FullName>C:\projects\GIT_HUB\Various\RICICLAGGIO_BAZZ\SHREDDER.smbp</FullName>
+  <FullName>C:\projects\GitH\Various\RICICLAGGIO_BAZZ\SHREDDER.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -651,6 +651,95 @@
               </InstructionLineEntity>
               <InstructionLineEntity>
                 <InstructionLine>[ %MW0 := 10 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+            </InstructionLines>
+            <Name />
+            <MainComment />
+            <Label />
+            <IsLadderSelected>true</IsLadderSelected>
+          </RungEntity>
+        </Rungs>
+      </ProgramOrganizationUnits>
+      <ProgramOrganizationUnits>
+        <Name>TIMERS</Name>
+        <SectionNumber>0</SectionNumber>
+        <Rungs>
+          <RungEntity>
+            <LadderElements>
+              <LadderEntity>
+                <ElementType>Comparison</ElementType>
+                <ComparisonExpression>%MW0 &gt; 30</ComparisonExpression>
+                <Row>0</Row>
+                <Column>0</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Comparison</ElementType>
+                <ComparisonExpression>%MW0 &lt; 60</ComparisonExpression>
+                <Row>0</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Timer</ElementType>
+                <Descriptor>%TM0</Descriptor>
+                <Comment />
+                <Symbol>TOF_M3</Symbol>
+                <Row>0</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left</ChosenConnection>
+              </LadderEntity>
+            </LadderElements>
+            <InstructionLines>
+              <InstructionLineEntity>
+                <InstructionLine>BLK   %TM0</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>LD    [ %MW0 &gt; 30 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND   [ %MW0 &lt; 60 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>IN</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>END_BLK</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2002,7 +2091,23 @@
     <ConstantWords />
     <ConstantDoubleWords />
     <ConstantMemoryFloats />
-    <Timers />
+    <Timers>
+      <TimerTM>
+        <Address>%TM0</Address>
+        <Index>0</Index>
+        <Symbol>TOF_M3</Symbol>
+        <Type>TOF</Type>
+        <Base>OneSecond</Base>
+        <IsDynamicPreset>true</IsDynamicPreset>
+      </TimerTM>
+      <TimerTM>
+        <Address>%TM1</Address>
+        <Index>1</Index>
+        <Symbol>TOF_M1_M2</Symbol>
+        <Base>OneSecond</Base>
+        <IsDynamicPreset>true</IsDynamicPreset>
+      </TimerTM>
+    </Timers>
     <Counters />
     <FastCounters />
     <Registers />
@@ -2038,8 +2143,6 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
-    <InstListBufferSize>19873</InstListBufferSize>
-    <ProgramBufferSize>158985</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
