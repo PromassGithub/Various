@@ -8,7 +8,7 @@
   <SoftwareConfiguration>
     <Pous>
       <ProgramOrganizationUnits>
-        <Name>New POU</Name>
+        <Name>FSM</Name>
         <SectionNumber>1</SectionNumber>
         <Rungs>
           <RungEntity>
@@ -2029,15 +2029,17 @@
       <Period>255</Period>
     </FastTask>
     <MastTask>
-      <UsePeriodScanMode>false</UsePeriodScanMode>
+      <UsePeriodScanMode>true</UsePeriodScanMode>
       <PeriodScan>100</PeriodScan>
     </MastTask>
     <CpuBehavior>
-      <StartingMode>StartAsPreviousState</StartingMode>
+      <StartingMode>StartInRun</StartingMode>
       <RunStopAddress />
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
+    <InstListBufferSize>19873</InstListBufferSize>
+    <ProgramBufferSize>158985</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
@@ -2754,7 +2756,9 @@
       <DownloadPassword>ee003baee6665af6c91af9625844262f926428792f78bb7aafb3ec460f481eed</DownloadPassword>
     </ApplicationProtection>
     <RemoteIpAddresses>
-      <IpAddresses />
+      <IpAddresses>
+        <string>192.168.0.230</string>
+      </IpAddresses>
     </RemoteIpAddresses>
     <ModemConfigurations>
       <ModemConfigurationEntities />
