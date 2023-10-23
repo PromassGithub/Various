@@ -1,648 +1,648 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.3.5.113 SP"?>
 <Page xmlns="http://br-automation.co.at/AS/VC/Project" Name="Page_XSM_IO_Cfg">
-  <Property Name="Description" Value=""/>
-  <Property Name="Height" Value="480"/>
-  <Property Name="Index" Value="4"/>
-  <Property Name="MoveFocus" Value="Circular"/>
-  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[default]"/>
-  <Property Name="Width" Value="640"/>
+  <Property Name="Description" Value="" />
+  <Property Name="Height" Value="480" />
+  <Property Name="Index" Value="4" />
+  <Property Name="MoveFocus" Value="Circular" />
+  <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[default]" />
+  <Property Name="Width" Value="640" />
   <Layers>
     <Layer Name="Default">
-      <Property Name="BackColor" Value="9"/>
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Normal"/>
-      <Property Name="Height" Value="480"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="StatusDatapoint" Value="None"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Width" Value="640"/>
-      <Property Name="Z-Order" Value="0"/>
+      <Property Name="BackColor" Value="9" />
+      <Property Name="Description" Value="" />
+      <Property Name="EditingMode" Value="Normal" />
+      <Property Name="Height" Value="480" />
+      <Property Name="Left" Value="0" />
+      <Property Name="OutlineColor" Value="0" />
+      <Property Name="OutlineDisplayControl" Value="False" />
+      <Property Name="OutlineDisplayName" Value="True" />
+      <Property Name="OutlineHatched" Value="False" />
+      <Property Name="StatusDatapoint" Value="None" />
+      <Property Name="Top" Value="0" />
+      <Property Name="VisibilityMode" Value="Normal" />
+      <Property Name="Width" Value="640" />
+      <Property Name="Z-Order" Value="0" />
       <TextGroup>
-        <TextLayer LanguageId="en"/>
-        <TextLayer LanguageId="de"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en" />
+        <TextLayer LanguageId="de" />
+        <IndexMap />
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001005" Name="Bitmap_XSM_IO_Cfg">
-          <Property Name="Bitmap" Value="Source[local].Bitmap[XSM_IO_Cfg]"/>
-          <Property Name="BitmapSource" Value="SingleBitmap"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Transparent"/>
-          <Property Name="Height" Value="410"/>
-          <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="380"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Bitmap]"/>
-          <Property Name="Top" Value="3"/>
-          <Property Name="Width" Value="202"/>
+          <Property Name="Bitmap" Value="Source[local].Bitmap[XSM_IO_Cfg]" />
+          <Property Name="BitmapSource" Value="SingleBitmap" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="FillStyle" Value="Transparent" />
+          <Property Name="Height" Value="410" />
+          <Property Name="IndexDatapoint" Value="None" />
+          <Property Name="Left" Value="380" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Bitmap]" />
+          <Property Name="Top" Value="3" />
+          <Property Name="Width" Value="202" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_Done">
-          <Property Name="BackColor" Value="100"/>
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="580"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="39"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Done]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="15"/>
+          <Property Name="BackColor" Value="100" />
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="ForeColor" Value="0" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="580" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="None" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="39" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Done]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="15" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_Status">
-          <Property Name="BackColor" Value="100"/>
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="ForeColor" Value="0"/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="580"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="None"/>
-          <Property Name="SimulationValue" Value="50000"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="99"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Status]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="51"/>
+          <Property Name="BackColor" Value="100" />
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="ForeColor" Value="0" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="580" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="None" />
+          <Property Name="SimulationValue" Value="50000" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="99" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Status]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="51" />
         </Control>
         <Control ClassId="0x00001001" Name="Shape_1">
-          <Property Name="BackColor" Value="59"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="245"/>
-          <Property Name="Left" Value="12"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Shape]"/>
-          <Property Name="Top" Value="120"/>
-          <Property Name="Width" Value="263"/>
+          <Property Name="BackColor" Value="59" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="245" />
+          <Property Name="Left" Value="12" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Shape]" />
+          <Property Name="Top" Value="120" />
+          <Property Name="Width" Value="263" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_DeviceName">
-          <Property Name="BackColor" Value="15"/>
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Opaque"/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="12"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_IO_Mapping]"/>
-          <Property Name="TextIndexOffset" Value="9"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="417"/>
-          <Property Name="Width" Value="211"/>
+          <Property Name="BackColor" Value="15" />
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="FillStyle" Value="Opaque" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="12" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_IO_Mapping]" />
+          <Property Name="TextIndexOffset" Value="9" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="417" />
+          <Property Name="Width" Value="211" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_HoldCurrent">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="5"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="132"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="5" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="132" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_HoldCurrent">
-          <Property Name="AddFractionDigits" Value="2"/>
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="99.99"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="0.1"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="132"/>
-          <Property Name="UnitText" Value="Abbreviation"/>
-          <Property Name="UnitTextAlignment" Value="Left"/>
-          <Property Name="UnitTextPosition" Value="Left"/>
-          <Property Name="UnitTextWidth" Value="0"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.Current.Holding]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="AddFractionDigits" Value="2" />
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="99.99" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="0.1" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="132" />
+          <Property Name="UnitText" Value="Abbreviation" />
+          <Property Name="UnitTextAlignment" Value="Left" />
+          <Property Name="UnitTextPosition" Value="Left" />
+          <Property Name="UnitTextWidth" Value="0" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.Current.Holding]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001002" Name="Button_Config">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="None"/>
-          <Property Name="Height" Value="25"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="281"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndex" Value="1"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="96"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_Cfg]"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="BitmapIndexDatapoint" Value="None" />
+          <Property Name="BitmapSource" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EmbVirtualKey" Value="None" />
+          <Property Name="Height" Value="25" />
+          <Property Name="KeyMatrixOffset" Value="None" />
+          <Property Name="Left" Value="281" />
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]" />
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndex" Value="1" />
+          <Property Name="TextIndexDatapoint" Value="None" />
+          <Property Name="TextSimulationValue" Value="0" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="96" />
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_Cfg]" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001002" Name="Button_Reset">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="None"/>
-          <Property Name="Height" Value="25"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="281"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndex" Value="2"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="212"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_XSM_IO_Cfg_reset]"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="BitmapIndexDatapoint" Value="None" />
+          <Property Name="BitmapSource" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EmbVirtualKey" Value="None" />
+          <Property Name="Height" Value="25" />
+          <Property Name="KeyMatrixOffset" Value="None" />
+          <Property Name="Left" Value="281" />
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]" />
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndex" Value="2" />
+          <Property Name="TextIndexDatapoint" Value="None" />
+          <Property Name="TextSimulationValue" Value="0" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="212" />
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_XSM_IO_Cfg_reset]" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001002" Name="Button_Enable">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="None"/>
-          <Property Name="Height" Value="25"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="281"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndex" Value="0"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="37"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_XSM_IO_Cfg_En]"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="BitmapIndexDatapoint" Value="None" />
+          <Property Name="BitmapSource" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EmbVirtualKey" Value="None" />
+          <Property Name="Height" Value="25" />
+          <Property Name="KeyMatrixOffset" Value="None" />
+          <Property Name="Left" Value="281" />
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]" />
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndex" Value="0" />
+          <Property Name="TextIndexDatapoint" Value="None" />
+          <Property Name="TextSimulationValue" Value="0" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="37" />
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_XSM_IO_Cfg_En]" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x0000100D" Name="Line_5">
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EndX" Value="385"/>
-          <Property Name="EndY" Value="281"/>
-          <Property Name="LineWidth" Value="2"/>
-          <Property Name="StartX" Value="275"/>
-          <Property Name="StartY" Value="281"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Line]"/>
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EndX" Value="385" />
+          <Property Name="EndY" Value="281" />
+          <Property Name="LineWidth" Value="2" />
+          <Property Name="StartX" Value="275" />
+          <Property Name="StartY" Value="281" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Line]" />
         </Control>
         <Control ClassId="0x00001002" Name="Button_1">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="None"/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="500"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_Pages]"/>
-          <Property Name="TextIndex" Value="2"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="445"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_Page_Main]"/>
-          <Property Name="Width" Value="135"/>
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="BitmapIndexDatapoint" Value="None" />
+          <Property Name="BitmapSource" Value="None" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="EmbVirtualKey" Value="None" />
+          <Property Name="Height" Value="30" />
+          <Property Name="KeyMatrixOffset" Value="None" />
+          <Property Name="Left" Value="500" />
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]" />
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_Pages]" />
+          <Property Name="TextIndex" Value="2" />
+          <Property Name="TextIndexDatapoint" Value="None" />
+          <Property Name="TextSimulationValue" Value="0" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="445" />
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[vk_Page_Main]" />
+          <Property Name="Width" Value="135" />
         </Control>
         <Control ClassId="0x0000100B" Name="String_XSM_IO_Cfg_DeviceName">
-          <Property Name="AlignmentHorizontal" Value="Left"/>
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="221"/>
-          <Property Name="SimulationValue" Value="IF6.ST1"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="Top" Value="417"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.IO_Mapping.DeviceName]"/>
-          <Property Name="Width" Value="418"/>
+          <Property Name="AlignmentHorizontal" Value="Left" />
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="221" />
+          <Property Name="SimulationValue" Value="IF6.ST1" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="Top" Value="417" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.IO_Mapping.DeviceName]" />
+          <Property Name="Width" Value="418" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_RatedCurrent">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="6"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="161"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="6" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="161" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_HoldCurrent1">
-          <Property Name="AddFractionDigits" Value="2"/>
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="99.99"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="3"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="161"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.Current.Rated]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="AddFractionDigits" Value="2" />
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="99.99" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="3" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="161" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.Current.Rated]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_MaxCurrent">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="7"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="190"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="7" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="190" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_MaxCurrent">
-          <Property Name="AddFractionDigits" Value="2"/>
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="99.99"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="3.5"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="190"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.Current.Maximum]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="AddFractionDigits" Value="2" />
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="99.99" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="3.5" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="190" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.Current.Maximum]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_MaxSpeed">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="8"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="219"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="8" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="219" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_MaxSpeed">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="65535"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="219"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.MaxSpeed]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="65535" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="219" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.MaxSpeed]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_MaxAcc">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="9"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="248"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="9" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="248" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_MaxAcc">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="65535"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="248"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.MaxAcc]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="65535" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="248" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.MaxAcc]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_MaxDec">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="10"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="277"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="10" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="277" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_MaxDec">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="None"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="65535"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="277"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.MaxDec]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="None" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="65535" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="277" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.MaxDec]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_RefSpeed">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="14"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="306"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="14" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="306" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_RefSpeed">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="65535"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="-65535"/>
-          <Property Name="SimulationValue" Value="-65535"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="306"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.RefSpeed]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="65535" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="-65535" />
+          <Property Name="SimulationValue" Value="-65535" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="306" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.RefSpeed]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_XSM_IO_Cfg_MaxAcc1">
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="15"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]"/>
-          <Property Name="TextIndexOffset" Value="15"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="335"/>
-          <Property Name="Width" Value="160"/>
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="15" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_IO_Cfg]" />
+          <Property Name="TextIndexOffset" Value="15" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="335" />
+          <Property Name="Width" Value="160" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_XSM_IO_Cfg_JoltTime">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="173"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="16"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="255"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="335"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.JoltTimeLimitation]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="100"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="173" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="16" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="255" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="335" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.IO_Cfg.MPGen.JoltTimeLimitation]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="100" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_Status">
-          <Property Name="BackColor" Value="100"/>
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Opaque"/>
-          <Property Name="Height" Value="35"/>
-          <Property Name="IndexDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Status]"/>
-          <Property Name="Left" Value="387"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_Status]"/>
-          <Property Name="TextIndexOffset" Value="0"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="118"/>
-          <Property Name="Width" Value="244"/>
+          <Property Name="BackColor" Value="100" />
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="FillStyle" Value="Opaque" />
+          <Property Name="Height" Value="35" />
+          <Property Name="IndexDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Status]" />
+          <Property Name="Left" Value="387" />
+          <Property Name="Multiline" Value="Automatic" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_Status]" />
+          <Property Name="TextIndexOffset" Value="0" />
+          <Property Name="TextSource" Value="MultipleTexts" />
+          <Property Name="Top" Value="118" />
+          <Property Name="Width" Value="244" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_Motor">
-          <Property Name="BackColor" Value="15"/>
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Opaque"/>
-          <Property Name="Height" Value="19"/>
-          <Property Name="Left" Value="12"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_IO_Mapping]"/>
-          <Property Name="TextIndexOffset" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="392"/>
-          <Property Name="Width" Value="260"/>
+          <Property Name="BackColor" Value="15" />
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="FillStyle" Value="Opaque" />
+          <Property Name="Height" Value="19" />
+          <Property Name="Left" Value="12" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_IO_Mapping]" />
+          <Property Name="TextIndexOffset" Value="0" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="392" />
+          <Property Name="Width" Value="260" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_IO_Mapping_Channel">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="19"/>
-          <Property Name="Left" Value="271"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="4"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="1"/>
-          <Property Name="SimulationValue" Value="4"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="392"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.IO_Mapping.Channel]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="50"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="19" />
+          <Property Name="Left" Value="271" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="4" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="1" />
+          <Property Name="SimulationValue" Value="4" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="392" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_Ctrl_0.IO_Mapping.Channel]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="50" />
         </Control>
         <Control ClassId="0x00001004" Name="Text_Module_Type">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="AlignmentVertical" Value="Center"/>
-          <Property Name="BackColor" Value="101"/>
-          <Property Name="Border" Value="Source[local].Border[Flat_black]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="FillStyle" Value="Opaque"/>
-          <Property Name="Height" Value="20"/>
-          <Property Name="Left" Value="12"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
-          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_Modules]"/>
-          <Property Name="TextIndexOffset" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="66"/>
-          <Property Name="Width" Value="263"/>
+          <Property Name="AlignmentHorizontal" Value="Center" />
+          <Property Name="AlignmentVertical" Value="Center" />
+          <Property Name="BackColor" Value="101" />
+          <Property Name="Border" Value="Source[local].Border[Flat_black]" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="FillStyle" Value="Opaque" />
+          <Property Name="Height" Value="20" />
+          <Property Name="Left" Value="12" />
+          <Property Name="SimulationIndex" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]" />
+          <Property Name="TextGroup" Value="Source[local].TextGroup[TextGroup_XSM_Modules]" />
+          <Property Name="TextIndexOffset" Value="0" />
+          <Property Name="TextSource" Value="SingleText" />
+          <Property Name="Top" Value="66" />
+          <Property Name="Width" Value="263" />
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_Mode">
-          <Property Name="BackColor" Value="14"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="19"/>
-          <Property Name="Left" Value="330"/>
-          <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
-          <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="0"/>
-          <Property Name="SimulationValue" Value="0"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
-          <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="156"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Mode]"/>
-          <Property Name="ValueMode" Value="Standard"/>
-          <Property Name="Width" Value="50"/>
+          <Property Name="BackColor" Value="14" />
+          <Property Name="ControlID" Value="0" />
+          <Property Name="Description" Value="" />
+          <Property Name="Height" Value="19" />
+          <Property Name="Left" Value="330" />
+          <Property Name="MaxDatapoint" Value="None" />
+          <Property Name="MaxValue" Value="100" />
+          <Property Name="MinDatapoint" Value="None" />
+          <Property Name="MinValue" Value="0" />
+          <Property Name="SimulationValue" Value="0" />
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]" />
+          <Property Name="TeachDatapoint" Value="None" />
+          <Property Name="Top" Value="156" />
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Mode]" />
+          <Property Name="ValueMode" Value="Standard" />
+          <Property Name="Width" Value="50" />
         </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="vk_Page_Main">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
           <KeyActions>
             <KeyAction ClassId="0x00000160">
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="Page" Value="Source[local].Page[Page_Main_New_Functions]"/>
-              <Property Name="Target" Value="Page"/>
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="Page" Value="Source[local].Page[Page_Main_New_Functions]" />
+              <Property Name="Target" Value="Page" />
             </KeyAction>
           </KeyActions>
         </VirtualKey>
         <VirtualKey Name="vk_XSM_IO_Cfg_En">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
           <KeyActions>
             <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Enable]"/>
+              <Property Name="CompletionDatapoint" Value="None" />
+              <Property Name="CompletionValue" Value="0" />
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="ResetValue" Value="0" />
+              <Property Name="SetValue" Value="1" />
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Enable]" />
             </KeyAction>
           </KeyActions>
         </VirtualKey>
         <VirtualKey Name="vk_Cfg">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
           <KeyActions>
             <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Config]"/>
+              <Property Name="CompletionDatapoint" Value="None" />
+              <Property Name="CompletionValue" Value="0" />
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="ResetValue" Value="0" />
+              <Property Name="SetValue" Value="1" />
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Config]" />
             </KeyAction>
           </KeyActions>
         </VirtualKey>
         <VirtualKey Name="vk_XSM_IO_Cfg_reset">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
+          <Property Name="Description" Value="" />
+          <Property Name="VirtualKey_LED" Value="False" />
           <KeyActions>
             <KeyAction ClassId="0x0000016B">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Reset]"/>
+              <Property Name="CompletionDatapoint" Value="None" />
+              <Property Name="CompletionValue" Value="0" />
+              <Property Name="Description" Value="" />
+              <Property Name="Locking" Value="Never" />
+              <Property Name="Name" Value="Action_0" />
+              <Property Name="ResetValue" Value="0" />
+              <Property Name="SetValue" Value="1" />
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[Local.XSM_Demo_vnc.xsm_demo.XSM_IO_Cfg_0.Reset]" />
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -651,85 +651,85 @@
   </Layers>
   <MovementOrder>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]" />
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_Mode]">
-      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
-      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
-      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]"/>
+      <Property Name="Down" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
+      <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]" />
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
+      <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]" />
     </MovementEntry>
   </MovementOrder>
   <TabSequence>
-    <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_Done]"/>
-    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_Status]"/>
-    <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]"/>
-    <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]"/>
-    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]"/>
-    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]"/>
-    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]"/>
-    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]"/>
-    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]"/>
-    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]"/>
-    <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]"/>
-    <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]"/>
-    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]"/>
+    <TabSeqItem Index="0" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_Done]" />
+    <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_Status]" />
+    <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent]" />
+    <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[String_XSM_IO_Cfg_DeviceName]" />
+    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_HoldCurrent1]" />
+    <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxCurrent]" />
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxSpeed]" />
+    <TabSeqItem Index="7" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxAcc]" />
+    <TabSeqItem Index="8" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_MaxDec]" />
+    <TabSeqItem Index="9" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_RefSpeed]" />
+    <TabSeqItem Index="10" Value="Source[embedded].Layer[Default].Control[Numeric_XSM_IO_Cfg_JoltTime]" />
+    <TabSeqItem Index="11" Value="Source[embedded].Layer[Default].Control[Numeric_IO_Mapping_Channel]" />
+    <TabSeqItem Index="12" Value="Source[embedded].Layer[Default].Control[Numeric_Mode]" />
   </TabSequence>
 </Page>

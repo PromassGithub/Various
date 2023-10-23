@@ -2,6 +2,11 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	
 	glb_enc_sta.b_enable     := 1;
+	
+	glb_enc_sta.bit_res := 12; 		//Risoluzione encoder
+	glb_enc_sta.pinion_diam := 130; //Diametro pignone encoder
+	glb_enc_sta.enc_rev := 1; 		//Rapporto riduzione tra albero ed encoder
+	
 
 	glb_enc_sta.words        := REAL_TO_DINT( pow(2, glb_enc_sta.bit_res));
 	glb_enc_sta.enc_range    := (glb_enc_sta.pinion_diam * 3.14 * glb_enc_sta.enc_rev); (*/* 7 is the motor reduction */*)
@@ -37,6 +42,9 @@ PROGRAM _CYCLIC
 			glb_enc_sta.error := 0;
 		END_IF
 	END_IF
+	
+	STP_01_Vel := Int_to_vel_0.Vel;
+	STP_01_Pos := Int_to_vel_0.Pos;
 		
 		
 END_PROGRAM

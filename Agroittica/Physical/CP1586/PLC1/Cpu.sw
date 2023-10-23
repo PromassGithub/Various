@@ -2,6 +2,8 @@
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
+    <Task Name="xsm_demo_M" Source="XSM_Demo_vnc.xsm_demo_M2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Main" Source="main.Main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Encoder" Source="IO.Encoder.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="xsm_demo" Source="XSM_Demo_vnc.xsm_demo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
@@ -11,8 +13,8 @@
     <Task Name="ip_adr" Source="XSM_Demo_vnc.ip_adr.prg" Memory="UserROM" Description="Get ip address for VCN test." Language="IEC" Debugging="true" />
     <Task Name="Recipe" Source="MpPkg.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarm_0" Source="MpPkg.Alarm_0.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Main" Source="main.Main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Login" Source="MpPkg.Login.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -22,10 +24,13 @@
     <DataObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />
   </DataObjects>
   <VcDataObjects>
-    <VcDataObject Name="VGAvnc" Source="XSM_Demo_vnc.VGAvnc.dob" Memory="UserROM" Language="Vc" WarningLevel="3" />
     <VcDataObject Name="Visu_t" Source="Hmi.Visu_t30.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
+    <VcDataObject Name="VGAvnc" Source="XSM_Demo_vnc.VGAvnc.dob" Memory="UserROM" Language="Vc" Disabled="true" WarningLevel="2" />
   </VcDataObjects>
   <Binaries>
+    <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="TCData" Source="" Memory="SystemROM" Language="Binary" />
     <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />
@@ -66,11 +71,8 @@
     <BinaryObject Name="Visu_t02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccurl" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpkat" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="arsvcreg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcchspot" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="TCData" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
@@ -82,11 +84,11 @@
     <BinaryObject Name="AlarmHist" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Alarm" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAsvn01" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAsvn03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAsvn02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="visvc" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="runtime" Source="Libraries.runtime.lby" Memory="UserROM" Language="binary" Debugging="true" />
@@ -106,14 +108,15 @@
     <LibraryObject Name="MpBase" Source="Libraries.MpBase.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpRecipe" Source="Libraries.MpRecipe.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsTCP" Source="Libraries.AsTCP.lby" Memory="UserROM" Language="binary" Debugging="true" />
-    <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpUser" Source="Libraries.MpUser.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="dataobj" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asarcfg" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="fileio" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="standard" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="Library" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="Library" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="visapi" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

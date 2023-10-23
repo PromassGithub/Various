@@ -3,7 +3,7 @@
 <Project xmlns="http://br-automation.co.at/AS/VC/Project">
   <Property Name="EnableEvents" Value="False"/>
   <Property Name="SharedTargetResourceRoot" Value=""/>
-  <Property Name="TextIDMax" Value="210270"/>
+  <Property Name="TextIDMax" Value="260087"/>
   <SourceFiles>
     <Source File="Languages.vcr"/>
     <Source File="TextGroups\MpAlarmAcknowledgeState.txtgrp"/>
@@ -106,6 +106,9 @@
     <Source File="TextGroups\BypassState_short.txtgrp"/>
     <Source File="TextGroups\AlarmEvent_long.txtgrp"/>
     <Source File="TextGroups\AlarmEvent_short.txtgrp"/>
+    <Source File="TextGroups\Status.txtgrp"/>
+    <Source File="TextGroups\GUN_Status.txtgrp"/>
+    <Source File="TextGroups\FLAP_status.txtgrp"/>
     <Source File="UnitGroups\Length.vcug"/>
     <Source File="UnitGroups\Mass.vcug"/>
     <Source File="UnitGroups\Volume.vcug"/>

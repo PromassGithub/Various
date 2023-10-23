@@ -8868,7 +8868,206 @@
             <Property Name="UserID" Value="None"/>
             <Property Name="VCType" Value="BOOL"/>
           </DataPoint>
+          <Folder Name="Monitor">
+            <Property Name="Description" Value=""/>
+            <Property Name="FolderType" Value="Struct"/>
+            <DataPoint Name="Actual_Position">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="Actual_Velocity">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="StandStill">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+            <DataPoint Name="Home_OK">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+            <DataPoint Name="Input_1">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+          </Folder>
+          <Folder Name="Cmd">
+            <Property Name="Description" Value=""/>
+            <Property Name="FolderType" Value="Struct"/>
+            <DataPoint Name="Reset">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+          </Folder>
+          <DataPoint Name="PowerOn">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="BOOL"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="BOOL"/>
+          </DataPoint>
         </Folder>
+        <Folder Name="MM_0">
+          <Property Name="Description" Value=""/>
+          <Property Name="FolderType" Value="Struct"/>
+          <DataPoint Name="MM_Avanti">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="BOOL"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="BOOL"/>
+          </DataPoint>
+          <DataPoint Name="MM_Indietro">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="BOOL"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="BOOL"/>
+          </DataPoint>
+        </Folder>
+        <DataPoint Name="Motor_state">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="En_status"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+        <DataPoint Name="Auto_Homing_Ack">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+      </Folder>
+      <Folder Name="xsm_demo_M2">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Program"/>
+        <Folder Name="XSM_Ctrl_2">
+          <Property Name="Description" Value=""/>
+          <Property Name="FolderType" Value="FunctionBlock"/>
+          <Folder Name="Cmd">
+            <Property Name="Description" Value=""/>
+            <Property Name="FolderType" Value="Struct"/>
+            <DataPoint Name="Reset">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+          </Folder>
+          <DataPoint Name="PowerOn">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="BOOL"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="BOOL"/>
+          </DataPoint>
+          <Folder Name="Monitor">
+            <Property Name="Description" Value=""/>
+            <Property Name="FolderType" Value="Struct"/>
+            <DataPoint Name="Actual_Position">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="Actual_Velocity">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="DINT"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="INTEGER"/>
+            </DataPoint>
+            <DataPoint Name="StandStill">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+            <DataPoint Name="Home_OK">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+            <DataPoint Name="Input_1">
+              <Property Name="ConnectedBySharedResource" Value="False"/>
+              <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="PLCType" Value="BOOL"/>
+              <Property Name="UpdateTime" Value="Default"/>
+              <Property Name="UserID" Value="None"/>
+              <Property Name="VCType" Value="BOOL"/>
+            </DataPoint>
+          </Folder>
+        </Folder>
+        <DataPoint Name="Motor_state_2">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="En_status"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
       </Folder>
     </Folder>
     <Folder Name="glb_io">
@@ -8908,15 +9107,6 @@
       <Folder Name="Di">
         <Property Name="Description" Value=""/>
         <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="Finecorsa">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
         <DataPoint Name="Si_01">
           <Property Name="ConnectedBySharedResource" Value="False"/>
           <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
@@ -9070,7 +9260,375 @@
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="BOOL"/>
         </DataPoint>
+        <DataPoint Name="Stop">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
       </Folder>
+    </Folder>
+    <Folder Name="glb_cmd">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="btn_homing">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Torna_a_casa">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Reboot_pos">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Cartridge_loaded">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <DataPoint Name="Status">
+      <Property Name="ConnectedBySharedResource" Value="False"/>
+      <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="PLCType" Value="En_status"/>
+      <Property Name="UpdateTime" Value="Default"/>
+      <Property Name="UserID" Value="None"/>
+      <Property Name="VCType" Value="INTEGER"/>
+    </DataPoint>
+    <Folder Name="Auto_Homing_Ctrl_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Pop_Up">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="USINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="Empty_Mag_1_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Empty_Mag_Pop_Up">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="USINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+      <DataPoint Name="Empty_Mag_Ack">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Empty_Mag_Sensor">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="Empty_Mag_22">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Empty_Mag_Sensor">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Empty_Mag_Pop_Up">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="USINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+      <DataPoint Name="Empty_Mag_Ack">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="glb_hmi">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <Folder Name="Inp">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Struct"/>
+        <DataPoint Name="Gun_1_HMI">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="Gun_2_HMI">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="Gun_1_Valve_HMI">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="Gun_2_Valve_HMI">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+        <DataPoint Name="Soll_Valve_HMI">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="BOOL"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="BOOL"/>
+        </DataPoint>
+      </Folder>
+    </Folder>
+    <Folder Name="Flap_MM_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Flap_status">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="USINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="Manual_Gun_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Gun_Pop_up">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="USINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="Auto_fish_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Fish_Start">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="Gun_Switch_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Gun_Switch_Status">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="USINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="Pesi_0">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Max_Weight">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="UINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+      <DataPoint Name="Min_Weight">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="UINT"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="INTEGER"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="glb_cmd_2">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="btn_homing">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Torna_a_casa">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+    </Folder>
+    <Folder Name="main">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Package"/>
+      <Folder Name="Main">
+        <Property Name="Description" Value=""/>
+        <Property Name="FolderType" Value="Program"/>
+        <DataPoint Name="Distanza_Sensore_Gun">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="DPLimit" Value="None"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="REAL"/>
+          <Property Name="PLCUnit" Value="None"/>
+          <Property Name="UnitGroup" Value="None"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="SCALED"/>
+        </DataPoint>
+        <DataPoint Name="Tempo_Delay">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="TIME"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+        <Folder Name="TON_02">
+          <Property Name="Description" Value=""/>
+          <Property Name="FolderType" Value="FunctionBlock"/>
+          <DataPoint Name="PT">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="TIME"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="INTEGER"/>
+          </DataPoint>
+        </Folder>
+        <Folder Name="TON_03">
+          <Property Name="Description" Value=""/>
+          <Property Name="FolderType" Value="FunctionBlock"/>
+          <DataPoint Name="PT">
+            <Property Name="ConnectedBySharedResource" Value="False"/>
+            <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+            <Property Name="Description" Value=""/>
+            <Property Name="PLCType" Value="TIME"/>
+            <Property Name="UpdateTime" Value="Default"/>
+            <Property Name="UserID" Value="None"/>
+            <Property Name="VCType" Value="INTEGER"/>
+          </DataPoint>
+        </Folder>
+        <DataPoint Name="St_Gun">
+          <Property Name="ConnectedBySharedResource" Value="False"/>
+          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="PLCType" Value="USINT"/>
+          <Property Name="UpdateTime" Value="Default"/>
+          <Property Name="UserID" Value="None"/>
+          <Property Name="VCType" Value="INTEGER"/>
+        </DataPoint>
+      </Folder>
+    </Folder>
+    <Folder Name="glb_err">
+      <Property Name="Description" Value=""/>
+      <Property Name="FolderType" Value="Struct"/>
+      <DataPoint Name="Drive2">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
+      <DataPoint Name="Drive1">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
     </Folder>
   </DataPoints>
 </DataSource>

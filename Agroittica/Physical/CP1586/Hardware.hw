@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.9.5.36 FileVersion="4.9"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="80SD100XD.C044-01" Type="80SD100XD.C044-01" Version="2.2.0.0">
-    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1">
+    <Connection Connector="X2X1" TargetModule="X67DM1321" TargetConnector="X2X2">
       <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Parameter ID="FunctionModel" Value="Ramp" />
     <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="DirectionControl01" Value="on" />
   </Module>
   <Module Name="PLC1" Type="X20CP1382-RT" Version="1.11.0.0">
     <Module Name="X1" Type="X1" Virtual="true" Version="1.11.0.0">
@@ -20,27 +21,36 @@
     <Module Name="X3" Type="X3" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="PLC1" TargetConnector="X3" />
-    </Module>
+    <Parameter ID="X3Channel05Config" Value="input" />
+    <Parameter ID="X3Channel06Config" Value="input" />
+    <Parameter ID="X3Channel07Config" Value="input" />
+    <Parameter ID="X3Channel08Config" Value="input" />
+    <Parameter ID="X3Channel10Source" Value="reACTION" />
+  </Module>
     <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
     <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
     <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="HostName" Value="a07151" />
       <Parameter ID="Mode" Value="Manual" />
-      <Parameter ID="InternetAddress" Value="192.168.250.100" />
+      <Parameter ID="InternetAddress" Value="111.111.111.111" />
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
       <Group ID="Vnc1" />
-      <Parameter ID="VncVcObjectName1" Value="VGAvnc" />
-      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncVcObjectName1" Value="Visu_t" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard1.dis" />
       <Parameter ID="VncAuthentication1" Value="1" />
-      <Parameter ID="VncPasswordViewOnly1" Value="1" />
-      <Parameter ID="VncPasswordViewControl1" Value="2" />
-      <Parameter ID="VncPortNumber1" Value="5901" />
-      <Parameter ID="VncRefreshRate1" Value="300" />
+      <Parameter ID="VncPasswordViewOnly1" Value="bazzica" />
+      <Parameter ID="VncPasswordViewControl1" Value="promass" />
+      <Parameter ID="VncMaxConnections1" Value="10" />
+      <Parameter ID="VncRefreshRate1" Value="333" />
       <Group ID="Vnc2" />
-      <Parameter ID="VncVcObjectName2" Value="Visu_t" />
-      <Parameter ID="VncKeyMappingFile2" Value="VC\PS2-Keyboard1.dis" />
-      <Parameter ID="VncMaxConnections2" Value="4" />
+      <Parameter ID="VncVcObjectName2" Value="VGAvnc" />
+      <Parameter ID="VncKeyMappingFile2" Value="VC\PS2-Keyboard4.dis" />
+      <Parameter ID="VncAuthentication2" Value="1" />
+      <Parameter ID="VncPasswordViewOnly2" Value="bazzica" />
+      <Parameter ID="VncPasswordViewControl2" Value="promass" />
+      <Parameter ID="VncPortNumber2" Value="5901" />
     </Connector>
     <Connector Name="IF3">
       <Parameter ID="DNAConfiguration" Value="manual" />
@@ -68,4 +78,9 @@
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X67DM1321" Type="X67DM1321" Version="1.2.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BT9400" TargetConnector="X2X1">
+      <Cable Type="X2XCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
 </Hardware>

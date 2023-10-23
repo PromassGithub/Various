@@ -39,18 +39,18 @@
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="210244" Value="Digital Output"/>
-          <Text ID="210245" Value="Pistola 1"/>
-          <Text ID="210246" Value="Pistola 2"/>
-          <Text ID="210247" Value="Pistone soll."/>
-          <Text ID="210248" Value="Enable DRV 1"/>
+          <Text ID="210245" Value="Gun 1"/>
+          <Text ID="210246" Value="Gun 2"/>
+          <Text ID="210247" Value="Raise Piston"/>
+          <Text ID="210248" Value="Enable DRV"/>
           <Text ID="210268" Value="INP"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="210244" Value="Digital Output"/>
-          <Text ID="210245" Value="Pistola 1"/>
-          <Text ID="210246" Value="Pistola 2"/>
-          <Text ID="210247" Value="Pistone soll."/>
-          <Text ID="210248" Value="Enable DRV 1"/>
+          <Text ID="210245" Value="Gun 1"/>
+          <Text ID="210246" Value="Gun 2"/>
+          <Text ID="210247" Value="Raise Piston"/>
+          <Text ID="210248" Value="Enable DRV"/>
           <Text ID="210268" Value="INP"/>
         </TextLayer>
         <IndexMap>
@@ -207,7 +207,7 @@
           <Property Name="ForeColor" Value="239"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="141"/>
+          <Property Name="Left" Value="64"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -217,7 +217,7 @@
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="434"/>
+          <Property Name="Top" Value="435"/>
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_9]"/>
           <Property Name="Width" Value="80"/>
         </Control>
@@ -238,6 +238,32 @@
         </VirtualKey>
       </KeyMapping>
     </Layer>
+    <LayerRef Source="Source[local].Layer[Empty_Mag_2_Pop_Up]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="Empty_Mag_2_Pop_Up"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="2"/>
+    </LayerRef>
+    <LayerRef Source="Source[local].Layer[Empty_Mag_Pop_Up]">
+      <Property Name="Description" Value=""/>
+      <Property Name="EditingMode" Value="Frozen"/>
+      <Property Name="Left" Value="0"/>
+      <Property Name="Name" Value="Empty_Mag_Pop_Up"/>
+      <Property Name="OutlineColor" Value="0"/>
+      <Property Name="OutlineDisplayControl" Value="False"/>
+      <Property Name="OutlineDisplayName" Value="True"/>
+      <Property Name="OutlineHatched" Value="False"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="VisibilityMode" Value="Hidden"/>
+      <Property Name="Z-Order" Value="3"/>
+    </LayerRef>
     <LayerRef Source="Source[local].Layer[MpPageControl]">
       <Property Name="Description" Value=""/>
       <Property Name="EditingMode" Value="Frozen"/>
@@ -249,7 +275,7 @@
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="2"/>
+      <Property Name="Z-Order" Value="4"/>
     </LayerRef>
   </Layers>
   <MovementOrder/>

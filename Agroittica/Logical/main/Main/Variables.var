@@ -1,7 +1,14 @@
 VAR
 	last_cycle : BOOL;
+	TON_04 : TON := (0);
 	TON_03 : TON;
 	TON_02 : TON;
 	TON_01 : TON;
+	St_Valve : USINT := 0;
 	St_Gun : USINT;
+	Tempo : REAL := 0.0;
+	Tempo_Delay : TIME;
+END_VAR
+VAR RETAIN
+	Distanza_Sensore_Gun : REAL := 120;
 END_VAR

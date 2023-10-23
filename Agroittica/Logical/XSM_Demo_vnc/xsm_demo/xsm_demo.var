@@ -9,6 +9,7 @@
  * Local variables of program ramp_sg4
  ********************************************************************)
 VAR
+	Auto_Homing_Ack : BOOL := FALSE;
 	CMD_Reboot_pos : BOOL := FALSE;
 	CMD_Reboot_pos_status : USINT := 0;
 	Actual_Position_0 : UDINT := 0;
@@ -24,7 +25,7 @@ VAR
 	Homed : BOOL := FALSE;
 	motor_init : BOOL := FALSE;
 	Init_motor_status : USINT := 0;
-	Dim_etichetta : USINT := 7;
+	Dim_etichetta : DINT := 7;
 	FW_step_status : USINT := 0;
 	Homing_status : USINT := 0;
 	XSM_Ctrl_0 : XSM_Ctrl := (0);
