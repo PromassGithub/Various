@@ -3,7 +3,7 @@
   <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>SHREDDER</Name>
-  <FullName>C:\projects\GIT_HUB\Various\RICICLAGGIO_BAZZ\SHREDDER.smbp</FullName>
+  <FullName>C:\projects\GIT_HUB\Various\RICICLAGGIO_BAZZ\CONTROLLER\SHREDDER.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -1341,6 +1341,76 @@
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
+            <Name />
+            <MainComment />
+            <Label />
+            <IsLadderSelected>true</IsLadderSelected>
+          </RungEntity>
+          <RungEntity>
+            <LadderElements>
+              <LadderEntity>
+                <ElementType>Short</ElementType>
+                <Row>0</Row>
+                <Column>0</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Operation</ElementType>
+                <OperationExpression>%IWM0 := %MW0</OperationExpression>
+                <Row>0</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+            </LadderElements>
+            <InstructionLines />
             <Name />
             <MainComment />
             <Label />
@@ -3909,8 +3979,6 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
-    <InstListBufferSize>19794</InstListBufferSize>
-    <ProgramBufferSize>158521</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
@@ -4484,6 +4552,7 @@
           <NetworkObject>
             <Address>%IWM0</Address>
             <Index>0</Index>
+            <Symbol>FSM_OUT</Symbol>
           </NetworkObject>
           <NetworkObject>
             <Address>%IWM1</Address>
