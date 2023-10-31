@@ -271,15 +271,13 @@ PROGRAM _CYCLIC
 	
 	//--------------------PESI---------------------------------
 	
-	//string separation
-	Example_string;
-	
+	//string separation	
 	String_len_raw := LEN(Eth_connect.Marel_Weight);
 	
-	IF String_len_raw = 8 THEN
-		L := 6;
-	ELSIF String_len_raw = 9 THEN
-		L := 7;
+	IF String_len_raw = 6 THEN
+		L := 4;
+	ELSIF String_len_raw = 5 THEN
+		L := 3;
 	END_IF;
 	
 	Result_string := MID(Eth_connect.Marel_Weight, L, 2); 

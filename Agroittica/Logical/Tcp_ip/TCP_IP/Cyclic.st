@@ -90,7 +90,7 @@ PROGRAM _CYCLIC
 			Eth_connect.tcp_state.tcpclient := 0;
 			Client.TcpClient_0.enable := 1;
 			Client.TcpClient_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
-			Client.TcpClient_0.portserv := 12000;  (* Port on server side to use *)
+			Client.TcpClient_0.portserv := 5555;  (* Port on server side to use *)
 			Client.TcpClient_0.pServer := (*ADR('127.0.0.1');*) ADR(Eth_connect.Server_Ip_Add);  (* Server Address *)
 			Client.TcpClient_0;  (* Call the Function*)
 			

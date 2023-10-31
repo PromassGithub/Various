@@ -197,7 +197,7 @@ TYPE
 		protocol_state : typ_tcp_protocol_state; (*Stato della sincronizzazione*)
 		tcp_state : typ_tcp_state; (*Stato della comunicazione tcp*)
 		disable : BOOL; (*Disabilito il protocollo di comunicazione*)
-		Server_Ip_Add : STRING[15] := '192.168.48.60';
+		Server_Ip_Add : STRING[15] := '127.0.0.1';
 		Belt_Speed : STRING[50];
 		Marel_Weight : STRING[50];
 	END_STRUCT;
