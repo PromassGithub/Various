@@ -1,0 +1,2 @@
+Connection "/IF=tcpip /LOPO=11159 /SA=1", "/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=128.100.100.53 /REPO=11159 /ANSL=1 /PT=11169"
+Transfer "RUCPackage.zip", "KeepPvValues=0 ExecuteInitExit=1 InstallMode=Consistent InstallRestriction=AllowUpdatesWithoutDataLoss IgnoreVersion=1"

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpOeeListUIShiftStatistics">
+  <Property Name="Description" Value="TextSnippets for OeeListUI"/>
+  <Property Name="Index" Value="1183"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002001" Name="TotalTimeHour">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.TotalTime.Hours]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="TotalTimeMinute">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.TotalTime.Minutes]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="TotalTimeSecond">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.TotalTime.Seconds]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="UptimeHour">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.Uptime.Hours]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="UptimeMinute">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.Uptime.Minutes]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="UptimeSecond">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.Uptime.Seconds]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="SchedDowntimeHour">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.ScheduledDowntime.Hours]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="SchedDowntimeMinute">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.ScheduledDowntime.Minutes]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="SchedDowntimeSecond">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.ScheduledDowntime.Seconds]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="UnschedDowntimeHour">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.UnscheduledDowntime.Hours]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="UnschedDowntimeMinute">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.UnscheduledDowntime.Minutes]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002001" Name="UnschedDowntimeSecond">
+      <Property Name="AddFractionDigits" Value="0"/>
+      <Property Name="Alignment" Value="Right"/>
+      <Property Name="Content" Value="Value Unittext"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.Oee.MpOeeCore_0.Info.ShiftStatistics.UnscheduledDowntime.Seconds]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+      <Property Name="MinIntegerDigits" Value="2"/>
+      <Property Name="UnitText" Value="Abbreviation"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="121483" Value="{TotalTimeHour}:{TotalTimeMinute}:{TotalTimeSecond}"/>
+    <Text ID="121484" Value="{UptimeHour}:{UptimeMinute}:{UptimeSecond}"/>
+    <Text ID="121485" Value="{SchedDowntimeHour}:{SchedDowntimeMinute}:{SchedDowntimeSecond}"/>
+    <Text ID="121486" Value="{UnschedDowntimeHour}:{UnschedDowntimeMinute}:{UnschedDowntimeSecond}"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="121483" Value="{TotalTimeHour}:{TotalTimeMinute}:{TotalTimeSecond}"/>
+    <Text ID="121484" Value="{UptimeHour}:{UptimeMinute}:{UptimeSecond}"/>
+    <Text ID="121485" Value="{SchedDowntimeHour}:{SchedDowntimeMinute}:{SchedDowntimeSecond}\"/>
+    <Text ID="121486" Value="{UnschedDowntimeHour}:{UnschedDowntimeMinute}:{UnschedDowntimeSecond}"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="121483" Value="0"/>
+    <Index ID="121484" Value="1"/>
+    <Index ID="121485" Value="2"/>
+    <Index ID="121486" Value="3"/>
+  </IndexMap>
+</TextGroup>

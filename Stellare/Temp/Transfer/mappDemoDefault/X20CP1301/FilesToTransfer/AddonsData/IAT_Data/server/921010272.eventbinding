@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingDefinition xmlns="http://www.br-automation.com/iat2014/eventbinding/runtime/v2">
+  <Content id="ContentMpReport">
+    <EventBinding>
+			<Source type="widgets.brease.Button.Event" event="Click" refId="ContentMpReport_DeleteButton" />
+			<EventHandler>
+				<Action>
+					<Target type="opcUa.NodeAction" refId="::Report:DeleteReport">
+						<Method type="opcUa.NodeAction.SetValueBool"><Parameter name="value" xsi:type="BOOL" value="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+  </Content>
+  <Content id="ContentMpReport">
+    <EventBinding>
+			<Source type="widgets.brease.Button.Event" event="Click" refId="ContentMpReport_Button1" />
+			<EventHandler>
+				<Action>
+					<Target type="opcUa.NodeAction" refId="::Report:MpFileManagerUIConnect.File.List.PageUp">
+						<Method type="opcUa.NodeAction.SetValueBool"><Parameter name="value" xsi:type="BOOL" value="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+  </Content>
+  <Content id="ContentMpReport">
+    <EventBinding>
+			<Source type="widgets.brease.Button.Event" event="Click" refId="ContentMpReport_Button2" />
+			<EventHandler>
+				<Action>
+					<Target type="opcUa.NodeAction" refId="::Report:MpFileManagerUIConnect.File.List.PageDown">
+						<Method type="opcUa.NodeAction.SetValueBool"><Parameter name="value" xsi:type="BOOL" value="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+					</Target>
+				</Action>
+			</EventHandler>
+		</EventBinding>
+  </Content>
+</EventBindingDefinition>

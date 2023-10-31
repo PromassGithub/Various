@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="UserUser">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserRole">
+      <tuv xml:lang="de">
+        <seg>Rolle</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Role</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserUserInfo">
+      <tuv xml:lang="de">
+        <seg>Benutzerinformation</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User information</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserRoleInfo">
+      <tuv xml:lang="de">
+        <seg>Rolleninformation</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Role information</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserSelected">
+      <tuv xml:lang="de">
+        <seg>Ausgewählter Benutzer:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Selected User:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserCreate">
+      <tuv xml:lang="de">
+        <seg>Erstellt am:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Created on:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserLastLog">
+      <tuv xml:lang="de">
+        <seg>Letzter Login:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Last Login:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserFullName">
+      <tuv xml:lang="de">
+        <seg>Name:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Name:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserAttempt">
+      <tuv xml:lang="de">
+        <seg>Verbleibende Anmeldeversuche:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Remaining login attempts:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserUsername">
+      <tuv xml:lang="de">
+        <seg>Benutzername</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Username</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserPassword">
+      <tuv xml:lang="de">
+        <seg>Passwort</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserChangePassword">
+      <tuv xml:lang="de">
+        <seg>Passwort ändern</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Change password</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserAccessRights.0">
+      <tuv xml:lang="de">
+        <seg>undefiniert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>undefined</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserAccessRights.1">
+      <tuv xml:lang="de">
+        <seg>keine</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>none</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserAccessRights.2">
+      <tuv xml:lang="de">
+        <seg>Leserecht</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>view</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserAccessRights.3">
+      <tuv xml:lang="de">
+        <seg>Prozesse starten/stoppen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>actuate</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserAccessRights.4">
+      <tuv xml:lang="de">
+        <seg>volles Zugrifsrecht</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>full</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserRoleSelected">
+      <tuv xml:lang="de">
+        <seg>Ausgewählte Rolle:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Selected Role:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserRoleLevel">
+      <tuv xml:lang="de">
+        <seg>Rollenlevel:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Role level:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserRoleAccess">
+      <tuv xml:lang="de">
+        <seg>Zugriffsrechte:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Access rights:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserConnectedRole.1">
+      <tuv xml:lang="de">
+        <seg>{@NameRole1}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@NameRole1}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserConnectedRole.2">
+      <tuv xml:lang="de">
+        <seg>{@NameRole2}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@NameRole2}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserConnectedRole.3">
+      <tuv xml:lang="de">
+        <seg>{@NameRole3}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@NameRole3}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserConnectedRole.4">
+      <tuv xml:lang="de">
+        <seg>{@NameRole4}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@NameRole4}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserConnectedRole.0">
+      <tuv xml:lang="de">
+        <seg>{@NameRole0}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@NameRole0}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserTest">
+      <tuv xml:lang="de">
+        <seg>{@NameRole1}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@NameRole1}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserXLoginErrorHdr">
+      <tuv xml:lang="de">
+        <seg>Fehlernummer: {@UserXLoginErrorSnippet}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Errornumber: {@UserXLoginErrorSnippet}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserXManagerErrorHdr">
+      <tuv xml:lang="de">
+        <seg>Fehlernummer: {@UserXManagerError}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Errornumber: {@UserXManagerError}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserUnLockMsg">
+      <tuv xml:lang="de">
+        <seg>Soll dieser Benutzer wircklich entsperrt werden?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Should this user really unlocked?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserUnLockHdr">
+      <tuv xml:lang="de">
+        <seg>Benutzer entsperren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Unlock user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserOldPW">
+      <tuv xml:lang="de">
+        <seg>Altes Passwort:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Old password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserNewPW">
+      <tuv xml:lang="de">
+        <seg>Neues Passwort:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserConfirmPW">
+      <tuv xml:lang="de">
+        <seg>Passwort bestätigen:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Confirm password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserLoginUser">
+      <tuv xml:lang="de">
+        <seg>Benutzername:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Username:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserLoginPassword">
+      <tuv xml:lang="de">
+        <seg>Passwort:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserName">
+      <tuv xml:lang="de">
+        <seg>admin</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>admin</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserPass">
+      <tuv xml:lang="de">
+        <seg>admin</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>admin</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpressionTypeSet id="MyExpression" xmlns="http://www.br-automation.com/iat2016/expressionType/v1">
+  <ExpressionTypes>
+    <ExpressionType name="ShowAlarm" datatype="BOOL">
+      <Operands>
+        <Operand name="State1" datatype="BOOL" />
+      </Operands>
+      <Operation>
+				State1 AND TRUE
+			</Operation>
+    </ExpressionType>
+  </ExpressionTypes>
+</ExpressionTypeSet>

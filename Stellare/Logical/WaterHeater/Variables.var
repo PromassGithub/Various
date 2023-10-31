@@ -1,0 +1,20 @@
+VAR
+	MTBasicsPID_0 : MTBasicsPID := (PIDParameters:=(Gain:=4,IntegrationTime:=10),MinOut:=10,MaxOut:=100); (*MTBasicsPID instance*)
+	MTBasicsPT1_0 : MTBasicsPT1; (*MTBasicsPT1 instance*)
+	WaterTemp : REAL := 0.0; (*Water temperature for brewing coffee*)
+	WaterHeaterUIConnect : WaterHeaterUIConnectType; (*Control structure of main logic*)
+	MpEnergyRegPower_0 : MpEnergyRegPower := (0); (*MpEnergyRegPower instance*)
+	MpEnergyRegEnergy_0 : MpEnergyRegEnergy := (0); (*MpEneryRegEnergy instance*)
+	MpRecipeRegPar_0 : {REDUND_UNREPLICABLE} MpRecipeRegPar; (*MpRecipeRegPar instance*)
+
+END_VAR
+(*Variables for AuditTrail*)
+VAR
+	MpAuditValueChangeStatus : DINT; (*Status variable for MpAuditValueChange function*)
+	_WaterTemp : REAL; (*Temp variables to detect value change*)
+END_VAR
+(*Variables for Energy monitoring*)
+VAR
+	ForwardActiveEnergy : LREAL := 0.0; (*Parameter for forward active energy*)
+	ActivePower : LREAL := 0.0; (*Parameter for active power*)
+END_VAR

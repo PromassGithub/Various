@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="X20CP1586">
+    <Parameter ID="HardwareModuleName" Value="X20CP1586" />
+    <Parameter ID="TemperatureCPUType" Value="UINT" />
+    <Parameter ID="TemperatureENVType" Value="UINT" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+  </Module>
+  <Module ID="IF2" Hardware="X20CP1586">
+    <Parameter ID="DeviceDescription" Value="gei" />
+    <Parameter ID="EthInterfaceRedundant" Value="0" />
+  </Module>
+  <Module ID="IF2.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF3" Hardware="X20CP1586">
+    <Parameter ID="Operation" Value="EPL-V2" />
+    <Parameter ID="MtuSize" Value="300" Type="UDINT" />
+  </Module>
+  <Module ID="IF3.PLK" Hardware="EPL-V2">
+    <Parameter ID="EplInterfaceRedundant" Value="0" />
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="MuxPrescaler" Value="8" Type="UDINT" />
+    <Parameter ID="Mode" Value="MN" />
+    <Parameter ID="NodeID" Value="240" Type="DINT" />
+    <Parameter ID="AsyncTimeout" Value="25" Type="UDINT" />
+    <Parameter ID="TransferOnlyActive" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="off" />
+    <Parameter ID="BasicEthernetInServiceMode" Value="off" />
+    <Parameter ID="EplNatSubnet" Value="192.168.101.0" />
+    <Parameter ID="EPL_LossFrameTolerance" Value="-1" Type="DINT" />
+    <Parameter ID="ApplSwDate" Value="0" Type="UDINT" />
+    <Parameter ID="ApplSwTime" Value="0" Type="UDINT" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF6.X2X" Hardware="X2X">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="BusLength" Value="1000" Type="UDINT" />
+    <Parameter ID="Stations" Value="64" Type="UDINT" />
+    <Parameter ID="AsyncPayload" Value="80" Type="UDINT" />
+    <Parameter ID="Asymmetric" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="on" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF6.ST1" Hardware="X20DO9321">
+    <Parameter ID="HardwareModuleName" Value="X20DO9321" />
+  </Module>
+  <Module ID="IF6.ST1.IO" Hardware="X20DO9321">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="DigitalOutputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST2" Hardware="X20DI9372">
+    <Parameter ID="HardwareModuleName" Value="X20DI9372" />
+  </Module>
+  <Module ID="IF6.ST2.IO" Hardware="X20DI9372">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="DigitalInputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST3" Hardware="X20AP3111">
+    <Parameter ID="HardwareModuleName" Value="X20AP3111" />
+  </Module>
+  <Module ID="IF6.ST3.IO" Hardware="X20AP3111">
+    <Parameter ID="MaxInSize" Value="30" Type="UDINT" />
+    <Parameter ID="MaxOutSize" Value="30" Type="UDINT" />
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Measure3P4W" Value="3P4W" />
+    <Parameter ID="BaseFrequency" Value="50" />
+    <Parameter ID="EnergyUnit" Value="1kWs" />
+    <Parameter ID="CurrentLedOnLevel" Value="100" Type="UINT" />
+    <Parameter ID="SignalDisplay" Value="bits" />
+    <Parameter ID="ConfigPhaseA" Value="on" />
+    <Parameter ID="CurrentRatioA" Value="25000" Type="UINT" />
+    <Parameter ID="EnRegStatA" Value="on" />
+    <Parameter ID="EnablePQA" Value="on" />
+    <Parameter ID="ConfigPhaseB" Value="on" />
+    <Parameter ID="CurrentRatioB" Value="25000" Type="UINT" />
+    <Parameter ID="EnRegStatB" Value="on" />
+    <Parameter ID="EnablePQB" Value="on" />
+    <Parameter ID="ConfigPhaseC" Value="on" />
+    <Parameter ID="CurrentRatioC" Value="25000" Type="UINT" />
+    <Parameter ID="EnRegStatC" Value="on" />
+    <Parameter ID="EnablePQC" Value="on" />
+    <Parameter ID="ConfigPhaseN" Value="off" />
+    <Parameter ID="EnableTestN" Value="off" />
+    <Parameter ID="VoltageLimit" Value="on" />
+    <Parameter ID="VoltageWarnLim" Value="18000" Type="UINT" />
+    <Parameter ID="VoltageLossLim" Value="2500" Type="UINT" />
+    <Parameter ID="THDVoltageLimit" Value="1000" Type="UINT" />
+    <Parameter ID="THDCurrentLimit" Value="1000" Type="UINT" />
+    <Parameter ID="EnabCurrDisp" Value="off" />
+    <Parameter ID="VoltageLimitDisplay" Value="bits" />
+    <Parameter ID="ZeroCrossing" Value="off" />
+    <Parameter ID="DisplayConfigSel" Value="basic" />
+    <Parameter ID="DisUrmsA" Value="off" />
+    <Parameter ID="DisUrmsB" Value="off" />
+    <Parameter ID="DisUrmsC" Value="off" />
+    <Parameter ID="DisIrmsA" Value="off" />
+    <Parameter ID="DisIrmsB" Value="off" />
+    <Parameter ID="DisIrmsC" Value="off" />
+    <Parameter ID="DisIrmsN" Value="off" />
+    <Parameter ID="DisFreqMeas" Value="off" />
+    <Parameter ID="DisPFmeanT" Value="on" />
+    <Parameter ID="DisPmeanT" Value="on" />
+    <Parameter ID="DisQmeanT" Value="on" />
+    <Parameter ID="DisSmeanT" Value="on" />
+    <Parameter ID="DisAcEnT" Value="on" />
+    <Parameter ID="DisReacEnT" Value="on" />
+    <Parameter ID="DisAppEnT" Value="on" />
+    <Parameter ID="DisAppEnTvec" Value="off" />
+    <Parameter ID="DisSelSysStat" Value="bits" />
+    <Parameter ID="FlatStreamActivate" Value="off" />
+  </Module>
+  <Module ID="IF6.ST4" Hardware="X20DI8371">
+    <Parameter ID="HardwareModuleName" Value="X20DI8371" />
+  </Module>
+  <Module ID="IF6.ST4.IO" Hardware="X20DI8371">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="DigitalInputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST5" Hardware="X20DI4372">
+    <Parameter ID="HardwareModuleName" Value="X20DI4372" />
+  </Module>
+  <Module ID="IF6.ST5.IO" Hardware="X20DI4372">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="DigitalInputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST6" Hardware="X20DO8331">
+    <Parameter ID="HardwareModuleName" Value="X20DO8331" />
+  </Module>
+  <Module ID="IF6.ST6.IO" Hardware="X20DO8331">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="PowerSupply01" Value="off" />
+    <Parameter ID="DigitalOutputsPacked" Value="off" />
+  </Module>
+  <Module ID="IF6.ST7" Hardware="X20DO6322">
+    <Parameter ID="HardwareModuleName" Value="X20DO6322" />
+  </Module>
+  <Module ID="IF6.ST7.IO" Hardware="X20DO6322">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="StatusInfo" Value="on" />
+    <Parameter ID="DigitalOutputsPacked" Value="off" />
+  </Module>
+</IOCFG>

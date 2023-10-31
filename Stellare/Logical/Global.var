@@ -1,0 +1,12 @@
+(*Definitions for main components of the coffee machine*)
+VAR
+	Ricetta : typ_ricetta := (0);
+	MpReportCore_0 : MpReportCore := (0); (*Core variable for MpReport*)
+	t_ok : BOOL := FALSE;
+	CTU_1 : CTU := (0);
+	StartGenerate : BOOL := 0; (*variable for interaction with Visualization*)
+	gClearAlarm : BOOL := FALSE; (*Check if Alarm can be cleared*)
+	gCoffeeMainLogic : CoffeeMainLogicType; (*Control structure of main logic*)
+	gSetLanguage : STRING[80] := ''; (*Set the current language*)
+	contatore : typ_cont := (0);
+END_VAR

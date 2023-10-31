@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="RecordingStarted" />
+        <Property ID="Message" Value="{$mappDemo/MpDataUserAlarm}" />
+        <Property ID="Code" Value="2501" />
+        <Selector ID="Behavior" Value="UserDefined">
+          <Property ID="AutoReset" Value="TRUE" />
+          <Property ID="Acknowledge" Value="0" />
+          <Group ID="Recording">
+            <Property ID="ActiveToInactive" Value="FALSE" />
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="WaterEmpty" />
+        <Property ID="Message" Value="{$IAT/AlarmWater}" />
+        <Property ID="Code" Value="2503" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::MainContro:Refill.Water" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="1" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="AdditionalInformation1" Value="WaterEmpty" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="CoffeeEmpty" />
+        <Property ID="Message" Value="{$IAT/AlarmCoffee}" />
+        <Property ID="Code" Value="2504" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::MainContro:Refill.Coffee" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="1" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="AdditionalInformation1" Value="CoffeeEmpty" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="MilkEmpty" />
+        <Property ID="Message" Value="{$IAT/AlarmMilk}" />
+        <Property ID="Code" Value="2505" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::MainContro:Refill.Milk" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="1" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="AdditionalInformation1" Value="MilkEmpty" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="SugarEmpty" />
+        <Property ID="Message" Value="{$IAT/AlarmSugar}" />
+        <Property ID="Code" Value="2506" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::MainContro:Refill.Sugar" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="1" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="AdditionalInformation1" Value="SugarEmpty" />
+      </Group>
+    </Group>
+    <Group ID="mapp.AlarmX.Core.Snippets">
+      <Group ID="[0]">
+        <Property ID="Key" Value="CurrentTemp" />
+        <Selector ID="Value">
+          <Property ID="PV" Value="::WaterHeate:WaterHeaterUIConnect.actTemperature" />
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

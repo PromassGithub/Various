@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SnippetsSet id="ErrorNumberSnippets" xmlns="http://www.br-automation.com/iat2015/snippet/engineering/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Snippets>
+		<Snippet id="UserXManagerError" xsi:type="session" type="String" />
+		<Snippet xsi:type="session" id="UserXLoginErrorSnippet" type="Numeric" formatItem="{#::UserH:MpUserXLoginUIConnect.MessageBox.ErrorNumber}" />
+		<Snippet id="AuditError" xsi:type="session" type="Numeric" formatItem="{1|+}" />
+		<Snippet id="UserXLoginErrorTextSnippet" xsi:type="session" type="IndexText" formatItem="Status.{#::UserH:MpUserXLoginUIConnect.MessageBox.ErrorNumber}" />
+  </Snippets>
+</SnippetsSet>

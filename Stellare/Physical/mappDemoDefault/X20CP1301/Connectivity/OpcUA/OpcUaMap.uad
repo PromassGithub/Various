@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="3">
+  <DefaultView>
+    <ACL>
+      <ACE Role="Everyone" Write="True" />
+      <ACE Role="Operators" Write="True" />
+      <ACE Role="Supervisor" Write="True" />
+      <ACE Role="Administrators" Write="True" />
+    </ACL>
+    <Module>
+      <GlobalVariables Name="Global PV">
+        <Variable Name="contatore" Enable="True">
+          <Variable Name="S_stellare" Enable="True" />
+          <Variable Name="giri_parziali" Enable="True" />
+          <Variable Name="giri_totali" Enable="True" />
+          <Variable Name="giri_instant" Enable="True" />
+          <Variable Name="frequenza" Enable="True" />
+        </Variable>
+        <Variable Name="gCoffeeMainLogic" Enable="True">
+          <Variable Name="AxisCupFeeder" Enable="True">
+            <Variable Name="Position" Enable="True">
+              <Property BrowseName="0:EngineeringUnits">
+                <Value>
+                  <Description>
+                    <Text>millimetre</Text>
+                  </Description>
+                  <DisplayName>
+                    <Text>mm</Text>
+                  </DisplayName>
+                  <UnitId>5066068</UnitId>
+                  <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                </Value>
+              </Property>
+            </Variable>
+          </Variable>
+          <Variable Name="AxisTakeout" Enable="True">
+            <Variable Name="Position" Enable="True">
+              <Property BrowseName="0:EngineeringUnits">
+                <Value>
+                  <Description>
+                    <Text>millimetre</Text>
+                  </Description>
+                  <DisplayName>
+                    <Text>mm</Text>
+                  </DisplayName>
+                  <UnitId>5066068</UnitId>
+                  <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                </Value>
+              </Property>
+            </Variable>
+          </Variable>
+          <Variable Name="cmdClear" Enable="True" />
+          <Variable Name="cmdStart" Enable="True" />
+          <Variable Name="cmdTakeout" Enable="True" />
+          <Variable Name="IdleState" Enable="True" />
+        </Variable>
+        <Variable Name="StartGenerate" Enable="True" />
+      </GlobalVariables>
+      <Task Name="Alarm" Enable="True">
+        <Variable Name="AlarmButton" Enable="True" />
+        <Variable Name="AlarmInfo" Enable="True" />
+        <Variable Name="AlarmVideo" Enable="True" />
+        <Variable Name="ChangeStyleAlarmButton" Enable="True" />
+        <Variable Name="FilterConfiguration" Enable="True" />
+        <Variable Name="HistoryFilter" Enable="True" />
+        <Variable Name="HistorySort" Enable="True" />
+        <Variable Name="MpAlarmXHistory_0" Enable="True">
+          <Variable Name="Export" Enable="True" />
+        </Variable>
+        <Variable Name="MpAlarmXListUIConnect" Enable="True">
+          <Variable Name="AlarmList" Enable="True">
+            <Variable Name="Message" Enable="True" EnableArrayElements="True" />
+            <Variable Name="StateActive" Enable="True" EnableArrayElements="True" />
+            <Variable Name="StateAcknowledged" Enable="True" EnableArrayElements="True" />
+            <Variable Name="PageUp" Enable="True" />
+            <Variable Name="PageDown" Enable="True" />
+            <Variable Name="StepUp" Enable="True" />
+            <Variable Name="StepDown" Enable="True" />
+          </Variable>
+          <Variable Name="Acknowledge" Enable="True" />
+          <Variable Name="AcknowledgeAll" Enable="True" />
+        </Variable>
+        <Variable Name="SortConfiguration" Enable="True" />
+      </Task>
+      <Task Name="WaterHeate" Enable="True">
+        <Variable Name="WaterHeaterUIConnect" Enable="True">
+          <Variable Name="actTemperature" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>degree Celsius</Text>
+                </Description>
+                <DisplayName>
+                  <Text>°C</Text>
+                </DisplayName>
+                <UnitId>4408652</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="visShowCooling" Enable="True" />
+          <Variable Name="visShowHeating" Enable="True" />
+        </Variable>
+        <Variable Name="WaterTemp" Enable="True">
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">0</Low>
+              <High ValueProvider="Const">100</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>degree Celsius</Text>
+              </Description>
+              <DisplayName>
+                <Text>°C</Text>
+              </DisplayName>
+              <UnitId>4408652</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+      </Task>
+      <Task Name="MainContro" Enable="True">
+        <Variable Name="MainCoffeeUIConnect" Enable="True">
+          <Variable Name="visShowMainBrewing" Enable="True" />
+          <Variable Name="visShowMainRecipe" Enable="True" />
+          <Variable Name="visShowButtonClear" Enable="True" />
+          <Variable Name="visShowButtonStart" Enable="True" />
+          <Variable Name="visCupSlider" Enable="True" />
+          <Variable Name="visWaterLevel" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="visShowClearButton" Enable="True" />
+          <Variable Name="visShowButtonTakeout" Enable="True" />
+          <Variable Name="visMilkLevel" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="visSugarLevel" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="visShowRecipeSelection" Enable="True" />
+          <Variable Name="visCoffeeLevel" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">100</High>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="visShowMinusSugar" Enable="True" />
+          <Variable Name="visShowPlusSugar" Enable="True" />
+          <Variable Name="visContinueButton" Enable="True" />
+          <Variable Name="visStartCoffee" Enable="True" />
+        </Variable>
+        <Variable Name="Refill" Enable="True">
+          <Variable Name="Milk" Enable="True" />
+          <Variable Name="Sugar" Enable="True" />
+          <Variable Name="Coffee" Enable="True" />
+          <Variable Name="Water" Enable="True" />
+        </Variable>
+        <Variable Name="Transform" Enable="True" />
+        <Variable Name="TransformTime" Enable="True" />
+        <Variable Name="TransitionTime" Enable="True" />
+      </Task>
+      <Task Name="PackML" Enable="True">
+        <Variable Name="MpPackMLBasicUIConnect" Enable="True">
+          <Variable Name="StateControl" Enable="True">
+            <Variable Name="Start" Enable="True" />
+            <Variable Name="Stop" Enable="True" />
+            <Variable Name="Reset" Enable="True" />
+            <Variable Name="Hold" Enable="True" />
+            <Variable Name="Unhold" Enable="True" />
+            <Variable Name="Suspend" Enable="True" />
+            <Variable Name="Unsuspend" Enable="True" />
+            <Variable Name="Abort" Enable="True" />
+            <Variable Name="Clear" Enable="True" />
+            <Variable Name="StateComplete" Enable="True" />
+            <Variable Name="ColorIndex" Enable="True">
+              <Variable Name="Clearing" Enable="True" />
+              <Variable Name="Stopped" Enable="True" />
+              <Variable Name="Starting" Enable="True" />
+              <Variable Name="Idle" Enable="True" />
+              <Variable Name="Suspended" Enable="True" />
+              <Variable Name="Execute" Enable="True" />
+              <Variable Name="Stopping" Enable="True" />
+              <Variable Name="Aborting" Enable="True" />
+              <Variable Name="Aborted" Enable="True" />
+              <Variable Name="Holding" Enable="True" />
+              <Variable Name="Held" Enable="True" />
+              <Variable Name="Unholding" Enable="True" />
+              <Variable Name="Suspending" Enable="True" />
+              <Variable Name="Unsuspending" Enable="True" />
+              <Variable Name="Resetting" Enable="True" />
+              <Variable Name="Completing" Enable="True" />
+              <Variable Name="Complete" Enable="True" />
+            </Variable>
+          </Variable>
+          <Variable Name="ModeControl" Enable="True">
+            <Variable Name="SelectedIndex" Enable="True" />
+            <Variable Name="Activate" Enable="True" />
+          </Variable>
+          <Variable Name="ModeCurrent" Enable="True" />
+          <Variable Name="StateCurrent" Enable="True" />
+        </Variable>
+        <Variable Name="MpPackMLMode_0" Enable="True">
+          <Variable Name="Info" Enable="True">
+            <Variable Name="StateCurrent" Enable="True" />
+          </Variable>
+        </Variable>
+        <Variable Name="MpPackMLStatisticsUIConnect" Enable="True">
+          <Variable Name="States" Enable="True">
+            <Variable Name="Clearing" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Stopped" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Starting" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Idle" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Suspended" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Execute" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Stopping" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Aborting" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Aborted" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Holding" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Held" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Unholding" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Suspending" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Unsuspending" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Resetting" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Completing" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Complete" Enable="True">
+              <Variable Name="CumulativeTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+              <Variable Name="CumulativePercent" Enable="True" />
+              <Variable Name="CurrentTime" Enable="True">
+                <Variable Name="Hours" Enable="True" />
+                <Variable Name="Minutes" Enable="True" />
+                <Variable Name="Seconds" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="ResetTimers" Enable="True" />
+          </Variable>
+          <Variable Name="Mode" Enable="True">
+            <Variable Name="CumulativeTime" Enable="True">
+              <Variable Name="Hours" Enable="True" />
+              <Variable Name="Minutes" Enable="True" />
+              <Variable Name="Seconds" Enable="True" />
+            </Variable>
+            <Variable Name="CumulativePercent" Enable="True" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="ConveyorSi" Enable="True">
+        <Variable Name="ActivePowerCupFeeder" Enable="True" />
+        <Variable Name="ActivePowerTakeout" Enable="True" />
+      </Task>
+      <Task Name="Sequence" Enable="True">
+        <Variable Name="EditSequence" Enable="True" />
+        <Variable Name="SavePressed" Enable="True" />
+        <Variable Name="SequenceStart" Enable="True" />
+        <Variable Name="Transform" Enable="True" />
+      </Task>
+      <Task Name="IO" Enable="True">
+        <Variable Name="ActiveConfiguration" Enable="True" />
+        <Variable Name="FileName" Enable="True" />
+        <Variable Name="MpIOImport_0" Enable="True">
+          <Variable Name="Import" Enable="True" />
+        </Variable>
+        <Variable Name="MpIOImportUIConnect" Enable="True">
+          <Variable Name="FileList" Enable="True">
+            <Variable Name="Names" Enable="True" EnableArrayElements="True" />
+            <Variable Name="Scroll" Enable="True">
+              <Variable Name="SelectedIndex" Enable="True" />
+            </Variable>
+          </Variable>
+          <Variable Name="MessageBox" Enable="True">
+            <Variable Name="Confirm" Enable="True" />
+            <Variable Name="Cancel" Enable="True" />
+          </Variable>
+          <Variable Name="Import" Enable="True" />
+        </Variable>
+      </Task>
+      <Task Name="Report" Enable="True">
+        <Variable Name="DeleteReport" Enable="True" />
+        <Variable Name="DisplayFileName" Enable="True" />
+        <Variable Name="DisplayFileNameIndex" Enable="True" />
+        <Variable Name="EnableDelete" Enable="True" />
+        <Variable Name="EnableGenerate" Enable="True" />
+        <Variable Name="LanguageSelect_0" Enable="True">
+          <Variable Name="SelectedIndex" Enable="True" />
+        </Variable>
+        <Variable Name="MpFileManagerUIConnect" Enable="True">
+          <Variable Name="File" Enable="True">
+            <Variable Name="List" Enable="True">
+              <Variable Name="PageUp" Enable="True" />
+              <Variable Name="StepUp" Enable="True" />
+              <Variable Name="PageDown" Enable="True" />
+              <Variable Name="StepDown" Enable="True" />
+            </Variable>
+          </Variable>
+        </Variable>
+        <Variable Name="StrSelectedFile" Enable="True" />
+      </Task>
+      <Task Name="File" Enable="True">
+        <Variable Name="MpFileManagerUIConnect" Enable="True">
+          <Variable Name="DeviceList" Enable="True">
+            <Variable Name="DeviceNames" Enable="True" />
+            <Variable Name="SelectedIndex" Enable="True" />
+          </Variable>
+          <Variable Name="File" Enable="True">
+            <Variable Name="List" Enable="True">
+              <Variable Name="Items" Enable="True" EnableArrayElements="True" />
+              <Variable Name="PageUp" Enable="True" />
+              <Variable Name="StepUp" Enable="True" />
+              <Variable Name="PageDown" Enable="True" />
+              <Variable Name="StepDown" Enable="True" />
+            </Variable>
+            <Variable Name="Filter" Enable="True" />
+            <Variable Name="SortOrder" Enable="True" />
+            <Variable Name="Refresh" Enable="True" />
+            <Variable Name="PathInfo" Enable="True">
+              <Variable Name="CurrentDir" Enable="True" />
+              <Variable Name="FileCount" Enable="True" />
+              <Variable Name="FolderCount" Enable="True" />
+            </Variable>
+            <Variable Name="EnterFolder" Enable="True" />
+            <Variable Name="FolderUp" Enable="True" />
+            <Variable Name="MultiSelect" Enable="True" />
+            <Variable Name="Delete" Enable="True" />
+            <Variable Name="Copy" Enable="True" />
+            <Variable Name="Cut" Enable="True" />
+            <Variable Name="Paste" Enable="True" />
+            <Variable Name="NewName" Enable="True" />
+            <Variable Name="Rename" Enable="True" />
+            <Variable Name="CreateFolder" Enable="True" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="Audit" Enable="True">
+        <Variable Name="FilterConfiguration" Enable="True" />
+        <Variable Name="MpAuditTrailUIConnect" Enable="True">
+          <Variable Name="Output" Enable="True">
+            <Variable Name="EventID" Enable="True" />
+            <Variable Name="EventText" Enable="True" />
+            <Variable Name="PageUp" Enable="True" />
+            <Variable Name="StepUp" Enable="True" />
+            <Variable Name="StepDown" Enable="True" />
+            <Variable Name="PageDown" Enable="True" />
+          </Variable>
+          <Variable Name="Filter" Enable="True">
+            <Variable Name="ShowDialog" Enable="True" />
+            <Variable Name="Dialog" Enable="True">
+              <Variable Name="From" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Year" Enable="True" />
+                <Variable Name="Month" Enable="True" />
+                <Variable Name="Day" Enable="True" />
+                <Variable Name="Hour" Enable="True" />
+                <Variable Name="Minute" Enable="True" />
+              </Variable>
+              <Variable Name="Until" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Year" Enable="True" />
+                <Variable Name="Month" Enable="True" />
+                <Variable Name="Day" Enable="True" />
+                <Variable Name="Hour" Enable="True" />
+                <Variable Name="Minute" Enable="True" />
+              </Variable>
+              <Variable Name="Event" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Exclude" Enable="True" />
+                <Variable Name="Event" Enable="True" EnableArrayElements="True" />
+              </Variable>
+              <Variable Name="Operator" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Exclude" Enable="True" />
+                <Variable Name="Name" Enable="True" />
+              </Variable>
+              <Variable Name="Confirm" Enable="True" />
+              <Variable Name="Cancel" Enable="True" />
+              <Variable Name="Pattern" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Exclude" Enable="True" />
+                <Variable Name="Compare" Enable="True" />
+              </Variable>
+              <Variable Name="Batch" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Name" Enable="True" />
+              </Variable>
+            </Variable>
+            <Variable Name="Current" Enable="True">
+              <Variable Name="From" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="DateTime" Enable="True" />
+              </Variable>
+              <Variable Name="Until" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="DateTime" Enable="True" />
+              </Variable>
+              <Variable Name="Event" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Exclude" Enable="True" />
+                <Variable Name="Event" Enable="True" EnableArrayElements="True" />
+              </Variable>
+              <Variable Name="Operator" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Exclude" Enable="True" />
+                <Variable Name="Name" Enable="True" />
+              </Variable>
+              <Variable Name="Pattern" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Exclude" Enable="True" />
+                <Variable Name="Compare" Enable="True" />
+              </Variable>
+              <Variable Name="Batch" Enable="True">
+                <Variable Name="Enable" Enable="True" />
+                <Variable Name="Name" Enable="True" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="Export" Enable="True" />
+          <Variable Name="MessageBox" Enable="True">
+            <Variable Name="Type" Enable="True" />
+            <Variable Name="ErrorNumber" Enable="True" />
+            <Variable Name="Confirm" Enable="True" />
+            <Variable Name="Cancel" Enable="True" />
+          </Variable>
+        </Variable>
+        <Variable Name="SortConfiguraiton" Enable="True" />
+      </Task>
+      <Task Name="UserH" Enable="True">
+        <Variable Name="DeleteTextInput" Enable="True" />
+        <Variable Name="LoginAsDefault" Enable="True" />
+        <Variable Name="MappViewLogout" Enable="True" />
+        <Variable Name="MpUserXLogin_0" Enable="True">
+          <Variable Name="CurrentUser" Enable="True" />
+        </Variable>
+        <Variable Name="MpUserXLoginUIConnect" Enable="True">
+          <Variable Name="Login" Enable="True">
+            <Variable Name="Login" Enable="True" />
+            <Variable Name="Logout" Enable="True" />
+            <Variable Name="UserName" Enable="True" />
+            <Variable Name="Password" Enable="True" />
+          </Variable>
+          <Variable Name="ChangePassword" Enable="True">
+            <Variable Name="Dialog" Enable="True">
+              <Variable Name="OldPassword" Enable="True" />
+              <Variable Name="NewPassword" Enable="True" />
+              <Variable Name="ConfirmPassword" Enable="True" />
+              <Variable Name="Confirm" Enable="True" />
+              <Variable Name="Cancel" Enable="True" />
+              <Variable Name="NewPasswordOk" Enable="True" />
+              <Variable Name="ConfirmPasswordOk" Enable="True" />
+            </Variable>
+          </Variable>
+          <Variable Name="MessageBox" Enable="True">
+            <Variable Name="Type" Enable="True" />
+            <Variable Name="ErrorNumber" Enable="True" />
+            <Variable Name="Confirm" Enable="True" />
+            <Variable Name="Cancel" Enable="True" />
+          </Variable>
+        </Variable>
+        <Variable Name="MpUserXManagerUIConnect" Enable="True">
+          <Variable Name="User" Enable="True">
+            <Variable Name="List" Enable="True">
+              <Variable Name="UserNames" Enable="True" EnableArrayElements="True" />
+              <Variable Name="UserOptions" Enable="True" />
+              <Variable Name="SelectedIndex" Enable="True" />
+              <Variable Name="PageUp" Enable="True" />
+              <Variable Name="StepUp" Enable="True" />
+              <Variable Name="PageDown" Enable="True" />
+              <Variable Name="StepDown" Enable="True" />
+            </Variable>
+            <Variable Name="Info" Enable="True">
+              <Variable Name="UserName" Enable="True" />
+              <Variable Name="FullName" Enable="True" />
+              <Variable Name="Roles" Enable="True" EnableArrayElements="True" />
+              <Variable Name="Locked" Enable="True" />
+              <Variable Name="RemainingAttempts" Enable="True" />
+              <Variable Name="Language" Enable="True" />
+              <Variable Name="Creation" Enable="True" />
+              <Variable Name="FirstLogin" Enable="True" />
+              <Variable Name="LastLogin" Enable="True" />
+            </Variable>
+            <Variable Name="Lock" Enable="True" />
+          </Variable>
+          <Variable Name="Role" Enable="True">
+            <Variable Name="List" Enable="True">
+              <Variable Name="Names" Enable="True" EnableArrayElements="True" />
+              <Variable Name="SelectedIndex" Enable="True" />
+              <Variable Name="PageUp" Enable="True" />
+              <Variable Name="StepUp" Enable="True" />
+              <Variable Name="PageDown" Enable="True" />
+              <Variable Name="StepDown" Enable="True" />
+            </Variable>
+            <Variable Name="Info" Enable="True">
+              <Variable Name="Name" Enable="True" />
+              <Variable Name="Level" Enable="True" />
+              <Variable Name="Admin" Enable="True" />
+              <Variable Name="AccessRights" Enable="True" EnableArrayElements="True" />
+            </Variable>
+          </Variable>
+          <Variable Name="MessageBox" Enable="True">
+            <Variable Name="Type" Enable="True" />
+            <Variable Name="ErrorNumber" Enable="True" />
+            <Variable Name="Confirm" Enable="True" />
+            <Variable Name="Cancel" Enable="True" />
+          </Variable>
+        </Variable>
+        <Variable Name="Role" Enable="True" />
+        <Variable Name="ShowErrorLoginDialog" Enable="True" />
+      </Task>
+      <Task Name="Recipe" Enable="True">
+        <Variable Name="_Coffee" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>gram</Text>
+              </Description>
+              <DisplayName>
+                <Text>g</Text>
+              </DisplayName>
+              <UnitId>4674125</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="_Milk" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millilitre</Text>
+              </Description>
+              <DisplayName>
+                <Text>ml</Text>
+              </DisplayName>
+              <UnitId>5065812</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="_Sugar" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>gram</Text>
+              </Description>
+              <DisplayName>
+                <Text>g</Text>
+              </DisplayName>
+              <UnitId>4674125</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="_Water" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>millilitre</Text>
+              </Description>
+              <DisplayName>
+                <Text>ml</Text>
+              </DisplayName>
+              <UnitId>5065812</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+        <Variable Name="CoffeeIngredients" Enable="True">
+          <Variable Name="Milk" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">300</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millilitre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>ml</Text>
+                </DisplayName>
+                <UnitId>5065812</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Water" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">300</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>millilitre</Text>
+                </Description>
+                <DisplayName>
+                  <Text>ml</Text>
+                </DisplayName>
+                <UnitId>5065812</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Sugar" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">300</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>gram</Text>
+                </Description>
+                <DisplayName>
+                  <Text>g</Text>
+                </DisplayName>
+                <UnitId>4674125</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+          <Variable Name="Coffee" Enable="True">
+            <Property BrowseName="0:EURange">
+              <Value>
+                <Low ValueProvider="Const">0</Low>
+                <High ValueProvider="Const">200</High>
+              </Value>
+            </Property>
+            <Property BrowseName="0:EngineeringUnits">
+              <Value>
+                <Description>
+                  <Text>gram</Text>
+                </Description>
+                <DisplayName>
+                  <Text>g</Text>
+                </DisplayName>
+                <UnitId>4674125</UnitId>
+                <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+              </Value>
+            </Property>
+          </Variable>
+        </Variable>
+        <Variable Name="MpRecipeUIConnect" Enable="True">
+          <Variable Name="Recipe" Enable="True">
+            <Variable Name="List" Enable="True">
+              <Variable Name="Names" Enable="True" EnableArrayElements="True" />
+              <Variable Name="SelectedIndex" Enable="True" />
+              <Variable Name="PageUp" Enable="True" />
+              <Variable Name="PageDown" Enable="True" />
+              <Variable Name="StepUp" Enable="True" />
+              <Variable Name="StepDown" Enable="True" />
+              <Variable Name="Sizes" Enable="True" />
+              <Variable Name="LastModified" Enable="True" />
+            </Variable>
+            <Variable Name="Load" Enable="True" />
+            <Variable Name="Save" Enable="True" />
+            <Variable Name="Filter" Enable="True" />
+            <Variable Name="SortOrder" Enable="True" />
+            <Variable Name="Refresh" Enable="True" />
+            <Variable Name="Delete" Enable="True" />
+            <Variable Name="Rename" Enable="True" />
+            <Variable Name="NewFileName" Enable="True" />
+          </Variable>
+          <Variable Name="New" Enable="True">
+            <Variable Name="FileName" Enable="True" />
+            <Variable Name="Create" Enable="True" />
+          </Variable>
+          <Variable Name="MessageBox" Enable="True">
+            <Variable Name="Confirm" Enable="True" />
+            <Variable Name="Cancel" Enable="True" />
+          </Variable>
+        </Variable>
+        <Variable Name="MpRecipeXml_0" Enable="True">
+          <Variable Name="Info" Enable="True">
+            <Variable Name="LastLoadedRecipe" Enable="True" />
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="Energy" Enable="True">
+        <Variable Name="MpEnergyUIConnect" Enable="True">
+          <Variable Name="ShowTemporaryRecord" Enable="True" />
+          <Variable Name="ModuleList" Enable="True">
+            <Variable Name="SelectedIndex" Enable="True" />
+            <Variable Name="PageUp" Enable="True" />
+            <Variable Name="PageDown" Enable="True" />
+            <Variable Name="StepUp" Enable="True" />
+            <Variable Name="StepDown" Enable="True" />
+            <Variable Name="Names" Enable="True" />
+            <Variable Name="ForwardActiveEnergy" Enable="True" EnableArrayElements="True">
+              <Variable Name="ForwardActiveEnergy[0]">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="ForwardActiveEnergy[1]">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="ForwardActiveEnergy[2]">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="ForwardActiveEnergy[3]">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+            </Variable>
+            <Variable Name="ReverseActiveEnergy" Enable="True" EnableArrayElements="True" />
+          </Variable>
+          <Variable Name="SelectedModule" Enable="True">
+            <Variable Name="CombinedEnergyChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="ForwardEnergyChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="ReverseEnergyChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="Details" Enable="True">
+              <Variable Name="ActivePower" Enable="True">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="ReactivePower" Enable="True">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="PeakActivePower" Enable="True">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="PeakReactivePower" Enable="True">
+                <Property BrowseName="0:EngineeringUnits">
+                  <Value>
+                    <Description>
+                      <Text>kilowatt</Text>
+                    </Description>
+                    <DisplayName>
+                      <Text>kW</Text>
+                    </DisplayName>
+                    <UnitId>4937556</UnitId>
+                    <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                  </Value>
+                </Property>
+              </Variable>
+              <Variable Name="PowerFactor" Enable="True" />
+            </Variable>
+          </Variable>
+          <Variable Name="OverallDetails" Enable="True">
+            <Variable Name="ActivePower" Enable="True">
+              <Property BrowseName="0:EngineeringUnits">
+                <Value>
+                  <Description>
+                    <Text>kilowatt</Text>
+                  </Description>
+                  <DisplayName>
+                    <Text>kW</Text>
+                  </DisplayName>
+                  <UnitId>4937556</UnitId>
+                  <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                </Value>
+              </Property>
+            </Variable>
+            <Variable Name="ReactivePower" Enable="True">
+              <Property BrowseName="0:EngineeringUnits">
+                <Value>
+                  <Description>
+                    <Text>kilowatt</Text>
+                  </Description>
+                  <DisplayName>
+                    <Text>kW</Text>
+                  </DisplayName>
+                  <UnitId>4937556</UnitId>
+                  <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                </Value>
+              </Property>
+            </Variable>
+            <Variable Name="PeakActivePower" Enable="True">
+              <Property BrowseName="0:EngineeringUnits">
+                <Value>
+                  <Description>
+                    <Text>kilowatt</Text>
+                  </Description>
+                  <DisplayName>
+                    <Text>kW</Text>
+                  </DisplayName>
+                  <UnitId>4937556</UnitId>
+                  <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                </Value>
+              </Property>
+            </Variable>
+            <Variable Name="PowerFactor" Enable="True" />
+            <Variable Name="PeakReactivePower" Enable="True">
+              <Property BrowseName="0:EngineeringUnits">
+                <Value>
+                  <Description>
+                    <Text>kilowatt</Text>
+                  </Description>
+                  <DisplayName>
+                    <Text>kW</Text>
+                  </DisplayName>
+                  <UnitId>4937556</UnitId>
+                  <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                </Value>
+              </Property>
+            </Variable>
+          </Variable>
+          <Variable Name="OverallCharts" Enable="True">
+            <Variable Name="CombinedEnergyChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="ForwardEnergyChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="ReverseEnergyChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="ForwardActiveEnergyByModuleChart" Enable="True">
+              <Variable Name="Data" Enable="True" EnableArrayElements="True" />
+              <Variable Name="ModuleNames" Enable="True" />
+            </Variable>
+          </Variable>
+        </Variable>
+      </Task>
+      <Task Name="CodeBox" Enable="True">
+        <Variable Name="CodeBoxTransform" Enable="True" />
+        <Variable Name="Cup" Enable="True" AutomaticEnable="True" />
+        <Variable Name="Lamp" Enable="True" AutomaticEnable="True" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

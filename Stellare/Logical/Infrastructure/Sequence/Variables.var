@@ -1,0 +1,10 @@
+VAR
+	Transform : STRING[1000] := '0';
+	Timer : TONType := (0);
+	SequenceStart : BOOL := 0;
+	SavePressed : BOOL := FALSE;
+	ParametersCore : MpSequenceCoreParType; (*Parameters for Core function block*)
+	MpSequenceCore_0 : MpSequenceCore; (*Inizialize SequencCore function block*)
+	EditSequence : BOOL := 0;
+	CmdSeq : SequencerCommandType := (0); (*commandstructure for movement command Coffee*)
+END_VAR

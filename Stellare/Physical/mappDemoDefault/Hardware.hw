@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.3.144 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20CP1301" Type="X20CP1301" Version="1.7.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF1">
+      <Parameter ID="ActivateIna" Value="0" />
+    </Connector>
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.1.38" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Parameter ID="InaNodeNumber" Value="0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+      <Parameter ID="VncMaxConnections1" Value="2" />
+      <Parameter ID="VncRefreshRate1" Value="200" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="mappDemo_CI_Master" />
+    <Parameter ID="UserPartitionSize" Value="20" />
+    <Parameter ID="AutomaticTransferOfUserfiles" Value="on" />
+    <Parameter ID="RemanentGlobalPvSize" Value="8192" />
+    <Parameter ID="VolatileGlobalPvSize" Value="500000" />
+    <Parameter ID="CyclicObjects" Value="300" />
+    <Parameter ID="BRObjects" Value="500" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="HD" />
+    <Parameter ID="FileDevicePath1" Value="C:\" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="mappDir" />
+    <Parameter ID="FileDevicePath2" Value="C:\mappDemo\CSV" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="mappReport" />
+    <Parameter ID="FileDevicePath3" Value="C:\mappDemo\Reports\" />
+    <Group ID="FileDevice4" />
+    <Parameter ID="FileDeviceName4" Value="mappIO" />
+    <Parameter ID="FileDevicePath4" Value="C:\mappDemo\UserFiles\IO" />
+    <Group ID="FileDevice5" />
+    <Parameter ID="FileDeviceName5" Value="mappIOBackup" />
+    <Parameter ID="FileDevicePath5" Value="C:\mappDemo\UserFiles\IO\Backup" />
+    <Group ID="FileDevice6" />
+    <Parameter ID="FileDeviceName6" Value="mappSequence" />
+    <Parameter ID="FileDevicePath6" Value="C:\mappDemo\UserFiles\Sequence" />
+    <Group ID="FileDevice7" />
+    <Parameter ID="FileDeviceName7" Value="mappCodeBox" />
+    <Parameter ID="FileDevicePath7" Value="C:\mappDemo\UserFiles\CodeBox" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="Promass" />
+    <Parameter ID="FtpUserPassword1" Value="NpCmz0K6m8wsjK3Ky3NpfFf+z2PPu3ZJ9pj0GQJGS0g=" />
+    <Parameter ID="FtpUserSalt1" Value="EihsEguH" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>

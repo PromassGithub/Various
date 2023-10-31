@@ -1,0 +1,46 @@
+﻿@import "mixins.scss";
+#ContentImport_Label1 {
+	@include elemTop(40);
+}
+#ContentImport_Label1 {
+	@include elemLeft(60);
+}
+#ContentImport_Label1 {
+	@include elemAutoWidth(360);
+}
+#ContentImport_Label1 {
+	@include elemAutoHeight(100);
+}
+#ContentImport_Label1 {
+		z-index: 0;
+}
+#ContentImport_ImportConfig {
+	@include elemTop(160);
+}
+#ContentImport_ImportConfig {
+	@include elemLeft(120);
+}
+#ContentImport_ImportConfig {
+	@include elemAutoWidth(100);
+}
+#ContentImport_ImportConfig {
+	@include elemAutoHeight(30);
+}
+#ContentImport_ImportConfig {
+		z-index: 1;
+}
+#ContentImport_NoImportConfig {
+	@include elemTop(160);
+}
+#ContentImport_NoImportConfig {
+	@include elemLeft(240);
+}
+#ContentImport_NoImportConfig {
+	@include elemAutoWidth(100);
+}
+#ContentImport_NoImportConfig {
+	@include elemAutoHeight(30);
+}
+#ContentImport_NoImportConfig {
+		z-index: 2;
+}

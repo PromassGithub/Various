@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleInformation name="widgets.brease.OnlineChartGraph" xmlns="http://www.br-automation.com/iat2014/widgetStyles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
+	<StyleProperties>
+
+	    <StyleProperty name="intersectionPointColor" type="Color" category="Appearance" default="#FFBB88" deprecated="true">
+      <StyleElement idsuffix="_intersectionPoints" selector="circle.marker:not(.active):not(.disabled)" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_intersectionPoints" selector="circle.marker:not(.active):not(.disabled)" attribute="fill"></StyleElement>
+      <Description>
+        Color of the intersection point between the graph and a cursor when not active and not disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="activeIntersectionPointColor" type="Color" category="Appearance" default="#FF8800" deprecated="true">
+      <StyleElement idsuffix="_intersectionPoints" selector="circle.marker.active:not(.disabled)" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_intersectionPoints" selector="circle.marker.active:not(.disabled)" attribute="fill"></StyleElement>
+      <Description>
+        Color of the intersection point between the graph and a cursor when active and not disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledIntersectionPointColor" category="Appearance" type="Color" default="#EEEEEE" deprecated="true">
+      <StyleElement idsuffix="_intersectionPoints" selector="circle.marker.disabled" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_intersectionPoints" selector="circle.marker.disabled" attribute="fill"></StyleElement>
+      <Description>
+        Color of the intersection point between the graph and a cursor when disabled
+      </Description>
+    </StyleProperty>
+
+	</StyleProperties>
+</StyleInformation>
+	
+	
+

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="5.12.1" SubType="Binary" Description="LD/ST-code interpreter" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpCodeBox.var</File>
+    <File>MpCodeBox.typ</File>
+    <File>MpCodeBoxError.typ</File>
+    <File>MpCodeBoxAlarm.typ</File>
+    <File>MpCodeBox.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpBase" FromVersion="5.12.0" ToVersion="5.12.9" />
+    <Dependency ObjectName="standard" />
+    <Dependency ObjectName="FileIO" />
+    <Dependency ObjectName="AsArLog" />
+    <Dependency ObjectName="AsArProf" />
+    <Dependency ObjectName="AsMem" />
+    <Dependency ObjectName="astime" />
+    <Dependency ObjectName="DataObj" />
+    <Dependency ObjectName="sys_lib" />
+  </Dependencies>
+</Library>

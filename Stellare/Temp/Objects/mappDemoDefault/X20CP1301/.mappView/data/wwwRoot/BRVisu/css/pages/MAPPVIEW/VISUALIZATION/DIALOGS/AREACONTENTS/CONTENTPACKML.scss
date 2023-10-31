@@ -1,0 +1,650 @@
+﻿@import "mixins.scss";
+#ContentPackML_Image1 {
+	@include elemTop(20);
+}
+#ContentPackML_Image1 {
+	@include elemLeft(20);
+}
+#ContentPackML_Image1 {
+	@include elemAutoWidth(700);
+}
+#ContentPackML_Image1 {
+	@include elemAutoHeight(420);
+}
+#ContentPackML_Image1 {
+		z-index: 0;
+}
+#ContentPackML_lblExecute {
+	@include elemTop(142);
+}
+#ContentPackML_lblExecute {
+	@include elemLeft(317);
+}
+#ContentPackML_lblExecute {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblExecute {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblExecute {
+		z-index: 2;
+}
+#ContentPackML_lblExecute {
+	@include border-radius(5px);
+}
+#ContentPackML_lblExecute {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblExecute {
+		font-size: 13px;
+}
+#ContentPackML_lblExecute {
+	@include font-weight-bold(true);
+}
+#ContentPackML_Label16 {
+	@include elemTop(240);
+}
+#ContentPackML_Label16 {
+	@include elemLeft(1180);
+}
+#ContentPackML_Label16 {
+	@include elemAutoWidth(176);
+}
+#ContentPackML_Label16 {
+	@include elemAutoHeight(30);
+}
+#ContentPackML_Label16 {
+		z-index: 3;
+}
+#ContentPackML_Label16 {
+	& span{
+		color: rgba(0, 0, 0, 1);
+	}
+}
+#ContentPackML_Label16 {
+	@include text-alignment-all('center');
+}
+#ContentPackML_Label16 {
+		font-size: 13px;
+}
+#ContentPackML_Label16 {
+	@include font-weight-bold(true);
+}
+#ContentPackML_Label17 {
+	@include elemTop(440);
+}
+#ContentPackML_Label17 {
+	@include elemLeft(1180);
+}
+#ContentPackML_Label17 {
+	@include elemAutoWidth(176);
+}
+#ContentPackML_Label17 {
+	@include elemAutoHeight(40);
+}
+#ContentPackML_Label17 {
+		z-index: 4;
+}
+#ContentPackML_Label17 {
+	& span{
+		color: rgba(0, 0, 0, 1);
+	}
+}
+#ContentPackML_Label17 {
+	@include text-alignment-all('center');
+}
+#ContentPackML_Label17 {
+		font-size: 13px;
+}
+#ContentPackML_Label17 {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblStarting {
+	@include elemTop(142);
+}
+#ContentPackML_lblStarting {
+	@include elemLeft(186);
+}
+#ContentPackML_lblStarting {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblStarting {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblStarting {
+		z-index: 5;
+}
+#ContentPackML_lblStarting {
+	@include border-radius(5px);
+}
+#ContentPackML_lblStarting {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblStarting {
+		font-size: 13px;
+}
+#ContentPackML_lblStarting {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblIdle {
+	@include elemTop(142);
+}
+#ContentPackML_lblIdle {
+	@include elemLeft(54);
+}
+#ContentPackML_lblIdle {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblIdle {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblIdle {
+		z-index: 6;
+}
+#ContentPackML_lblIdle {
+	@include border-radius(5px);
+}
+#ContentPackML_lblIdle {
+		border-style: none;
+}
+#ContentPackML_lblIdle {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblIdle {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblIdle {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblIdle {
+		font-size: 13px;
+}
+#ContentPackML_lblIdle {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblCompleting {
+	@include elemTop(142);
+}
+#ContentPackML_lblCompleting {
+	@include elemLeft(449);
+}
+#ContentPackML_lblCompleting {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblCompleting {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblCompleting {
+		z-index: 7;
+}
+#ContentPackML_lblCompleting {
+	@include border-radius(5px);
+}
+#ContentPackML_lblCompleting {
+		border-style: none;
+}
+#ContentPackML_lblCompleting {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblCompleting {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblCompleting {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblCompleting {
+		font-size: 13px;
+}
+#ContentPackML_lblCompleting {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblComplete {
+	@include elemTop(142);
+}
+#ContentPackML_lblComplete {
+	@include elemLeft(580);
+}
+#ContentPackML_lblComplete {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblComplete {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblComplete {
+		z-index: 8;
+}
+#ContentPackML_lblComplete {
+	@include border-radius(5px);
+}
+#ContentPackML_lblComplete {
+		border-style: none;
+}
+#ContentPackML_lblComplete {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblComplete {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblComplete {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblComplete {
+		font-size: 13px;
+}
+#ContentPackML_lblComplete {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblSuspended {
+	@include elemTop(235);
+}
+#ContentPackML_lblSuspended {
+	@include elemLeft(317);
+}
+#ContentPackML_lblSuspended {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblSuspended {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblSuspended {
+		z-index: 9;
+}
+#ContentPackML_lblSuspended {
+	@include border-radius(5px);
+}
+#ContentPackML_lblSuspended {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblSuspended {
+		font-size: 13px;
+}
+#ContentPackML_lblSuspended {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblUnsuspending {
+	@include elemTop(235);
+}
+#ContentPackML_lblUnsuspending {
+	@include elemLeft(186);
+}
+#ContentPackML_lblUnsuspending {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblUnsuspending {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblUnsuspending {
+		z-index: 10;
+}
+#ContentPackML_lblUnsuspending {
+	@include border-radius(5px);
+}
+#ContentPackML_lblUnsuspending {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblUnsuspending {
+		font-size: 13px;
+}
+#ContentPackML_lblUnsuspending {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblResetting {
+	@include elemTop(235);
+}
+#ContentPackML_lblResetting {
+	@include elemLeft(54);
+}
+#ContentPackML_lblResetting {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblResetting {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblResetting {
+		z-index: 11;
+}
+#ContentPackML_lblResetting {
+	@include border-radius(5px);
+}
+#ContentPackML_lblResetting {
+		border-style: none;
+}
+#ContentPackML_lblResetting {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblResetting {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblResetting {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblResetting {
+		font-size: 13px;
+}
+#ContentPackML_lblResetting {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblSuspending {
+	@include elemTop(235);
+}
+#ContentPackML_lblSuspending {
+	@include elemLeft(449);
+}
+#ContentPackML_lblSuspending {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblSuspending {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblSuspending {
+		z-index: 12;
+}
+#ContentPackML_lblSuspending {
+	@include border-radius(5px);
+}
+#ContentPackML_lblSuspending {
+		border-style: none;
+}
+#ContentPackML_lblSuspending {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblSuspending {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblSuspending {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblSuspending {
+		font-size: 13px;
+}
+#ContentPackML_lblSuspending {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblClearing {
+	@include elemTop(351);
+}
+#ContentPackML_lblClearing {
+	@include elemLeft(317);
+}
+#ContentPackML_lblClearing {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblClearing {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblClearing {
+		z-index: 13;
+}
+#ContentPackML_lblClearing {
+	@include border-radius(5px);
+}
+#ContentPackML_lblClearing {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblClearing {
+		font-size: 13px;
+}
+#ContentPackML_lblClearing {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblStopping {
+	@include elemTop(351);
+}
+#ContentPackML_lblStopping {
+	@include elemLeft(186);
+}
+#ContentPackML_lblStopping {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblStopping {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblStopping {
+		z-index: 14;
+}
+#ContentPackML_lblStopping {
+	@include border-radius(5px);
+}
+#ContentPackML_lblStopping {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblStopping {
+		font-size: 13px;
+}
+#ContentPackML_lblStopping {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblStopped {
+	@include elemTop(351);
+}
+#ContentPackML_lblStopped {
+	@include elemLeft(54);
+}
+#ContentPackML_lblStopped {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblStopped {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblStopped {
+		z-index: 15;
+}
+#ContentPackML_lblStopped {
+	@include border-radius(5px);
+}
+#ContentPackML_lblStopped {
+		border-style: none;
+}
+#ContentPackML_lblStopped {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblStopped {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblStopped {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblStopped {
+		font-size: 13px;
+}
+#ContentPackML_lblStopped {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblAborted {
+	@include elemTop(351);
+}
+#ContentPackML_lblAborted {
+	@include elemLeft(449);
+}
+#ContentPackML_lblAborted {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblAborted {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblAborted {
+		z-index: 16;
+}
+#ContentPackML_lblAborted {
+	@include border-radius(5px);
+}
+#ContentPackML_lblAborted {
+		border-style: none;
+}
+#ContentPackML_lblAborted {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblAborted {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblAborted {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblAborted {
+		font-size: 13px;
+}
+#ContentPackML_lblAborted {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblAborting {
+	@include elemTop(351);
+}
+#ContentPackML_lblAborting {
+	@include elemLeft(581);
+}
+#ContentPackML_lblAborting {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblAborting {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblAborting {
+		z-index: 17;
+}
+#ContentPackML_lblAborting {
+	@include border-radius(5px);
+}
+#ContentPackML_lblAborting {
+		border-style: none;
+}
+#ContentPackML_lblAborting {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblAborting {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblAborting {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblAborting {
+		font-size: 13px;
+}
+#ContentPackML_lblAborting {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblHeld {
+	@include elemTop(50);
+}
+#ContentPackML_lblHeld {
+	@include elemLeft(317);
+}
+#ContentPackML_lblHeld {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblHeld {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblHeld {
+		z-index: 18;
+}
+#ContentPackML_lblHeld {
+	@include border-radius(5px);
+}
+#ContentPackML_lblHeld {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblHeld {
+		font-size: 13px;
+}
+#ContentPackML_lblHeld {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblHolding {
+	@include elemTop(50);
+}
+#ContentPackML_lblHolding {
+	@include elemLeft(186);
+}
+#ContentPackML_lblHolding {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblHolding {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblHolding {
+		z-index: 19;
+}
+#ContentPackML_lblHolding {
+	@include border-radius(5px);
+}
+#ContentPackML_lblHolding {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblHolding {
+		font-size: 13px;
+}
+#ContentPackML_lblHolding {
+	@include font-weight-bold(true);
+}
+#ContentPackML_lblUnholding {
+	@include elemTop(50);
+}
+#ContentPackML_lblUnholding {
+	@include elemLeft(448);
+}
+#ContentPackML_lblUnholding {
+	@include elemAutoWidth(100);
+}
+#ContentPackML_lblUnholding {
+	@include elemAutoHeight(58);
+}
+#ContentPackML_lblUnholding {
+		z-index: 20;
+}
+#ContentPackML_lblUnholding {
+	@include border-radius(5px);
+}
+#ContentPackML_lblUnholding {
+		border-style: none;
+}
+#ContentPackML_lblUnholding {
+	&:before{
+		border-style: none;
+	}
+}
+#ContentPackML_lblUnholding {
+	&:after{
+		border-style: none;
+	}
+}
+#ContentPackML_lblUnholding {
+	@include text-alignment-all('center');
+}
+#ContentPackML_lblUnholding {
+		font-size: 13px;
+}
+#ContentPackML_lblUnholding {
+	@include font-weight-bold(true);
+}

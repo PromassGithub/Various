@@ -1,0 +1,15 @@
+VAR
+	DtSetTime_1 : DTSetTime := (0);
+	DtGetTime_1 : DTGetTime := (0);
+	DT_2 : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	DT_0 : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	DT_attuale : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	DT_1 : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	tempo_attuale : UDINT := 0;
+	totale : UDINT := 0;
+	parziale : UDINT := 0;
+	bool_1 : BOOL := FALSE;
+	sim : BOOL := FALSE;
+	setta_orario : BOOL := FALSE;
+	conteggio : BOOL := FALSE;
+END_VAR

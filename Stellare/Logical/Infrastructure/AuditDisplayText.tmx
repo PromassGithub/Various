@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">AuditDisplayText</prop>
+  </header>
+  <body>
+    <tu tuid="DisplayRoot">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>{=$AuditText/{&amp;ev}} </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{=$AuditText/{&amp;ev}} </seg>
+      </tuv>
+    </tu>
+    <tu tuid="2">
+      <tuv xml:lang="de">
+        <seg> {=$AuditText/User/{&amp;act}} </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg> {=$AuditText/User/{&amp;act}}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="48">
+      <tuv xml:lang="de">
+        <seg> {=$AuditText/Recipe/{&amp;act}}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg> {=$AuditText/Recipe/{&amp;act}} </seg>
+      </tuv>
+    </tu>
+    <tu tuid="65">
+      <tuv xml:lang="de">
+        <seg>PackML Zustand: {&amp;ev} Alt: {&amp;old} Neu: {&amp;new}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PackML State: {&amp;ev} Old: {&amp;old} New: {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="33">
+      <tuv xml:lang="de">
+        <seg>Alarm: {&amp;name} Zeit: {&amp;time}, Alter Zustand: {&amp;stold}, Neuer Zustand:{&amp;stnew}" </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarm: {&amp;name} Old state: {&amp;stold}, New state:{&amp;stnew}" </seg>
+      </tuv>
+    </tu>
+    <tu tuid="64">
+      <tuv xml:lang="de">
+        <seg>PackML Modus: Alt: {&amp;old} Neu: {&amp;new}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PackML Mode: Old: {&amp;old} New: {&amp;new}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="16">
+      <tuv xml:lang="de">
+        <seg>Wert von '{=$AuditText/Value/{&amp;dpid}}' hat sich geändert. Alter Wert: {&amp;old|.2f} {&amp;old[UNIT=%s]}, Neuer Wert: {&amp;new|.2f} {&amp;new
+[UNIT=%s]}" </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Value of '{=$AuditText/Value/{&amp;dpid}}' changed. Old: {&amp;old|.2f} {&amp;old[UNIT=%s]}, New: {&amp;new|.2f} {&amp;new
+[UNIT=%s]}" </seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

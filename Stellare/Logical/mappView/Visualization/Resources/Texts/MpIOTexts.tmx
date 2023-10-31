@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="IOLoad">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Importieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Import</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IODropDownText1">
+      <tuv xml:lang="de">
+        <seg>{@IOconfig1}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@IOconfig1}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IODropDownText2">
+      <tuv xml:lang="de">
+        <seg>{@IOconfig2}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@IOconfig2}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IODropDownText3">
+      <tuv xml:lang="de">
+        <seg>{@IOconfig3}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>{@IOconfig3}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOActive">
+      <tuv xml:lang="de">
+        <seg>Active Hardwarekonfiguaration</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Active hardware configuration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOSelected">
+      <tuv xml:lang="de">
+        <seg>Ausgewählte Hardwarekonfiguration</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Selected hardware configration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOMessage">
+      <tuv xml:lang="de">
+        <seg>Soll die ausgewählt Hardwarekonfiguration geladen werden? </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Would you like to load the selected hardware configuration?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOInfotxt">
+      <tuv xml:lang="de">
+        <seg>Nach dem Import der neuen Hardwarekofiguration, wird diese im SDM-Manager unter Hardware angezeigt. Da das Programm in ARSim ausgeführt wird und der SDM nach echter Hardware sucht, kommt es hier zu einer Warnung das die gesteckten Module nicht gesteckt sind.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>After the import oft the new hardware configuration, that configuration will be displayed in the SDM-Manager. The Programm runs with ARSim, so no real hardware is in use, but the SDM is searching for real hardware. Thats why a warning will be show up, that the modules are not plugged. </seg>
+      </tuv>
+    </tu>
+    <tu tuid="IODialog">
+      <tuv xml:lang="de">
+        <seg>Hardwarekonfiguration importieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Import Configuration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOSelectedHardware">
+      <tuv xml:lang="de">
+        <seg>Aktuelle aktive Hardwarekonfiguration:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Currently active Hardware configuration:</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOConfig1">
+      <tuv xml:lang="de">
+        <seg>Erweiterte Konfiguration</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Advanced configuration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IOConfig2">
+      <tuv xml:lang="de">
+        <seg>Basis Konfiguration</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Basic configuration</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,58 @@
+.areaTop {
+
+	.breaseChartXAxisWidget.editMode {
+		border-bottom-width: 0px;
+	}
+}
+
+.areaBottom {
+
+	.breaseChartXAxisWidget.editMode {
+		border-top-width: 0px;
+	}
+}
+
+.breaseChartXAxisWidget.editMode {
+	position: relative !important;
+	width: 100%;
+	border: #c9c9c9 1px dashed;
+	box-sizing: border-box;
+
+	.container {
+		position: absolute;
+		padding: 0px;
+		height: 100%;
+		width: 100%;
+		overflow: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		box-sizing: border-box;
+	}
+
+	.container.scaleContainer {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		overflow: visible;
+	}
+	.axis {
+
+		line {
+			fill: none;
+			stroke-width: 1px;
+		}
+		path {
+			fill: none;
+			stroke-width: 1px;
+		}
+		text {
+			font-size: 12px;
+		}
+	}
+}
+
+.breaseChartXAxisWidget {
+}

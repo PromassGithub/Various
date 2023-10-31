@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleInformation name="widgets.brease.ChartWidget" xmlns="http://www.br-automation.com/iat2014/widgetStyles"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+	<StyleProperties>
+
+    <StyleProperty name="height" type="Size" not_styleable="true" category="Layout" default="440">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>Outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="width" type="Size" not_styleable="true" category="Layout" default="720">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>Outer width of widget</Description>
+    </StyleProperty>
+    
+    <StyleProperty name="backColor" category="Appearance" type="Color" default="transparent">
+      <StyleElement selector="&amp;:not(.disabled)" attribute="background-color"></StyleElement>
+      <Description>
+        Sets the background color
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="disabledBackColor" category="Appearance" type="Color" default="transparent" >
+      <StyleElement selector="&amp;.disabled" attribute="background-color"></StyleElement>
+      <Description>
+        Sets the background color when disabled
+      </Description>
+    </StyleProperty>
+
+
+    <StyleProperty name="backGroundGradient" category="Appearance" type="Gradient" default="">
+      <StyleElement selector="&amp;:not(.disabled)" attribute="@include backGroundGradient('$value')"></StyleElement>
+      <Description>
+        Background as a gradient
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledBackGroundGradient" category="Appearance" type="Gradient" default="">
+      <StyleElement selector="&amp;.disabled" attribute="@include backGroundGradient('$value')"></StyleElement>
+      <Description>
+        Background as a gradient when disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="chartColor" category="Appearance" type="Color" default="#FFFFFF">
+      <StyleElement selector="&amp;:not(.disabled) .chart" attribute="fill"></StyleElement>
+      <StyleElement selector="&amp;.breaseChartWidget.editMode:not(.disabled) .areaGraph" attribute="background-color"></StyleElement>
+      <Description>
+        Color of chart area
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledChartColor" category="Appearance" type="Color" default="#FFFFFF">
+      <StyleElement selector="&amp;.disabled .chart" attribute="fill"></StyleElement>
+      <StyleElement selector="&amp;.disabled.breaseChartWidget.editMode .areaGraph" attribute="background-color"></StyleElement>
+      <Description>
+        Color of chart area when disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="chartBorderColor" category="Appearance" type="Color" default="#000000">
+      <StyleElement selector="&amp;:not(.disabled) .chart" attribute="stroke"></StyleElement>
+      <StyleElement selector="&amp;.breaseChartWidget.editMode:not(.disabled) .areaGraph" attribute="border-color"></StyleElement>
+      <Description>
+        Color of chart area border
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledChartBorderColor" category="Appearance" type="Color" default="#999999">
+      <StyleElement selector="&amp;.disabled .chart" attribute="stroke"></StyleElement>
+      <StyleElement selector="&amp;.disabled.breaseChartWidget.editMode .areaGraph" attribute="border-color"></StyleElement>
+      <Description>
+        Color of chart area border
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="gridColor" category="Appearance" type="Color" default="#DDDDDD">
+      <StyleElement selector="&amp;:not(.disabled) .gridLines" attribute="stroke"></StyleElement>
+      <Description>
+        Color of the grid
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledGridColor" category="Appearance" type="Color" default="#EEEEEE">
+      <StyleElement selector="&amp;.disabled .gridLines" attribute="stroke"></StyleElement>
+      <Description>
+        Color of the grid when the widget is disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="fontSize" type="PixelVal" default="12px" category="Font" >
+      <StyleElement selector=".axis text" attribute="font-size"></StyleElement>
+      <StyleElement selector=".containerAxisDescription text" attribute="font-size"></StyleElement>
+      <Description>
+        Font Size for all texts in Chart
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="fontName" type="FontName" default="Arial" category="Font">
+      <StyleElement selector=".axis text" attribute="font-family"></StyleElement>
+      <StyleElement selector="text" attribute="font-family"></StyleElement>
+      <Description>
+        Font Name for all texts in Chart
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderWidth" type="PixelValCollection" category="Appearance" default="1px">
+      <StyleElement attribute="border-width"></StyleElement>
+      <StyleElement selector="&amp;.disabled" attribute="border-width"></StyleElement>
+      <Description>
+        Sets the width of the border.
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderColor" category="Appearance" type="ColorCollection" default="#5B7C70" >
+      <StyleElement selector="&amp;:not(.disabled)" attribute="border-color"></StyleElement>
+      <Description>
+        Sets the color of the border
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledBorderColor" category="Appearance" type="ColorCollection" default="#C8C8C8" >
+      <StyleElement selector="&amp;.disabled" attribute="border-color"></StyleElement>
+      <Description>
+        Sets the color of the border when disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderStyle" type="BorderStyle" default="solid" category="Appearance">
+      <StyleElement attribute="border-style"></StyleElement>
+      <StyleElement selector="&amp;.disabled" attribute="border-style"></StyleElement>
+      <Description>
+        Style of the Border of the widget
+      </Description>
+    </StyleProperty>
+
+  </StyleProperties>
+</StyleInformation>
+	
+	
+

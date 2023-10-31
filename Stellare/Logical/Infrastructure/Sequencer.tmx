@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">MpSequence/Configuration</prop>
+  </header>
+  <body>
+    <tu tuid="CupFeederConv">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>bringt Kaffetasse zur Maschine</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>brings coffeecup to maschine</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CoffeeSequ">
+      <tuv xml:lang="de">
+        <seg>Kaffee wird gebraut</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>coffee is brewing</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TakeoutConv">
+      <tuv xml:lang="de">
+        <seg>bringt Kaffetasse weg von Maschine</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>brings coffecup away from maschine</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Waitd">
+      <tuv xml:lang="de">
+        <seg>festgelegte Zeit warten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>wait a specific time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="WaitForTakeout">
+      <tuv xml:lang="de">
+        <seg>warten auf Takeout</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>wait for takeout</seg>
+      </tuv>
+    </tu>
+    <tu tuid="WaitForStart">
+      <tuv xml:lang="de">
+        <seg>warten auf Start</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>wait for start</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetTestPV1">
+      <tuv xml:lang="de">
+        <seg>SetTestPV1 auf festgelegten Wert setzen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>SetTestPV1 set to specific value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetTestPV2">
+      <tuv xml:lang="de">
+        <seg>SetTestPV2 auf festgelegten Wert setzen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>SetTestPV2 set to specific value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TestAlarm">
+      <tuv xml:lang="de">
+        <seg>setzt einen Testalarm in mpAlarmX</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set a testalarm in mpAlarmX</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Coffee">
+      <tuv xml:lang="de">
+        <seg>Kaffee</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Coffee</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Start">
+      <tuv xml:lang="de">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start</seg>
+      </tuv>
+    </tu>
+    <tu tuid="End">
+      <tuv xml:lang="de">
+        <seg>Ende</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>End</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EndMakro">
+      <tuv xml:lang="de">
+        <seg>End Makro</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>End Makro</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Wait">
+      <tuv xml:lang="de">
+        <seg>Warten</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Wait</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxisLeft">
+      <tuv xml:lang="de">
+        <seg>Linke Achse bewegen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move left axis</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AxisRight">
+      <tuv xml:lang="de">
+        <seg>Rechte Achse bewegen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move right axis</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TakeOut">
+      <tuv xml:lang="de">
+        <seg>Kaffee entnehmen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Take coffee out</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TestRight">
+      <tuv xml:lang="de">
+        <seg>Rechte Achse bewegen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Move axis right</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Timeout">
+      <tuv xml:lang="de">
+        <seg>Timeout</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timeout</seg>
+      </tuv>
+    </tu>
+    <tu tuid="PvValue">
+      <tuv xml:lang="de">
+        <seg>PV Wert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PV Value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Duration">
+      <tuv xml:lang="de">
+        <seg>Dauer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Duration</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LoopCount">
+      <tuv xml:lang="de">
+        <seg>Schleife</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Loop</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleInformation name="widgets.brease.PDFViewer" xmlns="http://www.br-automation.com/iat2014/widgetStyles"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+									>
+  <PropertyGroups>
+		<PropertyGroup name="pdfOpenParameters" type="String" category="Behavior">
+			<Description>Parameters applied initially to the PDF document.</Description>
+		</PropertyGroup>
+	</PropertyGroups>                
+	<StyleProperties>
+    <StyleProperty name="width" type="Size" not_styleable="true" default="240">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" not_styleable="true" default="320">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="borderWidth" category="Appearance" type="PixelValCollection" default="0px">
+      <StyleElement attribute="border-width"></StyleElement>
+      <Description>
+        Sets the width of the border.
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="borderColor" category="Appearance" type="ColorCollection" default="#FFF" >
+      <StyleElement attribute="border-color"></StyleElement>
+      <Description>
+        Sets the border color
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="borderStyle" category="Appearance" type="BorderStyle" default="solid" >
+      <StyleElement attribute="border-style"></StyleElement>
+      <Description>
+        Style of the Border of the widget
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="cornerRadius" type="PixelValCollection" category="Appearance" default="0px">
+      <StyleElement attribute="@include border-radius($value)" ></StyleElement>
+      <Description>
+        Sets the radius of the widget rounded corners.
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="padding" category="Layout" type="Padding" default="0 10px">
+      <StyleElement attribute="padding"></StyleElement>
+      <Description>
+        Padding of the Widget
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="margin" category="Layout" type="Margin" default="0px">
+      <StyleElement attribute="margin"></StyleElement>
+      <Description>
+        Margin of the Widget
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="opacity" category="Appearance" type="Opacity" default="1">
+      <StyleElement attribute="opacity"></StyleElement>
+      <Description>
+        Opacity of the widget
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="rotation" category="Appearance" type="Rotation" default="0deg">
+      <StyleElement attribute="@include rotate($value)"></StyleElement>
+      <Description>
+        Rotation of widget.
+      </Description>
+    </StyleProperty>
+
+	</StyleProperties>
+</StyleInformation>

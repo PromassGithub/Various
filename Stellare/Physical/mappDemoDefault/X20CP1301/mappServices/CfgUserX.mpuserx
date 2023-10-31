@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="UserMgmtX" Type="mpuserx">
+    <Group ID="Groups">
+      <Group ID="DefGroup#1">
+        <Property ID="id" Value="Administrators" />
+        <Property ID="level" Value="100" />
+        <Property ID="admin" Value="TRUE" />
+        <Group ID="rights">
+          <Property ID="[0]" Value="ViewOnly" />
+          <Property ID="[1]" Value="StartOnly" />
+        </Group>
+      </Group>
+      <Group ID="DefGroup#2">
+        <Property ID="id" Value="Everyone" />
+        <Property ID="level" Value="1" />
+      </Group>
+    </Group>
+    <Group ID="Users">
+      <Group ID="DefUser#1">
+        <Property ID="id" Value="admin" />
+        <Property ID="name" Value="Admin" />
+        <Property ID="lang" Value="en" />
+      </Group>
+      <Group ID="DefUser#2">
+        <Property ID="id" Value="Anonymous" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

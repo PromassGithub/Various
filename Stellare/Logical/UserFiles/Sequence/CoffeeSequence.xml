@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<DATA>
+	<Sequence>
+		<Step Value="Start" >
+			<Command Value="SequenceStart" />
+		</Step>
+		<Step Value="AxisLeft" >
+			<Command Value="MoveAxisLeft" />
+			<StepPrevious Value="Start" />
+		</Step>
+		<Step Value="Coffee" >
+			<Command Value="Coffee" />
+			<StepPrevious Value="AxisLeft" />
+		</Step>
+		<Step Value="AxisRight" >
+			<Command Value="MoveAxisRight" />
+			<StepPrevious Value="Coffee" />
+		</Step>
+		<Step Value="TakeOut" >
+			<Command Value="TakeOut" />
+			<StepPrevious Value="AxisRight" />
+		</Step>
+		<Step Value="End" >
+			<Command Value="SequenceEnd" />
+			<StepPrevious Value="TakeOut" />
+		</Step>
+	</Sequence>
+</DATA>

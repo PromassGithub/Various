@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gReport" Type="mpreportcore">
+    <Group ID="MpReport">
+      <Group ID="Settings">
+        <Property ID="ResourceDeviceName" Value="HD" />
+        <Group ID="LanguageDependent">
+          <Group ID="[0]">
+            <Property ID="Language" Value="de" />
+            <Property ID="Font" Value="1" />
+          </Group>
+          <Group ID="[1]">
+            <Property ID="Language" Value="en" />
+            <Property ID="Font" Value="1" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="PageLayouts">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Default" />
+        </Group>
+      </Group>
+      <Group ID="Styles">
+        <Group ID="Text">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Size" Value="12" />
+          </Group>
+          <Group ID="[1]">
+            <Property ID="Name" Value="Header" />
+            <Property ID="Style" Value="1" />
+            <Property ID="Size" Value="20" />
+            <Property ID="Color" Value="FF9900" />
+          </Group>
+          <Group ID="[2]">
+            <Property ID="Name" Value="Subheader" />
+            <Property ID="Size" Value="16" />
+            <Property ID="Color" Value="FF9900" />
+          </Group>
+        </Group>
+        <Group ID="Table">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Padding" Value="10" />
+          </Group>
+        </Group>
+        <Group ID="Line">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Color" Value="FF9900" />
+          </Group>
+        </Group>
+        <Group ID="Chart">
+          <Group ID="PieChart">
+            <Group ID="[0]">
+              <Property ID="Name" Value="Default" />
+              <Property ID="BorderWidth" Value="0" />
+            </Group>
+          </Group>
+          <Group ID="LineChart">
+            <Group ID="[0]" />
+          </Group>
+          <Group ID="BarChart">
+            <Group ID="[0]" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="Tables">
+        <Selector ID="[0]">
+          <Property ID="Name" Value="CoffeeInformation" />
+          <Property ID="TableStyle" Value="Default" />
+          <Property ID="TextStyle" Value="Default" />
+          <Group ID="[0]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Ora Inizio" />
+              <Property ID="Width" Value="50" />
+            </Selector>
+            <Selector ID="[1]" Value="DateTime">
+              <Selector ID="Source" Value="ProcessVariable">
+                <Property ID="ProcessVariable" Value="::Conteggio:DT_1" />
+              </Selector>
+              <Property ID="Width" Value="50" />
+            </Selector>
+          </Group>
+          <Group ID="[1]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Ora Fine" />
+              <Property ID="Width" Value="50" />
+            </Selector>
+            <Selector ID="[1]" Value="DateTime">
+              <Selector ID="Source" Value="ProcessVariable">
+                <Property ID="ProcessVariable" Value="::Conteggio:DT_2" />
+              </Selector>
+              <Property ID="Width" Value="50" />
+            </Selector>
+          </Group>
+          <Group ID="[2]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Tempo Attività" />
+              <Property ID="Width" Value="50" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Conteggio:tempo_attuale" />
+              </Selector>
+              <Property ID="Width" Value="50" />
+            </Selector>
+          </Group>
+          <Group ID="[3]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Giri parziali" />
+              <Property ID="Width" Value="50" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::contatore.giri_parziali" />
+                <Property ID="UnitDisplay" Value="1" />
+              </Selector>
+              <Property ID="Width" Value="50" />
+            </Selector>
+          </Group>
+          <Group ID="[4]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Giri Totali" />
+              <Property ID="Width" Value="50" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::contatore.giri_totali" />
+                <Property ID="UnitDisplay" Value="1" />
+              </Selector>
+              <Property ID="Width" Value="50" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="Contents">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Discription" />
+          <Selector ID="[0]">
+            <Property ID="Text" Value="{$Report/ReportDescription}" />
+            <Property ID="TextStyle" Value="Default" />
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="Table" />
+          <Selector ID="[0]" Value="Table">
+            <Property ID="Table" Value="CoffeeInformation" />
+            <Property ID="HorizontalAlign" Value="1" />
+          </Selector>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="Underline" />
+          <Selector ID="[0]" Value="Line">
+            <Property ID="LineStyle" Value="Default" />
+          </Selector>
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Name" Value="Header" />
+          <Selector ID="[0]">
+            <Property ID="Text" Value="{$Report/ReportHeader}" />
+            <Property ID="HorizontalAlign" Value="1" />
+            <Property ID="TextStyle" Value="Header" />
+          </Selector>
+        </Group>
+        <Group ID="[4]">
+          <Property ID="Name" Value="EmptyLine" />
+          <Selector ID="[0]" Value="EmptyLine" />
+        </Group>
+        <Group ID="[5]">
+          <Property ID="Name" Value="EnergyChart" />
+          <Selector ID="[0]" Value="Chart">
+            <Property ID="Chart" Value="Energy" />
+            <Property ID="Width" Value="60" />
+          </Selector>
+        </Group>
+      </Group>
+      <Group ID="Reports">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Dosaggio" />
+          <Property ID="PageLayout" Value="Default" />
+          <Property ID="Header" Value="Header" />
+          <Group ID="[0]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="Underline" />
+            </Group>
+          </Group>
+          <Group ID="[1]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="EmptyLine" />
+            </Group>
+          </Group>
+          <Group ID="[2]">
+            <Group ID="Heading">
+              <Property ID="Text" Value="{$Report/ReportDescriptionHeader}" />
+              <Property ID="TextStyle" Value="Subheader" />
+            </Group>
+            <Group ID="[0]">
+              <Property ID="Content" Value="Discription" />
+            </Group>
+          </Group>
+          <Group ID="[3]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="EmptyLine" />
+            </Group>
+          </Group>
+          <Group ID="[4]">
+            <Group ID="Heading">
+              <Property ID="Text" Value="{$Report/ReportHeaderTable}" />
+              <Property ID="TextStyle" Value="Subheader" />
+            </Group>
+            <Group ID="[0]">
+              <Property ID="Content" Value="Table" />
+            </Group>
+          </Group>
+          <Group ID="[5]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="EmptyLine" />
+            </Group>
+          </Group>
+          <Group ID="[6]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="EmptyLine" />
+            </Group>
+          </Group>
+          <Group ID="[7]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="EnergyChart" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

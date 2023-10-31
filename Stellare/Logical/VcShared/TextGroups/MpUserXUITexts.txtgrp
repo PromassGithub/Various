@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpUserXUITexts">
+  <Property Name="Description" Value="General page text for UserXLoginUI"/>
+  <Property Name="Index" Value="2104"/>
+  <TextSnippets>
+    <TextSnippet ClassId="0x00002002" Name="Unit">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.UserH.MpUserXManagerUIConnect.User.Info.DisplayUnit]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="Language">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.UserH.MpUserXManagerUIConnect.User.Info.Language]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+    <TextSnippet ClassId="0x00002002" Name="EditRole">
+      <Property Name="Alignment" Value="Left"/>
+      <Property Name="Datapoint" Value="Source[global].Variable[DataSource.Infrastructure.UserH.MpUserXManagerUIConnect.Role.Info.Name]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillCharacter" Value=""/>
+      <Property Name="MaxChars" Value="None"/>
+      <Property Name="MinChars" Value="None"/>
+    </TextSnippet>
+  </TextSnippets>
+  <TextLayer LanguageId="en">
+    <Text ID="175704" Value="User Name"/>
+    <Text ID="175705" Value="User"/>
+    <Text ID="175706" Value="Password"/>
+    <Text ID="175707" Value="Login"/>
+    <Text ID="175708" Value="New Password"/>
+    <Text ID="175709" Value="Confirm Password"/>
+    <Text ID="175710" Value="Role"/>
+    <Text ID="175711" Value="Full Name"/>
+    <Text ID="175712" Value="Language"/>
+    <Text ID="175713" Value="Unit"/>
+    <Text ID="175714" Value="Preferences"/>
+    <Text ID="175715" Value="{Language} / {Unit}"/>
+    <Text ID="175716" Value="User Level"/>
+    <Text ID="175717" Value="Administrator"/>
+    <Text ID="175718" Value="Edit Role {EditRole}"/>
+    <Text ID="175719" Value="Current User"/>
+    <Text ID="175720" Value="Current User"/>
+    <Text ID="175721" Value="Selected User"/>
+    <Text ID="175722" Value="MpUserXManagerUI"/>
+    <Text ID="175723" Value="Logout"/>
+    <Text ID="175724" Value="Statistics"/>
+    <Text ID="175725" Value="Login Tags"/>
+    <Text ID="175726" Value="Import"/>
+    <Text ID="175727" Value="Export"/>
+    <Text ID="175728" Value="MpUserXManagerUI Users"/>
+    <Text ID="175729" Value="MpUserXManagerUI Roles"/>
+    <Text ID="175730" Value="Created"/>
+    <Text ID="175731" Value="First Login"/>
+    <Text ID="175732" Value="Last Login"/>
+    <Text ID="175733" Value="Remaining Login Attempts"/>
+    <Text ID="175734" Value="#1"/>
+    <Text ID="175735" Value="#2"/>
+    <Text ID="175736" Value="#3"/>
+    <Text ID="175737" Value="Selected Group"/>
+    <Text ID="175738" Value="Role Information"/>
+    <Text ID="175739" Value="User Rights"/>
+    <Text ID="175740" Value="Edit Role"/>
+    <Text ID="175741" Value="Edit User"/>
+    <Text ID="175742" Value="New User"/>
+    <Text ID="175743" Value="Export User/Group Data"/>
+    <Text ID="175744" Value="File Name"/>
+    <Text ID="175745" Value="Import User/Group Data"/>
+    <Text ID="175746" Value="File List"/>
+    <Text ID="175747" Value="Import Group Settings"/>
+    <Text ID="175748" Value="Import User Accounts"/>
+    <Text ID="175749" Value="MpUserXLoginUI"/>
+    <Text ID="175750" Value="Change password"/>
+    <Text ID="175751" Value="Create Role"/>
+    <Text ID="175752" Value="Password hint"/>
+    <Text ID="175753" Value=""/>
+    <Text ID="175754" Value=""/>
+    <Text ID="175755" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="175704" Value="Anwendername"/>
+    <Text ID="175705" Value="Benutzer"/>
+    <Text ID="175706" Value="Passwort"/>
+    <Text ID="175707" Value="Anmeldung"/>
+    <Text ID="175708" Value="Neues Passwort"/>
+    <Text ID="175709" Value="Password wiederholen"/>
+    <Text ID="175710" Value="Rolle"/>
+    <Text ID="175711" Value="Voller Name"/>
+    <Text ID="175712" Value="Sprache"/>
+    <Text ID="175713" Value="Einheit"/>
+    <Text ID="175714" Value="Vorlieben"/>
+    <Text ID="175715" Value="{Language} / {Unit}"/>
+    <Text ID="175716" Value="Anwender Level"/>
+    <Text ID="175717" Value="Administrator"/>
+    <Text ID="175718" Value="Editiere Rolle {EditRole}"/>
+    <Text ID="175719" Value="Eingeloggter Anwender"/>
+    <Text ID="175720" Value="Aktueller Anwender"/>
+    <Text ID="175721" Value="Gewählter Anwender"/>
+    <Text ID="175722" Value="MpUserXManagerUI"/>
+    <Text ID="175723" Value="Abmelden"/>
+    <Text ID="175724" Value="Statistics"/>
+    <Text ID="175725" Value="Anmelde-Tags"/>
+    <Text ID="175726" Value="Import"/>
+    <Text ID="175727" Value="Export"/>
+    <Text ID="175728" Value="MpUserXManagerUI Anwender"/>
+    <Text ID="175729" Value="MpUserXManagerUI Rollen"/>
+    <Text ID="175730" Value="Erstellt"/>
+    <Text ID="175731" Value="Erste Anmeldung"/>
+    <Text ID="175732" Value="Letzte Anmeldung"/>
+    <Text ID="175733" Value="Verbleibende Login-Versuche"/>
+    <Text ID="175734" Value="#1"/>
+    <Text ID="175735" Value="#2"/>
+    <Text ID="175736" Value="#3"/>
+    <Text ID="175737" Value="Gewählte Gruppe"/>
+    <Text ID="175738" Value="Rollen Information"/>
+    <Text ID="175739" Value="Anwender Rechte"/>
+    <Text ID="175740" Value="Rolle editieren"/>
+    <Text ID="175741" Value="Anwender editieren"/>
+    <Text ID="175742" Value="Anwender anlegen"/>
+    <Text ID="175743" Value="User / Grupped-Daten exportieren"/>
+    <Text ID="175744" Value="Dateiname"/>
+    <Text ID="175745" Value="User / Grupped-Daten importieren"/>
+    <Text ID="175746" Value="Dateiliste"/>
+    <Text ID="175747" Value="Gruppen Einstellung importieren"/>
+    <Text ID="175748" Value="Anwenderkonten importieren"/>
+    <Text ID="175749" Value="MpUserXLoginUI"/>
+    <Text ID="175750" Value="Passwort ändern"/>
+    <Text ID="175751" Value="Rolle anlegen"/>
+    <Text ID="175752" Value="Passwordhinweis"/>
+    <Text ID="175753" Value=""/>
+    <Text ID="175754" Value=""/>
+    <Text ID="175755" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="175704" Value="0"/>
+    <Index ID="175705" Value="1"/>
+    <Index ID="175706" Value="2"/>
+    <Index ID="175707" Value="3"/>
+    <Index ID="175708" Value="4"/>
+    <Index ID="175709" Value="5"/>
+    <Index ID="175710" Value="6"/>
+    <Index ID="175711" Value="7"/>
+    <Index ID="175712" Value="8"/>
+    <Index ID="175713" Value="9"/>
+    <Index ID="175714" Value="10"/>
+    <Index ID="175715" Value="11"/>
+    <Index ID="175716" Value="12"/>
+    <Index ID="175717" Value="13"/>
+    <Index ID="175718" Value="14"/>
+    <Index ID="175719" Value="15"/>
+    <Index ID="175720" Value="16"/>
+    <Index ID="175721" Value="17"/>
+    <Index ID="175722" Value="18"/>
+    <Index ID="175723" Value="19"/>
+    <Index ID="175724" Value="21"/>
+    <Index ID="175725" Value="22"/>
+    <Index ID="175726" Value="23"/>
+    <Index ID="175727" Value="24"/>
+    <Index ID="175728" Value="25"/>
+    <Index ID="175729" Value="26"/>
+    <Index ID="175730" Value="27"/>
+    <Index ID="175731" Value="28"/>
+    <Index ID="175732" Value="29"/>
+    <Index ID="175733" Value="30"/>
+    <Index ID="175734" Value="31"/>
+    <Index ID="175735" Value="32"/>
+    <Index ID="175736" Value="33"/>
+    <Index ID="175737" Value="34"/>
+    <Index ID="175738" Value="35"/>
+    <Index ID="175739" Value="36"/>
+    <Index ID="175740" Value="37"/>
+    <Index ID="175741" Value="38"/>
+    <Index ID="175742" Value="39"/>
+    <Index ID="175743" Value="40"/>
+    <Index ID="175744" Value="41"/>
+    <Index ID="175745" Value="42"/>
+    <Index ID="175746" Value="43"/>
+    <Index ID="175747" Value="44"/>
+    <Index ID="175748" Value="45"/>
+    <Index ID="175749" Value="46"/>
+    <Index ID="175750" Value="20"/>
+    <Index ID="175751" Value="47"/>
+    <Index ID="175752" Value="48"/>
+    <Index ID="175753" Value="49"/>
+    <Index ID="175754" Value="50"/>
+    <Index ID="175755" Value="51"/>
+  </IndexMap>
+</TextGroup>

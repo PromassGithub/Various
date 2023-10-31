@@ -1,0 +1,8 @@
+VAR
+	MpAuditTrail_0 : MpAuditTrail; (*Parent component for change tracking*)
+	MpAuditTrailUI_0 : MpAuditTrailUI := (UISetup:=(EventListSize:=20)); (*VC4 page connection  *)
+	MpAuditTrailUIConnect : MpAuditTrailUIConnectType := (Filter:=(Dialog:=(From:=(Year:=1970,Month:=1,Day:=1,Hour:=00,Minute:=00),Until:=(Year:=1970,Month:=1,Day:=1,Hour:=00,Minute:=00)))); (*MpAuditTrailUI connection datapoints*)
+	lng : STRING[80] := '';
+	FilterConfiguration : STRING[2000] := '';
+	SortConfiguraiton : STRING[2000] := '';
+END_VAR

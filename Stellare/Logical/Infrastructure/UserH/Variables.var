@@ -1,0 +1,17 @@
+VAR CONSTANT
+	LOGIN_AS_DEFAULT_USERNAME : WSTRING[20] := "Anonymous"; (*Constant for auto login*)
+	LOGIN_AS_DEFAULT_PASSWORD : WSTRING[20] := ""; (*Constant for auto login*)
+END_VAR
+VAR
+	MpUserXManagerUI_0 : MpUserXManagerUI; (*MpUserXManagerUI FUB*)
+	MpUserXManagerUIConnect : {REDUND_UNREPLICABLE} MpUserXMgrUIConnectType; (*MpUserXManagerUI connection datapoints*)
+	MpUserXLogin_0 : MpUserXLogin := (0); (*MpUserXLogin FUB*)
+	MpUserXLoginUI_0 : MpUserXLoginUI := (0); (*MpUserXLoginUI FUB*)
+	MpUserXLoginUIConnect : MpUserXLoginUIConnectType := (0); (*MpUserXLoginUI connection datapoints*)
+	LoginAsDefault : BOOL := 0; (*trigger login as Anonymous *)
+	TON_0 : TON := (0); (*Timer wait for login else login as default*)
+	DeleteTextInput : BOOL := 0;
+	Role : STRING[80] := '0';
+	MappViewLogout : INT := 0;
+	ShowErrorLoginDialog : BOOL := 0;
+END_VAR

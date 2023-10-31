@@ -1,0 +1,20 @@
+VAR
+	FillCoffeeWait : TON := (0);
+	ProducedCoffee : ProducedCoffeeType := (0);
+	MainCoffeeUIConnect : MainCoffeeUIConnectType := (visShowMainBrewing:=1,visShowMainRecipe:=1,visShowButtonStart:=0,visWaterLevel:=50); (*Control structure of main logic*)
+	MpRecipeRegPar_0 : MpRecipeRegPar; (*Registration of a variable into the recipe system*)
+END_VAR
+VAR CONSTANT
+	YES : BOOL := FALSE; (*Display an element on the visualization screen*)
+	NO : BOOL := TRUE; (*Hide an element on the visualization screen*)
+END_VAR
+VAR
+	Refill : RefillMainType := (Milk:=1000,Sugar:=1000,Coffee:=1000,Water:=1000);
+	Transform : STRING[1000000] := ''; (*transforms the svg image in the coffee Visualization*)
+	TransformTime : TIME := T#3S;
+	TransformWait : TON := (0);
+	TransitionTime : UINT := 3000;
+	ExecuteWait : TON;
+	CupHideWait : TON := (0);
+	TransformHide : TON;
+END_VAR

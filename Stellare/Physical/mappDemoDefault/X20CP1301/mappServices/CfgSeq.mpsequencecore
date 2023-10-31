@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gSequenceCore" Type="mpsequencecore">
+    <Group ID="Sequence">
+      <Property ID="DeviceName" Value="mappSequence" />
+      <Group ID="Commands">
+        <Group ID="Command[0]">
+          <Property ID="Name" Value="SequenceStart" />
+          <Property ID="Text" Value="Start" />
+          <Property ID="Hierarchy" Value="Movement" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.Start" />
+          </Selector>
+        </Group>
+        <Group ID="Command[1]">
+          <Property ID="Name" Value="SequenceEnd" />
+          <Property ID="Text" Value="End" />
+          <Property ID="Hierarchy" Value="Movement" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.Stop" />
+          </Selector>
+        </Group>
+        <Group ID="Command[2]">
+          <Property ID="Name" Value="MacroEnd" />
+          <Property ID="Text" Value="EndMakro" />
+          <Property ID="Hierarchy" Value="Movement" />
+        </Group>
+        <Group ID="Command[3]">
+          <Property ID="Name" Value="Wait" />
+          <Property ID="Text" Value="Wait" />
+          <Property ID="Hierarchy" Value="Movement" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.Wait" />
+          </Selector>
+        </Group>
+        <Group ID="Command[4]">
+          <Property ID="Name" Value="MoveAxisLeft" />
+          <Property ID="Text" Value="AxisLeft" />
+          <Property ID="Hierarchy" Value="Movement" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.AxisLeft" />
+          </Selector>
+        </Group>
+        <Group ID="Command[5]">
+          <Property ID="Name" Value="MoveAxisRight" />
+          <Property ID="Text" Value="AxisRight" />
+          <Property ID="Hierarchy" Value="Movement" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.AxisRight" />
+            <Property ID="ParStruct" Value="" />
+          </Selector>
+        </Group>
+        <Group ID="Command[6]">
+          <Property ID="Name" Value="Coffee" />
+          <Property ID="Text" Value="Coffee" />
+          <Property ID="Hierarchy" Value="MovementCoffee" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.Coffee" />
+          </Selector>
+        </Group>
+        <Group ID="Command[7]">
+          <Property ID="Name" Value="TakeOut" />
+          <Property ID="Text" Value="TakeOut" />
+          <Property ID="Hierarchy" Value="MovementCoffee" />
+          <Selector ID="CommandType" Value="Movement">
+            <Property ID="PVStruct" Value="::Sequence:CmdSeq.TakeOutCup" />
+          </Selector>
+        </Group>
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

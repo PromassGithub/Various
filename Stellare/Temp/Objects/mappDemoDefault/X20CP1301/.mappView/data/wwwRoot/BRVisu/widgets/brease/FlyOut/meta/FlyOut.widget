@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WidgetLibrary xmlns="http://www.br-automation.com/iat2014/widget">
+	<Widget name="widgets.brease.FlyOut">
+		<ASEngineeringInfo>
+			<IsProjectable>true</IsProjectable>
+			<LicenseInfo>licensed</LicenseInfo>
+		</ASEngineeringInfo>
+		<Dependencies>
+			<Files>
+				<File>brease/core/ContainerWidget.js</File>
+				<File>brease/events/BreaseEvent.js</File>
+				<File>brease/enum/Enum.js</File>
+				<File>brease/core/Utils.js</File>
+				<File>brease/controller/PopUpManager.js</File>
+				<File>widgets/brease/ToggleButton/ToggleButton.js</File>
+			</Files>
+			<Widgets>
+				<Widget>widgets/brease/FlyOut/FlyOut.js</Widget>
+				<Widget>widgets/brease/ToggleButton/ToggleButton.js</Widget>
+			</Widgets>
+		</Dependencies>
+		<Categories>
+			<Category name="Category">Container</Category>
+		</Categories>
+		<Descriptions>
+			<Description name="short">Ausblendbares Containerfeld</Description>
+			<Description name="de">Ausblendbarer Container</Description>
+			<Description name="en">Hideable container</Description>
+		</Descriptions>
+		<Inheritance>
+			<Class level="0">widgets.brease.FlyOut</Class>
+			<Class level="1">brease.core.ContainerWidget</Class>
+			<Class level="2">brease.core.BaseWidget</Class>
+		</Inheritance>
+		<Parents>
+			<Parent>system.brease.Content</Parent>
+		</Parents>
+		<Children>
+			<Child>*</Child>
+		</Children>
+		<Methods>
+			<Method name="Close" read="false">
+				<Description>Close the FlyOut widget.</Description>
+			</Method>
+			<Method name="Open" read="false">
+				<Description>Open the FlyOut widget.</Description>
+			</Method>
+			<Method name="SetEnable" read="false">
+				<Description>Sets the state of property «enable»</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetImage" read="false">
+				<Description>Sets image</Description>
+				<Arguments>
+					<Argument name="image" type="ImagePath" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetStyle" read="false">
+				<Arguments>
+					<Argument name="value" type="StyleReference" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetText" read="false">
+				<Description>Sets text</Description>
+				<Arguments>
+					<Argument name="text" type="String" index="0" required="true" localizable="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetVisible" read="false">
+				<Description>Sets the state of property «visible»</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="Toggle" read="false">
+				<Description>Open the FlyOut widget.</Description>
+			</Method>
+		</Methods>
+		<Events>
+			<Event name="Click">
+				<Description>Fired when element is clicked on.</Description>
+			</Event>
+			<Event name="DisabledClick">
+				<Description>Fired when disabled element is clicked on.</Description>
+				<Arguments>
+					<Argument name="origin" type="String" index="0" required="true">
+						<Description>id of widget that triggered this event</Description>
+					</Argument>
+					<Argument name="hasPermission" type="Boolean" index="1" required="true">
+						<Description>defines if the state is caused due to missing</Description>
+					</Argument>
+					<Argument name="horizontalPos" type="String" index="2" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="3" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;
+roles of the current user						</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="EnableChanged">
+				<Description>Fired when operability of the widget changes.</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>operability</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="ToggleStateChanged">
+				<Arguments>
+					<Argument name="newValue" type="Boolean" index="0" required="true">
+						<Description>Event returns a boolean value of &apos;TRUE&apos; once the FlyOut widget is expanded (opened), and &apos;FALSE&apos; when the FlyOut is collapsed (closed).</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="VisibleChanged">
+				<Description>Fired when the visibility of the widget changes.</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>visibility</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+		</Events>
+		<Properties>
+			<Property name="autoClose" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>close Flyout on click outside the content
+if true and the FlyOut is open and the user clicks somewhere outside the FlyOut, it closes automatically				</Description>
+			</Property>
+			<Property name="buttonOffset" type="Integer" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="0">
+				<Description>Offset of the button</Description>
+			</Property>
+			<Property name="buttonStyle" type="StyleReference" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" typeRefId="widgets.brease.ToggleButton" defaultValue="default">
+				<Description>Style of the Button
+Use the styles of the widget &lt;a href=&quot;#!/api/widgets.brease.ToggleButton&quot; rel=&quot;widgets.brease.ToggleButton&quot; class=&quot;docClass&quot;&gt;widgets.brease.ToggleButton				</Description>
+			</Property>
+			<Property name="docking" type="brease.enum.ImageAlign" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="left">
+				<Description>position of the flyout widget</Description>
+			</Property>
+			<Property name="ellipsis" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, overflow of text is symbolized with an ellipsis. This option has no effect, if wordWrap = true.</Description>
+			</Property>
+			<Property name="enable" type="Boolean" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>Initial option to enable widget.</Description>
+			</Property>
+			<Property name="image" type="ImagePath" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Path to an optional image.
+&lt;br&gt;When svg - graphics are used, be sure that in your *.svg-file height and width attributes are specified on the &amp;lt;svg&amp;gt; element.
+For more detailed information see https://www.w3.org/TR/SVG/struct.html (chapter 5.1.2)				</Description>
+			</Property>
+			<Property name="imageAlign" type="brease.enum.ImageAlign" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="left">
+				<Description>Position of image relative to text.</Description>
+			</Property>
+			<Property name="mode" type="brease.enum.DialogMode" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="modeless">
+				<Description>Similar to a pop-up dialog window, this option determines if the user can (&apos;modeless&apos;) or cannot (&apos;modal&apos;) interact with the remainder of the UI.</Description>
+			</Property>
+			<Property name="multiLine" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, more than one line is possible.
+Text will wrap when necessary (if property wordWrap is set to true) or at explicit line breaks (\n).
+If false, text will never wrap to the next line. The text continues on the same line.				</Description>
+			</Property>
+			<Property name="permissionOperate" type="RoleCollection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Accessibility">
+				<Description>restricts operability to users, which have given roles</Description>
+			</Property>
+			<Property name="permissionView" type="RoleCollection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Accessibility">
+				<Description>restricts visibility to users, which have given roles</Description>
+			</Property>
+			<Property name="showButton" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>When FALSE, this property makes the FlyOut button invisible. The FlyOut must then be opened and closed via the widget&apos;s actions (Open, Close, Toggle).</Description>
+			</Property>
+			<Property name="showOnTop" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>When TRUE, forces the FlyOut above all other elements in the visualization.</Description>
+			</Property>
+			<Property name="style" type="StyleReference" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="default">
+				<Description>reference to a style for this widget type</Description>
+			</Property>
+			<Property name="text" type="String" initOnly="false" localizable="true" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Text displayed in the FlyOut button</Description>
+			</Property>
+			<Property name="tooltip" type="String" initOnly="true" localizable="true" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>reference to a tooltip for a widget</Description>
+			</Property>
+			<Property name="visible" type="Boolean" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>change visibility</Description>
+			</Property>
+			<Property name="wordWrap" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, text will wrap when necessary.
+This property has no effect, if multiLine=false				</Description>
+			</Property>
+		</Properties>
+		<StyleProperties>
+			<StyleProperty name="width" type="Size" not_styleable="true" owner="widgets.brease.FlyOut" category="Layout" groupRefId="Size" groupOrder="1" default="100">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="@include elemWidth($value)"/>
+				<Description>outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="height" type="Size" not_styleable="true" owner="widgets.brease.FlyOut" category="Layout" groupRefId="Size" groupOrder="2" default="200">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="@include elemHeight($value)"/>
+				<Description>outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="top" type="Integer" not_styleable="true" owner="widgets.brease.FlyOut" category="Layout" groupRefId="Position" groupOrder="1">
+				<StyleElement selector="&amp;.right" attribute="@include elemTop($value)"/>
+				<StyleElement selector="&amp;.left" attribute="@include elemTop($value)"/>
+				<Description>absolute position measured from top boundary of parent container</Description>
+			</StyleProperty>
+			<StyleProperty name="left" type="Integer" not_styleable="true" owner="widgets.brease.FlyOut" category="Layout" groupRefId="Position" groupOrder="2">
+				<StyleElement selector="&amp;.top" attribute="@include elemLeft($value)"/>
+				<StyleElement selector="&amp;.bottom" attribute="@include elemLeft($value)"/>
+				<Description>absolute position measured from left boundary of parent container</Description>
+			</StyleProperty>
+			<StyleProperty name="zIndex" type="UInteger" not_styleable="true" owner="widgets.brease.FlyOut" category="Layout" required="true">
+				<StyleElement attribute="z-index"/>
+				<Description>The zIndex property specifies the z-order of a widget and its childs.
+        When widgets overlap, z-order determines which one covers the other. A widget with a larger zIndex generally covers a widget with a lower one.				</Description>
+			</StyleProperty>
+			<StyleProperty name="imageWidth" type="ImageSize" not_styleable="true" category="Appearance" default="0">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton img" attribute="@include imageWidth($value)"/>
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton svg" attribute="@include imageWidth($value)"/>
+				<Description>width of the image</Description>
+			</StyleProperty>
+			<StyleProperty name="imageHeight" type="ImageSize" not_styleable="true" category="Appearance" default="0">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton img" attribute="@include imageHeight($value)"/>
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton svg" attribute="@include imageHeight($value)"/>
+				<Description>height of the image</Description>
+			</StyleProperty>
+			<StyleProperty name="imageColor" category="Appearance" type="Color" default="#000000">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton svg" attribute="fill"/>
+				<Description>Color of the image - only apply if a SVG image is used</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonWidth" type="Size" not_styleable="true" default="50" category="Layout" groupRefId="ButtonSize" groupOrder="1">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include elemWidth($value)"/>
+				<StyleElement attribute="@include elemWidth($value)"/>
+				<Description>button width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonHeight" type="Size" not_styleable="true" default="50" category="Layout" groupRefId="ButtonSize" groupOrder="2">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include elemHeight($value)"/>
+				<StyleElement attribute="@include elemHeight($value)"/>
+				<Description>button height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonBorderStyle" category="Appearance" type="BorderStyle" default="solid">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="border-style"/>
+				<Description>Style of the Border of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonBorderColor" category="Appearance" type="ColorCollection" default="#000000">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include importantBorderColor($value)"/>
+				<Description>Sets the border color of the fly-out button. For further information, please check its type</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonBorderWidth" category="Appearance" type="PixelValCollection" default="2px">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="border-width"/>
+				<Description>Sets the border width of fly-out button. For further information, please check its type</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonCornerRadius" category="Appearance" type="PixelValCollection" default="0px">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include border-radius($value)"/>
+				<Description>Sets the radius of the rounded corner of the fly-out button. For further information, please check its type</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonBackColor" category="Appearance" type="Color" default="#FFFFFF">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=":not(.disabled):not(.active):not(.checked).breaseFlyOutWrapper &gt; .flyoutButton" attribute="background-color"/>
+				<Description>Sets the background color of the fly-out button</Description>
+			</StyleProperty>
+			<StyleProperty name="buttonBackGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=":not(.disabled):not(.active):not(.checked).breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Background as a gradient</Description>
+			</StyleProperty>
+			<StyleProperty name="borderStyle" category="Appearance" type="BorderStyle" default="solid">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="border-style"/>
+				<Description>Style of the Border of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="borderColor" category="Appearance" type="ColorCollection" default="#000000">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="border-color"/>
+				<Description>Sets the border color of the popping-up fly-out. For further information, please check its type</Description>
+			</StyleProperty>
+			<StyleProperty name="borderWidth" category="Appearance" type="PixelValCollection" default="2px">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="border-width"/>
+				<Description>Sets the border width of the popping-up fly-out. For further information, please check its type</Description>
+			</StyleProperty>
+			<StyleProperty name="cornerRadius" category="Appearance" type="PixelValCollection" default="0px">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="@include border-radius($value)"/>
+				<Description>Sets the radius of the rounded corner of the popping-up fly-out. For further information, please check its type</Description>
+			</StyleProperty>
+			<StyleProperty name="backColor" category="Appearance" type="Color" default="transparent">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="background-color"/>
+				<Description>Sets the background color fo the popping-up fly-out</Description>
+			</StyleProperty>
+			<StyleProperty name="backGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Background as a gradient</Description>
+			</StyleProperty>
+			<StyleProperty name="textColor" category="Appearance" type="Color" default="#000000">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton span" attribute="color"/>
+				<Description>Sets the text color of the text in the fly-out button</Description>
+			</StyleProperty>
+			<StyleProperty name="textAlign" category="Appearance" type="brease.enum.TextAlign" default="center">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include text-alignment($value)"/>
+				<Description>Alignment of the text</Description>
+			</StyleProperty>
+			<StyleProperty name="textRotation" category="Appearance" type="WritingMode" default="horizontal">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton" attribute="@include writing-mode($value)"/>
+				<Description>Rotation of text in the button</Description>
+			</StyleProperty>
+			<StyleProperty name="opacity" category="Appearance" type="Opacity" default="1">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper" attribute="opacity"/>
+				<Description>Opacity of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="fontSize" category="Font" type="PixelVal" default="12px">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton span" attribute="font-size"/>
+				<Description>Fontsize of the text in pixel</Description>
+			</StyleProperty>
+			<StyleProperty name="fontName" category="Font" type="FontName" default="Arial">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton span" attribute="font-family"/>
+				<Description>Fontname of the text</Description>
+			</StyleProperty>
+			<StyleProperty name="bold" category="Font" type="Boolean" default="true">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton span" attribute="@include font-weight-bold($value)"/>
+				<Description>If **true** font style is bold</Description>
+			</StyleProperty>
+			<StyleProperty name="italic" category="Font" type="Boolean" default="false">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .flyoutButton span" attribute="@include font-style-italic($value)"/>
+				<Description>If **true** font style is italic</Description>
+			</StyleProperty>
+			<StyleProperty name="shadow" category="Appearance" type="Shadow" default="none">
+				<StyleElement idsuffix="_breaseFlyOutWrapper" selector=".breaseFlyOutWrapper &gt; .container" attribute="@include box-shadow($value)"/>
+				<Description>Shadow of the Widget</Description>
+			</StyleProperty>
+		</StyleProperties>
+		<PropertyGroups>
+			<PropertyGroup name="Size" type="String" category="Layout">
+				<Description>outer height and width of widget</Description>
+			</PropertyGroup>
+			<PropertyGroup name="Position" type="String" category="Layout">
+				<Description>top and left of widget</Description>
+			</PropertyGroup>
+			<PropertyGroup name="ButtonSize" type="String" category="Layout">
+				<Description>outer height and width of Button</Description>
+			</PropertyGroup>
+		</PropertyGroups>
+	<BindingTemplates>
+  
+</BindingTemplates>
+</Widget>
+</WidgetLibrary>

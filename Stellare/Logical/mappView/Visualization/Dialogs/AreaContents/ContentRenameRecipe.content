@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentRenameRecipe" height="200" width="450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="20" width="150" height="30" zIndex="0" text="$RecipeNewName" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="20" left="200" width="230" height="30" zIndex="1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="60" left="40" width="370" height="90" zIndex="2" multiLine="true" text="$RecipeRenameMessage" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Button" id="YesButton" top="160" left="110" width="100" height="30" zIndex="3" text="$Yes" />
+    <Widget xsi:type="widgets.brease.Button" id="NoButton" top="160" left="240" width="100" height="30" zIndex="4" text="$No" />
+  </Widgets>
+</Content>

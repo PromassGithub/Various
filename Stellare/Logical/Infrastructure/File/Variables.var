@@ -1,0 +1,8 @@
+VAR
+	MpFileManagerUI_0 : MpFileManagerUI; (*MpFileManagerUI instanz*)
+	DirCreate_0 : DirCreate; (*FileIO function block for creating the folder "mapp" in case it does not exist yet*)
+	CreateFolder : BOOL := TRUE; (*Control bit*)
+	MpFileManagerUIConnect : MpFileManagerUIConnectType := (DeviceList:=(DeviceNames:=['mappDir',9('')])); (*MpFileManagerUI connection datapoints*)
+	CreateReportsFolder : BOOL := 0;
+	DirCreate_1 : DirCreate := (0);
+END_VAR

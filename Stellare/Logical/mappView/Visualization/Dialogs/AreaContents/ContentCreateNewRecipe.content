@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentCreateNewRecipe" height="450" width="450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="90" left="40" width="150" height="30" zIndex="0" text="$RecipeWater" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="130" left="40" width="150" height="30" zIndex="1" text="$RecipeCoffee" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="170" left="40" width="150" height="30" zIndex="2" text="$RecipeMilk" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="210" left="40" width="150" height="30" zIndex="3" text="$RecipeSugar" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="90" left="250" width="160" height="30" zIndex="4" maxValue="300" unit="{'metric':'MLT','imperial':'MLT','imperial-us':'MLT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="130" left="250" width="160" height="30" zIndex="5" maxValue="200" unit="{'metric':'GRM','imperial':'GRM','imperial-us':'GRM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="170" left="250" width="160" height="30" zIndex="6" maxValue="300" unit="{'metric':'MLT','imperial':'MLT','imperial-us':'MLT'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput4" top="210" left="250" width="160" height="30" zIndex="7" maxValue="300" unit="{'metric':'GRM','imperial':'GRM','imperial-us':'GRM'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.Label" id="Label6" top="300" left="40" width="370" height="80" zIndex="8" multiLine="true" text="$RecipeNewRecipeMessage" wordWrap="true" textAlign="center" />
+    <Widget xsi:type="widgets.brease.Button" id="YesButton" top="410" left="120" width="100" height="30" zIndex="9" text="$Yes" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="NoButton" top="410" left="230" width="100" height="30" zIndex="11" text="$No" style="Operate" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="30" left="40" width="180" height="30" zIndex="10" text="$RecipeNewRecipeName" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="30" left="250" width="160" height="30" zIndex="12" />
+  </Widgets>
+</Content>

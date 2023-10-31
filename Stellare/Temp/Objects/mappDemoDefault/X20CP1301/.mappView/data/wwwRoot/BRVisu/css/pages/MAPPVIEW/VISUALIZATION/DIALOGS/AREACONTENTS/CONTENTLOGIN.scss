@@ -1,0 +1,232 @@
+﻿@import "mixins.scss";
+#ContentLogin_ButtonClose {
+	@include elemTop(250);
+}
+#ContentLogin_ButtonClose {
+	@include elemLeft(250);
+}
+#ContentLogin_ButtonClose {
+	@include elemAutoWidth(100);
+}
+#ContentLogin_ButtonClose {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_ButtonClose {
+		z-index: 0;
+}
+#ContentLogin_ButtonClose {
+	@include border-radius(5px);
+}
+#ContentLogin_TextInput1 {
+	@include elemTop(90);
+}
+#ContentLogin_TextInput1 {
+	@include elemLeft(230);
+}
+#ContentLogin_TextInput1 {
+	@include elemWidth(150);
+}
+#ContentLogin_TextInput1 {
+	@include elemHeight(30);
+}
+#ContentLogin_TextInput1 {
+		z-index: 1;
+}
+#ContentLogin_Label1 {
+	@include elemTop(90);
+}
+#ContentLogin_Label1 {
+	@include elemLeft(90);
+}
+#ContentLogin_Label1 {
+	@include elemAutoWidth(130);
+}
+#ContentLogin_Label1 {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_Label1 {
+		z-index: 2;
+}
+#ContentLogin_Label2 {
+	@include elemTop(140);
+}
+#ContentLogin_Label2 {
+	@include elemLeft(90);
+}
+#ContentLogin_Label2 {
+	@include elemAutoWidth(130);
+}
+#ContentLogin_Label2 {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_Label2 {
+		z-index: 3;
+}
+#ContentLogin_LoginButton {
+	@include elemTop(250);
+}
+#ContentLogin_LoginButton {
+	@include elemLeft(100);
+}
+#ContentLogin_LoginButton {
+	@include elemAutoWidth(100);
+}
+#ContentLogin_LoginButton {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_LoginButton {
+		z-index: 4;
+}
+#ContentLogin_LoginButton {
+	@include border-radius(5px);
+}
+#ContentLogin_Password1 {
+	@include elemTop(140);
+}
+#ContentLogin_Password1 {
+	@include elemLeft(230);
+}
+#ContentLogin_Password1 {
+	@include elemWidth(150);
+}
+#ContentLogin_Password1 {
+	@include elemHeight(30);
+}
+#ContentLogin_Password1 {
+		z-index: 5;
+}
+#ContentLogin_FlyOut1 {
+	&.right{
+	@include elemTop(0);
+	}
+}
+#ContentLogin_FlyOut1 {
+	&.left{
+	@include elemTop(0);
+	}
+}
+#ContentLogin_FlyOut1 {
+	&.top{
+	@include elemLeft(40);
+	}
+}
+#ContentLogin_FlyOut1 {
+	&.bottom{
+	@include elemLeft(40);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .container{
+	@include elemWidth(300);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .container{
+	@include elemHeight(200);
+	}
+}
+#ContentLogin_FlyOut1 {
+		z-index: 6;
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .flyoutButton img{
+	@include imageHeight(50);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .flyoutButton svg{
+	@include imageHeight(50);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .flyoutButton img{
+	@include imageWidth(50);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .flyoutButton svg{
+	@include imageWidth(50);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	:not(.disabled):not(.active):not(.checked).breaseFlyOutWrapper > .flyoutButton{
+		background-color: rgba(255, 255, 255, 0);
+	}
+}
+#ContentLogin_FlyOut1_breaseFlyOutWrapper {
+	.breaseFlyOutWrapper > .container{
+		background-color: rgba(245, 245, 245, 1);
+	}
+}
+#ContentLogin_Label3 {
+	@include elemTop(60);
+}
+#ContentLogin_Label3 {
+	@include elemLeft(40);
+}
+#ContentLogin_Label3 {
+	@include elemAutoWidth(120);
+}
+#ContentLogin_Label3 {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_Label3 {
+		z-index: 0;
+}
+#ContentLogin_Label3 {
+		font-size: 20px;
+}
+#ContentLogin_Label4 {
+	@include elemTop(100);
+}
+#ContentLogin_Label4 {
+	@include elemLeft(40);
+}
+#ContentLogin_Label4 {
+	@include elemAutoWidth(120);
+}
+#ContentLogin_Label4 {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_Label4 {
+		z-index: 1;
+}
+#ContentLogin_Label4 {
+		font-size: 20px;
+}
+#ContentLogin_Label5 {
+	@include elemTop(60);
+}
+#ContentLogin_Label5 {
+	@include elemLeft(160);
+}
+#ContentLogin_Label5 {
+	@include elemAutoWidth(80);
+}
+#ContentLogin_Label5 {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_Label5 {
+		z-index: 2;
+}
+#ContentLogin_Label5 {
+		font-size: 20px;
+}
+#ContentLogin_Label6 {
+	@include elemTop(100);
+}
+#ContentLogin_Label6 {
+	@include elemLeft(160);
+}
+#ContentLogin_Label6 {
+	@include elemAutoWidth(80);
+}
+#ContentLogin_Label6 {
+	@include elemAutoHeight(30);
+}
+#ContentLogin_Label6 {
+		z-index: 3;
+}
+#ContentLogin_Label6 {
+		font-size: 20px;
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gEnergyCore" Type="mpenergycore">
+    <Group ID="mapp.energy.collector">
+      <Property ID="RecordMemory" Value="2" />
+      <Group ID="Export">
+        <Selector ID="FileType">
+          <Property ID="ColumnSeparator" Value=";" />
+        </Selector>
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX" />
+  </Element>
+</Configuration>

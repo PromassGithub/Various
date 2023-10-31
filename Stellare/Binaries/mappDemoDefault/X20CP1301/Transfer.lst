@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <OperatingSystem Version="G4.34"/>
+  <Hardware Target="SG4"/>
+  <Operation Delete="Recipe.br"/>
+  <Operation Delete="Report.br"/>
+  <Operation Delete="Conteggio.br"/>
+  <Operation Delete="Program.br"/>
+  <Operation Delete="Frequenza.br"/>
+  <Operation Delete="MpServer.br"/>
+  <Operation Delete="MpCodeBox.br"/>
+  <Operation Delete="MpWebXs.br"/>
+  <Operation Delete="MpUserX.br"/>
+  <Operation Delete="MpSequence.br"/>
+  <Operation Delete="MpPackML.br"/>
+  <Operation Delete="MpIO.br"/>
+  <Operation Delete="MpEnergy.br"/>
+  <Operation Delete="MpCom.br"/>
+  <Operation Delete="MpAudit.br"/>
+  <Operation Delete="MpAlarmX.br"/>
+  <Operation Delete="MTBasics.br"/>
+  <Operation Delete="mvLoader.br"/>
+  <Operation Delete="MpRecipe.br"/>
+  <Operation Delete="MpFile.br"/>
+  <Operation Delete="MpReport.br"/>
+  <Operation Delete="AsArLog.br"/>
+  <Operation Delete="AsArProf.br"/>
+  <Operation Delete="AsMem.br"/>
+  <Operation Delete="AsArSdm.br"/>
+  <Operation Delete="AsIecCon.br"/>
+  <Operation Delete="arcert.br"/>
+  <Operation Delete="aseth.br"/>
+  <Operation Delete="ashw.br"/>
+  <Operation Delete="arflatprv.br"/>
+  <Operation Delete="arcoal.br"/>
+  <Operation Delete="asiomman.br"/>
+  <Operation Delete="asusb.br"/>
+  <Operation Delete="aruser.br"/>
+  <Operation Delete="DataObj.br"/>
+  <Operation Delete="MpBase.br"/>
+  <Operation Delete="brsystem.br"/>
+  <Operation Delete="sys_lib.br"/>
+  <Operation Delete="astime.br"/>
+  <Operation Delete="FileIO.br"/>
+  <Operation Delete="arssl.br"/>
+  <Operation Download="asfw.br" Memory="SystemROM"/>
+  <Operation Download="ashwd.br" Memory="SystemROM"/>
+  <Operation Download="arconfig.br" Memory="SystemROM"/>
+  <Operation Download="sysconf.br" Memory="SystemROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="TCData.br" Memory="SystemROM"/>
+  <Operation Download="udbdef.br" Memory="UserROM"/>
+  <Operation Download="TCLang.br" Memory="UserROM"/>
+  <Operation Download="CfgSeq.br" Memory="UserROM"/>
+  <Operation Download="OpcUaMap.br" Memory="UserROM"/>
+  <Operation Download="ashwac.br" Memory="UserROM"/>
+  <Operation Download="CfgEnergy.br" Memory="UserROM"/>
+  <Operation Download="CfgPackML.br" Memory="UserROM"/>
+  <Operation Download="CfgHistory.br" Memory="UserROM"/>
+  <Operation Download="Role.br" Memory="UserROM"/>
+  <Operation Download="User.br" Memory="UserROM"/>
+  <Operation Download="CfgRecipe.br" Memory="UserROM"/>
+  <Operation Download="CfgFile.br" Memory="UserROM"/>
+  <Operation Download="CfgAlarm.br" Memory="UserROM"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
+  <Operation Download="CfgAudit.br" Memory="UserROM"/>
+  <Operation Download="TC.br" Memory="UserROM"/>
+  <Operation Download="CfgUserXLo.br" Memory="UserROM"/>
+  <Operation Download="CfgWebXs.br" Memory="UserROM"/>
+  <Operation Download="CfgUserX.br" Memory="UserROM"/>
+  <Operation Download="CfgIO.br" Memory="UserROM"/>
+  <Operation Download="CfgReportF.br" Memory="UserROM"/>
+  <Operation Download="CfgReport.br" Memory="UserROM"/>
+  <Operation Download="CfgCodeCor.br" Memory="UserROM"/>
+  <Operation Download="CfgComUnit.br" Memory="UserROM"/>
+  <Operation Download="CfgCodeBox.br" Memory="UserROM"/>
+  <Operation Download="Config.br" Memory="UserROM"/>
+  <Operation Download="Runtime.br" Memory="UserROM"/>
+  <Operation Download="Operator.br" Memory="UserROM"/>
+  <Operation Download="AsBrStr.br" Memory="UserROM"/>
+  <Operation Download="AsWStr.br" Memory="UserROM"/>
+  <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="AsBrWStr.br" Memory="UserROM"/>
+  <Operation Download="ArTextSys.br" Memory="UserROM"/>
+  <Operation Download="MTTypes.br" Memory="UserROM"/>
+  <Operation Download="asstring.br" Memory="UserROM"/>
+  <Operation Download="arsvcreg.br" Memory="UserROM"/>
+  <Operation Download="arssl.br" Memory="UserROM"/>
+  <Operation Download="FileIO.br" Memory="UserROM"/>
+  <Operation Download="astime.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
+  <Operation Download="brsystem.br" Memory="UserROM"/>
+  <Operation Download="MpBase.br" Memory="UserROM"/>
+  <Operation Download="DataObj.br" Memory="UserROM"/>
+  <Operation Download="aruser.br" Memory="UserROM"/>
+  <Operation Download="asusb.br" Memory="UserROM"/>
+  <Operation Download="asiomman.br" Memory="UserROM"/>
+  <Operation Download="arcoal.br" Memory="UserROM"/>
+  <Operation Download="arflatprv.br" Memory="UserROM"/>
+  <Operation Download="ashw.br" Memory="UserROM"/>
+  <Operation Download="aseth.br" Memory="UserROM"/>
+  <Operation Download="arcert.br" Memory="UserROM"/>
+  <Operation Download="AsIecCon.br" Memory="UserROM"/>
+  <Operation Download="AsArSdm.br" Memory="UserROM"/>
+  <Operation Download="AsMem.br" Memory="UserROM"/>
+  <Operation Download="AsArProf.br" Memory="UserROM"/>
+  <Operation Download="AsArLog.br" Memory="UserROM"/>
+  <Operation Download="MpReport.br" Memory="UserROM"/>
+  <Operation Download="MpFile.br" Memory="UserROM"/>
+  <Operation Download="MpRecipe.br" Memory="UserROM"/>
+  <Operation Download="mvLoader.br" Memory="UserROM"/>
+  <Operation Download="MTBasics.br" Memory="UserROM"/>
+  <Operation Download="MpAlarmX.br" Memory="UserROM"/>
+  <Operation Download="MpAudit.br" Memory="UserROM"/>
+  <Operation Download="MpCom.br" Memory="UserROM"/>
+  <Operation Download="MpEnergy.br" Memory="UserROM"/>
+  <Operation Download="MpIO.br" Memory="UserROM"/>
+  <Operation Download="MpPackML.br" Memory="UserROM"/>
+  <Operation Download="MpSequence.br" Memory="UserROM"/>
+  <Operation Download="MpUserX.br" Memory="UserROM"/>
+  <Operation Download="MpWebXs.br" Memory="UserROM"/>
+  <Operation Download="MpCodeBox.br" Memory="UserROM"/>
+  <Operation Download="MpServer.br" Memory="UserROM"/>
+  <Operation Download="Frequenza.br" Memory="UserROM"/>
+  <Operation Download="Program.br" Memory="UserROM"/>
+  <Operation Download="Conteggio.br" Memory="UserROM"/>
+  <Operation Download="Report.br" Memory="UserROM"/>
+  <Operation Download="Recipe.br" Memory="UserROM"/>
+</Transfer>

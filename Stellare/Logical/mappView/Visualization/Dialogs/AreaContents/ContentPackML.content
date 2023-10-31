@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentPackML" height="460" width="725" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.Image" id="Image1" top="20" left="20" width="700" height="420" zIndex="0" image="Media/MpPackMLVisu/MpPackML_Main.png" />
+		<Widget xsi:type="widgets.brease.Label" id="lblExecute" top="142" left="317" width="100" height="58" zIndex="2" text="$IAT/Pack.State.Execute" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="Label16" top="240" left="1180" width="176" height="30" zIndex="3" text="Complete" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="13px" bold="true" />
+		<Widget xsi:type="widgets.brease.Label" id="Label17" top="440" left="1180" width="176" height="40" zIndex="4" text="Aborting" textColor="rgba(0, 0, 0, 1)" textAlign="center" fontSize="13px" bold="true" />
+		<Widget xsi:type="widgets.brease.Label" id="lblStarting" top="142" left="186" width="100" height="58" zIndex="5" text="$IAT/Pack.State.Starting" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblIdle" top="142" left="54" width="100" height="58" zIndex="6" text="$IAT/Pack.State.Idle" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblCompleting" top="142" left="449" width="100" height="58" zIndex="7" text="$IAT/Pack.State.Completing" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblComplete" top="142" left="580" width="100" height="58" zIndex="8" text="$IAT/Pack.State.Complete" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblSuspended" top="235" left="317" width="100" height="58" zIndex="9" text="$IAT/Pack.State.Suspended" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblUnsuspending" top="235" left="186" width="100" height="58" zIndex="10" text="$IAT/Pack.State.Unsuspending" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblResetting" top="235" left="54" width="100" height="58" zIndex="11" text="$IAT/Pack.State.Resetting" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblSuspending" top="235" left="449" width="100" height="58" zIndex="12" text="$IAT/Pack.State.Suspending" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblClearing" top="351" left="317" width="100" height="58" zIndex="13" text="$IAT/Pack.State.Clearing" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblStopping" top="351" left="186" width="100" height="58" zIndex="14" text="$IAT/Pack.State.Stopping" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblStopped" top="351" left="54" width="100" height="58" zIndex="15" text="$IAT/Pack.State.Stopped" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblAborted" top="351" left="449" width="100" height="58" zIndex="16" text="$IAT/Pack.State.Aborted" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblAborting" top="351" left="581" width="100" height="58" zIndex="17" text="$IAT/Pack.State.Aborting" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblHeld" top="50" left="317" width="100" height="58" zIndex="18" text="$IAT/Pack.State.Held" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblHolding" top="50" left="186" width="100" height="58" zIndex="19" text="$IAT/Pack.State.Holding" cornerRadius="5px" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+		<Widget xsi:type="widgets.brease.Label" id="lblUnholding" top="50" left="448" width="100" height="58" zIndex="20" text="$IAT/Pack.State.Unholding" cornerRadius="5px" borderStyle="none" textAlign="center" fontSize="13px" bold="true" style="PackMLInactiveGray" />
+	</Widgets>
+</Content>

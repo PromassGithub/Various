@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.2.5.388"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpRecipeAuditText">
+  <Property Name="Description" Value="MpRecipe Audit Texts"/>
+  <Property Name="Index" Value="2121"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="188277" Value="The loading of the recipe has been completed"/>
+    <Text ID="188278" Value="Recipe [%file] from device [%dev] has been saved"/>
+    <Text ID="188279" Value="Recipe has been renamed"/>
+    <Text ID="188280" Value="Recipe has been deleted"/>
+    <Text ID="188281" Value="Loading of recipe [%file] from [%dev] started"/>
+  </TextLayer>
+  <TextLayer LanguageId="de">
+    <Text ID="188277" Value="Laden des Rezepts wurde beendet"/>
+    <Text ID="188278" Value="Rezept [%file] des Speichermediums [%dev] wurde gespeichert"/>
+    <Text ID="188279" Value="Rezept wurde umbenannt"/>
+    <Text ID="188280" Value="Rezept wurde gelöscht"/>
+    <Text ID="188281" Value="Rezept [%file] des Speichermediums [%dev] wurde geladen"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="188277" Value="1"/>
+    <Index ID="188278" Value="2"/>
+    <Index ID="188279" Value="3"/>
+    <Index ID="188280" Value="4"/>
+    <Index ID="188281" Value="0"/>
+  </IndexMap>
+</TextGroup>

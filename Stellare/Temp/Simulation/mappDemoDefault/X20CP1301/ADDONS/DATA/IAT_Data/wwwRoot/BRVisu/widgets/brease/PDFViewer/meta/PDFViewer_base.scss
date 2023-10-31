@@ -1,0 +1,15 @@
+@import "mixins.scss";
+@mixin widgets_brease_PDFViewer_base {
+	@include elemWidth(240);
+	@include elemHeight(320);
+	border-width: 0px;
+	border-color: #FFF;
+	border-style: solid;
+	@include border-radius(0px);
+	padding: 0 10px;
+	margin: 0px;
+	opacity: 1;
+	@include rotate(0deg);
+
+}
+

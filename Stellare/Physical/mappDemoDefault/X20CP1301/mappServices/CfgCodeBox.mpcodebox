@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="CodeBoxCfg" Type="mpcodebox">
+    <Group ID="gen">
+      <Property ID="progLoc" Value="mappCodeBox" />
+    </Group>
+    <Group ID="pvselect">
+      <Selector ID="0" Value="1">
+        <Property ID="acc" Value="1" />
+      </Selector>
+    </Group>
+    <Group ID="macro">
+      <Group ID="act">
+        <Group ID="0">
+          <Property ID="id" Value="LampRed" />
+          <Group ID="cd">
+            <Property ID="0" Value="$CodeBox:Lamp.Red := #IN;" />
+          </Group>
+        </Group>
+        <Group ID="1">
+          <Property ID="id" Value="LampYellow" />
+          <Group ID="cd">
+            <Property ID="0" Value="$CodeBox:Lamp.Yellow := #IN;" />
+          </Group>
+        </Group>
+        <Group ID="2">
+          <Property ID="id" Value="LampGreen" />
+          <Group ID="cd">
+            <Property ID="0" Value="$CodeBox:Lamp.Green := #IN;" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="cond">
+        <Group ID="0">
+          <Property ID="id" Value="StartPos" />
+          <Group ID="cd">
+            <Property ID="0" Value="#R := $CodeBox:Cup.StartPosition$;" />
+          </Group>
+        </Group>
+        <Group ID="1">
+          <Property ID="id" Value="CoffeePos" />
+          <Group ID="cd">
+            <Property ID="0" Value="#R := $CodeBox:Cup.CoffeePosition$;" />
+          </Group>
+        </Group>
+        <Group ID="2">
+          <Property ID="id" Value="EndPos" />
+          <Group ID="cd">
+            <Property ID="0" Value="#R := $CodeBox:Cup.EndPosition$;" />
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

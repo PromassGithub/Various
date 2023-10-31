@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentLogin" height="300" width="450" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonClose" top="250" left="250" width="100" height="30" zIndex="0" text="$CloseDialog" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="90" left="230" width="150" height="30" zIndex="1" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="90" left="90" width="130" height="30" zIndex="2" text="$UsernameDialog" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="140" left="90" width="130" height="30" zIndex="3" text="$PasswordDialog" />
+    <Widget xsi:type="widgets.brease.LoginButton" id="LoginButton" top="250" left="100" width="100" height="30" zIndex="4" text="$LoginDialog" cornerRadius="5px" />
+    <Widget xsi:type="widgets.brease.Password" id="Password1" top="140" left="230" width="150" height="30" zIndex="5" />
+    <Widget xsi:type="widgets.brease.FlyOut" id="FlyOut1" top="0" left="40" width="300" height="200" zIndex="6" buttonOffset="20" image="Media/SymbolLib/Edit/Help.svg" imageAlign="top" imageHeight="50" imageWidth="50" buttonBackColor="rgba(255, 255, 255, 0)" backColor="rgba(245, 245, 245, 1)" style="transparent">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="60" left="40" width="120" height="30" zIndex="0" text="$IAT/UserLoginUser" fontSize="20px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="100" left="40" width="120" height="30" zIndex="1" text="$IAT/UserLoginPassword" fontSize="20px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="60" left="160" width="80" height="30" zIndex="2" text="$IAT/UserName" fontSize="20px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="100" left="160" width="80" height="30" zIndex="3" text="$IAT/UserPass" fontSize="20px" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

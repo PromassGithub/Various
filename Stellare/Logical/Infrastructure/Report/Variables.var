@@ -1,0 +1,23 @@
+VAR CONSTANT
+	STR_FILE_DEVICE : STRING[80] := '/FileDevice:mappReport/';
+END_VAR
+VAR
+	LanguageSelect_0 : LanguageSelect := (LanguageSelection:=['en','de'],SelectedIndex:=0);
+	MpFileManagerUI_0 : MpFileManagerUI;
+	MpFileManagerUIConnect : MpFileManagerUIConnectType := (DeviceList:=(DeviceNames:=['mappReport',9('')]));
+END_VAR
+VAR CONSTANT
+	REPORT_DEVICE : STRING[80] := 'mappReport'; (*Constant contains filedevice for save reports *)
+	REPORT_NAME : STRING[80] := 'Dosaggio'; (*Constant contains name of Report*)
+END_VAR
+VAR
+	DisplayFileName : ARRAY[0..49] OF STRING[255] := [50('')]; (*Displayed Files for mappView*)
+	StrSelectedFile : STRING[256] := '0'; (*Gives the path of selected report to pdfViewer in mappView*)
+	EnableGenerate : BOOL := TRUE; (*HMI control bit*)
+	EnableDelete : BOOL := TRUE; (*HMI control bit*)
+	i : USINT := 0; (*index for save filenames in a array*)
+	DisplayFileNameIndex : USINT := 0; (*index of selected file for display in table in mappView*)
+	DeleteReport : BOOL := 0; (*Start deleting a Report*)
+	Refresh : BOOL := 0; (*strrt refresh process*)
+	TON_0 : TON := (0); (*Timer to wait before refresh*)
+END_VAR

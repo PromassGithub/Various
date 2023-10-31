@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">mappDemo</prop>
+  </header>
+  <body>
+    <tu tuid="MpDataUserAlarm">
+      <tuv xml:lang="fr">
+        <seg>Enregistrement de MpData commencé</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>MpData startet Aufzeichnung</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recording of MpData started</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TempOverTolerance">
+      <tuv xml:lang="fr">
+        <seg>
+La température est au-dessus de la tolérance</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Temperatur ist über der Toleranz ({&amp;CurrentTemp|4.2}°)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature is over tolerance ({&amp;CurrentTemp|4.2}°)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TempBelowTolerance">
+      <tuv xml:lang="fr">
+        <seg>
+La température est inférieure à la tolérance</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Temperatur ist unter der Toleranz ({&amp;CurrentTemp|4.2}°)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature is below tolerance ({&amp;CurrentTemp|4.2}°)</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MpSequencerTestAlarm">
+      <tuv xml:lang="de">
+        <seg>Daa ist ein Testalarm der von mpSequence gesetzt wird.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>This is a testalarm set by mpSequence.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="WaterNotEnough">
+      <tuv xml:lang="de">
+        <seg>Es ist zu wenig Wasser vorhanden! Bitte nachfüllen.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is not enough water! Please refill.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CoffeeNotEnough">
+      <tuv xml:lang="de">
+        <seg>Es ist zu wenig Kaffe vorhanden! Bitte nachfüllen.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is not enough coffee! Please refill.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MilkNotEnough">
+      <tuv xml:lang="de">
+        <seg>Es ist zu wenig Milch vorhanden! Bitte nachfüllen.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is not enough milk! Please refill.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SugarNotEnough">
+      <tuv xml:lang="de">
+        <seg>Es ist zu wenig Zucker vorhanden! Bitte nachfüllen.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>There is not enough sugar! Please refill.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

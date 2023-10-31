@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT</prop>
+  </header>
+  <body>
+    <tu tuid="AuditFrom">
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Von</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>From</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditTo">
+      <tuv xml:lang="de">
+        <seg>Bis</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Until</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditEvent">
+      <tuv xml:lang="de">
+        <seg>Event</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Event</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditEventID">
+      <tuv xml:lang="de">
+        <seg>EventID</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>EventID</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditUser">
+      <tuv xml:lang="de">
+        <seg>Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditPattern">
+      <tuv xml:lang="de">
+        <seg>Pattern</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Pattern</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditBatch">
+      <tuv xml:lang="de">
+        <seg>Batch</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Batch</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditExport">
+      <tuv xml:lang="de">
+        <seg>Exportieren</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Export</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditFilterSettings">
+      <tuv xml:lang="de">
+        <seg>Filter Einstellungen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Filter settings</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditExclude">
+      <tuv xml:lang="de">
+        <seg>Ausschließen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Exclude</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditFilterInfo">
+      <tuv xml:lang="de">
+        <seg>Die Eingabe für die Filtereinstellungen VON und BIS ist folgendermaßen definiert: Jahr/Monat/Tag/Stunden/Mintuten.
+Es kann gleichzeitig nach 5 EventID's gesucht werden.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The Input for the Filtersettings FROM and UNTIL is defined as follows: year/month/day/hour/minute.
+It is possilble to search for 5 EventID's at the same time.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditErrorHeader">
+      <tuv xml:lang="de">
+        <seg>Fehler!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Error!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditErrorMessage">
+      <tuv xml:lang="de">
+        <seg>Ein Fehler ist aufgetreten! Fehlernummer: {@AuditError}
+Für mehr Information: AutomationStudio Hilfe.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>An error occured! Errornumber: {@AuditError}
+For detaild information: AutomationStudio help.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditTimestamp">
+      <tuv xml:lang="de">
+        <seg>Zeitstempel</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timestamp</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditMessage">
+      <tuv xml:lang="de">
+        <seg>Ereignis</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Event</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

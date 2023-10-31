@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentEnergy" height="460" width="725" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.OnlineChart" id="OnlineChart2" top="40" left="20" width="660" height="358" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartYAxis" id="OnlineChartYAxis2" width="60" zIndex="0" unit="{'metric':'KWT','imperial':'KWT','imperial-us':'KWT'}">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph2" zIndex="0" interpolationType="cardinal" xAxisRefId="OnlineChartTimeAxis2" lineColor="rgba(100, 149, 237, 1)" />
+            <Widget xsi:type="widgets.brease.OnlineChartGraph" id="OnlineChartGraph1" zIndex="1" xAxisRefId="OnlineChartTimeAxis2" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.OnlineChartTimeAxis" id="OnlineChartTimeAxis2" height="50" zIndex="1">
+          <Widgets />
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

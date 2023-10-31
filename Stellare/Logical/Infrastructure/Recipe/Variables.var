@@ -1,0 +1,18 @@
+VAR
+	MpRecipeRegPar_0 : MpRecipeRegPar; (*Registration of the recipe structure variable*)
+	MpRecipeUI_0 : MpRecipeUI := (UISetup:=(RecipeListSize:=12,Confirmation:=(RecipeLoad:=0,RecipeSave:=0,RecipeCreate:=0,RecipeDelete:=TRUE))); (*MpRecipeUI Component*)
+	MpRecipeCsv_0 : MpRecipeCsv := (0);
+	MpRecipeXml_0 : MpRecipeXml; (*Recipe Handling FUB*)
+	RecipeCreateStep : RecipeCreateSteps := IDLE; (*Internal variable for recipe creating state machine*)
+	MpRecipeUIConnect : MpRecipeUIConnectType := (Recipe:=(Filter:='*xml'),New:=(FileName:='newRecipe.xml')); (*MpRecipeUI connection datapoints*)
+	CoffeeIngredients : CoffeeIngredientsType := (Milk:=100,Water:=150,Sugar:=30,Coffee:=60); (*Coffee machine recipe structure*)
+END_VAR
+(*Variables for AuditTrail*)
+VAR
+	MpAuditValueChangeStatus : DINT; (*Status variable for MpAuditValueChange function*)
+	_Water : INT := 0;
+	_Sugar : INT := 0;
+	_Milk : INT := 0;
+	_Coffee : INT := 0;
+	_SelectedIndex : UINT := 800;
+END_VAR
