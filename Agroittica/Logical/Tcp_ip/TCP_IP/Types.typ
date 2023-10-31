@@ -36,7 +36,7 @@ TYPE
 		connected : BOOL; (*a 1 se connesso*)
 	END_STRUCT;
 	Buffer_typ : 	STRUCT 
-		Marel_Weight : STRING[50];
+		Marel_Weight : STRING[80];
 		keep_alive : UDINT;
 	END_STRUCT;
 	TCP_typ : 	STRUCT  (*Datatyp for global Variables*)

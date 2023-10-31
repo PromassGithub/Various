@@ -11,7 +11,7 @@
 
 PROGRAM _INIT
 	
-	IF (posizione_salvata <> 0) THEN Actual_Position_0 := posizione_salvata; END_IF
+	IF (posizione_salvata <> 0) THEN Actual_Position_0 := posizione_salvata; END_IF;
 
 	(* Set up XSM Control parameters. *)
 	XSM_Ctrl_0.IO_Mapping.DeviceName := 'IF6.ST2';					(* Location of SM module on X20 CPU. *)
@@ -519,7 +519,7 @@ PROGRAM _CYCLIC
 		0: // idle
 			IF (Status = AUTO OR Status = MANUAL) THEN CMD_home_status := 1; END_IF
 			
-			IF (posizione_salvata <> 0) THEN Actual_Position_0 := posizione_salvata; END_IF
+			IF (posizione_salvata <> 0) THEN Actual_Position_0 := posizione_salvata; END_IF;
 			
 		1: // idle auto
 			
@@ -593,7 +593,7 @@ PROGRAM _CYCLIC
 				CMD_Reboot_pos_status := 1; 
 			END_IF;
 			
-			IF (posizione_salvata <> 0) THEN Actual_Position_0 := posizione_salvata; END_IF
+			IF (posizione_salvata <> 0) THEN Actual_Position_0 := posizione_salvata; END_IF;
 			
 		1:
 			IF (glb_cmd.Reboot_pos) THEN 

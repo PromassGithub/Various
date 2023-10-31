@@ -112,7 +112,7 @@ PROGRAM _CYCLIC
 			Client.TcpSend_0.pData := ADR(buffer.send_data);  (* Which data to send *)
 			Client.TcpSend_0.datalen := SIZEOF(buffer.send_data);  (* Lenght of data to send *)											
 			Client.TcpSend_0.flags := 0;
-			Client.TcpSend_0;  (* Call the Function*)
+			Client.TcpSend_0; (*call finction*)
 			Eth_connect.no_comunication := 0;
 			
 			IF Client.TcpSend_0.status = 0 THEN  (* Data was sent sucessfully -> receive data *)
@@ -174,7 +174,7 @@ PROGRAM _CYCLIC
 		100: (* Here some error Handling has to be implemented *)
 			Eth_connect.tcp_state.tcperror := 0;
 			Eth_connect.no_comunication := 1;
-			IF buffer.send_data.keep_alive >  1250 THEN 	(* 1250 * 4ms = 5 seconds *)
+			IF buffer.send_data.keep_alive >  50 THEN 	(* 1250 * 4ms = 5 seconds *)
 				IF (Client.TcpOpen_0.status = 32602)  THEN
 					Client.sStep := 40;
 				ELSE

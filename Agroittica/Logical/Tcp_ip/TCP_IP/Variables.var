@@ -1,4 +1,5 @@
 VAR
+	a : BOOL := FALSE;
 	HMI : USINT := 0;
 	History_Buffer : History_Buffer_typ := (0);
 	Client : Client_typ := (0); (*Data for Client Task*)

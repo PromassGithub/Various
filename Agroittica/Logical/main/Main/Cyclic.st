@@ -269,12 +269,22 @@ PROGRAM _CYCLIC
 			
 	END_CASE;
 	
-			
-	
 	//--------------------PESI---------------------------------
 	
+	//string separation
+	Example_string;
 	
-	Pesi_0.Marel_Weight[0] := STRING_TO_REAL(Eth_connect.Marel_Weight);
+	String_len_raw := LEN(Eth_connect.Marel_Weight);
+	
+	IF String_len_raw = 8 THEN
+		L := 6;
+	ELSIF String_len_raw = 9 THEN
+		L := 7;
+	END_IF;
+	
+	Result_string := MID(Eth_connect.Marel_Weight, L, 2); 
+	
+	Pesi_0.Marel_Weight[0] := STRING_TO_REAL(Result_string);
 	
 	CASE Pesi_0.Weight_Status OF	//Gestione peso pesci
 		
