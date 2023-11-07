@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.9.3.144 FileVersion="4.9"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
   <Module Name="X20CP1301" Type="X20CP1301" Version="1.7.0.0">
     <Module Name="X1" Type="X1" Virtual="true" Version="1.7.0.0">
@@ -34,6 +34,7 @@
     <Parameter ID="ConfigurationID" Value="mappDemo_CI_Master" />
     <Parameter ID="UserPartitionSize" Value="20" />
     <Parameter ID="AutomaticTransferOfUserfiles" Value="on" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="RemanentGlobalPvSize" Value="8192" />
     <Parameter ID="VolatileGlobalPvSize" Value="500000" />
     <Parameter ID="CyclicObjects" Value="300" />
@@ -61,8 +62,8 @@
     <Parameter ID="FileDevicePath7" Value="C:\mappDemo\UserFiles\CodeBox" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="Promass" />
-    <Parameter ID="FtpUserPassword1" Value="NpCmz0K6m8wsjK3Ky3NpfFf+z2PPu3ZJ9pj0GQJGS0g=" />
-    <Parameter ID="FtpUserSalt1" Value="EihsEguH" />
+    <Parameter ID="FtpUserPassword1" Value="ghSEFkTyrMt0HrmHIrAZUjhva+q4kQCZnUxdIX/Ttz8=" Description="Bazzica" />
+    <Parameter ID="FtpUserSalt1" Value="W66TvYEp" />
     <Parameter ID="FTPAccessRight1" Value="0" />
     <Parameter ID="FTPdevice1" Value="ALL" />
     <Parameter ID="ActivateOpcUa" Value="1" />

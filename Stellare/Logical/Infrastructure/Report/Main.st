@@ -12,6 +12,8 @@ PROGRAM _CYCLIC
 	//Call Action 
 	RefreshReport;
 	
+	MpFileManagerUIConnect.File.SortOrder := mpFILE_SORT_BY_MOD_TIME_DESC;
+	
 END_PROGRAM
 PROGRAM _EXIT
  
