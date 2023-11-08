@@ -486,6 +486,39 @@
           <Property Name="Top" Value="313"/>
           <Property Name="Width" Value="100"/>
         </Control>
+        <Control ClassId="0x00001004" Name="Text_9">
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
+          <Property Name="TextIndexOffset" Value="23"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="313"/>
+          <Property Name="Width" Value="153"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_10">
+          <Property Name="AlignmentHorizontal" Value="Right"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_OutputBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="Left" Value="192"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value="299993"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Eth_connect.Marel_Weight]"/>
+          <Property Name="TextSource" Value="SingleString"/>
+          <Property Name="Top" Value="313"/>
+          <Property Name="Width" Value="100"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_73">

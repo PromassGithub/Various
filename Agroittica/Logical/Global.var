@@ -8,11 +8,12 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	glb_FIFO : typ_FIFO := (0);
 	L : USINT := 0;
 	String_len : INT := 0;
 	String_len_raw : INT := 0;
-	Result_string : STRING[80] := '';
-	Example_string : STRING[80] := '';
+	Result_String_Real : REAL := 0.0;
+	Result_string : STRING[15] := '';
 	Manual_Valve : Valves := (0);
 	Dist_Trig : REAL := 0.0;
 	m_laser_enc : REAL := 0.0;
@@ -36,6 +37,9 @@ VAR
 	Auto_fish_0 : Auto_fish := (0);
 	Pesi_0 : Pesi := (0);
 	Gun_Switch_0 : Gun_Switch := (0);
+	R_TRIG_07 : R_TRIG := (0);
+	R_TRIG_06 : R_TRIG := (0);
+	R_TRIG_05 : R_TRIG := (0);
 	R_TRIG_04 : R_TRIG := (0);
 	R_TRIG_03 : R_TRIG := (0);
 	R_TRIG_02 : R_TRIG := (0);

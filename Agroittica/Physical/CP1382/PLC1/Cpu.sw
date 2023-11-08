@@ -17,7 +17,7 @@
     <Task Name="Recipe" Source="MpPkg.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarm_0" Source="MpPkg.Alarm_0.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Login" Source="MpPkg.Login.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
-    <Task Name="Program" Source="FIFO.Program.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="FIFO" Source="FIFO.FIFO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <DataObjects>
     <DataObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />

@@ -9,6 +9,10 @@
  ********************************************************************)
 
 TYPE
+	typ_FIFO : 	STRUCT 
+		FIFO_Status : USINT;
+		OutData : REAL;
+	END_STRUCT;
 	Valves : 	STRUCT 
 		Gun2_Valve : BOOL;
 		Lift_Valve : BOOL;
