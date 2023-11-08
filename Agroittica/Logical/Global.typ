@@ -9,6 +9,12 @@
  ********************************************************************)
 
 TYPE
+	typ_String : 	STRUCT 
+		Result_Real : REAL;
+		Result : STRING[15];
+		Length : USINT;
+		Raw_Length : INT;
+	END_STRUCT;
 	typ_FIFO : 	STRUCT 
 		FIFO_Status : USINT;
 		OutData : REAL;

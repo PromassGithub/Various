@@ -10,6 +10,7 @@ PROGRAM _CYCLIC
 //	END_IF;
 
 	CASE glb_FIFO.FIFO_Status OF
+		
 		0:
 			IF (Control_Var) THEN
 				glb_FIFO.FIFO_Status := 10;

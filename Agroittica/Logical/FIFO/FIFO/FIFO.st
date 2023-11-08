@@ -1,6 +1,7 @@
 
 (* TODO: Add your comment here *)
 FUNCTION_BLOCK FIFO
+	
 	//insert data into buffer
 	IF INOutStatus = 1 THEN
 		IF pIn <= BufferMax THEN

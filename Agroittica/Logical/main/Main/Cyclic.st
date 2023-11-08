@@ -225,17 +225,17 @@ PROGRAM _CYCLIC
 	//--------------------PESI---------------------------------
 	
 	//string separation	
-	String_len_raw := LEN(Eth_connect.Marel_Weight);
+	glb_String.Raw_Length := LEN(Eth_connect.Marel_Weight);
 	
-	IF String_len_raw = 6 THEN
+	IF glb_String.Raw_Length = 6 THEN
 		L := 4;
-	ELSIF String_len_raw = 5 THEN
+	ELSIF glb_String.Raw_Length = 5 THEN
 		L := 3;
 	END_IF;
 	
-	Result_string := MID(Eth_connect.Marel_Weight, L, 2); 
+	glb_String.Result := MID(Eth_connect.Marel_Weight, L, 2); 
 	
-	Result_String_Real := STRING_TO_REAL(Result_string);
+	glb_String.Result_Real := STRING_TO_REAL(Result_string);
 	
 	CASE Pesi_0.Weight_Status OF	//Gestione peso pesci
 		
