@@ -2,7 +2,6 @@
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
-    <Task Name="Allarm" Source="Allarmi.Allarm.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
     <Task Name="Main" Source="main.Main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Laser_Enc" Source="IO.Laser_Enc.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="xsm_demo_M" Source="XSM_Demo_vnc.xsm_demo_M2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -70,6 +69,7 @@
     <BinaryObject Name="vcchspot" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="FWRules" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
@@ -81,6 +81,10 @@
     <BinaryObject Name="AlarmHist" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Alarm" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />

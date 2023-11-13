@@ -3,7 +3,7 @@
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
     <Task Name="Sim" Source="Sim.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Allarm" Source="Allarmi.Allarm.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
+    <Task Name="Alarm1" Source="Allarmi.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
     <Task Name="xsm_demo_M" Source="XSM_Demo_vnc.xsm_demo_M2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Main" Source="main.Main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Encoder" Source="IO.Encoder.prg" Memory="UserROM" Language="IEC" Debugging="true" />

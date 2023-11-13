@@ -8,6 +8,7 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	glb_Login : typ_Login := (0);
 	glb_String : typ_String := (0);
 	glb_FIFO : typ_FIFO := (0);
 	Manual_Valve : Valves := (0);

@@ -129,12 +129,12 @@ PROGRAM _CYCLIC
 	CASE Gun_Switch_0.Gun_Switch_Status OF
 		
 		0:	//Start
-			IF ( Status = AUTO OR Status = MANUAL) AND (glb_err.pending_alarms = 0) THEN
+			IF (Status = AUTO AND glb_err.pending_alarms = 0) THEN
 				Gun_Switch_0.Gun_Switch_Status := 1;
 			END_IF;
 			
 		1:	//Controllo sensori
-			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor) THEN
+			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN
 				Gun_Switch_0.Gun_Switch_Status := 10;
 			END_IF;
 		
@@ -142,7 +142,7 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_1_Active := 1;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
-			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN 
+			IF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded) THEN 
 				glb_cmd.Cartridge_loaded := 0;
 				Gun_Switch_0.Gun_Switch_Status := 20;
 			ELSIF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_2) THEN
@@ -155,8 +155,8 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
-			// 2023 - provvisorio quando la cartuccia è ricaricata torna a utilizzare la pistola 1
-			IF (Empty_Mag_22.Empty_Mag_Sensor OR (glb_cmd.Cartridge_loaded = 1)) THEN 
+		
+			IF (Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN 
 				Gun_Switch_0.Gun_Switch_Status := 10;
 			ELSIF (Empty_Mag_22.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_1) THEN
 				Gun_Switch_0.Gun_Switch_Status := 20;	
@@ -228,16 +228,17 @@ PROGRAM _CYCLIC
 	glb_String.Raw_Length := LEN(Eth_connect.Marel_Weight);
 	
 	IF glb_String.Raw_Length = 6 THEN
-		L := 4;
+		glb_String.Length := 4;
 	ELSIF glb_String.Raw_Length = 5 THEN
-		L := 3;
+		glb_String.Length := 3;
 	END_IF;
 	
-	glb_String.Result := MID(Eth_connect.Marel_Weight, L, 2); 
+	glb_String.Result := MID(Eth_connect.Marel_Weight, glb_String.Length, 2); 
 	
-	glb_String.Result_Real := STRING_TO_REAL(Result_string);
+	glb_String.Result_Real := STRING_TO_REAL(glb_String.Result);
 	
-	CASE Pesi_0.Weight_Status OF	//Gestione peso pesci
+	//Gestione peso pesci
+	CASE Pesi_0.Weight_Status OF	
 		
 		0: 	//Start
 			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN

@@ -98,82 +98,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_73]"/>
           <Property Name="Width" Value="40"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_4">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_68]"/>
-          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="39"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="30"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
-          <Property Name="TextIndex" Value="10"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="101"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_68]"/>
-          <Property Name="Width" Value="153"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_7">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_69]"/>
-          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="39"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="30"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
-          <Property Name="TextIndex" Value="11"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="154"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_69]"/>
-          <Property Name="Width" Value="153"/>
-        </Control>
-        <Control ClassId="0x00001001" Name="Shape_3">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.Lamp_01.Lamp1Allarme]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="227"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="105"/>
-          <Property Name="Width" Value="30"/>
-        </Control>
-        <Control ClassId="0x00001001" Name="Shape_4">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.Lamp_02.Lamp2Allarme]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="227"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="158"/>
-          <Property Name="Width" Value="30"/>
-        </Control>
         <Control ClassId="0x00001004" Name="Text_1">
           <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
           <Property Name="ControlID" Value="0"/>
@@ -188,7 +112,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
           <Property Name="TextIndexOffset" Value="16"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="207"/>
+          <Property Name="Top" Value="101"/>
           <Property Name="Width" Value="153"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_7">
@@ -222,7 +146,7 @@
           <Property Name="SimulationValue" Value="10000"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="260"/>
+          <Property Name="Top" Value="154"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.STP_01_Vel]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="100"/>
@@ -241,7 +165,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
           <Property Name="TextIndexOffset" Value="17"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="260"/>
+          <Property Name="Top" Value="154"/>
           <Property Name="Width" Value="153"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_4">
@@ -259,7 +183,7 @@
           <Property Name="SimulationValue" Value="10000"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="TeachDatapoint" Value="None"/>
-          <Property Name="Top" Value="207"/>
+          <Property Name="Top" Value="101"/>
           <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_io.Ai.Enc_laser_dist_conv]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="100"/>
@@ -271,7 +195,7 @@
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
           <Property Name="Height" Value="39"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="30"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -299,7 +223,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="510"/>
+          <Property Name="Left" Value="192"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="500"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -319,7 +243,7 @@
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
           <Property Name="Height" Value="39"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="30"/>
           <Property Name="Multiline" Value="Automatic"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
@@ -347,7 +271,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="510"/>
+          <Property Name="Left" Value="192"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -377,82 +301,6 @@
           <Property Name="Top" Value="380"/>
           <Property Name="Width" Value="72"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_9">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_71]"/>
-          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="39"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="30"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
-          <Property Name="TextIndex" Value="12"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="207"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_71]"/>
-          <Property Name="Width" Value="153"/>
-        </Control>
-        <Control ClassId="0x00001001" Name="Shape_7">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Lamp_alarm_block]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="227"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="211"/>
-          <Property Name="Width" Value="30"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_10">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_72]"/>
-          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
-          <Property Name="ForeColor" Value="15"/>
-          <Property Name="Height" Value="39"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="30"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
-          <Property Name="TextIndex" Value="13"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="260"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_72]"/>
-          <Property Name="Width" Value="153"/>
-        </Control>
-        <Control ClassId="0x00001001" Name="Shape_8">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Soll_Valve_HMI]"/>
-          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
-          <Property Name="ColorMapIndexOffset" Value="0"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="30"/>
-          <Property Name="Left" Value="227"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="Top" Value="264"/>
-          <Property Name="Width" Value="30"/>
-        </Control>
         <Control ClassId="0x00001004" Name="Text_5">
           <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
           <Property Name="ControlID" Value="0"/>
@@ -460,14 +308,14 @@
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
           <Property Name="Height" Value="39"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="345"/>
+          <Property Name="Left" Value="30"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
           <Property Name="TextIndexOffset" Value="22"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="313"/>
+          <Property Name="Top" Value="260"/>
           <Property Name="Width" Value="153"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_6">
@@ -477,13 +325,13 @@
           <Property Name="Description" Value=""/>
           <Property Name="Font" Value="Source[local].Font[MpInfo]"/>
           <Property Name="Height" Value="39"/>
-          <Property Name="Left" Value="510"/>
+          <Property Name="Left" Value="192"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="299993"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Result_string]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="313"/>
+          <Property Name="Top" Value="260"/>
           <Property Name="Width" Value="100"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_9">
@@ -500,7 +348,7 @@
           <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
           <Property Name="TextIndexOffset" Value="23"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="313"/>
+          <Property Name="Top" Value="207"/>
           <Property Name="Width" Value="153"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_10">
@@ -516,7 +364,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.Eth_connect.Marel_Weight]"/>
           <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="313"/>
+          <Property Name="Top" Value="207"/>
           <Property Name="Width" Value="100"/>
         </Control>
       </Controls>
@@ -531,70 +379,6 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="Page" Value="Source[local].Page[SetUp_1]"/>
               <Property Name="Target" Value="Page"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_68">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016B">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Lamp_01.Lamp1Allarme]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_69">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016B">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Lamp_02.Lamp2Allarme]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_71">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Lamp_alarm_block]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_72">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x0000016A">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Soll_Valve_HMI]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

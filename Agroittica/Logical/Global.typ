@@ -9,6 +9,10 @@
  ********************************************************************)
 
 TYPE
+	typ_Login : 	STRUCT 
+		Username : STRING[50];
+		Password : STRING[50];
+	END_STRUCT;
 	typ_String : 	STRUCT 
 		Result_Real : REAL;
 		Result : STRING[15];

@@ -40,7 +40,7 @@ PROGRAM _CYCLIC
 			
 		20:
 			FIFO_0.INOutStatus := 1;
-			FIFO_0.DataIn := Result_String_Real;
+			FIFO_0.DataIn := glb_String.Result_Real;
 			IN_Var := 0;
 			glb_FIFO.FIFO_Status := 40;
 					
