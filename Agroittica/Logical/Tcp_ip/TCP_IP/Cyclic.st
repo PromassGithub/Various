@@ -8,28 +8,15 @@ PROGRAM _CYCLIC
 
 	(* DATA TO SEND*)
 	buffer.send_data.keep_alive 		:= buffer.send_data.keep_alive + 1; 								(* Generate a "running" variable for Data transfer *)
-//	buffer.send_data.Belt_Speed			:= Eth_connect.Belt_Speed;
-//	buffer.send_data.machine_in_auto 	:= Eth_connect.machine_in_auto;
-//	buffer.send_data.machine_in_man  	:= Eth_connect.machine_in_man;
-//	buffer.send_data.machine_stopped 	:= Eth_connect.machine_stopped;
-//	buffer.send_data.machine_in_error	:= Eth_connect.machine_in_error;
-	
-//	IF 	  strcmp(ADR(glb_nome_macchina), ADR("P01056")) = 0 THEN
-//		buffer.send_data.client_id := 1;
-//	ELSIF strcmp(ADR(glb_nome_macchina), ADR("P01057")) = 0 THEN
-//		buffer.send_data.client_id := 2;
-//	ELSIF strcmp(ADR(glb_nome_macchina), ADR("P01058")) = 0 THEN
-//		buffer.send_data.client_id := 3;
-//	ELSIF strcmp(ADR(glb_nome_macchina), ADR("P01059")) = 0 THEN
-//		buffer.send_data.client_id := 4;
-//	ELSIF strcmp(ADR(glb_nome_macchina), ADR("P01183")) = 0 THEN
-//		buffer.send_data.client_id := 5;
-//	END_IF
+	IF (buffer.send_data.keep_alive > 1000000) THEN buffer.send_data.keep_alive := 0; END_IF
 				
 	(* DATA RECEIVED *)
 	Eth_connect.Marel_Weight			:= buffer.receive_data.Marel_Weight;		
 //	Eth_connect.stop_request 			:= buffer.receive_data.stop_request;
 //	Eth_connect.last_cycle_request 		:= buffer.receive_data.last_cycle_request;
+	
+	
+
 	
 
 	(* AZZERO GLI STATI DEL PROTOCOLLO DI COMUNICAZIONE E DELLA LIBRERIA TCP *)
@@ -116,7 +103,7 @@ PROGRAM _CYCLIC
 			Eth_connect.no_comunication := 0;
 			
 			IF Client.TcpSend_0.status = 0 THEN  (* Data was sent sucessfully -> receive data *)
-				Client.sStep := 30;
+				IF (glb_dato_arrivato = 0) THEN	Client.sStep := 30; END_IF
 			ELSIF Client.TcpSend_0.status = ERR_FUB_BUSY THEN  (* TcpSend not finished -> redo *)	
 				(* Busy *)
 			ELSIF (Client.TcpSend_0.status = tcpERR_SENTLEN) OR (Client.TcpSend_0.status = tcpERR_NOT_CONNECTED) THEN (* Connection Lost *)
@@ -127,6 +114,8 @@ PROGRAM _CYCLIC
 			END_IF				
 					
 		30: (* Receive Data from the Server *)
+			memset(ADR(buffer.receive_data),0,SIZEOF(buffer.receive_data));
+			
 			Eth_connect.tcp_state.tcprecv := 0;
 			Client.TcpRecv_0.enable := 1;
 			Client.TcpRecv_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
@@ -138,9 +127,10 @@ PROGRAM _CYCLIC
 			
 			IF Client.TcpRecv_0.status = 0 THEN  (* Data was received sucessfully -> Send next packet *)
 				Client.sStep := 20;
+				glb_dato_arrivato := 1;
 				Client.recv_timeout := 0;
 			ELSIF Client.TcpRecv_0.status = tcpERR_NO_DATA THEN  (* No data received - wait *)
-				Client.recv_timeout := Client.recv_timeout + 1;
+				//Client.recv_timeout := Client.recv_timeout + 1;
 				IF Client.recv_timeout > 50 THEN
 					Client.sStep := 40;
 					Client.recv_timeout := 0;
@@ -148,7 +138,7 @@ PROGRAM _CYCLIC
 				(* No Data received *)
 			ELSIF Client.TcpRecv_0.status = ERR_FUB_BUSY THEN  (* TcpRecv not finished -> redo *)		
 				(* Busy *)
-			ELSIF Client.TcpSend_0.status = tcpERR_NOT_CONNECTED THEN (* Connection Lost *)			
+			ELSIF Client.TcpRecv_0.status = tcpERR_NOT_CONNECTED THEN (* Connection Lost *)			
 				Client.sStep := 40;
 			ELSE  (* Goto Error Step *)
 				Client.sStep := 100;
@@ -180,8 +170,7 @@ PROGRAM _CYCLIC
 				ELSE
 					Client.sStep := 40; // was 0
 				END_IF
-			END_IF
-			
+			END_IF			
 	END_CASE		
 
 
