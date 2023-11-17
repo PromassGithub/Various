@@ -51,7 +51,7 @@ PROGRAM _CYCLIC
 	
 	//2023 - FORZATURA MAG2 POP UP
 	
-	Empty_Mag_22.Empty_Mag_Pop_Up := 1;
+	(*Empty_Mag_22.Empty_Mag_Pop_Up := 1;*)
 	
 	// Main cycle
 	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
@@ -233,7 +233,7 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 		10:	//Controllo pesi
-			IF (Pesi_0.Marel_Weight[0] <= Pesi_0.Max_Weight AND Pesi_0.Marel_Weight[0] >= Pesi_0.Min_Weight) THEN
+			IF ( Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight) THEN
 				Pesi_0.Weight_Status := 20;
 			ELSE
 				Pesi_0.Weight_Status := 30;
@@ -254,6 +254,7 @@ PROGRAM _CYCLIC
 	
 	//Calcolo tempo delay sollevamento pesce
 	IF (STP_01_Vel = 0) THEN STP_01_Vel:= 0.5; END_IF;
+	
 	Tempo := Ricette.D_Sens_Gun/STP_01_Vel*1000;
 	
 	Tempo_Delay := REAL_TO_TIME (Tempo);
@@ -279,7 +280,7 @@ PROGRAM _CYCLIC
 	//------------------ELETTROVALVOLE---------------------------------
 	
 	// ATTIVAZIONE/SPEGNIMENTO BOBINE PNEUMATICA
-	IF (Status = AUTO) THEN
+	IF (Status = AUTO AND glb_err.pending_alarms = 0) THEN
 		IF (Piston_st) THEN
 			glb_io.Do.Main_Piston_Up 	:= 1;
 			glb_io.Do.Main_Piston_Down 	:= 0;
@@ -288,7 +289,7 @@ PROGRAM _CYCLIC
 			glb_io.Do.Main_Piston_Down 	:= 1;
 		END_IF;
 		
-	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
+	ELSIF ((Status <> AUTO) OR (glb_err.pending_alarms <> 0)) THEN
 		glb_io.Do.Main_Piston_Up 	:= 0;
 		glb_io.Do.Main_Piston_Down 	:= 0;
 	END_IF;
@@ -301,7 +302,7 @@ PROGRAM _CYCLIC
 			Piston_st := 0; 
 		END_IF;
 		
-	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
+	ELSIF ((Status <> MANUAL) OR (glb_err.pending_alarms <> 0)) THEN
 		glb_io.Do.Main_Piston_Up 	:= 0;
 		glb_io.Do.Main_Piston_Down 	:= 0;
 	END_IF;
@@ -319,7 +320,7 @@ PROGRAM _CYCLIC
 			glb_io.Do.Piston_gun_2 := 0;
 		END_IF;
 		
-	ELSIF ((Status = STOP) OR (Status = ERR)) THEN
+	ELSIF ((Status <> MANUAL) OR (glb_err.pending_alarms <> 0)) THEN
 		glb_io.Do.Piston_gun_1 := 0;
 		glb_io.Do.Piston_gun_2 := 0;
 	END_IF;

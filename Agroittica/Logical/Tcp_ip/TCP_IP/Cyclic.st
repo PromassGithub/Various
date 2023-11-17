@@ -103,7 +103,7 @@ PROGRAM _CYCLIC
 			Eth_connect.no_comunication := 0;
 			
 			IF Client.TcpSend_0.status = 0 THEN  (* Data was sent sucessfully -> receive data *)
-				IF (glb_dato_arrivato = 0) THEN	Client.sStep := 30; END_IF
+				IF (glb_data.received_data = 0) THEN	Client.sStep := 30; END_IF
 			ELSIF Client.TcpSend_0.status = ERR_FUB_BUSY THEN  (* TcpSend not finished -> redo *)	
 				(* Busy *)
 			ELSIF (Client.TcpSend_0.status = tcpERR_SENTLEN) OR (Client.TcpSend_0.status = tcpERR_NOT_CONNECTED) THEN (* Connection Lost *)
@@ -127,7 +127,7 @@ PROGRAM _CYCLIC
 			
 			IF Client.TcpRecv_0.status = 0 THEN  (* Data was received sucessfully -> Send next packet *)
 				Client.sStep := 20;
-				glb_dato_arrivato := 1;
+				glb_data.received_data := 1;
 				Client.recv_timeout := 0;
 			ELSIF Client.TcpRecv_0.status = tcpERR_NO_DATA THEN  (* No data received - wait *)
 				//Client.recv_timeout := Client.recv_timeout + 1;

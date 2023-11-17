@@ -66,7 +66,7 @@ PROGRAM _CYCLIC
 	(* ONLY FOR DEMO PURPOSES WITH VCN & SG4 OR WATCH & SGC. *)
 	(* You need to make required state machine and error handling for your application. *)
 	
-	//2023 - set variables of FB
+	//2023 - set variables of second FB
 	
 	Module_OK := XSM_Ctrl_0.IO_Mapping.ModuleOK;
 	Module_ID := XSM_Ctrl_0.IO_Mapping.ModuleID;
@@ -85,9 +85,9 @@ PROGRAM _CYCLIC
 	
 	//-----------------------------LAMPEGGIANTI----------------------------
 	
-	// Forzatura lampeggiante secondo caricatore
+	// Forzatura lampeggiante secondo caricatore (disabilitato)
 	
-	Lamp_01.Lamp1Bianco := 1;
+	//Lamp_01.Lamp1Bianco := 1;
 	
 	// accensione lampeggiante ricarica mag 1 effettuata
 	

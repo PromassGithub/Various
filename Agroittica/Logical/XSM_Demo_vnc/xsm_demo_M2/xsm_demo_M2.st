@@ -66,7 +66,7 @@ PROGRAM _CYCLIC
 	(* ONLY FOR DEMO PURPOSES WITH VCN & SG4 OR WATCH & SGC. *)
 	(* You need to make required state machine and error handling for your application. *)
 	
-	//2023 - set variables of FB
+	//2023 - set variables of second FB
 	
 	XSM_Ctrl_2.IO_Mapping.ModuleOK := Module_OK;
 	XSM_Ctrl_2.IO_Mapping.ModuleID := Module_ID;
@@ -74,7 +74,7 @@ PROGRAM _CYCLIC
 	
 	
 	//2023 - temporary to disable popup
-	Empty_Mag_22.Empty_Mag_Pop_Up := 1;
+	(*Empty_Mag_22.Empty_Mag_Pop_Up := 1;*)
 	//2023 - end mod
 	
 	XSM_Ctrl_2(); (* Call function. *)

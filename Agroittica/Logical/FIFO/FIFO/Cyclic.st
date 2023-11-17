@@ -13,19 +13,19 @@ PROGRAM _CYCLIC
 
 	CASE glb_FIFO.FIFO_Status OF
 		
-		0:
-			//IF (Control_Var) THEN
+		0:	//START
+			IF (Status = AUTO AND glb_err.pending_alarms = 0) THEN
 				glb_FIFO.FIFO_Status := 10;
-			//END_IF;
+			END_IF;
 			
-		10:
+		10:	//AUTO IDLE
 			FIFO_0.INOutStatus := 0;
 			
 			OutData := FIFO_0.DataOut;
 			
-			IF (glb_dato_arrivato) THEN
+			IF (glb_data.received_data) THEN
 				glb_FIFO.FIFO_Status := 20;
-				glb_dato_arrivato := 0;
+				glb_data.received_data := 0;
 			END_IF;
 			
 			IF glb_pesce_passato THEN
@@ -33,9 +33,10 @@ PROGRAM _CYCLIC
 				glb_pesce_passato := 0;
 			END_IF;
 			
-			//IF (NOT Control_Var) THEN glb_FIFO.FIFO_Status := 40; END_IF;
+			IF ((Status <> AUTO) OR (glb_err.pending_alarms <> 0)) THEN glb_FIFO.FIFO_Status := 40; END_IF;
 			
-		20:
+		20:	//INSERT DATA INTO BUFFER & STRING SEPARATION
+			
 			//string separation	
 			glb_String.Raw_Length := LEN(Eth_connect.Marel_Weight);
 	
@@ -49,19 +50,18 @@ PROGRAM _CYCLIC
 	
 			glb_String.Result_Real := STRING_TO_REAL(glb_String.Result);
 			
+			// Insert data into buffer
 			FIFO_0.INOutStatus := 1;
 			FIFO_0.DataIn := glb_String.Result_Real;
 			glb_FIFO.FIFO_Status := 40;
 			
-		30:
-			FIFO_0.INOutStatus := 2;
+		30:	//DELETE DATA FROM BUFFER
 			
+			FIFO_0.INOutStatus := 2;
 			glb_FIFO.FIFO_Status := 40;
 		
-		40:
-			R_TRIG_05.CLK := 0;
-			R_TRIG_06.CLK := 0;
-			R_TRIG_07.CLK := 0;
+		40:	//RESET & BACK TO START
+			
 			glb_FIFO.FIFO_Status := 0;
 			FIFO_0.INOutStatus := 0;
 			
@@ -72,5 +72,7 @@ PROGRAM _CYCLIC
 	R_TRIG_05;
 	R_TRIG_06;
 	R_TRIG_07;
+	
+	Pesi_0.Controlled_Weight := FIFO_0.DataOut;
 	
 END_PROGRAM

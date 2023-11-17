@@ -9,6 +9,9 @@
  ********************************************************************)
 
 TYPE
+	typ_data : 	STRUCT 
+		received_data : BOOL;
+	END_STRUCT;
 	typ_Login : 	STRUCT 
 		Username : STRING[50];
 		Password : STRING[50];
@@ -59,7 +62,7 @@ TYPE
 		Weight_Status : USINT;
 		Max_Weight : UINT;
 		Min_Weight : UINT;
-		Marel_Weight : ARRAY[0..5]OF REAL;
+		Controlled_Weight : REAL;
 		Cmd_Shoot : BOOL;
 	END_STRUCT;
 	Gun_Switch : 	STRUCT 

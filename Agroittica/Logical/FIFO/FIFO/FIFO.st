@@ -4,7 +4,7 @@ FUNCTION_BLOCK FIFO
 	
 	IF (pIn = 0) 	THEN pIn	:= BufferMin; END_IF
 	IF (pOut = 0) 	THEN pOut	:= BufferMin; END_IF
-	//IF (NoOfDataPoints > BufferMax) THEN NoOfDataPoints := BufferMax; END_IF
+	
 	
 //	//insert data into buffer
 //	IF INOutStatus = 1 THEN
