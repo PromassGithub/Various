@@ -7,7 +7,5 @@
     <File Description="Exit code">Exit.st</File>
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
-    <File Private="true">LocalFunctions.fun</File>
-    <File>gun.st</File>
   </Files>
 </Program>

@@ -19,10 +19,11 @@ TYPE
 	typ_String : 	STRUCT 
 		Result_Real : REAL;
 		Result : STRING[15];
-		Length : USINT;
+		Length : INT;
 		Raw_Length : INT;
 	END_STRUCT;
 	typ_FIFO : 	STRUCT 
+		FIFO_Status_read : USINT;
 		FIFO_Status : USINT;
 		OutData : REAL;
 	END_STRUCT;
@@ -35,9 +36,12 @@ TYPE
 	Ricetta : 	STRUCT 
 		D_Sens_Gun : INT;
 		Laser_Depth : INT;
+		PT_gun : TIME := T#60ms;
+		PT_ritardo : TIME := T#390ms;
 		PT_end_stop : TIME;
 		Laser_trigger : INT;
 		PT_piston_up : TIME;
+		use_weight : BOOL;
 	END_STRUCT;
 	Allarm : 	STRUCT 
 		St_allarm : UINT;
@@ -60,8 +64,10 @@ TYPE
 	END_STRUCT;
 	Pesi : 	STRUCT 
 		Weight_Status : USINT;
-		Max_Weight : UINT;
-		Min_Weight : UINT;
+		Max_Weight_B : UINT;
+		Min_Weight_B : UINT;
+		Max_Weight_A : UINT;
+		Min_Weight_A : UINT;
 		Controlled_Weight : REAL;
 		Cmd_Shoot : BOOL;
 	END_STRUCT;
@@ -214,7 +220,7 @@ TYPE
 		protocol_state : typ_tcp_protocol_state; (*Stato della sincronizzazione*)
 		tcp_state : typ_tcp_state; (*Stato della comunicazione tcp*)
 		disable : BOOL; (*Disabilito il protocollo di comunicazione*)
-		Server_Ip_Add : STRING[15] := '127.0.0.1';
+		Server_Ip_Add : STRING[15] := '192.168.48.60';
 		Belt_Speed : STRING[50];
 		Marel_Weight : STRING[50];
 	END_STRUCT;

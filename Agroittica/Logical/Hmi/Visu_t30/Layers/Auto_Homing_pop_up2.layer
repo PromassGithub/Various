@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?AutomationStudio Version="4.9.6.42 SP"?>
-<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="Auto_Homing_pop_up">
+<Layer xmlns="http://br-automation.co.at/AS/VC/Project" Name="Auto_Homing_pop_up2">
   <Property Name="BackColor" Value="9"/>
   <Property Name="Description" Value=""/>
   <Property Name="Height" Value="480"/>
   <Property Name="Left" Value="0"/>
-  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auto_Homing_Ctrl_0.Pop_Up]"/>
+  <Property Name="StatusDatapoint" Value="Source[global].Variable[DataSource.Auto_Homing_Ctrl_2.Pop_Up]"/>
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="640"/>
   <TextGroup>
@@ -47,7 +47,7 @@
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
       <Property Name="TextGroup" Value="Source[global].TextGroup[Auto_homing]"/>
-      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextIndexOffset" Value="3"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="78"/>
       <Property Name="Width" Value="436"/>
@@ -75,7 +75,7 @@
       <Property Name="BitmapSource" Value="None"/>
       <Property Name="ControlID" Value="0"/>
       <Property Name="Description" Value=""/>
-      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_14]"/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
       <Property Name="Font" Value="Source[local].Font[MpHeader]"/>
       <Property Name="ForeColor" Value="0"/>
       <Property Name="Height" Value="65"/>
@@ -90,12 +90,12 @@
       <Property Name="TextSimulationValue" Value="0"/>
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="319"/>
-      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_14]"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
       <Property Name="Width" Value="305"/>
     </Control>
   </Controls>
   <KeyMapping>
-    <VirtualKey Name="%embVirtualKey_14">
+    <VirtualKey Name="%embVirtualKey_4">
       <Property Name="Description" Value=""/>
       <Property Name="VirtualKey_LED" Value="False"/>
       <KeyActions>
@@ -106,7 +106,7 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="SetValue" Value="1"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo.Auto_Homing_Ack]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.XSM_Demo_vnc.xsm_demo_M2.Auto_Homing_Ack_2]"/>
         </KeyAction>
       </KeyActions>
     </VirtualKey>

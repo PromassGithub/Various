@@ -11,7 +11,7 @@ PROGRAM _CYCLIC
 	IF (buffer.send_data.keep_alive > 1000000) THEN buffer.send_data.keep_alive := 0; END_IF
 				
 	(* DATA RECEIVED *)
-	Eth_connect.Marel_Weight			:= buffer.receive_data.Marel_Weight;		
+//	Eth_connect.Marel_Weight			:= buffer.receive_data.Marel_Weight;		
 //	Eth_connect.stop_request 			:= buffer.receive_data.stop_request;
 //	Eth_connect.last_cycle_request 		:= buffer.receive_data.last_cycle_request;
 	
@@ -92,7 +92,7 @@ PROGRAM _CYCLIC
 				buffer.send_data.keep_alive := 0; (* Reset the counter *)
 			END_IF
 		
-		20: (* Send Data to the Server *)
+		20: (* Send Data to the Server *)			
 			Eth_connect.tcp_state.tcpsend := 0;
 			Client.TcpSend_0.enable := 1;				
 			Client.TcpSend_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
@@ -101,6 +101,8 @@ PROGRAM _CYCLIC
 			Client.TcpSend_0.flags := 0;
 			Client.TcpSend_0; (*call finction*)
 			Eth_connect.no_comunication := 0;
+			
+			IF (glb_data.received_data = 0) THEN	Client.sStep := 30; END_IF
 			
 			IF Client.TcpSend_0.status = 0 THEN  (* Data was sent sucessfully -> receive data *)
 				IF (glb_data.received_data = 0) THEN	Client.sStep := 30; END_IF
@@ -114,7 +116,7 @@ PROGRAM _CYCLIC
 			END_IF				
 					
 		30: (* Receive Data from the Server *)
-			memset(ADR(buffer.receive_data),0,SIZEOF(buffer.receive_data));
+			//memset(ADR(buffer.receive_data),0,SIZEOF(buffer.receive_data));
 			
 			Eth_connect.tcp_state.tcprecv := 0;
 			Client.TcpRecv_0.enable := 1;
@@ -126,9 +128,21 @@ PROGRAM _CYCLIC
 			Eth_connect.no_comunication := 0;
 			
 			IF Client.TcpRecv_0.status = 0 THEN  (* Data was received sucessfully -> Send next packet *)
-				Client.sStep := 20;
-				glb_data.received_data := 1;
-				Client.recv_timeout := 0;
+				
+				Eth_connect.Marel_Weight			:= buffer.receive_data.Marel_Weight;
+				memset(ADR(buffer.receive_data),0,SIZEOF(buffer.receive_data));
+				
+//				calcolatore2:= calcolatore2+1;
+				
+//				IF (glb_use_weight AND (( glb_String.Result_Real <= Pesi_0.Max_Weight AND glb_String.Result_Real >= Pesi_0.Min_Weight)))THEN
+//					glb_registered := 1;
+//					calcolatore3:= calcolatore3+1;
+//				END_IF
+				
+				glb_data.received_data 				:= 1;
+				Client.recv_timeout 				:= 0;
+				
+				Client.sStep 						:= 20;
 			ELSIF Client.TcpRecv_0.status = tcpERR_NO_DATA THEN  (* No data received - wait *)
 				//Client.recv_timeout := Client.recv_timeout + 1;
 				IF Client.recv_timeout > 50 THEN

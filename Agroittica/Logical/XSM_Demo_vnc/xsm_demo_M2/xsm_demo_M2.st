@@ -295,7 +295,7 @@ PROGRAM _CYCLIC
 	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
 		
 		0:	//Start
-			IF ((NOT Homed_2) AND Status = AUTO) THEN
+			IF ((NOT Homed_2) AND Status = AUTO AND glb_Auto_homing_lock) THEN
 				Auto_Homing_Ctrl_2.Auto_Homing_Status := 1;
 			END_IF;
 			Auto_Homing_Ctrl_2.Pop_Up := 1;
@@ -411,7 +411,7 @@ PROGRAM _CYCLIC
 			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
 			
 		20:
-			IF (XSM_Ctrl_2.IO_Mapping.InputStatus = 1) THEN
+			IF (XSM_Ctrl_2.IO_Mapping.InputStatus = 2) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
 				XSM_Ctrl_2.Cmd.Velocity := 500;
 				Homing_status_2 := 30;
@@ -427,7 +427,7 @@ PROGRAM _CYCLIC
 			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
 			
 		40:
-			IF (NOT (XSM_Ctrl_2.IO_Mapping.InputStatus = 1)) THEN
+			IF (NOT (XSM_Ctrl_2.IO_Mapping.InputStatus = 2)) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
 				Homing_status_2 := 50;
 			END_IF;

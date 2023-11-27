@@ -9,26 +9,10 @@
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="640"/>
   <TextGroup>
-    <TextLayer LanguageId="en-US">
-      <Text ID="240585" Value="MAG 2 RELOADING REQUIRED"/>
-      <Text ID="240586" Value="Press acknowledge to continue"/>
-      <Text ID="240587" Value="Acknowledge"/>
-    </TextLayer>
-    <TextLayer LanguageId="de-DE">
-      <Text ID="240585" Value="MAG 2 RELOADING REQUIRED"/>
-      <Text ID="240586" Value="Press acknowledge to continue"/>
-      <Text ID="240587" Value="Acknowledge"/>
-    </TextLayer>
-    <TextLayer LanguageId="it-IT">
-      <Text ID="240585" Value=""/>
-      <Text ID="240586" Value=""/>
-      <Text ID="240587" Value=""/>
-    </TextLayer>
-    <IndexMap>
-      <Index ID="240585" Value="1"/>
-      <Index ID="240586" Value="2"/>
-      <Index ID="240587" Value="6"/>
-    </IndexMap>
+    <TextLayer LanguageId="en-US"/>
+    <TextLayer LanguageId="de-DE"/>
+    <TextLayer LanguageId="it-IT"/>
+    <IndexMap/>
   </TextGroup>
   <Controls>
     <Control ClassId="0x00001001" Name="Shape_2">
@@ -57,13 +41,14 @@
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpHeader]"/>
       <Property Name="Height" Value="82"/>
+      <Property Name="IndexDatapoint" Value="None"/>
       <Property Name="Left" Value="103"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndexOffset" Value="1"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[Reload_pop_up]"/>
+      <Property Name="TextIndexOffset" Value="3"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="78"/>
       <Property Name="Width" Value="436"/>
     </Control>
@@ -73,13 +58,14 @@
       <Property Name="Description" Value=""/>
       <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
       <Property Name="Height" Value="76"/>
+      <Property Name="IndexDatapoint" Value="None"/>
       <Property Name="Left" Value="158"/>
       <Property Name="SimulationIndex" Value="0"/>
       <Property Name="SimulationValue" Value=""/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndexOffset" Value="2"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[Reload_pop_up]"/>
+      <Property Name="TextIndexOffset" Value="4"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="189"/>
       <Property Name="Width" Value="326"/>
     </Control>
@@ -98,11 +84,11 @@
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
       <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-      <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-      <Property Name="TextIndex" Value="6"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[Reload_pop_up]"/>
+      <Property Name="TextIndex" Value="5"/>
       <Property Name="TextIndexDatapoint" Value="None"/>
       <Property Name="TextSimulationValue" Value="0"/>
-      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="319"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_3]"/>
       <Property Name="Width" Value="305"/>

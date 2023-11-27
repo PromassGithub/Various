@@ -1,4 +1,11 @@
 VAR
+	gun_0x_piston : BOOL := FALSE;
+	gun_0x_gun : BOOL := FALSE;
+	buffer_gun : ARRAY[0..10] OF BOOL := [11(FALSE)];
+	Gun_0x : ARRAY[0..10] OF gun := [11((0))];
+	i : USINT := 0;
+	xxx : USINT := 0;
+	cmd_manu_Piston_st : BOOL := FALSE;
 	Piston_st : BOOL := FALSE;
 	last_cycle : BOOL;
 	TON_10 : TON := (0);
@@ -12,10 +19,12 @@ VAR
 	TON_02 : TON;
 	TON_01 : TON;
 	St_Valve : USINT := 0;
-	St_Gun : USINT;
 	Tempo : REAL := 0.0;
 	Tempo_Delay : TIME;
 END_VAR
 VAR RETAIN
 	Distanza_Sensore_Gun : REAL;
+END_VAR
+VAR
+	St_Gun : USINT;
 END_VAR

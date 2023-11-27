@@ -499,7 +499,7 @@ PROGRAM _CYCLIC
 			
 		10: // 
 			XSM_Ctrl_0.Cmd.Move_Additive := TRUE;
-			IF (XSM_Ctrl_0.Monitor.Actual_Position = (old_pos + Dim_etichetta)) THEN
+			IF (XSM_Ctrl_0.Monitor.Actual_Position >= (old_pos + Dim_etichetta)) THEN
 				old_pos := XSM_Ctrl_0.Monitor.Actual_Position;
 				FW_step_status := 20;
 			END_IF;

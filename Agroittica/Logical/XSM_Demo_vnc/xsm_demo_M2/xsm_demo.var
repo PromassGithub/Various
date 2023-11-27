@@ -9,6 +9,7 @@
  * Local variables of program ramp_sg4
  ********************************************************************)
 VAR
+	glb_Auto_homing_lock : BOOL := FALSE;
 	Auto_Homing_Ack_2 : BOOL := FALSE;
 	CMD_Reboot_pos_2 : BOOL := FALSE;
 	CMD_Reboot_pos_status_2 : USINT := 0;

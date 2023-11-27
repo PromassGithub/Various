@@ -52,7 +52,8 @@ PROGRAM _CYCLIC
 		END_IF
 	END_IF
 	
-	STP_01_Vel := Int_to_vel_0.Vel;
+	//	STP_01_Vel := Int_to_vel_0.Vel;
+	STP_01_Vel := 7000;
 	STP_01_Pos := Int_to_vel_0.Pos;
 		
 		

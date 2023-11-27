@@ -2,21 +2,22 @@
 <?AutomationStudio FileVersion="4.9"?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1">
+    <Task Name="FIFO" Source="FIFO.FIFO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Main" Source="main.Main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Laser_Enc" Source="IO.Laser_Enc.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="xsm_demo_M" Source="XSM_Demo_vnc.xsm_demo_M2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Encoder" Source="IO.Encoder.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="xsm_demo" Source="XSM_Demo_vnc.xsm_demo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ip_adr" Source="XSM_Demo_vnc.ip_adr.prg" Memory="UserROM" Description="Get ip address for VCN test." Language="IEC" Debugging="true" />
     <Task Name="Recipe" Source="MpPkg.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarm_0" Source="MpPkg.Alarm_0.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Login" Source="MpPkg.Login.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
-    <Task Name="FIFO" Source="FIFO.FIFO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Param_Fix" Source="main.Param_Fix.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <DataObjects>
     <DataObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />

@@ -26,8 +26,8 @@ FUNCTION_BLOCK FIFO
 	//	END_IF;
 	
 	// input
-	IF (INOutStatus = 1) THEN
-		Buffer[6] := DataIn; //insert
+	IF (INWrite) THEN
+		Buffer[4] := DataIn; //insert
 		
 		IF (Buffer[BufferMax] <> 0) THEN
 			Buffer[BufferMin] := 0;
@@ -49,8 +49,7 @@ FUNCTION_BLOCK FIFO
 	
 	// output
 	
-	IF (INOutStatus = 2) THEN
-		DataOut := Buffer[BufferMin]; // out
+	IF (INRead) THEN
 		Buffer[BufferMin] := 0;
 		FOR pOut:=BufferMin TO BufferMax DO
 			IF (Buffer[pOut] = 0) THEN
@@ -60,7 +59,15 @@ FUNCTION_BLOCK FIFO
 		END_FOR;
 	END_IF
 	
-		
+	DataOut := Buffer[BufferMin]; // out
+	
+	IF (clear_data) THEN
+		FOR p:=BufferMin TO BufferMax DO
+			Buffer[p] := 0;
+		END_FOR;
+	END_IF
+	
+	
 //	//take out data from buffer
 //	IF INOutStatus = 2 THEN
 //		IF NoOfDataPoints > 0 THEN //there must be data in buffer
