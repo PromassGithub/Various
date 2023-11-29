@@ -1,7 +1,6 @@
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
-		// ..........................          ..........................
 	
 	IF (change_scale) THEN
 		Trend_min_value := -20;
