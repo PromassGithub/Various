@@ -9,6 +9,8 @@
   <Property Name="Top" Value="0"/>
   <Property Name="Width" Value="640"/>
   <TextGroup>
+    <TextLayer LanguageId="en"/>
+    <TextLayer LanguageId="de"/>
     <TextLayer LanguageId="en-US"/>
     <TextLayer LanguageId="de-DE"/>
     <TextLayer LanguageId="it-IT"/>
@@ -209,7 +211,7 @@
       <Property Name="ForeColor" Value="239"/>
       <Property Name="Height" Value="40"/>
       <Property Name="KeyMatrixOffset" Value="None"/>
-      <Property Name="Left" Value="407"/>
+      <Property Name="Left" Value="406"/>
       <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
       <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
       <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
@@ -221,6 +223,32 @@
       <Property Name="TextSource" Value="MultipleTexts"/>
       <Property Name="Top" Value="435"/>
       <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_64]"/>
+      <Property Name="Width" Value="80"/>
+    </Control>
+    <Control ClassId="0x00001002" Name="IO5">
+      <Property Name="AlignmentHorizontal" Value="Center"/>
+      <Property Name="BitmapIndexDatapoint" Value="None"/>
+      <Property Name="BitmapSource" Value="None"/>
+      <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="ControlID" Value="0"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_68]"/>
+      <Property Name="Font" Value="Source[local].Font[MpButton]"/>
+      <Property Name="ForeColor" Value="239"/>
+      <Property Name="Height" Value="40"/>
+      <Property Name="KeyMatrixOffset" Value="None"/>
+      <Property Name="Left" Value="491"/>
+      <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+      <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control]"/>
+      <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+      <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+      <Property Name="TextGroup" Value="Source[global].TextGroup[NAV_BUTTON]"/>
+      <Property Name="TextIndex" Value="4"/>
+      <Property Name="TextIndexDatapoint" Value="None"/>
+      <Property Name="TextSimulationValue" Value="0"/>
+      <Property Name="TextSource" Value="MultipleTexts"/>
+      <Property Name="Top" Value="435"/>
+      <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_68]"/>
       <Property Name="Width" Value="80"/>
     </Control>
   </Controls>
@@ -325,6 +353,19 @@
           <Property Name="Locking" Value="Never"/>
           <Property Name="Name" Value="Action_0"/>
           <Property Name="Page" Value="Source[local].Page[SetUp_1]"/>
+          <Property Name="Target" Value="Page"/>
+        </KeyAction>
+      </KeyActions>
+    </VirtualKey>
+    <VirtualKey Name="%embVirtualKey_68">
+      <Property Name="Description" Value=""/>
+      <Property Name="VirtualKey_LED" Value="False"/>
+      <KeyActions>
+        <KeyAction ClassId="0x00000160">
+          <Property Name="Description" Value=""/>
+          <Property Name="Locking" Value="Never"/>
+          <Property Name="Name" Value="Action_0"/>
+          <Property Name="Page" Value="Source[local].Page[trend]"/>
           <Property Name="Target" Value="Page"/>
         </KeyAction>
       </KeyActions>

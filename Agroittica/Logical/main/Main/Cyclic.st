@@ -3,6 +3,8 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	(*glb_err.pending_alarms := 0;*)
 	
+	IF (SIMU.enable) THEN glb_err.pending_alarms := 0; END_IF
+	
 	// stato generale STOP-AUTO-MANUAL-ERR
 	CASE Status OF
 		

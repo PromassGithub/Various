@@ -1,0 +1,10 @@
+VAR
+	Trend_show_value : USINT := 0;
+	Trend_reduce_n_d_value : BOOL := FALSE;
+	change_scale : BOOL := FALSE;
+	Trend_min_value : INT := -1100;
+	Trend_max_value : INT := 4000;
+	Trend_zoom : REAL := 0.0;
+	Trend_scroll : REAL := 0.0;
+	Trend_max_n_disp_value : USINT := 200;
+END_VAR

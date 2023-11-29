@@ -1,0 +1,48 @@
+VAR
+	TP_01 : TP := (0);
+	estensione : STRING[80] := '.csv';
+	space : STRING[80] := '-';
+	CFG : STRING[80] := 'CFG';
+	DATA : STRING[80] := 'DATA';
+	CF : STRING[80] := 'CF';
+	xxx : USINT := 0;
+	glb_MacCycleDoneTrigg : BOOL;
+	CmdAckError_0 : BOOL;
+	DirCreate_03 : DirCreate;
+	DirCreate_05 : DirCreate;
+	DTGetTime_1 : DTGetTime;
+	FDelete : FileDelete;
+	FileClose_01 : FileClose;
+	FileClose_03 : FileClose;
+	FileCreate_01 : FileCreate;
+	FileCreate_03 : FileCreate;
+	filelen : UDINT; (*Dove inserire la riga da scrivere sul file csv*)
+	FileOpen_03 : FileOpen;
+	FileWrite_01 : FileWrite;
+	FileWrite_03 : FileWrite;
+	fucking_debug : BOOL;
+	ident_csv : UDINT; (*fucking identification file (the famous HANDLE)*)
+	ident_doc : UDINT;
+	kgb : UINT;
+	nome_file_csv : STRING[32];
+	nome_file_doc : STRING[32];
+	note : STRING[61]; (*Eventuali note da allegare*)
+	numero_errore : UINT; (*Numero dell'errore delle funzioni di I/O*)
+	offset : UDINT; (*Numero di byte scritti su CSV*)
+	RowCounterFile : UDINT;
+	rpt_row : ARRAY[0..29] OF USINT;
+	rpt_write_req : BOOL;
+	step_rpt : Enum_Step;
+	step_force : USINT;
+	step_recipe : USINT; (*was step (Recipes)*)
+	rpt_name : STRING[30];
+	string_rpt2 : STRING[500];
+	string_rpt : STRING[1500];
+	rptMpRecipeInfo : STRING[200];
+	struct_time : DTStructure; (*Struttura dove converto la data della commessa*)
+	str_lenght : UDINT;
+	supp : REAL;
+	support_str1 : STRING[40];
+	support_str : STRING[40];
+	j : USINT; (*counter*)
+END_VAR

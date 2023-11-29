@@ -1,0 +1,29 @@
+VAR
+	Bilancia : REAL := 0.0;
+	gun_1_b : BOOL := FALSE;
+	gun_2_b : BOOL := FALSE;
+	i : USINT := 0;
+	indice : USINT := 0;
+	indice1 : USINT := 0;
+	indice2 : USINT := 0;
+	k : USINT := 0;
+	kk : USINT := 0;
+	pistone_pistola_1 : USINT := 0;
+	pistone_pistola_2 : USINT := 0;
+	pistone_soll_giu : USINT := 0;
+	pistone_soll_su : USINT := 0;
+	Piston_Up_b : BOOL := FALSE;
+	RPT_Buffer : typ_rpt_buffer := (bilancia:=[250('0')],sensore_pistola:=[250(255)],pistone_soll_giu:=[250(255)],pistone_soll_su:=[250(255)],pistone_pistola_2:=[250(255)],pistone_pistola_1:=[250(255)]);
+	RPT_Buffer_hmi : typ_rpt_buffer_hmi;
+	s01_b : BOOL := FALSE;
+	sensore_pistola : USINT := 0;
+	Str_Length : INT := 0;
+	Str_weight : STRING[80] := '';
+	Hmi_trend_03 : HMI_trend;
+	Hmi_trend_04 : HMI_trend;
+	Hmi_trend_05 : HMI_trend;
+	Hmi_trend_06 : HMI_trend;
+	Hmi_trend_02 : HMI_trend;
+	Hmi_trend_01 : HMI_trend;
+	updt_hmi_trend : BOOL := FALSE;
+END_VAR

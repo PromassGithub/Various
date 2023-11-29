@@ -9,8 +9,20 @@
  ********************************************************************)
 
 TYPE
+	typ_simu : 	STRUCT 
+		enable : BOOL;
+	END_STRUCT;
 	typ_data : 	STRUCT 
+		Report_recorded : BOOL;
+		Trigger : BOOL;
 		received_data : BOOL;
+		bilancia : ARRAY[0..199]OF STRING[50];
+		sensore_pistola : ARRAY[0..199]OF USINT := [10];
+		pistone_soll_giu : ARRAY[0..199]OF USINT := [10];
+		pistone_soll_su : ARRAY[0..199]OF USINT := [10];
+		pistone_pistola_2 : ARRAY[0..199]OF USINT := [10];
+		pistone_pistola_1 : ARRAY[0..199]OF USINT := [10];
+		time_stamp : ARRAY[0..199]OF DATE_AND_TIME;
 	END_STRUCT;
 	typ_Login : 	STRUCT 
 		Username : STRING[50];

@@ -8,6 +8,9 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	SIMU : typ_simu := (0);
+	glb_time : DATE_AND_TIME := DT#1970-01-01-00:00:00;
+	glb_rpt : BOOL := FALSE;
 	Allarm_0 : Allarm := (0);
 	Auto_fish_0 : Auto_fish := (0);
 	Auto_Homing_Ctrl_0 : Auto_Homing_Ctrl := (0);

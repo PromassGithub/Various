@@ -37,17 +37,77 @@
       <Property Name="Width" Value="640"/>
       <Property Name="Z-Order" Value="1"/>
       <TextGroup>
+        <TextLayer LanguageId="en">
+          <Text ID="169308" Value=""/>
+          <Text ID="321575" Value=""/>
+          <Text ID="321576" Value=""/>
+          <Text ID="321577" Value=""/>
+          <Text ID="321578" Value=""/>
+          <Text ID="321579" Value=""/>
+          <Text ID="321581" Value=""/>
+          <Text ID="321585" Value=""/>
+          <Text ID="321600" Value=""/>
+          <Text ID="321601" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="169308" Value=""/>
+          <Text ID="321575" Value=""/>
+          <Text ID="321576" Value=""/>
+          <Text ID="321577" Value=""/>
+          <Text ID="321578" Value=""/>
+          <Text ID="321579" Value=""/>
+          <Text ID="321581" Value=""/>
+          <Text ID="321585" Value=""/>
+          <Text ID="321600" Value=""/>
+          <Text ID="321601" Value=""/>
+        </TextLayer>
         <TextLayer LanguageId="en-US">
           <Text ID="169308" Value=""/>
+          <Text ID="321575" Value=""/>
+          <Text ID="321576" Value=""/>
+          <Text ID="321577" Value=""/>
+          <Text ID="321578" Value=""/>
+          <Text ID="321579" Value=""/>
+          <Text ID="321581" Value=""/>
+          <Text ID="321585" Value=""/>
+          <Text ID="321600" Value=""/>
+          <Text ID="321601" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="de-DE">
           <Text ID="169308" Value=""/>
+          <Text ID="321575" Value=""/>
+          <Text ID="321576" Value=""/>
+          <Text ID="321577" Value=""/>
+          <Text ID="321578" Value=""/>
+          <Text ID="321579" Value=""/>
+          <Text ID="321581" Value=""/>
+          <Text ID="321585" Value=""/>
+          <Text ID="321600" Value=""/>
+          <Text ID="321601" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="it-IT">
           <Text ID="169308" Value=""/>
+          <Text ID="321575" Value=""/>
+          <Text ID="321576" Value=""/>
+          <Text ID="321577" Value=""/>
+          <Text ID="321578" Value=""/>
+          <Text ID="321579" Value=""/>
+          <Text ID="321581" Value=""/>
+          <Text ID="321585" Value=""/>
+          <Text ID="321600" Value=""/>
+          <Text ID="321601" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="169308" Value="70"/>
+          <Index ID="321575" Value="0"/>
+          <Index ID="321576" Value="1"/>
+          <Index ID="321577" Value="2"/>
+          <Index ID="321578" Value="3"/>
+          <Index ID="321579" Value="4"/>
+          <Index ID="321581" Value="6"/>
+          <Index ID="321585" Value="10"/>
+          <Index ID="321600" Value="25"/>
+          <Index ID="321601" Value="26"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -61,8 +121,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="18"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="289"/>
@@ -95,8 +155,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="35"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="1"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="350"/>
@@ -109,8 +169,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="34"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="2"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="87"/>
           <Property Name="Width" Value="140"/>
@@ -134,8 +194,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="7"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="3"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="109"/>
           <Property Name="Width" Value="140"/>
@@ -148,8 +208,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="12"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="4"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="131"/>
           <Property Name="Width" Value="140"/>
@@ -180,8 +240,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="36"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="6"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="175"/>
           <Property Name="Width" Value="350"/>
@@ -260,8 +320,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="13"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="10"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="153"/>
           <Property Name="Width" Value="140"/>
@@ -577,7 +637,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="25"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="95"/>
@@ -596,7 +656,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="26"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="90"/>
@@ -996,10 +1056,42 @@
       <Property Name="Width" Value="640"/>
       <Property Name="Z-Order" Value="4"/>
       <TextGroup>
-        <TextLayer LanguageId="en-US"/>
-        <TextLayer LanguageId="de-DE"/>
-        <TextLayer LanguageId="it-IT"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en">
+          <Text ID="321619" Value=""/>
+          <Text ID="321620" Value=""/>
+          <Text ID="321621" Value=""/>
+          <Text ID="321625" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="321619" Value=""/>
+          <Text ID="321620" Value=""/>
+          <Text ID="321621" Value=""/>
+          <Text ID="321625" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="en-US">
+          <Text ID="321619" Value=""/>
+          <Text ID="321620" Value=""/>
+          <Text ID="321621" Value=""/>
+          <Text ID="321625" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="de-DE">
+          <Text ID="321619" Value=""/>
+          <Text ID="321620" Value=""/>
+          <Text ID="321621" Value=""/>
+          <Text ID="321625" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="it-IT">
+          <Text ID="321619" Value=""/>
+          <Text ID="321620" Value=""/>
+          <Text ID="321621" Value=""/>
+          <Text ID="321625" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="321619" Value="0"/>
+          <Index ID="321620" Value="1"/>
+          <Index ID="321621" Value="2"/>
+          <Index ID="321625" Value="6"/>
+        </IndexMap>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001005" Name="bmpBackground">
@@ -1025,8 +1117,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Change Password"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="47"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="507"/>
@@ -1040,8 +1132,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="12"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="1"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="180"/>
           <Property Name="Width" Value="120"/>
@@ -1074,8 +1166,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="13"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="2"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="207"/>
           <Property Name="Width" Value="120"/>
@@ -1605,7 +1697,7 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
           <Property Name="TextIndexOffset" Value="6"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="90"/>
@@ -1673,10 +1765,36 @@
       <Property Name="Width" Value="640"/>
       <Property Name="Z-Order" Value="5"/>
       <TextGroup>
-        <TextLayer LanguageId="en-US"/>
-        <TextLayer LanguageId="de-DE"/>
-        <TextLayer LanguageId="it-IT"/>
-        <IndexMap/>
+        <TextLayer LanguageId="en">
+          <Text ID="321636" Value=""/>
+          <Text ID="321637" Value=""/>
+          <Text ID="321638" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="321636" Value=""/>
+          <Text ID="321637" Value=""/>
+          <Text ID="321638" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="en-US">
+          <Text ID="321636" Value=""/>
+          <Text ID="321637" Value=""/>
+          <Text ID="321638" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="de-DE">
+          <Text ID="321636" Value=""/>
+          <Text ID="321637" Value=""/>
+          <Text ID="321638" Value=""/>
+        </TextLayer>
+        <TextLayer LanguageId="it-IT">
+          <Text ID="321636" Value=""/>
+          <Text ID="321637" Value=""/>
+          <Text ID="321638" Value=""/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="321636" Value="0"/>
+          <Index ID="321637" Value="1"/>
+          <Index ID="321638" Value="2"/>
+        </IndexMap>
       </TextGroup>
       <Controls>
         <Control ClassId="0x00001005" Name="bmpBackground">
@@ -1702,8 +1820,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value="Change Password"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpGroupControl]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="14"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="0"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="45"/>
           <Property Name="Width" Value="507"/>
@@ -1717,8 +1835,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="12"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="1"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="99"/>
           <Property Name="Width" Value="120"/>
@@ -1751,8 +1869,8 @@
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
-          <Property Name="TextGroup" Value="Source[global].TextGroup[MpUserXUITexts]"/>
-          <Property Name="TextIndexOffset" Value="13"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="2"/>
           <Property Name="TextSource" Value="SingleText"/>
           <Property Name="Top" Value="126"/>
           <Property Name="Width" Value="120"/>
@@ -2335,6 +2453,8 @@
       <Property Name="Width" Value="640"/>
       <Property Name="Z-Order" Value="7"/>
       <TextGroup>
+        <TextLayer LanguageId="en"/>
+        <TextLayer LanguageId="de"/>
         <TextLayer LanguageId="en-US"/>
         <TextLayer LanguageId="de-DE"/>
         <TextLayer LanguageId="it-IT"/>

@@ -1,0 +1,28 @@
+
+{REDUND_ERROR} FUNCTION_BLOCK HMI_trend (*TODO: Add your comment here*) (*$GROUP=User,$CAT=User,$GROUPICON=User.png,$CATICON=User.png*)
+	VAR_INPUT
+		DataIn : {REDUND_UNREPLICABLE} REAL;
+		INOutStatus : {REDUND_UNREPLICABLE} INT;
+		INWrite : BOOL;
+		INRead : BOOL;
+		clear_data : BOOL;
+	END_VAR
+	VAR_OUTPUT
+		DataOut : {REDUND_UNREPLICABLE} REAL;
+	END_VAR
+	VAR CONSTANT
+		BufferMax : INT := 200;
+		BufferMin : INT := 1;
+	END_VAR
+	VAR
+		NoOfDataPoints : {REDUND_UNREPLICABLE} INT;
+	END_VAR
+	VAR_OUTPUT
+		Buffer : ARRAY[BufferMin..BufferMax] OF REAL;
+	END_VAR
+	VAR
+		pIn : {REDUND_UNREPLICABLE} INT;
+		pOut : {REDUND_UNREPLICABLE} INT;
+		p : INT;
+	END_VAR
+END_FUNCTION_BLOCK

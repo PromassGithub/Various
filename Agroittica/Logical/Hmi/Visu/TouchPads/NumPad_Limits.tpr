@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.0.6.106"?>
+<TouchPad xmlns="http://br-automation.co.at/AS/VC/Project" Name="NumPad_Limits">
+  <Property Name="BackColor" Value="8"/>
+  <Property Name="BitmapGroup" Value="Source[local].BitmapGroup[Pads]"/>
+  <Property Name="BitmapIndex" Value="4"/>
+  <Property Name="BitmapSource" Value="BitmapGroup"/>
+  <Property Name="Description" Value=""/>
+  <Property Name="Height" Value="250"/>
+  <Property Name="Left" Value="0"/>
+  <Property Name="NumLevel" Value="1"/>
+  <Property Name="PressedBitmapGroup" Value="Source[local].BitmapGroup[Pads]"/>
+  <Property Name="PressedBitmapIndex" Value="5"/>
+  <Property Name="PressedBitmapSource" Value="BitmapGroup"/>
+  <Property Name="Top" Value="0"/>
+  <Property Name="Width" Value="180"/>
+  <Controls>
+    <Control ClassId="0x00000500" Name="TouchPadGrid_1">
+      <Property Name="ColumnWidth" Value="41"/>
+      <Property Name="Columns" Value="4"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Height" Value="240"/>
+      <Property Name="Left" Value="7"/>
+      <Property Name="RowHeight" Value="20"/>
+      <Property Name="Rows" Value="12"/>
+      <Property Name="Top" Value="0"/>
+      <Property Name="Width" Value="164"/>
+    </Control>
+    <Control ClassId="0x00000501" Name="TouchPadMinMax_1">
+      <Property Name="AlignmentHorizontal" Value="Right"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Font" Value="Source[local].Font[Info]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="16"/>
+      <Property Name="Left" Value="48"/>
+      <Property Name="Top" Value="49"/>
+      <Property Name="ValueType" Value="Minimum"/>
+      <Property Name="Width" Value="119"/>
+    </Control>
+    <Control ClassId="0x00000501" Name="TouchPadMinMax_2">
+      <Property Name="AlignmentHorizontal" Value="Right"/>
+      <Property Name="AlignmentVertical" Value="Center"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Font" Value="Source[local].Font[Info]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="16"/>
+      <Property Name="Left" Value="48"/>
+      <Property Name="Top" Value="64"/>
+      <Property Name="ValueType" Value="Maximum"/>
+      <Property Name="Width" Value="119"/>
+    </Control>
+    <Control ClassId="0x0000100E" Name="TouchPadEdit_1">
+      <Property Name="BackColor" Value="7"/>
+      <Property Name="Border" Value="Source[local].Border[Sunken]"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="Font" Value="Source[local].Font[Info]"/>
+      <Property Name="ForeColor" Value="0"/>
+      <Property Name="Height" Value="22"/>
+      <Property Name="Left" Value="11"/>
+      <Property Name="SimulationValue" Value="3,253"/>
+      <Property Name="Top" Value="25"/>
+      <Property Name="Width" Value="157"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_1">
+      <Property Name="AlignmentHorizontal" Value="Left"/>
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="Border" Value="None"/>
+      <Property Name="ColorDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Font" Value="Source[local].Font[Info]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="16"/>
+      <Property Name="HighlightingBackColor" Value="8"/>
+      <Property Name="HighlightingBorder" Value="None"/>
+      <Property Name="HighlightingDatapoint" Value="None"/>
+      <Property Name="HighlightingForeColor" Value="0"/>
+      <Property Name="Left" Value="12"/>
+      <Property Name="Multiline" Value="Disable"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="None"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[NumPad_Limits]"/>
+      <Property Name="TextIndexOffset" Value="0"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="49"/>
+      <Property Name="Width" Value="34"/>
+    </Control>
+    <Control ClassId="0x00001004" Name="Text_2">
+      <Property Name="AlignmentHorizontal" Value="Left"/>
+      <Property Name="AlignmentVertical" Value="Top"/>
+      <Property Name="Border" Value="None"/>
+      <Property Name="ColorDatapoint" Value="None"/>
+      <Property Name="Description" Value=""/>
+      <Property Name="FillStyle" Value="Transparent"/>
+      <Property Name="Font" Value="Source[local].Font[Info]"/>
+      <Property Name="ForeColor" Value="16"/>
+      <Property Name="Height" Value="16"/>
+      <Property Name="HighlightingBackColor" Value="8"/>
+      <Property Name="HighlightingBorder" Value="None"/>
+      <Property Name="HighlightingDatapoint" Value="None"/>
+      <Property Name="HighlightingForeColor" Value="0"/>
+      <Property Name="Left" Value="12"/>
+      <Property Name="Multiline" Value="Disable"/>
+      <Property Name="SimulationValue" Value=""/>
+      <Property Name="StatusDatapoint" Value="None"/>
+      <Property Name="TextGroup" Value="Source[local].TextGroup[NumPad_Limits]"/>
+      <Property Name="TextIndexOffset" Value="1"/>
+      <Property Name="TextSource" Value="SingleText"/>
+      <Property Name="Top" Value="64"/>
+      <Property Name="Width" Value="34"/>
+    </Control>
+  </Controls>
+  <PanelItems>
+    <PanelItem Index="1">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_CANCEL"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="2">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="3">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="4">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="5">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="6">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="7">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="8">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="9">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="10">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="11">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="12">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="13">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="14">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="15">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="16">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="17">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_1"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="18">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_2"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="19">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_3"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="20">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="21">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_1"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="22">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_2"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="23">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_3"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="24">
+      <KeyLevels/>
+    </PanelItem>
+    <PanelItem Index="25">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_4"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="26">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_5"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="27">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_6"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="28">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_BACKSPACE"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="29">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_4"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="30">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_5"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="31">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_6"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="32">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_BACKSPACE"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="33">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_7"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="34">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_8"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="35">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_9"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="36">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ENTER"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="37">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_7"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="38">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_8"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="39">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_9"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="40">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ENTER"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="41">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_SIGN_CHANGE"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="42">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_0"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="43">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_DOT"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="44">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ENTER"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="45">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_SIGN_CHANGE"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="46">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_0"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="47">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ALPHA_DOT"/>
+      </KeyLevels>
+    </PanelItem>
+    <PanelItem Index="48">
+      <KeyLevels>
+        <KeyLevel Level="0" VirtualKey="TP_ENTER"/>
+      </KeyLevels>
+    </PanelItem>
+  </PanelItems>
+</TouchPad>

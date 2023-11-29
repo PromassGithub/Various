@@ -53,6 +53,10 @@
       <Parameter ID="VncPasswordViewOnly2" Value="bazzica" />
       <Parameter ID="VncPasswordViewControl2" Value="promass" />
       <Parameter ID="VncPortNumber2" Value="5901" />
+      <Group ID="Vnc3" />
+      <Parameter ID="VncVcObjectName3" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile3" Value="VC\PS2-Keyboard5.dis" />
+      <Parameter ID="VncPortNumber3" Value="5902" />
     </Connector>
     <Connector Name="IF3">
       <Parameter ID="DNAConfiguration" Value="manual" />
@@ -60,6 +64,7 @@
       <Parameter ID="InaNodeNumber" Value="3" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Agroittica_CP1382" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="RemanentGlobalPvSize" Value="100" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="PLC1.IF3" />
@@ -76,6 +81,15 @@
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="Alarm" />
     <Parameter ID="FileDevicePath2" Value="C:\ALARM" />
+    <Group ID="FileDevice3" />
+    <Parameter ID="FileDeviceName3" Value="CF" />
+    <Parameter ID="FileDevicePath3" Value="C:\" />
+    <Group ID="FileDevice4" />
+    <Parameter ID="FileDeviceName4" Value="DATA" />
+    <Parameter ID="FileDevicePath4" Value="C:\DATA" />
+    <Group ID="FileDevice5" />
+    <Parameter ID="FileDeviceName5" Value="CFG" />
+    <Parameter ID="FileDevicePath5" Value="C:\CFG" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="agroittica" />
     <Parameter ID="FtpUserPassword1" Value="nk5s+iGbE2G3Lss4ijbEM8RmwsHwW5FetzKLdq3raQk=" Description="promass" />

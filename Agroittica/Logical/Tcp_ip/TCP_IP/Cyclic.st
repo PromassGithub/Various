@@ -3,7 +3,7 @@ PROGRAM _CYCLIC
 	HMI := 1;
 		
 	IF (Eth_connect.disable = 1) THEN Client.sStep := 40; RETURN;	
-	END_IF	
+	END_IF
 
 
 	(* DATA TO SEND*)
@@ -132,16 +132,9 @@ PROGRAM _CYCLIC
 				Eth_connect.Marel_Weight			:= buffer.receive_data.Marel_Weight;
 				memset(ADR(buffer.receive_data),0,SIZEOF(buffer.receive_data));
 				
-//				calcolatore2:= calcolatore2+1;
-				
-//				IF (glb_use_weight AND (( glb_String.Result_Real <= Pesi_0.Max_Weight AND glb_String.Result_Real >= Pesi_0.Min_Weight)))THEN
-//					glb_registered := 1;
-//					calcolatore3:= calcolatore3+1;
-//				END_IF
-				
 				glb_data.received_data 				:= 1;
 				Client.recv_timeout 				:= 0;
-				
+				glb_rpt								:= 1;
 				Client.sStep 						:= 20;
 			ELSIF Client.TcpRecv_0.status = tcpERR_NO_DATA THEN  (* No data received - wait *)
 				//Client.recv_timeout := Client.recv_timeout + 1;
