@@ -4,9 +4,6 @@ PROGRAM _CYCLIC
 	Str_Length 	:= LEN(Eth_connect.Marel_Weight);	
 	Str_weight 	:= MID(Eth_connect.Marel_Weight, (Str_Length-2), 2); 
 	
-	
-	
-	
 	// .......................... sensore pistola ..........................
 	IF(glb_io.Di.Si_01 AND (NOT s01_b))THEN
 		//rpt
@@ -167,7 +164,7 @@ PROGRAM _CYCLIC
 		indice := 0;
 	END_IF	
 	
-	IF (updt_hmi_trend) THEN 
+	IF (updt_hmi_trend AND trend_enable) THEN 
 		Hmi_trend_01.INWrite := 1;
 		Hmi_trend_02.INWrite := 1;
 		Hmi_trend_03.INWrite := 1;

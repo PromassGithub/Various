@@ -46,6 +46,8 @@
           <Text ID="323880" Value="Pistola 2"/>
           <Text ID="323881" Value="Pistone Su"/>
           <Text ID="323882" Value="Pistone Giù"/>
+          <Text ID="325925" Value="Enable"/>
+          <Text ID="325926" Value="Disable"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="323873" Value="scale"/>
@@ -56,6 +58,8 @@
           <Text ID="323880" Value="Pistola 2"/>
           <Text ID="323881" Value="Pistone Su"/>
           <Text ID="323882" Value="Pistone Giù"/>
+          <Text ID="325925" Value="Enable"/>
+          <Text ID="325926" Value="Disable"/>
         </TextLayer>
         <TextLayer LanguageId="en-US">
           <Text ID="323873" Value="scale"/>
@@ -66,6 +70,8 @@
           <Text ID="323880" Value="Pistola 2"/>
           <Text ID="323881" Value="Pistone Su"/>
           <Text ID="323882" Value="Pistone Giù"/>
+          <Text ID="325925" Value="Enable"/>
+          <Text ID="325926" Value="Disable"/>
         </TextLayer>
         <TextLayer LanguageId="de-DE">
           <Text ID="323873" Value="scale"/>
@@ -76,6 +82,8 @@
           <Text ID="323880" Value="Pistola 2"/>
           <Text ID="323881" Value="Pistone Su"/>
           <Text ID="323882" Value="Pistone Giù"/>
+          <Text ID="325925" Value="Enable"/>
+          <Text ID="325926" Value="Disable"/>
         </TextLayer>
         <TextLayer LanguageId="it-IT">
           <Text ID="323873" Value="scale"/>
@@ -86,6 +94,8 @@
           <Text ID="323880" Value="Pistola 2"/>
           <Text ID="323881" Value="Pistone Su"/>
           <Text ID="323882" Value="Pistone Giù"/>
+          <Text ID="325925" Value="Enable"/>
+          <Text ID="325926" Value="Disable"/>
         </TextLayer>
         <IndexMap>
           <Index ID="323873" Value="1"/>
@@ -96,6 +106,8 @@
           <Index ID="323880" Value="8"/>
           <Index ID="323881" Value="9"/>
           <Index ID="323882" Value="10"/>
+          <Index ID="325925" Value="11"/>
+          <Index ID="325926" Value="12"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -320,8 +332,51 @@
           <Property Name="Top" Value="404"/>
           <Property Name="Width" Value="93"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_3">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
+          <Property Name="ForeColor" Value="16"/>
+          <Property Name="Height" Value="31"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="168"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedTextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="PressedTextIndex" Value="12"/>
+          <Property Name="PressedTextSource" Value="SingleText"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpButtonUp]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="11"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="384"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_10]"/>
+          <Property Name="Width" Value="70"/>
+        </Control>
       </Controls>
       <KeyMapping>
+        <VirtualKey Name="%embVirtualKey_7">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Hmi.Hmi_Support.change_scale]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
         <VirtualKey Name="%embVirtualKey_9">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
@@ -337,7 +392,7 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_7">
+        <VirtualKey Name="%embVirtualKey_10">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
@@ -349,7 +404,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Hmi.Hmi_Support.change_scale]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.main.Buffer_RPT.trend_enable]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

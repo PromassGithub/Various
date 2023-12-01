@@ -325,14 +325,16 @@ PROGRAM _CYCLIC
 		
 		0: 	//Start
 			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN
-//				Pesi_0.Weight_Status := 10;
+				Pesi_0.Weight_Status := 10;
 			END_IF;
 		
 		10:	//Controllo pesi
 			IF (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_A AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_A) OR (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_B AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_B) THEN
-				Pesi_0.Weight_Status := 20;
+//				Pesi_0.Weight_Status := 20;
+				Pesi_0.Cmd_Shoot := 1;
 			ELSE
-				Pesi_0.Weight_Status := 30;
+//				Pesi_0.Weight_Status := 30;
+				Pesi_0.Cmd_Shoot := 0;
 			END_IF;
 			
 		20:	//Abilitato allo sparo & back to start

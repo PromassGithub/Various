@@ -8,26 +8,10 @@
  * IO mapping file
  ********************************************************************)
 VAR_CONFIG
-	::xsm_demo:XSM_Ctrl_0.Enable AT %QX."X3".DigitalOutput01;
-	glb_io.Di.Start AT %IX."X3".DigitalInput05;
-	glb_io.Di.Automatic AT %IX."X3".DigitalInput06;
-	glb_io.Di.Stop AT %IX."X3".DigitalInput07;
-	glb_io.Di.Manual AT %IX."X3".DigitalInput08;
-	glb_io.Do.Piston_gun_1 AT %QX."X3".DigitalOutput02;
-	glb_io.Do.Piston_up AT %QX."X3".DigitalOutput03;
-	glb_io.Do.Piston_gun_2 AT %QX."X3".DigitalOutput04;
-	glb_io.Do.Piston_Flap_Dx_Sx AT %QX."X3".DigitalOutput09;
-	Cyclic#1.Empty_Mag_22.Empty_Mag_Sensor AT %IX."X1".DigitalInput04;
-	Cyclic#1.Empty_Mag_1_0.Empty_Mag_Sensor AT %IX."X1".DigitalInput02;
-	Cyclic#1.::glb_io.Di.Finecorsa AT %IX."X1".DigitalInput01;
-	Cyclic#1.::glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
 	Cyclic#1.Lamp_02.Lamp2Allarme AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput01;
 	Cyclic#1.Lamp_01.Lamp1Allarme AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput02;
 	Cyclic#1.Lamp_02.Lamp2Bianco AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput03;
 	Cyclic#1.Lamp_01.Lamp1Bianco AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput04;
 	Cyclic#1.Lamp_02.Lamp2Verde AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput05;
 	Cyclic#1.Lamp_01.Lamp1Verde AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput06;
-	Cyclic#1.glb_io.Di.Si_03 AT %IX."X67BC8321-1".IF1.ST1.DigitalInput08;
-	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
-	glb_io.Do.MainAllarm AT %QX."X3".DigitalOutput12;
 END_VAR

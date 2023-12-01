@@ -12,7 +12,9 @@
     <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Buffer_RPT" Source="main.Buffer_RPT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
-  <TaskClass Name="Cyclic#2" />
+  <TaskClass Name="Cyclic#2">
+    <Task Name="Sim" Source="Sim.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <TaskClass Name="Cyclic#3">
     <Task Name="RPT_CSV_ST" Source="main.RPT_CSV_ST.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
@@ -76,6 +78,12 @@
     <BinaryObject Name="vcchspot" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfar00" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="FWRules" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccalarm" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu03" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu01" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Visu02" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcctrend" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vccbar" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />

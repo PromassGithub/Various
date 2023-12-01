@@ -104,9 +104,7 @@ PROGRAM _CYCLIC
 				RowCounterFile			:= 0;
 				
 			ELSIF (FileCreate_03.status = 20705) THEN (* file già esistente *)
-				
 				step_rpt 				:= OPEN_CSV_FILE;
-//				FileCreate_03.status 	:= 0;
 				FileCreate_03.enable 	:= 0;
 			END_IF
 		
@@ -126,9 +124,9 @@ PROGRAM _CYCLIC
 				memset (ADR(string_rpt), 	0, SIZEOF(string_rpt)	);
 				memset (ADR(support_str),   0, SIZEOF(support_str)  );
 
-//				FileOpen_03.status 	:= 0;
 				ident_csv			:= FileOpen_03.ident;
 				FileOpen_03.enable 	:= 0;
+				filelen := FileOpen_03.filelen;
 				
 			ELSIF (FileOpen_03.status <> 65535) THEN
 				
@@ -140,8 +138,9 @@ PROGRAM _CYCLIC
 		CREATE_HEADER_CSV_FILE:	
 			
 			// Il file è vuoto
-			IF (FileOpen_03.filelen < 101) THEN //lunghezza della intestazione
+			IF (filelen < 101) THEN //lunghezza della intestazione
 				
+				memset (ADR(string_rpt), 0, SIZEOF(string_rpt));
 				// HEADER CDV FILE -------------------------------------------------------------------
 				// Salvo l'intestazione di 120 caratteri
 				
@@ -218,11 +217,13 @@ PROGRAM _CYCLIC
 				offset                := SIZEOF(USINT) * 240;
 				
 				RowCounterFile		  := 2; //2 ROWS * 110 BYTES
+				filelen := filelen + str_lenght;
 
 				step_rpt := WRITE_CSV_FILE;
 				
-				ELSIF (FileOpen_03.filelen > 102) THEN // Il file è già stato scritto
+			ELSIF (filelen > 102) THEN // Il file è già stato scritto
 				
+				memset (ADR(string_rpt), 0, SIZEOF(string_rpt));
 				
 				// TIMESTAMP				
 				memset (ADR(support_str), 0, SIZEOF(support_str));
@@ -270,8 +271,8 @@ PROGRAM _CYCLIC
 
 			
 				RowCounterFile := RowCounterFile + 1;
-				filelen := RowCounterFile * 120;
-				filelen := FileOpen_03.filelen;
+//				filelen := RowCounterFile * 120;
+//				filelen := FileOpen_03.filelen;
 
 				str_lenght := strlen(ADR(string_rpt)); (* restituisce la lunghezza della stringa senza terminatore nullo *)
 				
@@ -283,9 +284,11 @@ PROGRAM _CYCLIC
 				FileWrite_03.len      := str_lenght;
 				offset                := offset + (SIZEOF(USINT) * 120);
 
+				filelen := filelen + str_lenght;
+				
 				step_rpt := WRITE_CSV_FILE;
 				
-				ELSE  // Chiamato dal controllo densità con numero di ciclo a 0
+			ELSE  // Chiamato dal controllo densità con numero di ciclo a 0
 				
 				step_rpt := CLOSE_CSV_FILE;
 			END_IF
@@ -295,15 +298,15 @@ PROGRAM _CYCLIC
 			FileWrite_03;
 
 			IF (FileWrite_03.status = 0) THEN
-				
-				//glb_comandi.cmd_scrivi_report := 0;					// Resetto la richiesta di scrittura del report
-				//rpt_write_req				 	:= 0;
 				glb_data.Report_recorded 		:= 1;
 				step_rpt 						:= CLOSE_CSV_FILE;
 				FileWrite_03.enable 		  	:= 0;
+				
 				IF (xxx < 199) THEN 
 					xxx := xxx + 1;
-					step_rpt 			:= OPEN_CSV_FILE;
+					step_rpt 			:= CREATE_HEADER_CSV_FILE;
+									
+					//					glb_data.Trigger := 0;
 				END_IF
 				
 			ELSIF (FileWrite_03.status <> 65535) THEN
@@ -317,18 +320,30 @@ PROGRAM _CYCLIC
 
 			FileClose_03.enable := 1;
 			FileClose_03.ident  := ident_csv;
-			//rpt_write_req				 	:= 0;
-
 			FileClose_03;
 
 			IF (FileClose_03.status = 0) THEN
 				
+//				step_rpt 				:= WAIT;
+				FileClose_03.enable := 0;
+				
+			ELSIF (FileClose_03.status = 20721) THEN
 				step_rpt 				:= WAIT;
 				FileClose_03.enable := 0;
 				
-			ELSIF (FileClose_03.status <> 65535) THEN
+//				glb_data.Trigger := 1;
+				
+//				IF (xxx < 199) THEN 
+//					xxx := xxx + 1;
+//					step_rpt 			:= OPEN_CSV_FILE;
+//					
+////					glb_data.Trigger := 0;
+//				END_IF
+
+			ELSIF (FileClose_03.status <> 65535 AND FileClose_03.status <> 65534) THEN
 				
 				step_rpt	 		:= ERROR;
+				
 				numero_errore   	:= FileIoGetSysError();
 				FileClose_03.enable := 0;
 			END_IF
@@ -344,6 +359,5 @@ PROGRAM _CYCLIC
 	
 
 	TP_01;
-		
 	 
 END_PROGRAM

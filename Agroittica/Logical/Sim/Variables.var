@@ -1,3 +1,18 @@
 VAR
+	random_send : BOOL := FALSE;
+	random1 : UDINT := 0;
+	ton_1 : TON := (0);
+	ton_2 : TON := (0);
+	ton_3 : TON := (0);
+	tempo_del_cazzo : USINT := 0;
+	ton_0 : TON := (0);
+	random : UDINT := 0;
+	diminuisci : BOOL := FALSE;
+	time_0 : TIME := T#0S;
+	time_2 : TIME := T#500ms;
+	time_1 : TIME := T#500ms;
+	time_ms : TIME := T#0S;
+	bilancia_simulata : REAL := 0.250;
 	Second_Scan : USINT := 0;
+	support_str : STRING[40];
 END_VAR

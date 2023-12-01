@@ -94,12 +94,12 @@ PROGRAM _CYCLIC
 		
 		20: (* Send Data to the Server *)			
 			Eth_connect.tcp_state.tcpsend := 0;
-			Client.TcpSend_0.enable := 1;				
-			Client.TcpSend_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
-			Client.TcpSend_0.pData := ADR(buffer.send_data);  (* Which data to send *)
-			Client.TcpSend_0.datalen := SIZEOF(buffer.send_data);  (* Lenght of data to send *)											
-			Client.TcpSend_0.flags := 0;
-			Client.TcpSend_0; (*call finction*)
+//			Client.TcpSend_0.enable := 1;				
+//			Client.TcpSend_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
+//			Client.TcpSend_0.pData := ADR(buffer.send_data);  (* Which data to send *)
+//			Client.TcpSend_0.datalen := SIZEOF(buffer.send_data);  (* Lenght of data to send *)											
+//			Client.TcpSend_0.flags := 0;
+//			Client.TcpSend_0; (*call finction*)
 			Eth_connect.no_comunication := 0;
 			
 			IF (glb_data.received_data = 0) THEN	Client.sStep := 30; END_IF
