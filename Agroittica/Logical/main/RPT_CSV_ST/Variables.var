@@ -1,4 +1,9 @@
+VAR RETAIN
+	Saved_day : USINT := 0;
+END_VAR
 VAR
+	New_CSV : BOOL := FALSE;
+	Progr_num : USINT := 0;
 	TP_01 : TP := (0);
 	estensione : STRING[80] := '.csv';
 	space : STRING[80] := '-';

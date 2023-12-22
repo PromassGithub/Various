@@ -71,17 +71,51 @@ PROGRAM _CYCLIC
 			// inserimento mese nel nome del file
 			memset (ADR(support_str), 0, SIZEOF(support_str));
 			itoa(struct_time.month, ADR(support_str));
-			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF
+			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF;
 			strcat(ADR(nome_file_doc), ADR(support_str));
 			strcat(ADR(nome_file_doc), ADR(space));
 
 			// inserimento giorno nel nome del file
 			memset (ADR(support_str), 0, SIZEOF(support_str));
 			itoa(struct_time.day, ADR(support_str));
-			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF
+			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF;
 			strcat(ADR(nome_file_doc), ADR(support_str));
-			//strcat(ADR(nome_file_doc), ADR(space));
+			strcat(ADR(nome_file_doc), ADR(space));
+			
+			Saved_day := struct_time.day;
+			
+			(*Reset del progresivo quando il cambia il giorno*)
+			IF (struct_time.day <> Saved_day) THEN
+				Progr_num := 0;
+			END_IF;
+			
+			(*Gestione numero progressivo, ogni 50000 elementi il progressivo avanza*)
+			
+			IF Progr_num = 0 THEN
+				Progr_num := 1;
+			END_IF;
+			
+			IF (filelen >= 50000) THEN
+				New_CSV := 1;
+			ELSE
+				New_CSV := 0;
+			END_IF;
+			
+			IF New_CSV THEN
+				Progr_num := Progr_num +1;
+				
+			END_IF;
+			
+			memset (ADR(support_str), 0, SIZEOF(support_str));
+			itoa(Progr_num, ADR(support_str));
+			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF;
+			strcat(ADR(nome_file_doc), ADR(support_str));
+			
 		
+			
+			
+			
+			
 		
 			strcpy(ADR(nome_file_csv), ADR(nome_file_doc));		
 			strcat(ADR(nome_file_csv), ADR(estensione));				// creo il file YYYY-MM-DD.csv
