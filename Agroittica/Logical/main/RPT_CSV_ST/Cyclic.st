@@ -12,6 +12,11 @@ PROGRAM _CYCLIC
 	IF (NOT glb_data.Trigger) THEN  rpt_write_req := 0; END_IF
 	
 	IF (fucking_debug) THEN step_rpt := step_force; END_IF
+	
+	//comando reset progressivo
+	IF (struct_time.day<> Saved_day) (*(Day_test<> Saved_day)*) THEN
+		Counter_Reset := 1;
+	END_IF;
 		
 	CASE step_rpt OF (* Stato di idle *)
 		WAIT:
@@ -78,45 +83,24 @@ PROGRAM _CYCLIC
 			// inserimento giorno nel nome del file
 			memset (ADR(support_str), 0, SIZEOF(support_str));
 			itoa(struct_time.day, ADR(support_str));
+			(*itoa(Day_test, ADR(support_str));*)
 			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF;
 			strcat(ADR(nome_file_doc), ADR(support_str));
 			strcat(ADR(nome_file_doc), ADR(space));
 			
-			Saved_day := struct_time.day;
-			
-			(*Reset del progresivo quando il cambia il giorno*)
-			IF (struct_time.day <> Saved_day) THEN
-				Progr_num := 0;
+			//Reset del numero progressivo quando cambia giorno
+			IF Counter_Reset THEN
+				Counter := 0;
+				Counter_Reset := 0;
 			END_IF;
 			
-			(*Gestione numero progressivo, ogni 50000 elementi il progressivo avanza*)
-			
-			IF Progr_num = 0 THEN
-				Progr_num := 1;
-			END_IF;
-			
-			IF (filelen >= 50000) THEN
-				New_CSV := 1;
-			ELSE
-				New_CSV := 0;
-			END_IF;
-			
-			IF New_CSV THEN
-				Progr_num := Progr_num +1;
-				
-			END_IF;
-			
+			//inserimento del numero progressivo alla fine del nome del file csv
 			memset (ADR(support_str), 0, SIZEOF(support_str));
-			itoa(Progr_num, ADR(support_str));
+			itoa(Counter, ADR(support_str));
 			IF (strlen(ADR(support_str)) = 1) THEN strcat(ADR(nome_file_doc), ADR("0")); END_IF;
 			strcat(ADR(nome_file_doc), ADR(support_str));
 			
-		
 			
-			
-			
-			
-		
 			strcpy(ADR(nome_file_csv), ADR(nome_file_doc));		
 			strcat(ADR(nome_file_csv), ADR(estensione));				// creo il file YYYY-MM-DD.csv
 
@@ -168,6 +152,21 @@ PROGRAM _CYCLIC
 				numero_errore   	:= FileIoGetSysError();
 				FileOpen_03.enable 	:= 0;
 			END_IF
+			
+			// salvo il giorno in una variabile ritentiva
+			Saved_day := struct_time.day;
+//			Saved_day := Day_test;
+			
+			//Gestione numero progressivo, ogni 400000 elementi il progressivo avanza
+			IF (filelen >= 400000) THEN
+				New_CSV := 1;
+			ELSE
+				New_CSV := 0;
+			END_IF;
+			
+			IF New_CSV THEN
+				Counter := Counter +1;
+			END_IF;
 		
 		CREATE_HEADER_CSV_FILE:	
 			
@@ -382,8 +381,8 @@ PROGRAM _CYCLIC
 				FileClose_03.enable := 0;
 			END_IF
 
-	END_CASE;
-
+	END_CASE;	
+	
 	
 	(*********************************************** CREATE DIR WHERE SAVE THE CAVITIES INFO LINKE TO THE RECIPES **************************************************)	
 
