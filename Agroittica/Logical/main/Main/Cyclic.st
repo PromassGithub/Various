@@ -105,6 +105,10 @@ PROGRAM _CYCLIC
 			
 			TON_02.IN := 1;
 			
+//			//............................................ modifica 17/01/24 .............................................//
+//			Piston_st				:= 0;
+//			//............................................ fine modifica 17/01/24 ........................................//
+			
 			IF TON_02.Q THEN 
 				Piston_st				:= 0;
 				glb_io.Di.Finecorsa		:= 0;
@@ -230,20 +234,36 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		1:	//Controllo sensori
-			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN
+			
+			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN
 				Gun_Switch_0.Gun_Switch_Status := 10;
-			END_IF;
+			ELSIF (NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded) THEN
+				Gun_Switch_0.Gun_Switch_Status := 20;
+			ELSE
+				Gun_Switch_0.Gun_Switch_Status := 0;
+			END_IF
+			
+			
+//			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN
+//				Gun_Switch_0.Gun_Switch_Status := 10;
+//			END_IF;
 		
 		10:	//Gun_1 attiva
 			Gun_Switch_0.Gun_1_Active := 1;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
-			IF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded) THEN 
+			IF (Empty_Mag_1_0.Empty_Mag_Sensor OR (NOT glb_cmd.Cartridge_loaded)) THEN
 				glb_cmd.Cartridge_loaded := 0;
-				Gun_Switch_0.Gun_Switch_Status := 20;
-			ELSIF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_2) THEN
-				Gun_Switch_0.Gun_Switch_Status := 10;	
-			END_IF;
+				Gun_Switch_0.Gun_Switch_Status := 30;
+			END_IF
+			
+			
+//			IF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded) THEN 
+//				glb_cmd.Cartridge_loaded := 0;
+//				Gun_Switch_0.Gun_Switch_Status := 20;
+//			ELSIF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_2) THEN
+//				Gun_Switch_0.Gun_Switch_Status := 10;	
+//			END_IF;
 			
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
@@ -251,12 +271,17 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
-		
-			IF (Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN 
-				Gun_Switch_0.Gun_Switch_Status := 10;
-			ELSIF (Empty_Mag_22.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_1) THEN
-				Gun_Switch_0.Gun_Switch_Status := 20;	
-			END_IF;
+			IF (Empty_Mag_22.Empty_Mag_Sensor OR (NOT glb_cmd_2.Cartridge_loaded)) THEN
+				glb_cmd_2.Cartridge_loaded := 0;
+				Gun_Switch_0.Gun_Switch_Status := 30;
+			END_IF
+			
+			
+//			IF (Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN 
+//				Gun_Switch_0.Gun_Switch_Status := 10;
+//			ELSIF (Empty_Mag_22.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_1) THEN
+//				Gun_Switch_0.Gun_Switch_Status := 20;	
+//			END_IF;
 		
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
@@ -267,6 +292,7 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_Switch_Status := 0;
 			
 	END_CASE;
+	
 	
 	//--------------------FLAP DIRECTION-----------------------
 	
@@ -365,11 +391,11 @@ PROGRAM _CYCLIC
 	//--------------------AIR------------------------------------
 	
 	//Feedback air supply
-	IF (NOT Feedback_0.Feedback_Air) THEN
-		glb_err.Air := TRUE;
-	ELSE
-		glb_err.Air := FALSE;
-	END_IF;
+//	IF (NOT Feedback_0.Feedback_Air) THEN
+//		glb_err.Air := TRUE;
+//	ELSE
+//		glb_err.Air := FALSE;
+//	END_IF;
 	
 	//--------------------Emergenze------------------------------------
 	

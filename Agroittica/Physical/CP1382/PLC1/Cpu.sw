@@ -31,7 +31,7 @@
   </DataObjects>
   <VcDataObjects>
     <VcDataObject Name="Visu_t" Source="Hmi.Visu_t30.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
-    <VcDataObject Name="VGAvnc" Source="XSM_Demo_vnc.VGAvnc.dob" Memory="UserROM" Language="Vc" Disabled="true" WarningLevel="2" />
+    <VcDataObject Name="VGAvnc" Source="XSM_Demo_vnc.VGAvnc.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
     <VcDataObject Name="Visu" Source="Hmi.Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" />
   </VcDataObjects>
   <Binaries>
@@ -84,6 +84,7 @@
     <BinaryObject Name="Visu02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcctrend" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccbar" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
@@ -99,7 +100,6 @@
     <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />

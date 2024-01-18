@@ -31,9 +31,9 @@ PROGRAM _INIT
 	(* Set up I/O configuration - No need to defind in AS I/O Configuration for module. *)
 	XSM_IO_Cfg_2.IO_Cfg.MixedDecayCfg := 15;							(* AS Default, change to suit application. *)
 
-	XSM_IO_Cfg_2.IO_Cfg.Current.Holding := 0.20;						(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_2.IO_Cfg.Current.Rated := 1.20;							(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_2.IO_Cfg.Current.Maximum := 1.50;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_2.IO_Cfg.Current.Holding := 1.50;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_2.IO_Cfg.Current.Rated := 3.0;							(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_2.IO_Cfg.Current.Maximum := 3.0;						(* A, Change to suit motor/application. *)
 
 	XSM_IO_Cfg_2.IO_Cfg.FullStepThreshold := 0;							(* Also sets to AS Default of 65535, change to suit application. *)
 
@@ -240,7 +240,7 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_2.Cmd.Velocity := 0;
 			XSM_Ctrl_2.Cmd.Stop := TRUE;
 			old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
-			Status := STOP;
+			(*Status := STOP;*)
 			MM_2.MM_status := 0;
 					
 		31:	//Left Stop
@@ -295,7 +295,7 @@ PROGRAM _CYCLIC
 	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
 		
 		0:	//Start
-			IF ((NOT Homed_2) AND Status = AUTO AND glb_Auto_homing_lock) THEN
+			IF ((NOT Homed_2) AND First_Homing AND Status = AUTO) THEN
 				Auto_Homing_Ctrl_2.Auto_Homing_Status := 1;
 			END_IF;
 			Auto_Homing_Ctrl_2.Pop_Up := 1;
@@ -445,7 +445,7 @@ PROGRAM _CYCLIC
 				Homed_2 := 1;
 				Homing_status_2 := 0;
 				old_pos_2 := 0;
-				Status := STOP;
+				(*Status := STOP;*)
 			END_IF;
 		
 	END_CASE;  
@@ -466,7 +466,7 @@ PROGRAM _CYCLIC
 			
 		10: // 
 			XSM_Ctrl_2.Cmd.Move_Additive := TRUE;
-			IF (XSM_Ctrl_2.Monitor.Actual_Position = (old_pos_2 + Dim_etichetta)) THEN
+			IF (XSM_Ctrl_2.Monitor.Actual_Position >= (old_pos_2 + Dim_etichetta)) THEN
 				old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
 				FW_step_status_2 := 20;
 			END_IF;
@@ -544,7 +544,7 @@ PROGRAM _CYCLIC
 				Homed_2 := 1;
 				CMD_home_status_2 := 0;
 				old_pos_2 := 0;
-				Status := STOP;
+				(*Status := STOP;*)
 			END_IF;
 		
 		60:

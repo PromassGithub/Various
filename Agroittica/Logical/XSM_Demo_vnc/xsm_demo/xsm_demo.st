@@ -31,9 +31,9 @@ PROGRAM _INIT
 	(* Set up I/O configuration - No need to defind in AS I/O Configuration for module. *)
 	XSM_IO_Cfg_0.IO_Cfg.MixedDecayCfg := 15;							(* AS Default, change to suit application. *)
 
-	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 0.8;						(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 1.7;							(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 2.2;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 1.5;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 3.0;							(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 3.0;						(* A, Change to suit motor/application. *)
 
 	XSM_IO_Cfg_0.IO_Cfg.FullStepThreshold := 0;							(* Also sets to AS Default of 65535, change to suit application. *)
 
@@ -478,7 +478,7 @@ PROGRAM _CYCLIC
 				Homed := 1;
 				Homing_status := 0;
 				old_pos := 0;
-				Status := STOP;
+				(*Status := STOP;*)
 			END_IF;
 		
 	END_CASE;  
@@ -576,7 +576,7 @@ PROGRAM _CYCLIC
 				Homed := 1;
 				CMD_home_status := 0;
 				old_pos := 0;
-				Status := STOP;
+				(*Status := STOP;*)
 			END_IF;
 				
 		
@@ -632,6 +632,8 @@ PROGRAM _CYCLIC
 		
 	
 	IF (XSM_Ctrl_0.Monitor.Home_OK AND (NOT Disable_refresh_pos)) THEN 	posizione_salvata := XSM_Ctrl_0.Monitor.Actual_Position; END_IF;
+	
+	First_Homing := Homed;
 	
 	
 END_PROGRAM
