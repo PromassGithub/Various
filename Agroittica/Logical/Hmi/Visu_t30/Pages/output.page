@@ -195,6 +195,66 @@
           <Property Name="Top" Value="197"/>
           <Property Name="Width" Value="30"/>
         </Control>
+        <Control ClassId="0x00001004" Name="Text_22">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="23"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[IO]"/>
+          <Property Name="TextIndexOffset" Value="32"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="229"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_5">
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_io.Do.Vac_Gun_1]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="181"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="229"/>
+          <Property Name="Width" Value="30"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_23">
+          <Property Name="AlignmentVertical" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorder]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpPads]"/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="23"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Text]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[IO]"/>
+          <Property Name="TextIndexOffset" Value="33"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="261"/>
+          <Property Name="Width" Value="150"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_6">
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_io.Do.Vac_Gun_2]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="181"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="261"/>
+          <Property Name="Width" Value="30"/>
+        </Control>
       </Controls>
       <KeyMapping/>
     </Layer>

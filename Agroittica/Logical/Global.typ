@@ -182,8 +182,8 @@ TYPE
 		Stop_HMI : BOOL;
 		Auto_HMI : BOOL;
 		Manual_HMI : BOOL;
-		Gun_1_Valve_HMI : BOOL;
-		Gun_2_Valve_HMI : BOOL;
+		Gun_1_HMI_Trig_Man : BOOL;
+		Gun_2_HMI_Trig_Man : BOOL;
 		Soll_Valve_HMI : BOOL;
 		Branzino_HMI : BOOL;
 		Orata_HMI : BOOL;
@@ -259,6 +259,8 @@ TYPE
 		Piston_down : BOOL;
 		Main_Piston_Down : BOOL;
 		Main_Piston_Up : BOOL;
+		Vacuum_Direction : BOOL;
+		Vacuum_On_Off : BOOL;
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;

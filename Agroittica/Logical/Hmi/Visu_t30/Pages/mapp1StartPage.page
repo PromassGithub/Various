@@ -459,6 +459,46 @@
           <Property Name="Top" Value="336"/>
           <Property Name="Width" Value="55"/>
         </Control>
+        <Control ClassId="0x00001004" Name="Text_7">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="AlignmentVertical" Value="Top"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_LabelBorderDown]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="Height" Value="28"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="383"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[MAIN_PAGE]"/>
+          <Property Name="TextIndexOffset" Value="8"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="188"/>
+          <Property Name="Width" Value="158"/>
+        </Control>
+        <Control ClassId="0x00001007" Name="Numeric_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_ListBoxCenter]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="ForeColor" Value="0"/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="Left" Value="379"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="9999999"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="-9999999"/>
+          <Property Name="SimulationValue" Value="10000"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="217"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Pesi_0.Controlled_Weight]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="166"/>
+        </Control>
       </Controls>
       <KeyMapping/>
     </Layer>
@@ -559,5 +599,6 @@
     <TabSeqItem Index="1" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
     <TabSeqItem Index="2" Value="Source[embedded].Layer[Default].Control[Numeric_4]"/>
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[Numeric_3]"/>
+    <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
   </TabSequence>
 </Page>

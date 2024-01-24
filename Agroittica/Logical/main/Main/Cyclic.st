@@ -224,7 +224,7 @@ PROGRAM _CYCLIC
 	
 	
 	
-	//--------------------SWITCH PISTOLE-----------------------
+	//--------------------GUN SWITCH-------------------------
 	
 	CASE Gun_Switch_0.Gun_Switch_Status OF
 		
@@ -242,11 +242,6 @@ PROGRAM _CYCLIC
 			ELSE
 				Gun_Switch_0.Gun_Switch_Status := 0;
 			END_IF
-			
-			
-//			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN
-//				Gun_Switch_0.Gun_Switch_Status := 10;
-//			END_IF;
 		
 		10:	//Gun_1 attiva
 			Gun_Switch_0.Gun_1_Active := 1;
@@ -256,14 +251,6 @@ PROGRAM _CYCLIC
 				glb_cmd.Cartridge_loaded := 0;
 				Gun_Switch_0.Gun_Switch_Status := 30;
 			END_IF
-			
-			
-//			IF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded) THEN 
-//				glb_cmd.Cartridge_loaded := 0;
-//				Gun_Switch_0.Gun_Switch_Status := 20;
-//			ELSIF (Empty_Mag_1_0.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_2) THEN
-//				Gun_Switch_0.Gun_Switch_Status := 10;	
-//			END_IF;
 			
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
@@ -275,13 +262,6 @@ PROGRAM _CYCLIC
 				glb_cmd_2.Cartridge_loaded := 0;
 				Gun_Switch_0.Gun_Switch_Status := 30;
 			END_IF
-			
-			
-//			IF (Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN 
-//				Gun_Switch_0.Gun_Switch_Status := 10;
-//			ELSIF (Empty_Mag_22.Empty_Mag_Sensor AND glb_hmi.Inp.Lock_Gun_1) THEN
-//				Gun_Switch_0.Gun_Switch_Status := 20;	
-//			END_IF;
 		
 			IF ( Status <> AUTO AND Status <> MANUAL ) THEN Gun_Switch_0.Gun_Switch_Status := 30; END_IF;
 		
@@ -379,7 +359,59 @@ PROGRAM _CYCLIC
 		Pesi_0.Cmd_Shoot := 0;
 	END_IF;
 	
-	//--------------------MATH-----------1-----------------------
+	//---------------VACUUM-CONTROL----------------------------
+	
+	CASE Vac_Status OF
+		
+		0:	//Start 
+			IF ((Status = AUTO) OR (Status = MANUAL) AND glb_err.pending_alarms = 0) THEN
+				Vac_Status := 1;
+			END_IF;
+			
+		1:	//Vacuum ON
+			glb_io.Do.Vacuum_On_Off := 1;
+			Vac_Status := 10;
+			
+		10:	//Idle
+			IF (Gun_Switch_0.Gun_1_Active) THEN
+				Vac_Status := 20;
+			ELSIF (Gun_Switch_0.Gun_2_Active) THEN
+				Vac_Status := 30;
+			ELSE
+				Vac_Status := 0;
+			END_IF;
+			
+		20:	//Vacuum to Gun 1
+			glb_io.Do.Vacuum_Direction := 1;
+			
+			IF (NOT Gun_Switch_0.Gun_1_Active) THEN
+				Vac_Status := 40;
+			END_IF;
+			
+			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
+		
+		30:	//Vacuum to Gun 2
+			glb_io.Do.Vacuum_Direction := 0;
+			
+			IF (NOT Gun_Switch_0.Gun_2_Active) THEN
+				Vac_Status := 40;
+			END_IF;
+		
+			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
+			
+		31:	//Vacuum OFF
+			glb_io.Do.Vacuum_On_Off := 0;
+			Vac_Status := 40;
+		
+		
+		40:	//Vacuum OFF & Reset & Back to Start
+			glb_io.Do.Vacuum_Direction := 0;
+			Vac_Status := 0;
+		
+	END_CASE;
+				
+	
+	//--------------------MATH----------------------------------
 	
 	//Calcolo tempo delay sollevamento pesce
 	IF (STP_01_Vel = 0) THEN STP_01_Vel:= 0.5; END_IF;
@@ -446,12 +478,12 @@ PROGRAM _CYCLIC
 	
 	//Controllo manuale valvole pistoni grilletti pistole
 	IF ( Status = MANUAL AND glb_err.pending_alarms = 0 ) THEN
-		IF ( glb_hmi.Inp.Gun_1_Valve_HMI ) THEN
+		IF ( glb_hmi.Inp.Gun_1_HMI_Trig_Man ) THEN
 			glb_io.Do.Piston_gun_1 := 1;
 		ELSE
 			glb_io.Do.Piston_gun_1 := 0;
 		END_IF;
-		IF (glb_hmi.Inp.Gun_2_Valve_HMI) THEN
+		IF (glb_hmi.Inp.Gun_2_HMI_Trig_Man) THEN
 			glb_io.Do.Piston_gun_2 := 1;
 		ELSE
 			glb_io.Do.Piston_gun_2 := 0;

@@ -14,7 +14,7 @@ PROGRAM _CYCLIC
 	IF (fucking_debug) THEN step_rpt := step_force; END_IF
 	
 	//comando reset progressivo
-	IF (struct_time.day<> Saved_day) (*(Day_test<> Saved_day)*) THEN
+	IF (struct_time.day <> Saved_day) (*(Day_test<> Saved_day)*) THEN
 		Counter_Reset := 1;
 	END_IF;
 		
