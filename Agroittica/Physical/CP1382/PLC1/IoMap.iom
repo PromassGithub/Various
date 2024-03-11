@@ -57,6 +57,5 @@ VAR_CONFIG
 	glb_io.Do.Main_Piston_Down AT %QX."X3".DigitalOutput10;
 	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput03;
 	glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
-	glb_io.Do.Vacuum_Direction AT %QX."X3".DigitalOutput11;
-	glb_io.Do.Vacuum_On_Off AT %QX."X3".DigitalOutput12;
+	glb_io.Do.Vacuum_On_Off  AT %QX."X3".DigitalOutput11;
 END_VAR

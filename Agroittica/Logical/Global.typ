@@ -163,6 +163,7 @@ TYPE
 		Cartridge_loaded : BOOL;
 		Reload_complete_2 : BOOL;
 		Reload_complete_1 : BOOL;
+		Auto_Homing_Ack : BOOL;
 	END_STRUCT;
 	typ_err : 	STRUCT 
 		Drive2 : BOOL;
@@ -261,6 +262,9 @@ TYPE
 		Main_Piston_Up : BOOL;
 		Vacuum_Direction : BOOL;
 		Vacuum_On_Off : BOOL;
+		Green_Light : BOOL;
+		Red_Light : BOOL;
+		Blue_Light : BOOL;
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;
@@ -284,6 +288,11 @@ TYPE
 		enc_sta_bit_10 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
 		enc_sta_bit_11 : BOOL; (*Bit encoder movimentazione prelevatore pezzi*)
 		Powerlink : BOOL;
+		Reset : BOOL;
+		Forward_Mag_1 : BOOL;
+		Backward_Mag_1 : BOOL;
+		Forward_Mag_2 : BOOL;
+		Backward_Mag_2 : BOOL;
 	END_STRUCT;
 	typ_Ai : 	STRUCT 
 		Enc_laser_dist_conv1 : REAL;

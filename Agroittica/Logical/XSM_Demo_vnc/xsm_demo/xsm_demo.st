@@ -83,18 +83,16 @@ PROGRAM _CYCLIC
 
 	glb_err.Drive1 := XSM_Ctrl_0.Error;
 	
-	//-----------------------------LAMPEGGIANTI----------------------------
 	
-	// Forzatura lampeggiante secondo caricatore (disabilitato)
+	//---------------------------------KEY PAIRING---------------------------------
 	
-	//Lamp_01.Lamp1Bianco := 1;
+	//PAIRING OF AUTO HOMING ACK BUTTON
 	
-	// accensione lampeggiante ricarica mag 1 effettuata
+	Auto_Homing_Ack := glb_cmd.Auto_Homing_Ack;
 	
-	IF ( glb_cmd.Cartridge_loaded) THEN
-		Lamp_02.Lamp2Verde := 1;
-	END_IF;
+	//PAIRING OF RESET BUTTON
 	
+	XSM_Ctrl_0.Cmd.Reset := glb_io.Di.Reset;
 	
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_0.Enable := TRUE; END_IF
@@ -157,7 +155,7 @@ PROGRAM _CYCLIC
 
 	END_CASE;
 	
-	//MARCIA MOTORE IN MANUALE
+	//MARCIA MOTORE CARICATORE IN MANUALE
 	CASE MM_0.MM_status OF		
 		
 		0:	//Safety check
@@ -276,7 +274,7 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_0.Cmd.Move_Velocity := TRUE;
 			MM_0.MM_status := 61;
 		
-		60:	//Stepback reset back to start
+		60:	//Stepback reset & back to start
 			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor) THEN
 				XSM_Ctrl_0.Cmd.Stop := TRUE;
 				XSM_Ctrl_0.Cmd.Move_Velocity := FALSE;
@@ -285,7 +283,7 @@ PROGRAM _CYCLIC
 				MM_0.MM_status := 0;
 			END_IF;
 			
-		61:	//Stepforward reset back to start
+		61:	//Stepforward reset, back to start
 			IF (NOT XSM_Ctrl_0.Monitor.Input_1) THEN
 				XSM_Ctrl_0.Cmd.Stop := TRUE;
 				XSM_Ctrl_0.Cmd.Move_Velocity := FALSE;

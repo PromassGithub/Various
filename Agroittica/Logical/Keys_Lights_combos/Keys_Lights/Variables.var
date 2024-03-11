@@ -1,0 +1,22 @@
+VAR
+	TON_03_Ctrl : BOOL := FALSE;
+	ERROr : BOOL := FALSE;
+	Value : USINT := 0;
+	TON_01 : TON := (0);
+	TON_02 : TON := (0);
+	TON_03 : TON := (0);
+	TON_04 : TON := (0);
+	TON_05 : TON := (0);
+	TON_06 : TON := (0);
+	TON_03_Pulse : BOOL := FALSE;
+	ALLARMi : BOOL := FALSE;
+	Blink_Cmd : BOOL := FALSE;
+	Blink_Counter : USINT := 0;
+	RESET : BOOL := FALSE;
+	Auto_Homing_Control : BOOL := FALSE;
+	Auto_Homing_Control_2 : BOOL := FALSE;
+	Manual_Homing_Control : BOOL := FALSE;
+	Manual_Homing_Control_2 : BOOL := FALSE;
+	Cartridge_loaded_control : BOOL := FALSE;
+	Cartridge_loaded_control_2 : BOOL := FALSE;
+END_VAR

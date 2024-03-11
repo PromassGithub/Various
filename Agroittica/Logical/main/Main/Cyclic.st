@@ -364,9 +364,11 @@ PROGRAM _CYCLIC
 	CASE Vac_Status OF
 		
 		0:	//Start 
-			IF ((Status = AUTO) OR (Status = MANUAL) AND glb_err.pending_alarms = 0) THEN
+			IF ((Status = AUTO OR Status = MANUAL) AND glb_err.pending_alarms = 0) THEN
 				Vac_Status := 1;
 			END_IF;
+			
+			Vac_Status := 1;
 			
 		1:	//Vacuum ON
 			glb_io.Do.Vacuum_On_Off := 1;
@@ -381,11 +383,13 @@ PROGRAM _CYCLIC
 				Vac_Status := 0;
 			END_IF;
 			
+			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
+			
 		20:	//Vacuum to Gun 1
 			glb_io.Do.Vacuum_Direction := 1;
 			
 			IF (NOT Gun_Switch_0.Gun_1_Active) THEN
-				Vac_Status := 40;
+				Vac_Status := 10;
 			END_IF;
 			
 			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
@@ -394,7 +398,7 @@ PROGRAM _CYCLIC
 			glb_io.Do.Vacuum_Direction := 0;
 			
 			IF (NOT Gun_Switch_0.Gun_2_Active) THEN
-				Vac_Status := 40;
+				Vac_Status := 10;
 			END_IF;
 		
 			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
@@ -404,7 +408,7 @@ PROGRAM _CYCLIC
 			Vac_Status := 40;
 		
 		
-		40:	//Vacuum OFF & Reset & Back to Start
+		40:	//Reset & Back to Start
 			glb_io.Do.Vacuum_Direction := 0;
 			Vac_Status := 0;
 		

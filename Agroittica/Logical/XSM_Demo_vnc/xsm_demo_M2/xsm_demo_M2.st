@@ -85,13 +85,15 @@ PROGRAM _CYCLIC
 
 	glb_err.Drive2 := XSM_Ctrl_2.Error;
 	
-	//-----------------------------LAMPEGGIANTI----------------------------
+	//---------------------------------KEY PAIRING---------------------------------
 	
-	// accensione lampeggiante ricarica effettuata
+	//PAIRING OF AUTO HOMING ACK BUTTON
 	
-	IF ( glb_cmd_2.Cartridge_loaded) THEN
-		Lamp_01.Lamp1Verde := 1;
-	END_IF;
+	Auto_Homing_Ack_2 := glb_cmd_2.Auto_Homing_Ack;
+	
+	//PAIRING OF RESET BUTTON
+	
+	XSM_Ctrl_2.Cmd.Reset := glb_io.Di.Reset;
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF;
 	

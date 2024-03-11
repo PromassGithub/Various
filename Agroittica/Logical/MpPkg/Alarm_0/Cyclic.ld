@@ -37,6 +37,14 @@ PROGRAM _CYCLIC
 	</network>
 	<network label="" comment="" row="1" column="0" commented="0">
 		<row>
+			<contact type="open" name="glb_io.Di.Reset"/>
+			<line/>
+			<line/>
+			<coil type="open" name="MpAlarmXListUIConnect.AcknowledgeAll"/>
+		</row>
+	</network>
+	<network label="" comment="" row="1" column="0" commented="0">
+		<row>
 			<contact type="open" name="glb_hmi.Out.Reset"/>
 			<line/>
 			<line/>
@@ -178,7 +186,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<analog type="input" name="gAlarmXCore"/>
-			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="7"/></function>
+			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="56"/></function>
 			<analog type="output" name="AlarmXSetStatus"/>
 		</row>
 		<row>
@@ -195,7 +203,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<analog type="input" name="gAlarmXCore"/>
-			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="4"/></function>
+			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="56"/></function>
 			<analog type="output" name="AlarmXResetStatus"/>
 		</row>
 		<row>
@@ -212,7 +220,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<analog type="input" name="gAlarmXCore"/>
-			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="4"/></function>
+			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="56"/></function>
 			<analog type="output" name="AlarmXAckStatus"/>
 		</row>
 		<row>
@@ -445,6 +453,7 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
 
 
 

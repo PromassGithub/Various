@@ -19,6 +19,7 @@
     <Task Name="RPT_CSV_ST" Source="main.RPT_CSV_ST.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#4">
+    <Task Name="Keys_Light" Source="Keys_Lights_combos.Keys_Lights.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="ip_adr" Source="XSM_Demo_vnc.ip_adr.prg" Memory="UserROM" Description="Get ip address for VCN test." Language="IEC" Debugging="true" />
     <Task Name="Recipe" Source="MpPkg.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Alarm_0" Source="MpPkg.Alarm_0.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -85,6 +86,9 @@
     <BinaryObject Name="vcctrend" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vccbar" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="vcpfx20" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
@@ -100,9 +104,6 @@
     <BinaryObject Name="Role" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="User" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config_1" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAsvn01" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAsvn03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAsvn02" Source="" Memory="UserROM" Language="Binary" />

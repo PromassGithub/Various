@@ -8,6 +8,8 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Lights_Status : USINT := 0;
+	Key_Status : USINT := 0;
 	Vac_Status : USINT := 0;
 	First_Homing : BOOL := FALSE;
 	SIMU : typ_simu := (0);
@@ -86,6 +88,7 @@ VAR
 	R_TRIG_05 : R_TRIG := (0);
 	R_TRIG_06 : R_TRIG := (0);
 	R_TRIG_07 : R_TRIG := (0);
+	R_TRIG_08 : R_TRIG := (0);
 	Start_Safety : BOOL := FALSE;
 	Status : En_status;
 	Stepper_1_position : DINT := 0;
