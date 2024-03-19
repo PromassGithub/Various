@@ -368,7 +368,7 @@ PROGRAM _CYCLIC
 				Vac_Status := 1;
 			END_IF;
 			
-			Vac_Status := 1;
+		(*	Vac_Status := 1;*)
 			
 		1:	//Vacuum ON
 			glb_io.Do.Vacuum_On_Off := 1;
@@ -416,6 +416,8 @@ PROGRAM _CYCLIC
 				
 	
 	//--------------------MATH----------------------------------
+	
+	STP_01_Vel := 7000;
 	
 	//Calcolo tempo delay sollevamento pesce
 	IF (STP_01_Vel = 0) THEN STP_01_Vel:= 0.5; END_IF;
@@ -498,52 +500,6 @@ PROGRAM _CYCLIC
 		glb_io.Do.Piston_gun_2 := 0;
 	END_IF;
 	
-	//2023 - SICUREZZA PESCE INCASTRATO
-	
-	//	CASE St_Fish OF
-	//		
-	//		0:
-	//			IF (Status = AUTO OR Status = MANUAL) THEN
-	//				St_Fish := 10;
-	//			END_IF;
-	//			
-	//		10:
-	//			
-	//			R_TRIG_03 (CLK := glb_io.Di.Si_01);
-	//			Start_Safety := R_TRIG_03.Q;
-	//		
-	//			R_TRIG_04 (CLK := glb_io.Di.Si_03);
-	//			Stop_Safety := R_TRIG_04.Q;
-	//		
-	//			IF (Start_Safety) THEN
-	//				TON_05.IN := 1;
-	//				St_Fish := 20;
-	//			END_IF;
-	//			
-	//			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
-	//		
-	//		20:
-	//			IF (TON_05.Q) THEN
-	//				glb_err.Fish := 1;
-	//				glb_io.Do.MainAllarm:= 1;
-	//				R_TRIG_03.CLK := 0;
-	//			END_IF;
-	//			
-	//			IF (Stop_Safety) OR (Allarm_0.Ack) THEN
-	//				St_Fish := 30;
-	//				R_TRIG_04.CLK := 0;
-	//			END_IF;
-	//			
-	//			IF (Status <> AUTO AND Status <> MANUAL) THEN St_Fish := 30; END_IF;
-	//			
-	//		30:
-	//			TON_05.IN := 0;	
-	//			R_TRIG_03.CLK := 0;
-	//			R_TRIG_04.CLK := 0;
-	//			glb_io.Do.MainAllarm := 0;
-	//			St_Fish := 0;
-	//		
-	//	END_CASE;
 	
 	// temporizzatori
 	TON_01;
@@ -585,4 +541,5 @@ PROGRAM _CYCLIC
 	Gun_0x[4].Peso_ok := 1;
 	Gun_0x[5].Peso_ok := 1;
 	Gun_0x[6].Peso_ok := 1;
+	
 END_PROGRAM

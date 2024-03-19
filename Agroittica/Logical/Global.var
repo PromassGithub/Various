@@ -8,6 +8,9 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Manual : BOOL := FALSE;
+	Stop : BOOL := FALSE;
+	Auto : BOOL := FALSE;
 	Lights_Status : USINT := 0;
 	Key_Status : USINT := 0;
 	Vac_Status : USINT := 0;

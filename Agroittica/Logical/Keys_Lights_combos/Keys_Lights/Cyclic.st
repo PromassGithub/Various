@@ -142,18 +142,24 @@ PROGRAM _CYCLIC
 	END_CASE;
 	
 	
-//----------------------------LIGHT COMBINATIONS--------------------------
+//----------------------------LIGHT COMBINATIONS----------------------------------
 	CASE Lights_Status OF
 		
 		0://START
 			
-//			IF ( Status = AUTO AND Status = MANUAL) THEN
-//				Lights_Status := 10;
-//			END_IF;
+			IF ( Status = AUTO AND Status = MANUAL) THEN
+				glb_io.Do.Green_Light := 1;
+				glb_io.Do.Red_Light := 0;
+				Lights_Status := 10;
+			ELSIF Status = STOP THEN
+				glb_io.Do.Green_Light := 0;
+				glb_io.Do.Red_Light := 1;
 			
-			Lights_Status := 10;
+			END_IF;
+				
+			(*Lights_Status := 10;*)
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 60; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
 			
 		10://IDLE
 			
@@ -198,7 +204,7 @@ PROGRAM _CYCLIC
 			END_IF;
 	
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
 			
 		
 		20://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO COMPLETED RELOAD, BLINK 3 TIMES
@@ -236,7 +242,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 21;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		21://GENERAL RESET MAG_1 & BACK TO START
 			
@@ -284,7 +291,8 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 				
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		31://GENERAL RESET MAG_2 & BACK TO START
 			
@@ -318,7 +326,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 41;
 			END_IF;
 		
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		41:////RESET OF BLUE LED & RELOAD BEEPER, WHITE LED STILL BLINKING
 			
@@ -340,7 +349,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 42;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		42://RESET OF WHITE LED, GREEN "LOADED" LED ON & BACK TO START
 			
@@ -370,7 +380,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 51;
 			END_IF;
 		
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		51://RESET OF BLUE LED & RELOAD BEEPER, WHITE LED STILL BLINKING
 			
@@ -392,7 +403,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 52;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		52://RESET OF WHITE LED, GREEN "LOADED" LED ON & BACK TO START
 			
@@ -434,7 +446,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 61;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		61://GENERAL RESET MAG_1 & BACK TO START
 			Blink_Counter 				:= 0;
@@ -478,7 +491,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 71;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		71://GENERAL RESET MAG_2 & BACK TO START
 			Blink_Counter 				:= 0;
@@ -522,7 +536,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 81;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		81://GENERAL RESET MAG_1 & BACK TO START
 			Blink_Counter 				:= 0;
@@ -566,7 +581,8 @@ PROGRAM _CYCLIC
 				Lights_Status := 91;
 			END_IF;
 			
-			IF (*Status = ERR*) ERROr THEN Lights_Status := 100; END_IF;
+			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			
 			
 		91://GENERAL RESET MAG_2 & BACK TO START
 			Blink_Counter 				:= 0;
