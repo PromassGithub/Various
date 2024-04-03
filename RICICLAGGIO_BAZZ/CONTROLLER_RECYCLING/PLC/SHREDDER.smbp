@@ -818,6 +818,156 @@
           <RungEntity>
             <LadderElements>
               <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM4.Q</Descriptor>
+                <Comment />
+                <Symbol>QM1_ALM_ON.Q</Symbol>
+                <Row>1</Row>
+                <Column>1</Column>
+                <ChosenConnection>Up, Down, Left</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM2.Q</Descriptor>
+                <Comment />
+                <Symbol>M1_ALM_ON.Q</Symbol>
+                <Row>2</Row>
+                <Column>1</Column>
+                <ChosenConnection>Up, Left</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM7.Q</Descriptor>
+                <Comment />
+                <Symbol>MULINO_ALM_ON.Q</Symbol>
+                <Row>0</Row>
+                <Column>1</Column>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>0</Row>
+                <Column>0</Column>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>VerticalLine</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>2</Row>
+                <Column>0</Column>
+                <ChosenConnection>Up, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>VerticalLine</ElementType>
+                <Comment />
+                <Symbol />
+                <Row>1</Row>
+                <Column>0</Column>
+                <ChosenConnection>Up, Down, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Operation</ElementType>
+                <Comment />
+                <Symbol />
+                <OperationExpression>%MW0 := 10</OperationExpression>
+                <Row>0</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left</ChosenConnection>
+              </LadderEntity>
+            </LadderElements>
+            <InstructionLines>
+              <InstructionLineEntity>
+                <InstructionLine>LD  1</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND(  %TM7.Q</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>OR  %TM4.Q</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>OR  %TM2.Q</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>)</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>[ %MW0 := 10 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+            </InstructionLines>
+            <Name />
+            <MainComment />
+            <Label />
+            <IsLadderSelected>true</IsLadderSelected>
+          </RungEntity>
+          <RungEntity>
+            <LadderElements>
+              <LadderEntity>
                 <ElementType>Short</ElementType>
                 <Row>0</Row>
                 <Column>0</Column>
@@ -1318,29 +1468,17 @@
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>1</Row>
-                <Column>1</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>1</Row>
-                <Column>2</Column>
-                <ChosenConnection>Up, Left</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
                 <ElementType>Comparison</ElementType>
                 <ComparisonExpression>%MW0 = 20</ComparisonExpression>
                 <Row>0</Row>
                 <Column>1</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
+                <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Row>0</Row>
                 <Column>3</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>NegatedContact</ElementType>
@@ -1350,6 +1488,19 @@
                 <Row>0</Row>
                 <Column>0</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Comparison</ElementType>
+                <ComparisonExpression>%MW0 = 10</ComparisonExpression>
+                <Row>1</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>3</Column>
+                <ChosenConnection>Up, Left</ChosenConnection>
               </LadderEntity>
             </LadderElements>
             <InstructionLines>
@@ -1362,7 +1513,15 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>OR  %MW8:X1</InstructionLine>
+                <InstructionLine>OR(  %MW8:X1</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND [ %MW0 = 10 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>)</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1454,15 +1613,10 @@
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
-                <ElementType>Line</ElementType>
+                <ElementType>Comparison</ElementType>
+                <ComparisonExpression>%MW0 = 10</ComparisonExpression>
                 <Row>1</Row>
                 <Column>1</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>1</Row>
-                <Column>2</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
@@ -1482,7 +1636,15 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>OR  %MW8:X0</InstructionLine>
+                <InstructionLine>OR(  %MW8:X0</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND [ %MW0 = 10 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>)</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1568,7 +1730,7 @@
                 <Symbol />
                 <Row>0</Row>
                 <Column>2</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Line</ElementType>
@@ -1585,7 +1747,7 @@
                 <Symbol>HMI_CMD:X4</Symbol>
                 <Row>0</Row>
                 <Column>0</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
+                <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>NormalContact</ElementType>
@@ -1594,6 +1756,13 @@
                 <Symbol>HMI_CMD:X2</Symbol>
                 <Row>1</Row>
                 <Column>0</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Comparison</ElementType>
+                <ComparisonExpression>%MW0 = 10</ComparisonExpression>
+                <Row>1</Row>
+                <Column>1</Column>
                 <ChosenConnection>Up, Left</ChosenConnection>
               </LadderEntity>
             </LadderElements>
@@ -1603,7 +1772,15 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>OR  %MW8:X2</InstructionLine>
+                <InstructionLine>OR(  %MW8:X2</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND [ %MW0 = 10 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>)</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1673,7 +1850,7 @@
                 <ElementType>Line</ElementType>
                 <Row>0</Row>
                 <Column>2</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Line</ElementType>
@@ -1688,7 +1865,7 @@
                 <Symbol>HMI_CMD:X5</Symbol>
                 <Row>0</Row>
                 <Column>0</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
+                <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>NormalContact</ElementType>
@@ -1697,6 +1874,13 @@
                 <Symbol>HMI_CMD:X3</Symbol>
                 <Row>1</Row>
                 <Column>0</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Comparison</ElementType>
+                <ComparisonExpression>%MW0 = 10</ComparisonExpression>
+                <Row>1</Row>
+                <Column>1</Column>
                 <ChosenConnection>Up, Left</ChosenConnection>
               </LadderEntity>
             </LadderElements>
@@ -1706,7 +1890,15 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>OR  %MW8:X3</InstructionLine>
+                <InstructionLine>OR(  %MW8:X3</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND [ %MW0 = 10 ]</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>)</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1725,19 +1917,7 @@
                 <ElementType>Short</ElementType>
                 <Row>0</Row>
                 <Column>0</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>8</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>7</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Line</ElementType>
@@ -1770,6 +1950,159 @@
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM2.Q</Descriptor>
+                <Comment />
+                <Symbol>M1_ALM_ON.Q</Symbol>
+                <Row>0</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM4.Q</Descriptor>
+                <Comment />
+                <Symbol>QM1_ALM_ON.Q</Symbol>
+                <Row>1</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM7.Q</Descriptor>
+                <Comment />
+                <Symbol>MULINO_ALM_ON.Q</Symbol>
+                <Row>2</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>VerticalLine</ElementType>
+                <Row>1</Row>
+                <Column>0</Column>
+                <ChosenConnection>Up, Down, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>VerticalLine</ElementType>
+                <Row>2</Row>
+                <Column>0</Column>
+                <ChosenConnection>Up, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>1</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Coil</ElementType>
+                <Descriptor>%MW4:X2</Descriptor>
+                <Comment />
+                <Symbol>ALARMS:X2</Symbol>
+                <Row>2</Row>
+                <Column>10</Column>
+                <ChosenConnection>Left</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>2</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Coil</ElementType>
+                <Descriptor>%MW4:X1</Descriptor>
+                <Comment />
+                <Symbol>ALARMS:X1</Symbol>
+                <Row>1</Row>
+                <Column>10</Column>
+                <ChosenConnection>Left</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Row>0</Row>
                 <Column>9</Column>
@@ -1777,7 +2110,7 @@
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Coil</ElementType>
-                <Descriptor>%MW5:X0</Descriptor>
+                <Descriptor>%MW4:X0</Descriptor>
                 <Comment />
                 <Symbol>ALARMS:X0</Symbol>
                 <Row>0</Row>
@@ -1785,12 +2118,15 @@
                 <ChosenConnection>Left</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
-                <ElementType>NormalContact</ElementType>
-                <Descriptor>%TM3.Q</Descriptor>
-                <Comment />
-                <Symbol>M1_ALM_OFF.Q</Symbol>
+                <ElementType>Line</ElementType>
                 <Row>0</Row>
-                <Column>1</Column>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Row>0</Row>
+                <Column>8</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
             </LadderElements>
@@ -1800,11 +2136,39 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND  %TM3.Q</InstructionLine>
+                <InstructionLine>MPS</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW5:X0</InstructionLine>
+                <InstructionLine>AND  %TM2.Q</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>ST  %MW4:X0</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>MRD</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND  %TM4.Q</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>ST  %MW4:X1</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>MPP</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>AND  %TM7.Q</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>ST  %MW4:X2</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2403,7 +2767,7 @@
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Operation</ElementType>
-                <OperationExpression>%TM0.P := %MW20</OperationExpression>
+                <OperationExpression>%TM0.P := %MW18</OperationExpression>
                 <Row>2</Row>
                 <Column>9</Column>
                 <ChosenConnection>Left</ChosenConnection>
@@ -2443,7 +2807,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>[ %TM0.P := %MW20 ]</InstructionLine>
+                <InstructionLine>[ %TM0.P := %MW18 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2616,7 +2980,7 @@
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Operation</ElementType>
-                <OperationExpression>%TM6.P := %MW19 * 60</OperationExpression>
+                <OperationExpression>%TM6.P := %MW19</OperationExpression>
                 <Row>2</Row>
                 <Column>9</Column>
                 <ChosenConnection>Left</ChosenConnection>
@@ -2662,7 +3026,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>[ %TM6.P := %MW19 * 60 ]</InstructionLine>
+                <InstructionLine>[ %TM6.P := %MW19 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -3592,134 +3956,6 @@
             <Label />
             <IsLadderSelected>true</IsLadderSelected>
           </RungEntity>
-          <RungEntity>
-            <LadderElements>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>2</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>3</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>4</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>5</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>6</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>7</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>8</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NormalContact</ElementType>
-                <Descriptor>%TM4.Q</Descriptor>
-                <Comment />
-                <Symbol>QM1_ALM_ON.Q</Symbol>
-                <Row>1</Row>
-                <Column>1</Column>
-                <ChosenConnection>Up, Down, Left</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NormalContact</ElementType>
-                <Descriptor>%TM2.Q</Descriptor>
-                <Comment />
-                <Symbol>M1_ALM_ON.Q</Symbol>
-                <Row>2</Row>
-                <Column>1</Column>
-                <ChosenConnection>Up, Left</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NormalContact</ElementType>
-                <Descriptor>%TM7.Q</Descriptor>
-                <Comment />
-                <Symbol>MULINO_ALM_ON.Q</Symbol>
-                <Row>0</Row>
-                <Column>1</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Line</ElementType>
-                <Row>0</Row>
-                <Column>0</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>VerticalLine</ElementType>
-                <Row>2</Row>
-                <Column>0</Column>
-                <ChosenConnection>Up, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>VerticalLine</ElementType>
-                <Row>1</Row>
-                <Column>0</Column>
-                <ChosenConnection>Up, Down, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>Operation</ElementType>
-                <OperationExpression>%MW0 := 10</OperationExpression>
-                <Row>0</Row>
-                <Column>9</Column>
-                <ChosenConnection>Left</ChosenConnection>
-              </LadderEntity>
-            </LadderElements>
-            <InstructionLines>
-              <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
-                <Comment />
-              </InstructionLineEntity>
-              <InstructionLineEntity>
-                <InstructionLine>AND(  %TM7.Q</InstructionLine>
-                <Comment />
-              </InstructionLineEntity>
-              <InstructionLineEntity>
-                <InstructionLine>OR  %TM4.Q</InstructionLine>
-                <Comment />
-              </InstructionLineEntity>
-              <InstructionLineEntity>
-                <InstructionLine>OR  %TM2.Q</InstructionLine>
-                <Comment />
-              </InstructionLineEntity>
-              <InstructionLineEntity>
-                <InstructionLine>)</InstructionLine>
-                <Comment />
-              </InstructionLineEntity>
-              <InstructionLineEntity>
-                <InstructionLine>[ %MW0 := 10 ]</InstructionLine>
-                <Comment />
-              </InstructionLineEntity>
-            </InstructionLines>
-            <Name />
-            <MainComment />
-            <Label />
-            <IsLadderSelected>true</IsLadderSelected>
-          </RungEntity>
         </Rungs>
       </ProgramOrganizationUnits>
       <ProgramOrganizationUnits>
@@ -3775,15 +4011,6 @@
                 <Row>0</Row>
                 <Column>2</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NormalContact</ElementType>
-                <Descriptor>%TM5.Q</Descriptor>
-                <Comment />
-                <Symbol>QM1_ALM_OFF.Q</Symbol>
-                <Row>0</Row>
-                <Column>1</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
                 <ElementType>NormalContact</ElementType>
@@ -3847,15 +4074,6 @@
                 <ChosenConnection>Up, Down, Left</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
-                <ElementType>NormalContact</ElementType>
-                <Descriptor>%TM8.Q</Descriptor>
-                <Comment />
-                <Symbol>MULINO_ALM_OFF.Q</Symbol>
-                <Row>5</Row>
-                <Column>1</Column>
-                <ChosenConnection>Up, Left</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
                 <ElementType>VerticalLine</ElementType>
                 <Row>4</Row>
                 <Column>0</Column>
@@ -3867,6 +4085,24 @@
                 <Column>0</Column>
                 <ChosenConnection>Up, Right</ChosenConnection>
               </LadderEntity>
+              <LadderEntity>
+                <ElementType>NegatedContact</ElementType>
+                <Descriptor>%TM5.Q</Descriptor>
+                <Comment />
+                <Symbol>QM1_ALM_OFF.Q</Symbol>
+                <Row>0</Row>
+                <Column>1</Column>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NegatedContact</ElementType>
+                <Descriptor>%TM8.Q</Descriptor>
+                <Comment />
+                <Symbol>MULINO_ALM_OFF.Q</Symbol>
+                <Row>5</Row>
+                <Column>1</Column>
+                <ChosenConnection>Up, Left</ChosenConnection>
+              </LadderEntity>
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
@@ -3874,7 +4110,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND(  %TM5.Q</InstructionLine>
+                <InstructionLine>AND(N  %TM5.Q</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -3894,7 +4130,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>OR  %TM8.Q</InstructionLine>
+                <InstructionLine>ORN  %TM8.Q</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -3913,42 +4149,6 @@
           </RungEntity>
           <RungEntity>
             <LadderElements>
-              <LadderEntity>
-                <ElementType>NegatedContact</ElementType>
-                <Descriptor>%TM5.Q</Descriptor>
-                <Comment />
-                <Symbol>QM1_ALM_OFF.Q</Symbol>
-                <Row>0</Row>
-                <Column>2</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NegatedContact</ElementType>
-                <Descriptor>%TM4.Q</Descriptor>
-                <Comment />
-                <Symbol>QM1_ALM_ON.Q</Symbol>
-                <Row>0</Row>
-                <Column>3</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NegatedContact</ElementType>
-                <Descriptor>%TM3.Q</Descriptor>
-                <Comment />
-                <Symbol>M1_ALM_OFF.Q</Symbol>
-                <Row>0</Row>
-                <Column>4</Column>
-                <ChosenConnection>Left, Right</ChosenConnection>
-              </LadderEntity>
-              <LadderEntity>
-                <ElementType>NegatedContact</ElementType>
-                <Descriptor>%TM2.Q</Descriptor>
-                <Comment />
-                <Symbol>M1_ALM_ON.Q</Symbol>
-                <Row>0</Row>
-                <Column>5</Column>
-                <ChosenConnection>Down, Left, Right</ChosenConnection>
-              </LadderEntity>
               <LadderEntity>
                 <ElementType>Comparison</ElementType>
                 <ComparisonExpression>%MW0 &gt; 10</ComparisonExpression>
@@ -4006,6 +4206,42 @@
               </LadderEntity>
               <LadderEntity>
                 <ElementType>NegatedContact</ElementType>
+                <Descriptor>%TM4.Q</Descriptor>
+                <Comment />
+                <Symbol>QM1_ALM_ON.Q</Symbol>
+                <Row>0</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NegatedContact</ElementType>
+                <Descriptor>%TM3.Q</Descriptor>
+                <Comment />
+                <Symbol>M1_ALM_OFF.Q</Symbol>
+                <Row>0</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NegatedContact</ElementType>
+                <Descriptor>%TM2.Q</Descriptor>
+                <Comment />
+                <Symbol>M1_ALM_ON.Q</Symbol>
+                <Row>0</Row>
+                <Column>5</Column>
+                <ChosenConnection>Down, Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
+                <Descriptor>%TM5.Q</Descriptor>
+                <Comment />
+                <Symbol>QM1_ALM_OFF.Q</Symbol>
+                <Row>0</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>NormalContact</ElementType>
                 <Descriptor>%TM8.Q</Descriptor>
                 <Comment />
                 <Symbol>MULINO_ALM_OFF.Q</Symbol>
@@ -4020,11 +4256,11 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ANDN  %TM8.Q</InstructionLine>
+                <InstructionLine>AND  %TM8.Q</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ANDN  %TM5.Q</InstructionLine>
+                <InstructionLine>AND  %TM5.Q</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -4106,6 +4342,21 @@
         <Address>%M1</Address>
         <Index>1</Index>
         <Symbol>KM_M1_ON</Symbol>
+      </MemoryBit>
+      <MemoryBit>
+        <Address>%M2</Address>
+        <Index>2</Index>
+        <Symbol>ALARM_KM1</Symbol>
+      </MemoryBit>
+      <MemoryBit>
+        <Address>%M3</Address>
+        <Index>3</Index>
+        <Symbol>ALARM_QM1</Symbol>
+      </MemoryBit>
+      <MemoryBit>
+        <Address>%M4</Address>
+        <Index>4</Index>
+        <Symbol>ALARM_EXTERNAL</Symbol>
       </MemoryBit>
     </MemoryBits>
     <SystemBits>
@@ -5406,11 +5657,6 @@
       <MemoryWord>
         <Address>%MW4</Address>
         <Index>4</Index>
-        <Symbol>NB_IN</Symbol>
-      </MemoryWord>
-      <MemoryWord>
-        <Address>%MW5</Address>
-        <Index>5</Index>
         <Symbol>ALARMS</Symbol>
       </MemoryWord>
       <MemoryWord>
@@ -5509,7 +5755,6 @@
         <Index>6</Index>
         <Symbol>TON_M1_OFF</Symbol>
         <Preset>3</Preset>
-        <Base>OneSecond</Base>
         <IsDynamicPreset>true</IsDynamicPreset>
       </TimerTM>
       <TimerTM>
@@ -5523,6 +5768,8 @@
         <Address>%TM8</Address>
         <Index>8</Index>
         <Symbol>MULINO_ALM_OFF</Symbol>
+        <Preset>3</Preset>
+        <Base>OneSecond</Base>
       </TimerTM>
     </Timers>
     <Counters />
@@ -5560,8 +5807,6 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
-    <InstListBufferSize>19762</InstListBufferSize>
-    <ProgramBufferSize>158367</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
