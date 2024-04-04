@@ -513,7 +513,7 @@
           <Property Name="Width" Value="153"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_9">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Lamp_alarm_block]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Beacon_Alarm_Lock_1]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -542,7 +542,7 @@
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
-          <Property Name="TextIndex" Value="13"/>
+          <Property Name="TextIndex" Value="31"/>
           <Property Name="TextIndexDatapoint" Value="None"/>
           <Property Name="TextSimulationValue" Value="0"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
@@ -551,7 +551,7 @@
           <Property Name="Width" Value="153"/>
         </Control>
         <Control ClassId="0x00001001" Name="Shape_10">
-          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Soll_Valve_HMI]"/>
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Beacon_Alarm_Lock_2]"/>
           <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
           <Property Name="ColorMapIndexOffset" Value="0"/>
           <Property Name="ControlID" Value="0"/>
@@ -621,7 +621,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Lamp_alarm_block]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Beacon_Alarm_Lock_1]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -637,38 +637,12 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Soll_Valve_HMI]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Beacon_Alarm_Lock_2]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
       </KeyMapping>
     </Layer>
-    <LayerRef Source="Source[local].Layer[Empty_Mag_Pop_Up]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Empty_Mag_Pop_Up"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="2"/>
-    </LayerRef>
-    <LayerRef Source="Source[local].Layer[Empty_Mag_2_Pop_Up]">
-      <Property Name="Description" Value=""/>
-      <Property Name="EditingMode" Value="Frozen"/>
-      <Property Name="Left" Value="0"/>
-      <Property Name="Name" Value="Empty_Mag_2_Pop_Up"/>
-      <Property Name="OutlineColor" Value="0"/>
-      <Property Name="OutlineDisplayControl" Value="False"/>
-      <Property Name="OutlineDisplayName" Value="True"/>
-      <Property Name="OutlineHatched" Value="False"/>
-      <Property Name="Top" Value="0"/>
-      <Property Name="VisibilityMode" Value="Hidden"/>
-      <Property Name="Z-Order" Value="3"/>
-    </LayerRef>
     <LayerRef Source="Source[local].Layer[MpPageControl]">
       <Property Name="Description" Value=""/>
       <Property Name="EditingMode" Value="Frozen"/>
@@ -680,7 +654,7 @@
       <Property Name="OutlineHatched" Value="False"/>
       <Property Name="Top" Value="0"/>
       <Property Name="VisibilityMode" Value="Normal"/>
-      <Property Name="Z-Order" Value="4"/>
+      <Property Name="Z-Order" Value="2"/>
     </LayerRef>
   </Layers>
   <MovementOrder>

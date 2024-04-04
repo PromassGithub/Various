@@ -45,7 +45,7 @@ PROGRAM _CYCLIC
 	</network>
 	<network label="" comment="" row="1" column="0" commented="0">
 		<row>
-			<contact type="open" name="glb_hmi.Out.Reset"/>
+			<contact type="open" name="glb_io.Di.Reset"/>
 			<line/>
 			<line/>
 			<coil type="open" name="AckUserStatus"/>
@@ -178,7 +178,7 @@ PROGRAM _CYCLIC
 			<empty/>
 		</row>
 	</network>
-	<network label="" comment="" row="3" column="0" commented="1">
+	<network label="" comment="" row="3" column="0" commented="0">
 		<row>
 			<contact type="positive transition" name="glb_err.Drive2"/>
 			<function position="top" type="MpAlarmXSet"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
@@ -186,7 +186,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<analog type="input" name="gAlarmXCore"/>
-			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="56"/></function>
+			<function position="middle" type="MpAlarmXSet"><input name="MpLink"/><output name="7"/></function>
 			<analog type="output" name="AlarmXSetStatus"/>
 		</row>
 		<row>
@@ -195,7 +195,7 @@ PROGRAM _CYCLIC
 			<empty/>
 		</row>
 	</network>
-	<network label="" comment="" row="3" column="0" commented="1">
+	<network label="" comment="" row="3" column="0" commented="0">
 		<row>
 			<contact type="negative transition" name="glb_err.Drive2"/>
 			<function position="top" type="MpAlarmXReset"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
@@ -203,7 +203,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<analog type="input" name="gAlarmXCore"/>
-			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="56"/></function>
+			<function position="middle" type="MpAlarmXReset"><input name="MpLink"/><output name="4"/></function>
 			<analog type="output" name="AlarmXResetStatus"/>
 		</row>
 		<row>
@@ -212,7 +212,7 @@ PROGRAM _CYCLIC
 			<empty/>
 		</row>
 	</network>
-	<network label="" comment="" row="3" column="0" commented="1">
+	<network label="" comment="" row="3" column="0" commented="0">
 		<row>
 			<contact type="positive transition" name="AckUserStatus"/>
 			<function position="top" type="MpAlarmXAcknowledge"><input name="EN" ENO="true"/><output name="ENO" ENO="true"/></function>
@@ -220,7 +220,7 @@ PROGRAM _CYCLIC
 		</row>
 		<row>
 			<analog type="input" name="gAlarmXCore"/>
-			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="56"/></function>
+			<function position="middle" type="MpAlarmXAcknowledge"><input name="MpLink"/><output name="4"/></function>
 			<analog type="output" name="AlarmXAckStatus"/>
 		</row>
 		<row>
@@ -453,6 +453,8 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
+
 
 
 

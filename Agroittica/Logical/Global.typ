@@ -9,6 +9,14 @@
  ********************************************************************)
 
 TYPE
+	typ_Lights : 	STRUCT 
+		Magazine_2 : USINT;
+		Magazine_1 : USINT;
+		Bottom : USINT;
+		Beeper_Alarm : BOOL;
+		White : BOOL;
+		Green : BOOL;
+	END_STRUCT;
 	typ_simu : 	STRUCT 
 		enable : BOOL;
 	END_STRUCT;
@@ -160,10 +168,16 @@ TYPE
 		Torna_a_casa : BOOL;
 		sparo : BOOL;
 		CMD_Sparo : BOOL;
+		Cartridge_loaded_Gun : BOOL;
 		Cartridge_loaded : BOOL;
 		Reload_complete_2 : BOOL;
 		Reload_complete_1 : BOOL;
 		Auto_Homing_Ack : BOOL;
+		Movement_Lock_Homing : BOOL;
+		Movement_Lock : BOOL;
+		Start_Reload : BOOL;
+		Beeper_Lock : BOOL;
+		Homing_Lock : BOOL;
 	END_STRUCT;
 	typ_err : 	STRUCT 
 		Drive2 : BOOL;
@@ -192,7 +206,8 @@ TYPE
 		Lock_Gun_1 : BOOL;
 		Sx_Dx_Valve_HMI : BOOL;
 		Zero_act_pos : BOOL;
-		Lamp_alarm_block : BOOL;
+		Beacon_Alarm_Lock_1 : BOOL;
+		Beacon_Alarm_Lock_2 : BOOL;
 	END_STRUCT;
 	typ_hmi : 	STRUCT 
 		Inp : typ_hmi_inp;

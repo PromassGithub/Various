@@ -1,13 +1,66 @@
 
 PROGRAM _CYCLIC
 	
-	//------------------------------KEYS PAIRING-------------------------------
+	//------------------------------MOVEMENT KEYs PAIRING-------------------------------
 	
-	MM_0.MM_Avanti 		:= glb_io.Di.Forward_Mag_1;
-	MM_0.MM_Indietro 	:= glb_io.Di.Backward_Mag_1;
+	//PAIRING OF HMI MOVEMENT VARIABLE WITH BUTTON MOVEMENT VARIABLE
+	IF (NOT glb_io.Di.Start) AND (NOT glb_io.Di.Reset) AND (NOT glb_io.Di.Backward_Mag_1) AND (NOT glb_cmd.Movement_Lock) AND (NOT glb_cmd.Movement_Lock_Homing) THEN
+		MM_0.MM_Avanti := glb_io.Di.Forward_Mag_1;
+	END_IF;
 	
-	MM_2.MM_Avanti 		:= glb_io.Di.Forward_Mag_2;
-	MM_2.MM_Indietro 	:= glb_io.Di.Backward_Mag_2;
+	//PAIRING OF HMI MOVEMENT VARIABLE WITH BUTTON MOVEMENT VARIABLE
+	IF (NOT glb_io.Di.Start) AND (NOT glb_io.Di.Reset) AND (NOT glb_io.Di.Forward_Mag_1) AND (NOT glb_cmd.Movement_Lock) AND (NOT glb_cmd.Movement_Lock_Homing) THEN
+		MM_0.MM_Indietro := glb_io.Di.Backward_Mag_1;
+	END_IF;
+	
+	//PAIRING OF HMI MOVEMENT VARIABLE WITH BUTTON MOVEMENT VARIABLE
+	IF (NOT glb_io.Di.Start) AND (NOT glb_io.Di.Reset) AND (NOT glb_io.Di.Backward_Mag_2) AND (NOT glb_cmd_2.Movement_Lock) AND (NOT glb_cmd_2.Movement_Lock_Homing) THEN
+		MM_2.MM_Avanti := glb_io.Di.Forward_Mag_2;
+	END_IF;
+	
+	//PAIRING OF HMI MOVEMENT VARIABLE WITH BUTTON MOVEMENT VARIABLE
+	IF (NOT glb_io.Di.Start) AND (NOT glb_io.Di.Reset) AND (NOT glb_io.Di.Forward_Mag_2) AND (NOT glb_cmd_2.Movement_Lock) AND (NOT glb_cmd_2.Movement_Lock_Homing) THEN
+		MM_2.MM_Indietro := glb_io.Di.Backward_Mag_2;
+	END_IF;
+	
+	//PAIRING OF HMI VARIABLE WITH BEACON ALARM VARIABLE
+	glb_hmi.Inp.Beacon_Alarm_Lock_1 := glb_cmd.Beeper_Lock;
+	
+	glb_hmi.Inp.Beacon_Alarm_Lock_2 := glb_cmd_2.Beeper_Lock;
+	
+	//--------------------------------MOVEMENT LOCKING-------------------------------
+	
+	//LOCKING MANUAL MOVEMENT WHEN AXIS ARE HOMED, UNLOCKING WHEN THE AXIS MOVEMENT WHEN THEY ARE RELOADING
+	
+	//FIRST AXIS
+	IF First_Homing AND glb_cmd.Cartridge_loaded_Gun  THEN
+		glb_cmd.Movement_Lock := 1;
+	ELSE
+		glb_cmd.Movement_Lock := 0;
+	END_IF;
+	
+	//SECOND AXIS
+	IF Second_Homing AND glb_cmd_2.Cartridge_loaded_Gun THEN
+		glb_cmd_2.Movement_Lock := 1;
+	ELSE
+		glb_cmd_2.Movement_Lock := 0;
+	END_IF;
+	
+	//LOCKING AXIS MANUAL MOVEMENTS WHILE AXIS ARE HOMING
+	
+	//FIRST AXIS
+	IF glb_cmd.Homing_Lock THEN
+		glb_cmd.Movement_Lock_Homing := 1;
+	ELSE
+		glb_cmd.Movement_Lock_Homing := 0;
+	END_IF;
+	
+	//SECOND AXIS
+	IF glb_cmd_2.Homing_Lock THEN
+		glb_cmd_2.Movement_Lock_Homing := 1;
+	ELSE
+		glb_cmd_2.Movement_Lock_Homing := 0;
+	END_IF;
 	
 	//---------------------------------TIMERS----------------------------------
 	
@@ -22,603 +75,812 @@ PROGRAM _CYCLIC
 	TON_02.PT := T#2s;
 	TON_05.PT := T#2s;
 	TON_06.PT := T#2s;
-	
-	
+
 	//------------------------------KEY COMBINATIONS----------------------------
 	
+	//SEQUENCE TO CONFIRM BEGINNING OF RELOADING PROCEDURE, AFTER THIS THE AXIS WILL GO BACK TO HOME POSITION FOR RELOADING, AXIS 1
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Reset AND lights_status.Magazine_1 = 21 THEN
+		glb_cmd.Start_Reload := 1;
+	END_IF;
 	
-	CASE Key_Status OF
-		
-		0://START
-			IF (Status  = AUTO) THEN
-				Key_Status := 10;
-			END_IF;
-			
-			IF (Status = MANUAL) THEN
-				Key_Status := 11;
-			END_IF;
-			
-			
-		10:	//IDLE IF STATUS AUTO
-			
-			//Magazine 1 command loaded
-			IF (glb_io.Di.Forward_Mag_1 AND glb_io.Di.Backward_Mag_1) THEN
-				TON_01.IN := 1;
-				IF TON_01.Q THEN
-					Key_Status := 20;
-				END_IF;
-			END_IF;
-			
-			//Magazine 2 command loaded
-			IF (glb_io.Di.Forward_Mag_2 AND glb_io.Di.Backward_Mag_2) THEN
-				TON_02.IN := 1;
-				IF TON_02.Q THEN
-					Key_Status := 30;
-				END_IF;
-			END_IF;
-			
-			//Auto homing mag_1 command start
-			IF (glb_io.Di.Start AND glb_io.Di.Backward_Mag_1) THEN
-				glb_cmd.Auto_Homing_Ack 	:= 0;
-				TON_05.IN 					:= 1;
-				IF TON_05.Q THEN
-					Key_Status := 60;
-				END_IF;
-			END_IF;
-			
-			//Auto homing mag_2 command start
-			IF (glb_io.Di.Start AND glb_io.Di.Backward_Mag_1) THEN
-				glb_cmd_2.Auto_Homing_Ack 	:= 0;
-				TON_06.IN 					:= 1;
-				IF TON_06.Q THEN
-					Key_Status := 61;
-				END_IF;
-			END_IF;
-			
-			
-			IF (Status <> AUTO) THEN Key_Status := 100; END_IF;
-			
-		11://IDLE IF STATUS MANUAL
-			
-			//Manual homing Mag_1 start
-			IF (glb_io.Di.Start AND glb_io.Di.Backward_Mag_1) THEN
-				TON_01.IN := 1;
-				IF TON_01.Q THEN
-					Key_Status := 40;
-				END_IF;
-			END_IF;
-			
-			//Manua homing Mag_2 start
-			IF (glb_io.Di.Start AND glb_io.Di.Backward_Mag_2) THEN
-				TON_02.IN := 1;
-				IF TON_02.Q THEN
-					Key_Status := 50;
-				END_IF;
-			END_IF;
-			
-			IF (Status <> MANUAL) THEN Key_Status := 100; END_IF;
+	//SEQUENCE TO CONFIRM BEGINNING OF RELOADING PROCEDURE, AFTER THIS THE AXIS WILL GO BACK TO HOME POSITION FOR RELOADING, AXIS 2
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Reset AND lights_status.Magazine_2 = 21  THEN
+		glb_cmd_2.Start_Reload := 1;
+	END_IF;
 	
-		20:// MAG_1 LOADED
-			
-			glb_cmd.Cartridge_loaded 	:= 1;
-			Cartridge_loaded_control 	:= 1;
-			TON_01.IN 					:= 0;
-			Key_Status 					:= 0;
-		
-		30:// MAG_2 LOADED
-			
-			glb_cmd_2.Cartridge_loaded 	:= 1;
-			Cartridge_loaded_control_2 	:= 1;
-			TON_02.IN 					:= 0;
-			Key_Status 					:= 0;
-		
-		40:// MANUAL HOMING MAG_1
-			
-			glb_cmd.btn_homing 			:= 1;
-			Manual_Homing_Control 		:= 1;
-			TON_01.IN 					:= 0;
-			Key_Status 					:= 0;
-		
-		50:// MANUAL HOMING MAG_2
-			
-			glb_cmd_2.btn_homing 		:= 1;
-			Manual_Homing_Control_2		:= 1;
-			TON_02.IN 					:= 0;
-			Key_Status 					:= 0;
-		
-		60:// AUTO HOMING MAG_1
-			
-			glb_cmd.Auto_Homing_Ack 	:= 1;
-			Auto_Homing_Control			:= 1;
-			TON_05.IN 					:= 0;
-			Key_Status 					:= 0;
-		
-		61://AUTO HOMING MAG_2
-			glb_cmd_2.Auto_Homing_Ack	:= 1;
-			Auto_Homing_Control_2		:= 1;
-			TON_06.IN					:= 0;
-			Key_Status					:= 0;
-		
-	END_CASE;
+	//SEQUENCE TO CONFIRM THAT THE MAGAZINE IS LOADED AND THE RELOADING PROCEDURE IS COMPLETE, THE PISTOL IS READY TO SHOOT.
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Forward_Mag_1 AND glb_io.Di.Backward_Mag_1 THEN
+		glb_cmd.Cartridge_loaded := 1;
+	END_IF;
+	
+	//SEQUENCE TO CONFIRM THAT THE MAGAZINE IS LOADED AND THE RELOADING PROCEDURE IS COMPLETE, THE PISTOL IS READY TO SHOOT.
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Forward_Mag_2 AND glb_io.Di.Backward_Mag_2 THEN
+		glb_cmd_2.Cartridge_loaded := 1;
+	END_IF;
+	
+	//SEQUENCE TO SET THE MAGAZINE BACK TO UNLOADED, AXIS 1
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Reset AND glb_io.Di.Backward_Mag_1 AND glb_cmd.Cartridge_loaded_Gun THEN
+		glb_cmd.Cartridge_loaded_Gun 	:= 0;
+		Cartridge_Unloaded_control		:= 1;
+	END_IF;
+	
+	//SEQUENCE TO SET THE MAGAZINE BACK TO UNLOADED, AXIS 2
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Reset AND glb_io.Di.Backward_Mag_2 AND glb_cmd_2.Cartridge_loaded_Gun THEN
+		glb_cmd_2.Cartridge_loaded_Gun 	:= 0;
+		Cartridge_Unloaded_control_2	:= 1;
+	END_IF;
+	
+	//SEQUENCE TO BEGIN THE HOMING PROCEDURE, AXIS 1
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Start AND glb_io.Di.Backward_Mag_1 THEN
+		glb_cmd.btn_homing := 1;
+	END_IF;
+	
+	//SEQUENCE TO BEGIN THE HOMING PROCEDURE, AXIS 2
+	IF (Status = AUTO OR Status = MANUAL) AND glb_io.Di.Start AND glb_io.Di.Backward_Mag_2 THEN
+		glb_cmd_2.btn_homing := 1;
+	END_IF;
+	
+	IF glb_cmd.Cartridge_loaded THEN
+		glb_cmd.Cartridge_loaded_Gun 	:= 1;
+		Cartridge_loaded_control 		:= 1;
+	END_IF;
+	
+	IF glb_cmd_2.Cartridge_loaded THEN
+		glb_cmd_2.Cartridge_loaded_Gun 	:= 1;
+		Cartridge_loaded_control_2		:= 1;
+	END_IF;
 	
 	
-//----------------------------LIGHT COMBINATIONS----------------------------------
-	CASE Lights_Status OF
+	
+	//----------------------------LIGHT COMBINATIONS----------------------------------
+	
+	//MANAGMENT OF THE START, STOP AND RESET LEDS
+	CASE lights_status.Bottom OF
 		
-		0://START
-			
-			IF ( Status = AUTO AND Status = MANUAL) THEN
-				glb_io.Do.Green_Light := 1;
-				glb_io.Do.Red_Light := 0;
-				Lights_Status := 10;
+		0: //START
+			IF (Status = AUTO OR Status = MANUAL) THEN
+				glb_io.Do.Green_Light	:= 1;
+				glb_io.Do.Red_Light		:= 0;
+				lights_status.Bottom 	:= 10;
 			ELSIF Status = STOP THEN
-				glb_io.Do.Green_Light := 0;
-				glb_io.Do.Red_Light := 1;
-			
+				glb_io.Do.Green_Light	:= 0;
+				glb_io.Do.Red_Light		:= 1;
 			END_IF;
-				
-			(*Lights_Status := 10;*)
 			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
+			IF Status = ERR THEN lights_status.Bottom := 100; END_IF;
+		
 		10://IDLE
-			
-			//MAG_1 LOADED ACK
+			Blink_Cmd := 0;
+		
+			//MAG_1 LOADED ACKNOWLEDGE
 			IF Cartridge_loaded_control THEN
-				Lights_Status := 20;
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_2 LOADED ACK
+			//MAG_2 LOADED ACKNOWLEDGE
 			IF Cartridge_loaded_control_2 THEN
-				Lights_Status := 30;
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_1 RELOAD NEEDED
-			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN
-				Lights_Status := 40;
+			//MAG_1 UNLOADED ACKNOWLEDGE
+			IF Cartridge_Unloaded_control THEN
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_2 RELOAD NEEDED
-			IF Empty_Mag_22.Empty_Mag_Sensor THEN
-				Lights_Status := 50;
+			//MAG_2 UNLOADED ACKNOWLEDGE
+			IF Cartridge_Unloaded_control_2 THEN
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_1 AUTO HOMING ACK
-			IF Auto_Homing_Control THEN
-				Lights_Status := 60;
+			//MAG_1 HOMING ACKNOWLEDGE
+			IF Homing_Control THEN
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_2 AUTO HOMING ACK
-			IF Auto_Homing_Control_2 THEN
-				Lights_Status := 70;
+			//MAG_2 HOMING ACKNOWLEDGE
+			IF Homing_Control_2 THEN
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_1 MANUAL HOMING ACK
-			IF Manual_Homing_Control THEN
-				Lights_Status := 80;
+			//MAG_1 BEGIN RELOADING ACKNOWLEDGE
+			IF glb_cmd.Start_Reload THEN
+				lights_status.Bottom := 20;
 			END_IF;
 			
-			//MAG_2 MANUAL HOMING ACK
-			IF Manual_Homing_Control_2 THEN
-				Lights_Status := 90;
-			END_IF;
-	
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-		
-		20://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO COMPLETED RELOAD, BLINK 3 TIMES
-			
-			TON_03(IN:=NOT TON_04.Q, PT:=T#500ms);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#500ms);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light 	:= 1;
-				glb_io.Do.Green_Light 	:= 1;
-				glb_io.Do.Red_Light 	:= 1;
-			ELSE
-				glb_io.Do.Blue_Light 	:= 0;
-				glb_io.Do.Green_Light 	:= 0;
-				glb_io.Do.Red_Light 	:= 0;
-			END_IF;
-			
-			IF TON_04.Q THEN
-				TON_03_Ctrl := 1;
-			END_IF;
-			
-			IF TON_03.Q AND TON_03_Ctrl THEN
-				Blink_Cmd := 1;
-				TON_03_Ctrl := 0;
-			END_IF;
-					
-			IF Blink_Cmd THEN
-				Blink_Counter := Blink_Counter + 1;
-				Blink_Cmd := 0;
-			END_IF;
-				
-			IF Blink_Counter >= 3 THEN
-				Lights_Status := 21;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		21://GENERAL RESET MAG_1 & BACK TO START
-			
-			Blink_Counter 				:= 0;
-			glb_io.Do.Blue_Light 		:= 0;
-			glb_io.Do.Green_Light 		:= 0;
-			glb_io.Do.Red_Light 		:= 0;
-			Cartridge_loaded_control 	:= 0;
-			Lights_Status 				:= 0;
-		
-		30://MAG_2 LED BLINKING IN ACKNOWLEDGMENT TO COMPLETED RELOAD, BLINK 3 TIMES
-			
-			TON_03(IN:=NOT TON_04.Q, PT:=T#500ms);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#500ms);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light := 1;
-				glb_io.Do.Green_Light := 1;
-				glb_io.Do.Red_Light := 1;
-			ELSE
-				glb_io.Do.Blue_Light := 0;
-				glb_io.Do.Green_Light := 0;
-				glb_io.Do.Red_Light := 0;
-			END_IF;
-					
-			IF TON_04.Q THEN
-				TON_03_Ctrl := 1;
-			END_IF;
-			
-			IF TON_03.Q AND TON_03_Ctrl THEN
-				Blink_Cmd := 1;
-				TON_03_Ctrl := 0;
-			END_IF;
-			
-			IF Blink_Cmd THEN
-				Blink_Counter := Blink_Counter + 1;
-				Blink_Cmd := 0;
-				R_TRIG_08.CLK := 0;
-			END_IF;
-			
-			IF Blink_Counter >= 3 THEN
-				Lights_Status := 31;
-			END_IF;
-			
-				
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		31://GENERAL RESET MAG_2 & BACK TO START
-			
-			Blink_Counter 				:= 0;
-			glb_io.Do.Blue_Light 		:= 0;
-			glb_io.Do.Green_Light 		:= 0;
-			glb_io.Do.Red_Light 		:= 0;
-			Cartridge_loaded_control_2 	:= 0;
-			Lights_Status 				:= 0;
-			
-		
-		40://MAG_1 WHITE LED, BLUE LIGHT BLINKING & RELOAD BEEPER ON
-			
-			Lamp_02.Lamp2Verde := 0;
-			TON_03(IN:=NOT TON_04.Q, PT:=T#1s);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#1s);
-			
-			IF TON_03_Pulse THEN
-				Lamp_02.Lamp2Bianco 	:= 1;
-				glb_io.Do.Blue_Light 	:= 1;
-				Lamp_02.Lamp2Allarme 	:= 1;
-			ELSE
-				Lamp_02.Lamp2Bianco 	:= 0;
-				glb_io.Do.Blue_Light 	:= 0;
-				Lamp_02.Lamp2Allarme 	:= 0;
-			END_IF;
-			
-			IF glb_io.Di.Reset THEN
-				Lights_Status := 41;
+			//MAG_2 BEGIN RELOADING ACKNOWLEDGE
+			IF glb_cmd_2.Start_Reload THEN
+				lights_status.Bottom := 20;
 			END_IF;
 		
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
+			IF Status = STOP THEN lights_status.Bottom := 0; END_IF;
 			
+			IF Status = ERR THEN lights_status.Bottom := 100; END_IF;
 			
-		41:////RESET OF BLUE LED & RELOAD BEEPER, WHITE LED STILL BLINKING
+		20://BOTTOM LEDs BLINKING IN ACKNOWLEDGMENT OF SUCCESFULL INPUT
+			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+			glb_io.Do.Green_Light 	:= TON_03_Pulse;
+			glb_io.Do.Red_Light 	:= TON_03_Pulse;
 			
-			glb_io.Do.Blue_Light := 0;
-			Lamp_02.Lamp2Allarme := 0;
-			
-			TON_03(IN:=NOT TON_04.Q, PT:=T#1s);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#1s);
-			
-			IF TON_03_Pulse THEN
-				Lamp_02.Lamp2Bianco :=1;
-			ELSE
-				Lamp_02.Lamp2Bianco :=0;
+			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+				Blink_Counter := Blink_Counter + 1;
+				Blink_Cmd := 1;
+			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+				Blink_Cmd := 0;
+			END_IF
+				
+			IF Blink_Counter >= 3 THEN
+				lights_status.Bottom := 21;
 			END_IF;
 			
-			IF glb_cmd.Cartridge_loaded THEN
-				Lights_Status := 42;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		42://RESET OF WHITE LED, GREEN "LOADED" LED ON & BACK TO START
-			
-			Lamp_02.Lamp2Bianco 	:= 0;
-			Lamp_02.Lamp2Verde 		:= 1;
-			Lights_Status 			:= 0;
-			
-			
-		50:////MAG_2 WHITE LED, BLUE LED BLINKING & RELOAD BEEPER ON
-			
-			TON_03(IN:=NOT TON_04.Q, PT:=T#1s);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#1s);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light 	:= 1;
-				Lamp_01.Lamp1Bianco 	:=1;
-				Lamp_01.Lamp1Allarme 	:= 1;
-			ELSE
-				glb_io.Do.Blue_Light 	:= 0;
-				Lamp_01.Lamp1Bianco 	:=0;
-				Lamp_01.Lamp1Allarme 	:= 0;
-			END_IF;
-			
-			IF glb_io.Di.Reset THEN
-				Lights_Status := 51;
-			END_IF;
+			IF Status = ERR THEN lights_status.Bottom := 100; END_IF;
 		
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		51://RESET OF BLUE LED & RELOAD BEEPER, WHITE LED STILL BLINKING
-			
-			glb_io.Do.Blue_Light := 0;
-			Lamp_01.Lamp1Allarme := 0;
-			
-			TON_03(IN:=NOT TON_04.Q, PT:=T#1s);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#1s);
-			
-			IF TON_03_Pulse THEN
-				Lamp_01.Lamp1Bianco :=1;
-			ELSE
-				Lamp_01.Lamp1Bianco :=0;
-			END_IF;
-			
-			IF glb_cmd_2.Cartridge_loaded THEN
-				Lights_Status := 52;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		52://RESET OF WHITE LED, GREEN "LOADED" LED ON & BACK TO START
-			
-			Lamp_01.Lamp1Bianco 	:= 0;
-			Lamp_01.Lamp1Verde 		:= 1;
-			Lights_Status 			:= 0;
-			
-		60://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO AUTO HOMING, BLINK 3 TIMES
-			TON_03(IN:=NOT TON_04.Q, PT:=T#500ms);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#500ms);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light 	:= 1;
-				glb_io.Do.Green_Light 	:= 1;
-				glb_io.Do.Red_Light 	:= 1;
-			ELSE
-				glb_io.Do.Blue_Light 	:= 0;
-				glb_io.Do.Green_Light 	:= 0;
-				glb_io.Do.Red_Light 	:= 0;
-			END_IF;
-			
-			IF TON_04.Q THEN
-				TON_03_Ctrl := 1;
-			END_IF;
-			
-			IF TON_03.Q AND TON_03_Ctrl THEN
-				Blink_Cmd := 1;
-				TON_03_Ctrl := 0;
-			END_IF;
-					
-			IF Blink_Cmd THEN
-				Blink_Counter := Blink_Counter + 1;
-				Blink_Cmd := 0;
-			END_IF;
-				
-			IF Blink_Counter >= 3 THEN
-				Lights_Status := 61;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		61://GENERAL RESET MAG_1 & BACK TO START
-			Blink_Counter 				:= 0;
-			glb_io.Do.Blue_Light 		:= 0;
-			glb_io.Do.Green_Light 		:= 0;
-			glb_io.Do.Red_Light 		:= 0;
-			Auto_Homing_Control		 	:= 0;
-			Lights_Status 				:= 0;
-			
-		70://MAG_2 LED BLINKING IN ACKNOWLEDGMENT TO AUTO HOMING, BLINK 3 TIMES
-			TON_03(IN:=NOT TON_04.Q, PT:=T#500ms);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#500ms);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light 	:= 1;
-				glb_io.Do.Green_Light 	:= 1;
-				glb_io.Do.Red_Light 	:= 1;
-			ELSE
-				glb_io.Do.Blue_Light 	:= 0;
-				glb_io.Do.Green_Light 	:= 0;
-				glb_io.Do.Red_Light 	:= 0;
-			END_IF;
-			
-			IF TON_04.Q THEN
-				TON_03_Ctrl := 1;
-			END_IF;
-			
-			IF TON_03.Q AND TON_03_Ctrl THEN
-				Blink_Cmd := 1;
-				TON_03_Ctrl := 0;
-			END_IF;
-					
-			IF Blink_Cmd THEN
-				Blink_Counter := Blink_Counter + 1;
-				Blink_Cmd := 0;
-			END_IF;
-				
-			IF Blink_Counter >= 3 THEN
-				Lights_Status := 71;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		71://GENERAL RESET MAG_2 & BACK TO START
-			Blink_Counter 				:= 0;
-			glb_io.Do.Blue_Light 		:= 0;
-			glb_io.Do.Green_Light 		:= 0;
-			glb_io.Do.Red_Light 		:= 0;
-			Auto_Homing_Control_2	 	:= 0;
-			Lights_Status 				:= 0;
-			
-		80://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO MANUAL HOMING, BLINK 3 TIMES
-			TON_03(IN:=NOT TON_04.Q, PT:=T#500ms);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#500ms);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light 	:= 1;
-				glb_io.Do.Green_Light 	:= 1;
-				glb_io.Do.Red_Light 	:= 1;
-			ELSE
-				glb_io.Do.Blue_Light 	:= 0;
-				glb_io.Do.Green_Light 	:= 0;
-				glb_io.Do.Red_Light 	:= 0;
-			END_IF;
-			
-			IF TON_04.Q THEN
-				TON_03_Ctrl := 1;
-			END_IF;
-			
-			IF TON_03.Q AND TON_03_Ctrl THEN
-				Blink_Cmd := 1;
-				TON_03_Ctrl := 0;
-			END_IF;
-					
-			IF Blink_Cmd THEN
-				Blink_Counter := Blink_Counter + 1;
-				Blink_Cmd := 0;
-			END_IF;
-				
-			IF Blink_Counter >= 3 THEN
-				Lights_Status := 81;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		81://GENERAL RESET MAG_1 & BACK TO START
-			Blink_Counter 				:= 0;
-			glb_io.Do.Blue_Light 		:= 0;
-			glb_io.Do.Green_Light 		:= 0;
-			glb_io.Do.Red_Light 		:= 0;
-			Manual_Homing_Control	 	:= 0;
-			Lights_Status 				:= 0;
-			
-		90://MAG_2 LED BLINKING IN ACKNOWLEDGMENT TO MANUAL HOMING, BLINK 3 TIMES
-			TON_03(IN:=NOT TON_04.Q, PT:=T#500ms);
-			TON_03_Pulse := TON_03.Q;
-			
-			TON_04 (IN:=TON_03.Q, PT:=T#500ms);
-			
-			IF TON_03_Pulse THEN
-				glb_io.Do.Blue_Light 	:= 1;
-				glb_io.Do.Green_Light 	:= 1;
-				glb_io.Do.Red_Light 	:= 1;
-			ELSE
-				glb_io.Do.Blue_Light 	:= 0;
-				glb_io.Do.Green_Light 	:= 0;
-				glb_io.Do.Red_Light 	:= 0;
-			END_IF;
-			
-			IF TON_04.Q THEN
-				TON_03_Ctrl := 1;
-			END_IF;
-			
-			IF TON_03.Q AND TON_03_Ctrl THEN
-				Blink_Cmd := 1;
-				TON_03_Ctrl := 0;
-			END_IF;
-					
-			IF Blink_Cmd THEN
-				Blink_Counter := Blink_Counter + 1;
-				Blink_Cmd := 0;
-			END_IF;
-				
-			IF Blink_Counter >= 3 THEN
-				Lights_Status := 91;
-			END_IF;
-			
-			IF Status = ERR THEN Lights_Status := 100; END_IF;
-			
-			
-		91://GENERAL RESET MAG_2 & BACK TO START
-			Blink_Counter 				:= 0;
-			glb_io.Do.Blue_Light 		:= 0;
-			glb_io.Do.Green_Light 		:= 0;
-			glb_io.Do.Red_Light 		:= 0;
-			Manual_Homing_Control_2	 	:= 0;
-			Lights_Status 				:= 0;
+		21://RESET OF BLINKING VARIABLES AND BACK TO START
+			Blink_Counter 					:= 0;
+			glb_io.Do.Blue_Light 			:= 0;
+			glb_io.Do.Green_Light 			:= 0;
+			glb_io.Do.Red_Light 			:= 0;
+			Cartridge_loaded_control 		:= 0;
+			Cartridge_loaded_control_2		:= 0;
+			Cartridge_Unloaded_control		:= 0;
+			Cartridge_Unloaded_control_2	:= 0;
+			Homing_Control					:= 0;
+			Homing_Control_2				:= 0;
+			glb_cmd.Cartridge_loaded		:= 0;
+			glb_cmd_2.Cartridge_loaded		:= 0;
+			lights_status.Bottom 			:= 0;
 		
-		100://BLUE LED BLINKING
+		100://BLUE LED BLINKING WHEN THE MACHINE IS IN EMERGENCY
+			glb_io.Do.Green_Light 		:= 0;
+			glb_io.Do.Red_Light  		:= 1;
 			
-			TON_03( IN:=NOT TON_04.Q, PT:=T#1s);
-			TON_03_Pulse := TON_03.Q;
+			Beacon_1.White				:= 0;
+			Beacon_1.Green 				:= 0;
+			Beacon_1.Beeper_Alarm		:= 0;
+			Beacon_2.White				:= 0;
+			Beacon_2.Green 				:= 0;
+			Beacon_2.Beeper_Alarm		:= 0;
 
-			TON_04( IN:=TON_03.Q, PT:= T#1s);
-
-			IF (TON_03_Pulse) THEN
-				glb_io.Do.Blue_Light := 1;
-			ELSE
-				glb_io.Do.Blue_Light := 0;
-			END_IF;
-		
+			glb_io.Do.Blue_Light 		:= TON_03_Pulse;
+			
+			//WHEN YOU PRESS RESET BUTTON IT RESETS ALL ACTIVE ALARMS
 			IF glb_io.Di.Reset THEN
-				Lights_Status := 110;
+				lights_status.Bottom 	:= 110;
 			END_IF;
 		
 		110://RESET OF BLUE LED & BACK TO START
 			
-			glb_io.Do.Blue_Light 	:= 0;
-			ERROr 					:= 0;
-			glb_err.pending_alarms 	:= 0;
-			Lights_Status 			:= 0;
+			glb_io.Do.Blue_Light 		:= 0;
+			glb_io.Do.Green_Light 		:= 0;
+			//glb_io.Do.Red_Light  		:= 0;//--------------------------------------TEST!!!!!!!----------------------
+			glb_err.pending_alarms 		:= 0;
+			lights_status.Bottom		:= 0;
 		
-		
-		
-			
 	END_CASE;
+	
+	//MANAGMENT OF THE BEACON LIGHTS AND BEEPER, AXIS 1
+	CASE lights_status.Magazine_1 OF
+		
+		0://START
+			IF (Status = AUTO OR Status = MANUAL) THEN
+				lights_status.Magazine_1 	:= 10;
+			END_IF;
+		
+		10://IDLE
+			
+			//
+			IF Cartridge_loaded_control THEN
+				lights_status.Magazine_1 	:= 15;
+			END_IF;
+			
+			//
+			IF Cartridge_Unloaded_control THEN
+				lights_status.Magazine_1 	:= 16;
+			END_IF;
+			
+			//RELOAD NEEDED
+			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN
+				lights_status.Magazine_1 	:= 20;
+			END_IF;
+			
+			//AXIS NOT HOMED
+			IF (NOT glb_axis_1_homed) THEN
+				lights_status.Magazine_1 	:= 30;
+			END_IF
+			
+			IF Status = STOP THEN lights_status.Magazine_1 := 0; END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_1 := 0; END_IF;
+			
+		15:
+			Beacon_1.Green 				:= 1;
+			Beacon_1.White 				:= 0;
+			Beacon_1.Beeper_Alarm 		:= 0;
+			Cartridge_loaded_control 	:= 0;
+			lights_status.Magazine_1 	:= 0;
+			
+		16:
+			Beacon_1.Green 				:= 0;
+			Beacon_1.White 				:= TON_03_Pulse;
+			Beacon_1.Beeper_Alarm 		:= 0;
+			(*lights_status.Magazine_1 	:= 0;*)
+			
+			IF glb_cmd.Cartridge_loaded THEN
+				lights_status.Magazine_1 := 23;
+			END_IF;
+		
+		
+		20://REOAD LIGHTS PROCEDURE, WHITE BEACON AND BLUE LED BILNKING, BUZZER BEEPS ONLY 3 TIMES
+			Beacon_1.Green 			:= 0;
+		
+			Beacon_1.White 			:= TON_03_Pulse;
+			Beacon_1.Beeper_Alarm 	:= TON_03_Pulse;
+			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+			
+			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+				Blink_Counter := Blink_Counter + 1;
+				Blink_Cmd := 1;
+			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+				Blink_Cmd := 0;
+			END_IF;
+				
+			IF Blink_Counter >= 3 THEN
+				lights_status.Magazine_1 := 21;
+			END_IF;
+			
+			IF Status = STOP THEN Beacon_1.Beeper_Alarm := 0; lights_status.Magazine_1 := 0; END_IF;
+			
+			IF Status = ERR THEN Beacon_1.Beeper_Alarm := 0; lights_status.Magazine_1 := 0; END_IF;
+			
+		21://WHITE BEACON BLINKING AND BLUE LED BLINKING, BEACON BUZZER STOP
+			
+			Beacon_1.Beeper_Alarm 		:= 0;
+			
+			Beacon_1.White 				:= TON_03_Pulse;
+			glb_io.Do.Blue_Light		:= TON_03_Pulse;
+			
+			//PRESS RESET TO SWITCH OFF BLUE BLINKING LED AND START RELOADING MOVEMENT
+			IF glb_io.Di.Reset THEN
+				lights_status.Magazine_1 := 22;
+			END_IF;
+			
+			IF Status = STOP THEN lights_status.Magazine_1 := 0; END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_1 := 0; END_IF;
+			
+		22:
+			glb_io.Do.Blue_Light := 0;
+			
+			Beacon_1.White := TON_03_Pulse;
+			
+			IF glb_cmd.Cartridge_loaded THEN
+				lights_status.Magazine_1 := 23;
+			END_IF;
+		
+		23://RESET & BACK TO START, GREEN BEACON ON
+			Beacon_1.Green 				:= 1;
+			Beacon_1.White 				:= 0;
+			Beacon_1.Beeper_Alarm 		:= 0;
+			glb_cmd.Beeper_Lock			:= 0;
+			lights_status.Magazine_1	:= 0;
+		
+		30://GREEN AND WHITE BEACON BLINKING IF AXIS IS NOT HOMED
+			IF (NOT glb_axis_1_homed) THEN
+				Beacon_1.White 			:= TON_03_Pulse;
+				Beacon_1.Green			:= TON_03_Pulse;
+			END_IF
+			
+			//AXIS HOMED
+			IF glb_axis_1_homed THEN
+				lights_status.Magazine_1 := 31;
+			END_IF;
+			
+			IF Status = STOP THEN lights_status.Magazine_1 := 0; END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_1 := 0; END_IF;
+		
+		31://RESET AFTER AXIS HOMED
+			Beacon_1.Green 				:= 0;
+			Beacon_1.White 				:= 0;
+			lights_status.Magazine_1 	:= 0;
+			
+		
+	END_CASE;
+	
+	//MANAGMENT OF THE BEACON LIGHT AND BEEPER, AXIS 2
+	CASE lights_status.Magazine_2 OF
+		
+		0://START
+			IF (Status = AUTO OR Status = MANUAL) THEN
+				lights_status.Magazine_2 	:= 10;
+			END_IF;
+		
+		10://IDLE
+			
+			IF Cartridge_loaded_control_2 THEN
+				lights_status.Magazine_2 	:= 15;
+			END_IF;
+			
+			IF Cartridge_Unloaded_control_2 THEN
+				lights_status.Magazine_2 	:= 16;
+			END_IF;
+			
+			//RELOAD NEEDED
+			IF Empty_Mag_22.Empty_Mag_Sensor THEN
+				lights_status.Magazine_2 	:= 20;
+			END_IF;
+			
+			//AXIS NOT HOMED
+			IF (NOT glb_axis_2_homed)	THEN
+				lights_status.Magazine_2 	:= 30;
+			END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_2 := 0; END_IF;
+			
+		15:
+			Beacon_2.Green 				:= 1;
+			Beacon_2.White 				:= 0;
+			Beacon_2.Beeper_Alarm 		:= 0;
+			lights_status.Magazine_2 	:= 0;
+			
+		16:
+			Beacon_2.Green 				:= 0;
+			Beacon_2.White 				:= TON_03_Pulse;
+			Beacon_2.Beeper_Alarm 		:= 0;
+			(*lights_status.Magazine_2 	:= 0;*)
+			
+			IF glb_cmd_2.Cartridge_loaded THEN
+				lights_status.Magazine_2 := 23;
+			END_IF;
+			
+		
+		20://REOAD LIGHTS PROCEDURE, WHITE BEACON AND BLUE LED BILNKING, BEEPER BEEPS ONLY 3 TIMES
+			Beacon_2.Green			:= 0;
+		
+			Beacon_2.White 			:= TON_03_Pulse;
+			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+			Beacon_2.Beeper_Alarm 	:= TON_03_Pulse;
+			
+			
+			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+				Blink_Counter 	:= Blink_Counter + 1;
+				Blink_Cmd 		:= 1;
+			ELSIF ((NOT Beacon_2.Beeper_Alarm) AND Blink_Cmd) THEN
+				Blink_Cmd 		:= 0;
+			END_IF;
+				
+			IF Blink_Counter >= 3 THEN
+				lights_status.Magazine_2 := 21;
+			END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_2 := 0; END_IF;
+			
+		21://WHITE BEACON BLINKING
+			Beacon_2.Beeper_Alarm		:= 0;
+			Beacon_1.White 				:= TON_03_Pulse;
+			glb_io.Do.Blue_Light		:= TON_03_Pulse;
+			
+			//PRESS RESET TO SWITCH OFF BLUE BLINKING LED AND START RELOAD MOVEMENT
+			IF glb_io.Di.Reset THEN
+				lights_status.Magazine_1 := 22;
+			END_IF;
+			
+			IF Status = STOP THEN lights_status.Magazine_2 := 0; END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_2 := 0; END_IF;
+			
+		22:
+			Beacon_2.White				:= TON_03_Pulse;
+			
+			IF glb_cmd_2.Cartridge_loaded THEN
+				lights_status.Magazine_1 := 23;
+			END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_2 := 0; END_IF;
+		
+		23://RESET & BACK TO START, GREEN BEACON ON
+			Beacon_2.Green 				:= 1;
+			Beacon_2.White 				:= 0;
+			Beacon_2.Beeper_Alarm 		:= 0;
+			Cartridge_loaded_control_2 	:= 0;
+			lights_status.Magazine_2	:= 0;
+		
+		30://GREEN AND WHITE BEACON BLINKING IF AXIS IS NOT HOMED
+			IF (NOT glb_axis_2_homed) THEN
+				Beacon_2.Green := TON_03_Pulse;
+				Beacon_2.White := TON_03_Pulse;
+			END_IF;
+		
+			//AXIS HOMED
+			IF glb_axis_2_homed THEN
+				lights_status.Magazine_2 := 31;
+			END_IF;
+			
+			IF Status = ERR THEN lights_status.Magazine_2 := 0; END_IF;
+		
+		31://RESET AFTER AXIS HOMED
+			Beacon_2.Green 				:= 0;
+			Beacon_2.White 				:= 0;
+			lights_status.Magazine_2 	:= 0;
+		
+		
+	END_CASE;
+	
+	
+	
+//	CASE Lights_Status OF
+//		
+//		0://START
+//			
+//			IF ( Status = AUTO OR Status = MANUAL) THEN
+//				glb_io.Do.Green_Light:=1;
+//				glb_io.Do.Red_Light:=0;
+//				Lights_Status := 10;
+//			ELSIF Status = STOP THEN
+//				glb_io.Do.Green_Light	:=0;
+//				glb_io.Do.Red_Light		:= 1;
+//			END_IF;
+//				
+//			(*Lights_Status := 10;*)
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//		10://IDLE
+//			Blink_Cmd := 0;
+//			
+//			//MAG_1 LOADED ACK
+//			IF Cartridge_loaded_control THEN
+//				Lights_Status := 20;
+//			END_IF;
+//			
+//			//MAG_2 LOADED ACK
+//			IF Cartridge_loaded_control_2 THEN
+//				Lights_Status := 30;
+//			END_IF;
+//			
+//			//MAG_1 RELOAD NEEDED
+//			IF Empty_Mag_1_0.Empty_Mag_Sensor THEN
+//				Lights_Status := 40;
+//			END_IF;
+//			
+//			//MAG_2 RELOAD NEEDED
+//			IF Empty_Mag_22.Empty_Mag_Sensor THEN
+//				Lights_Status := 50;
+//			END_IF;
+//			
+//			//MAG_1 AUTO HOMING ACK
+//			IF Auto_Homing_Control THEN
+//				Lights_Status := 60;
+//			END_IF;
+//			
+//			//MAG_2 AUTO HOMING ACK
+//			IF Auto_Homing_Control_2 THEN
+//				Lights_Status := 70;
+//			END_IF;
+//			
+//			//MAG_1 MANUAL HOMING ACK
+//			IF Manual_Homing_Control THEN
+//				Lights_Status := 80;
+//			END_IF;
+//			
+//			//MAG_2 MANUAL HOMING ACK
+//			IF Manual_Homing_Control_2 THEN
+//				Lights_Status := 90;
+//			END_IF;
+//			
+//			// MAG_1 & 2 HOME NEEDED
+//			IF (NOT glb_axis_1_homed) OR (NOT glb_axis_2_homed)	THEN
+//				Lights_Status := 120;
+//			END_IF
+//			
+//			IF Status = STOP THEN Lights_Status := 0; END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//		
+//		20://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO COMPLETED RELOAD, BLINK 3 TIMES
+//			
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Green_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Red_Light 	:= TON_03_Pulse;
+//			
+//			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+//				Blink_Counter := Blink_Counter + 1;
+//				Blink_Cmd := 1;
+//			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+//				Blink_Cmd := 0;
+//			END_IF
+//				
+//			IF Blink_Counter >= 3 THEN
+//				Lights_Status := 21;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		21://GENERAL RESET MAG_1 & BACK TO START
+//			
+//			Blink_Counter 				:= 0;
+//			glb_io.Do.Blue_Light 		:= 0;
+//			glb_io.Do.Green_Light 		:= 0;
+//			glb_io.Do.Red_Light 		:= 0;
+//			Cartridge_loaded_control 	:= 0;
+//			Lights_Status 				:= 0;
+//		
+//		30://MAG_2 LED BLINKING IN ACKNOWLEDGMENT TO COMPLETED RELOAD, BLINK 3 TIMES
+//			
+//
+//
+//			glb_io.Do.Blue_Light := TON_03_Pulse;
+//			glb_io.Do.Green_Light := TON_03_Pulse;
+//			glb_io.Do.Red_Light := TON_03_Pulse;
+//
+//					
+//			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+//				Blink_Counter := Blink_Counter + 1;
+//				Blink_Cmd := 1;
+//			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+//				Blink_Cmd := 0;
+//			END_IF
+//				
+//			IF Blink_Counter >= 3 THEN
+//				Lights_Status := 31;
+//			END_IF;
+//			
+//				
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		31://GENERAL RESET MAG_2 & BACK TO START
+//			
+//			Blink_Counter 				:= 0;
+//			glb_io.Do.Blue_Light 		:= 0;
+//			glb_io.Do.Green_Light 		:= 0;
+//			glb_io.Do.Red_Light 		:= 0;
+//			Cartridge_loaded_control_2 	:= 0;
+//			Lights_Status 				:= 0;
+//			
+//		
+//		40://MAG_1 WHITE LED, BLUE LIGHT BLINKING & RELOAD BEEPER ON
+//			
+//			Lamp_02.Lamp2Verde := 0;
+//		
+//			Lamp_02.Lamp2Bianco 	:= TON_03_Pulse;
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			Lamp_02.Lamp2Allarme 	:= TON_03_Pulse;
+//
+//			
+//			IF glb_io.Di.Reset THEN
+//				Lights_Status := 41;
+//			END_IF;
+//		
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		41:////RESET OF BLUE LED & RELOAD BEEPER, WHITE LED STILL BLINKING
+//			
+//			glb_io.Do.Blue_Light := 0;
+//			Lamp_02.Lamp2Allarme := 0;
+//		
+//			Lamp_02.Lamp2Bianco :=TON_03_Pulse;
+//	
+//			
+//			IF glb_cmd.Cartridge_loaded THEN
+//				Lights_Status := 42;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		42://RESET OF WHITE LED, GREEN "LOADED" LED ON & BACK TO START
+//			
+//			Lamp_02.Lamp2Bianco 	:= 0;
+//			Lamp_02.Lamp2Verde 		:= 1;
+//			Lights_Status 			:= 0;
+//			
+//			
+//		50:////MAG_2 WHITE LED, BLUE LED BLINKING & RELOAD BEEPER ON
+//
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			Lamp_01.Lamp1Bianco 	:=TON_03_Pulse;
+//			Lamp_01.Lamp1Allarme 	:= TON_03_Pulse;
+//
+//			
+//			IF glb_io.Di.Reset THEN
+//				Lights_Status := 51;
+//			END_IF;
+//		
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		51://RESET OF BLUE LED & RELOAD BEEPER, WHITE LED STILL BLINKING
+//			
+//			glb_io.Do.Blue_Light := 0;
+//			Lamp_01.Lamp1Allarme := 0;
+//			
+//			Lamp_01.Lamp1Bianco :=TON_03_Pulse;
+//
+//			
+//			IF glb_cmd_2.Cartridge_loaded THEN
+//				Lights_Status := 52;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		52://RESET OF WHITE LED, GREEN "LOADED" LED ON & BACK TO START
+//			
+//			Lamp_01.Lamp1Bianco 	:= 0;
+//			Lamp_01.Lamp1Verde 		:= 1;
+//			Lights_Status 			:= 0;
+//			
+//		60://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO AUTO HOMING, BLINK 3 TIMES
+//			
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Green_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Red_Light 	:= TON_03_Pulse;
+//			
+//			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+//				Blink_Counter := Blink_Counter + 1;
+//				Blink_Cmd := 1;
+//			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+//				Blink_Cmd := 0;
+//			END_IF
+//				
+//			IF Blink_Counter >= 3 THEN
+//				Lights_Status := 61;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		61://GENERAL RESET MAG_1 & BACK TO START
+//			Blink_Counter 				:= 0;
+//			glb_io.Do.Blue_Light 		:= 0;
+//			glb_io.Do.Green_Light 		:= 0;
+//			glb_io.Do.Red_Light 		:= 0;
+//			Auto_Homing_Control		 	:= 0;
+//			Lights_Status 				:= 0;
+//			
+//		70://MAG_2 LED BLINKING IN ACKNOWLEDGMENT TO AUTO HOMING, BLINK 3 TIMES
+//
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Green_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Red_Light 	:= TON_03_Pulse;
+//
+//			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+//				Blink_Counter := Blink_Counter + 1;
+//				Blink_Cmd := 1;
+//			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+//				Blink_Cmd := 0;
+//			END_IF
+//				
+//			IF Blink_Counter >= 3 THEN
+//				Lights_Status := 71;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		71://GENERAL RESET MAG_2 & BACK TO START
+//			Blink_Counter 				:= 0;
+//			glb_io.Do.Blue_Light 		:= 0;
+//			glb_io.Do.Green_Light 		:= 0;
+//			glb_io.Do.Red_Light 		:= 0;
+//			Auto_Homing_Control_2	 	:= 0;
+//			Lights_Status 				:= 0;
+//			
+//		80://MAG_1 LED BLINKING IN ACKNOWLEDGMENT TO MANUAL HOMING, BLINK 3 TIMES
+//			
+//	
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Green_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Red_Light 	:= TON_03_Pulse;
+//
+//			
+//			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+//				Blink_Counter := Blink_Counter + 1;
+//				Blink_Cmd := 1;
+//			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+//				Blink_Cmd := 0;
+//			END_IF
+//				
+//			IF Blink_Counter >= 3 THEN
+//				Lights_Status := 81;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		81://GENERAL RESET MAG_1 & BACK TO START
+//			Blink_Counter 				:= 0;
+//			glb_io.Do.Blue_Light 		:= 0;
+//			glb_io.Do.Green_Light 		:= 0;
+//			glb_io.Do.Red_Light 		:= 0;
+//			Manual_Homing_Control	 	:= 0;
+//			Lights_Status 				:= 0;
+//			
+//		90://MAG_2 LED BLINKING IN ACKNOWLEDGMENT TO MANUAL HOMING, BLINK 3 TIMES
+//
+//		
+//			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Green_Light 	:= TON_03_Pulse;
+//			glb_io.Do.Red_Light 	:= TON_03_Pulse;
+//			
+//			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
+//				Blink_Counter := Blink_Counter + 1;
+//				Blink_Cmd := 1;
+//			ELSIF ((NOT TON_03_Pulse) AND Blink_Cmd) THEN
+//				Blink_Cmd := 0;
+//			END_IF
+//				
+//			IF Blink_Counter >= 3 THEN
+//				Lights_Status := 91;
+//			END_IF;
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			
+//		91://GENERAL RESET MAG_2 & BACK TO START
+//			Blink_Counter 				:= 0;
+//			glb_io.Do.Blue_Light 		:= 0;
+//			glb_io.Do.Green_Light 		:= 0;
+//			glb_io.Do.Red_Light 		:= 0;
+//			Manual_Homing_Control_2	 	:= 0;
+//			Lights_Status 				:= 0;
+//		
+//		100://BLUE LED BLINKING
+//			glb_io.Do.Green_Light := 0;
+//			glb_io.Do.Red_Light  := 1;
+//			
+//			Lamp_02.Lamp2Bianco		:= 0;
+//			Lamp_02.Lamp2Verde 		:= 0;
+//			Lamp_02.Lamp2Allarme	:= 0;
+//			Lamp_01.Lamp1Bianco		:= 0;
+//			Lamp_01.Lamp1Verde 		:= 0;
+//			Lamp_01.Lamp1Allarme	:= 0;
+//
+//			glb_io.Do.Blue_Light := TON_03_Pulse;
+//
+//			IF glb_io.Di.Reset THEN
+//				Lights_Status := 110;
+//			END_IF;
+//		
+//		110://RESET OF BLUE LED & BACK TO START
+//			
+//			glb_io.Do.Blue_Light 	:= 0;
+//			glb_io.Do.Green_Light 	:= 0;
+//			glb_io.Do.Red_Light  	:= 0;
+//			ERROr 					:= 0;
+//			glb_err.pending_alarms 	:= 0;
+//			Lights_Status 			:= 0;
+//		
+//		120:
+//			IF  NOT glb_axis_1_homed THEN
+//				Lamp_01.Lamp1Bianco 	:= TON_03_Pulse;
+//				Lamp_01.Lamp1Verde 		:= TON_03_Pulse;
+//			END_IF
+//			
+//			IF  NOT glb_axis_2_homed THEN
+//				Lamp_02.Lamp2Bianco 	:= TON_03_Pulse;
+//				Lamp_02.Lamp2Verde 		:= TON_03_Pulse;
+//			END_IF
+//			
+//			IF Status = ERR THEN Lights_Status := 100; END_IF;
+//			
+//			IF glb_axis_1_homed AND glb_axis_2_homed THEN 
+//				Lights_Status := 0;
+//				Lamp_02.Lamp2Bianco	:= 0;
+//				Lamp_02.Lamp2Verde 	:= 0;
+//				Lamp_01.Lamp1Bianco	:= 0;
+//				Lamp_01.Lamp1Verde 	:= 0;
+//			END_IF
+//		
+//			
+//	END_CASE;
+	
+	TON_03( IN:=NOT TON_04.Q, PT:=T#0.5s);
+	TON_03_Pulse := TON_03.Q;
+
+	TON_04( IN:=TON_03.Q, PT:= T#0.5s);
 	
 END_PROGRAM

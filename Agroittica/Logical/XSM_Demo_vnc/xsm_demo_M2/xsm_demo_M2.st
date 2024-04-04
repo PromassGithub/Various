@@ -31,9 +31,9 @@ PROGRAM _INIT
 	(* Set up I/O configuration - No need to defind in AS I/O Configuration for module. *)
 	XSM_IO_Cfg_2.IO_Cfg.MixedDecayCfg := 15;							(* AS Default, change to suit application. *)
 
-	XSM_IO_Cfg_2.IO_Cfg.Current.Holding := 1.50;						(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_2.IO_Cfg.Current.Rated := 3.0;							(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_2.IO_Cfg.Current.Maximum := 3.0;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_2.IO_Cfg.Current.Holding := 0.80;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_2.IO_Cfg.Current.Rated := 1.5;							(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_2.IO_Cfg.Current.Maximum := 1.5;						(* A, Change to suit motor/application. *)
 
 	XSM_IO_Cfg_2.IO_Cfg.FullStepThreshold := 0;							(* Also sets to AS Default of 65535, change to suit application. *)
 
@@ -94,6 +94,18 @@ PROGRAM _CYCLIC
 	//PAIRING OF RESET BUTTON
 	
 	XSM_Ctrl_2.Cmd.Reset := glb_io.Di.Reset;
+	
+	//MOD FOR HOMING AND LIGHT CONTROL
+	
+	Second_Homing := Homed_2;
+	
+	glb_axis_2_homed := Homed_2;
+	
+	//PAIRING FOR MOVEMENT KEY LOCKING WHILE ONGOING HOMING PROCEDURE
+	
+	glb_cmd_2.Homing_Lock := (XSM_Ctrl_2.Parameters.Ignore_SWLimits AND XSM_Ctrl_2.Parameters.Ignore_HWLimits);
+	
+	//------------------------------------------------------------------------------------
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_2.Enable := TRUE; END_IF;
 	
@@ -159,26 +171,18 @@ PROGRAM _CYCLIC
 	CASE MM_2.MM_status OF		//Marcia Motore in manuale
 		
 		0:	//Safety check
-			IF (Status = MANUAL AND glb_err.pending_alarms = 0 AND Homed_2 AND (NOT glb_err.Drive2)) THEN
+			IF ((Status = MANUAL OR Status = AUTO) AND glb_err.pending_alarms = 0 AND Homed_2 AND (NOT glb_err.Drive2)) THEN
 				MM_2.MM_status := 1;
 			END_IF;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			
 		1:	//Wait for input
-			IF (MM_2.MM_Avanti AND (NOT MM_2.MM_Avanti_Vel) AND (NOT MM_2.MM_Indietro) AND ( NOT MM_2.MM_Indietro_Vel)) THEN
+			IF (MM_2.MM_Avanti AND (NOT MM_2.MM_Indietro)) THEN
 				MM_2.MM_status := 10;
 			END_IF;
 			
-			IF (MM_2.MM_Indietro AND (NOT MM_2.MM_Avanti) AND (NOT MM_2.MM_Avanti_Vel) AND ( NOT MM_2.MM_Indietro_Vel)) THEN
+			IF (MM_2.MM_Indietro AND (NOT MM_2.MM_Avanti)) THEN
 				MM_2.MM_status := 20;
-			END_IF;
-			
-			IF (MM_2.MM_Avanti_Vel AND (NOT MM_2.MM_Avanti) AND (NOT MM_2.MM_Indietro) AND ( NOT MM_2.MM_Indietro_Vel)) THEN
-				MM_2.MM_status := 11;
-			END_IF;
-			
-			IF (MM_2.MM_Indietro_Vel AND (NOT MM_2.MM_Avanti) AND (NOT MM_2.MM_Indietro) AND ( NOT MM_2.MM_Avanti_Vel)) THEN
-				MM_2.MM_status := 21;
 			END_IF;
 		
 		10:	//Forward
@@ -187,19 +191,6 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			
 			IF (NOT MM_2.MM_Avanti) THEN
-				MM_2.MM_status := 30;
-			END_IF;
-			
-			IF (Empty_Mag_22.Empty_Mag_Sensor) THEN
-				MM_2.MM_status := 40;
-			END_IF;
-			
-		11:	//Fast Forward
-			XSM_Ctrl_2.Cmd.Velocity := 500;
-			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
-			XSM_Ctrl_2.Cmd.Stop := FALSE;
-			
-			IF (NOT MM_2.MM_Avanti_Vel) THEN
 				MM_2.MM_status := 30;
 			END_IF;
 			
@@ -224,25 +215,11 @@ PROGRAM _CYCLIC
 				MM_2.MM_status := 41;
 			END_IF;
 			
-		21:	//Fast Backward
-			XSM_Ctrl_2.Cmd.Velocity := -500;
-			XSM_Ctrl_2.Cmd.Move_Velocity := TRUE;
-			XSM_Ctrl_2.Cmd.Stop := FALSE;
-			
-			IF (NOT MM_2.MM_Indietro_Vel) THEN
-				MM_2.MM_status := 30;
-			END_IF;
-			
-			IF (XSM_Ctrl_2.Monitor.Actual_Position = XSM_Ctrl_2.Parameters.HomePosition) THEN
-				MM_2.MM_status := 31;
-			END_IF;
-			
 		30:	//Reset and back to safety
 			XSM_Ctrl_2.Cmd.Move_Velocity := FALSE;
 			XSM_Ctrl_2.Cmd.Velocity := 0;
 			XSM_Ctrl_2.Cmd.Stop := TRUE;
 			old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
-			(*Status := STOP;*)
 			MM_2.MM_status := 0;
 					
 		31:	//Left Stop
@@ -294,47 +271,47 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
-	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
-		
-		0:	//Start
-			IF ((NOT Homed_2) AND First_Homing AND Status = AUTO) THEN
-				Auto_Homing_Ctrl_2.Auto_Homing_Status := 1;
-			END_IF;
-			Auto_Homing_Ctrl_2.Pop_Up := 1;
-			Auto_Homing_Ack_2 := 0;
-			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := FALSE;
-			
-		1:	//Pop Up
-			Auto_Homing_Ctrl_2.Pop_Up := 0;
-			Auto_Homing_Ctrl_2.Auto_Homing_Status := 10;
-			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
-			
-		10:	//Ack Pop Up
-			IF (Auto_Homing_Ack_2) THEN
-				Auto_Homing_Ctrl_2.Pop_Up := 1;
-				Auto_Homing_Ctrl_2.Auto_Homing_Status := 20;
-			END_IF;
-			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
-		
-		20:	//Movement
-			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := TRUE;
-			Auto_Homing_Ctrl_2.Auto_Homing_Status := 30;
-			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
-		
-		30:	//Back to start
-			IF (Homed_2) THEN
-				Auto_Homing_Ctrl_2.Auto_Homing_Status := 40;
-			END_IF;
-			
-			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
-			
-		40:
-			Auto_Homing_Ctrl_2.Auto_Homing_Status := 0;
-		
-	END_CASE;
+//	CASE Auto_Homing_Ctrl_2.Auto_Homing_Status OF  //Pop Up di Auto Homing
+//		
+//		0:	//Start
+//			IF ((NOT Homed_2) AND First_Homing AND Status = AUTO) THEN
+//				Auto_Homing_Ctrl_2.Auto_Homing_Status := 1;
+//			END_IF;
+//			Auto_Homing_Ctrl_2.Pop_Up := 1;
+//			Auto_Homing_Ack_2 := 0;
+//			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := FALSE;
+//			
+//		1:	//Pop Up
+//			Auto_Homing_Ctrl_2.Pop_Up := 0;
+//			Auto_Homing_Ctrl_2.Auto_Homing_Status := 10;
+//			
+//			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
+//			
+//		10:	//Ack Pop Up
+//			IF (Auto_Homing_Ack_2) THEN
+//				Auto_Homing_Ctrl_2.Pop_Up := 1;
+//				Auto_Homing_Ctrl_2.Auto_Homing_Status := 20;
+//			END_IF;
+//			
+//			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
+//		
+//		20:	//Movement
+//			Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up := TRUE;
+//			Auto_Homing_Ctrl_2.Auto_Homing_Status := 30;
+//			
+//			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
+//		
+//		30:	//Back to start
+//			IF (Homed_2) THEN
+//				Auto_Homing_Ctrl_2.Auto_Homing_Status := 40;
+//			END_IF;
+//			
+//			IF (Status <> AUTO) THEN Auto_Homing_Ctrl_2.Auto_Homing_Status := 40; END_IF;
+//			
+//		40:
+//			Auto_Homing_Ctrl_2.Auto_Homing_Status := 0;
+//		
+//	END_CASE;
 	
 	CASE Empty_Mag_22.Empty_Mag_Status OF      //Ricarica
 		
@@ -346,42 +323,26 @@ PROGRAM _CYCLIC
 			Empty_Mag_22.Empty_Mag_Pop_Up := 1;
 			XSM_Ctrl_2.Cmd.Move_Absolute := FALSE;
 			
-		10:	//Pop up
-			Empty_Mag_22.Empty_Mag_Pop_Up := 0;
-			Lamp_01.Lamp1Verde := 0;
-			Lamp_01.Lamp1Bianco := 1;
-			IF (NOT glb_hmi.Inp.Lamp_alarm_block) THEN
-				Lamp_01.Lamp1Allarme := 1;
-			END_IF;
-			Empty_Mag_22.Empty_Mag_Status := 20;
-			
-			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
-			
-		20:	//Pop up Ack & Start Movement
-			IF (Empty_Mag_22.Empty_Mag_Ack) THEN
-				glb_cmd_2.Torna_a_casa := TRUE;
-				Lamp_01.Lamp1Allarme := 0;
-				Empty_Mag_22.Empty_Mag_Pop_Up := 1;
+		10:	//Pop up Ack & Start Movement
+			IF (glb_cmd_2.Start_Reload OR Empty_Mag_22.Empty_Mag_Ack) THEN
+				glb_cmd_2.Start_Reload := 0;
+				glb_cmd_2.Torna_a_casa := 1;
 			END_IF;
 			
 			IF (XSM_Ctrl_2.Monitor.Actual_Position = XSM_Ctrl_2.Parameters.HomePosition OR glb_cmd_2.Cartridge_loaded) THEN
-				Empty_Mag_22.Empty_Mag_Status := 21;
+				Empty_Mag_22.Empty_Mag_Status := 11;
 			END_IF;
 			
 			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
 			
-		21:
+		11:
 			IF (glb_cmd_2.Cartridge_loaded) THEN
-				Empty_Mag_1_0.Empty_Mag_Status := 30;
+				Empty_Mag_1_0.Empty_Mag_Status := 20;
 			END_IF;
 			
 			IF (Status <> AUTO) THEN Empty_Mag_22.Empty_Mag_Status := 30; END_IF;
 			
-		30:	//Back to start
-			Lamp_01.Lamp1Allarme := 0;
-			Lamp_01.Lamp1Bianco := 0;
-			Lamp_01.Lamp1Verde := 1;
-			old_pos_2 := 10;
+		20:	//Back to start
 			Empty_Mag_22.Empty_Mag_Ack := FALSE;
 			Empty_Mag_22.Empty_Mag_Status := 0;
 			
@@ -392,13 +353,13 @@ PROGRAM _CYCLIC
 	CASE Homing_status_2 OF
 		
 		0: 
-			IF (((glb_cmd_2.btn_homing AND Status = MANUAL) OR ((NOT Homed_2) AND Status = AUTO AND Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up)) AND XSM_Ctrl_2.PowerOn) THEN
-				Homing_status_2 := 1; 
+			IF (((glb_cmd_2.btn_homing OR Auto_Homing_Ctrl_2.Auto_Homing_Ack_Pop_Up) AND (Status = MANUAL OR Status = AUTO)) AND XSM_Ctrl_2.PowerOn) THEN
 				glb_cmd_2.btn_homing := 0;
+				Homing_status_2 := 1; 
 			END_IF;
 		
 		1:
-			XSM_Ctrl_2.Cmd.Velocity := -500;
+			XSM_Ctrl_2.Cmd.Velocity := -200;
 			Homing_status_2 := 10;
 			XSM_Ctrl_2.Cmd.Stop := FALSE;
 			XSM_Ctrl_2.Parameters.Ignore_SWLimits := TRUE;	
@@ -413,9 +374,9 @@ PROGRAM _CYCLIC
 			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
 			
 		20:
-			IF (XSM_Ctrl_2.IO_Mapping.InputStatus = 2) THEN
+			IF (XSM_Ctrl_2.IO_Mapping.InputStatus = 2) OR (XSM_Ctrl_2.IO_Mapping.InputStatus = 3) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
-				XSM_Ctrl_2.Cmd.Velocity := 500;
+				XSM_Ctrl_2.Cmd.Velocity := 200;
 				Homing_status_2 := 30;
 			END_IF;
 			
@@ -429,7 +390,7 @@ PROGRAM _CYCLIC
 			IF ( Status <> MANUAL AND Status <> AUTO) THEN Homing_status_2:= 50; END_IF;
 			
 		40:
-			IF (NOT (XSM_Ctrl_2.IO_Mapping.InputStatus = 2)) THEN
+			IF (NOT (XSM_Ctrl_2.IO_Mapping.InputStatus = 2) AND NOT (XSM_Ctrl_2.IO_Mapping.InputStatus = 3)) THEN
 				XSM_Ctrl_2.Cmd.Stop := TRUE;
 				Homing_status_2 := 50;
 			END_IF;
@@ -460,6 +421,7 @@ PROGRAM _CYCLIC
 			
 		1: // idle auto
 			XSM_Ctrl_2.Cmd.Distance := Dim_etichetta;
+			old_pos_2 := XSM_Ctrl_2.Monitor.Actual_Position;
 			IF ((glb_cmd_2.sparo) AND XSM_Ctrl_2.PowerOn AND Homed_2) THEN FW_step_status_2 := 10; glb_cmd_2.sparo := 0; END_IF;
 			
 			IF (Empty_Mag_22.Empty_Mag_Sensor) THEN FW_step_status_2 := 20; END_IF;
@@ -592,6 +554,7 @@ PROGRAM _CYCLIC
 	posizione_salvata_2 := XSM_Ctrl_2.Monitor.Actual_Position;
 	
 	IF (XSM_Ctrl_2.Monitor.Home_OK AND (NOT Disable_refresh_pos_2)) THEN 	posizione_salvata_2 := XSM_Ctrl_2.Monitor.Actual_Position; END_IF;
+	
 	
 	
 END_PROGRAM

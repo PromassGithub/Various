@@ -235,9 +235,9 @@ PROGRAM _CYCLIC
 			
 		1:	//Controllo sensori
 			
-			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded) THEN
+			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor AND glb_cmd.Cartridge_loaded_Gun) THEN
 				Gun_Switch_0.Gun_Switch_Status := 10;
-			ELSIF (NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded) THEN
+			ELSIF (NOT Empty_Mag_22.Empty_Mag_Sensor AND glb_cmd_2.Cartridge_loaded_Gun) THEN
 				Gun_Switch_0.Gun_Switch_Status := 20;
 			ELSE
 				Gun_Switch_0.Gun_Switch_Status := 0;
@@ -247,8 +247,8 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_1_Active := 1;
 			Gun_Switch_0.Gun_2_Active := 0;
 			
-			IF (Empty_Mag_1_0.Empty_Mag_Sensor OR (NOT glb_cmd.Cartridge_loaded)) THEN
-				glb_cmd.Cartridge_loaded := 0;
+			IF (Empty_Mag_1_0.Empty_Mag_Sensor OR (NOT glb_cmd.Cartridge_loaded_Gun)) THEN
+				glb_cmd.Cartridge_loaded_Gun := 0;
 				Gun_Switch_0.Gun_Switch_Status := 30;
 			END_IF
 			
@@ -258,8 +258,8 @@ PROGRAM _CYCLIC
 			Gun_Switch_0.Gun_2_Active := 1;
 			Gun_Switch_0.Gun_1_Active := 0;
 			
-			IF (Empty_Mag_22.Empty_Mag_Sensor OR (NOT glb_cmd_2.Cartridge_loaded)) THEN
-				glb_cmd_2.Cartridge_loaded := 0;
+			IF (Empty_Mag_22.Empty_Mag_Sensor OR (NOT glb_cmd_2.Cartridge_loaded_Gun)) THEN
+				glb_cmd_2.Cartridge_loaded_Gun := 0;
 				Gun_Switch_0.Gun_Switch_Status := 30;
 			END_IF
 		
@@ -364,53 +364,15 @@ PROGRAM _CYCLIC
 	CASE Vac_Status OF
 		
 		0:	//Start 
+			glb_io.Do.Vacuum_On_Off := 0;
 			IF ((Status = AUTO OR Status = MANUAL) AND glb_err.pending_alarms = 0) THEN
 				Vac_Status := 1;
 			END_IF;
 			
-		(*	Vac_Status := 1;*)
-			
 		1:	//Vacuum ON
 			glb_io.Do.Vacuum_On_Off := 1;
-			Vac_Status := 10;
 			
-		10:	//Idle
-			IF (Gun_Switch_0.Gun_1_Active) THEN
-				Vac_Status := 20;
-			ELSIF (Gun_Switch_0.Gun_2_Active) THEN
-				Vac_Status := 30;
-			ELSE
-				Vac_Status := 0;
-			END_IF;
-			
-			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
-			
-		20:	//Vacuum to Gun 1
-			glb_io.Do.Vacuum_Direction := 1;
-			
-			IF (NOT Gun_Switch_0.Gun_1_Active) THEN
-				Vac_Status := 10;
-			END_IF;
-			
-			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
-		
-		30:	//Vacuum to Gun 2
-			glb_io.Do.Vacuum_Direction := 0;
-			
-			IF (NOT Gun_Switch_0.Gun_2_Active) THEN
-				Vac_Status := 10;
-			END_IF;
-		
-			IF ((Status <> AUTO) OR (Status <> MANUAL)) THEN Vac_Status := 31; END_IF;
-			
-		31:	//Vacuum OFF
-			glb_io.Do.Vacuum_On_Off := 0;
-			Vac_Status := 40;
-		
-		
-		40:	//Reset & Back to Start
-			glb_io.Do.Vacuum_Direction := 0;
-			Vac_Status := 0;
+			IF ((Status <> AUTO) AND (Status <> MANUAL)) THEN Vac_Status := 0; END_IF;
 		
 	END_CASE;
 				
@@ -429,11 +391,11 @@ PROGRAM _CYCLIC
 	//--------------------AIR------------------------------------
 	
 	//Feedback air supply
-//	IF (NOT Feedback_0.Feedback_Air) THEN
-//		glb_err.Air := TRUE;
-//	ELSE
-//		glb_err.Air := FALSE;
-//	END_IF;
+	IF (NOT Feedback_0.Feedback_Air) THEN
+		glb_err.Air := TRUE;
+	ELSE
+		glb_err.Air := FALSE;
+	END_IF;
 	
 	//--------------------Emergenze------------------------------------
 	
@@ -512,7 +474,7 @@ PROGRAM _CYCLIC
 			
 	Gun_0x[1].PT_pist_Delay := Gun_0x[2].PT_pist_Delay := Gun_0x[3].PT_pist_Delay := Gun_0x[4].PT_pist_Delay := Gun_0x[5].PT_pist_Delay := Gun_0x[6].PT_pist_Delay := Ricette.PT_ritardo;
 	TON_01.PT := Tempo_Delay;				// tempo delay pistone sollevamento pesce
-	TON_02.PT := T#60ms; 					// tempo triggerr pistola
+	TON_02.PT := Ricette.PT_gun; 					// tempo triggerr pistola
 	Gun_0x[1].PT_trigger_gun := Gun_0x[2].PT_trigger_gun := Gun_0x[3].PT_trigger_gun := Gun_0x[4].PT_trigger_gun := Gun_0x[5].PT_trigger_gun := Gun_0x[6].PT_trigger_gun := Ricette.PT_gun;
 	Gun_0x[1].PT_end_stop := Gun_0x[2].PT_end_stop := Gun_0x[3].PT_end_stop := Gun_0x[4].PT_end_stop := Gun_0x[5].PT_end_stop := Gun_0x[6].PT_end_stop := TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll

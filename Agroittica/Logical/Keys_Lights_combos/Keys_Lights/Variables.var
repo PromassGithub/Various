@@ -13,10 +13,12 @@ VAR
 	Blink_Cmd : BOOL := FALSE;
 	Blink_Counter : USINT := 0;
 	RESET : BOOL := FALSE;
-	Auto_Homing_Control : BOOL := FALSE;
-	Auto_Homing_Control_2 : BOOL := FALSE;
+	Homing_Control : BOOL := FALSE;
+	Homing_Control_2 : BOOL := FALSE;
 	Manual_Homing_Control : BOOL := FALSE;
 	Manual_Homing_Control_2 : BOOL := FALSE;
+	Cartridge_Unloaded_control_2 : BOOL := FALSE;
+	Cartridge_Unloaded_control : BOOL := FALSE;
 	Cartridge_loaded_control : BOOL := FALSE;
 	Cartridge_loaded_control_2 : BOOL := FALSE;
 END_VAR

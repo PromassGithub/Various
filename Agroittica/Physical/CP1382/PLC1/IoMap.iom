@@ -29,19 +29,18 @@ VAR_CONFIG
 	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus02;
 	Cyclic#1.Feedback_0.Feedback_Em_Bt AT %IX."X2".DigitalInput13;
 	Cyclic#1.Feedback_0.Feedback_Air AT %IX."X2".DigitalInput14;
-	Cyclic#1.Lamp_02.Lamp2Allarme AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput01;
-	Cyclic#1.Lamp_01.Lamp1Allarme AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput02;
-	Cyclic#1.Lamp_02.Lamp2Bianco AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput03;
-	Cyclic#1.Lamp_01.Lamp1Bianco AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput04;
-	Cyclic#1.Lamp_02.Lamp2Verde AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput05;
-	Cyclic#1.Lamp_01.Lamp1Verde AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput06;
+	Cyclic#1.Beacon_1.Beeper_Alarm AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput01;
+	Cyclic#1.Beacon_2.Beeper_Alarm AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput02;
+	Cyclic#1.Beacon_1.White AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput03;
+	Cyclic#1.Beacon_2.White AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput04;
+	Cyclic#1.Beacon_1.Green AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput05;
+	Cyclic#1.Beacon_2.Green AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput06;
 	Cyclic#1.glb_io.Di.Si_03 AT %IX."X67BC8321-1".IF1.ST1.DigitalInput08;
 	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
 	Cyclic#1.::glb_io.Ai.Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
 	glb_io.Do.Main_Piston_Down AT %QX."X3".DigitalOutput10;
 	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput03;
 	glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
-	glb_io.Do.Vacuum_On_Off AT %QX."X3".DigitalOutput11;
 	glb_io.Di.Automatic AT %IX."X2".DigitalInput02;
 	glb_io.Di.Stop AT %IX."X2".DigitalInput03;
 	glb_io.Di.Manual AT %IX."X2".DigitalInput04;
@@ -53,4 +52,5 @@ VAR_CONFIG
 	glb_io.Do.Green_Light AT %QX."X3".DigitalOutput05;
 	glb_io.Do.Red_Light AT %QX."X3".DigitalOutput06;
 	glb_io.Do.Blue_Light AT %QX."X3".DigitalOutput07;
+	glb_io.Do.Vacuum_On_Off AT %QX."X3".DigitalOutput08;
 END_VAR
