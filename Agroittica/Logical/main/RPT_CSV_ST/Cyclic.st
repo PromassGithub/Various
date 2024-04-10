@@ -14,7 +14,7 @@ PROGRAM _CYCLIC
 	IF (fucking_debug) THEN step_rpt := step_force; END_IF
 	
 	//comando reset progressivo
-	IF (struct_time.day <> Saved_day) (*(Day_test<> Saved_day)*) THEN
+	IF (struct_time.day <> Saved_day (*Day_test<> Saved_day*)) THEN
 		Counter_Reset := 1;
 	END_IF;
 		
@@ -155,7 +155,7 @@ PROGRAM _CYCLIC
 			
 			// salvo il giorno in una variabile ritentiva
 			Saved_day := struct_time.day;
-//			Saved_day := Day_test;
+			//Saved_day := Day_test;
 			
 			//Gestione numero progressivo, ogni 400000 elementi il progressivo avanza
 			IF (filelen >= 400000) THEN
@@ -164,8 +164,11 @@ PROGRAM _CYCLIC
 				New_CSV := 0;
 			END_IF;
 			
-			IF New_CSV THEN
-				Counter := Counter +1;
+			IF (New_CSV AND (NOT New_CSV_cmd)) THEN
+				Counter 	:= Counter +1;
+				New_CSV_cmd := 1;
+			ELSIF ((NOT New_CSV) AND New_CSV_cmd) THEN
+				New_CSV_cmd := 0;
 			END_IF;
 		
 		CREATE_HEADER_CSV_FILE:	
@@ -382,7 +385,6 @@ PROGRAM _CYCLIC
 			END_IF
 
 	END_CASE;	
-	
 	
 	(*********************************************** CREATE DIR WHERE SAVE THE CAVITIES INFO LINKE TO THE RECIPES **************************************************)	
 
