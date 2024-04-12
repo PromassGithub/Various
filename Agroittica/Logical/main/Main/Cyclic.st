@@ -474,7 +474,7 @@ PROGRAM _CYCLIC
 			
 	Gun_0x[1].PT_pist_Delay := Gun_0x[2].PT_pist_Delay := Gun_0x[3].PT_pist_Delay := Gun_0x[4].PT_pist_Delay := Gun_0x[5].PT_pist_Delay := Gun_0x[6].PT_pist_Delay := Ricette.PT_ritardo;
 	TON_01.PT := Tempo_Delay;				// tempo delay pistone sollevamento pesce
-	TON_02.PT := Ricette.PT_gun; 					// tempo triggerr pistola
+	TON_02.PT := Ricette.PT_gun; 					// tempo trigger pistola
 	Gun_0x[1].PT_trigger_gun := Gun_0x[2].PT_trigger_gun := Gun_0x[3].PT_trigger_gun := Gun_0x[4].PT_trigger_gun := Gun_0x[5].PT_trigger_gun := Gun_0x[6].PT_trigger_gun := Ricette.PT_gun;
 	Gun_0x[1].PT_end_stop := Gun_0x[2].PT_end_stop := Gun_0x[3].PT_end_stop := Gun_0x[4].PT_end_stop := Gun_0x[5].PT_end_stop := Gun_0x[6].PT_end_stop := TON_03.PT := Ricette.PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;					// Sicurezza pistone soll

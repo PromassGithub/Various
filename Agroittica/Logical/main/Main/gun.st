@@ -77,7 +77,7 @@ FUNCTION_BLOCK gun
 	END_IF
 	TON_03.PT := PT_end_stop;		// tempo di attesa alla fine del ciclo
 	TON_04.PT := T#1000ms;			// Sicurezza pistone soll
-	TON_08.PT := PT_piston_up;		// Se imposto questo tempo il ritorno del pistone è comandato da queto timer + il tempo della pistola (ton_2)
+	TON_08.PT := PT_piston_up;		// Se imposto questo tempo il ritorno del pistone è comandato da questo timer + il tempo della pistola (ton_2)
 	
 	
 END_FUNCTION_BLOCK
