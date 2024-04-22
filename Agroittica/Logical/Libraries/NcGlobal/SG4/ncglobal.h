@@ -1,4 +1,4 @@
-/* ncglobal.h V5.22.1 */ 
+/* ncglobal.h V5.24.1 */ 
 /* COPYRIGHT (C) B&R Industrial Automation GmbH */ 
 
 /* Automation Studio generated header file */
@@ -710,6 +710,7 @@
  #define ncSTEP_INTO 221U
  #define ncSTEP_OVER 220U
  #define ncSTOP 261U
+ #define ncSTOP_HOMING 255U
  #define ncSW_END 1U
  #define ncSW_OFF 259U
  #define ncSW_ON 258U
@@ -1514,6 +1515,7 @@
  _IEC_CONST unsigned char ncSTEP_INTO = 221U;
  _IEC_CONST unsigned char ncSTEP_OVER = 220U;
  _IEC_CONST unsigned short ncSTOP = 261U;
+ _IEC_CONST unsigned char ncSTOP_HOMING = 255U;
  _IEC_CONST unsigned char ncSW_END = 1U;
  _IEC_CONST unsigned short ncSW_OFF = 259U;
  _IEC_CONST unsigned short ncSW_ON = 258U;

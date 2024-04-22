@@ -75,10 +75,14 @@
  1029: Parameter schreiben nicht erlaubt: Abbruch-Rampe aktiv
  1030: Funktion ist bei ACOPOS Simulation nur im Modus 'Complete' verfügbar
  1031: Lageregler Zykluszeit überschritten - CPU Auslastung zu hoch
- 1032: Internal bus error
+ 1032: Interner Datenbus: CPU Kommunikationsproblem
        Info(UDINT): Error code
  1034: Wert des Parameters in Verbindung mit Motorgebergetriebe nicht erlaubt
  1035: Parameter schreiben bei aktivem Geber nicht erlaubt.
+ 1036: Interner Datenbus: Hardware Kommunikationsproblem
+       Info(UDINT): Error code
+ 1037: Interner Datenbus: Einsteckkarte Kommunikationsproblem
+       Info(UDINT): Error code
  2001: Upload der Trace-Daten nicht erlaubt: Aufzeichnung aktiv 
  2003: Trace-Start nicht erlaubt: Aufzeichnung aktiv
  2006: Initialisierung der Trace-Parameter nicht erlaubt: Aufzeichnung aktiv
@@ -190,8 +194,6 @@
  6047: Haltebremse: Ansteuerungssignal aus und Ausgangstatus ein.
  6048: Motorhaltebremse Bewegungsüberwachung: Positionsfehler zu groß
        Info(REAL): Positionsfehler
- 6049: Wechselrichter: Ausgang: Strommessung defekt
-       Info(USINT): Phase
  6050: Parameter schreiben nicht erlaubt: Sollstromfilter oder Notchfilter aktiv
  6051: Einphasen: Geschwindigkeit zu hoch
        Info(REAL): Grenzgeschwindigkeit
@@ -588,6 +590,8 @@
        Info(REAL): Position
 11103: Geber: Selbstdiagnose hat einen Fehler im Gebersystem festgestellt
        Info(UDINT): Quelle
+11104: Geber: Dynamic Shuttle Capture ist fehlerhaft und wurde abgebrochen
+       Info(UDINT): Aktueller Status
 29200: Das Achsobjekt ist ungültig
        Info(UINT): PLCopen_FB
 29203: Antrieb nicht bereit
@@ -1376,6 +1380,7 @@
        Info(UDINT): EPC
 33007: Violation address
        Info(UDINT): ADDR
+33010: Watchdog-Reset wurde ausgeführt
 35000: SMC FS: Interner Fehler, Progammablauf
        Info(UDINT): Switch ID
 35001: SMC FS: Interner Fehler, NULL Pointerzugriff
@@ -2146,7 +2151,7 @@
        Info(USINT): Geber
 41001: Kühler-Temperatursensor: Warngrenze überschritten
        Info(REAL): Kühlertemperatur
-41002: Kühler-Temperatursensor: Nicht angeschlossen oder zerstört
+41002: Kühler-Temperatursensor: Temperaturmessbereich unterschritten
        Info(REAL): Grenztemperatur
 41011: Temperatursensor (Motor|Drossel|Extern): Warngrenze überschritten
        Info(REAL): Temperatur
@@ -2228,4 +2233,9 @@
        Info(UINT): Testversion-Nummer
 64019: mapp Motion ACOPOS FW Testversion: SPS Datum/Zeit außerhalb Gültigkeitsperiode
 64020: NCSYS ist auf dem Zielsystem nicht vorhanden
+64021: NC Software Testversion: SPS Datum/Zeit außerhalb Gültigkeitsperiode
+64022: NC Software Testversion (Gültigkeitsperiode im Logger)
+       Info(UDINT): Testversion-Nummer
+64023: NC Software Prototyp-Version (Einsatz auf Serienmaschinen nicht erlaubt)
+       Info(UDINT): Prototyp-Version-Nummer
 65535: Response-Fehler

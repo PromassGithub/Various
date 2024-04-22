@@ -694,6 +694,7 @@ VAR CONSTANT
     ncSTEP_INTO                        :USINT    := 221;          (* Next Step *)
     ncSTEP_OVER                        :USINT    := 220;          (* Next Step *)
     ncSTOP                             :UINT     := 16#0105;      (* Stop *)
+    ncSTOP_HOMING                      :USINT    := 255;          (* Stop homing procedure *)
     ncSW_END                           :USINT    := 1;            (* Software end position *)
     ncSW_OFF                           :UINT     := 16#0103;      (* Switch off *)
     ncSW_ON                            :UINT     := 16#0102;      (* Switch on *)

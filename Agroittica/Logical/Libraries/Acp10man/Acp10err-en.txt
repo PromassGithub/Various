@@ -75,10 +75,14 @@
  1029: Parameter cannot be written: Stop ramp active
  1030: Function is available with ACOPOS simulation only in mode 'Complete'
  1031: Position controller cycle time exceeded - CPU load too high
- 1032: Internal bus error
+ 1032: Internal databus: CPU communication problem
        Info(UDINT): Error code
  1034: Value of parameter in connection with motor encoder gear not allowed
  1035: Parameter cannot be written while a encoder is active.
+ 1036: Internal databus: Hardware communication problem
+       Info(UDINT): Error code
+ 1037: Internal databus: Plug-in module communication problem
+       Info(UDINT): Error code
  2001: Upload of trace data not allowed: Recording active
  2003: Trace start not allowed: Recording active
  2006: Initialization of trace parameters not allowed: Recording active
@@ -190,8 +194,6 @@
  6047: Holding brake: Control signal off and output status on 
  6048: Motor holding brake movement monitor: Position error too large
        Info(REAL): Position error
- 6049: Inverter: Output: Current measurement faulty
-       Info(USINT): Phase
  6050: Write parameter not allowed: Set current filter or notch filter active
  6051: Phasing: Speed to high
        Info(REAL): Speed limit
@@ -585,9 +587,11 @@
 11101: Encoder: Signal amplitude too low
        Info(REAL): Position
 11102: Encoder: Signal amplitude too high
-       Info(REAL): Posittion
+       Info(REAL): Position
 11103: Encoder: Self-diagnosis has detected an error in the encoder system
        Info(UDINT): Source
+11104: Encoder: Dynamic Shuttle Capture is faulty and was aborted
+       Info(UDINT): Current status
 29200: The axis object is invalid
        Info(UINT): PLCopen_FB
 29203: Drive is not ready
@@ -1376,6 +1380,7 @@
        Info(UDINT): EPC
 33007: Violation address
        Info(UDINT): ADDR
+33010: Watchdog reset has been executed
 35000: SMC FS: Internal error, Program flow
        Info(UDINT): Switch ID
 35001: SMC FS: Internal error, NULL pointer access
@@ -2146,7 +2151,7 @@
        Info(USINT): Encoder
 41001: Heatsink temperature sensor: Warning limit exceeded
        Info(REAL): Heatsink temperature
-41002: Heatsink temperature sensor: Not connected or damaged
+41002: Heatsink temperature sensor: Temperature measuring range undershot
        Info(REAL): Temperature limit
 41011: Temperature sensor (Motor|Choke|External): Warning limit exceeded
        Info(REAL): Temperature
@@ -2228,4 +2233,9 @@
        Info(UINT): Test version number
 64019: mapp Motion ACOPOS FW test version: PLC date/time outside validity period
 64020: NCSYS does not exist on the target system
+64021: NC Software test version: PLC date/time outside validity period
+64022: NC software test version (validity period in Logger)
+       Info(UDINT): Test version number
+64023: NC software prototype version (use on serial production machines not allowed)
+       Info(UDINT): Prototyp version number
 65535: Response error

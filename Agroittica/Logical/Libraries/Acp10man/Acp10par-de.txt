@@ -519,7 +519,7 @@
   626: Netzwerk-Kopplung: Multiplikationsfaktor der Zykluszeit
   627: Kurvenautomat: Zähler der Zustandsübergänge
   628: VAX Kurvenautomat: Zähler der Zustandsübergänge
-  629: INTERNAL629
+  629: VAX: Konfiguration
   630: VAX Meldungen: Fehlernummer
   631: VAX Meldungen: Fehler-Zusatzinfo
   632: VAX Meldungen: Fehlersatz
@@ -1012,12 +1012,12 @@
  1139: PowerMeter: Modus
  1140: PowerMeter: Beobachtungszeitinterval
  1141: PowerMeter: Trigger Parameter-ID
- 1142: PowerMeter: aktuelle Zykluszeit
+ 1142: PowerMeter: Aktuelle Zykluszeit
  1143: PowerMeter: Zykluszähler
- 1144: PowerMeter: mittlere Wirkleistung
- 1145: PowerMeter: minimale Wirkleistung
- 1146: PowerMeter: maximale Wirkleistung
- 1147: PowerMeter: mittlere Blindleistung
+ 1144: PowerMeter: Mittlere Wirkleistung
+ 1145: PowerMeter: Minimale Wirkleistung
+ 1146: PowerMeter: Maximale Wirkleistung
+ 1147: PowerMeter: Mittlere Blindleistung
  1148: PowerMeter: Konsumierte Energie
  1149: PowerMeter: Produzierte Energie
  1150: Grenzwerte: Geschwindigkeitsfehler für Abbruch einer Bewegung
@@ -1518,8 +1518,8 @@
  1659: INTERNAL1659
  1660: INTERNAL1660
  1661: CTRL Lageregler: Index der Parameter-ID für zyklische Sollposition
- 1662: Geber1: Zeitüberschreitung für die Positionsschätzung
- 1663: Geber2: Zeitüberschreitung für die Positionsschätzung
+ 1662: Geber1: Zeit für die Fehlerbehandlung
+ 1663: Geber2: Zeit für die Fehlerbehandlung
  1664: Sollwertgenerator: Modus
  1665: Grenzwerte: Maximaler Ruck
  1666: Basis-Bewegungen: Ruck
@@ -1590,16 +1590,24 @@
  1734: INTERNAL1734
  1735: INTERNAL1735
  1736: INTERNAL1736
- 1737: INTERNAL1737
- 1738: INTERNAL1738
- 1739: INTERNAL1739
- 1740: INTERNAL1740
- 1741: INTERNAL1741
- 1742: INTERNAL1742
- 1743: INTERNAL1743
- 1744: INTERNAL1744
+ 1737: VAX Grenzwerte: Maximale Geschwindigkeit in positive Richtung
+ 1738: VAX Grenzwerte: Maximale Geschwindigkeit in negative Richtung
+ 1739: VAX Grenzwerte: Maximale Beschleunigung in positive Richtung
+ 1740: VAX Grenzwerte: Maximale Verzögerung in positive Richtung
+ 1741: VAX Grenzwerte: Maximale Beschleunigung in negative Richtung
+ 1742: VAX Grenzwerte: Maximale Verzögerung in negative Richtung
+ 1743: VAX Grenzwerte: Positive SW-Endlage
+ 1744: VAX Grenzwerte: Negative SW-Endlage
  1745: INTERNAL1745
  1746: Leistungsteil: Temperatursensor 6: Temperatur
+ 1747: Temperatursensor: Wandlerwert
+ 1748: Motorgetriebe: Viskose Reibung
+ 1749: Motorgetriebe: Haftreibung
+ 1750: Motorgetriebe: Begrenzungsmodus
+ 1751: Geber2: Fehlermodus
+ 1752: CTRL Drehzahl: Sollstromfilter1 Wert0
+ 1753: CTRL Drehzahl: Sollstromfilter2 Wert0
+ 1754: CTRL Drehzahl: Sollstromfilter3 Wert0
  3072: FB LOGIC: Modus
  3080: FB LOGIC: Parameter-ID Eingang1
  3088: FB LOGIC: Parameter-ID Eingang2
@@ -1753,9 +1761,9 @@
  6696: FB CMP: Ergebniswert
  7168: FB DELAY: Parameter-ID Eingang
  7176: FB DELAY: Totzeit
- 7184: FB DELAY: I4 Ergebniswert
- 7192: FB DELAY: I4 Ergebniswert Nachkommateil
- 7200: FB DELAY: R4 Ergebniswert
+ 7184: FB DELAY: Ergebniswert I4
+ 7192: FB DELAY: Ergebniswert I4 Nachkommateil
+ 7200: FB DELAY: Ergebniswert R4
  7680: FB PID: Parameter-ID Eingang
  7688: FB PID: Proportional-Verstärkung
  7696: FB PID: Integrator-Nachstellzeit
@@ -2227,6 +2235,9 @@
 63694: Motor: Temperaturmodell: Temperatur Spule
 63695: INTERNAL63695
 63696: INTERNAL63696
+63697: INTERNAL63697
+63698: INTERNAL63698
+63699: INTERNAL63699
 63711: INTERNAL63711
 63712: INTERNAL63712
 63713: INTERNAL63713
@@ -2339,8 +2350,16 @@
 63820: INTERNAL63820
 63821: INTERNAL63821
 63822: INTERNAL63822
+63823: INTERNAL63823
+63824: INTERNAL63824
+63825: INTERNAL63825
+63826: INTERNAL63826
+63827: INTERNAL63827
+63828: INTERNAL63828
+63829: INTERNAL63829
 63830: INTERNAL63830
 63831: INTERNAL63831
+63832: INTERNAL63832
 63879: CTRL Regler: Konfiguration: Index eines Parametersatzes
 63880: CTRL Position: Istposition des Shuttles auf Segment
 63881: INTERNAL63881
@@ -2362,6 +2381,20 @@
 63900: INTERNAL63900
 63901: INTERNAL63901
 63902: INTERNAL63902
+63903: INTERNAL63903
+63904: INTERNAL63904
+63905: INTERNAL63905
+63906: INTERNAL63906
+63907: INTERNAL63907
+63908: INTERNAL63908
+63909: INTERNAL63909
+63910: INTERNAL63910
+63911: INTERNAL63911
+63912: INTERNAL63912
+63913: INTERNAL63913
+63914: INTERNAL63914
+63915: INTERNAL63915
+63916: INTERNAL63916
 64201: Antriebsanpassung: Geschwindigkeit bei maximalem Ausgangswert
 64225: Geber1: Wertebereich der Geberposition
 64232: Schrittmotor: Schrittauflösung: Schritte pro Motorumdrehung

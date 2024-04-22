@@ -1,6 +1,6 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
-/* MpUser 5.22.1 */
+/* MpUser 5.24.1 */
 
 #ifndef _MPUSER_
 #define _MPUSER_
@@ -9,7 +9,7 @@ extern "C"
 {
 #endif
 #ifndef _MpUser_VERSION
-#define _MpUser_VERSION 5.22.1
+#define _MpUser_VERSION 5.24.1
 #endif
 
 #include <bur/plctypes.h>

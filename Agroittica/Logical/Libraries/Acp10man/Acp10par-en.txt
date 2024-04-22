@@ -99,7 +99,7 @@
   105: CTRL Position controller: Maximum integral action
   106: Encoder1: Load scaling: Units per load revolution
   107: Encoder1: Load scaling: Encoder revolutions per load revolution
-  108: Encoder1: Encoder scaling: motor revolutions
+  108: Encoder1: Encoder scaling: Motor revolutions
   109: Encoder1: Encoder scaling: increments per encoder revolution
   110: Simulation mode: Command
   111: CTRL Position controller: Actual position
@@ -198,21 +198,21 @@
   210: Inverter: Phase 2: Current 
   211: Motor holding brake: Control monitoring filter time 
   212: Encoder1: Diagnosis 1
-  213: CTRL Current controller: Set stator current quadrature component
-  214: CTRL Current controller: Actual stator current quadrature component
+  213: CTRL Current: Set stator current quadrature component
+  214: CTRL Current: Actual stator current quadrature component
   215: INTERNAL215
-  216: CTRL Current controller: Stator voltage quadrature component
+  216: CTRL Current: Stator voltage quadrature component
   217: INTERNAL217
-  218: CTRL Current controller: Set stator current direct component
-  219: CTRL Current controller: Actual stator current direct component
+  218: CTRL Current: Set stator current direct component
+  219: CTRL Current: Actual stator current direct component
   220: INTERNAL220
-  221: CTRL Current controller: Stator voltage direct component
+  221: CTRL Current: Stator voltage direct component
   222: Flux controller: Manipulated variable
-  223: CTRL Current controller: Proportional amplification factor
+  223: CTRL Current: Proportional amplification factor
   224: SafeMOTION: Speed limit (for mapp Safety)
-  225: CTRL Current controller: Integral action time
-  226: CTRL Speed controller: Notchfilter frequence
-  227: CTRL Speed controller: Notchfilter bandwidth
+  225: CTRL Current: Integral action time
+  226: CTRL Speed: Notchfilter frequence
+  227: CTRL Speed: Notchfilter bandwidth
   228: CTRL Two encoder control: Position difference
   229: CTRL Two encoder control: Position difference limit for stop of a movement
   230: CTRL Position controller: Actual encoder position parameter ID
@@ -231,16 +231,16 @@
   244: Encoder2: SSI Parity check
   245: Encoder1: Actual position per revolution
   246: Encoder2: Actual position per revolution
-  247: CTRL Current controller: Additive torque
+  247: CTRL Current: Additive torque
   248: CTRL Torque limiter: Maximum acceleration torque in positive direction
   249: CTRL Torque limiter: Maximum acceleration torque in negative direction
-  250: CTRL Speed controller: Set speed
-  251: CTRL Speed controller: Actual speed
+  250: CTRL Speed: Set speed
+  251: CTRL Speed: Actual speed
   252: INTERNAL252
-  253: CTRL Speed controller: Proportional amplification
+  253: CTRL Speed: Proportional amplification
   254: INTERNAL254
-  255: CTRL Speed controller: Integral action time
-  256: CTRL Speed controller: Manipulated variable
+  255: CTRL Speed: Integral action time
+  256: CTRL Speed: Manipulated variable
   257: CTRL Flux: Set magnetizing current
   258: CTRL Flux: Actual magnetizing current
   259: CTRL Flux: Proportional amplification factor
@@ -267,12 +267,12 @@
   280: Encoder1: Gear ratio motor revolutions
   281: CTRL Feed forward: Set stator current
   282: CTRL Feed forward: Parameter ID load torque
-  283: CTRL Speed controller: Filter time constant
+  283: CTRL Speed: Filter time constant
   284: Encoder3: Resolver polepairs per encoder revolution
   285: CTRL Feed forward: Parameter ID mass moment of inertia
   286: Encoder1: Emulation: Output parameter ID
   287: Motor holding brake: Electrical state
-  288: CTRL Speed controller: Parameter ID additive set value
+  288: CTRL Speed: Parameter ID additive set value
   289: Encoder2: Encoder scaling: Increments per encoder revolution
   292: Function block: Constant zero
   298: CTRL DC bus: Voltage
@@ -290,7 +290,7 @@
   310: Function block: Constant one
   311: ENABLE: Configuration
   312: CTRL Flux:  Magnetizing current limiter: Upper limit
-  313: CTRL Speed controller: Monitoring: Speed limit
+  313: CTRL Speed: Monitoring: Speed limit
   314: CTRL Chopper: Minimum pwm duty cycle
   315: Inverter: Junction temperature model: Power loss
   317: INTERNAL317
@@ -301,7 +301,7 @@
   322: INTERNAL322
   323: Motor holding brake: Maximal position error
   324: INTERNAL324
-  325: CTRL Current controller: Additive set value parameter ID
+  325: CTRL Current: Additive set value parameter ID
   326: INTERNAL326
   327: INTERNAL327
   328: CTRL Controller: Mode
@@ -519,7 +519,7 @@
   626: Network coupling: Multiplication factor of cycle time
   627: Cam automat: State transition count
   628: VAX Cam automat: State transition count
-  629: INTERNAL629
+  629: VAX: Configuration
   630: VAX Messages: Error number
   631: VAX Messages: Additional error info
   632: VAX Messages: Error record
@@ -574,8 +574,8 @@
   684: Encoder1: INC Reference pulse interval
   685: Encoder2: INC Reference pulse interval
   686: Encoder3: INC Reference pulse interval
-  687: CTRL Speed controller: Speed limit positive direction
-  688: CTRL Speed controller: Speed limit negative direction
+  687: CTRL Speed: Speed limit positive direction
+  688: CTRL Speed: Speed limit negative direction
   692: CTRL Position controller: Manipulated variable of integrator
   693: Encoder3: Actual position per revolution
   694: Encoder3: Load scaling: Units per load revolution
@@ -594,7 +594,7 @@
   710: Encoder3: Filtered actual position
   711: Encoder3: Emulation: Output parameter ID
   712: Encoder2: Emulation: Output parameter ID
-  713: CTRL Current controller: Set value parameter ID of stator current quadrature component
+  713: CTRL Current: Set value parameter ID of stator current quadrature component
   714: Network coupling: Error status for cyclic position master1
   715: Network coupling: Error status for cyclic position master2
   716: Network coupling: Error status for cyclic position master3
@@ -603,11 +603,11 @@
   719: Encoder1: Encoder command
   720: INTERNAL720
   721: INTERNAL721
-  722: CTRL Vector controller: Actual position parameter ID
+  722: CTRL Vector: Actual position parameter ID
   723: Encoder2: Serial resolution per sinus period
   724: Encoder3: Serial resolution per sinus period
-  725: CTRL Current controller: Set value parameter ID of stator current direct component
-  726: CTRL Speed controller: Parameter ID enable input
+  725: CTRL Current: Set value parameter ID of stator current direct component
+  726: CTRL Speed: Parameter ID enable input
   727: Encoder1: Ignore check
   728: Encoder2: Ignore check
   729: Encoder3: Ignore check
@@ -696,12 +696,12 @@
   821: Encoder3: ADC1 value
   822: Encoder3: ADC2 value
   823: Encoder2: Diagnosis 1
-  824: CTRL Speed controller: Set current filter1 parameter ID for coefficient C0
-  825: CTRL Speed controller: Set current filter2 parameter ID for coefficient C0
-  826: CTRL Speed controller: Set current filter3 parameter ID for coefficient C0
-  827: CTRL Speed controller: Set current filter1 parameter ID for coefficient C1
-  828: CTRL Speed controller: Set current filter2 parameter ID for coefficient C1
-  829: CTRL Speed controller: Set current filter3 parameter ID for coefficient C1
+  824: CTRL Speed: Set current filter1 parameter ID for coefficient C0
+  825: CTRL Speed: Set current filter2 parameter ID for coefficient C0
+  826: CTRL Speed: Set current filter3 parameter ID for coefficient C0
+  827: CTRL Speed: Set current filter1 parameter ID for coefficient C1
+  828: CTRL Speed: Set current filter2 parameter ID for coefficient C1
+  829: CTRL Speed: Set current filter3 parameter ID for coefficient C1
   830: Temperature prediction: Observation time
   831: Temperature prediction: Observation period
   832: Temperature prediction: Counter
@@ -719,7 +719,7 @@
   844: Inverter: Output: Power
   845: CTRL Voltage controller: Parameter ID of set value stator voltage direct component
   846: CTRL Voltage controller: Parameter ID of set value stator voltage quadrature component
-  847: CTRL Vector controller: Parameter-ID of commutation angle
+  847: CTRL Vector: Parameter-ID of commutation angle
   848: CTRL Flux weakening: Integral action time
   849: Motor: Thermal time constant
   850: CTRL DC bus: Proportional amplification factor
@@ -752,7 +752,7 @@
   877: ISQ-Ripple compensation: Mode
   878: Parameter identification: Speed
   879: INTERNAL879
-  880: CTRL vector: Current feed forward time
+  880: CTRL Vector: Current feed forward time
   881: ISQ-Ripple compensation: Current
   882: ISQ-Ripple compensation: Data: Index
   883: ISQ-Ripple compensation: Data: Frequency
@@ -762,7 +762,7 @@
   887: Encoder1: Absolute measuring range
   888: Encoder2: Absolute measuring range
   889: Encoder3: Absolute measuring range
-  890: CTRL Speed controller: Sum of the set speeds
+  890: CTRL Speed: Sum of the set speeds
   891: Encoder1: Maximal expected output frequency
   892: Encoder1: Output stage
   893: Encoder1: Diagnosis 2
@@ -900,24 +900,24 @@
  1027: VAX Basis movements: Halt
  1028: Basis movements: Start movement with current speed
  1029: VAX Basis movements: Start movement with current speed
- 1030: CTRL Speed controller: Set current filter1 type
- 1031: CTRL Speed controller: Set current filter2 type
- 1032: CTRL Speed controller: Set current filter3 type
- 1033: CTRL Speed controller: Set current filter1 coefficient A0
- 1034: CTRL Speed controller: Set current filter2 coefficient A0
- 1035: CTRL Speed controller: Set current filter3 coefficient A0
- 1036: CTRL Speed controller: Set current filter1 coefficient A1
- 1037: CTRL Speed controller: Set current filter2 coefficient A1
- 1038: CTRL Speed controller: Set current filter3 coefficient A1
- 1039: CTRL Speed controller: Set current filter1 coefficient B0
- 1040: CTRL Speed controller: Set current filter2 coefficient B0
- 1041: CTRL Speed controller: Set current filter3 coefficient B0
- 1042: CTRL Speed controller: Set current filter1 coefficient B1
- 1043: CTRL Speed controller: Set current filter2 coefficient B1
- 1044: CTRL Speed controller: Set current filter3 coefficient B1
- 1045: CTRL Speed controller: Set current filter1 coefficient B2
- 1046: CTRL Speed controller: Set current filter2 coefficient B2
- 1047: CTRL Speed controller: Set current filter3 coefficient B2
+ 1030: CTRL Speed: Set current filter1 type
+ 1031: CTRL Speed: Set current filter2 type
+ 1032: CTRL Speed: Set current filter3 type
+ 1033: CTRL Speed: Set current filter1 coefficient A0
+ 1034: CTRL Speed: Set current filter2 coefficient A0
+ 1035: CTRL Speed: Set current filter3 coefficient A0
+ 1036: CTRL Speed: Set current filter1 coefficient A1
+ 1037: CTRL Speed: Set current filter2 coefficient A1
+ 1038: CTRL Speed: Set current filter3 coefficient A1
+ 1039: CTRL Speed: Set current filter1 coefficient B0
+ 1040: CTRL Speed: Set current filter2 coefficient B0
+ 1041: CTRL Speed: Set current filter3 coefficient B0
+ 1042: CTRL Speed: Set current filter1 coefficient B1
+ 1043: CTRL Speed: Set current filter2 coefficient B1
+ 1044: CTRL Speed: Set current filter3 coefficient B1
+ 1045: CTRL Speed: Set current filter1 coefficient B2
+ 1046: CTRL Speed: Set current filter2 coefficient B2
+ 1047: CTRL Speed: Set current filter3 coefficient B2
  1048: Encoder1: Resolver transmission ratio
  1049: CTRL Position controller: Input set position fractional part
  1050: System administration: SW Reset
@@ -1002,7 +1002,7 @@
  1129: ISQ-Ripple compensation: Data: Amplitude for quadrant III
  1130: ISQ-Ripple compensation: Data: Angle for quadrant III
  1131: ISQ-Ripple compensation: Reference system
- 1132: ISQ-Ripple compensation: Data:  Parameter B
+ 1132: ISQ-Ripple compensation: Data: Parameter B
  1133: INTERNAL1133
  1134: ISQ-Ripple compensation: Position offset
  1135: Encoder1: Mode
@@ -1029,7 +1029,7 @@
  1156: CTRL Flux: Parameter-ID Set magnetizing current
  1157: Temperature sensor: Resistance
  1158: Temperature sensor: Parameter-ID Resistance
- 1159: CTRL Speed controller: Speed error
+ 1159: CTRL Speed: Speed error
  1160: INTERNAL1160
  1161: INTERNAL1161
  1162: Inverter: Number of power stages
@@ -1102,15 +1102,15 @@
  1234: Encoder1: Compensation: Maximal current for identification
  1235: CTRL Current: MTPC control: Torque proportional set current
  1236: CTRL Current: MTPC control: Input direct component
- 1237: CTRL Speed controller: Repetitive Control: Command
- 1238: CTRL Speed controller: Repetitive Control: Prediction time
- 1239: CTRL Speed controller: Repetitive Control: Minimal speed
- 1240: CTRL Speed controller: Repetitive Control: Cutoff frequency of filter
- 1241: CTRL Speed controller: Repetitive Control: Order of filter
- 1242: CTRL Speed controller: Repetitive Control: State
- 1243: CTRL Speed controller: Repetitive Control: Type of filter
- 1244: CTRL Speed controller: Repetitive Control: Resolution
- 1245: CTRL Speed controller: Repetitive Control: Output value
+ 1237: CTRL Speed: Repetitive Control: Command
+ 1238: CTRL Speed: Repetitive Control: Prediction time
+ 1239: CTRL Speed: Repetitive Control: Minimal speed
+ 1240: CTRL Speed: Repetitive Control: Cutoff frequency of filter
+ 1241: CTRL Speed: Repetitive Control: Order of filter
+ 1242: CTRL Speed: Repetitive Control: State
+ 1243: CTRL Speed: Repetitive Control: Type of filter
+ 1244: CTRL Speed: Repetitive Control: Resolution
+ 1245: CTRL Speed: Repetitive Control: Output value
  1246: CTRL Speed: Repetitive Control: Parameter 1
  1247: CTRL Speed: Repetitive Control: Parameter 2
  1248: CTRL Speed: Repetitive Control: Mode
@@ -1156,8 +1156,8 @@
  1289: INTERNAL1289
  1291: INTERNAL1291
  1292: INTERNAL1292
- 1293: CTRL Vector controller: Parameter ID of the additive commutation angle
- 1294: CTRL Vector controller: Additive commutation angle
+ 1293: CTRL Vector: Parameter ID of the additive commutation angle
+ 1294: CTRL Vector: Additive commutation angle
  1295: Voltage observer: Phase voltage U
  1296: Voltage observer: Phase voltage V
  1297: Voltage observer: Phase voltage W
@@ -1448,7 +1448,7 @@
  1585: CTRL Model based: Proportional amplification for speed
  1586: CTRL U/f: Torque limiter: Integral action time
  1587: INTERNAL1587
- 1588: Motorgeber: Commutation mode
+ 1588: Motor encoder: Commutation mode
  1593: Encoder1: Position difference per sample
  1594: Encoder2: Position difference per sample
  1595: CTRL Feed forward: Friction model: Coefficient C0
@@ -1518,8 +1518,8 @@
  1659: INTERNAL1659
  1660: INTERNAL1660
  1661: CTRL Position controller: Index of parameter ID for cyclic set position
- 1662: Encoder1: Timeout for position estimation
- 1663: Encoder2: Timeout for position estimation
+ 1662: Encoder1: Time for error handling
+ 1663: Encoder2: Time for error handling
  1664: Set value generator: Mode
  1665: Limit values: Maximum jerk
  1666: Basis movements: Jerk
@@ -1578,7 +1578,7 @@
  1722: Set value generator: Zero vibration filter time T2
  1723: VAX Set value generator: Zero vibration filter coefficient A2
  1724: VAX Set value generator: Zero vibration filter time T2
- 1725: CTRL Speed controller: Manipulated variable of integrator
+ 1725: CTRL Speed: Manipulated variable of integrator
  1726: INTERNAL1726
  1727: INTERNAL1727
  1728: INTERNAL1728
@@ -1590,16 +1590,24 @@
  1734: INTERNAL1734
  1735: INTERNAL1735
  1736: INTERNAL1736
- 1737: INTERNAL1737
- 1738: INTERNAL1738
- 1739: INTERNAL1739
- 1740: INTERNAL1740
- 1741: INTERNAL1741
- 1742: INTERNAL1742
- 1743: INTERNAL1743
- 1744: INTERNAL1744
+ 1737: VAX Limit values: Maximum speed in positive direction
+ 1738: VAX Limit values: Maximum speed in negative direction
+ 1739: VAX Limit values: Maximum acceleration in positive direction
+ 1740: VAX Limit values: Maximum deceleration in positive direction
+ 1741: VAX Limit values: Maximum acceleration in negative direction
+ 1742: VAX Limit values: Maximum deceleration in negative direction
+ 1743: VAX Limit values: Positive SW end position
+ 1744: VAX Limit values: Negative SW end position
  1745: INTERNAL1745
  1746: Power stage: Temperature sensor 6: Temperature
+ 1747: Temperature sensor: Converter value
+ 1748: Motor gearbox: Viscous friction
+ 1749: Motor gearbox: Static friction
+ 1750: Motor gearbox: Limitation mode
+ 1751: Encoder2: Error Mode
+ 1752: CTRL Speed: Set current filter1 value0
+ 1753: CTRL Speed: Set current filter2 value0
+ 1754: CTRL Speed: Set current filter3 value0
  3072: FB LOGIC: Mode
  3080: FB LOGIC: Parameter ID of input1
  3088: FB LOGIC: Parameter ID of input2
@@ -1745,28 +1753,28 @@
  6392: FB AIO: Checks
  6400: FB AIO: Input: Filter: Configuration (Index)
  6408: FB AIO: Input: Filter: Maximal Slew Rate (Index)
- 6656: FB CMP: parameter ID of input
- 6664: FB CMP: threshold
- 6672: FB CMP: window
- 6680: FB CMP: hysteresis window
- 6688: FB CMP: mode
- 6696: FB CMP: result value
- 7168: FB DELAY: parameter ID of input
- 7176: FB DELAY: time
- 7184: FB DELAY: I4 result value
- 7192: FB DELAY: I4 result value fractional part
- 7200: FB DELAY: R4 result value
- 7680: FB PID: parameter ID of input
- 7688: FB PID: proportional amplification factor
- 7696: FB PID: integral action time
- 7704: FB PID: maximum integral action
- 7712: FB PID: derivative action time
- 7720: FB PID: time delay constant
- 7728: FB PID: result value
- 7736: FB PID: parameter ID of enable input
- 7744: FB PID: result of P part
- 7752: FB PID: result of I part
- 7760: FB PID: result of DT1 part
+ 6656: FB CMP: Parameter ID of input
+ 6664: FB CMP: Threshold
+ 6672: FB CMP: Window
+ 6680: FB CMP: Hysteresis window
+ 6688: FB CMP: Mode
+ 6696: FB CMP: Result value
+ 7168: FB DELAY: Parameter ID of input
+ 7176: FB DELAY: Time
+ 7184: FB DELAY: Result value I4
+ 7192: FB DELAY: Result value I4 fractional part
+ 7200: FB DELAY: Result value R4
+ 7680: FB PID: Parameter ID of input
+ 7688: FB PID: Proportional amplification factor
+ 7696: FB PID: Integral action time
+ 7704: FB PID: Maximum integral action
+ 7712: FB PID: Derivative action time
+ 7720: FB PID: Time delay constant
+ 7728: FB PID: Result value
+ 7736: FB PID: Parameter ID of enable input
+ 7744: FB PID: Result of P part
+ 7752: FB PID: Result of I part
+ 7760: FB PID: Result of DT1 part
  8192: FB CURVE: Mode
  8200: FB CURVE: Parameter ID of input
  8208: FB CURVE: Index of cam data
@@ -2039,145 +2047,145 @@
 63498: INTERNAL63498
 63499: INTERNAL63499
 63500: INTERNAL63500
-63501: CTRL Current controller: Actual phase current of phase 1
-63502: CTRL Current controller: Actual phase current of phase 2
-63503: CTRL Current controller: Actual phase current of phase 3
-63504: CTRL Current controller: Actual phase current of phase 4
-63505: CTRL Current controller: Actual phase current of phase 5
-63506: CTRL Current controller: Actual phase current of phase 6
-63507: CTRL Current controller: Actual phase current of phase 7
-63508: CTRL Current controller: Actual phase current of phase 8
-63509: CTRL Current controller: Actual phase current of phase 9
-63510: CTRL Current controller: Actual phase current of phase 10
-63511: CTRL Current controller: Actual phase current of phase 11
-63512: CTRL Current controller: Actual phase current of phase 12
-63513: CTRL Current controller: Actual phase current of phase 13
-63514: CTRL Current controller: Actual phase current of phase 14
-63515: CTRL Current controller: Actual phase current of phase 15
-63516: CTRL Current controller: Actual phase current of phase 16
-63517: CTRL Current controller: Actual phase current of phase 17
-63518: CTRL Current controller: Actual phase current of phase 18
-63519: CTRL Current controller: Actual phase current of phase 19
-63520: CTRL Current controller: Actual phase current of phase 20
-63521: CTRL Current controller: Actual phase current of phase 21
-63522: CTRL Current controller: Actual phase current of phase 22
-63523: CTRL Current controller: Actual phase current of phase 23
-63524: CTRL Current controller: Actual phase current of phase 24
-63525: CTRL Current controller: Actual phase current of phase 25
-63526: CTRL Current controller: Actual phase current of phase 26
-63527: CTRL Current controller: Actual phase current of phase 27
-63528: CTRL Current controller: Actual phase current of phase 28
-63529: CTRL Current controller: Actual phase current of phase 29
-63530: CTRL Current controller: Actual phase current of phase 30
-63531: CTRL Current controller: Actual phase current of phase 31
-63532: CTRL Current controller: Actual phase current of phase 32
-63533: CTRL Current controller: Actual phase current of phase 33
-63534: CTRL Current controller: Actual phase current of phase 34
-63535: CTRL Current controller: Actual phase current of phase 35
-63536: CTRL Current controller: Actual phase current of phase 36
-63537: CTRL Current controller: Actual phase current of phase 37
-63538: CTRL Current controller: Actual phase current of phase 38
-63539: CTRL Current controller: Actual phase current of phase 39
-63540: CTRL Current controller: Actual phase current of phase 40
-63541: CTRL Current controller: Actual phase current of phase 41
-63542: CTRL Current controller: Actual phase current of phase 42
-63543: CTRL Current controller: Actual phase current of phase 43
-63544: CTRL Current controller: Actual phase current of phase 44
+63501: CTRL Current: Actual phase current of phase 1
+63502: CTRL Current: Actual phase current of phase 2
+63503: CTRL Current: Actual phase current of phase 3
+63504: CTRL Current: Actual phase current of phase 4
+63505: CTRL Current: Actual phase current of phase 5
+63506: CTRL Current: Actual phase current of phase 6
+63507: CTRL Current: Actual phase current of phase 7
+63508: CTRL Current: Actual phase current of phase 8
+63509: CTRL Current: Actual phase current of phase 9
+63510: CTRL Current: Actual phase current of phase 10
+63511: CTRL Current: Actual phase current of phase 11
+63512: CTRL Current: Actual phase current of phase 12
+63513: CTRL Current: Actual phase current of phase 13
+63514: CTRL Current: Actual phase current of phase 14
+63515: CTRL Current: Actual phase current of phase 15
+63516: CTRL Current: Actual phase current of phase 16
+63517: CTRL Current: Actual phase current of phase 17
+63518: CTRL Current: Actual phase current of phase 18
+63519: CTRL Current: Actual phase current of phase 19
+63520: CTRL Current: Actual phase current of phase 20
+63521: CTRL Current: Actual phase current of phase 21
+63522: CTRL Current: Actual phase current of phase 22
+63523: CTRL Current: Actual phase current of phase 23
+63524: CTRL Current: Actual phase current of phase 24
+63525: CTRL Current: Actual phase current of phase 25
+63526: CTRL Current: Actual phase current of phase 26
+63527: CTRL Current: Actual phase current of phase 27
+63528: CTRL Current: Actual phase current of phase 28
+63529: CTRL Current: Actual phase current of phase 29
+63530: CTRL Current: Actual phase current of phase 30
+63531: CTRL Current: Actual phase current of phase 31
+63532: CTRL Current: Actual phase current of phase 32
+63533: CTRL Current: Actual phase current of phase 33
+63534: CTRL Current: Actual phase current of phase 34
+63535: CTRL Current: Actual phase current of phase 35
+63536: CTRL Current: Actual phase current of phase 36
+63537: CTRL Current: Actual phase current of phase 37
+63538: CTRL Current: Actual phase current of phase 38
+63539: CTRL Current: Actual phase current of phase 39
+63540: CTRL Current: Actual phase current of phase 40
+63541: CTRL Current: Actual phase current of phase 41
+63542: CTRL Current: Actual phase current of phase 42
+63543: CTRL Current: Actual phase current of phase 43
+63544: CTRL Current: Actual phase current of phase 44
 63550: INTERNAL63550
-63551: CTRL Current controller: Set phase current of phase 1
-63552: CTRL Current controller: Set phase current of phase 2
-63553: CTRL Current controller: Set phase current of phase 3
-63554: CTRL Current controller: Set phase current of phase 4
-63555: CTRL Current controller: Set phase current of phase 5
-63556: CTRL Current controller: Set phase current of phase 6
-63557: CTRL Current controller: Set phase current of phase 7
-63558: CTRL Current controller: Set phase current of phase 8
-63559: CTRL Current controller: Set phase current of phase 9
-63560: CTRL Current controller: Set phase current of phase 10
-63561: CTRL Current controller: Set phase current of phase 11
-63562: CTRL Current controller: Set phase current of phase 12
-63563: CTRL Current controller: Set phase current of phase 13
-63564: CTRL Current controller: Set phase current of phase 14
-63565: CTRL Current controller: Set phase current of phase 15
-63566: CTRL Current controller: Set phase current of phase 16
-63567: CTRL Current controller: Set phase current of phase 17
-63568: CTRL Current controller: Set phase current of phase 18
-63569: CTRL Current controller: Set phase current of phase 19
-63570: CTRL Current controller: Set phase current of phase 20
-63571: CTRL Current controller: Set phase current of phase 21
-63572: CTRL Current controller: Set phase current of phase 22
-63573: CTRL Current controller: Set phase current of phase 23
-63574: CTRL Current controller: Set phase current of phase 24
-63575: CTRL Current controller: Set phase current of phase 25
-63576: CTRL Current controller: Set phase current of phase 26
-63577: CTRL Current controller: Set phase current of phase 27
-63578: CTRL Current controller: Set phase current of phase 28
-63579: CTRL Current controller: Set phase current of phase 29
-63580: CTRL Current controller: Set phase current of phase 30
-63581: CTRL Current controller: Set phase current of phase 31
-63582: CTRL Current controller: Set phase current of phase 32
-63583: CTRL Current controller: Set phase current of phase 33
-63584: CTRL Current controller: Set phase current of phase 34
-63585: CTRL Current controller: Set phase current of phase 35
-63586: CTRL Current controller: Set phase current of phase 36
-63587: CTRL Current controller: Set phase current of phase 37
-63588: CTRL Current controller: Set phase current of phase 38
-63589: CTRL Current controller: Set phase current of phase 39
-63590: CTRL Current controller: Set phase current of phase 40
-63591: CTRL Current controller: Set phase current of phase 41
-63592: CTRL Current controller: Set phase current of phase 42
-63593: CTRL Current controller: Set phase current of phase 43
-63594: CTRL Current controller: Set phase current of phase 44
+63551: CTRL Current: Set phase current of phase 1
+63552: CTRL Current: Set phase current of phase 2
+63553: CTRL Current: Set phase current of phase 3
+63554: CTRL Current: Set phase current of phase 4
+63555: CTRL Current: Set phase current of phase 5
+63556: CTRL Current: Set phase current of phase 6
+63557: CTRL Current: Set phase current of phase 7
+63558: CTRL Current: Set phase current of phase 8
+63559: CTRL Current: Set phase current of phase 9
+63560: CTRL Current: Set phase current of phase 10
+63561: CTRL Current: Set phase current of phase 11
+63562: CTRL Current: Set phase current of phase 12
+63563: CTRL Current: Set phase current of phase 13
+63564: CTRL Current: Set phase current of phase 14
+63565: CTRL Current: Set phase current of phase 15
+63566: CTRL Current: Set phase current of phase 16
+63567: CTRL Current: Set phase current of phase 17
+63568: CTRL Current: Set phase current of phase 18
+63569: CTRL Current: Set phase current of phase 19
+63570: CTRL Current: Set phase current of phase 20
+63571: CTRL Current: Set phase current of phase 21
+63572: CTRL Current: Set phase current of phase 22
+63573: CTRL Current: Set phase current of phase 23
+63574: CTRL Current: Set phase current of phase 24
+63575: CTRL Current: Set phase current of phase 25
+63576: CTRL Current: Set phase current of phase 26
+63577: CTRL Current: Set phase current of phase 27
+63578: CTRL Current: Set phase current of phase 28
+63579: CTRL Current: Set phase current of phase 29
+63580: CTRL Current: Set phase current of phase 30
+63581: CTRL Current: Set phase current of phase 31
+63582: CTRL Current: Set phase current of phase 32
+63583: CTRL Current: Set phase current of phase 33
+63584: CTRL Current: Set phase current of phase 34
+63585: CTRL Current: Set phase current of phase 35
+63586: CTRL Current: Set phase current of phase 36
+63587: CTRL Current: Set phase current of phase 37
+63588: CTRL Current: Set phase current of phase 38
+63589: CTRL Current: Set phase current of phase 39
+63590: CTRL Current: Set phase current of phase 40
+63591: CTRL Current: Set phase current of phase 41
+63592: CTRL Current: Set phase current of phase 42
+63593: CTRL Current: Set phase current of phase 43
+63594: CTRL Current: Set phase current of phase 44
 63595: INTERNAL63595
 63596: INTERNAL63596
 63597: INTERNAL63597
 63598: INTERNAL63598
 63599: INTERNAL63599
 63600: INTERNAL63600
-63601: CTRL Current controller: Set phase voltage of phase 1
-63602: CTRL Current controller: Set phase voltage of phase 2
-63603: CTRL Current controller: Set phase voltage of phase 3
-63604: CTRL Current controller: Set phase voltage of phase 4
-63605: CTRL Current controller: Set phase voltage of phase 5
-63606: CTRL Current controller: Set phase voltage of phase 6
-63607: CTRL Current controller: Set phase voltage of phase 7
-63608: CTRL Current controller: Set phase voltage of phase 8
-63609: CTRL Current controller: Set phase voltage of phase 9
-63610: CTRL Current controller: Set phase voltage of phase 10
-63611: CTRL Current controller: Set phase voltage of phase 11
-63612: CTRL Current controller: Set phase voltage of phase 12
-63613: CTRL Current controller: Set phase voltage of phase 13
-63614: CTRL Current controller: Set phase voltage of phase 14
-63615: CTRL Current controller: Set phase voltage of phase 15
-63616: CTRL Current controller: Set phase voltage of phase 16
-63617: CTRL Current controller: Set phase voltage of phase 17
-63618: CTRL Current controller: Set phase voltage of phase 18
-63619: CTRL Current controller: Set phase voltage of phase 19
-63620: CTRL Current controller: Set phase voltage of phase 20
-63621: CTRL Current controller: Set phase voltage of phase 21
-63622: CTRL Current controller: Set phase voltage of phase 22
-63623: CTRL Current controller: Set phase voltage of phase 23
-63624: CTRL Current controller: Set phase voltage of phase 24
-63625: CTRL Current controller: Set phase voltage of phase 25
-63626: CTRL Current controller: Set phase voltage of phase 26
-63627: CTRL Current controller: Set phase voltage of phase 27
-63628: CTRL Current controller: Set phase voltage of phase 28
-63629: CTRL Current controller: Set phase voltage of phase 29
-63630: CTRL Current controller: Set phase voltage of phase 30
-63631: CTRL Current controller: Set phase voltage of phase 31
-63632: CTRL Current controller: Set phase voltage of phase 32
-63633: CTRL Current controller: Set phase voltage of phase 33
-63634: CTRL Current controller: Set phase voltage of phase 34
-63635: CTRL Current controller: Set phase voltage of phase 35
-63636: CTRL Current controller: Set phase voltage of phase 36
-63637: CTRL Current controller: Set phase voltage of phase 37
-63638: CTRL Current controller: Set phase voltage of phase 38
-63639: CTRL Current controller: Set phase voltage of phase 39
-63640: CTRL Current controller: Set phase voltage of phase 40
-63641: CTRL Current controller: Set phase voltage of phase 41
-63642: CTRL Current controller: Set phase voltage of phase 42
-63643: CTRL Current controller: Set phase voltage of phase 43
-63644: CTRL Current controller: Set phase voltage of phase 44
+63601: CTRL Current: Set phase voltage of phase 1
+63602: CTRL Current: Set phase voltage of phase 2
+63603: CTRL Current: Set phase voltage of phase 3
+63604: CTRL Current: Set phase voltage of phase 4
+63605: CTRL Current: Set phase voltage of phase 5
+63606: CTRL Current: Set phase voltage of phase 6
+63607: CTRL Current: Set phase voltage of phase 7
+63608: CTRL Current: Set phase voltage of phase 8
+63609: CTRL Current: Set phase voltage of phase 9
+63610: CTRL Current: Set phase voltage of phase 10
+63611: CTRL Current: Set phase voltage of phase 11
+63612: CTRL Current: Set phase voltage of phase 12
+63613: CTRL Current: Set phase voltage of phase 13
+63614: CTRL Current: Set phase voltage of phase 14
+63615: CTRL Current: Set phase voltage of phase 15
+63616: CTRL Current: Set phase voltage of phase 16
+63617: CTRL Current: Set phase voltage of phase 17
+63618: CTRL Current: Set phase voltage of phase 18
+63619: CTRL Current: Set phase voltage of phase 19
+63620: CTRL Current: Set phase voltage of phase 20
+63621: CTRL Current: Set phase voltage of phase 21
+63622: CTRL Current: Set phase voltage of phase 22
+63623: CTRL Current: Set phase voltage of phase 23
+63624: CTRL Current: Set phase voltage of phase 24
+63625: CTRL Current: Set phase voltage of phase 25
+63626: CTRL Current: Set phase voltage of phase 26
+63627: CTRL Current: Set phase voltage of phase 27
+63628: CTRL Current: Set phase voltage of phase 28
+63629: CTRL Current: Set phase voltage of phase 29
+63630: CTRL Current: Set phase voltage of phase 30
+63631: CTRL Current: Set phase voltage of phase 31
+63632: CTRL Current: Set phase voltage of phase 32
+63633: CTRL Current: Set phase voltage of phase 33
+63634: CTRL Current: Set phase voltage of phase 34
+63635: CTRL Current: Set phase voltage of phase 35
+63636: CTRL Current: Set phase voltage of phase 36
+63637: CTRL Current: Set phase voltage of phase 37
+63638: CTRL Current: Set phase voltage of phase 38
+63639: CTRL Current: Set phase voltage of phase 39
+63640: CTRL Current: Set phase voltage of phase 40
+63641: CTRL Current: Set phase voltage of phase 41
+63642: CTRL Current: Set phase voltage of phase 42
+63643: CTRL Current: Set phase voltage of phase 43
+63644: CTRL Current: Set phase voltage of phase 44
 63645: Temperature sensor: Temperature 3
 63646: Temperature sensor: Temperature 4
 63647: Temperature sensor: Powerstage air
@@ -2196,13 +2204,13 @@
 63661: INTERNAL63661
 63663: INTERNAL63663
 63664: INTERNAL63664
-63665: CTRL Speed controller: Shuttle set speed
-63666: CTRL Speed controller: Shuttle actual speed
-63667: CTRL Speed controller: Proportional amplification
-63668: CTRL Speed controller: Integral action time
-63669: CTRL Speed controller: Sum of the set speeds
-63670: CTRL Speed controller: Speed error
-63671: CTRL Speed controller: Reference value of thrust force
+63665: CTRL Speed: Shuttle set speed
+63666: CTRL Speed: Shuttle actual speed
+63667: CTRL Speed: Proportional amplification
+63668: CTRL Speed: Integral action time
+63669: CTRL Speed: Sum of the set speeds
+63670: CTRL Speed: Speed error
+63671: CTRL Speed: Reference value of thrust force
 63672: INTERNAL63672
 63673: Temperature sensor: Temperature 5
 63674: Temperature sensor: Temperature 6
@@ -2227,6 +2235,9 @@
 63694: Motor: Temperature model: Coil temperature
 63695: INTERNAL63695
 63696: INTERNAL63696
+63697: INTERNAL63697
+63698: INTERNAL63698
+63699: INTERNAL63699
 63711: INTERNAL63711
 63712: INTERNAL63712
 63713: INTERNAL63713
@@ -2322,7 +2333,7 @@
 63803: INTERNAL63803
 63804: INTERNAL63804
 63805: INTERNAL63805
-63806: CTRL Current controller: Sum of actual phase currents
+63806: CTRL Current: Sum of actual phase currents
 63807: INTERNAL63807
 63808: INTERNAL63808
 63809: INTERNAL63809
@@ -2339,8 +2350,16 @@
 63820: INTERNAL63820
 63821: INTERNAL63821
 63822: INTERNAL63822
+63823: INTERNAL63823
+63824: INTERNAL63824
+63825: INTERNAL63825
+63826: INTERNAL63826
+63827: INTERNAL63827
+63828: INTERNAL63828
+63829: INTERNAL63829
 63830: INTERNAL63830
 63831: INTERNAL63831
+63832: INTERNAL63832
 63879: CTRL Controller: Configuration: Index of parameter record
 63880: CTRL Position controller: Actual position of shuttle on segment
 63881: INTERNAL63881
@@ -2362,6 +2381,20 @@
 63900: INTERNAL63900
 63901: INTERNAL63901
 63902: INTERNAL63902
+63903: INTERNAL63903
+63904: INTERNAL63904
+63905: INTERNAL63905
+63906: INTERNAL63906
+63907: INTERNAL63907
+63908: INTERNAL63908
+63909: INTERNAL63909
+63910: INTERNAL63910
+63911: INTERNAL63911
+63912: INTERNAL63912
+63913: INTERNAL63913
+63914: INTERNAL63914
+63915: INTERNAL63915
+63916: INTERNAL63916
 64201: Servo drive adjustment: Velocity at maximum output value
 64225: Encoder1: Range of encoder position
 64232: Stepper motor: Step scaling: Steps per motor revolution
