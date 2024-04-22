@@ -102,9 +102,9 @@ PROGRAM _CYCLIC
 	
 	//PAIRING FOR MOVEMENT KEY LOCKING WHILE ONGOING HOMING PROCEDURE
 	
-	glb_cmd.Homing_Lock := (XSM_Ctrl_0.Parameters.Ignore_SWLimits AND XSM_Ctrl_0.Parameters.Ignore_HWLimits);
+	glb_cmd.Homing_Lock := Homing_status <> 0;
 	
-	
+	//-------------------------------------------------------------------------------------------------
 	
 	IF (Status <> ERR) THEN XSM_Ctrl_0.Enable := TRUE; END_IF
 	
@@ -167,15 +167,134 @@ PROGRAM _CYCLIC
 	END_CASE;
 	
 	//---------------------------------------------------------------------MANUAL MOVEMENTS OF MAGAZINE MOTOR-----------------------------------------------------------------
+//	CASE MM_0.MM_status OF		
+//		
+//		0:	//Start
+//			IF ((Status = MANUAL OR Status = AUTO) AND glb_err.pending_alarms = 0 AND Homed AND (NOT glb_err.Drive1)) THEN
+//				MM_0.MM_status := 1;
+//			END_IF;
+//			XSM_Ctrl_0.Cmd.Stop 					:= FALSE;
+//			XSM_Ctrl_0.Parameters.Ignore_HWLimits 	:= 0;
+//			XSM_Ctrl_0.Parameters.Ignore_SWLimits 	:= 0;
+//			
+//		1:	//Idle
+//			IF (MM_0.MM_Avanti AND (NOT MM_0.MM_Indietro)) THEN
+//				MM_0.MM_status := 10;
+//			END_IF;
+//			
+//			IF (MM_0.MM_Indietro AND (NOT MM_0.MM_Avanti)) THEN
+//				MM_0.MM_status := 20;
+//			END_IF;
+//		
+//		10:	//Forward
+//			XSM_Ctrl_0.Cmd.Velocity 				:= 200;
+//			XSM_Ctrl_0.Cmd.Move_Velocity 			:= TRUE;
+//			XSM_Ctrl_0.Cmd.Stop 					:= FALSE;
+//			XSM_Ctrl_0.Parameters.Ignore_HWLimits 	:= 1;
+//			XSM_Ctrl_0.Parameters.Ignore_SWLimits 	:= 1;
+//			
+//			IF (NOT MM_0.MM_Avanti) THEN
+//				MM_0.MM_status := 30;
+//			END_IF;
+//			
+//			IF (Empty_Mag_1_0.Empty_Mag_Sensor) THEN
+//				MM_0.MM_status := 40;
+//			END_IF;
+//		
+//		20:	//Backward
+//			XSM_Ctrl_0.Cmd.Velocity 				:= -200;
+//			XSM_Ctrl_0.Cmd.Move_Velocity 			:= TRUE;
+//			XSM_Ctrl_0.Cmd.Stop 					:= FALSE;
+//			XSM_Ctrl_0.Parameters.Ignore_HWLimits 	:= 1;
+//			XSM_Ctrl_0.Parameters.Ignore_SWLimits 	:= 1;
+//			
+//			IF (NOT MM_0.MM_Indietro) THEN
+//				MM_0.MM_status := 30;
+//			END_IF;
+//			
+////			IF (XSM_Ctrl_0.Monitor.Actual_Position = XSM_Ctrl_0.Parameters.HomePosition) THEN
+////				MM_0.MM_status := 31;
+////			END_IF;
+//			
+//			IF (XSM_Ctrl_0.Monitor.Input_1) THEN
+//				MM_0.MM_status := 41;
+//			END_IF;
+//			
+//		30:	//Reset and back to safety, if moevemnt button is released by the operator
+//			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
+//			XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
+//			old_pos 						:= XSM_Ctrl_0.Monitor.Actual_Position;
+//			MM_0.MM_status 					:= 0;
+//					
+////		31:	//Left Stop
+////			XSM_Ctrl_0.Cmd.Move_Velocity := FALSE;
+////			XSM_Ctrl_0.Cmd.Stop := FALSE;
+////			Status := STOP;
+////			MM_0.MM_status := 0;
+//		
+//		40:	//Set parameters for StepBack after sensor touch
+//			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
+//			XSM_Ctrl_0.Cmd.Velocity 		:= -1000;
+//			XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
+//			MM_0.MM_status 					:= 50;
+//			
+//		41:	//Set parameters for StepForward after sensor touch
+//			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
+//			XSM_Ctrl_0.Cmd.Velocity 		:= 1000;
+//			XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
+//			MM_0.MM_status 					:= 51;
+//		
+//		50:	//Stepback start move
+//			XSM_Ctrl_0.Cmd.Stop 			:= FALSE;
+//			XSM_Ctrl_0.Cmd.Move_Velocity 	:= TRUE;
+//			MM_0.MM_status 					:= 60;
+//			
+//		51:	//Stepforward start move
+//			XSM_Ctrl_0.Cmd.Stop 			:= FALSE;
+//			XSM_Ctrl_0.Cmd.Move_Velocity 	:= TRUE;
+//			MM_0.MM_status 					:= 61;
+//		
+//		60:	//Stepback reset & back to start
+//			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor) THEN
+//				XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
+//				XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
+//				MM_0.MM_status 					:= 0;
+//			END_IF;
+//			
+//		61:	//Stepforward reset, back to start
+//			IF (NOT XSM_Ctrl_0.Monitor.Input_1) THEN
+//				XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
+//				XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
+//				MM_0.MM_status 					:= 0;
+//			END_IF;
+//		
+//			
+//		
+	//	END_CASE;
+	
+	CASE limit_bypass OF
+		0: 
+			IF glb_io.Di.Start AND glb_io.Di.Reset THEN
+				XSM_Ctrl_0.Parameters.Ignore_HWLimits := 1;
+				XSM_Ctrl_0.Parameters.Ignore_SWLimits := 1;
+				limit_bypass := 10;
+			END_IF
+		10:
+			IF NOT (glb_io.Di.Start AND glb_io.Di.Reset) THEN
+				XSM_Ctrl_0.Parameters.Ignore_HWLimits := 0;
+				XSM_Ctrl_0.Parameters.Ignore_SWLimits := 0;
+				limit_bypass := 0;
+			END_IF
+
+	END_CASE;
+	
+	
 	CASE MM_0.MM_status OF		
 		
 		0:	//Start
 			IF ((Status = MANUAL OR Status = AUTO) AND glb_err.pending_alarms = 0 AND Homed AND (NOT glb_err.Drive1)) THEN
 				MM_0.MM_status := 1;
 			END_IF;
-			XSM_Ctrl_0.Cmd.Stop 					:= FALSE;
-			XSM_Ctrl_0.Parameters.Ignore_HWLimits 	:= 0;
-			XSM_Ctrl_0.Parameters.Ignore_SWLimits 	:= 0;
 			
 		1:	//Idle
 			IF (MM_0.MM_Avanti AND (NOT MM_0.MM_Indietro)) THEN
@@ -190,86 +309,31 @@ PROGRAM _CYCLIC
 			XSM_Ctrl_0.Cmd.Velocity 				:= 200;
 			XSM_Ctrl_0.Cmd.Move_Velocity 			:= TRUE;
 			XSM_Ctrl_0.Cmd.Stop 					:= FALSE;
-			XSM_Ctrl_0.Parameters.Ignore_HWLimits 	:= 1;
-			XSM_Ctrl_0.Parameters.Ignore_SWLimits 	:= 1;
 			
 			IF (NOT MM_0.MM_Avanti) THEN
 				MM_0.MM_status := 30;
-			END_IF;
-			
-			IF (Empty_Mag_1_0.Empty_Mag_Sensor) THEN
-				MM_0.MM_status := 40;
 			END_IF;
 		
 		20:	//Backward
 			XSM_Ctrl_0.Cmd.Velocity 				:= -200;
 			XSM_Ctrl_0.Cmd.Move_Velocity 			:= TRUE;
 			XSM_Ctrl_0.Cmd.Stop 					:= FALSE;
-			XSM_Ctrl_0.Parameters.Ignore_HWLimits 	:= 1;
-			XSM_Ctrl_0.Parameters.Ignore_SWLimits 	:= 1;
 			
 			IF (NOT MM_0.MM_Indietro) THEN
 				MM_0.MM_status := 30;
-			END_IF;
-			
-//			IF (XSM_Ctrl_0.Monitor.Actual_Position = XSM_Ctrl_0.Parameters.HomePosition) THEN
-//				MM_0.MM_status := 31;
-//			END_IF;
-			
-			IF (XSM_Ctrl_0.Monitor.Input_1) THEN
-				MM_0.MM_status := 41;
 			END_IF;
 			
 		30:	//Reset and back to safety, if moevemnt button is released by the operator
 			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
 			XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
 			old_pos 						:= XSM_Ctrl_0.Monitor.Actual_Position;
+			MM_0.MM_status 					:= 40;
+		
+		40: // Reset all
+			XSM_Ctrl_0.Cmd.Stop 			:= FALSE;
+			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
 			MM_0.MM_status 					:= 0;
-					
-//		31:	//Left Stop
-//			XSM_Ctrl_0.Cmd.Move_Velocity := FALSE;
-//			XSM_Ctrl_0.Cmd.Stop := FALSE;
-//			Status := STOP;
-//			MM_0.MM_status := 0;
-		
-		40:	//Set parameters for StepBack after sensor touch
-			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
-			XSM_Ctrl_0.Cmd.Velocity 		:= -1000;
-			XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
-			MM_0.MM_status 					:= 50;
-			
-		41:	//Set parameters for StepForward after sensor touch
-			XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
-			XSM_Ctrl_0.Cmd.Velocity 		:= 1000;
-			XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
-			MM_0.MM_status 					:= 51;
-		
-		50:	//Stepback start move
-			XSM_Ctrl_0.Cmd.Stop 			:= FALSE;
-			XSM_Ctrl_0.Cmd.Move_Velocity 	:= TRUE;
-			MM_0.MM_status 					:= 60;
-			
-		51:	//Stepforward start move
-			XSM_Ctrl_0.Cmd.Stop 			:= FALSE;
-			XSM_Ctrl_0.Cmd.Move_Velocity 	:= TRUE;
-			MM_0.MM_status 					:= 61;
-		
-		60:	//Stepback reset & back to start
-			IF (NOT Empty_Mag_1_0.Empty_Mag_Sensor) THEN
-				XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
-				XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
-				MM_0.MM_status 					:= 0;
-			END_IF;
-			
-		61:	//Stepforward reset, back to start
-			IF (NOT XSM_Ctrl_0.Monitor.Input_1) THEN
-				XSM_Ctrl_0.Cmd.Stop 			:= TRUE;
-				XSM_Ctrl_0.Cmd.Move_Velocity 	:= FALSE;
-				MM_0.MM_status 					:= 0;
-			END_IF;
-		
-			
-		
+
 	END_CASE;
 	
 	//POP UP DI AUTO HOMING
@@ -411,6 +475,7 @@ PROGRAM _CYCLIC
 				Homed 									:= 1;
 				old_pos 								:= 0;
 				Homing_status 							:= 0;
+				glb_cmd.Cartridge_loaded_Gun			:= 0;
 			END_IF;
 		
 	END_CASE;  

@@ -103,7 +103,7 @@ PROGRAM _CYCLIC
 	
 	//PAIRING FOR MOVEMENT KEY LOCKING WHILE ONGOING HOMING PROCEDURE
 	
-	glb_cmd_2.Homing_Lock := (XSM_Ctrl_2.Parameters.Ignore_SWLimits AND XSM_Ctrl_2.Parameters.Ignore_HWLimits);
+	glb_cmd_2.Homing_Lock := Homing_status_2 <> 0;
 	
 	//------------------------------------------------------------------------------------
 	

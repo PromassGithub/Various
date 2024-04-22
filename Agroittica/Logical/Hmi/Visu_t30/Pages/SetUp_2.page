@@ -623,7 +623,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x0000016A">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
@@ -639,14 +639,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x0000016A">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
+              <Property Name="SetValue" Value="0"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Gun_2_HMI_Trig_Man]"/>
             </KeyAction>
           </KeyActions>
@@ -655,7 +655,7 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x0000016A">
+            <KeyAction ClassId="0x0000016B">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>

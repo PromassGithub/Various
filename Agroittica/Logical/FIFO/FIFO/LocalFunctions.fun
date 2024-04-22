@@ -11,7 +11,7 @@
 		DataOut : {REDUND_UNREPLICABLE} REAL;
 	END_VAR
 	VAR CONSTANT
-		BufferMax : INT := 3;
+		BufferMax : INT := 5;
 		BufferMin : INT := 1;
 	END_VAR
 	VAR

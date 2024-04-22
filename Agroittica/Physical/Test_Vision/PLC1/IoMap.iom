@@ -1,0 +1,56 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: leesa
+ * Created: March 27, 2009
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.ModuleOK AT %IX."80SD100XD.C044-01".ModuleOk;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.AbsPos AT %QD."80SD100XD.C044-01".AbsPos01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.MpGenControl AT %QW."80SD100XD.C044-01".MpGenControl01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.MpGenMode AT %QB."80SD100XD.C044-01".MpGenMode01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.AbsPosActVal AT %ID."80SD100XD.C044-01".AbsPos01ActVal;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus01;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.InputStatus AT %IB."80SD100XD.C044-01".InputStatus;
+	::xsm_demo:XSM_Ctrl_0.IO_Mapping.ModuleID AT %IW."80SD100XD.C044-01".ModuleID;
+	glb_io.Di.Start AT %IX."X2".DigitalInput01;
+	::xsm_demo:XSM_Ctrl_0.Enable AT %QX."X3".DigitalOutput01;
+	glb_io.Do.Piston_gun_1 AT %QX."X3".DigitalOutput02;
+	glb_io.Do.Piston_gun_2 AT %QX."X3".DigitalOutput04;
+	Cyclic#1.Empty_Mag_22.Empty_Mag_Sensor AT %IX."X1".DigitalInput04;
+	Cyclic#1.Empty_Mag_1_0.Empty_Mag_Sensor AT %IX."X1".DigitalInput02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.AbsPos AT %QD."80SD100XD.C044-01".AbsPos02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenControl AT %QW."80SD100XD.C044-01".MpGenControl02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenMode AT %QB."80SD100XD.C044-01".MpGenMode02;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.AbsPosActVal AT %ID."80SD100XD.C044-01".AbsPos02ActVal;
+	::xsm_demo_M:XSM_Ctrl_2.IO_Mapping.MpGenStatus AT %IW."80SD100XD.C044-01".MpGenStatus02;
+	Cyclic#1.Feedback_0.Feedback_Em_Bt AT %IX."X2".DigitalInput13;
+	Cyclic#1.Feedback_0.Feedback_Air AT %IX."X2".DigitalInput14;
+	Cyclic#1.Beacon_1.Beeper_Alarm AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput01;
+	Cyclic#1.Beacon_2.Beeper_Alarm AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput02;
+	Cyclic#1.Beacon_1.White AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput03;
+	Cyclic#1.Beacon_2.White AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput04;
+	Cyclic#1.Beacon_1.Green AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput05;
+	Cyclic#1.Beacon_2.Green AT %QX."X67BC8321-1".IF1.ST1.DigitalOutput06;
+	Cyclic#1.glb_io.Di.Si_03 AT %IX."X67BC8321-1".IF1.ST1.DigitalInput08;
+	glb_io.Di.Powerlink AT %IX."X67BC8321-1".IF1.ST1.ModuleOk;
+	Cyclic#1.::glb_io.Ai.Enc_laser_dist_raw AT %IW."X1".AnalogInput01;
+	glb_io.Do.Main_Piston_Down AT %QX."X3".DigitalOutput10;
+	glb_io.Do.Main_Piston_Up AT %QX."X3".DigitalOutput03;
+	glb_io.Di.Si_01 AT %IX."X1".DigitalInput03;
+	glb_io.Di.Automatic AT %IX."X2".DigitalInput02;
+	glb_io.Di.Stop AT %IX."X2".DigitalInput03;
+	glb_io.Di.Manual AT %IX."X2".DigitalInput04;
+	glb_io.Di.Reset AT %IX."X2".DigitalInput05;
+	glb_io.Di.Forward_Mag_1 AT %IX."X2".DigitalInput06;
+	glb_io.Di.Forward_Mag_2 AT %IX."X2".DigitalInput07;
+	glb_io.Di.Backward_Mag_1 AT %IX."X2".DigitalInput08;
+	glb_io.Di.Backward_Mag_2 AT %IX."X2".DigitalInput09;
+	glb_io.Do.Green_Light AT %QX."X3".DigitalOutput05;
+	glb_io.Do.Red_Light AT %QX."X3".DigitalOutput06;
+	glb_io.Do.Blue_Light AT %QX."X3".DigitalOutput07;
+	glb_io.Do.Vacuum_On_Off AT %QX."X3".DigitalOutput08;
+END_VAR

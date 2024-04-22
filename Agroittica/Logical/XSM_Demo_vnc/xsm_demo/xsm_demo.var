@@ -29,6 +29,7 @@ VAR
 	Dim_etichetta : DINT := 7;
 	FW_step_status : USINT := 0;
 	Homing_status : USINT := 0;
+	limit_bypass : USINT := 0;
 	XSM_Ctrl_0 : XSM_Ctrl := (0);
 	XSM_IO_Cfg_0 : XSM_IO_Cfg := (0);
 	XSM_AcyclicRead_0 : XSM_AcyclicRead := (0);

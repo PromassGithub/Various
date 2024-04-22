@@ -28,40 +28,6 @@ PROGRAM _CYCLIC
 	
 	glb_hmi.Inp.Beacon_Alarm_Lock_2 := glb_cmd_2.Beeper_Lock;
 	
-	//--------------------------------MOVEMENT LOCKING-------------------------------
-	
-	//LOCKING MANUAL MOVEMENT WHEN AXIS ARE HOMED, UNLOCKING WHEN THE AXIS MOVEMENT WHEN THEY ARE RELOADING
-	
-	//FIRST AXIS
-	IF First_Homing AND glb_cmd.Cartridge_loaded_Gun  THEN
-		glb_cmd.Movement_Lock := 1;
-	ELSE
-		glb_cmd.Movement_Lock := 0;
-	END_IF;
-	
-	//SECOND AXIS
-	IF Second_Homing AND glb_cmd_2.Cartridge_loaded_Gun THEN
-		glb_cmd_2.Movement_Lock := 1;
-	ELSE
-		glb_cmd_2.Movement_Lock := 0;
-	END_IF;
-	
-	//LOCKING AXIS MANUAL MOVEMENTS WHILE AXIS ARE HOMING
-	
-	//FIRST AXIS
-	IF glb_cmd.Homing_Lock THEN
-		glb_cmd.Movement_Lock_Homing := 1;
-	ELSE
-		glb_cmd.Movement_Lock_Homing := 0;
-	END_IF;
-	
-	//SECOND AXIS
-	IF glb_cmd_2.Homing_Lock THEN
-		glb_cmd_2.Movement_Lock_Homing := 1;
-	ELSE
-		glb_cmd_2.Movement_Lock_Homing := 0;
-	END_IF;
-
 	//------------------------------KEY COMBINATIONS----------------------------
 	
 	//SEQUENCE TO CONFIRM BEGINNING OF RELOADING PROCEDURE, AFTER THIS THE AXIS WILL GO BACK TO HOME POSITION FOR RELOADING, AXIS 1
@@ -117,6 +83,42 @@ PROGRAM _CYCLIC
 		glb_cmd_2.Cartridge_loaded_Gun 	:= 1;
 		Cartridge_loaded_control_2		:= 1;
 	END_IF;
+	
+	//--------------------------------MOVEMENT LOCKING-------------------------------
+	
+	//LOCKING MANUAL MOVEMENT WHEN AXIS ARE HOMED, UNLOCKING WHEN THE AXIS MOVEMENT WHEN THEY ARE RELOADING
+	
+	//FIRST AXIS
+	IF glb_cmd.Cartridge_loaded_Gun  THEN
+		glb_cmd.Movement_Lock := 1;
+	ELSE
+		glb_cmd.Movement_Lock := 0;
+	END_IF;
+	
+	//SECOND AXIS
+	IF glb_cmd_2.Cartridge_loaded_Gun THEN
+		glb_cmd_2.Movement_Lock := 1;
+	ELSE
+		glb_cmd_2.Movement_Lock := 0;
+	END_IF;
+	
+	//LOCKING AXIS MANUAL MOVEMENTS WHILE AXIS ARE HOMING
+	
+	//FIRST AXIS
+	IF glb_cmd.Homing_Lock THEN
+		glb_cmd.Movement_Lock_Homing := 1;
+	ELSE
+		glb_cmd.Movement_Lock_Homing := 0;
+	END_IF;
+	
+	//SECOND AXIS
+	IF glb_cmd_2.Homing_Lock THEN
+		glb_cmd_2.Movement_Lock_Homing := 1;
+	ELSE
+		glb_cmd_2.Movement_Lock_Homing := 0;
+	END_IF;
+
+	
 	
 	
 	
@@ -428,7 +430,7 @@ PROGRAM _CYCLIC
 		
 			Beacon_2.White 			:= TON_03_Pulse;
 			glb_io.Do.Blue_Light 	:= TON_03_Pulse;
-			Beacon_2.Beeper_Alarm 	:= TON_03_Pulse;
+			(*Beacon_2.Beeper_Alarm 	:= TON_03_Pulse;*) //IT DOESN'T FUCKING BEEP pt.2
 			
 			
 			IF (TON_03_Pulse AND (NOT Blink_Cmd)) THEN 
