@@ -641,15 +641,15 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.5</InstructionLine>
+                <InstructionLine>LD    %I0.5</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>OR  %M1</InstructionLine>
+                <InstructionLine>OR    %M1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X5</InstructionLine>
+                <InstructionLine>ST    %MW7:X5</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -1095,7 +1095,7 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
+                <InstructionLine>LD    1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1119,7 +1119,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MD0 &gt; 2147483646 ]</InstructionLine>
+                <InstructionLine>AND   [ %MD0 &gt; 2147483646 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1131,7 +1131,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MD2 &gt; 2147483646 ]</InstructionLine>
+                <InstructionLine>AND   [ %MD2 &gt; 2147483646 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
