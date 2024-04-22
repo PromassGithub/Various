@@ -2590,11 +2590,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X7</InstructionLine>
+                <InstructionLine>LD    %MW6:X7</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M401</InstructionLine>
+                <InstructionLine>ST    %M401</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -4096,6 +4096,8 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
+    <InstListBufferSize>19826</InstListBufferSize>
+    <ProgramBufferSize>158798</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
