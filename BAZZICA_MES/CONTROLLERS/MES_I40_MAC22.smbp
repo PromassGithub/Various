@@ -3,7 +3,7 @@
   <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>MES_I40_MAC22</Name>
-  <FullName>C:\projects\GitH\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC22.smbp</FullName>
+  <FullName>C:\projects\GIT_HUB\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC22.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -1563,7 +1563,7 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
+                <InstructionLine>LD    1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1571,7 +1571,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
+                <InstructionLine>LD    1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1579,7 +1579,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>BLK  %TM1</InstructionLine>
+                <InstructionLine>BLK   %TM1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1587,7 +1587,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND  %MW7:X0</InstructionLine>
+                <InstructionLine>AND   %MW7:X0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1611,11 +1611,11 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>LD Q</InstructionLine>
+                <InstructionLine>LD    Q</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>S  %M400</InstructionLine>
+                <InstructionLine>S     %M400</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1639,7 +1639,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>R  %M400</InstructionLine>
+                <InstructionLine>R     %M400</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1663,7 +1663,7 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MW9 &gt; 0 ]</InstructionLine>
+                <InstructionLine>AND   [ %MW9 &gt; 0 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -1767,15 +1767,15 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
+                <InstructionLine>LD    1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MD2 &gt; %MD13 ]</InstructionLine>
+                <InstructionLine>AND   [ %MD2 &gt; %MD13 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M1</InstructionLine>
+                <InstructionLine>ST    %M1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2515,11 +2515,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X7</InstructionLine>
+                <InstructionLine>LD    %MW6:X7</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M401</InstructionLine>
+                <InstructionLine>ST    %M401</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -4255,6 +4255,8 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
+    <InstListBufferSize>19826</InstListBufferSize>
+    <ProgramBufferSize>158798</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />

@@ -3,7 +3,7 @@
   <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>MES_I40_MAC05</Name>
-  <FullName>C:\projects\GitH\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC05.smbp</FullName>
+  <FullName>C:\projects\GIT_HUB\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC05.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -95,11 +95,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.0</InstructionLine>
+                <InstructionLine>LD    %I0.0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X0</InstructionLine>
+                <InstructionLine>ST    %MW7:X0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -194,11 +194,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.1</InstructionLine>
+                <InstructionLine>LD    %I0.1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X1</InstructionLine>
+                <InstructionLine>ST    %MW7:X1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -293,11 +293,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.2</InstructionLine>
+                <InstructionLine>LD    %I0.2</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X2</InstructionLine>
+                <InstructionLine>ST    %MW7:X2</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -392,11 +392,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.3</InstructionLine>
+                <InstructionLine>LD    %I0.3</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X3</InstructionLine>
+                <InstructionLine>ST    %MW7:X3</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -505,15 +505,15 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>BLK  %TM0</InstructionLine>
+                <InstructionLine>BLK   %TM0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.4</InstructionLine>
+                <InstructionLine>LD    %I0.4</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND  %I0.0</InstructionLine>
+                <InstructionLine>AND   %I0.0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -533,11 +533,11 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X4</InstructionLine>
+                <InstructionLine>ST    %MW7:X4</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M0</InstructionLine>
+                <InstructionLine>ST    %M0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
@@ -762,11 +762,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %I0.6</InstructionLine>
+                <InstructionLine>LD    %I0.6</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %MW7:X6</InstructionLine>
+                <InstructionLine>ST    %MW7:X6</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -1767,15 +1767,15 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
+                <InstructionLine>LD    1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MD2 &gt; %MD13 ]</InstructionLine>
+                <InstructionLine>AND   [ %MD2 &gt; %MD13 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M1</InstructionLine>
+                <InstructionLine>ST    %M1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -1867,11 +1867,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X0</InstructionLine>
+                <InstructionLine>LD    %MW6:X0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.0</InstructionLine>
+                <InstructionLine>ST    %Q0.0</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -1957,11 +1957,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X1</InstructionLine>
+                <InstructionLine>LD    %MW6:X1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.1</InstructionLine>
+                <InstructionLine>ST    %Q0.1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2047,11 +2047,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X2</InstructionLine>
+                <InstructionLine>LD    %MW6:X2</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.2</InstructionLine>
+                <InstructionLine>ST    %Q0.2</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2137,11 +2137,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X3</InstructionLine>
+                <InstructionLine>LD    %MW6:X3</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.3</InstructionLine>
+                <InstructionLine>ST    %Q0.3</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2227,11 +2227,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X4</InstructionLine>
+                <InstructionLine>LD    %MW6:X4</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.4</InstructionLine>
+                <InstructionLine>ST    %Q0.4</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2317,11 +2317,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X5</InstructionLine>
+                <InstructionLine>LD    %MW6:X5</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.5</InstructionLine>
+                <InstructionLine>ST    %Q0.5</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2407,11 +2407,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X6</InstructionLine>
+                <InstructionLine>LD    %MW6:X6</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %Q0.6</InstructionLine>
+                <InstructionLine>ST    %Q0.6</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2515,11 +2515,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X7</InstructionLine>
+                <InstructionLine>LD    %MW6:X7</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M401</InstructionLine>
+                <InstructionLine>ST    %M401</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2720,7 +2720,7 @@
       <ForcedCount>2000</ForcedCount>
     </MemoryWordsMemoryAllocation>
     <TimersMemoryAllocation>
-      <ForcedCount>1</ForcedCount>
+      <ForcedCount>2</ForcedCount>
     </TimersMemoryAllocation>
     <CountersMemoryAllocation>
       <ForcedCount>1</ForcedCount>
@@ -4176,6 +4176,8 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
+    <InstListBufferSize>19826</InstListBufferSize>
+    <ProgramBufferSize>158798</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
