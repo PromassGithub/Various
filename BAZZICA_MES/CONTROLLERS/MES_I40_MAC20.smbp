@@ -3,7 +3,7 @@
   <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>MES_I40_MAC20</Name>
-  <FullName>C:\projects\GitH\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC20.smbp</FullName>
+  <FullName>C:\projects\GIT_HUB\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC20.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -1766,15 +1766,15 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  1</InstructionLine>
+                <InstructionLine>LD    1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MD2 &gt; %MD13 ]</InstructionLine>
+                <InstructionLine>AND   [ %MD2 &gt; %MD13 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M1</InstructionLine>
+                <InstructionLine>ST    %M1</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -2514,11 +2514,11 @@
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
-                <InstructionLine>LD  %MW6:X7</InstructionLine>
+                <InstructionLine>LD    %MW6:X7</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>ST  %M401</InstructionLine>
+                <InstructionLine>ST    %M401</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -4175,6 +4175,8 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
+    <InstListBufferSize>19826</InstListBufferSize>
+    <ProgramBufferSize>158798</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
