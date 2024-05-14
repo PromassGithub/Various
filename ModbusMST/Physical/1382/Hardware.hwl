@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="1382.Hardware.hw" LastWriteTime="05/14/2024 09:24:55" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />
+    <Module Name="X3" Type="X3" X="251" Y="103" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
+    <Module Name="X2" Type="X2" X="238" Y="103" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
+    <Module Name="X1" Type="X1" X="225" Y="103" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="ModbusTcpSlave" Type="ModbusTcp_any" X="264" Y="252" />
+    <Module Name="AL1370_IO-Link_Master" Type="FBE.AL1370_0069666D_IO-LinkMaster" X="264" Y="352" />
+  </Modules>
+  <Links>
+    <Link From="ModbusTcpSlave" To="X20CP1382" FromPort="ETH1" ToPort="IF2" IsRoutedByUser="False">
+      <Point X="134" Y="188" />
+      <Point X="134" Y="188" />
+      <Point X="134" Y="203" />
+      <Point X="134" Y="315" />
+      <Point X="298" Y="315" />
+      <Point X="298" Y="303" />
+      <Point X="298" Y="296" />
+      <Point X="298" Y="296" />
+    </Link>
+    <Link From="X20CP1382" To="AL1370_IO-Link_Master" FromPort="IF3" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="153" Y="188" />
+      <Point X="153" Y="188" />
+      <Point X="153" Y="203" />
+      <Point X="153" Y="322" />
+      <Point X="313" Y="322" />
+      <Point X="313" Y="351" />
+      <Point X="313" Y="393" />
+      <Point X="313" Y="393" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

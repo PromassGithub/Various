@@ -3,7 +3,7 @@
   <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>MES_I40_MAC09</Name>
-  <FullName>C:\projects\GIT_HUB\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC09.smbp</FullName>
+  <FullName>C:\projects\GitH\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC09.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -2705,6 +2705,26 @@
             <Address>%MW6:X7</Address>
             <IsTraced>false</IsTraced>
             <ValueRepresentation>BoolNumeric</ValueRepresentation>
+          </WatchListItemEntity>
+        </WatchListItemEntities>
+      </WatchListEntity>
+      <WatchListEntity>
+        <Name>WIP</Name>
+        <WatchListItemEntities>
+          <WatchListItemEntity>
+            <Address>%MW11</Address>
+            <IsTraced>false</IsTraced>
+            <ValueRepresentation>Decimal</ValueRepresentation>
+          </WatchListItemEntity>
+          <WatchListItemEntity>
+            <Address>%MW12</Address>
+            <IsTraced>false</IsTraced>
+            <ValueRepresentation>Decimal</ValueRepresentation>
+          </WatchListItemEntity>
+          <WatchListItemEntity>
+            <Address>%MD11</Address>
+            <IsTraced>false</IsTraced>
+            <ValueRepresentation>Decimal</ValueRepresentation>
           </WatchListItemEntity>
         </WatchListItemEntities>
       </WatchListEntity>

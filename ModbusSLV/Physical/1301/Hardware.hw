@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="X20CP1301" Type="X20CP1301" Version="1.7.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.7.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1301" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="HostName" Value="tr_mdb_slv" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.251" />
+      <Parameter ID="SubnetMask" Value="255.255.254.0" />
+      <Parameter ID="ActivateModbus" Value="1" />
+      <Parameter ID="NumSlaves" Value="-1" />
+      <Parameter ID="NumAllBlocks" Value="-1" />
+      <Parameter ID="MemSizeIn" Value="-1" />
+      <Parameter ID="MemSizeOut" Value="-1" />
+      <Parameter ID="ModbusSlaveGrey" Value="1" />
+      <Group ID="ModbusSlaveConfig_1" />
+      <Group ID="InputRegisterChannelGroup1_1" />
+      <Parameter ID="InputRegisterChannelID1_1" Value="INPUTREG00" />
+      <Group ID="InputRegisterChannelGroup2_1" />
+      <Parameter ID="InputRegisterChannelID2_1" Value="INPUTREG01" />
+      <Parameter ID="InputRegisterChannelAddress2_1" Value="8193" />
+      <Group ID="InputRegisterChannelGroup3_1" />
+      <Parameter ID="InputRegisterChannelID3_1" Value="INPUTREG03" />
+      <Parameter ID="InputRegisterChannelAddress3_1" Value="8194" />
+      <Group ID="InputRegisterChannelGroup4_1" />
+      <Parameter ID="InputRegisterChannelID4_1" Value="INPUTREG04" />
+      <Parameter ID="InputRegisterChannelAddress4_1" Value="8195" />
+      <Group ID="HoldingRegisterChannelGroup1_1" />
+      <Parameter ID="HoldingRegisterChannelID1_1" Value="HOLDREG00" />
+      <Group ID="HoldingRegisterChannelGroup2_1" />
+      <Parameter ID="HoldingRegisterChannelID2_1" Value="HOLDREG01" />
+      <Parameter ID="HoldingRegisterChannelAddress2_1" Value="24577" />
+      <Group ID="HoldingRegisterChannelGroup3_1" />
+      <Parameter ID="HoldingRegisterChannelID3_1" Value="HOLDREG02" />
+      <Parameter ID="HoldingRegisterChannelAddress3_1" Value="24578" />
+      <Group ID="HoldingRegisterChannelGroup4_1" />
+      <Parameter ID="HoldingRegisterChannelID4_1" Value="HOLDREG03" />
+      <Parameter ID="HoldingRegisterChannelAddress4_1" Value="24579" />
+      <Parameter ID="ModbusMaster" Value="0" />
+      <Parameter ID="SlaveDiagnostics" Value="1" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="ModbusSLV_1301" />
+    <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Parameter ID="EthernetHostName" Value="tr_mdb_slv" />
+    <Parameter ID="EthernetDefaultGateway" Value="192.168.1.3" />
+    <Parameter ID="ActivateDns" Value="1" />
+    <Parameter ID="DnsServer1" Value="192.168.1.14" />
+    <Parameter ID="DnsServer2" Value="8.8.8.8" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUa_AuthenticationSecurityPolicy_EnableNone" Value="1" />
+    <Parameter ID="OpcUa_AuthenticationSecurityPolicy_EnableBasic128Rsa15" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>

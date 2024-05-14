@@ -3,7 +3,7 @@
   <ProjectVersion>2.8.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan18_0</ManagementLevel>
   <Name>MES_I40_MAC06</Name>
-  <FullName>C:\projects\GIT_HUB\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC06.smbp</FullName>
+  <FullName>C:\projects\GitH\Various\BAZZICA_MES\CONTROLLERS\MES_I40_MAC06.smbp</FullName>
   <CurrentCultureName>en-GB</CurrentCultureName>
   <SoftwareConfiguration>
     <Pous>
@@ -2782,6 +2782,16 @@
             <IsTraced>false</IsTraced>
             <ValueRepresentation>BoolNumeric</ValueRepresentation>
           </WatchListItemEntity>
+          <WatchListItemEntity>
+            <Address>%MD11</Address>
+            <IsTraced>false</IsTraced>
+            <ValueRepresentation>Decimal</ValueRepresentation>
+          </WatchListItemEntity>
+          <WatchListItemEntity>
+            <Address>%MD12</Address>
+            <IsTraced>false</IsTraced>
+            <ValueRepresentation>Decimal</ValueRepresentation>
+          </WatchListItemEntity>
         </WatchListItemEntities>
       </WatchListEntity>
     </WatchLists>
@@ -4269,6 +4279,8 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
+    <InstListBufferSize>19826</InstListBufferSize>
+    <ProgramBufferSize>158798</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
     <UserFunctionPous />
     <UserFunctionBlockPous />
