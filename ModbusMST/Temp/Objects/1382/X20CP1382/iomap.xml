@@ -309,11 +309,32 @@
 <LN ID="%IX.IF3.ST100.ModuleOk" Type="BOOL">
 <Prod Device="IF3.ST100" DPName="ModuleOk" Kind="io"/>
 </LN>
+<LN ID="%QD.IF3.ST100.Port1Output1_I2300_S01" Type="UDINT">
+<Cons Device="IF3.ST100" DPName="Port1Output1_I2300_S01" Kind="io"/>
+</LN>
+<LN ID="%QD.IF3.ST100.Port2Output1_I2310_S01" Type="UDINT">
+<Cons Device="IF3.ST100" DPName="Port2Output1_I2310_S01" Kind="io"/>
+</LN>
 <LN ID="%IW.IF3.ST100.PD_Pin2_I2400" Type="UINT">
 <Prod Device="IF3.ST100" DPName="PD_Pin2_I2400" Kind="io"/>
 </LN>
+<LN ID="%IB.IF3.ST100.PD_PQIPort1_I2500" Type="USINT">
+<Prod Device="IF3.ST100" DPName="PD_PQIPort1_I2500" Kind="io"/>
+</LN>
+<LN ID="%IB.IF3.ST100.PD_PQIPort2_I2510" Type="USINT">
+<Prod Device="IF3.ST100" DPName="PD_PQIPort2_I2510" Kind="io"/>
+</LN>
+<LN ID="%IB.IF3.ST100.PD_PQIPort3_I2520" Type="USINT">
+<Prod Device="IF3.ST100" DPName="PD_PQIPort3_I2520" Kind="io"/>
+</LN>
 <LN ID="%ID.IF3.ST100.Port1Input1_I2700_S01" Type="UDINT">
 <Prod Device="IF3.ST100" DPName="Port1Input1_I2700_S01" Kind="io"/>
+</LN>
+<LN ID="%ID.IF3.ST100.Port1Input2_I2700_S02" Type="UDINT">
+<Prod Device="IF3.ST100" DPName="Port1Input2_I2700_S02" Kind="io"/>
+</LN>
+<LN ID="%ID.IF3.ST100.Port2Input1_I2710_S01" Type="UDINT">
+<Prod Device="IF3.ST100" DPName="Port2Input1_I2710_S01" Kind="io"/>
 </LN>
 <LN ID="%IX.X1.DigitalInput01" Type="BOOL">
 <Prod Device="X1" DPName="DigitalInput01" Kind="io"/>
@@ -452,5 +473,62 @@
 </LN>
 <LN ID="%IX.X3.StatusInput01" Type="BOOL">
 <Prod Device="X3" DPName="StatusInput01" Kind="io"/>
+</LN>
+<LN ID="%IX.IF7.ST2.ModuleOk" Type="BOOL">
+<Prod Device="IF7.ST2" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST2.NodeStatus" Type="UINT">
+<Prod Device="IF7.ST2" DPName="NodeStatus" Kind="io"/>
+</LN>
+<LN ID="%IB.IF7.ST2.TM7BDM8BE_1_INDigitalInput00_DigitalInput07_6000sub1" Type="USINT">
+<Prod Device="IF7.ST2" DPName="TM7BDM8BE_1_INDigitalInput00_DigitalInput07_6000sub1" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST2.TM7BAM4CLA_2_INAnalogInput00_6401sub1" Type="INT">
+<Prod Device="IF7.ST2" DPName="TM7BAM4CLA_2_INAnalogInput00_6401sub1" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST2.TM7BAM4CLA_2_INAnalogInput01_6401sub2" Type="INT">
+<Prod Device="IF7.ST2" DPName="TM7BAM4CLA_2_INAnalogInput01_6401sub2" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST2.TM7BAM4CLA_3_INAnalogInput00_6401sub3" Type="INT">
+<Prod Device="IF7.ST2" DPName="TM7BAM4CLA_3_INAnalogInput00_6401sub3" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST2.TM7BAM4CLA_3_INAnalogInput01_6401sub4" Type="INT">
+<Prod Device="IF7.ST2" DPName="TM7BAM4CLA_3_INAnalogInput01_6401sub4" Kind="io"/>
+</LN>
+<LN ID="%QW.IF7.ST2.TM7BAM4CLA_2_OUTAnalogOutput00_6411sub1" Type="INT">
+<Cons Device="IF7.ST2" DPName="TM7BAM4CLA_2_OUTAnalogOutput00_6411sub1" Kind="io"/>
+</LN>
+<LN ID="%QW.IF7.ST2.TM7BAM4CLA_2_OUTAnalogOutput01_6411sub2" Type="INT">
+<Cons Device="IF7.ST2" DPName="TM7BAM4CLA_2_OUTAnalogOutput01_6411sub2" Kind="io"/>
+</LN>
+<LN ID="%QW.IF7.ST2.TM7BAM4CLA_3_OUTAnalogOutput00_6411sub3" Type="INT">
+<Cons Device="IF7.ST2" DPName="TM7BAM4CLA_3_OUTAnalogOutput00_6411sub3" Kind="io"/>
+</LN>
+<LN ID="%QW.IF7.ST2.TM7BAM4CLA_3_OUTAnalogOutput01_6411sub4" Type="INT">
+<Cons Device="IF7.ST2" DPName="TM7BAM4CLA_3_OUTAnalogOutput01_6411sub4" Kind="io"/>
+</LN>
+<LN ID="%IX.IF7.ST3.ModuleOk" Type="BOOL">
+<Prod Device="IF7.ST3" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST3.NodeStatus" Type="UINT">
+<Prod Device="IF7.ST3" DPName="NodeStatus" Kind="io"/>
+</LN>
+<LN ID="%IB.IF7.ST3.TM7BDM8BE_1_INDigitalInput00_DigitalInput06_6000sub1" Type="USINT">
+<Prod Device="IF7.ST3" DPName="TM7BDM8BE_1_INDigitalInput00_DigitalInput06_6000sub1" Kind="io"/>
+</LN>
+<LN ID="%QB.IF7.ST3.TM7BDM8BE_1_OUTDigitalOutput02_DigitalOutput07_6200sub1" Type="USINT">
+<Cons Device="IF7.ST3" DPName="TM7BDM8BE_1_OUTDigitalOutput02_DigitalOutput07_6200sub1" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST3.TM7BAI4TLA_2_INTemperature00_6401sub1" Type="INT">
+<Prod Device="IF7.ST3" DPName="TM7BAI4TLA_2_INTemperature00_6401sub1" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST3.TM7BAI4TLA_2_INTemperature01_6401sub2" Type="INT">
+<Prod Device="IF7.ST3" DPName="TM7BAI4TLA_2_INTemperature01_6401sub2" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST3.TM7BAI4TLA_2_INTemperature02_6401sub3" Type="INT">
+<Prod Device="IF7.ST3" DPName="TM7BAI4TLA_2_INTemperature02_6401sub3" Kind="io"/>
+</LN>
+<LN ID="%IW.IF7.ST3.TM7BAI4TLA_2_INTemperature03_6401sub4" Type="INT">
+<Prod Device="IF7.ST3" DPName="TM7BAI4TLA_2_INTemperature03_6401sub4" Kind="io"/>
 </LN>
 </Links></IO>

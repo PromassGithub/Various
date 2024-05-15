@@ -4,6 +4,8 @@
   <OperatingSystem Version="C4.73"/>
   <Hardware Target="SG4"/>
   <Operation Delete="Program.br"/>
+  <Operation Delete="epl.br"/>
+  <Operation Delete="AsEPL.br"/>
   <Operation Delete="asieccon.br"/>
   <Operation Delete="astime.br"/>
   <Operation Download="asfw.br" Memory="SystemROM"/>
@@ -21,5 +23,7 @@
   <Operation Download="runtime.br" Memory="UserROM"/>
   <Operation Download="astime.br" Memory="UserROM"/>
   <Operation Download="asieccon.br" Memory="UserROM"/>
+  <Operation Download="AsEPL.br" Memory="UserROM"/>
+  <Operation Download="epl.br" Memory="UserROM"/>
   <Operation Download="Program.br" Memory="UserROM"/>
 </Transfer>

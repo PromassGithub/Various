@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?AutomationRuntimeIOSystem Version = 2.5.0.7?>
 <ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
-  <Module ID="$root" Hardware="X20CP1382" HardwareModuleName="X20CP1382" ModuleID="7">
+  <Module ID="$root" Hardware="X20CP1382" HardwareModuleName="X20CP1382" ModuleID="13">
     <Channel ID="SerialNumber" Description="Serial number" Ext="/HW" Address="0" Direction="IN" Type="UDINT" Sig_St_Udint="1" ChannelType="SerialNumber" />
     <Channel ID="ModuleID" Description="Module ID" Ext="/HW" Address="1" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="ModuleID" />
     <Channel ID="HardwareVariant" Description="Hardware variant" FromVersion="J4.25" Ext="/HW" Address="15" Direction="IN" Type="UINT" ChannelType="HardwareVariant" />
@@ -107,10 +107,17 @@
   </Module>
   <Module ID="IF3.ST100" Hardware="epl_any" HardwareModuleName="AL1370_IO-Link_Master" ModuleID="1" Simulatable="true">
     <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" ArConfig="copy" Direction="IN" Type="BOOL" />
+    <Channel ID="Port1Output1_I2300_S01" Description="" Ext="/DYNAMIC" Address="0x00012300" ArConfig="Copy" Direction="OUT" Type="UDINT" />
+    <Channel ID="Port2Output1_I2310_S01" Description="" Ext="/DYNAMIC" Address="0x00012310" ArConfig="Copy" Direction="OUT" Type="UDINT" />
     <Channel ID="PD_Pin2_I2400" Description="" Ext="/DYNAMIC" Address="0x00002400" ArConfig="Copy" Direction="IN" Type="UINT" />
+    <Channel ID="PD_PQIPort1_I2500" Description="" Ext="/DYNAMIC" Address="0x00002500" ArConfig="Copy" Direction="IN" Type="USINT" />
+    <Channel ID="PD_PQIPort2_I2510" Description="" Ext="/DYNAMIC" Address="0x00002510" ArConfig="Copy" Direction="IN" Type="USINT" />
+    <Channel ID="PD_PQIPort3_I2520" Description="" Ext="/DYNAMIC" Address="0x00002520" ArConfig="Copy" Direction="IN" Type="USINT" />
     <Channel ID="Port1Input1_I2700_S01" Description="" Ext="/DYNAMIC" Address="0x00012700" ArConfig="Copy" Direction="IN" Type="UDINT" />
+    <Channel ID="Port1Input2_I2700_S02" Description="" Ext="/DYNAMIC" Address="0x00022700" ArConfig="Copy" Direction="IN" Type="UDINT" />
+    <Channel ID="Port2Input1_I2710_S01" Description="" Ext="/DYNAMIC" Address="0x00012710" ArConfig="Copy" Direction="IN" Type="UDINT" />
   </Module>
-  <Module ID="X1" Hardware="X1" HardwareModuleName="X1" ModuleID="19" Simulatable="true">
+  <Module ID="X1" Hardware="X1" HardwareModuleName="X1" ModuleID="25" Simulatable="true">
     <Channel ID="DigitalInput01" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x0000" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
     <Channel ID="DigitalInput02" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x0000" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
     <Channel ID="DigitalInput03" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x0000" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
@@ -119,7 +126,7 @@
     <Channel ID="AnalogInput02" Description="±10 V, resolution 12 bit" Address="0x0042" Direction="IN" Type="INT" MSB="12" Sig_Ana_m10V_p10V="1" Sig_Ana_0V_p10V="1" />
     <Channel ID="StatusInput01" Description="Status of analog inputs" Address="0x0050" Direction="IN" Type="USINT" Sig_St_Byte="1" />
   </Module>
-  <Module ID="X2" Hardware="X2" HardwareModuleName="X2" ModuleID="22" Simulatable="true">
+  <Module ID="X2" Hardware="X2" HardwareModuleName="X2" ModuleID="28" Simulatable="true">
     <Channel ID="DigitalInput01" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x1000" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
     <Channel ID="DigitalInput02" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x1000" BitOffset="1" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
     <Channel ID="DigitalInput03" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x1000" BitOffset="2" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
@@ -135,7 +142,7 @@
     <Channel ID="DigitalInput13" Description="24 VDC, 0.2 (2 µs) to 25 ms switching delay, sink" Address="0x1001" BitOffset="4" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
     <Channel ID="DigitalInput14" Description="24 VDC, 0.2 (2 µs) to 25 ms switching delay, sink" Address="0x1001" BitOffset="5" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
   </Module>
-  <Module ID="X3" Hardware="X3" HardwareModuleName="X3" ModuleID="25" Simulatable="true">
+  <Module ID="X3" Hardware="X3" HardwareModuleName="X3" ModuleID="31" Simulatable="true">
     <Channel ID="DigitalOutput01" Description="24 VDC / 0.5 A, source" Address="0x2010" BitOffset="0" Direction="OUT" Type="BOOL" Sig_Dig_05A_24VDC="1" />
     <Channel ID="DigitalOutput02" Description="24 VDC / 0.5 A, source" Address="0x2010" BitOffset="1" Direction="OUT" Type="BOOL" Sig_Dig_05A_24VDC="1" />
     <Channel ID="DigitalOutput03" Description="24 VDC / 0.5 A, source" Address="0x2010" BitOffset="2" Direction="OUT" Type="BOOL" Sig_Dig_05A_24VDC="1" />
@@ -161,5 +168,28 @@
     <Channel ID="StatusDigitalOutput11" Description="Status digital output 11" Address="0x2002" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusDigitalOutput12" Description="Status digital output 12" Address="0x2002" BitOffset="3" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusInput01" Description="I/O power supply warning (0 = DC OK)" Address="0x2004" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+  </Module>
+  <Module ID="IF7.ST2" Hardware="CANopen_any" HardwareModuleName="TM7NCOM08B_CLA_CLA" ModuleID="7" Simulatable="true">
+    <Channel ID="ModuleOk" Description="Module state (1 = module operational)" Ext="/OK" Direction="IN" Type="BOOL" />
+    <Channel ID="NodeStatus" Description="Node status" Ext="/OK" Direction="IN" Type="UINT" />
+    <Channel ID="TM7BDM8BE_1_INDigitalInput00_DigitalInput07_6000sub1" Description="TM7BDM8BE(1) IN DigitalInput00...DigitalInput07" Direction="IN" Type="USINT" />
+    <Channel ID="TM7BAM4CLA_2_INAnalogInput00_6401sub1" Description="TM7BAM4CLA(2) IN AnalogInput00" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAM4CLA_2_INAnalogInput01_6401sub2" Description="TM7BAM4CLA(2) IN AnalogInput01" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAM4CLA_3_INAnalogInput00_6401sub3" Description="TM7BAM4CLA(3) IN AnalogInput00" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAM4CLA_3_INAnalogInput01_6401sub4" Description="TM7BAM4CLA(3) IN AnalogInput01" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAM4CLA_2_OUTAnalogOutput00_6411sub1" Description="TM7BAM4CLA(2) OUT AnalogOutput00" Direction="OUT" Type="INT" />
+    <Channel ID="TM7BAM4CLA_2_OUTAnalogOutput01_6411sub2" Description="TM7BAM4CLA(2) OUT AnalogOutput01" Direction="OUT" Type="INT" />
+    <Channel ID="TM7BAM4CLA_3_OUTAnalogOutput00_6411sub3" Description="TM7BAM4CLA(3) OUT AnalogOutput00" Direction="OUT" Type="INT" />
+    <Channel ID="TM7BAM4CLA_3_OUTAnalogOutput01_6411sub4" Description="TM7BAM4CLA(3) OUT AnalogOutput01" Direction="OUT" Type="INT" />
+  </Module>
+  <Module ID="IF7.ST3" Hardware="CANopen_any" HardwareModuleName="TM7NCOM08B_TLA" ModuleID="10" Simulatable="true">
+    <Channel ID="ModuleOk" Description="Module state (1 = module operational)" Ext="/OK" Direction="IN" Type="BOOL" />
+    <Channel ID="NodeStatus" Description="Node status" Ext="/OK" Direction="IN" Type="UINT" />
+    <Channel ID="TM7BDM8BE_1_INDigitalInput00_DigitalInput06_6000sub1" Description="TM7BDM8BE(1) IN DigitalInput00...DigitalInput06" Direction="IN" Type="USINT" />
+    <Channel ID="TM7BDM8BE_1_OUTDigitalOutput02_DigitalOutput07_6200sub1" Description="TM7BDM8BE(1) OUT DigitalOutput02...DigitalOutput07" Direction="OUT" Type="USINT" />
+    <Channel ID="TM7BAI4TLA_2_INTemperature00_6401sub1" Description="TM7BAI4TLA(2) IN Temperature00" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAI4TLA_2_INTemperature01_6401sub2" Description="TM7BAI4TLA(2) IN Temperature01" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAI4TLA_2_INTemperature02_6401sub3" Description="TM7BAI4TLA(2) IN Temperature02" Direction="IN" Type="INT" />
+    <Channel ID="TM7BAI4TLA_2_INTemperature03_6401sub4" Description="TM7BAI4TLA(2) IN Temperature03" Direction="IN" Type="INT" />
   </Module>
 </ChannelConfiguration>

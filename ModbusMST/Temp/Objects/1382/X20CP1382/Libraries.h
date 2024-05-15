@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _LIBRARIES_20240514175549_
-#define _LIBRARIES_20240514175549_
+#ifndef _LIBRARIES_20240515115628_
+#define _LIBRARIES_20240515115628_
 
 __asm__(".section \".plc\"");
 
@@ -19,6 +19,9 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/astime/astime.var\\\" scope \\\"
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.fun\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.typ\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsEPL/AsEPL.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsEPL/AsEPL.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/AsEPL/AsEPL.var\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 #ifdef _OPERATOR_EXPORT
@@ -457,9 +460,16 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope 
 	__asm__(".ascii \"plcexport \\\"WSTRING_TO_LREAL\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"WSTRING_TO_STRING\\\" FUN\\n\"");
 #endif
+#ifdef _ASEPL_EXPORT
+	__asm__(".ascii \"plcexport \\\"EplSDORead\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"EplSDOWrite\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"EplGetLocalNodeID\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"EplCreateObject\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"EplDeleteObject\\\" FUB\\n\"");
+#endif
 
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20240514175549_ */
+#endif /* _LIBRARIES_20240515115628_ */
 

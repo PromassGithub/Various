@@ -8,7 +8,20 @@
   <TaskClass
     Name="Cyclic#3" />
   <TaskClass
-    Name="Cyclic#4" />
+    Name="Cyclic#4">
+    <Task
+      Name="epl"
+      Disable="false"
+      Source="LibAsEPL1_ST.epl"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\GIT_HUB\Various\ModbusMST\Temp\Objects\1382\X20CP1382\epl\eplCyclic.st.var" />
+      <File
+        Path="C:\projects\GIT_HUB\Various\ModbusMST\Logical\LibAsEPL1_ST\epl\epl.typ" />
+      <File
+        Path="C:\projects\GIT_HUB\Various\ModbusMST\Logical\LibAsEPL1_ST\epl\epl.var" />
+    </Task>
+  </TaskClass>
   <TaskClass
     Name="Cyclic#5" />
   <TaskClass
@@ -19,11 +32,11 @@
       Source="MAIN.Program"
       Language="IEC">
       <InternalFile
-        Path="C:\projects\ModbusMST\Temp\Objects\1382\X20CP1382\Program\Main.st.var" />
+        Path="C:\projects\GIT_HUB\Various\ModbusMST\Temp\Objects\1382\X20CP1382\Program\Main.st.var" />
       <File
-        Path="C:\projects\ModbusMST\Logical\MAIN\Program\Types.typ" />
+        Path="C:\projects\GIT_HUB\Various\ModbusMST\Logical\MAIN\Program\Types.typ" />
       <File
-        Path="C:\projects\ModbusMST\Logical\MAIN\Program\Variables.var" />
+        Path="C:\projects\GIT_HUB\Various\ModbusMST\Logical\MAIN\Program\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass
