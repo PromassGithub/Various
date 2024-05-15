@@ -1157,7 +1157,7 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="0x03E80505" />
+    <Parameter ID="parametervalue" Value="0x01F40505" />
     <Parameter ID="pdomapping" Value="0" />
   </Module>
   <Module ID="IF7.CANopen.pa040" Hardware="LogicalNode">
@@ -1180,7 +1180,7 @@
   </Module>
   <Module ID="IF7.CANopen.pa040sub1" Hardware="LogicalNode">
     <Parameter ID="subnumber" Value="0" />
-    <Parameter ID="parametername" Value="TM7BDM8BE_1_OUTDigitalOutput02_DigitalOutput07_6200sub1_3" />
+    <Parameter ID="parametername" Value="TM7BDM8BE_1_OUTDigitalOutput04_DigitalOutput07_6200sub1_3" />
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="ro" />
@@ -1270,7 +1270,7 @@
   </Module>
   <Module ID="IF7.CANopen.pa4c0sub2" Hardware="LogicalNode">
     <Parameter ID="subnumber" Value="0" />
-    <Parameter ID="parametername" Value="TM7BDM8BE_1_INDigitalInput00_DigitalInput06_6000sub1_3" />
+    <Parameter ID="parametername" Value="TM7BDM8BE_1_INDigitalInput00_DigitalInput03_6000sub1_3" />
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rww" />
@@ -5027,8 +5027,8 @@
     <Parameter ID="82" Value="0x6444" />
   </Module>
   <Module ID="IF7.ST3" Hardware="CANopen_any">
-    <Parameter ID="HardwareModuleName" Value="TM7NCOM08B_TLA" />
-    <Parameter ID="OrderNumber" Value="TM7NCOM08B_TLA" />
+    <Parameter ID="HardwareModuleName" Value="TM7NCOM08B+TLA" />
+    <Parameter ID="OrderNumber" Value="TM7NCOM08B+TLA" />
   </Module>
   <Module ID="IF7.ST3.IO" Hardware="CANopen_any">
     <Parameter ID="Supervision" Value="off" />
@@ -5046,7 +5046,7 @@
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="const" />
     <Parameter ID="parametervalue" Value="0x000F0191" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p1001" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
@@ -5063,7 +5063,7 @@
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p1003sub1" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
@@ -5148,7 +5148,7 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="6" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="0x3E8" />
+    <Parameter ID="parametervalue" Value="0x1F4" />
     <Parameter ID="objflags" Value="0" />
   </Module>
   <Module ID="IF7.ST3.IO.p100d" Hardware="LogicalNode">
@@ -7592,7 +7592,7 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="172" />
+    <Parameter ID="parametervalue" Value="240" />
     <Parameter ID="objflags" Value="0" />
   </Module>
   <Module ID="IF7.ST3.IO.p3900sub4" Hardware="LogicalNode">
@@ -7682,7 +7682,7 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="1" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="1" />
+    <Parameter ID="parametervalue" Value="0" />
     <Parameter ID="objflags" Value="0" />
   </Module>
   <Module ID="IF7.ST3.IO.p6006" Hardware="LogicalNode">
@@ -7746,14 +7746,14 @@
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="ro" />
   </Module>
-  <Module ID="IF7.ST3.IO.p6020sub2" Hardware="LogicalNode">
+  <Module ID="IF7.ST3.IO.p6020sub5" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="0x7" />
     <Parameter ID="datatype" Value="1" />
     <Parameter ID="pdomapping" Value="1" />
     <Parameter ID="accesstype" Value="ro" />
     <Parameter ID="connecttomaster" Value="0" Type="UDINT" />
   </Module>
-  <Module ID="IF7.ST3.IO.p6020sub4" Hardware="LogicalNode">
+  <Module ID="IF7.ST3.IO.p6020sub6" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="0x7" />
     <Parameter ID="datatype" Value="1" />
     <Parameter ID="pdomapping" Value="1" />
@@ -7806,7 +7806,7 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="172" />
+    <Parameter ID="parametervalue" Value="240" />
     <Parameter ID="objflags" Value="0" />
   </Module>
   <Module ID="IF7.ST3.IO.p6207" Hardware="LogicalNode">
@@ -7844,6 +7844,14 @@
     <Parameter ID="parametervalue" Value="0" />
     <Parameter ID="objflags" Value="0" />
   </Module>
+  <Module ID="IF7.ST3.IO.p6220sub2" Hardware="LogicalNode">
+    <Parameter ID="objecttype" Value="0x7" />
+    <Parameter ID="datatype" Value="1" />
+    <Parameter ID="pdomapping" Value="1" />
+    <Parameter ID="accesstype" Value="rw" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="0" />
+  </Module>
   <Module ID="IF7.ST3.IO.p6220sub3" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="0x7" />
     <Parameter ID="datatype" Value="1" />
@@ -7852,15 +7860,7 @@
     <Parameter ID="parametervalue" Value="0" />
     <Parameter ID="objflags" Value="0" />
   </Module>
-  <Module ID="IF7.ST3.IO.p6220sub5" Hardware="LogicalNode">
-    <Parameter ID="objecttype" Value="0x7" />
-    <Parameter ID="datatype" Value="1" />
-    <Parameter ID="pdomapping" Value="1" />
-    <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
-  </Module>
-  <Module ID="IF7.ST3.IO.p6220sub6" Hardware="LogicalNode">
+  <Module ID="IF7.ST3.IO.p6220sub4" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="0x7" />
     <Parameter ID="datatype" Value="1" />
     <Parameter ID="pdomapping" Value="1" />
@@ -7996,36 +7996,36 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="4" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6421sub2" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="4" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6421sub3" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="4" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6421sub4" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="5" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="4" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6423" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="1" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="1" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6424" Hardware="LogicalNode">
     <Parameter ID="subnumber" Value="5" />
@@ -8042,28 +8042,28 @@
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6424sub2" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6424sub3" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6424sub4" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6425" Hardware="LogicalNode">
     <Parameter ID="subnumber" Value="5" />
@@ -8080,28 +8080,28 @@
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6425sub2" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6425sub3" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6425sub4" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="4" />
     <Parameter ID="accesstype" Value="rw" />
     <Parameter ID="parametervalue" Value="0" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6426" Hardware="LogicalNode">
     <Parameter ID="subnumber" Value="5" />
@@ -8117,29 +8117,29 @@
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="3276800" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6426sub2" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="3276800" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6426sub3" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="3276800" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6426sub4" Hardware="LogicalNode">
     <Parameter ID="objecttype" Value="7" />
     <Parameter ID="datatype" Value="7" />
     <Parameter ID="accesstype" Value="rw" />
-    <Parameter ID="parametervalue" Value="3276800" />
-    <Parameter ID="objflags" Value="0" />
+    <Parameter ID="parametervalue" Value="0" />
+    <Parameter ID="objflags" Value="1" />
   </Module>
   <Module ID="IF7.ST3.IO.p6443" Hardware="LogicalNode">
     <Parameter ID="subnumber" Value="1" />
