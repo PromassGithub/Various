@@ -169,7 +169,7 @@
     <Channel ID="StatusDigitalOutput12" Description="Status digital output 12" Address="0x2002" BitOffset="3" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusInput01" Description="I/O power supply warning (0 = DC OK)" Address="0x2004" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
   </Module>
-  <Module ID="IF7.ST2" Hardware="CANopen_any" HardwareModuleName="TM7NCOM08B_CLA_CLA" ModuleID="7" Simulatable="true">
+  <Module ID="IF7.ST2" Hardware="CANopen_any" HardwareModuleName="TM7NCOM08B_CLA_CLA" ModuleID="10" Simulatable="true">
     <Channel ID="ModuleOk" Description="Module state (1 = module operational)" Ext="/OK" Direction="IN" Type="BOOL" />
     <Channel ID="NodeStatus" Description="Node status" Ext="/OK" Direction="IN" Type="UINT" />
     <Channel ID="TM7BDM8BE_1_INDigitalInput00_DigitalInput07_6000sub1" Description="TM7BDM8BE(1) IN DigitalInput00...DigitalInput07" Direction="IN" Type="USINT" />
@@ -182,11 +182,11 @@
     <Channel ID="TM7BAM4CLA_3_OUTAnalogOutput00_6411sub3" Description="TM7BAM4CLA(3) OUT AnalogOutput00" Direction="OUT" Type="INT" />
     <Channel ID="TM7BAM4CLA_3_OUTAnalogOutput01_6411sub4" Description="TM7BAM4CLA(3) OUT AnalogOutput01" Direction="OUT" Type="INT" />
   </Module>
-  <Module ID="IF7.ST3" Hardware="CANopen_any" HardwareModuleName="TM7NCOM08B_TLA" ModuleID="10" Simulatable="true">
+  <Module ID="IF7.ST3" Hardware="CANopen_any" HardwareModuleName="TM7NCOM08B+TLA" ModuleID="7" Simulatable="true">
     <Channel ID="ModuleOk" Description="Module state (1 = module operational)" Ext="/OK" Direction="IN" Type="BOOL" />
     <Channel ID="NodeStatus" Description="Node status" Ext="/OK" Direction="IN" Type="UINT" />
-    <Channel ID="TM7BDM8BE_1_INDigitalInput00_DigitalInput06_6000sub1" Description="TM7BDM8BE(1) IN DigitalInput00...DigitalInput06" Direction="IN" Type="USINT" />
-    <Channel ID="TM7BDM8BE_1_OUTDigitalOutput02_DigitalOutput07_6200sub1" Description="TM7BDM8BE(1) OUT DigitalOutput02...DigitalOutput07" Direction="OUT" Type="USINT" />
+    <Channel ID="TM7BDM8BE_1_INDigitalInput00_DigitalInput03_6000sub1" Description="TM7BDM8BE(1) IN DigitalInput00...DigitalInput03" Direction="IN" Type="USINT" />
+    <Channel ID="TM7BDM8BE_1_OUTDigitalOutput04_DigitalOutput07_6200sub1" Description="TM7BDM8BE(1) OUT DigitalOutput04...DigitalOutput07" Direction="OUT" Type="USINT" />
     <Channel ID="TM7BAI4TLA_2_INTemperature00_6401sub1" Description="TM7BAI4TLA(2) IN Temperature00" Direction="IN" Type="INT" />
     <Channel ID="TM7BAI4TLA_2_INTemperature01_6401sub2" Description="TM7BAI4TLA(2) IN Temperature01" Direction="IN" Type="INT" />
     <Channel ID="TM7BAI4TLA_2_INTemperature02_6401sub3" Description="TM7BAI4TLA(2) IN Temperature02" Direction="IN" Type="INT" />
