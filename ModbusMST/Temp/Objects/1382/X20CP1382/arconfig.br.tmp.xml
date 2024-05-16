@@ -349,18 +349,6 @@
       <Parameter ID="Direction" Value="IN" />
       <Parameter ID="Type" Value="UDINT" />
     </Channel>
-    <Channel ID="Port2Input2_I2710_S02">
-      <Parameter ID="Ext" Value="/DYNAMIC" />
-      <Parameter ID="Address" Value="0x00022710" Type="UDINT" />
-      <Parameter ID="Direction" Value="IN" />
-      <Parameter ID="Type" Value="UDINT" />
-    </Channel>
-    <Channel ID="Port2Input3_I2710_S03">
-      <Parameter ID="Ext" Value="/DYNAMIC" />
-      <Parameter ID="Address" Value="0x00032710" Type="UDINT" />
-      <Parameter ID="Direction" Value="IN" />
-      <Parameter ID="Type" Value="UDINT" />
-    </Channel>
   </Module>
   <Module ID="IF3.ST100.OD" Hardware="epl_any">
     <Parameter ID="p2801s01" Value="USINT#3" />

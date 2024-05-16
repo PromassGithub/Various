@@ -2,25 +2,25 @@
 <?AutomationStudio FileVersion="4.9" WorkingVersion="4.9"?>
 <RuleSetOptions UsesUTCTime="True">
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\ashwac.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 14:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 09:55:38" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\1382\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\ashwac.br&quot; -L &quot;AsEPL: V*, AsIecCon: V*, astime: V*, operator: V*, runtime: V*&quot; -c &quot;1382&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B C4.73 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;1382&quot; -T SG4 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\sysconf.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 14:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 09:55:38" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\1382\Hardware.hw&quot;  -c &quot;1382&quot; -sysconf -S &quot;X20CP1382&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\sysconf.br&quot; -T SG4 -B C4.73 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;1382&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\asfw.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 14:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 09:55:38" />
     <Prerequisite ID="c:\brautomation\as49\upgrades\modified.txt" LastWriteTime="2023-11-21 13:16:48" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\1382\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP1382&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\asfw.br&quot; -T SG4 -B C4.73 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;1382&quot; -zip -s &quot;1382&quot; -firmware -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\ashwd.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 14:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 09:55:38" />
     <Prerequisite ID="c:\brautomation\as49\upgrades\modified.txt" LastWriteTime="2023-11-21 13:16:48" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\1382\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP1382&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\ashwd.br&quot; -T SG4 -B C4.73 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;1382&quot; -zip -s &quot;1382&quot; -hwd -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\arconfig.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 14:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 09:55:38" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\x20cp1382\iomap.iom" LastWriteTime="2024-05-15 06:06:46" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\1382\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\1382\X20CP1382\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.252 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;1382&quot; -v V1.00.0 -S &quot;X20CP1382&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B C4.73 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;1382&quot; " />
   </Rule>
@@ -31,10 +31,9 @@
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\iomap.br">
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\x20cp1382\iomap.iom" LastWriteTime="2024-05-15 06:06:46" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\x20cp1382\pvmap.vvm" LastWriteTime="2024-05-15 06:06:46" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 14:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\hardware.hw" LastWriteTime="2024-05-15 09:55:38" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\1382\x20cp1382\cpu.sw" LastWriteTime="2024-05-15 06:56:00" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\channelconfiguration.xml" LastWriteTime="2024-05-15 14:40:18" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\main\program\variables.var" LastWriteTime="2024-05-15 06:06:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\channelconfiguration.xml" LastWriteTime="2024-05-15 09:56:32" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\1382\X20CP1382\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\1382\X20CP1382\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\1382\X20CP1382\iomap.br&quot; -T SG4 -B C4.73 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;1382.X20CP1382&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\tcdata\tcdata.imx">
@@ -166,9 +165,9 @@
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\sysconf.br" LastWriteTime="2024-05-15 09:54:08" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\asfw.br" LastWriteTime="2024-05-15 09:54:08" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\ashwd.br" LastWriteTime="2024-05-15 09:54:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\arconfig.br" LastWriteTime="2024-05-15 14:40:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\arconfig.br" LastWriteTime="2024-05-15 09:56:32" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\iomap.br" LastWriteTime="2024-05-15 14:40:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\iomap.br" LastWriteTime="2024-05-15 09:56:32" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\tcdata.br" LastWriteTime="2024-05-15 09:56:32" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\role.br" LastWriteTime="2024-05-15 09:54:08" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\user.br" LastWriteTime="2024-05-15 09:54:08" />

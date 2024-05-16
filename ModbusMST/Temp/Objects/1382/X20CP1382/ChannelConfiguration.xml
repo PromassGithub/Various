@@ -116,8 +116,6 @@
     <Channel ID="Port1Input1_I2700_S01" Description="" Ext="/DYNAMIC" Address="0x00012700" ArConfig="Copy" Direction="IN" Type="UDINT" />
     <Channel ID="Port1Input2_I2700_S02" Description="" Ext="/DYNAMIC" Address="0x00022700" ArConfig="Copy" Direction="IN" Type="UDINT" />
     <Channel ID="Port2Input1_I2710_S01" Description="" Ext="/DYNAMIC" Address="0x00012710" ArConfig="Copy" Direction="IN" Type="UDINT" />
-    <Channel ID="Port2Input2_I2710_S02" Description="" Ext="/DYNAMIC" Address="0x00022710" ArConfig="Copy" Direction="IN" Type="UDINT" />
-    <Channel ID="Port2Input3_I2710_S03" Description="" Ext="/DYNAMIC" Address="0x00032710" ArConfig="Copy" Direction="IN" Type="UDINT" />
   </Module>
   <Module ID="X1" Hardware="X1" HardwareModuleName="X1" ModuleID="25" Simulatable="true">
     <Channel ID="DigitalInput01" Description="24 VDC, 0.2 to 25 ms switching delay, sink" Address="0x0000" BitOffset="0" Direction="IN" Type="BOOL" Sig_Dig_24VDC="1" />
