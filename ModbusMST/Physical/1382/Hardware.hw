@@ -64,34 +64,20 @@
     <Parameter ID="Cb_2_C_4_Datatype" Value="6" />
     <Parameter ID="Cb_2_C_4_Dir" Value="1" />
   </Module>
-  <Module Name="TM7NCOM08B+TLA" Type="FBC.0x0500005A.0x0000B12B.TM7_TLA_NO_INTERRUPT" Version="2.21" OrderNumber="TM7NCOM08B+TLA">
+  <Module Name="TM7NCOM08B+TLA" Type="FBC.0x0500005A.0x0000B12B.TM7_TLA" Version="3.1" OrderNumber="TM7NCOM08B+TLA">
     <Connection Connector="CAN1" TargetModule="TM7NCOM08B_CLA_CLA" TargetConnector="CAN2" />
+    <Parameter ID="p6020sub5_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub6_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub7_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub8_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub10_connecttomaster" Value="1" />
+    <Parameter ID="p6220sub1_connecttomaster" Value="11" />
+    <Parameter ID="p6220sub2_connecttomaster" Value="11" />
+    <Parameter ID="p6220sub3_connecttomaster" Value="11" />
+    <Parameter ID="p6220sub4_connecttomaster" Value="11" />
     <Parameter ID="pnodeobservation" Value="plifeguarding" />
-    <Parameter ID="plifeguarding_guardtime" Value="500" />
+    <Parameter ID="plifeguarding_guardtime" Value="1000" />
     <Parameter ID="plifeguarding_retryfactor" Value="5" />
-    <Parameter ID="p1000_objflags" Value="1" />
-    <Parameter ID="p1003_objflags" Value="1" />
-    <Parameter ID="p1003sub0_objflags" Value="1" />
-    <Parameter ID="p6421_objflags" Value="1" />
-    <Parameter ID="p6421sub1_objflags" Value="1" />
-    <Parameter ID="p6421sub2_objflags" Value="1" />
-    <Parameter ID="p6421sub3_objflags" Value="1" />
-    <Parameter ID="p6421sub4_objflags" Value="1" />
-    <Parameter ID="p6423_objflags" Value="1" />
-    <Parameter ID="p6424sub1_objflags" Value="1" />
-    <Parameter ID="p6424sub2_objflags" Value="1" />
-    <Parameter ID="p6424sub3_objflags" Value="1" />
-    <Parameter ID="p6424sub4_objflags" Value="1" />
-    <Parameter ID="p6425_objflags" Value="1" />
-    <Parameter ID="p6425sub1_objflags" Value="1" />
-    <Parameter ID="p6425sub2_objflags" Value="1" />
-    <Parameter ID="p6425sub3_objflags" Value="1" />
-    <Parameter ID="p6425sub4_objflags" Value="1" />
-    <Parameter ID="p6426_objflags" Value="1" />
-    <Parameter ID="p6426sub1_objflags" Value="1" />
-    <Parameter ID="p6426sub2_objflags" Value="1" />
-    <Parameter ID="p6426sub3_objflags" Value="1" />
-    <Parameter ID="p6426sub4_objflags" Value="1" />
   </Module>
   <Module Name="TM7NCOM08B_CLA_CLA" Type="FBC.0x0500005A.0x0000B12B.TM7COM_CLA_CLA_V3" Version="1.34" OrderNumber="TM7NCOM08B_CLA_CLA">
     <Connection Connector="CAN1" TargetModule="X20CP1382" TargetConnector="IF7" />
