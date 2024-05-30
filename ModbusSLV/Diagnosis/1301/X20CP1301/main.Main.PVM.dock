@@ -1,0 +1,13 @@
+WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=main 
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=5 ASCIIString=0
+                                    name                                     type force                                                            value level type len format place expand specs
+                                    IREG                              UINT[0..31]    0 "                                                               *"    0    6   32    0    1    1         
+                                 IREG[0]                                     UINT    1 "                                                              22"    1    6    1   10    1    0         
+                                 IREG[1]                                     UINT    1 "                                                              23"    1    6    1   10    1    0         
+                                 IREG[2]                                     UINT    1 "                                                              24"    1    6    1   10    1    0         
+                                 IREG[3]                                     UINT    1 "                                                              25"    1    6    1   10    1    0         
+                                    HREG                              UINT[0..31]    0 "                                                               *"    0    6   32    0    1    1         
+                                 HREG[0]                                     UINT    3 "                                                               8"    1    6    1   10    1    0         
+                                 HREG[1]                                     UINT    3 "                                                               9"    1    6    1   10    1    0         
+                                 HREG[2]                                     UINT    3 "                                                              10"    1    6    1   10    1    0         
+                                 HREG[3]                                     UINT    3 "                                                              11"    1    6    1   10    1    0         

@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ISO15745ProfileContainer xmlns="http://www.ethernet-powerlink.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ethernet-powerlink.org Powerlink_Main.xsd">
+  <ISO15745Profile>
+    <ProfileHeader>
+      <ProfileIdentification>EPL_Device_Profile</ProfileIdentification>
+      <ProfileRevision>1</ProfileRevision>
+      <ProfileName />
+      <ProfileSource />
+      <ProfileClassID>Device</ProfileClassID>
+      <ISO15745Reference>
+        <ISO15745Part>4</ISO15745Part>
+        <ISO15745Edition>1</ISO15745Edition>
+        <ProfileTechnology>Powerlink</ProfileTechnology>
+      </ISO15745Reference>
+    </ProfileHeader>
+    <ProfileBody fileCreationDate="2020-10-16" fileCreator="ifm electronic gmbh" fileModificationDate="2021-02-11" fileModifiedBy="ifm electronic gmbh" fileName="AL1370_0069666D_IO-LinkMaster.xdd" fileVersion="1.1" xsi:type="ProfileBody_Device_Powerlink">
+      <DeviceIdentity>
+        <vendorName>ifm electronic gmbh</vendorName>
+        <vendorID>0x0069666D</vendorID>
+        <deviceFamily>
+          <label lang="en" />
+          <description lang="en" />
+        </deviceFamily>
+        <productName>AL1370_IO-Link_Master</productName>
+        <productID>0x00AA1370</productID>
+        <orderNumber />
+        <specificationRevision>1.3.0</specificationRevision>
+      </DeviceIdentity>
+      <DeviceFunction>
+        <capabilities>
+          <characteristicsList>
+            <characteristic>
+              <characteristicName>
+                <label lang="en">Transfer rate</label>
+              </characteristicName>
+              <characteristicContent>
+                <label lang="en">100 MBit/s</label>
+              </characteristicContent>
+            </characteristic>
+          </characteristicsList>
+        </capabilities>
+		<picturesList>
+			<picture URI="AL1370.jpg" type="frontPicture">
+				<label lang="en-us">AL1370</label>
+			</picture>
+        </picturesList>
+		<connectorList>
+            <connector id="PLK_IF1" connectorType="POWERLINK" positioning="remote" posX="300" posY="250" >
+                <label lang="en">PLK_IF1</label>
+            </connector>
+            <connector id="PLK_IF2" connectorType="POWERLINK" positioning="remote" posX="420" posY="250" >
+                <label lang="en">PLK_IF2</label>
+            </connector>
+        </connectorList>
+      </DeviceFunction>
+    </ProfileBody>
+  </ISO15745Profile>
+  <ISO15745Profile>
+    <ProfileHeader>
+      <ProfileIdentification>Powerlink_Communication_Profile</ProfileIdentification>
+      <ProfileRevision>1</ProfileRevision>
+      <ProfileName />
+      <ProfileSource />
+      <ProfileClassID>CommunicationNetwork</ProfileClassID>
+      <ISO15745Reference>
+        <ISO15745Part>4</ISO15745Part>
+        <ISO15745Edition>1</ISO15745Edition>
+        <ProfileTechnology>Powerlink</ProfileTechnology>
+      </ISO15745Reference>
+    </ProfileHeader>
+    <ProfileBody fileCreationDate="2020-10-16" fileCreator="ifm electronic gmbh" fileModificationDate="2021-02-11" fileModifiedBy="ifm electronic gmbh" fileName="AL1370_0069666D_IO-LinkMaster.xdd" fileVersion="1.1" xsi:type="ProfileBody_CommunicationNetwork_Powerlink">
+
+      <ApplicationLayers>
+        <identity>
+          <vendorID>0x0069666D</vendorID>
+          <productID>0x00AA1370</productID>
+        </identity>
+        <DataTypeList>
+          <defType dataType="0001">
+            <Boolean />
+          </defType>
+          <defType dataType="0002">
+            <Integer8 />
+          </defType>
+          <defType dataType="0003">
+            <Integer16 />
+          </defType>
+          <defType dataType="0004">
+            <Integer32 />
+          </defType>
+          <defType dataType="0005">
+            <Unsigned8 />
+          </defType>
+          <defType dataType="0006">
+            <Unsigned16 />
+          </defType>
+          <defType dataType="0007">
+            <Unsigned32 />
+          </defType>
+          <defType dataType="0008">
+            <Real32 />
+          </defType>
+          <defType dataType="0009">
+            <Visible_String />
+          </defType>
+          <defType dataType="0010">
+            <Integer24 />
+          </defType>
+          <defType dataType="0011">
+            <Real64 />
+          </defType>
+          <defType dataType="0012">
+            <Integer40 />
+          </defType>
+          <defType dataType="0013">
+            <Integer48 />
+          </defType>
+          <defType dataType="0014">
+            <Integer56 />
+          </defType>
+          <defType dataType="0015">
+            <Integer64 />
+          </defType>
+          <defType dataType="000A">
+            <Octet_String />
+          </defType>
+          <defType dataType="000B">
+            <Unicode_String />
+          </defType>
+          <defType dataType="000C">
+            <Time_of_Day />
+          </defType>
+          <defType dataType="000D">
+            <Time_Diff />
+          </defType>
+          <defType dataType="000F">
+            <Domain />
+          </defType>
+          <defType dataType="0016">
+            <Unsigned24 />
+          </defType>
+          <defType dataType="0018">
+            <Unsigned40 />
+          </defType>
+          <defType dataType="0019">
+            <Unsigned48 />
+          </defType>
+          <defType dataType="001A">
+            <Unsigned56 />
+          </defType>
+          <defType dataType="001B">
+            <Unsigned64 />
+          </defType>
+          <defType dataType="0401">
+            <MAC_ADDRESS />
+          </defType>
+          <defType dataType="0402">
+            <IP_ADDRESS />
+          </defType>
+          <defType dataType="0403">
+            <NETTIME />
+          </defType>
+        </DataTypeList>
+        <ObjectList>
+          <Object index="1000" name="NMT_DeviceType_U32" objectType="7" dataType="0007" defaultValue="0x0000000" accessType="const" />
+          <Object index="1001" name="ERR_ErrorRegister_U8" objectType="7" dataType="0005" defaultValue="0" accessType="ro" />
+          <Object index="1003" name="ERR_History_ADOM" objectType="8">
+            <SubObject subIndex="00" name="NumberOfEntries" objectType="7" dataType="0005" defaultValue="0" accessType="rw" />
+            <SubObject subIndex="01" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="02" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="03" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="04" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="05" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="06" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="07" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="08" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="09" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="0A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="0B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="0C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="0D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="0E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="0F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="10" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="11" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="12" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="13" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="14" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="15" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="16" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="17" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="18" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="19" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="1A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="1B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="1C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="1D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="1E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="1F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="20" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="21" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="22" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="23" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="24" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="25" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="26" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="27" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="28" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="29" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="2A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="2B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="2C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="2D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="2E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="2F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="30" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="31" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="32" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="33" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="34" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="35" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="36" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="37" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="38" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="39" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="3A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="3B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="3C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="3D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="3E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="3F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="40" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="41" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="42" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="43" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="44" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="45" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="46" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="47" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="48" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="49" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="4A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="4B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="4C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="4D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="4E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="4F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="50" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="51" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="52" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="53" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="54" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="55" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="56" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="57" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="58" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="59" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="5A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="5B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="5C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="5D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="5E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="5F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="60" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="61" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="62" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="63" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="64" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="65" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="66" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="67" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="68" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="69" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="6A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="6B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="6C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="6D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="6E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="6F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="70" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="71" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="72" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="73" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="74" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="75" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="76" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="77" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="78" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="79" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="7A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="7B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="7C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="7D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="7E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="7F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="80" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="81" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="82" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="83" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="84" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="85" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="86" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="87" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="88" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="89" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="8A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="8B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="8C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="8D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="8E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="8F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="90" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="91" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="92" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="93" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="94" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="95" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="96" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="97" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="98" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="99" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="9A" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="9B" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="9C" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="9D" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="9E" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="9F" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A0" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A1" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A2" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A3" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A4" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A5" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A6" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A7" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A8" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="A9" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="AA" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="AB" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="AC" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="AD" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="AE" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="AF" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B0" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B1" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B2" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B3" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B4" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B5" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B6" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B7" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B8" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="B9" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="BA" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="BB" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="BC" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="BD" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="BE" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="BF" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C0" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C1" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C2" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C3" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C4" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C5" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C6" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C7" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C8" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="C9" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="CA" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="CB" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="CC" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="CD" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="CE" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="CF" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D0" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D1" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D2" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D3" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D4" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D5" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D6" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D7" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D8" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="D9" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="DA" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="DB" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="DC" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="DD" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="DE" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="DF" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E0" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E1" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E2" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E3" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E4" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E5" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E6" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E7" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E8" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="E9" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="EA" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="EB" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="EC" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="ED" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="EE" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="EF" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F0" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F1" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F2" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F3" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F4" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F5" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F6" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F7" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F8" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="F9" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="FA" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="FB" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="FC" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="FD" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+            <SubObject subIndex="FE" name="ErrorEntry_DOM"  objectType="7" dataType="000f" defaultValue=""  accessType="ro" />
+          </Object>
+          <Object index="1006" name="NMT_CycleLen_U32" objectType="7" dataType="0007" defaultValue="1000" accessType="rw" />
+          <Object index="1008" name="NMT_ManufactDevName_VS" objectType="7" dataType="0009" accessType="const" />
+          <Object index="1009" name="NMT_ManufactHwVers_VS"  objectType="7" dataType="0009" accessType="const" />
+          <Object index="100A" name="NMT_ManufactSwVers_VS"  objectType="7" dataType="0009" accessType="const" />
+          <Object index="1018" name="NMT_IdentityObject_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries" objectType="7" dataType="0005" defaultValue="0x04"       accessType="const" />
+            <SubObject subIndex="01" name="VendorId_U32"    objectType="7" dataType="0007" defaultValue="0x0069666D" accessType="const" />
+            <SubObject subIndex="02" name="ProductCode_U32" objectType="7" dataType="0007" defaultValue="0x00AA1370" accessType="const" />
+            <SubObject subIndex="03" name="RevisionNo_U32"  objectType="7" dataType="0007" defaultValue="0x00000001" accessType="const" />
+            <SubObject subIndex="04" name="SerialNo_U32"    objectType="7" dataType="0007" accessType="const" />
+          </Object>
+          <Object index="1020" name="CFM_VerifyConfiguration_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries" objectType="7" dataType="0005" defaultValue="0x2" accessType="const" />
+            <SubObject subIndex="01" name="ConfDate_U32"    objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ConfTime_U32"    objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+          </Object>
+          <Object index="1030" name="NMT_InterfaceGroup_0h_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"           objectType="7" dataType="0005" defaultValue="0x9"              accessType="const" />
+            <SubObject subIndex="01" name="InterfaceIndex_U16"        objectType="7" dataType="0006" defaultValue="1"                accessType="ro"    />
+            <SubObject subIndex="02" name="InterfaceDescription_VSTR" objectType="7" dataType="0009" defaultValue="EPL Cn Interface" accessType="const" />
+            <SubObject subIndex="03" name="InterfaceType_U8"          objectType="7" dataType="0005" defaultValue="0x6"              accessType="const" />
+            <SubObject subIndex="04" name="InterfaceMtu_U16"          objectType="7" dataType="0006" defaultValue="1518"             accessType="const" />
+            <SubObject subIndex="05" name="InterfacePhysAddress_OSTR" objectType="7" dataType="000A"                                 accessType="const" />
+            <SubObject subIndex="06" name="InterfaceName_VSTR"        objectType="7" dataType="0009" defaultValue="eplcn0"           accessType="ro"    />
+            <SubObject subIndex="07" name="InterfaceOperStatus_U8"    objectType="7" dataType="0005" defaultValue="1"                accessType="ro"    />
+            <SubObject subIndex="08" name="InterfaceAdminState_U8"    objectType="7" dataType="0005" defaultValue="1"                accessType="rw"    />
+            <SubObject subIndex="09" name="Valid_BOOL"                objectType="7" dataType="0001" defaultValue="true"             accessType="rw"    />
+          </Object>
+          <Object index="1300" name="SDO_SequLayerTimeout_U32"  objectType="7" dataType="0007" defaultValue="15000" highLimit="0xFFFFFFFF" lowLimit="0x00000064" accessType="rw"/>
+          <Object index="1400" name="PDO_RxCommParam_00h_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x2" accessType="const" />
+            <SubObject subIndex="01" name="NodeID_U8"         objectType="7" dataType="0005" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="MappingVersion_U8" objectType="7" dataType="0005" defaultValue="0"   accessType="rw"    />
+          </Object>
+          <!-- Cyclic Data Mapping Objects, Receive PDO -->
+          <Object index="1600" name="PDO_RxMappParam_00h_AU64"  objectType="8">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005"  defaultValue="0x0" highLimit="0x50" accessType="rw" />
+          </Object>
+          <Object index="1800" name="PDO_TxCommParam_00h_REC"  objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x2" accessType="const" />
+            <SubObject subIndex="01" name="NodeID_U8"         objectType="7" dataType="0005" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="MappingVersion_U8" objectType="7" dataType="0005" defaultValue="0"   accessType="rw"    />
+          </Object>
+          <!-- Cyclic Data Mapping Objects, Transmit PDO -->
+          <Object index="1A00" name="PDO_TxMappParam_00h_AU64"  objectType="8">
+            <SubObject subIndex="00" name="NumberOfEntries"    objectType="7" dataType="0005"  defaultValue="0x0" highLimit="0x50" accessType="rw" />
+          </Object>
+          <Object index="1C0A" name="DLL_CNCollision_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x3" accessType="const" />
+            <SubObject subIndex="01" name="CumulativeCnt_U32" objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ThresholdCnt_U32"  objectType="7" dataType="0007" defaultValue="0"   accessType="ro"    />
+            <SubObject subIndex="03" name="Threshold_U32"     objectType="7" dataType="0007" defaultValue="15"  accessType="rw"    />
+          </Object>
+          <Object index="1C0B" name="DLL_CNLossSoC_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x3" accessType="const" />
+            <SubObject subIndex="01" name="CumulativeCnt_U32" objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ThresholdCnt_U32"  objectType="7" dataType="0007" defaultValue="0"   accessType="ro"    />
+            <SubObject subIndex="03" name="Threshold_U32"     objectType="7" dataType="0007" defaultValue="15"  accessType="rw"    />
+          </Object>
+          <Object index="1C0C" name="DLL_CNLossSoA_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x3" accessType="const" />
+            <SubObject subIndex="01" name="CumulativeCnt_U32" objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ThresholdCnt_U32"  objectType="7" dataType="0007" defaultValue="0"   accessType="ro"    />
+            <SubObject subIndex="03" name="Threshold_U32"     objectType="7" dataType="0007" defaultValue="15"  accessType="rw"    />
+          </Object>
+          <Object index="1C0D" name="DLL_CNLossPReq_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x3" accessType="const" />
+            <SubObject subIndex="01" name="CumulativeCnt_U32" objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ThresholdCnt_U32"  objectType="7" dataType="0007" defaultValue="0"   accessType="ro"    />
+            <SubObject subIndex="03" name="Threshold_U32"     objectType="7" dataType="0007" defaultValue="15"  accessType="rw"    />
+          </Object>
+          <Object index="1C0E" name="DLL_CNSoCJitter_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x3" accessType="const" />
+            <SubObject subIndex="01" name="CumulativeCnt_U32" objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ThresholdCnt_U32"  objectType="7" dataType="0007" defaultValue="0"   accessType="ro"    />
+            <SubObject subIndex="03" name="Threshold_U32"     objectType="7" dataType="0007" defaultValue="15"  accessType="rw"    />
+          </Object>
+          <Object index="1C0F" name="DLL_CNCRCError_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"   objectType="7" dataType="0005" defaultValue="0x3" accessType="const" />
+            <SubObject subIndex="01" name="CumulativeCnt_U32" objectType="7" dataType="0007" defaultValue="0"   accessType="rw"    />
+            <SubObject subIndex="02" name="ThresholdCnt_U32"  objectType="7" dataType="0007" defaultValue="0"   accessType="ro"    />
+            <SubObject subIndex="03" name="Threshold_U32"     objectType="7" dataType="0007" defaultValue="15"  accessType="rw"    />
+          </Object>
+          <Object index="1C13" name="DLL_CNSoCJitterRange_U32" objectType="7" dataType="0007" defaultValue="2000" accessType="rw"/>
+          <Object index="1C14" name="DLL_CNLossOfSocTolerance_U32" objectType="7" dataType="0007" defaultValue="100000" accessType="rw"/>
+          <Object index="1E40" name="NWL_IpAddrTable_0h_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"     objectType="7" dataType="0005" defaultValue="0x5"             accessType="const" />
+            <SubObject subIndex="01" name="IfIndex_U16"         objectType="7" dataType="0006" defaultValue="1"               accessType="ro"    />
+            <SubObject subIndex="02" name="Addr_IPAD"           objectType="7" dataType="0402" defaultValue="192.168.100.1"   accessType="ro"    />
+            <SubObject subIndex="03" name="NetMask_IPAD"        objectType="7" dataType="0402" defaultValue="255.255.255.0"   accessType="ro"    />
+            <SubObject subIndex="04" name="ReasmMaxSize_U16"    objectType="7" dataType="0006" defaultValue="0"               accessType="ro"    />
+            <SubObject subIndex="05" name="DefaultGateway_IPAD" objectType="7" dataType="0402" defaultValue="192.168.100.254" accessType="rw"    />
+          </Object>
+          <Object index="1E4A" name="NWL_IpGroup_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"      objectType="7" dataType="0005" defaultValue="0x2"   accessType="const" />
+            <SubObject subIndex="01" name="Forwarding_BOOL"      objectType="7" dataType="0001" defaultValue="false" accessType="ro"    />
+            <SubObject subIndex="02" name="DefaultTTL_U16"       objectType="7" dataType="0006" defaultValue="0x40"  accessType="rw"    />
+          </Object>
+          <Object index="1F81" name="NMT_NodeAssignment_AU32" objectType="8" dataType="0007">
+            <SubObject subIndex="00" name="NumberOfEntries" objectType="7" dataType="0005" accessType="rw" defaultValue="254"/>
+            <SubObject subIndex="01" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="02" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="03" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="04" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="05" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="06" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="07" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="08" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="09" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="10" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="11" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="12" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="13" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="14" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="15" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="16" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="17" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="18" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="19" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="20" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="21" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="22" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="23" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="24" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="25" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="26" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="27" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="28" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="29" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="30" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="31" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="32" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="33" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="34" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="35" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="36" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="37" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="38" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="39" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="40" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="41" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="42" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="43" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="44" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="45" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="46" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="47" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="48" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="49" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="50" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="51" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="52" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="53" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="54" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="55" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="56" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="57" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="58" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="59" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="60" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="61" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="62" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="63" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="64" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="65" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="66" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="67" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="68" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="69" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="70" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="71" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="72" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="73" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="74" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="75" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="76" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="77" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="78" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="79" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="80" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="81" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="82" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="83" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="84" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="85" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="86" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="87" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="88" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="89" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="90" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="91" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="92" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="93" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="94" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="95" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="96" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="97" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="98" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="99" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9A" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9B" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9C" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9D" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9E" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9F" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A0" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A1" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A2" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A3" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A4" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A5" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A6" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A7" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A8" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A9" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AA" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AB" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AC" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AD" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AE" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AF" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B0" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B1" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B2" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B3" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B4" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B5" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B6" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B7" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B8" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B9" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BA" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BB" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BC" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BD" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BE" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BF" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C0" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C1" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C2" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C3" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C4" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C5" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C6" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C7" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C8" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C9" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CA" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CB" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CC" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CD" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CE" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CF" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D0" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D1" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D2" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D3" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D4" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D5" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D6" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D7" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D8" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D9" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DA" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DB" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DC" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DD" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DE" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DF" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E0" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E1" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E2" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E3" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E4" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E5" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E6" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E7" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E8" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E9" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EA" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EB" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EC" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="ED" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EE" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EF" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F0" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F1" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F2" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F3" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F4" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F5" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F6" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F7" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F8" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F9" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FA" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FB" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FC" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FD" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FE" name="NodeAssignment" objectType="7" dataType="0007" accessType="rw" defaultValue="0"/>
+          </Object>
+          <Object index="1F82" name="NMT_FeatureFlags_U32" objectType="7" dataType="0007" defaultValue="0x000102E7" accessType="const"/>
+          <Object index="1F83" name="NMT_EPLVersion_U8" objectType="7" dataType="0005" defaultValue="0x20" accessType="const"/>
+          <Object index="1F8C" name="NMT_CurrNMTState_U8" objectType="7" dataType="0005" defaultValue="0x1c" accessType="ro"/>
+          <Object index="1F93" name="NMT_EPLNodeID_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries" objectType="7" dataType="0005" defaultValue="0x2"  accessType="const" />
+            <SubObject subIndex="01" name="NodeID_U8"       objectType="7" dataType="0005" defaultValue="0x1"  accessType="ro"    />
+            <SubObject subIndex="02" name="NodeIDByHW_BOOL" objectType="7" dataType="0001" defaultValue="true" accessType="ro"    />
+          </Object>
+          <Object index="1F98" name="NMT_CycleTiming_REC" objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"         objectType="7" dataType="0005" defaultValue="0x9"  accessType="const" />
+            <SubObject subIndex="01" name="IsochrTxMaxPayload_U16"  objectType="7" dataType="0006" defaultValue="1490" accessType="const" />
+            <SubObject subIndex="02" name="IsochrRxMaxPayload_U16"  objectType="7" dataType="0006" defaultValue="1490" accessType="const" />
+            <SubObject subIndex="03" name="PResMaxLatency_U32"      objectType="7" dataType="0007" defaultValue="2000" accessType="const" />
+            <SubObject subIndex="04" name="PReqActPayloadLimit_U16" objectType="7" dataType="0006" defaultValue="36"   accessType="rw"    />
+            <SubObject subIndex="05" name="PResActPayloadLimit_U16" objectType="7" dataType="0006" defaultValue="36"   accessType="rw"    />
+            <SubObject subIndex="06" name="ASndMaxLatency_U32"      objectType="7" dataType="0007" defaultValue="2000" accessType="const" />
+            <SubObject subIndex="07" name="MultiplCycleCnt_U8"      objectType="7" dataType="0005" defaultValue="0"    accessType="rw"    />
+            <SubObject subIndex="08" name="AsyncMTU_U16"            objectType="7" dataType="0006" defaultValue="300"  accessType="rw"    />
+            <SubObject subIndex="09" name="Prescaler_U16"           objectType="7" dataType="0006" defaultValue="2"    accessType="rw"    />
+          </Object>
+          <Object index="1F99" name="NMT_CNBasicEthernetTimeout_U32" objectType="7" dataType="0007" defaultValue="5000000" accessType="rw"/>
+          <Object index="1F9A" name="NMT_HostName_VSTR" objectType="7" dataType="0009" accessType="rw"/>
+          <Object index="1F9B" name="NMT_MultiplCycleAssign_AU8" objectType="8" dataType="0005">
+            <SubObject subIndex="00" name="NumberOfEntries" objectType="7" dataType="0005" accessType="rw" defaultValue="254"/>
+            <SubObject subIndex="01" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="02" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="03" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="04" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="05" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="06" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="07" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="08" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="09" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="0F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="10" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="11" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="12" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="13" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="14" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="15" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="16" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="17" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="18" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="19" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="1F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="20" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="21" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="22" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="23" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="24" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="25" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="26" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="27" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="28" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="29" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="2F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="30" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="31" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="32" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="33" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="34" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="35" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="36" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="37" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="38" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="39" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="3F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="40" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="41" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="42" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="43" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="44" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="45" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="46" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="47" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="48" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="49" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="4F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="50" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="51" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="52" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="53" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="54" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="55" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="56" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="57" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="58" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="59" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="5F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="60" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="61" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="62" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="63" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="64" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="65" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="66" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="67" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="68" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="69" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="6F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="70" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="71" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="72" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="73" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="74" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="75" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="76" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="77" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="78" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="79" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="7F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="80" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="81" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="82" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="83" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="84" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="85" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="86" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="87" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="88" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="89" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="8F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="90" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="91" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="92" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="93" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="94" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="95" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="96" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="97" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="98" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="99" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9A" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9B" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9C" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9D" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9E" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="9F" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A0" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A1" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A2" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A3" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A4" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A5" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A6" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A7" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A8" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="A9" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AA" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AB" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AC" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AD" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AE" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="AF" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B0" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B1" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B2" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B3" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B4" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B5" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B6" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B7" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B8" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="B9" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BA" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BB" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BC" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BD" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BE" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="BF" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C0" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C1" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C2" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C3" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C4" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C5" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C6" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C7" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C8" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="C9" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CA" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CB" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CC" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CD" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CE" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="CF" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D0" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D1" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D2" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D3" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D4" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D5" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D6" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D7" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D8" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="D9" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DA" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DB" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DC" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DD" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DE" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="DF" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E0" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E1" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E2" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E3" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E4" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E5" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E6" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E7" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E8" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="E9" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EA" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EB" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EC" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="ED" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EE" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="EF" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F0" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F1" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F2" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F3" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F4" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F5" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F6" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F7" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F8" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="F9" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FA" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FB" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FC" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FD" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+            <SubObject subIndex="FE" name="CycleNo" objectType="7" dataType="0005" accessType="rw" defaultValue="0"/>
+          </Object>
+          <Object index="1F9E" name="NMT_ResetCmd_U8" objectType="7" dataType="0005" defaultValue="0xff" accessType="rw"/>
+
+          <!-- 0x2000 - 0x23FF: Receive PDO -->
+          <!-- 0x23n0: IO-Link Cyclic Data -->
+          <Object index="2300" name="PD_OutPort1"            objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port1Output1"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="02" name="Port1Output2"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="03" name="Port1Output3"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="04" name="Port1Output4"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="05" name="Port1Output5"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="06" name="Port1Output6"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="07" name="Port1Output7"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="08" name="Port1Output8"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+          </Object>
+          <Object index="2310" name="PD_OutPort2"            objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port2Output1"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="02" name="Port2Output2"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="03" name="Port2Output3"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="04" name="Port2Output4"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="05" name="Port2Output5"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="06" name="Port2Output6"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="07" name="Port2Output7"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="08" name="Port2Output8"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+          </Object>
+          <Object index="2320" name="PD_OutPort3"            objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port3Output1"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="02" name="Port3Output2"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="03" name="Port3Output3"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="04" name="Port3Output4"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="05" name="Port3Output5"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="06" name="Port3Output6"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="07" name="Port3Output7"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="08" name="Port3Output8"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+          </Object>
+          <Object index="2330" name="PD_OutPort4"            objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port4Output1"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="02" name="Port4Output2"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="03" name="Port4Output3"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="04" name="Port4Output4"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="05" name="Port4Output5"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="06" name="Port4Output6"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="07" name="Port4Output7"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+            <SubObject subIndex="08" name="Port4Output8"     objectType="7" dataType="0007"  PDOmapping="RPDO" accessType="rw" />
+          </Object>
+
+          <!-- 0x2400 - 0x27FF: Transmit PDO -->
+          <!-- 0x2400: Pin 2 Cyclic Data -->
+          <Object index="2400" name="PD_Pin2"                objectType="7" dataType="0006"  PDOmapping="TPDO" accessType="ro" />
+          <!-- 0x2500: PQI Cyclic Data, Transmit PDO -->
+          <Object index="2500" name="PD_PQIPort1"            objectType="7" dataType="0005"  PDOmapping="TPDO" accessType="ro" />
+          <Object index="2510" name="PD_PQIPort2"            objectType="7" dataType="0005"  PDOmapping="TPDO" accessType="ro" />
+          <Object index="2520" name="PD_PQIPort3"            objectType="7" dataType="0005"  PDOmapping="TPDO" accessType="ro" />
+          <Object index="2530" name="PD_PQIPort4"            objectType="7" dataType="0005"  PDOmapping="TPDO" accessType="ro" />
+          <!-- 0x27n0: IO-Link Cyclic Data -->
+          <Object index="2700" name="PD_InPort1"             objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port1Input1"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="02" name="Port1Input2"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="03" name="Port1Input3"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="04" name="Port1Input4"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="05" name="Port1Input5"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="06" name="Port1Input6"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="07" name="Port1Input7"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="08" name="Port1Input8"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+          </Object>
+          <Object index="2710" name="PD_InPort2"             objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port2Input1"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="02" name="Port2Input2"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="03" name="Port2Input3"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="04" name="Port2Input4"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="05" name="Port2Input5"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="06" name="Port2Input6"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="07" name="Port2Input7"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="08" name="Port2Input8"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+          </Object>
+          <Object index="2720" name="PD_InPort3"             objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port3Input1"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="02" name="Port3Input2"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="03" name="Port3Input3"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="04" name="Port3Input4"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="05" name="Port3Input5"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="06" name="Port3Input6"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="07" name="Port3Input7"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="08" name="Port3Input8"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+          </Object>
+          <Object index="2730" name="PD_InPort4"             objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x8" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Port4Input1"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="02" name="Port4Input2"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="03" name="Port4Input3"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="04" name="Port4Input4"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="05" name="Port4Input5"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="06" name="Port4Input6"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="07" name="Port4Input7"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+            <SubObject subIndex="08" name="Port4Input8"      objectType="7" dataType="0007"  PDOmapping="TPDO" accessType="ro" />
+          </Object>
+
+          <!-- 0x2800 - 0x28FF: IOL Port NoPDO -->
+          <!-- IOL Port Param RW Objects -->
+          <Object index="2800" name="IOLParamRWPort1"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x4" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Command"          objectType="7" dataType="000A"  accessType="wo" PDOmapping="no" />
+            <SubObject subIndex="02" name="Status"           objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="ErrorCode"        objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="Response"         objectType="7" dataType="000A"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <Object index="2810" name="IOLParamRWPort2"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x4" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Command"          objectType="7" dataType="000A"  accessType="wo" PDOmapping="no" />
+            <SubObject subIndex="02" name="Status"           objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="ErrorCode"        objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="Response"         objectType="7" dataType="000A"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <Object index="2820" name="IOLParamRWPort3"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x4" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Command"          objectType="7" dataType="000A"  accessType="wo" PDOmapping="no" />
+            <SubObject subIndex="02" name="Status"           objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="ErrorCode"        objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="Response"         objectType="7" dataType="000A"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <Object index="2830" name="IOLParamRWPort4"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x4" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Command"          objectType="7" dataType="000A"  accessType="wo" PDOmapping="no" />
+            <SubObject subIndex="02" name="Status"           objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="ErrorCode"        objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="Response"         objectType="7" dataType="000A"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <!-- IOL Port Configuration Objects -->
+          <Object index="2801" name="IOLConfigurationPort1"  objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x6" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="ModeConfig"       objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" objFlags="0004" />
+            <SubObject subIndex="02" name="MasterCycleTime"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="191" objFlags="0004" />
+            <SubObject subIndex="03" name="ValBackupConfig"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="4" objFlags="0004" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="06" name="Reconfigure"      objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" objFlags="0004" />
+          </Object>
+          <Object index="2811" name="IOLConfigurationPort2"  objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x6" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="ModeConfig"       objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" objFlags="0004" />
+            <SubObject subIndex="02" name="MasterCycleTime"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="191" objFlags="0004" />
+            <SubObject subIndex="03" name="ValBackupConfig"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="4" objFlags="0004" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="06" name="Reconfigure"      objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" objFlags="0004" />
+          </Object>
+          <Object index="2821" name="IOLConfigurationPort3"  objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x6" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="ModeConfig"       objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" objFlags="0004" />
+            <SubObject subIndex="02" name="MasterCycleTime"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="191" objFlags="0004" />
+            <SubObject subIndex="03" name="ValBackupConfig"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="4" objFlags="0004" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="06" name="Reconfigure"      objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" objFlags="0004" />
+          </Object>
+          <Object index="2831" name="IOLConfigurationPort4"  objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x6" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="ModeConfig"       objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" objFlags="0004" />
+            <SubObject subIndex="02" name="MasterCycleTime"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="191" objFlags="0004" />
+            <SubObject subIndex="03" name="ValBackupConfig"  objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="4" objFlags="0004" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="rw" PDOmapping="no" objFlags="0004" />
+            <SubObject subIndex="06" name="Reconfigure"      objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" objFlags="0004" />
+          </Object>
+          <!-- IOL Port Information Objects -->
+          <Object index="2802" name="IOLInformationPort1"    objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0xB" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="PortStatus"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="02" name="MinCycleTime"     objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="IOLRevision"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="06" name="SerialNum"        objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="07" name="ProdName"         objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0A" name="PDLengthOut"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0B" name="PDLengthIn"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <Object index="2812" name="IOLInformationPort2"    objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0xB" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="PortStatus"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="02" name="MinCycleTime"     objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="IOLRevision"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="06" name="SerialNum"        objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="07" name="ProdName"         objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0A" name="PDLengthOut"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0B" name="PDLengthIn"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <Object index="2822" name="IOLInformationPort3"    objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0xB" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="PortStatus"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="02" name="MinCycleTime"     objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="IOLRevision"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="06" name="SerialNum"        objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="07" name="ProdName"         objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0A" name="PDLengthOut"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0B" name="PDLengthIn"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <Object index="2832" name="IOLInformationPort4"    objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0xB" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="PortStatus"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="02" name="MinCycleTime"     objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="03" name="IOLRevision"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="04" name="VendorID"         objectType="7" dataType="0006"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="05" name="DeviceID"         objectType="7" dataType="0007"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="06" name="SerialNum"        objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="07" name="ProdName"         objectType="7" dataType="0009"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0A" name="PDLengthOut"      objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+            <SubObject subIndex="0B" name="PDLengthIn"       objectType="7" dataType="0005"  accessType="ro" PDOmapping="no" />
+          </Object>
+          <!-- IOL Port Failsafe Objects -->
+          <Object index="2803" name="IOLFailsafePort1"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x2" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Select"           objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" />
+            <SubObject subIndex="02" name="Pattern"          objectType="7" dataType="000A"  accessType="rw" PDOmapping="no" highLimit="32" />
+          </Object>
+          <Object index="2813" name="IOLFailsafePort2"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x2" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Select"           objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" />
+            <SubObject subIndex="02" name="Pattern"          objectType="7" dataType="000A"  accessType="rw" PDOmapping="no" highLimit="32" />
+          </Object>
+          <Object index="2823" name="IOLFailsafePort3"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x2" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Select"           objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" />
+            <SubObject subIndex="02" name="Pattern"          objectType="7" dataType="000A"  accessType="rw" PDOmapping="no" highLimit="32" />
+          </Object>
+          <Object index="2833" name="IOLFailsafePort4"        objectType="9">
+            <SubObject subIndex="00" name="NumberOfEntries"  objectType="7" dataType="0005"  defaultValue="0x2" accessType="const" PDOmapping="no" />
+            <SubObject subIndex="01" name="Select"           objectType="7" dataType="0005"  accessType="rw" PDOmapping="no" highLimit="3" />
+            <SubObject subIndex="02" name="Pattern"          objectType="7" dataType="000A"  accessType="rw" PDOmapping="no" highLimit="32" />
+          </Object>
+
+          <!-- 0x2E00 - 0x2FFF: Basic Objects -->
+          <Object index="2E00" name="OrderNumber_VSTR"          objectType="7" dataType="0009" accessType="const" PDOmapping="no" />
+          <Object index="2E01" name="ManufacturingDate_VSTR"    objectType="7" dataType="0009" accessType="const" PDOmapping="no" />
+          <Object index="2E02" name="QSDate_VSTR"               objectType="7" dataType="0009" accessType="const" PDOmapping="no" />
+          <Object index="2E03" name="InstallationLocation_VSTR" objectType="7" dataType="0009" accessType="rw"    PDOmapping="no" />
+          <Object index="2F00" name="Timestamp_U64"             objectType="7" dataType="001B" accessType="ro"    PDOmapping="no" />
+          <Object index="2F01" name="ResetToFactory_U16"        objectType="7" dataType="0006" accessType="wo"    PDOmapping="no" />
+          <Object index="2F02" name="DeviceLocalization_U8"     objectType="7" dataType="0005" accessType="wo"    PDOmapping="no" />
+          <Object index="2F03" name="CurrentUseCase_U16"        objectType="7" dataType="0006" accessType="rw"    PDOmapping="no" objFlags="0004" lowLimit="42240" highLimit="42243"/>
+          <Object index="2F04" name="NewNodeID_U8"              objectType="7" dataType="0005" accessType="rw"    PDOmapping="no" objFlags="0004" />
+        </ObjectList>
+      </ApplicationLayers>
+
+      <TransportLayers>
+      </TransportLayers>
+      <NetworkManagement>
+        <GeneralFeatures
+          DLLFeatureMN="false"
+          DLLFeatureCN="true"
+          NMTNodeIDByHW="true"
+          NMTBootTimeNotActive="8000000"
+          NMTCycleTimeMax="1000000"
+          NMTCycleTimeMin="200"
+          NMTErrorEntries="32"
+          NMTExtNmtCmds="true"
+          NWLIPSupport="true"
+          PDORPDOChannels="1"
+          SDOCmdReadAllByIndex="false"
+          SDOCmdReadByName="false"
+          SDOCmdWriteAllByIndex="false"
+          SDOCmdWriteByName="false"
+          SDOCmdWriteMultParam="false"
+          SDOMaxConnections="5"
+          SDOMaxParallelConnections="5"
+          SDOServer="true"
+          SDOClient="false"
+          SDOSupportASnd="true"
+          SDOSupportUdpIp="true"
+          />
+        <CNFeatures
+          DLLCNFeatureMultiplex="true"
+          NMTCNSoC2PReq="0"
+          />
+        <Diagnostic>
+        </Diagnostic>
+      </NetworkManagement>
+    </ProfileBody>
+  </ISO15745Profile>
+</ISO15745ProfileContainer>

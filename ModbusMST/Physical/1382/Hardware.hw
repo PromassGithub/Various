@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="AL1370_IO-Link_Master" Type="FBE.AL1370_0069666D_IO-LinkMaster" Version="1.0" OrderNumber="AL1370_IO-Link_Master">
+    <Connection Connector="PLK1" TargetModule="X20CP1382" TargetConnector="IF3" NodeNumber="100">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="p2300s01_direction" Value="wo" />
+    <Parameter ID="p2310s01_direction" Value="wo" />
+    <Parameter ID="p2400_direction" Value="ro" />
+    <Parameter ID="p2500_direction" Value="ro" />
+    <Parameter ID="p2510_direction" Value="ro" />
+    <Parameter ID="p2520_direction" Value="ro" />
+    <Parameter ID="p2700s01_direction" Value="ro" />
+    <Parameter ID="p2700s02_direction" Value="ro" />
+    <Parameter ID="p2710s01_direction" Value="ro" />
+    <Parameter ID="p2710s02_direction" Value="ro" />
+    <Parameter ID="p2710s03_direction" Value="ro" />
+    <Parameter ID="p2801s01_value" Value="3" />
+    <Parameter ID="p2811s01_value" Value="3" />
+  </Module>
+  <Module Name="ModbusTcpSlave" Type="ModbusTcp_any" Version="1.0.9.0">
+    <Connection Connector="ETH1" TargetModule="X20CP1382" TargetConnector="IF2">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Parameter ID="IpAddress" Value="192.168.0.251" />
+    <Group ID="Cb_1" />
+    <Parameter ID="Cb_1_FunCode" Value="4" />
+    <Parameter ID="Cb_1_RefreshTime" Value="500" />
+    <Parameter ID="Cb_1_Addr" Value="8192" />
+    <Parameter ID="Cb_1_NumItems" Value="4" />
+    <Group ID="Cb_1_C_1" />
+    <Parameter ID="Cb_1_C_1_Name" Value="B01CH01" />
+    <Parameter ID="Cb_1_C_1_Datatype" Value="6" />
+    <Group ID="Cb_1_C_2" />
+    <Parameter ID="Cb_1_C_2_Name" Value="B01CH02" />
+    <Parameter ID="Cb_1_C_2_Datatype" Value="6" />
+    <Group ID="Cb_1_C_3" />
+    <Parameter ID="Cb_1_C_3_Name" Value="B01CH03" />
+    <Parameter ID="Cb_1_C_3_Datatype" Value="6" />
+    <Group ID="Cb_1_C_4" />
+    <Parameter ID="Cb_1_C_4_Name" Value="B01CH04" />
+    <Parameter ID="Cb_1_C_4_Datatype" Value="6" />
+    <Group ID="Cb_2" />
+    <Parameter ID="Cb_2_FunCode" Value="16" />
+    <Parameter ID="Cb_2_RefreshTime" Value="500" />
+    <Parameter ID="Cb_2_AddrExt" Value="24576" />
+    <Parameter ID="Cb_2_NumItemsExt" Value="4" />
+    <Group ID="Cb_2_C_1" />
+    <Parameter ID="Cb_2_C_1_Name" Value="B02CH01" />
+    <Parameter ID="Cb_2_C_1_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_1_Dir" Value="1" />
+    <Group ID="Cb_2_C_2" />
+    <Parameter ID="Cb_2_C_2_Name" Value="B02CH02" />
+    <Parameter ID="Cb_2_C_2_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_2_Dir" Value="1" />
+    <Group ID="Cb_2_C_3" />
+    <Parameter ID="Cb_2_C_3_Name" Value="B02CH03" />
+    <Parameter ID="Cb_2_C_3_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_3_Dir" Value="1" />
+    <Group ID="Cb_2_C_4" />
+    <Parameter ID="Cb_2_C_4_Name" Value="B02CH04" />
+    <Parameter ID="Cb_2_C_4_Datatype" Value="6" />
+    <Parameter ID="Cb_2_C_4_Dir" Value="1" />
+  </Module>
+  <Module Name="TM7NCOM08B+TLA" Type="FBC.0x0500005A.0x0000B12B.TM7_TLA" Version="3.1" OrderNumber="TM7NCOM08B+TLA">
+    <Connection Connector="CAN1" TargetModule="TM7NCOM08B_CLA_CLA" TargetConnector="CAN2" />
+    <Parameter ID="p6020sub5_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub6_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub7_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub8_connecttomaster" Value="1" />
+    <Parameter ID="p6020sub10_connecttomaster" Value="1" />
+    <Parameter ID="p6220sub1_connecttomaster" Value="11" />
+    <Parameter ID="p6220sub2_connecttomaster" Value="11" />
+    <Parameter ID="p6220sub3_connecttomaster" Value="11" />
+    <Parameter ID="p6220sub4_connecttomaster" Value="11" />
+    <Parameter ID="pnodeobservation" Value="plifeguarding" />
+    <Parameter ID="plifeguarding_guardtime" Value="1000" />
+    <Parameter ID="plifeguarding_retryfactor" Value="5" />
+  </Module>
+  <Module Name="TM7NCOM08B_CLA_CLA" Type="FBC.0x0500005A.0x0000B12B.TM7COM_CLA_CLA_V3" Version="1.34" OrderNumber="TM7NCOM08B_CLA_CLA">
+    <Connection Connector="CAN1" TargetModule="X20CP1382" TargetConnector="IF7" />
+    <Parameter ID="pnodeobservation" Value="plifeguarding" />
+    <Parameter ID="plifeguarding_guardtime" Value="1000" />
+    <Parameter ID="plifeguarding_retryfactor" Value="5" />
+  </Module>
+  <Module Name="X20CP1382" Type="X20CP1382" Version="1.11.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X3" />
+    </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="HostName" Value="tr_mdb_mst" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.252" />
+      <Parameter ID="SubnetMask" Value="255.255.254.0" />
+      <Parameter ID="InaNodeNumber" Value="50" />
+      <Parameter ID="ActivateModbus" Value="1" />
+      <Parameter ID="NumSlaves" Value="-1" />
+      <Parameter ID="NumAllBlocks" Value="-1" />
+      <Parameter ID="MemSizeIn" Value="-1" />
+      <Parameter ID="MemSizeOut" Value="-1" />
+    </Connector>
+    <Connector Name="IF7">
+      <Parameter ID="ActivateCanOpen" Value="1" />
+      <Parameter ID="p100c_parametervalue" Value="1000" />
+      <Parameter ID="p100d_parametervalue" Value="3" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="ModbusMST_1382" />
+    <Parameter ID="EthernetHostName" Value="tr_mdb_mst" />
+    <Parameter ID="EthernetDefaultGateway" Value="192.168.1.3" />
+    <Parameter ID="ActivateDns" Value="1" />
+    <Parameter ID="DnsServer1" Value="192.168.1.14" />
+    <Parameter ID="DnsServer2" Value="8.8.8.8" />
+  </Module>
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>
