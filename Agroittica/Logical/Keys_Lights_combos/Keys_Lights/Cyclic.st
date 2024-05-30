@@ -88,35 +88,35 @@ PROGRAM _CYCLIC
 	
 	//LOCKING MANUAL MOVEMENT WHEN AXIS ARE HOMED, UNLOCKING WHEN THE AXIS MOVEMENT WHEN THEY ARE RELOADING
 	
-	//FIRST AXIS
-	IF glb_cmd.Cartridge_loaded_Gun  THEN
-		glb_cmd.Movement_Lock := 1;
-	ELSE
-		glb_cmd.Movement_Lock := 0;
-	END_IF;
+		//FIRST AXIS
+		IF glb_cmd.Cartridge_loaded_Gun  THEN
+			glb_cmd.Movement_Lock := 1;
+		ELSE
+			glb_cmd.Movement_Lock := 0;
+		END_IF;
 	
-	//SECOND AXIS
-	IF glb_cmd_2.Cartridge_loaded_Gun THEN
-		glb_cmd_2.Movement_Lock := 1;
-	ELSE
-		glb_cmd_2.Movement_Lock := 0;
-	END_IF;
+		//SECOND AXIS
+		IF glb_cmd_2.Cartridge_loaded_Gun THEN
+			glb_cmd_2.Movement_Lock := 1;
+		ELSE
+			glb_cmd_2.Movement_Lock := 0;
+		END_IF;
 	
 	//LOCKING AXIS MANUAL MOVEMENTS WHILE AXIS ARE HOMING
 	
-	//FIRST AXIS
-	IF glb_cmd.Homing_Lock THEN
-		glb_cmd.Movement_Lock_Homing := 1;
-	ELSE
-		glb_cmd.Movement_Lock_Homing := 0;
-	END_IF;
+		//FIRST AXIS
+		IF glb_cmd.Homing_Lock THEN
+			glb_cmd.Movement_Lock_Homing := 1;
+		ELSE
+			glb_cmd.Movement_Lock_Homing := 0;
+		END_IF;
 	
-	//SECOND AXIS
-	IF glb_cmd_2.Homing_Lock THEN
-		glb_cmd_2.Movement_Lock_Homing := 1;
-	ELSE
-		glb_cmd_2.Movement_Lock_Homing := 0;
-	END_IF;
+		//SECOND AXIS
+		IF glb_cmd_2.Homing_Lock THEN
+			glb_cmd_2.Movement_Lock_Homing := 1;
+		ELSE
+			glb_cmd_2.Movement_Lock_Homing := 0;
+		END_IF;
 
 	
 	
