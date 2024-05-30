@@ -1,4 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="Header_content" height="140" width="1920" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets />
+<Content id="Header_content" height="40" width="1920" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.FlyOut" id="FlyOut1" top="0" left="0" width="300" height="720" zIndex="0" docking="top" image="Media/Menu_icons/burger-bar.png" mode="modal" buttonHeight="40" buttonWidth="300" imageHeight="30" buttonCornerRadius="5px 5px 5px 5px" buttonBackGroundGradient="linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 100%,rgba(40,52,59,1) 100%)" cornerRadius="5px" backGroundGradient="linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 100%,rgba(40,52,59,1) 100%)">
+      <Widgets />
+    </Widget>
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput1" top="0" left="1620" width="300" height="40" zIndex="1" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="0" left="380" width="40" height="40" zIndex="2" image="Media/Menu_icons/icons8-utente-64.png" />
+    <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="0" left="420" height="40" zIndex="3" fontSize="16px" />
+  </Widgets>
 </Content>
