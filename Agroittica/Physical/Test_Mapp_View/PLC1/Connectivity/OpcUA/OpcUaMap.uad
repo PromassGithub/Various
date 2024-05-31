@@ -10,14 +10,20 @@
   <DefaultView>
     <Module Name="&lt;Default&gt;">
       <GlobalVariables Name="Global Variables">
-        <Variable Name="Status" />
         <Variable Name="glb_hmi">
           <Variable Name="Inp">
             <Variable Name="Gun_1_HMI_Trig_Man" />
             <Variable Name="Gun_2_HMI_Trig_Man" />
           </Variable>
         </Variable>
+        <Variable Name="Status" />
       </GlobalVariables>
+      <Task Name="xsm_demo">
+        <Variable Name="Motor_state" />
+      </Task>
+      <Task Name="xsm_demo_M">
+        <Variable Name="Motor_state_2" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
