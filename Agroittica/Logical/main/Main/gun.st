@@ -29,7 +29,7 @@ FUNCTION_BLOCK gun
 				St_Gun 		:= 30; 
 			END_IF;
 			
-		30: //shoot 
+		30: //shoot
 			Ready := 0;
 			IF Peso_ok THEN gun_out := 1; END_IF;
 			

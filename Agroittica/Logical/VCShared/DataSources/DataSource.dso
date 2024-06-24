@@ -266,40 +266,9 @@
     <Folder Name="MpUserXSignatureUIConnect">
       <Property Name="Description" Value=""/>
       <Property Name="FolderType" Value="Struct"/>
-      <Folder Name="Dialog">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="Confirm">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-        <DataPoint Name="Cancel">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
-      </Folder>
       <Folder Name="MessageBox">
         <Property Name="Description" Value=""/>
         <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="Confirm">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
-        </DataPoint>
         <DataPoint Name="ErrorNumber">
           <Property Name="ConnectedBySharedResource" Value="True"/>
           <Property Name="ConnectingVisus" Value=""/>
@@ -308,15 +277,6 @@
           <Property Name="UpdateTime" Value="Default"/>
           <Property Name="UserID" Value="None"/>
           <Property Name="VCType" Value="INTEGER"/>
-        </DataPoint>
-        <DataPoint Name="Cancel">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="BOOL"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="BOOL"/>
         </DataPoint>
       </Folder>
     </Folder>
@@ -5542,22 +5502,6 @@
     <Folder Name="glb_io">
       <Property Name="Description" Value=""/>
       <Property Name="FolderType" Value="Struct"/>
-      <Folder Name="Ai">
-        <Property Name="Description" Value=""/>
-        <Property Name="FolderType" Value="Struct"/>
-        <DataPoint Name="Enc_laser_dist_conv">
-          <Property Name="ConnectedBySharedResource" Value="False"/>
-          <Property Name="ConnectingVisus" Value="Hmi\Visu_t30"/>
-          <Property Name="DPLimit" Value="None"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="PLCType" Value="REAL"/>
-          <Property Name="PLCUnit" Value="None"/>
-          <Property Name="UnitGroup" Value="None"/>
-          <Property Name="UpdateTime" Value="Default"/>
-          <Property Name="UserID" Value="None"/>
-          <Property Name="VCType" Value="SCALED"/>
-        </DataPoint>
-      </Folder>
       <Folder Name="Di">
         <Property Name="Description" Value=""/>
         <Property Name="FolderType" Value="Struct"/>

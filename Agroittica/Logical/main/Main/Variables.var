@@ -4,6 +4,7 @@ VAR
 	buffer_gun : ARRAY[0..10] OF BOOL := [11(FALSE)];
 	Gun_0x : ARRAY[0..10] OF gun := [11((0))];
 	i : USINT := 0;
+	Buffer_status : USINT := 0;
 	xxx : USINT := 0;
 	cmd_manu_Piston_st : BOOL := FALSE;
 	Piston_st : BOOL := FALSE;

@@ -55,7 +55,7 @@ PROGRAM _CYCLIC
 	
 	(*Empty_Mag_22.Empty_Mag_Pop_Up := 1;*)
 	
-	// Main cycle
+	//--------------------------------------Main cycle--------------------------------
 	IF St_Gun = 0 THEN last_cycle := 0;	END_IF;
 	
 	IF ((Status <> AUTO) AND (NOT last_cycle)) THEN St_Gun := 0; END_IF;
@@ -88,7 +88,7 @@ PROGRAM _CYCLIC
 				St_Gun := 30; 
 			END_IF;
 			
-		30: //shoot 
+		30: //shoot
 			IF (Pesi_0.Cmd_Shoot) THEN
 				IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active) AND Pesi_0.Cmd_Shoot) THEN
 					glb_io.Do.Piston_gun_1 := 1;
@@ -137,52 +137,54 @@ PROGRAM _CYCLIC
 		
 	END_CASE;
 	
-	//buffer_gun[1] = Gun_01
-	//buffer_gun[2] = Gun_02
-	//buffer_gun[3] = Gun_03
-	//buffer_gun[4] = Gun_04
-	//buffer_gun[5] = Gun_05
+	//--------------------------------------Main cycle buffer----------------------------------------------
 	
-	CASE xxx OF
+//	buffer_gun[1] = Gun_01
+//	buffer_gun[2] = Gun_02
+//	buffer_gun[3] = Gun_03
+//	buffer_gun[4] = Gun_04
+//	buffer_gun[5] = Gun_05
+	
+	CASE Buffer_status OF
 		0: 
-//			IF (glb_registered AND Ricette.use_weight) THEN xxx := 10; END_IF
+			IF (glb_registered AND NOT Ricette.use_weight) THEN Buffer_status := 10; END_IF
 		10:
 			glb_registered := 0;
 			FOR i:=1 TO 5 DO
 				IF (buffer_gun[i] = 0) THEN
 					buffer_gun[i] := 1; 
 					i := 10;
-					xxx := 20;
+					Buffer_status := 20;
 				END_IF
 			END_FOR;
 		20:
-			xxx := 0;
+			Buffer_status := 0;
 		
 	END_CASE
 	
-	IF (glb_registered AND Ricette.use_weight) THEN
-//		calcolatore := calcolatore+1;
+	IF (glb_registered AND NOT Ricette.use_weight) THEN
+		//		calcolatore := calcolatore+1;
 		glb_registered := 0;
 		IF ((buffer_gun[1] = 0) AND Gun_0x[1].Ready) THEN
-//			calcolatore1 := calcolatore1+1;
+			//			calcolatore1 := calcolatore1+1;
 			buffer_gun[1] := 1;
 		ELSIF ((buffer_gun[2] = 0 AND Gun_0x[2].Ready)) THEN
 			buffer_gun[2] := 1;   // ...........................................questo qui!...........................................
-//			calcolatore1 := calcolatore1+1;
+			//			calcolatore1 := calcolatore1+1;
 		ELSIF ((buffer_gun[3] = 0 AND Gun_0x[3].Ready)) THEN
 			buffer_gun[3] := 1;
-//			calcolatore1 := calcolatore1+1;
+			//			calcolatore1 := calcolatore1+1;
 		ELSIF ((buffer_gun[4] = 0 AND Gun_0x[4].Ready)) THEN
 			buffer_gun[4] := 1;
-//			calcolatore1 := calcolatore1+1;
+			//			calcolatore1 := calcolatore1+1;
 		ELSIF ((buffer_gun[5] = 0 AND Gun_0x[5].Ready)) THEN
 			buffer_gun[5] := 1;
-//			calcolatore1 := calcolatore1+1;
+			//			calcolatore1 := calcolatore1+1;
 		END_IF
 		
 	END_IF
 	
-	IF ( Status = AUTO AND Ricette.use_weight) THEN
+	IF ( Status = AUTO AND NOT Ricette.use_weight) THEN
 	
 		Gun_0x[1].trigger_sensor := buffer_gun[1];
 		Gun_0x[2].trigger_sensor := buffer_gun[2];
@@ -194,20 +196,20 @@ PROGRAM _CYCLIC
 		IF (Gun_0x[1].end) THEN buffer_gun[1] := 0; END_IF;
 		IF (Gun_0x[2].end) THEN buffer_gun[2] := 0; END_IF;
 		IF (Gun_0x[3].end) THEN buffer_gun[3] := 0; END_IF;
-		IF (Gun_0x[4].end) THEN buffer_gun[4] := 0; END_IF
-		IF (Gun_0x[5].end) THEN buffer_gun[5] := 0; END_IF
-		IF (Gun_0x[6].end) THEN buffer_gun[6] := 0; END_IF
+		IF (Gun_0x[4].end) THEN buffer_gun[4] := 0; END_IF;
+		IF (Gun_0x[5].end) THEN buffer_gun[5] := 0; END_IF;
+		IF (Gun_0x[6].end) THEN buffer_gun[6] := 0; END_IF;
 	
 		gun_0x_piston 	:= (Gun_0x[1].Piston_out OR Gun_0x[2].Piston_out OR Gun_0x[3].Piston_out OR Gun_0x[4].Piston_out OR Gun_0x[5].Piston_out);
 		gun_0x_gun 		:= (Gun_0x[1].gun_out OR Gun_0x[2].gun_out OR Gun_0x[3].gun_out OR Gun_0x[4].gun_out OR Gun_0x[5].gun_out);
-//		Lamp_02.Lamp2Bianco := gun_0x_gun;
+		
 		
 		IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active)) THEN
 			glb_io.Do.Piston_gun_1 := gun_0x_gun;
-			IF gun_0x_gun THEN	glb_cmd.sparo := 1; END_IF
+			IF gun_0x_gun THEN	glb_cmd.sparo := 1; END_IF;
 		ELSIF (Gun_Switch_0.Gun_2_Active AND (NOT Gun_Switch_0.Gun_1_Active)) THEN
 			glb_io.Do.Piston_gun_2 := gun_0x_gun;
-			IF gun_0x_gun THEN	glb_cmd_2.sparo := 1; END_IF
+			IF gun_0x_gun THEN	glb_cmd_2.sparo := 1; END_IF;
 		END_IF;
 		
 	ELSE
@@ -220,7 +222,92 @@ PROGRAM _CYCLIC
 		Gun_0x[6].trigger_sensor := buffer_gun[6] := 0;
 		
 	
-	END_IF
+	END_IF;
+	
+	//buffer_gun[1] = Gun_01
+	//buffer_gun[2] = Gun_02
+	//buffer_gun[3] = Gun_03
+	//buffer_gun[4] = Gun_04
+	//buffer_gun[5] = Gun_05
+	
+//	CASE xxx OF
+//		0: 
+////			IF (glb_registered AND Ricette.use_weight) THEN xxx := 10; END_IF
+//		10:
+//			glb_registered := 0;
+//			FOR i:=1 TO 5 DO
+//				IF (buffer_gun[i] = 0) THEN
+//					buffer_gun[i] := 1; 
+//					i := 10;
+//					xxx := 20;
+//				END_IF
+//			END_FOR;
+//		20:
+//			xxx := 0;
+//		
+//	END_CASE
+//	
+//	IF (glb_registered AND Ricette.use_weight) THEN
+////		calcolatore := calcolatore+1;
+//		glb_registered := 0;
+//		IF ((buffer_gun[1] = 0) AND Gun_0x[1].Ready) THEN
+////			calcolatore1 := calcolatore1+1;
+//			buffer_gun[1] := 1;
+//		ELSIF ((buffer_gun[2] = 0 AND Gun_0x[2].Ready)) THEN
+//			buffer_gun[2] := 1;   // ...........................................questo qui!...........................................
+////			calcolatore1 := calcolatore1+1;
+//		ELSIF ((buffer_gun[3] = 0 AND Gun_0x[3].Ready)) THEN
+//			buffer_gun[3] := 1;
+////			calcolatore1 := calcolatore1+1;
+//		ELSIF ((buffer_gun[4] = 0 AND Gun_0x[4].Ready)) THEN
+//			buffer_gun[4] := 1;
+////			calcolatore1 := calcolatore1+1;
+//		ELSIF ((buffer_gun[5] = 0 AND Gun_0x[5].Ready)) THEN
+//			buffer_gun[5] := 1;
+////			calcolatore1 := calcolatore1+1;
+//		END_IF
+//		
+//	END_IF
+//	
+//	IF ( Status = AUTO AND Ricette.use_weight) THEN
+//	
+//		Gun_0x[1].trigger_sensor := buffer_gun[1];
+//		Gun_0x[2].trigger_sensor := buffer_gun[2];
+//		Gun_0x[3].trigger_sensor := buffer_gun[3];
+//		Gun_0x[4].trigger_sensor := buffer_gun[4];
+//		Gun_0x[5].trigger_sensor := buffer_gun[5];
+//		Gun_0x[6].trigger_sensor := buffer_gun[6];
+//	
+//		IF (Gun_0x[1].end) THEN buffer_gun[1] := 0; END_IF;
+//		IF (Gun_0x[2].end) THEN buffer_gun[2] := 0; END_IF;
+//		IF (Gun_0x[3].end) THEN buffer_gun[3] := 0; END_IF;
+//		IF (Gun_0x[4].end) THEN buffer_gun[4] := 0; END_IF;
+//		IF (Gun_0x[5].end) THEN buffer_gun[5] := 0; END_IF;
+//		IF (Gun_0x[6].end) THEN buffer_gun[6] := 0; END_IF;
+//	
+//		gun_0x_piston 	:= (Gun_0x[1].Piston_out OR Gun_0x[2].Piston_out OR Gun_0x[3].Piston_out OR Gun_0x[4].Piston_out OR Gun_0x[5].Piston_out);
+//		gun_0x_gun 		:= (Gun_0x[1].gun_out OR Gun_0x[2].gun_out OR Gun_0x[3].gun_out OR Gun_0x[4].gun_out OR Gun_0x[5].gun_out);
+////		Lamp_02.Lamp2Bianco := gun_0x_gun;
+//		
+//		IF (Gun_Switch_0.Gun_1_Active AND (NOT Gun_Switch_0.Gun_2_Active)) THEN
+//			glb_io.Do.Piston_gun_1 := gun_0x_gun;
+//			IF gun_0x_gun THEN	glb_cmd.sparo := 1; END_IF
+//		ELSIF (Gun_Switch_0.Gun_2_Active AND (NOT Gun_Switch_0.Gun_1_Active)) THEN
+//			glb_io.Do.Piston_gun_2 := gun_0x_gun;
+//			IF gun_0x_gun THEN	glb_cmd_2.sparo := 1; END_IF
+//		END_IF;
+//		
+//	ELSE
+//		
+//		Gun_0x[1].trigger_sensor := buffer_gun[1] := 0;
+//		Gun_0x[2].trigger_sensor := buffer_gun[2] := 0;
+//		Gun_0x[3].trigger_sensor := buffer_gun[3] := 0;
+//		Gun_0x[4].trigger_sensor := buffer_gun[4] := 0;
+//		Gun_0x[5].trigger_sensor := buffer_gun[5] := 0;
+//		Gun_0x[6].trigger_sensor := buffer_gun[6] := 0;
+//		
+//	
+//	END_IF
 	
 	
 	
@@ -327,34 +414,26 @@ PROGRAM _CYCLIC
 	//--------------------PESI---------------------------------
 	
 	//Gestione peso pesci
-	CASE Pesi_0.Weight_Status OF	
-		
-		0: 	//Start
-			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN
-				Pesi_0.Weight_Status := 10;
-			END_IF;
-		
-		10:	//Controllo pesi
-			IF (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_A AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_A) OR (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_B AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_B) THEN
-//				Pesi_0.Weight_Status := 20;
-				Pesi_0.Cmd_Shoot := 1;
-			ELSE
-//				Pesi_0.Weight_Status := 30;
-				Pesi_0.Cmd_Shoot := 0;
-			END_IF;
-			
-		20:	//Abilitato allo sparo & back to start
-			Pesi_0.Cmd_Shoot := 1;
-			Pesi_0.Weight_Status := 0;
-		
-		30:	//Non abilitato allo sparo & back to start
-			Pesi_0.Cmd_Shoot := 0;
-			Pesi_0.Weight_Status := 0;
-				
-	END_CASE;
+//	CASE Pesi_0.Weight_Status OF	
+//		
+//		0: 	//Start
+//			IF ( Status = AUTO AND glb_err.pending_alarms = 0) THEN
+//				Pesi_0.Weight_Status := 10;
+//			END_IF;
+//		
+//		10:	//Controllo pesi
+//			IF (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_A AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_A) OR (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_B AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_B) THEN
+//				glb_registered := 1;
+//				Pesi_0.Cmd_Shoot := 1;
+//			ELSE
+//				Pesi_0.Cmd_Shoot := 0;
+//			END_IF;
+//				
+//	END_CASE;
 	
 	IF (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_A AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_A) OR (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_B AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_B) THEN
 		Pesi_0.Cmd_Shoot := 1;
+		glb_registered := 1;
 	ELSE
 		Pesi_0.Cmd_Shoot := 0;
 	END_IF;
