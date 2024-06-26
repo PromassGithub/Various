@@ -1,4 +1,7 @@
 VAR
+	Test_Weight_min : UINT := 0;
+	Test_Weight_max : UINT := 0;
+	Test_Weight : UINT := 0;
 	gun_0x_piston : BOOL := FALSE;
 	gun_0x_gun : BOOL := FALSE;
 	buffer_gun : ARRAY[0..10] OF BOOL := [11(FALSE)];

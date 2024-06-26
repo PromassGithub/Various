@@ -551,6 +551,44 @@
           <Property Name="Top" Value="264"/>
           <Property Name="Width" Value="30"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_13">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="Border" Value="Source[local].Border[Mp_Button_Control]"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="ForeColor" Value="15"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="30"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedBorder" Value="Source[local].Border[Mp_Button_Control_pressed]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
+          <Property Name="TextIndex" Value="32"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="361"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_81]"/>
+          <Property Name="Width" Value="153"/>
+        </Control>
+        <Control ClassId="0x00001001" Name="Shape_11">
+          <Property Name="ColorDatapoint" Value="Source[global].Variable[DataSource.Ricette.use_buffer]"/>
+          <Property Name="ColorMap" Value="Source[local].ColorMap[IO_on_off]"/>
+          <Property Name="ColorMapIndexOffset" Value="0"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="227"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="Top" Value="365"/>
+          <Property Name="Width" Value="30"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_73">
@@ -627,6 +665,22 @@
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
               <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.glb_hmi.Inp.Soll_Valve_HMI]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_81">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Ricette.use_buffer]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

@@ -66,10 +66,12 @@ PROGRAM _CYCLIC
 			TON_01.IN 		:= 0;
 			TON_02.IN 		:= 0;
 			
-			IF (glb_io.Di.Si_01 AND (NOT Ricette.use_weight)) THEN 
+			IF (glb_io.Di.Si_01 AND ((NOT Ricette.use_buffer) AND (NOT Ricette.use_weight))) THEN 
 				St_Gun 			:= 10;
 			ELSIF (Ricette.use_weight) THEN
 				St_Gun 			:= 0;
+			ELSIF (Ricette.use_buffer) THEN
+				St_Gun			:= 0;
 			END_IF;
 		
 		10:	// 
@@ -147,7 +149,7 @@ PROGRAM _CYCLIC
 	
 	CASE Buffer_status OF
 		0: 
-			IF (glb_registered AND NOT Ricette.use_weight) THEN Buffer_status := 10; END_IF
+			IF (glb_registered AND Ricette.use_buffer AND (NOT Ricette.use_weight)) THEN Buffer_status := 10; END_IF
 		10:
 			glb_registered := 0;
 			FOR i:=1 TO 5 DO
@@ -162,7 +164,7 @@ PROGRAM _CYCLIC
 		
 	END_CASE
 	
-	IF (glb_registered AND NOT Ricette.use_weight) THEN
+	IF (glb_registered AND Ricette.use_buffer AND (NOT Ricette.use_weight)) THEN
 		//		calcolatore := calcolatore+1;
 		glb_registered := 0;
 		IF ((buffer_gun[1] = 0) AND Gun_0x[1].Ready) THEN
@@ -184,7 +186,7 @@ PROGRAM _CYCLIC
 		
 	END_IF
 	
-	IF ( Status = AUTO AND NOT Ricette.use_weight) THEN
+	IF (Ricette.use_buffer AND (NOT Ricette.use_weight)) THEN
 	
 		Gun_0x[1].trigger_sensor := buffer_gun[1];
 		Gun_0x[2].trigger_sensor := buffer_gun[2];
@@ -431,7 +433,14 @@ PROGRAM _CYCLIC
 //				
 //	END_CASE;
 	
-	IF (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_A AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_A) OR (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_B AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_B) THEN
+//	IF (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_A AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_A) OR (Pesi_0.Controlled_Weight <= Pesi_0.Max_Weight_B AND Pesi_0.Controlled_Weight >= Pesi_0.Min_Weight_B) THEN
+//		Pesi_0.Cmd_Shoot := 1;
+//		glb_registered := 1;
+//	ELSE
+//		Pesi_0.Cmd_Shoot := 0;
+//	END_IF;
+//	
+	IF (Test_Weight <= Test_Weight_max AND Test_Weight >= Test_Weight_min) THEN
 		Pesi_0.Cmd_Shoot := 1;
 		glb_registered := 1;
 	ELSE

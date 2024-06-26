@@ -62,6 +62,7 @@ TYPE
 		Laser_trigger : INT;
 		PT_piston_up : TIME;
 		use_weight : BOOL;
+		use_buffer : BOOL;
 	END_STRUCT;
 	Allarm : 	STRUCT 
 		St_allarm : UINT;
