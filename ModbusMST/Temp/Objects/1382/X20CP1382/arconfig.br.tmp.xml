@@ -32,7 +32,7 @@
   <Module ID="IF2.ST1" Hardware="ModbusTcp_any">
     <Parameter ID="HardwareModuleName" Value="ModbusTcpSlave" />
     <Parameter ID="Supervision" Value="off" />
-    <Parameter ID="IpAddress" Value="192.168.0.251" />
+    <Parameter ID="IpAddress" Value="192.168.74.10" />
     <Parameter ID="UnitId" Value="0" Type="INT" />
     <Parameter ID="TcpPort" Value="502" Type="UINT" />
     <Parameter ID="NumPendReq" Value="1" Type="INT" />
@@ -43,7 +43,7 @@
     <Parameter ID="Cb_1_FunCode" Value="4" Type="INT" />
     <Parameter ID="Cb_1_RefreshTime" Value="500" Type="INT" />
     <Parameter ID="Cb_1_SendMode" Value="0" Type="INT" />
-    <Parameter ID="Cb_1_Addr" Value="8192" Type="UINT" />
+    <Parameter ID="Cb_1_Addr" Value="11949" Type="UINT" />
     <Parameter ID="Cb_1_NumItems" Value="4" Type="INT" />
     <Parameter ID="Cb_1_AddrExt" Value="0" Type="UINT" />
     <Parameter ID="Cb_1_NumItemsExt" Value="1" Type="INT" />

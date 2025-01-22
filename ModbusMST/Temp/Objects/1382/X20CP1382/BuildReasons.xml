@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\arconfig.br">
+    <BuildReason>Target "arconfig.br,channelconfiguration.xml,reactiontechnologyconfiguration.xml,hardwareconfiguration.xml" does not exist</BuildReason>
+  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\ashwac.br">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\1382\hardware.hw" differs.
 </BuildReason>
   </Rule>
-  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\arconfig.br">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\1382\hardware.hw" differs.
-</BuildReason>
-  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\iomap.br">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\1382\hardware.hw" differs.
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\1382\x20cp1382\iomap.iom" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\sysconf.br">
@@ -28,7 +27,7 @@
     <BuildReason>Rule is forced.</BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\binaries\1382\x20cp1382\transfer.lst">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\1382\x20cp1382\arconfig.br" differs.
+    <BuildReason>ExternalCommand line differs.
 </BuildReason>
   </Rule>
 </BuildReasons>
