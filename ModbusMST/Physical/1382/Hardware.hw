@@ -24,11 +24,11 @@
     <Connection Connector="ETH1" TargetModule="X20CP1382" TargetConnector="IF2">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
-    <Parameter ID="IpAddress" Value="192.168.0.251" />
+    <Parameter ID="IpAddress" Value="192.168.74.10" />
     <Group ID="Cb_1" />
     <Parameter ID="Cb_1_FunCode" Value="4" />
     <Parameter ID="Cb_1_RefreshTime" Value="500" />
-    <Parameter ID="Cb_1_Addr" Value="8192" />
+    <Parameter ID="Cb_1_Addr" Value="11949" />
     <Parameter ID="Cb_1_NumItems" Value="4" />
     <Group ID="Cb_1_C_1" />
     <Parameter ID="Cb_1_C_1_Name" Value="B01CH01" />
@@ -105,7 +105,7 @@
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="HostName" Value="tr_mdb_mst" />
       <Parameter ID="Mode" Value="Manual" />
-      <Parameter ID="InternetAddress" Value="192.168.0.252" />
+      <Parameter ID="InternetAddress" Value="192.168.74.43" />
       <Parameter ID="SubnetMask" Value="255.255.254.0" />
       <Parameter ID="InaNodeNumber" Value="50" />
       <Parameter ID="ActivateModbus" Value="1" />
