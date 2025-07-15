@@ -78,7 +78,7 @@ PROGRAM _CYCLIC
 			Client.TcpClient_0.enable := 1;
 			Client.TcpClient_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
 			Client.TcpClient_0.portserv := 5555;  (* Port on server side to use *)
-			Client.TcpClient_0.pServer := (*ADR('127.0.0.1');*) ADR(Eth_connect.Server_Ip_Add);  (* Server Address *)
+			Client.TcpClient_0.pServer := (*ADR('127.0.0.1');*) ADR(Eth_connect.Server_Ip_Add);  // Server Address
 			Client.TcpClient_0;  (* Call the Function*)
 			
 			IF Client.TcpClient_0.status = 0 THEN  (* Open ok -> Send Data *)
@@ -133,6 +133,8 @@ PROGRAM _CYCLIC
 				memset(ADR(buffer.receive_data),0,SIZEOF(buffer.receive_data));
 				
 				glb_data.received_data 				:= 1;
+				glb_data.WeightCmdCounter			:= 1;
+				Debugstring18						:= 'datareceived';
 				Client.recv_timeout 				:= 0;
 				glb_rpt								:= 1;
 				Client.sStep 						:= 20;

@@ -1,15 +1,30 @@
 VAR
+	a : USINT := 0;
+	buffer_index : USINT := 0;
+	DebugString3 : STRING[80] := '';
+	START_Fish : BOOL := FALSE;
+	fish_cmd : USINT := 0;
+	STOP_fish : BOOL := FALSE;
+	Debug : USINT := 0;
 	Test_Weight_min : UINT := 0;
 	Test_Weight_max : UINT := 0;
 	Test_Weight : UINT := 0;
+	gun_0x_piston_down : BOOL := FALSE;
+	gun_0x_piston_up : BOOL := FALSE;
 	gun_0x_piston : BOOL := FALSE;
 	gun_0x_gun : BOOL := FALSE;
 	buffer_gun : ARRAY[0..10] OF BOOL := [11(FALSE)];
+	DebugString2 : STRING[80] := '';
+	DebugString1 : STRING[80] := '';
 	Gun_0x : ARRAY[0..10] OF gun := [11((0))];
 	i : USINT := 0;
 	Buffer_status : USINT := 0;
 	xxx : USINT := 0;
+	cmd_manu_Piston_st_Down : BOOL := FALSE;
+	cmd_manu_Piston_st_Up : BOOL := FALSE;
 	cmd_manu_Piston_st : BOOL := FALSE;
+	Piston_st_Down : BOOL := FALSE;
+	Piston_st_Up : BOOL := FALSE;
 	Piston_st : BOOL := FALSE;
 	last_cycle : BOOL;
 	TON_10 : TON := (0);
@@ -30,5 +45,7 @@ VAR RETAIN
 	Distanza_Sensore_Gun : REAL;
 END_VAR
 VAR
+	DebugShoot : BOOL := FALSE;
+	TIME_GRILLETTI : TIME := T#0S;
 	St_Gun : USINT;
 END_VAR

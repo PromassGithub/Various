@@ -31,6 +31,11 @@ TYPE
 		pistone_pistola_2 : ARRAY[0..199]OF USINT := [10];
 		pistone_pistola_1 : ARRAY[0..199]OF USINT := [10];
 		time_stamp : ARRAY[0..199]OF DATE_AND_TIME;
+		Neg_Weight_Counter : UDINT;
+		Tagged_Fish_Counter : UDINT;
+		Fish_Counter : UDINT;
+		Rcv_Weight_Counter : UDINT;
+		WeightCmdCounter : BOOL;
 	END_STRUCT;
 	typ_Login : 	STRUCT 
 		Username : STRING[50];
@@ -179,6 +184,8 @@ TYPE
 		Start_Reload : BOOL;
 		Beeper_Lock : BOOL;
 		Homing_Lock : BOOL;
+		Main_Sensor : BOOL;
+		Clear_weight : BOOL;
 	END_STRUCT;
 	typ_err : 	STRUCT 
 		Drive2 : BOOL;
@@ -284,6 +291,7 @@ TYPE
 	END_STRUCT;
 	typ_Di : 	STRUCT 
 		Finecorsa : BOOL;
+		Si_01_raw : BOOL; (*sensore di avvicinamento dei pesci, parte il timer per la pistola*)
 		Si_01 : BOOL; (*sensore di avvicinamento dei pesci, parte il timer per la pistola*)
 		Si_02 : BOOL;
 		Si_03 : BOOL;

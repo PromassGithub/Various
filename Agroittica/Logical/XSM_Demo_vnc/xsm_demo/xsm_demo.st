@@ -31,9 +31,9 @@ PROGRAM _INIT
 	(* Set up I/O configuration - No need to defind in AS I/O Configuration for module. *)
 	XSM_IO_Cfg_0.IO_Cfg.MixedDecayCfg := 15;							(* AS Default, change to suit application. *)
 
-	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 0.8;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Holding := 1.5;							(* A, Change to suit motor/application. *)
 	XSM_IO_Cfg_0.IO_Cfg.Current.Rated := 1.5;							(* A, Change to suit motor/application. *)
-	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 1.5;						(* A, Change to suit motor/application. *)
+	XSM_IO_Cfg_0.IO_Cfg.Current.Maximum := 2.0; 						(* A, Change to suit motor/application. *)
 
 	XSM_IO_Cfg_0.IO_Cfg.FullStepThreshold := 0;							(* Also sets to AS Default of 65535, change to suit application. *)
 

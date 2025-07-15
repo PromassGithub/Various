@@ -1,110 +1,93 @@
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
-//	Feedback_0.Feedback_Em_Bt := 1;
-//	Feedback_0.Feedback_Air := 1;
-//	glb_sim := 1;
-//	glb_enc_sim.x := glb_enc_sim.x + 1;
-//	IF (glb_enc_sim.x > 4096) THEN
-//		glb_enc_sim.x := 0;
-//	END_IF;
-//	
-//	IF (Second_Scan = 0) THEN
-//		Second_Scan := 1;
-//		Auto_Homing_Ctrl_0.Auto_Homing_Status := 0;
-//	END_IF;
-	time_ms := clock_ms();
-		
-	CASE tempo_del_cazzo OF
-		0: IF (glb_data.received_data) THEN tempo_del_cazzo := 1; END_IF
-			
-		1:
-			ton_0.IN := 1;
-			IF ton_0.Q THEN
-				ton_0.IN := 0;
-				glb_io.Di.Si_01 := 1;
-				tempo_del_cazzo := 2;
-			END_IF
-			
-		2:
-			ton_1.IN := 1;
-			IF ton_1.Q THEN
-				ton_1.IN := 0;
-				glb_io.Di.Si_01 := 0;
-				tempo_del_cazzo := 0;
-			END_IF
-	END_CASE
 	
-	ton_0;
-	ton_0.PT := T#500ms;
-	ton_1;
-	ton_1.PT := T#100ms;
+	IF Simu_enable THEN
+		
+		//set variabili per simulazione
+		glb_err_sim.Drive1 			:= 0;
 	
-	IF (SIMU.enable)THEN 
+		glb_err_sim.Drive2 			:= 0;
 	
-		IF ((NOT diminuisci)) THEN 
-			bilancia_simulata := bilancia_simulata + 0.00199;
-		ELSIF (diminuisci) THEN
-			bilancia_simulata := bilancia_simulata - 0.00301;
-		END_IF
-		
-		IF(bilancia_simulata >= 2)THEN
-			diminuisci := 1;
-		ELSIF ((bilancia_simulata <= 0.250)) THEN
-			diminuisci := 0;
-		END_IF
-		
-		random := random +1;
-		IF random >= 2000 THEN random := 0; END_IF
-		
-		random := DT_TO_UDINT(glb_time);
-		random := (random * 1103515245 + 12345) AND 2147483647;
-		random := (random / 65536) MOD 100;
+		glb_err_sim.pending_alarms 	:= 0;
+	
+		glb_err_sim.Air				:= 0;
+	
+		glb_err_sim.Em_Bt			:= 0;
 
-		IF ((random < 99 AND random > 90)  AND (random <> random1)) THEN 
-			memset (ADR(Eth_connect.Marel_Weight), 0, SIZEOF(Eth_connect.Marel_Weight));
-			memset (ADR(support_str), 0, SIZEOF(support_str));
-			strcat(ADR(Eth_connect.Marel_Weight), ADR('$02'));
-			ftoa(-1, ADR(support_str));
-			strcat(ADR(Eth_connect.Marel_Weight), ADR(support_str));
-			strcat(ADR(Eth_connect.Marel_Weight), ADR('$03'));
-			time_0 := time_ms;
-			time_0 := time_ms;
-			time_1 := time_ms - T#500ms;
-			time_2 := time_1;
-			glb_data.received_data 				:= 1;
-			glb_rpt								:= 1;
-			random1 := random;
-		ELSE
-			memset (ADR(Eth_connect.Marel_Weight), 0, SIZEOF(Eth_connect.Marel_Weight));
-			memset (ADR(support_str), 0, SIZEOF(support_str));
-			strcat(ADR(Eth_connect.Marel_Weight), ADR('$02'));
-			ftoa(bilancia_simulata, ADR(support_str));
-			strcat(ADR(Eth_connect.Marel_Weight), ADR(support_str));
-			strcat(ADR(Eth_connect.Marel_Weight), ADR('$03'));
-		END_IF
+		//simulatore nastro pesci
+		CASE fish_cmd OF
 		
-		IF (DiffT(time_ms,time_0) > 750 ) THEN
-			time_0 := time_ms;
-			glb_data.received_data 				:= 1;
-			glb_rpt								:= 1;
-		END_IF
+			0:
+				IF START_Fish AND (NOT STOP_fish) THEN
+					fish_cmd := 10;
+				END_IF;
+			
+			10:
+				TON_06.IN := 1;
+			
+				IF TON_06.Q = 1 THEN
+					fish_cmd := 20;
+				END_IF;
+			
+				IF STOP_fish THEN
+					fish_cmd := 30;
+				END_IF;
+			
+			20:
+				glb_io.Di.Si_01 := 1;
+				Debugstring		:='on';
+				fish_cmd		:= 30;
+			
+			30:
+				glb_io.Di.Si_01 := 0;
+				Debugstring1	:='off';
+				TON_06.IN		:= 0;
+				fish_cmd 		:= 0;
 		
-		IF (DiffT(time_ms,time_1) > 750 ) THEN
-			time_1 := time_ms;
-			time_2 := time_1;
-			glb_io.Di.Si_01 := 1;
-		END_IF
+		END_CASE;
+	
+		//Timer
+	
+		TON_06;
+	
+		TON_06.PT := T#750ms;
+	
+		TP_01;
+	
+		TP_01.PT := T#1s;
+	
+	
+		//Pairing segnali per simulazione
+		glb_io.Di.Start 			:= glb_io_sim.Di.Start;
+	
+		glb_io.Di.Stop 				:= glb_io_sim.Di.Stop;
+	
+		glb_io.Di.Automatic 		:= glb_io_sim.Di.Automatic;
+	
+		glb_io.Di.Manual 			:= glb_io_sim.Di.Manual;
+	
+		glb_io.Di.Reset				:= glb_io_sim.Di.Reset;
+	
+		glb_io.Di.Forward_Mag_1		:= glb_io_sim.Di.Forward_Mag_1;
+	
+		glb_io.Di.Backward_Mag_1	:= glb_io_sim.Di.Backward_Mag_1;
+	
+		glb_io.Di.Forward_Mag_2		:= glb_io_sim.Di.Forward_Mag_2;
+	
+		glb_io.Di.Backward_Mag_2	:= glb_io_sim.Di.Backward_Mag_2;
+	
+		glb_err.Drive1 				:= glb_err_sim.Drive1;
+	
+		glb_err.Drive2 				:= glb_err_sim.Drive2;
+	
+		glb_err.pending_alarms 		:= glb_err_sim.pending_alarms;
+	
+		glb_err.Air					:= glb_err_sim.Air;
+	
+		glb_err.Em_Bt				:= glb_err_sim.Em_Bt;
 		
-		IF ((DiffT(time_ms,time_2) > 100 ) AND (glb_io.Di.Si_01)) THEN
-			glb_io.Di.Si_01 := 0;
-		END_IF
-		
-	ELSE
-//		time_ms := clock_ms();
-//		time_0 := time_ms;
-//		time_1 := time_ms - T#500ms;
-//		time_2 := time_1;
-		
-	END_IF
+	END_IF;
+	
+	
+	
 END_PROGRAM

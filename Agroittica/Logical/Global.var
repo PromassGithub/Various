@@ -8,6 +8,7 @@
  * Global variables of project as3_xsm_ramp
  ********************************************************************)
 VAR
+	Simu_enable : BOOL := FALSE;
 	Debug : BOOL := FALSE;
 	Beeper_Lock : BOOL := FALSE;
 	Beacon_2 : typ_Lights := (0);
@@ -42,6 +43,7 @@ VAR
 	Enc_laser_arr_dist : ARRAY[0..3] OF REAL := [4(0.0)];
 	Enc_laser_offset : REAL := 150;
 	Eth_connect : typ_eth_connect;
+	Feedback_0_sim : Feedback := (0);
 	Feedback_0 : Feedback := (0);
 	Flap_MM_0 : Flap_MM_Ctrl := (0);
 	glb_cmd : typ_cmd := (0);
@@ -54,11 +56,13 @@ END_VAR
 VAR
 	glb_enc_sim : typ_glb_enc_sta := (0);
 	glb_enc_sta : typ_glb_enc_sta := (0);
+	glb_err_sim : typ_err := (0);
 	glb_err : typ_err := (0);
 	glb_FIFO : typ_FIFO := (0);
 	glb_fish_pos_trigger : REAL := 283;
 	glb_fish_shot_ons : BOOL := FALSE;
 	glb_hmi : typ_hmi := (0);
+	glb_io_sim : typ_io;
 	glb_io : typ_io;
 	glb_Login : typ_Login := (0);
 	glb_math : Math := (0);
@@ -99,6 +103,11 @@ VAR
 	R_TRIG_06 : R_TRIG := (0);
 	R_TRIG_07 : R_TRIG := (0);
 	R_TRIG_08 : R_TRIG := (0);
+	R_TRIG_09 : R_TRIG := (0);
+	R_TRIG_10 : R_TRIG := (0);
+	R_TRIG_11 : R_TRIG := (0);
+	R_TRIG_12 : R_TRIG := (0);
+	R_TRIG_13 : R_TRIG := (0);
 	Start_Safety : BOOL := FALSE;
 	Status : En_status;
 	Stepper_1_position : DINT := 0;

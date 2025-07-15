@@ -9,8 +9,11 @@ PROGRAM _CYCLIC
 //		OutData := FIFO_0.DataOut;
 //	END_IF;
 	
+//	IF Status = AUTO THEN
+//		TON_clear.IN := 1;
+//	END_IF;
 	
-//	TON_clear.IN := 1;
+	
 //	IF (Status <> AUTO) THEN 
 //		glb_data.received_data := 0;
 //		FIFO_0.clear_data := 1;
@@ -18,26 +21,51 @@ PROGRAM _CYCLIC
 //		FIFO_0.clear_data := 0;
 //	END_IF
 	
-	IF (glb_io.Di.Si_01) THEN glb_pesce_passato := 1; END_IF
+	IF (glb_io.Di.Si_01) THEN glb_pesce_passato 		:= 1; END_IF;
 	
-	IF (glb_data.received_data) THEN TON_clear.IN := 0; END_IF
+	IF (glb_data.WeightCmdCounter) THEN TON_clear.IN 	:= 0; END_IF;
 	
-	IF (TON_clear.Q) THEN FIFO_0.clear_data := 1; END_IF
+	IF (TON_clear.Q) THEN FIFO_0.clear_data 			:= 1; END_IF
+	
+	IF Status = STOP THEN FIFO_0.clear_data 			:= 1; END_IF;
+	
+	IF Status <> STOP THEN FIFO_0.clear_data 			:= 0; END_IF;
+		
+	
+	
+	//Contatore messaggi -1 ricevuti dalla pesa Marel
+	
+	IF glb_data.WeightCmdCounter AND Eth_connect.Marel_Weight = '$$-1$$' THEN
+		Neg_Cmd := 1;
+	ELSE
+		Neg_Cmd := 0;
+	END_IF;
+	
+	R_TRIG_06 (CLK:=Neg_Cmd);
+	
+	IF R_TRIG_06.Q THEN
+		glb_data.Neg_Weight_Counter 	:= glb_data.Neg_Weight_Counter + 1;
+	END_IF;
+	
+	IF glb_data.Neg_Weight_Counter = 1000000000 THEN
+		glb_data.Neg_Weight_Counter := 0;
+	END_IF;
+	
 	
 	CASE in OF
 		0:
 			IF (glb_data.received_data) THEN
-				in := 10;
-				glb_data.received_data := 0;
+				in 							:= 10;
+				glb_data.received_data 		:= 0;
 				
-				glb_String.Raw_Length := LEN(Eth_connect.Marel_Weight);
-				glb_String.Length := glb_String.Raw_Length - 2;
-				glb_String.Result := MID(Eth_connect.Marel_Weight, glb_String.Length, 2); 
-				glb_String.Result_Real := (STRING_TO_REAL(glb_String.Result));
-				glb_String.Result_Real := (glb_String.Result_Real * INT_TO_REAL(1000));
+				glb_String.Raw_Length 		:= LEN(Eth_connect.Marel_Weight);
+				glb_String.Length 			:= glb_String.Raw_Length - 2;
+				glb_String.Result 			:= MID(Eth_connect.Marel_Weight, glb_String.Length, 2);
+				glb_String.Result_Real 		:= (STRING_TO_REAL(glb_String.Result));
+				glb_String.Result_Real 		:= (glb_String.Result_Real * INT_TO_REAL(1000));
 				
-				FIFO_0.INWrite := 1;
-				FIFO_0.DataIn := glb_String.Result_Real;
+				FIFO_0.INWrite 				:= 1;
+				FIFO_0.DataIn 				:= glb_String.Result_Real;
 				
 			END_IF
 		10:
@@ -48,15 +76,17 @@ PROGRAM _CYCLIC
 	
 	CASE out OF
 		0: 
+			Pesi_0.Controlled_Weight := FIFO_0.DataOut;
 			OutData := FIFO_0.DataOut;
-			IF (glb_st_gun_wait) THEN
-				out := 10;
-				glb_st_gun_wait := 0;
-				FIFO_0.INRead := 1;
-			END_IF
+			IF (glb_st_gun_wait OR glb_cmd.Clear_weight) THEN
+				out 					:= 10;
+				glb_st_gun_wait 		:= 0;
+				glb_cmd.Clear_weight 	:= 0;
+				FIFO_0.INRead 			:= 1;
+			END_IF;
 		10:
-			FIFO_0.INRead := 0;
-			out := 0;
+			FIFO_0.INRead 	:= 0;
+			out 			:= 0;
 		
 	END_CASE
 	
@@ -154,13 +184,13 @@ PROGRAM _CYCLIC
 	TON_sens_in.PT := tempo_scans;
 	
 	TON_clear;
-	TON_clear.PT := T#1s;
+	TON_clear.PT := T#500ms;
 	
-	R_TRIG_05;
 	R_TRIG_06;
 	R_TRIG_07;
 	
-	Pesi_0.Controlled_Weight := FIFO_0.DataOut;
+//	Pesi_0.Controlled_Weight := FIFO_0.DataOut;
+	
 	IF test_buff THEN 
 		glb_FIFO.FIFO_Status := 20;
 		glb_FIFO.FIFO_Status_read := 30;

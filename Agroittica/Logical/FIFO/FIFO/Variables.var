@@ -1,4 +1,15 @@
 VAR
+	DebugString01 : STRING[80] := '';
+	Repeat_cmd : BOOL := FALSE;
+END_VAR
+VAR RETAIN
+	Prev_value : STRING[80] := '';
+END_VAR
+VAR
+	Count_St : USINT := 0;
+	Count_Cmd : BOOL := FALSE;
+	Neg_Cmd : BOOL := FALSE;
+	Test : BOOL := FALSE;
 	out : USINT := 0;
 	in : USINT := 0;
 	TON_clear : TON := (0);

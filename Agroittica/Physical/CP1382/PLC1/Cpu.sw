@@ -4,10 +4,10 @@
   <TaskClass Name="Cyclic#1">
     <Task Name="Time" Source="main.Time.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="FIFO" Source="FIFO.FIFO.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Main" Source="main.Main.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="xsm_demo" Source="XSM_Demo_vnc.xsm_demo.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="xsm_demo_M" Source="XSM_Demo_vnc.xsm_demo_M2.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="TCP_IP" Source="Tcp_ip.TCP_IP.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Buffer_RPT" Source="main.Buffer_RPT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Laser_Enc" Source="IO.Laser_Enc.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
     <Task Name="Encoder" Source="IO.Encoder.prg" Memory="UserROM" Language="IEC" Debugging="true" Disabled="true" />
@@ -89,6 +89,7 @@
     <BinaryObject Name="VGAvnc03" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc02" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="VGAvnc01" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="mvLoader" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
@@ -138,6 +139,7 @@
     <LibraryObject Name="asbrstr" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="asusb" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="Library" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="visapi" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>

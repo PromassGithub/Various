@@ -3,6 +3,22 @@ PROGRAM _CYCLIC
 <?AutomationStudio FileVersion="4.9"?>
 <!-- Automation Studio Generated XML Section -->
 <networks maxcolumn="0">
+	<network label="" comment="" row="1" column="0" commented="0">
+		<row>
+			<line/>
+			<line/>
+			<line/>
+			<coil type="open" name="recipe_popup"/>
+		</row>
+	</network>
+	<network label="" comment="" row="1" column="0" commented="0">
+		<row>
+			<contact type="open" name="recipe_popup"/>
+			<line/>
+			<line/>
+			<coil type="open" name="UIConnect.MessageBox.LayerStatus.0"/>
+		</row>
+	</network>
 	<network label="" comment="" row="12" column="0" commented="0">
 		<row>
 			<empty/>
@@ -155,6 +171,7 @@ PROGRAM _CYCLIC
 	</network>
 </networks>
 END_PROGRAM
+
 
 
 

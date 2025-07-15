@@ -106,7 +106,7 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	// .......................... bilancia ..........................
-	IF(glb_rpt)THEN
+	IF(glb_rpt) OR Test THEN
 		//rpt
 		RPT_Buffer.bilancia[indice] := Eth_connect.Marel_Weight;
 		RPT_Buffer.time_stamp[indice] := glb_time;
@@ -118,9 +118,10 @@ PROGRAM _CYCLIC
 		indice := indice + 1; 
 		updt_hmi_trend := 1;
 		glb_rpt := FALSE;
+		Test:= 0;
 	END_IF
 	
-	// .......................... passo i dasi al RPT_CSV ..........................
+	// .......................... passo i dati al RPT_CSV ..........................
 	IF (indice >= 200) THEN
 		FOR i := 0 TO 199 DO
 			glb_data.bilancia[i]			:= RPT_Buffer.bilancia[i];

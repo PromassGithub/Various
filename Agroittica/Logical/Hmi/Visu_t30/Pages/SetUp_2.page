@@ -44,7 +44,7 @@
           <Text ID="276180" Value=""/>
         </TextLayer>
         <TextLayer LanguageId="en-US">
-          <Text ID="276180" Value="2/2"/>
+          <Text ID="276180" Value="2/3"/>
         </TextLayer>
         <TextLayer LanguageId="de-DE">
           <Text ID="276180" Value="2/2"/>
@@ -80,10 +80,10 @@
           <Property Name="FillStyle" Value="Transparent"/>
           <Property Name="ForeColor" Value="7"/>
           <Property Name="Height" Value="42"/>
-          <Property Name="Left" Value="507"/>
+          <Property Name="Left" Value="426"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
           <Property Name="Top" Value="379"/>
-          <Property Name="Width" Value="123"/>
+          <Property Name="Width" Value="204"/>
         </Control>
         <Control ClassId="0x00001002" Name="Button_6">
           <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -93,7 +93,7 @@
           <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_73]"/>
           <Property Name="Height" Value="40"/>
           <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="589"/>
+          <Property Name="Left" Value="498"/>
           <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
           <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollLeft]"/>
@@ -240,7 +240,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="192"/>
+          <Property Name="Left" Value="193"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="None"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -260,14 +260,14 @@
           <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
           <Property Name="Height" Value="39"/>
           <Property Name="IndexDatapoint" Value="None"/>
-          <Property Name="Left" Value="515"/>
+          <Property Name="Left" Value="426"/>
           <Property Name="SimulationIndex" Value="0"/>
           <Property Name="SimulationValue" Value=""/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
           <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
           <Property Name="TextIndexOffset" Value="21"/>
           <Property Name="TextSource" Value="MultipleTexts"/>
-          <Property Name="Top" Value="380"/>
+          <Property Name="Top" Value="381"/>
           <Property Name="Width" Value="72"/>
         </Control>
         <Control ClassId="0x00001004" Name="Text_9">
@@ -338,7 +338,7 @@
           <Property Name="InputStart" Value="Any Key"/>
           <Property Name="InputTouchpad" Value="Source[local].TouchPad[MpNumPad]"/>
           <Property Name="InputUpDown" Value="Disabled"/>
-          <Property Name="Left" Value="192"/>
+          <Property Name="Left" Value="193"/>
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="500"/>
           <Property Name="MinDatapoint" Value="None"/>
@@ -589,6 +589,42 @@
           <Property Name="Top" Value="365"/>
           <Property Name="Width" Value="30"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_5">
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_41]"/>
+          <Property Name="Height" Value="40"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="544"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpScrollRight]"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="None"/>
+          <Property Name="Top" Value="380"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_41]"/>
+          <Property Name="Width" Value="40"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_13">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Font" Value="Source[local].Font[MpHeader2]"/>
+          <Property Name="Height" Value="39"/>
+          <Property Name="IndexDatapoint" Value="None"/>
+          <Property Name="Left" Value="568"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[global].TextGroup[SET_UP]"/>
+          <Property Name="TextIndexOffset" Value="20"/>
+          <Property Name="TextSource" Value="MultipleTexts"/>
+          <Property Name="Top" Value="381"/>
+          <Property Name="Width" Value="72"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_73">
@@ -684,6 +720,19 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_41">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x00000160">
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="Page" Value="Source[local].Page[SetUp_3]"/>
+              <Property Name="Target" Value="Page"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
       </KeyMapping>
     </Layer>
     <LayerRef Source="Source[local].Layer[MpPageControl]">
@@ -704,13 +753,13 @@
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_1]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_2]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_2]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_6]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
     </MovementEntry>
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_5]">
@@ -722,7 +771,7 @@
     <MovementEntry Control="Source[embedded].Layer[Default].Control[Numeric_6]">
       <Property Name="Down" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
       <Property Name="Left" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
-      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
+      <Property Name="Right" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
       <Property Name="Up" Value="Source[embedded].Layer[Default].Control[Numeric_5]"/>
     </MovementEntry>
   </MovementOrder>

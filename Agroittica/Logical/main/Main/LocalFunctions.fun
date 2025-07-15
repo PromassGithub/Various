@@ -13,7 +13,10 @@
 		end : BOOL;
 		gun_out : BOOL;
 		Ready : BOOL;
+		Piston_down : BOOL;
+		Piston_up : BOOL;
 		Piston_out : BOOL;
+		Clear_weight : BOOL;
 	END_VAR
 	VAR
 		TON_08 : TON;
