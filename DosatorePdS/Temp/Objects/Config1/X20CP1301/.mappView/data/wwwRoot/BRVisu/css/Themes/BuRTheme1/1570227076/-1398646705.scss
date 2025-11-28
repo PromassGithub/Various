@@ -1,0 +1,153 @@
+﻿@import "mixins.scss";
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_Orange {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #FF8A00;
+}
+line {
+	stroke-width: 1px;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_Black {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #000000;
+}
+line {
+	stroke-width: 1px;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_LightGray {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #AAAAAA;
+}
+line {
+	stroke-width: 1px;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_Gray {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #4D4D4D;
+}
+line {
+	stroke-width: 1px;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_GrayBlue {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #5196AF;
+}
+line {
+	stroke-width: 1px;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_Orange_Wide {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #FF8A00;
+}
+line {
+	stroke-width: 3px;
+}
+line {
+	stroke-linecap: round;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_Black_Wide {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #000000;
+}
+line {
+	stroke-width: 3px;
+}
+line {
+	stroke-linecap: round;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_LightGray_Wide {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #AAAAAA;
+}
+line {
+	stroke-width: 3px;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_Gray_Wide {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #4D4D4D;
+}
+line {
+	stroke-width: 3px;
+}
+line {
+	stroke-linecap: round;
+}
+line {
+	opacity: 1;
+}
+
+}
+@import "../../../../widgets/brease/Line/meta/Line_base";
+.widgets_brease_Line_style_Solid_GrayBlue_Wide {
+@include widgets_brease_Line_base; 
+line {
+	stroke: #5196AF;
+}
+line {
+	stroke-width: 3px;
+}
+line {
+	stroke-linecap: round;
+}
+line {
+	opacity: 1;
+}
+
+}

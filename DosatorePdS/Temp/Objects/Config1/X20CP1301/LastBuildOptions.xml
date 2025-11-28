@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.9"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID=".mappView_Build">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\type_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\transformations\eventbinding\parametertypemapping.xml" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\label\meta\label_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\line\meta\line_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericoutput\meta\numericoutput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericinput\meta\numericinput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\momentarypushbutton\meta\momentarypushbutton_copied.markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\button\meta\button_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\togglebutton\meta\togglebutton_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechart\meta\linechart_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartwidget\meta\chartwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\busyindicator\meta\busyindicator_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartyaxis\meta\linechartyaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartgraph\meta\linechartgraph_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\messagebox\meta\messagebox_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\window\meta\window_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\dialogwindow\meta\dialogwindow_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numpad\meta\numpad_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\keyboard\meta\keyboard_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\datetimepicker\meta\datetimepicker_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\changepassworddialog\meta\changepassworddialog_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\textinput\meta\textinput_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\password\meta\password_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\iat_media.job" LastWriteTime="2025-11-28 11:22:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\iat_media.job._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_visualization._markerfile" LastWriteTime="2025-11-28 10:54:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\vis_2.json" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\0_visulist.json" LastWriteTime="2025-11-28 11:22:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\dialog_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\binding_trans._markerfile" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\bindinglist_trans._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validateeventbindings._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\eventbinding_trans._markerfile" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_themes._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_keywordsets._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\157945538.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1074141008.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\877119071.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\560097432.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\118132788.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1354067113.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1800426408.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\-1398646705.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1597950609.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\2062906418.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\-1912066981.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\release\burtheme1.min.css" LastWriteTime="2025-11-28 10:57:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\server\__systemvariables.sessionvar" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\server\vis_2.vis" LastWriteTime="2025-11-28 10:54:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\grunt.themescsso._markerfile" LastWriteTime="2025-11-28 10:57:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\grunt.breasecsso._markerfile" LastWriteTime="2025-11-28 10:57:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\grunt.breaserelease._markerfile" LastWriteTime="2025-11-28 10:57:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\brease_core.css" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\server\config.mappviewcfg" LastWriteTime="2025-11-26 14:41:28" />
+  </Rule>
+  <Rule ID=".mappView_IntegrationBuild">
+    <CommandLine Parameter="-sourceDir &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data&quot; -targetDir &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Transfer/Config1/X20CP1301/FilesToTransfer/AddonsData/IAT_Data&quot;  -targetDirClient &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/TransferToClient/Config1/X20CP1301/FilesToTransfer/AddonsData/IAT_Data&quot; -sourceDirIATR &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATR/AREmb/IA32&quot; -targetDirIATR &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Transfer/Config1/X20CP1301/FilesToTransfer/Addons/IATR&quot; -targetDirIATRClient &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/TransferToClient/Config1/X20CP1301/FilesToTransfer/Addons/IATR&quot; -iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -versionFile &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Version.xml&quot; -mappViewDeployment &quot;Plc&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\brease\iatc\brvisu\brease._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\brease\iat\build\jsbuild._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\transformations_copy._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\server\serverdiagnostics._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\types\area._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\index.html" LastWriteTime="2023-07-25 06:03:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\favicon.ico" LastWriteTime="2023-07-25 06:03:56" />
+    <CommandLine Parameter="-category CreateMarkerFile -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/.mappView_Prerequisites._markerfile&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/.mappView_Prerequisites._markerfile&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/.mappView_Prerequisites._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\brease\iatc\brvisu\brease._markerfile">
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATC/BRVisu&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/brease/iatc/brvisu/brease._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\brease\iat\build\jsbuild._markerfile">
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATC/jsBuild&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/build&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/brease/iat/build/jsBuild._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\transformations_copy._markerfile">
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Transformations&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations_Copy._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\server\serverdiagnostics._markerfile">
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/ServerDiagnostic/server&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/server&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/server/ServerDiagnostics._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\types\area._markerfile">
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Types&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/types&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/types/Area._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\type_sass._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\types\area._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <CommandLine Parameter="-command &quot;buildStyleableProperties&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Type_Sass._markerfile&quot; -workingDir &quot;.&quot; -fileBuildStepType &quot;TypeSass&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\index.html">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\iatc\index.html" LastWriteTime="2023-07-25 06:03:56" />
+    <CommandLine Parameter="-category CopyFile -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATC/index.html&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/index.html&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/index.html&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\favicon.ico">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\iatc\favicon.ico" LastWriteTime="2023-07-25 06:03:56" />
+    <CommandLine Parameter="-category CopyFile -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATC/favicon.ico&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/favicon.ico&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/favicon.ico&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\transformations\eventbinding\parametertypemapping.xml">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\transformations\eventbinding\parametertypemapping.xml" LastWriteTime="2023-07-25 06:22:12" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\widgetlibrary.mapping" LastWriteTime="2023-07-25 06:12:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\page\content.content" LastWriteTime="2025-11-28 10:56:12" />
+    <CommandLine Parameter=" &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Transformations/eventbinding/ParameterTypeMapping.xml&quot; &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetLibrary.mapping&quot;  -category &quot;MappingMerge&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/eventbinding/ParameterTypeMapping.xml&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\common\keyboards\autosize.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\label\meta\label_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\line\meta\line_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericoutput\meta\numericoutput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericinput\meta\numericinput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\momentarypushbutton\meta\momentarypushbutton_copied.markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\button\meta\button_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\togglebutton\meta\togglebutton_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechart\meta\linechart_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartwidget\meta\chartwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\busyindicator\meta\busyindicator_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartyaxis\meta\linechartyaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartgraph\meta\linechartgraph_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\messagebox\meta\messagebox_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\window\meta\window_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\dialogwindow\meta\dialogwindow_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numpad\meta\numpad_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\keyboard\meta\keyboard_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\datetimepicker\meta\datetimepicker_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\changepassworddialog\meta\changepassworddialog_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\textinput\meta\textinput_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\password\meta\password_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <CommandLine Parameter="-category CreateMarkerFile -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/.mappView_WidgetsFinished._markerfile&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/.mappView_WidgetsFinished._markerfile&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/.mappView_WidgetsFinished._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/common&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/widgets/brease/common&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/widgets/brease/common/BusyIndicatorHandler/libs/BusyIndicatorHandler.js._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\common\keyboards\autosize.js._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATC/BRVisu/system/widgets/common&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/system/widgets/common&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/system/widgets/common/keyboards/AutoSize.js._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\label\meta\label_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\label\label.js" LastWriteTime="2023-07-25 06:03:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/Label&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Label&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Label/meta/Label_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\line\meta\line_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\line\line.js" LastWriteTime="2023-07-25 06:03:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/Line&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Line&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Line/meta/Line_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericoutput\meta\numericoutput_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericoutput\numericoutput.js" LastWriteTime="2023-07-25 06:03:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/NumericOutput&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/NumericOutput&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/NumericOutput/meta/NumericOutput_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericinput\meta\numericinput_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericinput\numericinput.js" LastWriteTime="2023-07-25 06:03:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/NumericInput&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/NumericInput&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/NumericInput/meta/NumericInput_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\momentarypushbutton\meta\momentarypushbutton_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\momentarypushbutton\momentarypushbutton.js" LastWriteTime="2023-07-25 06:03:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/MomentaryPushButton&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/MomentaryPushButton&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\button\meta\button_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\button\button.js" LastWriteTime="2023-07-25 06:03:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/Button&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Button&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Button/meta/Button_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\togglebutton\meta\togglebutton_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\togglebutton\togglebutton.js" LastWriteTime="2023-07-25 06:03:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/ToggleButton&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ToggleButton&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ToggleButton/meta/ToggleButton_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechart\meta\linechart_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechart\linechart.js" LastWriteTime="2023-07-25 06:03:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/LineChart&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChart&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChart/meta/LineChart_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartwidget\meta\chartwidget_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartwidget\chartwidget.js" LastWriteTime="2023-07-25 06:03:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/ChartWidget&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartWidget&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartWidget/meta/ChartWidget_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\busyindicator\meta\busyindicator_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\busyindicator\busyindicator.js" LastWriteTime="2023-07-25 06:03:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/BusyIndicator&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/BusyIndicator&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/BusyIndicator/meta/BusyIndicator_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linecharttimeaxis\linecharttimeaxis.js" LastWriteTime="2023-07-25 06:03:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/LineChartTimeAxis&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChartTimeAxis&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChartTimeAxis/meta/LineChartTimeAxis_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartxaxiswidget\chartxaxiswidget.js" LastWriteTime="2023-07-25 06:03:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/ChartXAxisWidget&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartXAxisWidget&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartXAxisWidget/meta/ChartXAxisWidget_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartyaxis\meta\linechartyaxis_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechartyaxis\linechartyaxis.js" LastWriteTime="2023-07-25 06:03:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/LineChartYAxis&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChartYAxis&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChartYAxis/meta/LineChartYAxis_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartyaxiswidget\chartyaxiswidget.js" LastWriteTime="2023-07-25 06:03:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/ChartYAxisWidget&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartYAxisWidget&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartYAxisWidget/meta/ChartYAxisWidget_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartgraph\meta\linechartgraph_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechartgraph\linechartgraph.js" LastWriteTime="2023-07-25 06:03:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/LineChartGraph&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChartGraph&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/LineChartGraph/meta/LineChartGraph_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartyvaluelistwidget\chartyvaluelistwidget.js" LastWriteTime="2023-07-25 06:03:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/ChartYValueListWidget&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartYValueListWidget&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/ChartYValueListWidget/meta/ChartYValueListWidget_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\messagebox\meta\messagebox_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\messagebox\messagebox.js" LastWriteTime="2023-07-25 06:03:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/MessageBox&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/MessageBox&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/MessageBox/meta/MessageBox_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\window\meta\window_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\window\window.js" LastWriteTime="2023-07-25 06:03:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/Window&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Window&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Window/meta/Window_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\dialogwindow\meta\dialogwindow_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\dialogwindow\dialogwindow.js" LastWriteTime="2023-07-25 06:03:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/DialogWindow&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/DialogWindow&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/DialogWindow/meta/DialogWindow_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numpad\meta\numpad_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numpad\numpad.js" LastWriteTime="2023-07-25 06:03:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/NumPad&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/NumPad&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/NumPad/meta/NumPad_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\keyboard\meta\keyboard_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\keyboard\keyboard.js" LastWriteTime="2023-07-25 06:03:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/KeyBoard&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/KeyBoard&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/KeyBoard/meta/KeyBoard_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\datetimepicker\meta\datetimepicker_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\datetimepicker\datetimepicker.js" LastWriteTime="2023-07-25 06:03:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/DateTimePicker&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/DateTimePicker&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/DateTimePicker/meta/DateTimePicker_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\changepassworddialog\meta\changepassworddialog_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\iatc\brvisu\system\widgets\changepassworddialog\changepassworddialog.js" LastWriteTime="2023-07-25 06:03:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\common\keyboards\autosize.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/IATC/BRVisu/system/widgets/ChangePasswordDialog&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/system/widgets/ChangePasswordDialog&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/system/widgets/ChangePasswordDialog/meta/ChangePasswordDialog_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\textinput\meta\textinput_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\textinput\textinput.js" LastWriteTime="2023-07-25 06:03:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/TextInput&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/TextInput&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/TextInput/meta/TextInput_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\password\meta\password_copied.markerfile">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\password\password.js" LastWriteTime="2023-07-25 06:03:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\common\busyindicatorhandler\libs\busyindicatorhandler.js._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category CopyDirectory -i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/Password&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Password&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/Widgets/brease/Password/meta/Password_Copied.markerFile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\iat_media.job._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\iat_media.job" LastWriteTime="2025-11-28 11:22:12" />
+    <CommandLine Parameter="-category BulkCopy -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/IAT_MEDIA.job&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/IAT_MEDIA.job._markerfile&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/IAT_MEDIA.job._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_visualization._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\visualizat.vis" LastWriteTime="2025-11-28 10:53:32" />
+    <CommandLine Parameter="-category &quot;vis&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_Visualization._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\vis_2.json">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\visualizat.vis" LastWriteTime="2025-11-28 10:53:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_visualization._markerfile" LastWriteTime="2025-11-28 10:54:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_pages._markerfile" LastWriteTime="2025-11-26 14:53:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_navs._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_layouts._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_trans._markerfile" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_themes._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Physical/Config1/X20CP1301/mappView/Visualizat.vis&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/vis_2.json&quot; -indexFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/BR.IAT.indexfile&quot; -fileList &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/vis_2_json.bin&quot; -logicalDir &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\0_visulist.json">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\0_visulist.json" LastWriteTime="2025-11-28 11:22:12" />
+    <CommandLine Parameter="-category CopyFile -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/0_visulist.json&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/0_visulist.json&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/0_visulist.json&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_pages._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\page\page.page" LastWriteTime="2025-11-26 14:53:10" />
+    <CommandLine Parameter="-category &quot;page&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_Pages._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\dialog_sass._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-command &quot;buildStyleableProperties&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Dialog_Sass._markerfile&quot; -workingDir &quot;.&quot; -fileBuildStepType &quot;DialogSass&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_navs._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category &quot;navigation&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_Navs._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_layouts._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\layouts\landscape16_9.layout" LastWriteTime="2025-11-26 14:41:56" />
+    <CommandLine Parameter="-category &quot;layout&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_Layouts._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_trans._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\page\content.content" LastWriteTime="2025-11-28 10:56:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\label\meta\label_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\line\meta\line_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericoutput\meta\numericoutput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericinput\meta\numericinput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\momentarypushbutton\meta\momentarypushbutton_copied.markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\button\meta\button_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\togglebutton\meta\togglebutton_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechart\meta\linechart_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartwidget\meta\chartwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\busyindicator\meta\busyindicator_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartyaxis\meta\linechartyaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartgraph\meta\linechartgraph_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <CommandLine Parameter="-infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Content_Trans._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_sass._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_trans._markerfile" LastWriteTime="2025-11-28 10:57:10" />
+    <CommandLine Parameter="-command &quot;buildStyleableProperties&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Content_Sass._markerfile&quot; -workingDir &quot;.&quot; -fileBuildStepType &quot;ContentSass&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validatebindings._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\content_1.binding" LastWriteTime="2025-11-27 09:17:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\page\content.content" LastWriteTime="2025-11-28 10:56:12" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericoutput\meta\numericoutput.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericinput\meta\numericinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\momentarypushbutton\meta\momentarypushbutton.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\togglebutton\meta\togglebutton.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\label\meta\label.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <CommandLine Parameter="-category &quot;bindings&quot; -iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -opcUaFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/opcUaFileList.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/ValidateBindings._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\duplicatebindingsfinder._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validatebindings._markerfile" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\content_1.binding" LastWriteTime="2025-11-27 09:17:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\page\content.content" LastWriteTime="2025-11-28 10:56:12" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericoutput\meta\numericoutput.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericinput\meta\numericinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\momentarypushbutton\meta\momentarypushbutton.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\togglebutton\meta\togglebutton.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\label\meta\label.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <CommandLine Parameter="-iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -category &quot;bindings&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/DuplicateBindingsFinder._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\binding_trans._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\transformations_copy._markerfile" LastWriteTime="2025-11-26 14:44:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\content_1.binding" LastWriteTime="2025-11-27 09:17:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\visualization\pages\page\content.content" LastWriteTime="2025-11-28 10:56:12" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericoutput\meta\numericoutput.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericinput\meta\numericinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\momentarypushbutton\meta\momentarypushbutton.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\togglebutton\meta\togglebutton.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\label\meta\label.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <CommandLine Parameter="-category &quot;bindings&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Binding_Trans._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\duplicatebindingslistsetsfinder._markerfile">
+    <CommandLine Parameter="-iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -category &quot;bindingsListsSets&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/DuplicateBindingsListSetsFinder._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\bindinglist_trans._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category &quot;bindinglists&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/BindingList_Trans._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validateeventbindings._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-category &quot;eventbindings&quot; -iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -opcUaFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/opcUaFileList.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/ValidateEventBindings._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\eventbinding_trans._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <CommandLine Parameter="-infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/EventBinding_Trans._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatethemesfinder._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\burtheme1.theme" LastWriteTime="2025-11-26 14:51:46" />
+    <CommandLine Parameter="-iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -category &quot;themes&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/DuplicateThemesFinder._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_themes._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatethemesfinder._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\burtheme1.theme" LastWriteTime="2025-11-26 14:51:46" />
+    <CommandLine Parameter="-category &quot;theme&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_Themes._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_keywordsets._markerfile">
+    <CommandLine Parameter="-category &quot;keywordSet&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_KeywordSets._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylessetsfinder._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\burtheme1.stylesset" LastWriteTime="2025-11-26 14:51:46" />
+    <CommandLine Parameter="-iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -category &quot;stylessets&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/DuplicateStylesSetsFinder._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\burtheme1.stylesset" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylessetsfinder._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-category &quot;stylesSet&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/Validate_StylesSets._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\br.iat.widgetsfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\default.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\system.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\buttons.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\common.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\container.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\labeltexts.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\numeric.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\graphic.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\charts.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\sequencer.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\lists.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\burtheme1.theme" LastWriteTime="2025-11-26 14:51:46" />
+    <CommandLine Parameter="-iatFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/IatFiles.bin&quot; -category &quot;styles&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/DuplicateStylesFinder._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\157945538.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\default.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Default.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/157945538.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1074141008.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\system.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/System.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/1074141008.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\877119071.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\buttons.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Buttons.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/877119071.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\560097432.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\common.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Common.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/560097432.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\118132788.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\container.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Container.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/118132788.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1354067113.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\labeltexts.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/LabelTexts.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/1354067113.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1800426408.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\numeric.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Numeric.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/1800426408.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\-1398646705.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\graphic.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Graphic.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/-1398646705.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1597950609.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\charts.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Charts.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/1597950609.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\2062906418.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\sequencer.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Sequencer.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/2062906418.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\-1912066981.scss">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\lists.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\duplicatestylesfinder._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\validate_stylessets._markerfile" LastWriteTime="2025-11-26 14:52:14" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Logical/mappView/Resources/Themes/BuRTheme1/brease/Lists.styles&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/BuRTheme1/1570227076/-1912066981.scss&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/styles/Styles.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/content/engineering/WidgetLibrary.xmlschemaset;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Widgets/brease/WidgetStyles.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/styles/ThemeStyleTransformation.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\release\burtheme1.min.css">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\br.iat.widgetsfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\burtheme1.sasssources" LastWriteTime="2025-11-26 14:52:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\burtheme1.stylesset" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\default.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\system.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\buttons.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\common.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\container.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\labeltexts.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\numeric.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\graphic.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\charts.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\sequencer.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\mappview\resources\themes\burtheme1\brease\lists.styles" LastWriteTime="2025-11-26 14:51:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\157945538.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1074141008.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\877119071.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\560097432.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\118132788.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1354067113.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1800426408.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\-1398646705.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\1597950609.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\2062906418.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\burtheme1\1570227076\-1912066981.scss" LastWriteTime="2025-11-28 10:57:10" />
+    <CommandLine Parameter="-command &quot;buildTheme&quot; -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/BuRTheme1.sasssources&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/release/BuRTheme1.min.css&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -theme &quot;BuRTheme1&quot; -themesRoot &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\server\__systemvariables.sessionvar">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\variables\systemvariables.svar" LastWriteTime="2023-07-26 07:08:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="-i &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Variables/SystemVariables.svar&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/server/__SystemVariables.sessionVar&quot; -schemaset &quot;C:/Program Files/BrAutomation/AS49/AS/TechnologyPackages/mappView/5.24.0/Schemas/session/engineering/VariablesSet.xmlschemaset&quot; -t &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/Transformations/session/SessionVarBuilder.xsl&quot; -workingDir &quot;.&quot; -validationEnabled &quot;True&quot;  -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\server\vis_2.vis">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\visualizat.vis" LastWriteTime="2025-11-28 10:53:32" />
+    <CommandLine Parameter="-i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Physical/Config1/X20CP1301/mappView/Visualizat.vis&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/server/vis_2.vis&quot; -eventBindingsSets  &quot;&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\grunt.themescsso._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\release\burtheme1.min.css" LastWriteTime="2025-11-28 10:57:12" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\label\meta\label.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\line\meta\line.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericoutput\meta\numericoutput.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericinput\meta\numericinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\momentarypushbutton\meta\momentarypushbutton.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\button\meta\button.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\togglebutton\meta\togglebutton.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechart\meta\linechart.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartwidget\meta\chartwidget.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\busyindicator\meta\busyindicator.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechartyaxis\meta\linechartyaxis.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechartgraph\meta\linechartgraph.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\messagebox\meta\messagebox.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\window\meta\window.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\dialogwindow\meta\dialogwindow.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numpad\meta\numpad.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\keyboard\meta\keyboard.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\datetimepicker\meta\datetimepicker.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\iatc\brvisu\system\widgets\changepassworddialog\meta\changepassworddialog.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\textinput\meta\textinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\password\meta\password.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <CommandLine Parameter="-workingDir &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/build/node_modules/.bin&quot; -gruntCommand &quot;themesCsso --buildpath=&quot;&quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot&quot;&quot;&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/Themes/grunt.themesCsso._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\grunt.breasecsso._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\themes\grunt.themescsso._markerfile" LastWriteTime="2025-11-28 10:57:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\type_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\dialog_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\brease_core.css" LastWriteTime="2025-11-28 10:57:10" />
+    <CommandLine Parameter="-workingDir &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/build/node_modules/.bin&quot; -gruntCommand &quot;breaseCsso --buildpath=&quot;&quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot&quot;&quot;&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/grunt.breaseCsso._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\grunt.breaserelease._markerfile">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_prerequisites._markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\br.iat.widgetsfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\.mappview_widgetsfinished._markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\label\meta\label.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\line\meta\line.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericoutput\meta\numericoutput.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numericinput\meta\numericinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\momentarypushbutton\meta\momentarypushbutton.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\button\meta\button.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\togglebutton\meta\togglebutton.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechart\meta\linechart.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartwidget\meta\chartwidget.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\busyindicator\meta\busyindicator.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechartyaxis\meta\linechartyaxis.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\linechartgraph\meta\linechartgraph.widget" LastWriteTime="2023-07-25 06:11:06" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget.widget" LastWriteTime="2023-07-25 06:11:02" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\messagebox\meta\messagebox.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\window\meta\window.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\dialogwindow\meta\dialogwindow.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\numpad\meta\numpad.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\keyboard\meta\keyboard.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\datetimepicker\meta\datetimepicker.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\iatc\brvisu\system\widgets\changepassworddialog\meta\changepassworddialog.widget" LastWriteTime="2023-07-25 06:11:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\textinput\meta\textinput.widget" LastWriteTime="2023-07-25 06:11:04" />
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\widgets\brease\password\meta\password.widget" LastWriteTime="2023-07-25 06:11:10" />
+    <CommandLine Parameter="-workingDir &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/build/node_modules/.bin&quot; -gruntCommand &quot;breaseRelease --buildpath=&quot;&quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot&quot;&quot;&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/grunt.breaseRelease._markerfile&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\css\brease_core.css">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\br.iat.concatfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_trans._markerfile" LastWriteTime="2025-11-28 10:57:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\type_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\label\meta\label_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\line\meta\line_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericoutput\meta\numericoutput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numericinput\meta\numericinput_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\momentarypushbutton\meta\momentarypushbutton_copied.markerfile" LastWriteTime="2025-11-28 10:57:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\button\meta\button_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\togglebutton\meta\togglebutton_copied.markerfile" LastWriteTime="2025-11-26 15:11:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechart\meta\linechart_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartwidget\meta\chartwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\busyindicator\meta\busyindicator_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linecharttimeaxis\meta\linecharttimeaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartxaxiswidget\meta\chartxaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartyaxis\meta\linechartyaxis_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyaxiswidget\meta\chartyaxiswidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\linechartgraph\meta\linechartgraph_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\chartyvaluelistwidget\meta\chartyvaluelistwidget_copied.markerfile" LastWriteTime="2025-11-26 16:26:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\messagebox\meta\messagebox_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\window\meta\window_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\dialogwindow\meta\dialogwindow_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\numpad\meta\numpad_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\keyboard\meta\keyboard_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\datetimepicker\meta\datetimepicker_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\system\widgets\changepassworddialog\meta\changepassworddialog_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\textinput\meta\textinput_copied.markerfile" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\wwwroot\brvisu\widgets\brease\password\meta\password_copied.markerfile" LastWriteTime="2025-11-26 14:44:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\dialog_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\content_sass._markerfile" LastWriteTime="1601-01-01 00:00:00" />
+    <CommandLine Parameter="-command &quot;concat&quot; -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/BR.IAT.concatfile&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/wwwRoot/BRVisu/css/brease_core.css&quot; -infrastructure &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/mappViewBuildInfrastructure.bin&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\.mappview\data\server\config.mappviewcfg">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\mappview\config.mappviewcfg" LastWriteTime="2025-11-26 14:41:28" />
+    <CommandLine Parameter="-category CopyFile -i &quot;C:/project/GITH_HUB/Various/DosatorePdS/Physical/Config1/X20CP1301/mappView/Config.mappviewcfg&quot; -o &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/server/Config.mappviewcfg&quot; -markerFile &quot;C:/project/GITH_HUB/Various/DosatorePdS/Temp/Objects/Config1/X20CP1301/.mappView/data/server/Config.mappviewcfg&quot; -cultureName &quot;it-IT&quot; -uiCultureName &quot;en-US&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\opcuamap\opcuamap.uar.gz">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\connectivity\opcua\opcuamap.uad" LastWriteTime="2025-11-27 09:16:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\cpu.sw" LastWriteTime="2025-11-27 08:39:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\accessandsecurity\userrolesystem\role.role" LastWriteTime="2025-11-26 08:25:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\Connectivity\OpcUA\OpcUaMap.uad&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\OpcUaMap\OpcUaMap.uar.gz&quot; -H &quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; -B E4.83 -c Config1 -P &quot;$(AS_PROJECT_PATH)&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-26 16:51:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\ashwac.br&quot; -L &quot;AsIecCon: V*, astime: V*, operator: V*, runtime: V*, standard: V*&quot; -c &quot;Config1&quot; -Z &quot;mappView: 5.24.0, UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B E4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-26 16:51:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;X20CP1301&quot; -Z &quot;mappView: 5.24.0, UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\sysconf.br&quot; -T SG4 -B E4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-26 16:51:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\upgrades\modified.txt" LastWriteTime="2024-01-29 07:59:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP1301&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\asfw.br&quot; -T SG4 -B E4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -Z &quot;mappView: 5.24.0, UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-26 16:51:08" />
+    <Prerequisite ID="c:\program files\brautomation\as49\upgrades\modified.txt" LastWriteTime="2024-01-29 07:59:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;X20CP1301&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\ashwd.br&quot; -T SG4 -B E4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -Z &quot;mappView: 5.24.0, UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-26 16:51:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\iomap.iom" LastWriteTime="2025-11-27 09:16:52" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.0.199 /REPO=11159 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=99&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;X20CP1301&quot; -Z &quot;mappView: 5.24.0, UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B E4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\mvloader.br">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\mappview\5.24.0\transfer\modules\sg4\ia32\mvloader.br" LastWriteTime="2023-07-26 07:10:42" />
+    <CommandLine Parameter="C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\mappView\5.24.0\Transfer\Modules\SG4\Ia32\mvLoader.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\mvLoader.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\udbdef.br">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter="C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\iomap.iom" LastWriteTime="2025-11-27 09:16:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\pvmap.vvm" LastWriteTime="2025-11-26 08:25:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-26 16:51:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\cpu.sw" LastWriteTime="2025-11-27 08:39:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\channelconfiguration.xml" LastWriteTime="2025-11-26 13:57:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\iomap.br&quot; -T SG4 -B E4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.X20CP1301&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\TCData\TCData.imx&quot; -c &quot;C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\Program Files\BrAutomation\AS\System\E0483&quot; &quot;C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\mappView\5.24.0&quot; &quot;C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\tcdata\tcdata.imx" LastWriteTime="2025-11-26 14:43:56" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\tcdata\tcdata.s18d" LastWriteTime="2025-11-26 14:44:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\accessandsecurity\userrolesystem\role.role" LastWriteTime="2025-11-26 08:25:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Role.br&quot; -zip -B E4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\accessandsecurity\userrolesystem\user.user" LastWriteTime="2025-11-26 08:25:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\accessandsecurity\userrolesystem\role.role" LastWriteTime="2025-11-26 08:25:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\User.br&quot; -zip -B E4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2025-11-26 08:25:30" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\FWRules.br&quot; -zip -B E4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\program.ox" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\cpu.per" LastWriteTime="2025-11-26 08:25:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Program.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\X20CP1301\LT.ofs&quot; -T SG4 -M IA32 -B E4.83 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic1 -p 2 -s &quot;Program&quot; -L &quot;AsIecCon: V*, astime: V*, operator: V*, runtime: V*, standard: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\program.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\a.out" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Program.ox&quot; -T SG4 -r Cyclic1 -G V4.1.2  -B E4.83 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\cyclic.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\init.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\exit.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\fb_dosaggiopolvere.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\_bur_pvdef.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Cyclic.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Init.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Exit.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\FB_DosaggioPolvere.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,C:\Program Files\BrAutomation\AS\System\E0483\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\Program Files\BrAutomation\AS\System\E0483\SG4\Ia32\libastime.a&quot; &quot;-Wl,C:\Program Files\BrAutomation\AS\System\E0483\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\Program Files\BrAutomation\AS\System\E0483\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\Program Files\BrAutomation\AS\System\E0483\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\Program Files\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\cyclic.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\cyclic.st" LastWriteTime="2025-11-26 17:57:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Program\Cyclic.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Cyclic.st.o&quot; -T SG4 -M IA32 -B E4.83 -G V4.1.2  -s &quot;Program&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Program\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\LocalFunctions.fun&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\init.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\init.st" LastWriteTime="2025-11-26 13:39:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Program\Init.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Init.st.o&quot; -T SG4 -M IA32 -B E4.83 -G V4.1.2  -s &quot;Program&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Program\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\LocalFunctions.fun&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\exit.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\exit.st" LastWriteTime="2025-11-26 08:51:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Program\Exit.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\Exit.st.o&quot; -T SG4 -M IA32 -B E4.83 -G V4.1.2  -s &quot;Program&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Program\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\LocalFunctions.fun&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\fb_dosaggiopolvere.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\fb_dosaggiopolvere.st" LastWriteTime="2025-11-27 11:15:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Program\FB_DosaggioPolvere.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\FB_DosaggioPolvere.st.o&quot; -T SG4 -M IA32 -B E4.83 -G V4.1.2  -s &quot;Program&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Program\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\LocalFunctions.fun&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\cyclic.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\init.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\exit.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program\fb_dosaggiopolvere.st.o" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2025-11-26 10:28:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\variables.var" LastWriteTime="2025-11-28 11:21:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\types.typ" LastWriteTime="2025-11-26 13:59:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\program\localfunctions.fun" LastWriteTime="2025-11-27 15:20:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-26 09:11:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-27 09:10:10" />
+    <CommandLine Parameter="&quot;C:\Program Files\BrAutomation\AS49\AS\gnuinst\V4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\Program\_bur_pvdef.st.o&quot; -S &quot;Cyclic.st&quot; &quot;Init.st&quot; &quot;Exit.st&quot; &quot;FB_DosaggioPolvere.st&quot;  -T SG4 -M IA32 -B E4.83 -G V4.1.2  -s &quot;Program&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Program\Types.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Program\LocalFunctions.fun&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\standard.br">
+    <Prerequisite ID="c:\program files\brautomation\as\system\e0483\sg4\ia32\standard.br" LastWriteTime="2022-02-01 12:00:46" />
+    <CommandLine Parameter="C:\Program Files\BrAutomation\AS\System\E0483\SG4\Ia32\standard.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\standard.br" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\X20CP1301\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\x20cp1301\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\ashwac.br" LastWriteTime="2025-11-26 09:09:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\sysconf.br" LastWriteTime="2025-11-26 16:26:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\asfw.br" LastWriteTime="2025-11-26 09:09:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\ashwd.br" LastWriteTime="2025-11-26 09:09:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\arconfig.br" LastWriteTime="2025-11-26 16:51:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\mvloader.br" LastWriteTime="2023-07-26 07:10:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\iomap.br" LastWriteTime="2025-11-27 09:17:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\tcdata.br" LastWriteTime="2025-11-26 14:44:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\role.br" LastWriteTime="2025-11-26 09:09:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\user.br" LastWriteTime="2025-11-26 09:09:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\fwrules.br" LastWriteTime="2025-11-26 09:09:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\program.br" LastWriteTime="2025-11-28 11:22:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\x20cp1301\standard.br" LastWriteTime="2022-02-01 12:00:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\x20cp1301\cpu.sw" LastWriteTime="2025-11-27 08:39:54" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\DosatorePdS.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\Program Files\BrAutomation\AS49&quot; -S &quot;X20CP1301&quot; -A &quot;X20CP1301&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\X20CP1301\Cpu.sw&quot; -Z &quot;mappView: 5.24.0, UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.0.199 /REPO=11159 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=99&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

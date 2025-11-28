@@ -1,0 +1,1144 @@
+﻿@import "mixins.scss";
+@import "../../../../widgets/brease/Button/meta/Button_base";
+.widgets_brease_Button_style_transparent {
+@include widgets_brease_Button_base; 
+&:not(.disabled):not(.active):not(.checked) {
+	background-color: transparent;
+}
+&:not(.active):not(.checked) {
+	border-width: 0px;
+}
+&.disabled {
+	border-width: 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	background-color: transparent;
+}
+&.checked:not(.disabled) {
+	background-color: transparent;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px;
+}
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #474747;
+}
+&.active.checked:not(.disabled) span {
+	color: #474747;
+}
+
+}
+@import "../../../../widgets/brease/Button/meta/Button_base";
+.widgets_brease_Button_style_Command {
+@include widgets_brease_Button_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #FFFFFF;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/Button/meta/Button_base";
+.widgets_brease_Button_style_Command1 {
+@include widgets_brease_Button_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #FFFFFF;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #474747;
+}
+&.active.checked:not(.disabled) span {
+	color: #474747;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/Button/meta/Button_base";
+.widgets_brease_Button_style_Operate {
+@include widgets_brease_Button_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/Button/meta/Button_base";
+.widgets_brease_Button_style_Operate1 {
+@include widgets_brease_Button_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/Button/meta/Button_base";
+.widgets_brease_Button_style_defaultSmall {
+@include widgets_brease_Button_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_base";
+.widgets_brease_MomentaryPushButton_style_transparent {
+@include widgets_brease_MomentaryPushButton_base; 
+&:not(.disabled):not(.active):not(.checked) {
+	background-color: transparent;
+}
+&:not(.active):not(.checked) {
+	border-width: 0px;
+}
+&.disabled {
+	border-width: 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	background-color: transparent;
+}
+&.checked:not(.disabled) {
+	background-color: transparent;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px;
+}
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #474747;
+}
+&.active.checked:not(.disabled) span {
+	color: #474747;
+}
+
+}
+@import "../../../../widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_base";
+.widgets_brease_MomentaryPushButton_style_Command {
+@include widgets_brease_MomentaryPushButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #FFFFFF;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_base";
+.widgets_brease_MomentaryPushButton_style_Command1 {
+@include widgets_brease_MomentaryPushButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #FFFFFF;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #474747;
+}
+&.active.checked:not(.disabled) span {
+	color: #474747;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_base";
+.widgets_brease_MomentaryPushButton_style_Operate {
+@include widgets_brease_MomentaryPushButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_base";
+.widgets_brease_MomentaryPushButton_style_Operate1 {
+@include widgets_brease_MomentaryPushButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/MomentaryPushButton/meta/MomentaryPushButton_base";
+.widgets_brease_MomentaryPushButton_style_defaultSmall {
+@include widgets_brease_MomentaryPushButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked:not(.disabled) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/ToggleButton/meta/ToggleButton_base";
+.widgets_brease_ToggleButton_style_transparent {
+@include widgets_brease_ToggleButton_base; 
+&:not(.disabled):not(.active):not(.checked) {
+	background-color: transparent;
+}
+&:not(.active):not(.checked) {
+	border-width: 0px;
+}
+&.disabled {
+	border-width: 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	background-color: transparent;
+}
+&.checked:not(.active):not(.disabled) {
+	background-color: transparent;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px;
+}
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #474747;
+}
+&.active.checked:not(.disabled) span {
+	color: #474747;
+}
+
+}
+@import "../../../../widgets/brease/ToggleButton/meta/ToggleButton_base";
+.widgets_brease_ToggleButton_style_Command {
+@include widgets_brease_ToggleButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #FFFFFF;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled):not(.active) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+&.checked {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(2px 2px 8px 0px rgba(255, 113, 0, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/ToggleButton/meta/ToggleButton_base";
+.widgets_brease_ToggleButton_style_Command1 {
+@include widgets_brease_ToggleButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #FFFFFF;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #474747;
+}
+&.active.checked:not(.disabled) span {
+	color: #474747;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled):not(.active) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/ToggleButton/meta/ToggleButton_base";
+.widgets_brease_ToggleButton_style_Operate {
+@include widgets_brease_ToggleButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.checked:not(.disabled):not(.active) {
+@include backGroundGradient('linear-gradient(to bottom, #FFAA4D 0%,#FF8500 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/ToggleButton/meta/ToggleButton_base";
+.widgets_brease_ToggleButton_style_Operate1 {
+@include widgets_brease_ToggleButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.checked:not(.disabled):not(.active) {
+@include backGroundGradient('linear-gradient(to bottom, #66CCFF 0%,#52A3CC 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}
+@import "../../../../widgets/brease/ToggleButton/meta/ToggleButton_base";
+.widgets_brease_ToggleButton_style_defaultSmall {
+@include widgets_brease_ToggleButton_base; 
+span {
+	font-size: 16px;
+}
+span {
+@include font-weight-bold(true);
+}
+&:not(.disabled):not(.active):not(.checked) span {
+	color: #474747;
+}
+&.active:not(.disabled):not(.editMode) span {
+	color: #FFFFFF;
+}
+&.active.checked:not(.disabled) span {
+	color: #FFFFFF;
+}
+@include border-radius(8px);
+&:not(.active):not(.checked) {
+	border-width: 0px 0px 0px 0px;
+}
+&.disabled {
+	border-width: 0px 0px 0px 0px;
+}
+&.active:not(.disabled):not(.editMode) {
+	border-width: 0px 0px 0px 0px;
+}
+&.checked:not(.disabled) {
+	border-width: 0px 0px 0px 0px;
+}
+&:not(.disabled):not(.active):not(.checked) {
+@include backGroundGradient('linear-gradient(to bottom,#F7F7F7 0%,#C6C6C6 100%)');
+}
+&.active:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.checked:not(.disabled) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.checked:not(.disabled):not(.active) {
+@include backGroundGradient('linear-gradient(to bottom, #4A4A4A 0%,#7C7C7C 100%)');
+}
+&.disabled {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.active {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&.disabled.checked {
+@include backGroundGradient('linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%)');
+}
+&:not(.active):not(.checked) {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.active {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(4px 4px 14px 0px rgba(62, 79, 92, 0.75));
+}
+&.active:not(.disabled):not(.editMode) {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+&.disabled.checked {
+@include box-shadow(2px 2px 8px 0px rgba(62, 79, 92, 0.75));
+}
+
+}

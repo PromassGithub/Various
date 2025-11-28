@@ -1,0 +1,43 @@
+@import "mixins.scss";
+@mixin widgets_brease_LineChartYAxis_base {
+	@include elemWidth(60);
+	@include elemFlexBasis(60);
+	&:not(.disabled) path {
+		stroke: #000000;
+	}
+	&:not(.disabled) line {
+		stroke: #000000;
+	}
+	&:not(.disabled) text {
+		fill: #000000;
+	}
+	&.editMode.breaseChartYAxisWidget:not(.disabled) path {
+		stroke: #000000;
+	}
+	&.editMode.breaseChartYAxisWidget:not(.disabled) line {
+		stroke: #000000;
+	}
+	&.editMode.breaseChartYAxisWidget:not(.disabled) text {
+		fill: #000000;
+	}
+	&.disabled path {
+		stroke: #EEEEEE;
+	}
+	&.disabled line {
+		stroke: #EEEEEE;
+	}
+	&.disabled text {
+		fill: #EEEEEE;
+	}
+	&.editMode.breaseChartYAxisWidget.disabled path {
+		stroke: #EEEEEE;
+	}
+	&.editMode.breaseChartYAxisWidget.disabled line {
+		stroke: #EEEEEE;
+	}
+	&.editMode.breaseChartYAxisWidget.disabled text {
+		fill: #EEEEEE;
+	}
+
+}
+

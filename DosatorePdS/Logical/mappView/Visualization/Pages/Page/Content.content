@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="content_1" height="840" width="1330" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Titolo11" top="20" left="40" width="1230" zIndex="199" text="Gestione Dosaggio Polvere di Precisione" style="Header" />
+    <Widget xsi:type="widgets.brease.Line" id="line_header" zIndex="1" x1="50" x2="1280" y1="55" y2="55" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Stato_Titolo" top="80" left="50" width="300" zIndex="2" text="STATO ATTUALE" style="SubHeader" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_PesoAttuale_Desc" top="130" left="50" width="200" zIndex="3" text="Peso Attuale (g):" style="Label" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_PesoAttuale" top="130" left="260" width="150" zIndex="4" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Stato_Desc" top="180" left="50" width="200" zIndex="5" text="Stato Ciclo PLC:" style="Label" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_ErroreFinale_Desc" top="230" left="50" width="200" zIndex="7" text="Errore Ultimo Ciclo (%):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_ErroreFinale" top="230" left="260" width="150" zIndex="8" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_ErroreGrave" top="280" left="50" width="360" height="40" zIndex="19" text="ERRORE STABILIZZAZIONE/TIMEOUT" style="CriticalAlarm" />
+    <Widget xsi:type="widgets.brease.Line" id="line_sep1" zIndex="9" x1="50" x2="1280" y1="340" y2="340" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_SetPoint_Titolo" top="360" left="50" width="300" zIndex="10" text="CONTROLLO PRODUZIONE" style="SubHeader" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_SetPoint_Desc" top="410" left="50" width="200" zIndex="11" text="SETPOINT RICHIESTO (g):" style="Bold" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="input_SetPoint" top="410" left="260" width="150" zIndex="12" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btn_Start" top="460" left="50" width="150" height="40" zIndex="13" text="AVVIA CICLO" style="Operate" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="btn_Stop" top="460" left="210" width="150" height="40" zIndex="14" text="STOP / RESET" style="Operate" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Tare" top="520" left="50" width="200" zIndex="15" text="Tara Bilancia:" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btn_Tare" top="520" left="260" width="150" zIndex="16" text="AZZERA BILANCIA" style="Operate" />
+    <Widget xsi:type="widgets.brease.Line" id="line_sep2" zIndex="17" x1="50" x2="1280" y1="580" y2="580" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Taratura_Titolo" top="80" left="500" width="450" zIndex="20" text="TARATURA AUTOMATICA (ONE-TIME)" style="SubHeader" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_AutoCalib_Desc" top="130" left="500" width="250" zIndex="21" text="Stato Calibrazione:" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="btn_StartCalib" top="180" left="500" width="250" height="40" zIndex="23" text="AVVIA NUOVA CALIBRAZIONE" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_CalibOK" top="220" left="500" width="250" height="40" zIndex="24" text="CALIBRAZIONE COMPLETATA" style="Success" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Risultati_Titolo" top="280" left="500" width="450" zIndex="25" text="PARAMETRI CALCOLATI (Dopo Calibrazione)" style="Bold" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Volo_Desc" top="370" left="500" width="250" zIndex="26" text="Anticipo Chiusura (Volo g):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_Volo" top="370" left="760" width="150" zIndex="27" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Veloce_Perc" top="420" left="500" width="250" zIndex="28" text="Percentuale Veloce (%):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_Veloce" top="420" left="760" width="150" zIndex="29" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Lenta_Perc" top="470" left="500" width="250" zIndex="30" text="Percentuale Lenta (%):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_Lenta" top="470" left="760" width="150" zIndex="31" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Fine_Perc" top="520" left="500" width="250" zIndex="32" text="Percentuale Microdosaggio (%):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_Fine" top="520" left="760" width="150" zIndex="33" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Curva_Titolo" top="80" left="980" width="300" zIndex="34" text="DATI CURVA DI FLUSSO" style="SubHeader" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Pendenza" top="130" left="980" width="150" zIndex="35" text="Pendenza (m):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_Pendenza" top="130" left="1140" width="140" zIndex="36" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_Intercetta" top="180" left="980" width="150" zIndex="37" text="Intercetta (q):" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_Intercetta" top="180" left="1140" width="140" zIndex="38" />
+    <Widget xsi:type="widgets.brease.LineChart" id="LineChart1" top="600" left="110" width="1110" height="240" zIndex="200">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.LineChartTimeAxis" id="LineChartTimeAxis1" height="20" zIndex="0">
+          <Widgets />
+        </Widget>
+        <Widget xsi:type="widgets.brease.LineChartYAxis" id="LineChartYAxis1" zIndex="1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LineChartGraph" id="LineChartGraph1" zIndex="0" xAxisRefId="xAxisRefId1" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="280" left="970" width="220" zIndex="201" text="Pompa Materiale" />
+  </Widgets>
+</Content>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingDefinition xmlns="http://www.br-automation.com/iat2014/binding/runtime/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:br="http://www.br-automation.com/iat2015/bindingList/runtime/v2">
+  
+<Content id="content_2"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:bCalibrazioneCompletata" attribute="value" />
+<Target xsi:type="brease" refId="content_2_ToggleButton1" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Program:bCalibrazioneCompletata" attribute="editable" />
+<Target xsi:type="brease" refId="content_2_ToggleButton1" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="content_2"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:bCalibrazioneCompletata" attribute="value" />
+<Target xsi:type="brease" refId="content_2_NumericOutput1" attribute="value" />
+</Binding></Content>
+
+
+
+
+</BindingDefinition>

@@ -1,0 +1,371 @@
+@import "mixins.scss";
+#content_1_lbl_Titolo11 {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Titolo11 {	@include elemTop(20);
+}
+#content_1_lbl_Titolo11 {	@include elemLeft(40);
+}
+#content_1_lbl_Titolo11 {	@include elemAutoWidth(1230);
+}
+#content_1_lbl_Titolo11 {	z-index: 199;
+}
+#content_1_line_header {	z-index: 1;
+}
+#content_1_lbl_Stato_Titolo {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Stato_Titolo {	@include elemTop(80);
+}
+#content_1_lbl_Stato_Titolo {	@include elemLeft(50);
+}
+#content_1_lbl_Stato_Titolo {	@include elemAutoWidth(300);
+}
+#content_1_lbl_Stato_Titolo {	z-index: 2;
+}
+#content_1_lbl_PesoAttuale_Desc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_PesoAttuale_Desc {	@include elemTop(130);
+}
+#content_1_lbl_PesoAttuale_Desc {	@include elemLeft(50);
+}
+#content_1_lbl_PesoAttuale_Desc {	@include elemAutoWidth(200);
+}
+#content_1_lbl_PesoAttuale_Desc {	z-index: 3;
+}
+#content_1_val_PesoAttuale {	@include elemAutoHeight(30);
+}
+#content_1_val_PesoAttuale {	@include elemTop(130);
+}
+#content_1_val_PesoAttuale {	@include elemLeft(260);
+}
+#content_1_val_PesoAttuale {	@include elemAutoWidth(150);
+}
+#content_1_val_PesoAttuale {	z-index: 4;
+}
+#content_1_lbl_Stato_Desc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Stato_Desc {	@include elemTop(180);
+}
+#content_1_lbl_Stato_Desc {	@include elemLeft(50);
+}
+#content_1_lbl_Stato_Desc {	@include elemAutoWidth(200);
+}
+#content_1_lbl_Stato_Desc {	z-index: 5;
+}
+#content_1_lbl_ErroreFinale_Desc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_ErroreFinale_Desc {	@include elemTop(230);
+}
+#content_1_lbl_ErroreFinale_Desc {	@include elemLeft(50);
+}
+#content_1_lbl_ErroreFinale_Desc {	@include elemAutoWidth(200);
+}
+#content_1_lbl_ErroreFinale_Desc {	z-index: 7;
+}
+#content_1_val_ErroreFinale {	@include elemAutoHeight(30);
+}
+#content_1_val_ErroreFinale {	@include elemTop(230);
+}
+#content_1_val_ErroreFinale {	@include elemLeft(260);
+}
+#content_1_val_ErroreFinale {	@include elemAutoWidth(150);
+}
+#content_1_val_ErroreFinale {	z-index: 8;
+}
+#content_1_lbl_ErroreGrave {	@include elemTop(280);
+}
+#content_1_lbl_ErroreGrave {	@include elemLeft(50);
+}
+#content_1_lbl_ErroreGrave {	@include elemAutoWidth(360);
+}
+#content_1_lbl_ErroreGrave {	@include elemAutoHeight(40);
+}
+#content_1_lbl_ErroreGrave {	z-index: 19;
+}
+#content_1_line_sep1 {	z-index: 9;
+}
+#content_1_lbl_SetPoint_Titolo {	@include elemAutoHeight(30);
+}
+#content_1_lbl_SetPoint_Titolo {	@include elemTop(360);
+}
+#content_1_lbl_SetPoint_Titolo {	@include elemLeft(50);
+}
+#content_1_lbl_SetPoint_Titolo {	@include elemAutoWidth(300);
+}
+#content_1_lbl_SetPoint_Titolo {	z-index: 10;
+}
+#content_1_lbl_SetPoint_Desc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_SetPoint_Desc {	@include elemTop(410);
+}
+#content_1_lbl_SetPoint_Desc {	@include elemLeft(50);
+}
+#content_1_lbl_SetPoint_Desc {	@include elemAutoWidth(200);
+}
+#content_1_lbl_SetPoint_Desc {	z-index: 11;
+}
+#content_1_input_SetPoint {	@include elemAutoHeight(30);
+}
+#content_1_input_SetPoint {	@include elemTop(410);
+}
+#content_1_input_SetPoint {	@include elemLeft(260);
+}
+#content_1_input_SetPoint {	@include elemAutoWidth(150);
+}
+#content_1_input_SetPoint {	z-index: 12;
+}
+#content_1_btn_Start {	@include elemTop(460);
+}
+#content_1_btn_Start {	@include elemLeft(50);
+}
+#content_1_btn_Start {	@include elemAutoWidth(150);
+}
+#content_1_btn_Start {	@include elemAutoHeight(40);
+}
+#content_1_btn_Start {	z-index: 13;
+}
+#content_1_btn_Stop {	@include elemTop(460);
+}
+#content_1_btn_Stop {	@include elemLeft(210);
+}
+#content_1_btn_Stop {	@include elemAutoWidth(150);
+}
+#content_1_btn_Stop {	@include elemAutoHeight(40);
+}
+#content_1_btn_Stop {	z-index: 14;
+}
+#content_1_lbl_Tare {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Tare {	@include elemTop(520);
+}
+#content_1_lbl_Tare {	@include elemLeft(50);
+}
+#content_1_lbl_Tare {	@include elemAutoWidth(200);
+}
+#content_1_lbl_Tare {	z-index: 15;
+}
+#content_1_btn_Tare {	@include elemAutoHeight(30);
+}
+#content_1_btn_Tare {	@include elemTop(520);
+}
+#content_1_btn_Tare {	@include elemLeft(260);
+}
+#content_1_btn_Tare {	@include elemAutoWidth(150);
+}
+#content_1_btn_Tare {	z-index: 16;
+}
+#content_1_line_sep2 {	z-index: 17;
+}
+#content_1_lbl_Taratura_Titolo {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Taratura_Titolo {	@include elemTop(80);
+}
+#content_1_lbl_Taratura_Titolo {	@include elemLeft(500);
+}
+#content_1_lbl_Taratura_Titolo {	@include elemAutoWidth(450);
+}
+#content_1_lbl_Taratura_Titolo {	z-index: 20;
+}
+#content_1_lbl_AutoCalib_Desc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_AutoCalib_Desc {	@include elemTop(130);
+}
+#content_1_lbl_AutoCalib_Desc {	@include elemLeft(500);
+}
+#content_1_lbl_AutoCalib_Desc {	@include elemAutoWidth(250);
+}
+#content_1_lbl_AutoCalib_Desc {	z-index: 21;
+}
+#content_1_btn_StartCalib {	@include elemTop(180);
+}
+#content_1_btn_StartCalib {	@include elemLeft(500);
+}
+#content_1_btn_StartCalib {	@include elemAutoWidth(250);
+}
+#content_1_btn_StartCalib {	@include elemAutoHeight(40);
+}
+#content_1_btn_StartCalib {	z-index: 23;
+}
+#content_1_lbl_CalibOK {	@include elemTop(220);
+}
+#content_1_lbl_CalibOK {	@include elemLeft(500);
+}
+#content_1_lbl_CalibOK {	@include elemAutoWidth(250);
+}
+#content_1_lbl_CalibOK {	@include elemAutoHeight(40);
+}
+#content_1_lbl_CalibOK {	z-index: 24;
+}
+#content_1_lbl_Risultati_Titolo {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Risultati_Titolo {	@include elemTop(280);
+}
+#content_1_lbl_Risultati_Titolo {	@include elemLeft(500);
+}
+#content_1_lbl_Risultati_Titolo {	@include elemAutoWidth(450);
+}
+#content_1_lbl_Risultati_Titolo {	z-index: 25;
+}
+#content_1_lbl_Volo_Desc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Volo_Desc {	@include elemTop(370);
+}
+#content_1_lbl_Volo_Desc {	@include elemLeft(500);
+}
+#content_1_lbl_Volo_Desc {	@include elemAutoWidth(250);
+}
+#content_1_lbl_Volo_Desc {	z-index: 26;
+}
+#content_1_val_Volo {	@include elemAutoHeight(30);
+}
+#content_1_val_Volo {	@include elemTop(370);
+}
+#content_1_val_Volo {	@include elemLeft(760);
+}
+#content_1_val_Volo {	@include elemAutoWidth(150);
+}
+#content_1_val_Volo {	z-index: 27;
+}
+#content_1_lbl_Veloce_Perc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Veloce_Perc {	@include elemTop(420);
+}
+#content_1_lbl_Veloce_Perc {	@include elemLeft(500);
+}
+#content_1_lbl_Veloce_Perc {	@include elemAutoWidth(250);
+}
+#content_1_lbl_Veloce_Perc {	z-index: 28;
+}
+#content_1_val_Veloce {	@include elemAutoHeight(30);
+}
+#content_1_val_Veloce {	@include elemTop(420);
+}
+#content_1_val_Veloce {	@include elemLeft(760);
+}
+#content_1_val_Veloce {	@include elemAutoWidth(150);
+}
+#content_1_val_Veloce {	z-index: 29;
+}
+#content_1_lbl_Lenta_Perc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Lenta_Perc {	@include elemTop(470);
+}
+#content_1_lbl_Lenta_Perc {	@include elemLeft(500);
+}
+#content_1_lbl_Lenta_Perc {	@include elemAutoWidth(250);
+}
+#content_1_lbl_Lenta_Perc {	z-index: 30;
+}
+#content_1_val_Lenta {	@include elemAutoHeight(30);
+}
+#content_1_val_Lenta {	@include elemTop(470);
+}
+#content_1_val_Lenta {	@include elemLeft(760);
+}
+#content_1_val_Lenta {	@include elemAutoWidth(150);
+}
+#content_1_val_Lenta {	z-index: 31;
+}
+#content_1_lbl_Fine_Perc {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Fine_Perc {	@include elemTop(520);
+}
+#content_1_lbl_Fine_Perc {	@include elemLeft(500);
+}
+#content_1_lbl_Fine_Perc {	@include elemAutoWidth(250);
+}
+#content_1_lbl_Fine_Perc {	z-index: 32;
+}
+#content_1_val_Fine {	@include elemAutoHeight(30);
+}
+#content_1_val_Fine {	@include elemTop(520);
+}
+#content_1_val_Fine {	@include elemLeft(760);
+}
+#content_1_val_Fine {	@include elemAutoWidth(150);
+}
+#content_1_val_Fine {	z-index: 33;
+}
+#content_1_lbl_Curva_Titolo {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Curva_Titolo {	@include elemTop(80);
+}
+#content_1_lbl_Curva_Titolo {	@include elemLeft(980);
+}
+#content_1_lbl_Curva_Titolo {	@include elemAutoWidth(300);
+}
+#content_1_lbl_Curva_Titolo {	z-index: 34;
+}
+#content_1_lbl_Pendenza {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Pendenza {	@include elemTop(130);
+}
+#content_1_lbl_Pendenza {	@include elemLeft(980);
+}
+#content_1_lbl_Pendenza {	@include elemAutoWidth(150);
+}
+#content_1_lbl_Pendenza {	z-index: 35;
+}
+#content_1_val_Pendenza {	@include elemAutoHeight(30);
+}
+#content_1_val_Pendenza {	@include elemTop(130);
+}
+#content_1_val_Pendenza {	@include elemLeft(1140);
+}
+#content_1_val_Pendenza {	@include elemAutoWidth(140);
+}
+#content_1_val_Pendenza {	z-index: 36;
+}
+#content_1_lbl_Intercetta {	@include elemAutoHeight(30);
+}
+#content_1_lbl_Intercetta {	@include elemTop(180);
+}
+#content_1_lbl_Intercetta {	@include elemLeft(980);
+}
+#content_1_lbl_Intercetta {	@include elemAutoWidth(150);
+}
+#content_1_lbl_Intercetta {	z-index: 37;
+}
+#content_1_val_Intercetta {	@include elemAutoHeight(30);
+}
+#content_1_val_Intercetta {	@include elemTop(180);
+}
+#content_1_val_Intercetta {	@include elemLeft(1140);
+}
+#content_1_val_Intercetta {	@include elemAutoWidth(140);
+}
+#content_1_val_Intercetta {	z-index: 38;
+}
+#content_1_LineChart1 {	@include elemTop(600);
+}
+#content_1_LineChart1 {	@include elemLeft(110);
+}
+#content_1_LineChart1 {	@include elemWidth(1110);
+}
+#content_1_LineChart1 {	@include elemHeight(240);
+}
+#content_1_LineChart1 {	z-index: 200;
+}
+#content_1_LineChartTimeAxis1 {	@include elemHeight(20);
+}
+#content_1_LineChartTimeAxis1 {	@include elemFlexBasis(20);
+}
+#content_1_LineChartTimeAxis1 {	z-index: 0;
+}
+#content_1_LineChartYAxis1 {	@include elemWidth(60);
+}
+#content_1_LineChartYAxis1 {	@include elemFlexBasis(60);
+}
+#content_1_LineChartYAxis1 {	z-index: 1;
+}
+#content_1_LineChartGraph1 {	z-index: 0;
+}
+#content_1_ToggleButton1 {	@include elemAutoHeight(30);
+}
+#content_1_ToggleButton1 {	@include elemTop(280);
+}
+#content_1_ToggleButton1 {	@include elemLeft(970);
+}
+#content_1_ToggleButton1 {	@include elemAutoWidth(220);
+}
+#content_1_ToggleButton1 {	z-index: 201;
+}

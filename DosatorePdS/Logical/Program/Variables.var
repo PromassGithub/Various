@@ -1,0 +1,56 @@
+VAR RETAIN
+	Dosatore : FB_DosaggioPolvere; (*// Istanza del blocco funzione*)
+END_VAR
+VAR
+	PesoBilancia_AI : INT; (*// Ingresso Analogico (da I/O Link o bus)*)
+	Valvola_AO : REAL; (*// Uscita Analogica (verso I/O Link o bus)*)
+END_VAR
+VAR RETAIN
+	PesoRichiesto_HMI : REAL; (*// Setpoint (da HMI)*)
+END_VAR
+VAR
+	StartDosaggio_HMI : BOOL; (*// Tasto Start (da HMI)*)
+	DosaggioOK : BOOL; (*// Stato di completamento*) (*// --- VARIABILI PER LA TARATURA AUTOMATICA ---*)
+	bStartCalibrazione : BOOL; (*// Comando esterno per avviare la taratura (es. da HMI)*)
+END_VAR
+VAR RETAIN
+	bCalibrazioneCompletata : BOOL;
+END_VAR
+VAR
+	eStatoCalibrazione : enStatoCalibrazione; (*// Macchina a Stati per la Calibrazione*) (*// Variabili interne per la Taratura*)
+END_VAR
+(*// Parametri della Curva e Portate Target*)
+VAR
+	fPortataTestBasso : REAL;
+	fPortataTestAlto : REAL;
+	fPercentualeTestBasso : REAL := 45;
+	fPercentualeTestAlto : REAL := 80.0;
+END_VAR
+VAR RETAIN
+	fPendenza_m : REAL;
+	fIntercetta_q : REAL;
+END_VAR
+VAR
+	fPortataTargetVeloce : REAL := 80.0; (*// Target di flusso in g/s per Veloce*)
+	fPortataTargetLenta : REAL := 15.0; (*// Target di flusso in g/s per Lenta*)
+	fPortataTargetFine : REAL := 5.0; (*// Target di flusso in g/s per Fine*)
+END_VAR
+(*// Variabili interne*)
+VAR
+	fAnticipoMisurato : REAL; (*// Risultato del test di misurazione del volo*)
+	fSetPointTaratura : REAL; (*// Setpoint specifico per il test*)
+	fPortataMisurata : REAL; (*// Portata misurata in [grammi/secondo]*)
+	fPesoIniziale : REAL;
+	fDurataTestSec : REAL := 5; (*// Durata di ogni test di portata (3 secondi)*)
+END_VAR
+(*// Timer e Logica Timer*)
+VAR
+	TON_AttesaStabilizzazione : TON; (*// Timer per attendere che la bilancia si stabilizzi*)
+	bStartTimerCal : BOOL := FALSE;
+	ModuloBilancia_Raw : INT; (*// Dati grezzi in ingresso (dall'I/O)*)
+	PesoBilancia_G : REAL; (*// Peso finale in grammi*)
+	Pulsante_Tara : BOOL; (*// Comando di azzeramento da HMI o logica*)
+END_VAR
+VAR RETAIN
+	BilanciaManager : FB_GestioneBilancia; (*// Istanza del Blocco Funzione*)
+END_VAR

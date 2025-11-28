@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="3.0.90.9"?>
+<Project xmlns="http://br-automation.co.at/AS/VC/Project">
+  <Property Name="Backlight" Value="False"/>
+  <Property Name="BacklightIgnoreFirst" Value="False"/>
+  <Property Name="BeepKey" Value="False"/>
+  <Property Name="BeepTouch" Value="False"/>
+  <Property Name="CalibrationDatapoint" Value="None"/>
+  <Property Name="CalibrationStateDatapoint" Value="None"/>
+  <Property Name="ColorMode" Value="8Bit"/>
+  <Property Name="ConnectionErrorPage" Value="None"/>
+  <Property Name="DefaultKeyLevelNumeric" Value="0"/>
+  <Property Name="DefaultKeyLevelString" Value="0"/>
+  <Property Name="DefaultLanguage" Value="en"/>
+  <Property Name="DefaultPage" Value="Source[local].Page[PageEmpty]"/>
+  <Property Name="DefaultStyleSheet" Value="Source[local].StyleSheet[Color]"/>
+  <Property Name="FocusControlDatapoint" Value="None"/>
+  <Property Name="FontAntialiasing" Value="Off"/>
+  <Property Name="HelpControlDatapoint" Value="None"/>
+  <Property Name="IPAddressDatapoint" Value="None"/>
+  <Property Name="KeyLevelChangeDatapoint" Value="None"/>
+  <Property Name="KeyLevelCurrentDatapoint" Value="None"/>
+  <Property Name="KeyMatrix" Value="None"/>
+  <Property Name="KeyRepeatDelay" Value="300"/>
+  <Property Name="KeyRepeatRate" Value="50"/>
+  <Property Name="LEDMatrix" Value="None"/>
+  <Property Name="LanguageChangeDatapoint" Value="None"/>
+  <Property Name="LanguageCurrentDatapoint" Value="None"/>
+  <Property Name="LifeSignDatapoint" Value="None"/>
+  <Property Name="ManualStart" Value="False"/>
+  <Property Name="PageChangeDatapoint" Value="None"/>
+  <Property Name="PageCurrentDatapoint" Value="None"/>
+  <Property Name="ScreenSaver_Activate" Value="False"/>
+  <Property Name="TargetResourceRoot" Value=""/>
+  <Property Name="TextLengthOverrunBackColor" Value="None"/>
+  <Property Name="TextLengthOverrunCut" Value="False"/>
+  <Property Name="TextLengthOverrunForeColor" Value="None"/>
+  <Property Name="TouchPadCancel" Value="Default"/>
+  <Property Name="VCCVersion" Value="9"/>
+  <Property Name="WheelCountDatapoint" Value="None"/>
+  <Property Name="WheelEnterDatapoint" Value="None"/>
+  <SourceFiles>
+    <Source File="Fonts\DefaultFont.fninfo"/>
+    <Source File="Pages\PageEmpty.page"/>
+    <Source File="StyleSheets\Color.vcs"/>
+    <Source File="Trends\TrendData.tdc"/>
+    <Source File="VirtualKeys.vcvk"/>
+    <Source File="Palette.vcr"/>
+  </SourceFiles>
+</Project>

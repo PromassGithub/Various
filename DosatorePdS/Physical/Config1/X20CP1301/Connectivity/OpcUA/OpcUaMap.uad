@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<OpcUaSource FileVersion="7" ArVersion="E4.83">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x005F" />
+        <ACE RoleId="1" RoleName="Administrators" Access="0x017F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleId="2" RoleName="Everyone" Access="0x017F" />
+        <ACE RoleId="1" RoleName="Administrators" Access="0x015F" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView AclId="2">
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="GlbIO">
+          <Variable Name="Do">
+            <Variable Name="PompaAspirazione" />
+          </Variable>
+        </Variable>
+      </GlobalVariables>
+      <Task Name="Program">
+        <Variable Name="bCalibrazioneCompletata" />
+        <Variable Name="BilanciaManager">
+          <Variable Name="iRawInput" />
+          <Variable Name="bComandoTare" />
+          <Variable Name="eTipoSegnale" />
+          <Variable Name="fCapacitaMaxG" />
+          <Variable Name="iRawMax" />
+          <Variable Name="bErroreSegnale" />
+          <Variable Name="fPesoGrammi" />
+          <Variable Name="fFattoreConversione" />
+          <Variable Name="fOffsetTara" />
+          <Variable Name="fPesoLordoSenzaOffset" />
+          <Variable Name="iRawMin" />
+          <Variable Name="iRawRange" />
+          <Variable Name="fRawAttualeNormalizzato" />
+        </Variable>
+        <Variable Name="bStartCalibrazione" />
+        <Variable Name="bStartTimerCal" />
+        <Variable Name="DosaggioOK" />
+        <Variable Name="Dosatore">
+          <Variable Name="fPesoAttualeBilancia" />
+          <Variable Name="fPesoRichiesto" />
+          <Variable Name="bAvviaDosaggio" />
+          <Variable Name="fTolleranzaPercentuale" />
+          <Variable Name="fPesoAnticipoChiusura" />
+          <Variable Name="fSogliaDosaggioLento" />
+          <Variable Name="fSogliaMicrodosaggio" />
+          <Variable Name="fPercentualeValvolaVeloce" />
+          <Variable Name="fPercentualeValvolaLenta" />
+          <Variable Name="fPercentualeValvolaFine" />
+          <Variable Name="tTimeoutStabilizzazione" />
+          <Variable Name="fFattoreCorrezione" />
+          <Variable Name="C_CAPACITA_MAX_BILANCIA" />
+          <Variable Name="fUscitaValvolaProporzionale" />
+          <Variable Name="bDosaggioCompletato" />
+          <Variable Name="bDosaggioInCorso" />
+          <Variable Name="bErroreStabilizzazione" />
+          <Variable Name="eStatoDosaggio" />
+          <Variable Name="fPesoTargetVeloce" />
+          <Variable Name="fPesoTargetLento" />
+          <Variable Name="fErrorePercentuale" />
+          <Variable Name="fSetPointErrore" />
+          <Variable Name="fTolleranzaMinima" />
+          <Variable Name="fTolleranzaMassima" />
+          <Variable Name="fPuntoDiChiusuraValvola" />
+          <Variable Name="bStartTimer" />
+          <Variable Name="TON_Stabilizzazione" />
+          <Variable Name="fUltimoPesoDosato" />
+          <Variable Name="fUltimoErroreAssoluto" />
+          <Variable Name="fErroreAssolutoMax" />
+        </Variable>
+        <Variable Name="eStatoCalibrazione" />
+        <Variable Name="fAnticipoMisurato" />
+        <Variable Name="fDurataTestSec" />
+        <Variable Name="fIntercetta_q" />
+        <Variable Name="fPendenza_m" />
+        <Variable Name="fPercentualeTestAlto" />
+        <Variable Name="fPercentualeTestBasso" />
+        <Variable Name="fPesoIniziale" />
+        <Variable Name="fPortataMisurata" />
+        <Variable Name="fPortataTargetFine" />
+        <Variable Name="fPortataTargetLenta" />
+        <Variable Name="fPortataTargetVeloce" />
+        <Variable Name="fPortataTestAlto" />
+        <Variable Name="fPortataTestBasso" />
+        <Variable Name="fSetPointTaratura" />
+        <Variable Name="ModuloBilancia_Raw" />
+        <Variable Name="PesoBilancia_AI" />
+        <Variable Name="PesoBilancia_G" />
+        <Variable Name="PesoRichiesto_HMI" />
+        <Variable Name="Pulsante_Tara" />
+        <Variable Name="StartDosaggio_HMI" />
+        <Variable Name="TON_AttesaStabilizzazione" />
+        <Variable Name="Valvola_AO" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

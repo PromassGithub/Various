@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:iat="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" elementFormDefault="qualified">
+<xs:complexType name="widgets.brease.ChartYValueListWidgetRestrict" abstract="true">
+	<xs:complexContent>
+		<xs:restriction base="iat:brease.core.BaseWidget">
+			<xs:attribute name="permissionOperate" use="prohibited" type="types:RoleCollection" />
+			<xs:attribute name="permissionView" use="prohibited" type="types:RoleCollection" />
+			<xs:attribute name="tooltip" use="prohibited" type="types:String" />
+			<xs:attribute name="tabIndex" use="prohibited" type="types:Integer" />
+			<xs:attribute name="left" use="prohibited" type="types:Integer" />
+			<xs:attribute name="top" use="prohibited" type="types:Integer" />
+			<xs:attribute name="height" use="prohibited" type="types:Size" />
+			<xs:attribute name="width" use="prohibited" type="types:Size" />
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="widgets.brease.ChartYValueListWidget">
+	<xs:complexContent>
+		<xs:extension base="iat:widgets.brease.ChartYValueListWidgetRestrict">
+			<xs:attribute name="interpolationType" use="optional" type="types:brease.enum.ChartInterpolationType" default="linear" />
+			<xs:attribute name="numberOfSamples" use="optional" type="types:Integer" default="-1" />
+			<xs:attribute name="lineColor" use="optional" type="types:Color" default="#FF0000" />
+			<xs:attribute name="disabledLineColor" use="optional" type="types:Color" default="rgba(221, 221, 221, 1)" />
+			<xs:attribute name="lineWidth" use="optional" type="types:PixelVal" default="2px" />
+			<xs:attribute name="fillColor" use="optional" type="types:Color" default="rgba(255, 255, 255, 0)" />
+			<xs:attribute name="disabledFillColor" use="optional" type="types:Color" default="rgba(255, 255, 255, 0)" />
+			<xs:attribute name="intersectionPointColor" use="optional" type="types:Color" default="#FFBB88" />
+			<xs:attribute name="activeIntersectionPointColor" use="optional" type="types:Color" default="#FF8800" />
+			<xs:attribute name="disabledIntersectionPointColor" use="optional" type="types:Color" default="#EEEEEE" />
+		</xs:extension>
+	</xs:complexContent>
+</xs:complexType>
+</xs:schema>
