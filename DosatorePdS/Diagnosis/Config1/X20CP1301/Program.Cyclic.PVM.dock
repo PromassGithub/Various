@@ -1,22 +1,22 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=0 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=37 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                        PesoRichiesto_HMI                                     REAL    0 "                                                          2000.0"    0    8    1   10    1    0         
                        StartDosaggio_HMI                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
                                    GlbIO                                    TypIO    0 "                                                               *"    0   24    1    0    0    1         
                                       Ai                                    TypAi    0 "                                                               *"    1   24    1    0    0    1         
-                                Bilancia                                      INT    0 "                                                            6498"    2    3    1   10    0    0         
+                                Bilancia                                      INT    1 "                                                            4251"    2    3    1   10    0    0         
                                       Ao                                    TypAo    0 "                                                               *"    1   24    1    0    0    1         
-                                 Valvola                                      INT    0 "                                                           10000"    2    3    1   10    0    0         
+                                 Valvola                                      INT    3 "                                                           10000"    2    3    1   10    0    0         
                         fPortataMisurata                                     REAL    0 "                                                             0.0"    0    8    1   10    1    0         
-                          PesoBilancia_G                                     REAL    0 "                                                       -1.373312"    0    8    1   10    1    0         
+                          PesoBilancia_G                                     REAL    0 "                                                      1999.31323"    0    8    1   10    1    0         
                            Pulsante_Tara                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
                                 Dosatore                       FB_DosaggioPolvere    0 "                                                               *"    0   24    1    0    1    1         
-                    fPesoAttualeBilancia                                     REAL    0 "                                                        0.686656"    1    8    1   10    0    0         
+                    fPesoAttualeBilancia                                     REAL    0 "                                                         1997.94"    1    8    1   10    0    0         
                           fPesoRichiesto                                     REAL    0 "                                                          2000.0"    1    8    1   10    0    0         
                           bAvviaDosaggio                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                   fTolleranzaPercentuale                                     REAL    0 "                                                          0.0005"    1    8    1   10    0    0         
-                   fPesoAnticipoChiusura                                     REAL    0 "                                                      4.88554668"    1    8    1   10    0    0         
+                   fPesoAnticipoChiusura                                     REAL    0 "                                                        4.702429"    1    8    1   10    0    0         
                     fSogliaDosaggioLento                                     REAL    0 "                                                             0.6"    1    8    1   10    0    0         
                     fSogliaMicrodosaggio                                     REAL    0 "                                                            0.93"    1    8    1   10    0    0         
                fPercentualeValvolaVeloce                                     REAL    0 "                                                            60.0"    1    8    1   10    0    0         
@@ -27,10 +27,10 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index
                  C_CAPACITA_MAX_BILANCIA                                     REAL    0 "                                                          2500.0"    1    8    1   10    0    0         
                           eStatoDosaggio                                     DINT    0 "                                                              10"    1    4    1   10    0    0 e,10,eST
 
-                      fErrorePercentuale                                     REAL    0 "                                                        99.96567"    1    8    1   10    0    0         
+                      fErrorePercentuale                                     REAL    0 "                                                     0.103002928"    1    8    1   10    0    0         
                        fTolleranzaMinima                                     REAL    0 "                                                          1999.0"    1    8    1   10    0    0         
                       fTolleranzaMassima                                     REAL    0 "                                                          2001.0"    1    8    1   10    0    0         
-                 fPuntoDiChiusuraValvola                                     REAL    0 "                                                       1995.1145"    1    8    1   10    0    0         
+                 fPuntoDiChiusuraValvola                                     REAL    0 "                                                      1995.29761"    1    8    1   10    0    0         
                      TON_Stabilizzazione                                      TON    0 "                                                               *"    1   24    1    0    0    0         
                                       IN                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                       PT                                     TIME    0 "                                                               *"    2   12    1    1    0    0         
@@ -39,6 +39,21 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index
                                StartTime                                     TIME    0 "                                                               *"    2   12    1    1    0    0         
                                        M                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                  Restart                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
-                       fUltimoPesoDosato                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                   fUltimoErroreAssoluto                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                      fErroreAssolutoMax                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                       fUltimoPesoDosato                                     REAL    0 "                                                      1998.16882"    1    8    1   10    0    0         
+                   fUltimoErroreAssoluto                                     REAL    0 "                                                     -1.83117676"    1    8    1   10    0    0         
+                      fErroreAssolutoMax                                     REAL    0 "                                                             1.0"    1    8    1   10    0    0         
+                         BilanciaManager                      FB_GestioneBilancia    0 "                                                               *"    0   24    1    0    1    0         
+                               iRawInput                                      INT    0 "                                                            6540"    1    3    1   10    0    0         
+                            bComandoTare                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                            eTipoSegnale                                     DINT    0 "                                                               1"    1    4    1   10    0    0 e,0,eST_
+
+                           fCapacitaMaxG                                     REAL    0 "                                                          6000.0"    1    8    1   10    0    0         
+                                 iRawMax                                      INT    0 "                                                           32767"    1    3    1   10    0    0         
+                          bErroreSegnale                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                             fPesoGrammi                                     REAL    0 "                                                    -0.228885174"    1    8    1   10    0    0         
+                     fFattoreConversione                                     REAL    0 "                                                     0.228885323"    1    8    1   10    0    0         
+                             fOffsetTara                                     REAL    0 "                                                       -2.746624"    1    8    1   10    0    0         
+                   fPesoLordoSenzaOffset                                     REAL    0 "                                                     -2.97550917"    1    8    1   10    0    0         
+                                 iRawMin                                      INT    0 "                                                            6553"    1    3    1   10    0    0         
+                               iRawRange                                      INT    0 "                                                           26214"    1    3    1   10    0    0         
+                 fRawAttualeNormalizzato                                     REAL    0 "                                                         -2302.0"    1    8    1   10    0    0         
