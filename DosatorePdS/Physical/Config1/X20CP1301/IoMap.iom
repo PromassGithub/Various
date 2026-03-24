@@ -1,5 +1,6 @@
 VAR_CONFIG
 	Cyclic#1.GlbIO.Ao.Valvola AT %QW."X20AO4632".AnalogOutput01;
-	GlbIO.Ai.Bilancia AT %IW."X1".AnalogInput01;
 	GlbIO.Do.PompaAspirazione AT %QX."X3".DigitalOutput01;
+	Program:PesoBilancia_G AT %ID."IND360_V1_1".MB1_Command_Value;
+	::GlbIO.Ai.Valvola AT %IW."X1".AnalogInput02;
 END_VAR

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:iat="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" elementFormDefault="qualified">
+<xs:complexType name="widgets.brease.RadialGaugeRestrict" abstract="true">
+	<xs:complexContent>
+		<xs:restriction base="iat:brease.core.BaseContentWidget">
+			<xs:attribute name="tabIndex" use="optional" type="types:Integer" default="-1" />
+			<xs:attribute name="height" use="optional" type="types:Size" default="200" />
+			<xs:attribute name="width" use="optional" type="types:Size" default="200" />
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="widgets.brease.RadialGauge">
+	<xs:complexContent>
+		<xs:extension base="iat:widgets.brease.RadialGaugeRestrict">
+			<xs:attribute name="format" use="optional" type="types:brease.config.MeasurementSystemFormat" default="{&apos;metric&apos;:{ &apos;decimalPlaces&apos; : 1, &apos;minimumIntegerDigits&apos; : 1 }, &apos;imperial&apos; :{ &apos;decimalPlaces&apos; : 1, &apos;minimumIntegerDigits&apos; : 1 }, &apos;imperial-us&apos; :{ &apos;decimalPlaces&apos; : 1, &apos;minimumIntegerDigits&apos; : 1 }}" />
+			<xs:attribute name="majorTicks" use="optional" type="types:UInteger" default="5" />
+			<xs:attribute name="maxValue" use="optional" type="types:Number" default="100" />
+			<xs:attribute name="minValue" use="optional" type="types:Number" default="0" />
+			<xs:attribute name="minorTicks" use="optional" type="types:UInteger" default="1" />
+			<xs:attribute name="node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="range" use="optional" type="types:UNumber" default="270" />
+			<xs:attribute name="scaleArea0" use="optional" type="types:Number" default="0" />
+			<xs:attribute name="scaleArea0Node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="scaleArea1" use="optional" type="types:Number" default="20" />
+			<xs:attribute name="scaleArea1Node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="scaleArea2" use="optional" type="types:Number" default="40" />
+			<xs:attribute name="scaleArea2Node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="scaleArea3" use="optional" type="types:Number" default="60" />
+			<xs:attribute name="scaleArea3Node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="scaleArea4" use="optional" type="types:Number" default="80" />
+			<xs:attribute name="scaleArea4Node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="scaleArea5" use="optional" type="types:Number" default="100" />
+			<xs:attribute name="scaleArea5Node" use="optional" type="types:brease.datatype.Node" default="" />
+			<xs:attribute name="scaleAreaInPercent" use="optional" type="types:Boolean" default="true" />
+			<xs:attribute name="showUnit" use="optional" type="types:Boolean" default="false" />
+			<xs:attribute name="startAngle" use="optional" type="types:UNumber" default="225" />
+			<xs:attribute name="text" use="optional" type="types:String" default="" />
+			<xs:attribute name="transitionTime" use="optional" type="types:UInteger" default="500" />
+			<xs:attribute name="unit" use="optional" type="types:brease.config.MeasurementSystemUnit" default="" />
+			<xs:attribute name="value" use="optional" type="types:Number" default="0" />
+			<xs:attribute name="maxHeight" use="optional" type="types:Size" default="0" />
+			<xs:attribute name="minHeight" use="optional" type="types:Size" default="0" />
+			<xs:attribute name="maxWidth" use="optional" type="types:Size" default="0" />
+			<xs:attribute name="minWidth" use="optional" type="types:Size" default="0" />
+			<xs:attribute name="borderWidth" use="optional" type="types:PixelVal" default="0px" />
+			<xs:attribute name="borderColor" use="optional" type="types:ColorCollection" default="#000000" />
+			<xs:attribute name="borderStyle" use="optional" type="types:BorderStyle" default="solid" />
+			<xs:attribute name="backColor" use="optional" type="types:Color" default="#FFFFFF" />
+			<xs:attribute name="shadow" use="optional" type="types:Shadow" default="none" />
+			<xs:attribute name="margin" use="optional" type="types:Margin" default="0px" />
+			<xs:attribute name="backGroundGradient" use="optional" type="types:Gradient" default="" />
+			<xs:attribute name="backGround" use="optional" type="types:ImagePath" default="" />
+			<xs:attribute name="backColorScaleArea1" use="optional" type="types:Color" default="transparent" />
+			<xs:attribute name="backColorScaleArea2" use="optional" type="types:Color" default="transparent" />
+			<xs:attribute name="backColorScaleArea3" use="optional" type="types:Color" default="transparent" />
+			<xs:attribute name="backColorScaleArea4" use="optional" type="types:Color" default="transparent" />
+			<xs:attribute name="backColorScaleArea5" use="optional" type="types:Color" default="transparent" />
+			<xs:attribute name="pointerBackColor" use="optional" type="types:Color" default="#FFFFFF" />
+			<xs:attribute name="pointerPathColor" use="optional" type="types:Color" default="#000000" />
+			<xs:attribute name="pointerPathWidth" use="optional" type="types:PixelVal" default="1px" />
+			<xs:attribute name="textColor" use="optional" type="types:Color" default="#000000" />
+			<xs:attribute name="fontSize" use="optional" type="types:PixelVal" default="10px" />
+			<xs:attribute name="fontName" use="optional" type="types:FontName" default="Arial" />
+		</xs:extension>
+	</xs:complexContent>
+</xs:complexType>
+</xs:schema>

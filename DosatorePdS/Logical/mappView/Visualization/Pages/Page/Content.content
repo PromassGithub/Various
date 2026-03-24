@@ -13,7 +13,7 @@
     <Widget xsi:type="widgets.brease.Line" id="line_sep1" zIndex="9" x1="50" x2="1280" y1="340" y2="340" />
     <Widget xsi:type="widgets.brease.Label" id="lbl_SetPoint_Titolo" top="360" left="50" width="300" zIndex="10" text="CONTROLLO PRODUZIONE" style="SubHeader" />
     <Widget xsi:type="widgets.brease.Label" id="lbl_SetPoint_Desc" top="410" left="50" width="200" zIndex="11" text="SETPOINT RICHIESTO (g):" style="Bold" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="input_SetPoint" top="410" left="260" width="150" zIndex="12" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="input_SetPoint" top="410" left="260" width="150" zIndex="12" maxValue="5000" />
     <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btn_Start" top="460" left="50" width="150" height="40" zIndex="13" text="AVVIA CICLO" style="Operate" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="btn_Stop" top="460" left="210" width="150" height="40" zIndex="14" text="STOP / RESET" style="Operate" />
     <Widget xsi:type="widgets.brease.Label" id="lbl_Tare" top="520" left="50" width="200" zIndex="15" text="Tara Bilancia:" />
@@ -50,5 +50,6 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButton1" top="280" left="970" width="220" zIndex="201" text="Pompa Materiale" />
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="390" left="1040" width="210" height="170" zIndex="202" pageId="page_1" text="NavigationButton1" />
   </Widgets>
 </Content>

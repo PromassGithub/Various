@@ -1244,6 +1244,63 @@
       </Channel>
     </Resource>
   </Hardware>
+  <Hardware Family="10" ID="X20IF10D1-1" Modno="42779" UseType="2">
+    <Parameter ID="VendorId" Value="0x1677" Type="UDINT" />
+    <Parameter ID="NeededBus" Value="X20PCI" />
+    <Parameter ID="IOSuffix" Value="IF1.NETX.BUS:IO:VIRTIO" />
+    <Parameter ID="NetXStack" Value="ENM" />
+    <Resource ID="IF1">
+      <Parameter ID="PCIFuncNo" Value="0" Type="UDINT" />
+      <Parameter ID="OfferedBus" Value="NETXIF" />
+      <Parameter ID="ARIOMaster" Value="1" Type="UDINT" />
+    </Resource>
+    <Resource ID="VIRTIO">
+      <Parameter ID="Transparent" Value="1" Type="UDINT" />
+      <Parameter ID="Classcode" Value="0x20000022" Type="UDINT" />
+      <Parameter ID="ARIOMaster" Value="1" Type="UDINT" />
+      <Channel ID="SerialNumber">
+        <Parameter ID="Ext" Value="/HW" />
+        <Parameter ID="Address" Value="0" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UDINT" />
+        <Parameter ID="ChannelType" Value="HWTree" />
+        <Parameter ID="AliasName" Value="Serial_Number" />
+      </Channel>
+      <Channel ID="ModuleID">
+        <Parameter ID="Ext" Value="/HW" />
+        <Parameter ID="Address" Value="1" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+        <Parameter ID="ChannelType" Value="HWTree" />
+        <Parameter ID="AliasName" Value="Modno" />
+      </Channel>
+      <Channel ID="HardwareVariant">
+        <Parameter ID="Ext" Value="/HW" />
+        <Parameter ID="Address" Value="2" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+        <Parameter ID="ChannelType" Value="HWTree" />
+      </Channel>
+      <Channel ID="FirmwareVersion">
+        <Parameter ID="Ext" Value="/HW" />
+        <Parameter ID="Address" Value="3" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="UINT" />
+        <Parameter ID="ChannelType" Value="HWTree" />
+      </Channel>
+    </Resource>
+    <Resource ID="IO">
+      <Parameter ID="Transparent" Value="1" Type="UDINT" />
+      <Parameter ID="Classcode" Value="0x20000022" Type="UDINT" />
+      <Parameter ID="ARIOMaster" Value="1" Type="UDINT" />
+      <Channel ID="ModuleOk">
+        <Parameter ID="Ext" Value="/OK" />
+        <Parameter ID="Address" Value="0" Type="UDINT" />
+        <Parameter ID="Direction" Value="IN" />
+        <Parameter ID="Type" Value="BOOL" />
+      </Channel>
+    </Resource>
+  </Hardware>
   <Hardware Family="10" ID="X20CP1301" Modno="58203" UseType="1">
     <Parameter ID="Transparent" Value="1" Type="UDINT" />
     <Parameter ID="HwcCpuSlot" Value="0" Type="UDINT" />

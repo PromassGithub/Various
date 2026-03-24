@@ -3,6 +3,10 @@ PROGRAM _CYCLIC
 // #######################################################################
 // --- LOGICA PRINCIPALE E CALIBRAZIONE ---
 // #######################################################################
+	
+	// conversione segnale d'ingresso valvola
+	
+	PercentualeValvola := (((INT_TO_REAL(GlbIO.Ai.Valvola) - 6553.0) / (32767.0 - 6553.0)) * 100.0);
 
 // --- ESECUZIONE TIMER ---
 	TON_AttesaStabilizzazione(IN := bStartTimerCal, PT := REAL_TO_TIME(fDurataTestSec * 1000.0));
@@ -11,12 +15,28 @@ PROGRAM _CYCLIC
 	// --- MAPPATURA I/O e CHIAMATA AL BLOCCO FUNZIONE ---
 	PesoBilancia_AI := GlbIO.Ai.Bilancia;
 	GlbIO.Ao.Valvola := REAL_TO_INT(Valvola_AO);
+	
+	IF Pulsante_Tara THEN Pulsante_Tara := FALSE; PesoTara := PesoBilancia_G; END_IF
+	PesoBilancia_G := PesoBilancia_G - PesoTara;
+
+	
+	
+	Dosatore.fPesoAnticipoChiusura 		:= Recipe.fPesoAnticipoChiusura;
+	Dosatore.fSogliaDosaggioLento 		:= Recipe.fSogliaDosaggioLento;
+	Dosatore.fSogliaMicrodosaggio 		:= Recipe.fSogliaMicrodosaggio;
+	Dosatore.fPercentualeValvolaVeloce 	:= Recipe.fPercentualeValvolaVeloce;
+	Dosatore.fPercentualeValvolaLenta 	:= Recipe.fPercentualeValvolaLenta;
+	Dosatore.fPercentualeValvolaFine 	:= Recipe.fPercentualeValvolaFine;
+	Dosatore.fFattoreCorrezione 		:= Recipe.fFattoreCorrezione;
+	PesoRichiesto_HMI					:= Recipe.PesoRichiesto;
 
 	Dosatore(
 		fPesoAttualeBilancia := PesoBilancia_G,
 		fPesoRichiesto := PesoRichiesto_HMI,
 		bAvviaDosaggio := StartDosaggio_HMI 
 		);
+	
+	Recipe.fPesoAnticipoChiusura := Dosatore.fPesoAnticipoChiusura;
 	
 	BilanciaManager(
 		iRawInput := PesoBilancia_AI,
@@ -25,8 +45,9 @@ PROGRAM _CYCLIC
 		);
 	
 	// Mappa l'uscita
-	PesoBilancia_G := BilanciaManager.fPesoGrammi;
-	Valvola_AO := (Dosatore.fUscitaValvolaProporzionale * 32767 / 100);
+	//	PesoBilancia_G := BilanciaManager.fPesoGrammi;
+
+	Valvola_AO := (Dosatore.fUscitaValvolaProporzionale * (32767 - 6553) / 100) + 6553;
 
 	// --- SEQUENZA DI MISURAZIONE DELLA PORTATA ---
 	// Logica per eseguire il test di portata con Timer e chiusura valvola
@@ -163,6 +184,6 @@ PROGRAM _CYCLIC
     
 	END_IF
 	
-	IF GlbIO.Ao.Valvola < 10000 THEN GlbIO.Ao.Valvola := 10000; END_IF
+	IF GlbIO.Ao.Valvola < 6500 THEN GlbIO.Ao.Valvola := 6500; END_IF
 	 
 END_PROGRAM

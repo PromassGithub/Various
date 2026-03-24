@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _LIBRARIES_20251128122206_
-#define _LIBRARIES_20251128122206_
+#ifndef _LIBRARIES_20260323183230_
+#define _LIBRARIES_20260323183230_
 
 __asm__(".section \".plc\"");
 
@@ -22,6 +22,23 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/AsIecCon/AsIecCon.var\\\" scope 
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.fun\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.typ\\\" scope \\\"global\\\"\\n\"");
 __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpRecipe/MpRecipe.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpRecipe/MpRecipeAlarm.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpRecipe/MpRecipeError.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpRecipe/MpRecipe.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpBase/MpBase.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpBase/MpBase.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpBase/MpBase.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/sys_lib/sys_lib.var\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpFile/MpFile.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpFile/MpFileError.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpFile/MpFileAlarm.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/MpFile/MpFile.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.fun\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.typ\\\" scope \\\"global\\\"\\n\"");
+__asm__(".ascii \"iecfile \\\"Logical/Libraries/FileIO/FileIO.var\\\" scope \\\"global\\\"\\n\"");
 
 /* Exported library functions and function blocks */
 #ifdef _OPERATOR_EXPORT
@@ -486,9 +503,139 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/standard/standard.var\\\" scope 
 	__asm__(".ascii \"plcexport \\\"REPLACE\\\" FUN\\n\"");
 	__asm__(".ascii \"plcexport \\\"FIND\\\" FUN\\n\"");
 #endif
+#ifdef _MPRECIPE_EXPORT
+	__asm__(".ascii \"plcexport \\\"MpRecipeRegParSync\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"MpRecipeRegPar\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"MpRecipeXml\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"MpRecipeUI\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"MpRecipeCsv\\\" FUB\\n\"");
+#endif
+#ifdef _MPBASE_EXPORT
+	__asm__(".ascii \"plcexport \\\"MpComHandle\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MpComVersion\\\" FUN\\n\"");
+#endif
+#ifdef _SYS_LIB_EXPORT
+	__asm__(".ascii \"plcexport \\\"Byte2Bit\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"Bit2Byte\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"KEY_read\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"KEY_enadis\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_fix\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_copy\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_store\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_burn\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_delete\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_read\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_write\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DA_create\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DIS_clr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DIS_chr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"DIS_str\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERRxfatal\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERR_read\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERRxread\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERR_fatal\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERR_warning\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ERRxwarning\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_release\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_attach\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_delete\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SM_create\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TIM_ticks\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TIM_musec\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SW_settime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SW_gettime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RTC_settime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"RTC_gettime\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TMP_free\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"TMP_alloc\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MEM_free\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MEM_alloc\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_release\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_attach\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_cancel\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"AVT_create\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_sleep\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_exit\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_freemsg\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_recmsg\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_sendmsg\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_resume\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_suspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"UT_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_name\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_allsuspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_tmp_resume\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_tmp_suspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_resume\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_suspend\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"ST_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"FORCE_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MO_ver\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MO_list\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"MO_info\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYS_battery\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYSreset\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYSxinfo\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"SYS_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xlist\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_ninfo\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_item\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_ident\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_list\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_info\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xgetval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xsetval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_xgetadr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_getadr\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_getval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"PV_setval\\\" FUN\\n\"");
+	__asm__(".ascii \"plcexport \\\"slMoList\\\" FUB\\n\"");
+#endif
+#ifdef _MPFILE_EXPORT
+	__asm__(".ascii \"plcexport \\\"MpFileManagerUI\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"MpFileManagerConfig\\\" FUB\\n\"");
+#endif
+#ifdef _FILEIO_EXPORT
+	__asm__(".ascii \"plcexport \\\"FileCreate\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileOpen\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileClose\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileRead\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileReadEx\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileWrite\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileWriteEx\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileRename\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileCopy\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileDelete\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileTruncate\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirCreate\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirOpen\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirClose\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirRead\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirReadEx\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirRename\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirCopy\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirDelete\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DirDeleteEx\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"SetAttributes\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"GetAttributes\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DevMemInfo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DevLink\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"DevUnlink\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"GetVolumeLabel\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"GetVolumeSerialNo\\\" FUB\\n\"");
+	__asm__(".ascii \"plcexport \\\"FileIoGetSysError\\\" FUN\\n\"");
+#endif
 
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20251128122206_ */
+#endif /* _LIBRARIES_20260323183230_ */
 

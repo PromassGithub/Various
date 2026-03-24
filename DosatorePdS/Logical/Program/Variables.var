@@ -1,3 +1,6 @@
+VAR
+	PercentualeValvola : REAL;
+END_VAR
 VAR RETAIN
 	Dosatore : FB_DosaggioPolvere; (*// Istanza del blocco funzione*)
 END_VAR
@@ -48,6 +51,11 @@ VAR
 	TON_AttesaStabilizzazione : TON; (*// Timer per attendere che la bilancia si stabilizzi*)
 	bStartTimerCal : BOOL := FALSE;
 	ModuloBilancia_Raw : INT; (*// Dati grezzi in ingresso (dall'I/O)*)
+END_VAR
+VAR RETAIN
+	PesoTara : REAL;
+END_VAR
+VAR
 	PesoBilancia_G : REAL; (*// Peso finale in grammi*)
 	Pulsante_Tara : BOOL; (*// Comando di azzeramento da HMI o logica*)
 END_VAR

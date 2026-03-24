@@ -1,0 +1,34 @@
+@import "mixins.scss";
+@mixin widgets_brease_ListWidget_base {
+	@include elemWidth(150);
+	@include elemHeight(150);
+	border-width: 2px;
+	border-style: solid;
+	@include border-radius(0px);
+	ul li {
+		background-color: #FFF;
+	}
+	ul li {
+		@include backGroundGradient('');
+	}
+	border-color: #535353;
+	opacity: 1;
+	ul li span {
+		font-size: 12px;
+	}
+	ul li span {
+		font-family: Arial;
+	}
+	ul li span {
+		@include font-weight-bold(true);
+	}
+	ul li span {
+		@include font-style-italic(false);
+	}
+	margin: 0px;
+
+}
+
+.widgets_brease_ListWidget_style_default {
+@include widgets_brease_ListWidget_base
+}

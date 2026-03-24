@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="mobileRecipe" height="1440" width="900" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Table" id="Table1" top="90" left="90" width="730" height="680" zIndex="0" fontSize="40px" headerFontSize="45px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="TableItem1" zIndex="0" columnWidth="730" text="TableItem1" headerFontSize="45px" fontSize="40px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton1" top="1050" left="600" width="272" height="110" zIndex="1" text="SALVA" fontSize="40px" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="1050" left="40" width="510" height="110" zIndex="2" fontSize="40px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="MomentaryPushButton2" top="840" left="320" width="272" height="110" zIndex="3" text="CARICA" fontSize="40px" />
+  </Widgets>
+</Content>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleInformation name="widgets.brease.ListBox" xmlns="http://www.br-automation.com/iat2014/widgetStyles"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <StyleProperties>
+    <StyleProperty name="width" type="Size" not_styleable="true" default="150" category="Layout">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" not_styleable="true" default="150" category="Layout">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>outer height of widget</Description>
+    </StyleProperty>
+    
+    <StyleProperty name="borderWidth" category="Appearance" type="PixelValCollection" default="2px">
+      <StyleElement attribute="border-width"></StyleElement>
+			<Description>
+        Sets the width of the border. For further information, please see its type
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="borderStyle" category="Appearance" type="BorderStyle" default="solid" >
+      <StyleElement attribute="border-style"></StyleElement>
+			<Description>
+				Sets the border style of the widget. For further information, please see its type
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="cornerRadius" category="Appearance" type="PixelValCollection" default="0px">
+      <StyleElement attribute="@include border-radius($value)"></StyleElement>
+			<Description>
+        Sets the radius of the widget rounded corners. For further information, please see its type
+      </Description>
+    </StyleProperty>
+    <StyleProperty name="backColor" category="Appearance" type="Color" default="#FFF">
+      <StyleElement selector="ul li" attribute="background-color"></StyleElement>
+			<Description>
+        Sets the background color of the items not selected
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="backGroundGradient" category="Appearance" type="Gradient" default="">
+      <StyleElement selector="ul li" attribute="@include backGroundGradient('$value')"></StyleElement>
+			<Description>
+				Sets the background color of the items not selected as a gradient
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="borderColor" category="Appearance" type="ColorCollection" default="#535353">
+      <StyleElement attribute="border-color"></StyleElement>
+			<Description>
+        Sets the border color of the widget
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="opacity" category="Appearance" type="Opacity" default="1" >
+      <StyleElement selector="" attribute="opacity"></StyleElement>
+			<Description>
+				Opacity of the widget
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="fontSize" category="Appearance.Font" type="PixelVal" default="12px">
+      <StyleElement selector="ul li span" attribute="font-size"></StyleElement>
+			<Description>
+				Fontsize of the text in pixel
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="fontName" category="Appearance.Font" type="FontName" default="Arial">
+      <StyleElement selector="ul li span" attribute="font-family"></StyleElement>
+			<Description>
+				Fontname of the text
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="bold" category="Appearance.Font" type="Boolean" default="true">
+      <StyleElement selector="ul li span" attribute="@include font-weight-bold($value)"></StyleElement>
+			<Description>
+				If **true** font style is bold
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="italic" category="Appearance.Font" type="Boolean" default="false">
+      <StyleElement selector="ul li span" attribute="@include font-style-italic($value)"></StyleElement>
+			<Description>
+				If **true** font style is italic
+			</Description>
+    </StyleProperty>
+    <StyleProperty name="margin" category="Layout.Margin" type="Margin" default="0px">
+      <StyleElement attribute="margin"></StyleElement>
+      <Description>
+        Margin of the Widget
+      </Description>
+    </StyleProperty>
+  </StyleProperties>
+</StyleInformation>

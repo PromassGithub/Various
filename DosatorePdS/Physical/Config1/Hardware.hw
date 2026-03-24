@@ -1,9 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="IND360_V1_1" Type="FBD.Hilscher.EIGenEDSAdapterDTM.IND360 V1.1" Version="1.1" OrderNumber="IND360 V1.1" VendorAddress="192.168.10.2">
+    <Connection Connector="EIP1" TargetModule="X20IF10D1_1" TargetConnector="IF1" />
+    <Parameter ID="DtmId" Value="a24ae709-e73d-4013-bb43-1e95cdfb2512" />
+    <Group ID="ChannelBlocks_b1ae809b-d69f-462c-9f47-1551c55d3122" Description="Module 0" />
+    <Group ID="IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Description="16 Byte(s)" />
+    <Group ID="Channel_1_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_1_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="MB1_Command_Value" />
+    <Parameter ID="Type_Channel_1_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="REAL" />
+    <Group ID="Channel_2_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_2_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="MB1_Channel_Mask" />
+    <Parameter ID="Type_Channel_2_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="UINT" />
+    <Group ID="Channel_3_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_3_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="MB1_Command" />
+    <Parameter ID="Type_Channel_3_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_4_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_4_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Reserved_1" />
+    <Parameter ID="Type_Channel_4_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_5_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_5_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Reserved_2" />
+    <Parameter ID="Type_Channel_5_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_6_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_6_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Reserved_3" />
+    <Parameter ID="Type_Channel_6_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_7_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_7_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Command" />
+    <Parameter ID="Type_Channel_7_IO_InputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Description="16 Byte(s)" />
+    <Group ID="Channel_1_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_1_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="MB1_Measuring_Value" />
+    <Parameter ID="Type_Channel_1_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="REAL" />
+    <Group ID="Channel_2_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_2_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="MB1_Device_Status" />
+    <Parameter ID="Type_Channel_2_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="UINT" />
+    <Group ID="Channel_3_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_3_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="MB1_Response" />
+    <Parameter ID="Type_Channel_3_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_4_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_4_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Status_Group_1" />
+    <Parameter ID="Type_Channel_4_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_5_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_5_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Status_Group_2" />
+    <Parameter ID="Type_Channel_5_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_6_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_6_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Status_Group_3" />
+    <Parameter ID="Type_Channel_6_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+    <Group ID="Channel_7_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" />
+    <Parameter ID="Name_Channel_7_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="SB1_Response" />
+    <Parameter ID="Type_Channel_7_IO_OutputImage_b1ae809b-d69f-462c-9f47-1551c55d3122" Value="INT" />
+  </Module>
   <Module Name="X20AO4632" Type="X20AO4632" Version="1.3.1.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Parameter ID="ChannelType01" Value="0 to 20mA" />
   </Module>
   <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20CP1301" TargetConnector="IF6" />
@@ -34,9 +84,27 @@
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DosatorePdS_Config1" />
+    <Parameter ID="UserPartitionSize" Value="200" />
     <Parameter ID="EnableUsbRemoteInstall" Value="1" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Group ID="FileDevice1" />
+    <Parameter ID="FileDeviceName1" Value="CF" />
+    <Parameter ID="FileDevicePath1" Value="F:\Recipe" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="bazzica" />
+    <Parameter ID="FtpUserPassword1" Value="htUSodyHi80qCEfYHuTU7vQ0j0QXP3jVAlZaBuEyoRs=" Description="promass" />
+    <Parameter ID="FtpUserSalt1" Value="1uLtMhRf" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+  <Module Name="X20IF10D1_1" Type="X20IF10D1-1" Version="1.7.0.0">
+    <Connection Connector="SS" TargetModule="X20CP1301" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmId" Value="ce78e8b2-5855-467c-9c90-e15d78aa6884" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="X20IF10D1_1.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />

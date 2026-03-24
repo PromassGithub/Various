@@ -24,6 +24,16 @@
             <Variable Name="PompaAspirazione" />
           </Variable>
         </Variable>
+        <Variable Name="Recipe">
+          <Variable Name="PesoRichiesto" />
+          <Variable Name="fPesoAnticipoChiusura" />
+          <Variable Name="fSogliaDosaggioLento" />
+          <Variable Name="fSogliaMicrodosaggio" />
+          <Variable Name="fPercentualeValvolaVeloce" />
+          <Variable Name="fPercentualeValvolaLenta" />
+          <Variable Name="fPercentualeValvolaFine" />
+          <Variable Name="fFattoreCorrezione" />
+        </Variable>
       </GlobalVariables>
       <Task Name="Program">
         <Variable Name="bCalibrazioneCompletata" />
@@ -100,6 +110,46 @@
         <Variable Name="StartDosaggio_HMI" />
         <Variable Name="TON_AttesaStabilizzazione" />
         <Variable Name="Valvola_AO" />
+        <Variable Name="PercentualeValvola" />
+      </Task>
+      <Task Name="Recipe">
+        <Variable Name="UIConnect">
+          <Variable Name="Recipe">
+            <Variable Name="List">
+              <Variable Name="Names" />
+              <Variable Name="SelectedIndex" />
+              <Variable Name="MaxSelection" />
+              <Variable Name="PageUp" />
+              <Variable Name="PageDown" />
+              <Variable Name="StepUp" />
+              <Variable Name="StepDown" />
+              <Variable Name="RangeStart" />
+              <Variable Name="RangeEnd" />
+              <Variable Name="Sizes" />
+              <Variable Name="LastModified" />
+            </Variable>
+            <Variable Name="Load" />
+            <Variable Name="Save" />
+            <Variable Name="Filter" />
+            <Variable Name="SortOrder" />
+            <Variable Name="Refresh" />
+            <Variable Name="UpdateNotification" />
+            <Variable Name="Delete" />
+            <Variable Name="Rename" />
+            <Variable Name="NewFileName" />
+            <Variable Name="Header" />
+          </Variable>
+          <Variable Name="New">
+            <Variable Name="FileName" />
+            <Variable Name="Create" />
+          </Variable>
+          <Variable Name="MessageBox">
+            <Variable Name="LayerStatus" />
+            <Variable Name="Type" />
+            <Variable Name="Confirm" />
+            <Variable Name="Cancel" />
+          </Variable>
+        </Variable>
       </Task>
     </Module>
   </DefaultView>
