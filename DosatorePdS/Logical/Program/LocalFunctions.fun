@@ -25,6 +25,7 @@ END_FUNCTION_BLOCK
 	VAR_INPUT
 		fPesoAttualeBilancia : REAL; (*// Ingresso: Peso letto dalla bilancia (es. in grammi)*)
 		fPesoRichiesto : REAL; (*// Ingresso: Setpoint del peso desiderato (es. in grammi)*)
+		bFermaDosaggo : BOOL; (*// Ingresso: Commuta a TRUE per iniziare il ciclo*) (*// --- PARAMETRI DI PRECISIONE ---*)
 		bAvviaDosaggio : BOOL; (*// Ingresso: Commuta a TRUE per iniziare il ciclo*) (*// --- PARAMETRI DI PRECISIONE ---*)
 		fTolleranzaPercentuale : REAL := 0.0005; (*Fattore per lo 0.05% (0.05 / 100)*)
 		fPesoAnticipoChiusura : REAL := 5.0; (*Ingresso: Peso (in grammi) che è in volo dopo la chiusura della valvola (DEVE ESSERE CALIBRATO!)*) (*// --- PARAMETRI DI FASE ---*)
@@ -35,16 +36,16 @@ END_FUNCTION_BLOCK
 		fPercentualeValvolaFine : REAL := 47; (*// Ingresso: Apertura valvola per microdosaggio (0-100)*)
 		tTimeoutStabilizzazione : TIME := T#5s; (*Tempo massimo di attesa per la stabilizzazione (es. 5 secondi)*)
 		fFattoreCorrezione : REAL := 0.1; (*Fattore che determina la velocità di correzione (es. 0.1 = correggiamo il 10% dell'errore ad ogni ciclo)*)
-		C_CAPACITA_MAX_BILANCIA : REAL := 2500;
+		C_CAPACITA_MAX_BILANCIA : REAL := 3500;
 	END_VAR
 	VAR_OUTPUT
 		fUscitaValvolaProporzionale : REAL; (*// Uscita: Comando alla valvola proporzionale (0.0 - 100.0)*)
 		bDosaggioCompletato : BOOL; (*// Uscita: TRUE quando il dosaggio è finito e preciso*)
 		bDosaggioInCorso : BOOL; (*// Uscita: TRUE durante il ciclo di dosaggio*)
 		bErroreStabilizzazione : BOOL; (*TRUE se il dosaggio è fallito per timeout*)
+		eStatoDosaggio : enStatoDosaggio; (*// Stato macchina*)
 	END_VAR
 	VAR
-		eStatoDosaggio : enStatoDosaggio; (*// Stato macchina*)
 		fPesoTargetVeloce : REAL; (*// Peso limite per dosaggio veloce*)
 		fPesoTargetLento : REAL; (*// Peso limite per dosaggio lento*)
 		fErrorePercentuale : REAL; (*// Errore calcolato in %*)

@@ -47,6 +47,10 @@
 }
 #mobileheader_Button1 {	z-index: 0;
 }
+#mobileheader_Button1 {	span {
+		font-size: 40px;
+	}
+}
 #mobileheader_Button2 {	@include elemTop(150);
 }
 #mobileheader_Button2 {	@include elemLeft(20);
@@ -56,6 +60,10 @@
 #mobileheader_Button2 {	@include elemAutoHeight(100);
 }
 #mobileheader_Button2 {	z-index: 1;
+}
+#mobileheader_Button2 {	span {
+		font-size: 40px;
+	}
 }
 #mobileheader_Button3 {	@include elemTop(270);
 }
@@ -67,6 +75,10 @@
 }
 #mobileheader_Button3 {	z-index: 2;
 }
+#mobileheader_Button3 {	span {
+		font-size: 40px;
+	}
+}
 #mobileheader_Button4 {	@include elemTop(390);
 }
 #mobileheader_Button4 {	@include elemLeft(20);
@@ -76,4 +88,8 @@
 #mobileheader_Button4 {	@include elemAutoHeight(100);
 }
 #mobileheader_Button4 {	z-index: 3;
+}
+#mobileheader_Button4 {	span {
+		font-size: 40px;
+	}
 }

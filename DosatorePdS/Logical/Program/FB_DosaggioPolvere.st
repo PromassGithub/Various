@@ -4,6 +4,8 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 	IF fPesoAttualeBilancia < -10.0 OR fPesoAttualeBilancia > C_CAPACITA_MAX_BILANCIA THEN
 		eStatoDosaggio := eST_ERRORE;
 	END_IF
+	
+	IF bFermaDosaggo THEN eStatoDosaggio := eST_IDLE; END_IF;
 
 	// --- ESECUZIONE TIMER E CALCOLI PRELIMINARI ---
 	TON_Stabilizzazione(IN := bStartTimer, PT := tTimeoutStabilizzazione);

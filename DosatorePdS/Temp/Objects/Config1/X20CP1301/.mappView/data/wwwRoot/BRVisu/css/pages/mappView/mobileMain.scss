@@ -1,5 +1,5 @@
 @import "mixins.scss";
-#mobileMain_lbl_PesoAttuale_Desc {	@include elemTop(120);
+#mobileMain_lbl_PesoAttuale_Desc {	@include elemTop(10);
 }
 #mobileMain_lbl_PesoAttuale_Desc {	@include elemLeft(20);
 }
@@ -11,7 +11,7 @@
 }
 #mobileMain_lbl_PesoAttuale_Desc {	font-size: 40px;
 }
-#mobileMain_val_PesoAttuale {	@include elemTop(120);
+#mobileMain_val_PesoAttuale {	@include elemTop(10);
 }
 #mobileMain_val_PesoAttuale {	@include elemLeft(490);
 }
@@ -81,7 +81,7 @@
 }
 #mobileMain_btn_Start {	@include elemLeft(20);
 }
-#mobileMain_btn_Start {	@include elemAutoWidth(860);
+#mobileMain_btn_Start {	@include elemAutoWidth(600);
 }
 #mobileMain_btn_Start {	@include elemAutoHeight(140);
 }
@@ -113,5 +113,45 @@
 }
 #mobileMain_val_ErroreFinale1 {	input {
 		font-size: 40px;
+	}
+}
+#mobileMain_btn_Start1 {	@include elemTop(1280);
+}
+#mobileMain_btn_Start1 {	@include elemLeft(640);
+}
+#mobileMain_btn_Start1 {	@include elemAutoWidth(240);
+}
+#mobileMain_btn_Start1 {	@include elemAutoHeight(140);
+}
+#mobileMain_btn_Start1 {	z-index: 9;
+}
+#mobileMain_btn_Start1 {	span {
+		font-size: 40px;
+	}
+}
+#mobileMain_lbl_PesoAttuale_Desc1 {	@include elemTop(130);
+}
+#mobileMain_lbl_PesoAttuale_Desc1 {	@include elemLeft(20);
+}
+#mobileMain_lbl_PesoAttuale_Desc1 {	@include elemAutoWidth(440);
+}
+#mobileMain_lbl_PesoAttuale_Desc1 {	@include elemAutoHeight(110);
+}
+#mobileMain_lbl_PesoAttuale_Desc1 {	z-index: 10;
+}
+#mobileMain_lbl_PesoAttuale_Desc1 {	font-size: 40px;
+}
+#mobileMain_val_PesoAttuale1 {	@include elemTop(130);
+}
+#mobileMain_val_PesoAttuale1 {	@include elemLeft(490);
+}
+#mobileMain_val_PesoAttuale1 {	@include elemAutoWidth(390);
+}
+#mobileMain_val_PesoAttuale1 {	@include elemAutoHeight(110);
+}
+#mobileMain_val_PesoAttuale1 {	z-index: 11;
+}
+#mobileMain_val_PesoAttuale1 {	input {
+		font-size: 50px;
 	}
 }

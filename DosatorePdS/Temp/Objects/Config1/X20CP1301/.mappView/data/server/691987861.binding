@@ -50,5 +50,23 @@
 
 
 
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Stop_HMI" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_btn_Start1" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Program:Stop_HMI" attribute="editable" />
+<Target xsi:type="brease" refId="mobileMain_btn_Start1" attribute="editable::value" />
+</Binding></Content>
+
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:tDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_val_PesoAttuale1" attribute="value" />
+</Binding></Content>
+
+
+
 
 </BindingDefinition>

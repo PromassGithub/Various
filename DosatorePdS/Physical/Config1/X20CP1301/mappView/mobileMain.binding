@@ -26,5 +26,14 @@
 <Source xsi:type="opcUa" refId="::Program:PercentualeValvola" attribute="node" />
 <Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="val_ErroreFinale1" attribute="node" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Stop_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="btn_Start1" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:tDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="val_PesoAttuale1" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

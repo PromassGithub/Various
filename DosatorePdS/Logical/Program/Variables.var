@@ -1,4 +1,6 @@
 VAR
+	tDosaggio_HMI : REAL;
+	TON_timerDosaggio : TON;
 	PercentualeValvola : REAL;
 END_VAR
 VAR RETAIN
@@ -7,6 +9,7 @@ END_VAR
 VAR
 	PesoBilancia_AI : INT; (*// Ingresso Analogico (da I/O Link o bus)*)
 	Valvola_AO : REAL; (*// Uscita Analogica (verso I/O Link o bus)*)
+	Stop_HMI : BOOL;
 END_VAR
 VAR RETAIN
 	PesoRichiesto_HMI : REAL; (*// Setpoint (da HMI)*)

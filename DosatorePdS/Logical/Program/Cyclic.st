@@ -18,7 +18,17 @@ PROGRAM _CYCLIC
 	
 	IF Pulsante_Tara THEN Pulsante_Tara := FALSE; PesoTara := PesoBilancia_G; END_IF
 	PesoBilancia_G := PesoBilancia_G - PesoTara;
-
+	
+	IF Stop_HMI THEN Dosatore.bFermaDosaggo := 1; ELSE Dosatore.bFermaDosaggo := 0; END_IF
+	TON_timerDosaggio;
+	TON_timerDosaggio.PT := T#500s;
+	
+	IF NOT (Dosatore.eStatoDosaggio = eST_ERRORE OR Dosatore.eStatoDosaggio = eST_COMPLETATO OR Dosatore.eStatoDosaggio = eST_IDLE) THEN
+		TON_timerDosaggio.IN := TRUE;
+		tDosaggio_HMI := TIME_TO_REAL(TON_timerDosaggio.ET) / 1000;
+	ELSE
+		TON_timerDosaggio.IN := FALSE;
+	END_IF
 	
 	
 	Dosatore.fPesoAnticipoChiusura 		:= Recipe.fPesoAnticipoChiusura;

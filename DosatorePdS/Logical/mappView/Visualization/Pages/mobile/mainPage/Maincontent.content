@@ -1,14 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="mobileMain" height="1440" width="900" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="lbl_PesoAttuale_Desc" top="120" left="20" width="440" height="110" zIndex="0" text="Peso Attuale (g):" fontSize="40px" style="Label" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="val_PesoAttuale" top="120" left="490" width="390" height="110" zIndex="1" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" fontSize="50px" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_PesoAttuale_Desc" top="10" left="20" width="440" height="110" zIndex="0" text="Peso Attuale (g):" fontSize="40px" style="Label" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_PesoAttuale" top="10" left="490" width="390" height="110" zIndex="1" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" fontSize="50px" />
     <Widget xsi:type="widgets.brease.Label" id="lbl_ErroreFinale_Desc" top="800" left="20" width="480" height="110" zIndex="2" text="Errore Ultimo Ciclo (%):" fontSize="40px" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="val_ErroreFinale" top="800" left="480" width="390" height="110" zIndex="3" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" fontSize="40px" />
     <Widget xsi:type="widgets.brease.Label" id="lbl_SetPoint_Desc" top="1090" left="20" width="520" height="110" zIndex="4" multiLine="true" text="SETPOINT RICHIESTO (g):" fontSize="40px" style="Bold" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="input_SetPoint" top="1090" left="540" width="330" height="110" zIndex="5" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="5000" fontSize="50px" />
-    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btn_Start" top="1280" left="20" width="860" height="140" zIndex="6" text="AVVIA CICLO" fontSize="40px" style="Operate" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="input_SetPoint" top="1090" left="540" width="330" height="110" zIndex="5" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="3500" fontSize="50px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btn_Start" top="1280" left="20" width="600" height="140" zIndex="6" text="AVVIA CICLO" fontSize="40px" style="Operate" />
     <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGauge1" top="290" left="230" width="450" height="450" zIndex="7" value="25.1" style="Gauge2" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="val_ErroreFinale1" top="630" left="640" width="125" height="110" zIndex="8" fontSize="40px" />
+    <Widget xsi:type="widgets.brease.MomentaryPushButton" id="btn_Start1" top="1280" left="640" width="240" height="140" zIndex="9" text="STOP" fontSize="40px" style="Operate" />
+    <Widget xsi:type="widgets.brease.Label" id="lbl_PesoAttuale_Desc1" top="130" left="20" width="440" height="110" zIndex="10" text="Tempo trascorso (s)" fontSize="40px" style="Label" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="val_PesoAttuale1" top="130" left="490" width="390" height="110" zIndex="11" format="{'metric':{'decimalPlaces':2,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" fontSize="50px" />
   </Widgets>
 </Content>
