@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WidgetLibrary xmlns="http://www.br-automation.com/iat2014/widget">
+	<Widget name="widgets.brease.TextPicker">
+		<ASEngineeringInfo>
+			<IsProjectable>true</IsProjectable>
+			<LicenseInfo>licensed</LicenseInfo>
+		</ASEngineeringInfo>
+		<Dependencies>
+			<Files>
+				<File>widgets/brease/ListWidget/ListWidget.js</File>
+				<File>brease/decorators/LanguageDependency.js</File>
+				<File>brease/decorators/ContentActivatedDependency.js</File>
+				<File>brease/core/Types.js</File>
+				<File>brease/core/Utils.js</File>
+				<File>brease/events/BreaseEvent.js</File>
+				<File>widgets/brease/TextPicker/libs/TextWheel.js</File>
+				<File>brease/decorators/DragAndDropCapability.js</File>
+				<File>widgets/brease/common/libs/BreaseResizeObserver.js</File>
+				<File>widgets/brease/common/DragDropProperties/libs/DroppablePropertiesEvents.js</File>
+			</Files>
+			<Widgets>
+				<Widget>widgets/brease/TextPicker/TextPicker.js</Widget>
+				<Widget>widgets/brease/ListWidget/ListWidget.js</Widget>
+			</Widgets>
+		</Dependencies>
+		<Categories>
+			<Category name="Category">Selector</Category>
+		</Categories>
+		<Descriptions>
+			<Description name="short">Liste von Texten in einem Rad</Description>
+			<Description name="de">Zeigt eine Liste in einem Rad an, aus welcher der Benutzer Elemente auswählen kann</Description>
+			<Description name="en">Displays a list in a wheel from where the user can select items</Description>
+		</Descriptions>
+		<Inheritance>
+			<Class level="0">widgets.brease.TextPicker</Class>
+			<Class level="1">widgets.brease.ListWidget</Class>
+			<Class level="2">brease.core.BaseWidget</Class>
+		</Inheritance>
+		<Parents>
+			<Parent>*</Parent>
+		</Parents>
+		<Children>
+		</Children>
+		<Methods>
+			<Method name="Focus" read="false">
+				<Description>Sets focus on the widget element, if it can be focused and keyboardOperation=true</Description>
+			</Method>
+			<Method name="GetSelectedIndex" read="true">
+				<Description>Returns selectedIndex.</Description>
+				<Result type="UInteger"/>
+			</Method>
+			<Method name="GetSelectedValue" read="true">
+				<Description>Returns selectedValue.</Description>
+				<Result type="String"/>
+			</Method>
+			<Method name="SetDataProvider" read="false">
+				<Description>Sets dataProvider</Description>
+				<Arguments>
+					<Argument name="provider" type="ItemCollection" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetEnable" read="false">
+				<Description>setter for binding of &apos;enable&apos;</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>State of &apos;enable&apos; (false = disabled, true = enabled)</Description>
+					</Argument>
+				</Arguments>
+			</Method>
+			<Method name="SetSelectedIndex" read="false">
+				<Description>Sets selectedIndex</Description>
+				<Arguments>
+					<Argument name="index" type="UInteger" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetSelectedValue" read="false">
+				<Description>Sets selectedValue</Description>
+				<Arguments>
+					<Argument name="value" type="String" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetStyle" read="false">
+				<Description>Sets the style</Description>
+				<Arguments>
+					<Argument name="value" type="StyleReference" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="SetVisible" read="false">
+				<Description>Sets the state of property «visible»</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true"/>
+				</Arguments>
+			</Method>
+			<Method name="ShowTooltip" read="false"/>
+			<Method name="SubmitChange" read="false">
+				<Description>Send value to the server, if binding for this widget exists.
+Usage of this method will only make sense, if submitOnChange=false, as otherwise changes are submitted automatically.				</Description>
+			</Method>
+		</Methods>
+		<Events>
+			<Event name="Click">
+				<Description>Fired when element is clicked on.</Description>
+				<Arguments>
+					<Argument name="origin" type="String" index="0" required="true">
+						<Description>id of widget that triggered this event</Description>
+					</Argument>
+					<Argument name="horizontalPos" type="String" index="1" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="2" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="DisabledClick">
+				<Description>Fired when disabled element is clicked on.</Description>
+				<Arguments>
+					<Argument name="origin" type="String" index="0" required="true">
+						<Description>id of widget that triggered this event</Description>
+					</Argument>
+					<Argument name="hasPermission" type="Boolean" index="1" required="true">
+						<Description>defines if the state is caused due to missing roles of the current user</Description>
+					</Argument>
+					<Argument name="horizontalPos" type="String" index="2" required="true">
+						<Description>horizontal position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+					<Argument name="verticalPos" type="String" index="3" required="true">
+						<Description>vertical position of click in pixel i.e &apos;10px&apos;</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="EnableChanged">
+				<Description>Fired when operability of the widget changes.</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>operability</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="FocusIn">
+				<Description>Fired when the widgets gets focus</Description>
+			</Event>
+			<Event name="FocusOut">
+				<Description>Fired when the widgets lost focus</Description>
+			</Event>
+			<Event name="OnDragEnter">
+				<Description>Fired when element has onDragEnter.</Description>
+				<Arguments>
+					<Argument name="contentId" type="String" index="0" required="true">
+						<Description>content id of the widget that has been entering the droppable widget</Description>
+					</Argument>
+					<Argument name="widgetId" type="String" index="1" required="true">
+						<Description>id of the widget that has been entering the droppable widget</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="OnDragLeave">
+				<Description>Fired when element has OnDragLeave.</Description>
+				<Arguments>
+					<Argument name="contentId" type="String" index="0" required="true">
+						<Description>content id of the widget that has been leaving the droppable widget</Description>
+					</Argument>
+					<Argument name="widgetId" type="String" index="1" required="true">
+						<Description>id of the widget that has been leaving the droppable widget</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="OnDrop">
+				<Description>Fired when element has OnDrop.</Description>
+				<Arguments>
+					<Argument name="contentId" type="String" index="0" required="true">
+						<Description>content id of the widget that has been dropped on the droppable widget</Description>
+					</Argument>
+					<Argument name="widgetId" type="String" index="1" required="true">
+						<Description>id of the widget that has been dropped on the droppable widget</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+			<Event name="SelectedIndexChanged">
+				<Description>Fired when index changes.</Description>
+				<Arguments>
+					<Argument name="selectedIndex" type="UInteger" index="0" required="true"/>
+					<Argument name="selectedValue" type="String" index="1" required="true"/>
+				</Arguments>
+			</Event>
+			<Event name="VisibleChanged">
+				<Description>Fired when the visibility of the widget changes.</Description>
+				<Arguments>
+					<Argument name="value" type="Boolean" index="0" required="true">
+						<Description>visibility</Description>
+					</Argument>
+				</Arguments>
+			</Event>
+		</Events>
+		<Properties>
+			<Property name="dataProvider" type="ItemCollection" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Data" defaultValue="[]">
+				<Description>ItemCollection see Datatype</Description>
+			</Property>
+			<Property name="ellipsis" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, overflow of text is symbolized with an ellipsis. This option has no effect, if wordWrap = true.</Description>
+			</Property>
+			<Property name="enable" type="Boolean" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>Initial option to enable widget.</Description>
+			</Property>
+			<Property name="imageAlign" type="brease.enum.ImagePosition" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="left">
+				<Description>Position of images relative to text</Description>
+			</Property>
+			<Property name="imagePath" type="DirectoryPath" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>Path to the images location (e.g. &apos;Media/images/&apos;).
+Names of the images must be given like the index in the dataProvider (e.g. 0.png, 1.png, 2.png)				</Description>
+			</Property>
+			<Property name="itemAlign" type="brease.enum.HorizontalPosition" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="center">
+				<Description>Horizontal alignment of the list items</Description>
+			</Property>
+			<Property name="itemHeight" type="PixelVal" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="40px">
+				<Description>Height of an item</Description>
+			</Property>
+			<Property name="itemPadding" type="PixelVal" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="10px">
+				<Description>Padding between the items of the list</Description>
+			</Property>
+			<Property name="maxItemWidth" type="UInteger" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="100">
+				<Description>Maximum width in percentage of a non active item with respect to the overall picker wheel</Description>
+			</Property>
+			<Property name="minItemWidth" type="UInteger" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="50">
+				<Description>Minimum width in percentage of a non active item with respect to the overall picker wheel</Description>
+			</Property>
+			<Property name="multiLine" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, more than one line is possible. Text will wrap when necessary (wordWrap=true) or at line breaks (\n).
+If false, text will never wrap to the next line. The text continues on the same line.				</Description>
+			</Property>
+			<Property name="padding" type="Padding" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Layout" defaultValue="10px">
+				<Description>Padding of the widget</Description>
+			</Property>
+			<Property name="permissionOperate" type="RoleCollection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Accessibility">
+				<Description>restricts operability to users, which have given roles</Description>
+			</Property>
+			<Property name="permissionView" type="RoleCollection" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Accessibility">
+				<Description>restricts visibility to users, which have given roles</Description>
+			</Property>
+			<Property name="selectedIndex" type="UInteger" initOnly="false" localizable="false" editableBinding="true" readOnly="false" required="false" projectable="true" category="Data" defaultValue="0">
+				<Description>Index of the selected item. The first item has index=0</Description>
+			</Property>
+			<Property name="selectedValue" type="String" initOnly="false" localizable="false" editableBinding="true" readOnly="false" required="false" projectable="true" category="Data" defaultValue="">
+				<Description>Value of the selected item</Description>
+			</Property>
+			<Property name="style" type="StyleReference" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="default">
+				<Description>reference to a style for this widget type</Description>
+			</Property>
+			<Property name="submitOnChange" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>If true, a change regarding the selected list item will be sent to the server immediately.
+If false, sending the value change to server has to be triggered by the user.				</Description>
+			</Property>
+			<Property name="tabIndex" type="Integer" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="-1">
+				<Description>sets if a widget should have autofocus enabled (0), the order of the focus (&gt;0),
+or if autofocus should be disabled (-1)				</Description>
+			</Property>
+			<Property name="textAlign" type="brease.enum.TextAlign" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="center">
+				<Description>Horizontal alignment of the displayed texts</Description>
+			</Property>
+			<Property name="tooltip" type="String" initOnly="true" localizable="true" editableBinding="false" readOnly="false" required="false" projectable="true" category="Appearance" defaultValue="">
+				<Description>reference to a tooltip for a widget</Description>
+			</Property>
+			<Property name="visible" type="Boolean" initOnly="false" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="true">
+				<Description>change visibility</Description>
+			</Property>
+			<Property name="wordWrap" type="Boolean" initOnly="true" localizable="false" editableBinding="false" readOnly="false" required="false" projectable="true" category="Behavior" defaultValue="false">
+				<Description>If true, text will wrap when necessary.</Description>
+			</Property>
+		</Properties>
+		<StyleProperties>
+			<StyleProperty name="width" type="Size" not_styleable="true" owner="widgets.brease.TextPicker" category="Layout" groupRefId="Size" groupOrder="1" default="150">
+				<StyleElement attribute="@include elemWidth($value)"/>
+				<Description>outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="height" type="Size" not_styleable="true" owner="widgets.brease.TextPicker" category="Layout" groupRefId="Size" groupOrder="2" default="150">
+				<StyleElement attribute="@include elemHeight($value)"/>
+				<Description>outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="top" type="Integer" not_styleable="true" owner="brease.core.BaseWidget" category="Layout" groupRefId="Position" groupOrder="1">
+				<StyleElement attribute="@include elemTop($value)"/>
+				<Description>absolute position measured from top boundary of parent container</Description>
+			</StyleProperty>
+			<StyleProperty name="left" type="Integer" not_styleable="true" owner="brease.core.BaseWidget" category="Layout" groupRefId="Position" groupOrder="2">
+				<StyleElement attribute="@include elemLeft($value)"/>
+				<Description>absolute position measured from left boundary of parent container</Description>
+			</StyleProperty>
+			<StyleProperty name="zIndex" type="UInteger" not_styleable="true" owner="brease.core.BaseWidget" category="Layout" required="true">
+				<StyleElement attribute="z-index"/>
+				<Description>The zIndex property specifies the z-order of a widget and its childs.&lt;br/&gt;
+        When widgets overlap, z-order determines which one covers the other. A widget with a larger zIndex generally covers a widget with a lower one.&lt;br/&gt;
+        The zIndex must be unique within a content.&lt;br/&gt;				</Description>
+			</StyleProperty>
+			<StyleProperty name="borderWidth" category="Appearance" type="PixelValCollection" default="2px" owner="widgets.brease.TextPicker">
+				<StyleElement attribute="border-width"/>
+				<Description>Sets the width of the border. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="borderStyle" category="Appearance" type="BorderStyle" default="solid" owner="widgets.brease.TextPicker">
+				<StyleElement attribute="border-style"/>
+				<Description>Sets the border style of the widget. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="cornerRadius" category="Appearance" type="PixelValCollection" default="0px" owner="widgets.brease.TextPicker">
+				<StyleElement attribute="@include border-radius($value)"/>
+				<Description>Sets the radius of the widget rounded corners. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="backColor" category="Appearance" type="Color" default="#FFF" owner="widgets.brease.TextPicker">
+				<StyleElement selector="&amp;:not(.disabled)" attribute="background-color"/>
+				<Description>Sets the background color of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="backGroundGradient" category="Appearance" type="Gradient" default="" owner="widgets.brease.TextPicker">
+				<StyleElement selector="&amp;:not(.disabled)" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background color of the widget as a gradient</Description>
+			</StyleProperty>
+			<StyleProperty name="borderColor" category="Appearance" type="ColorCollection" default="#535353" owner="widgets.brease.TextPicker">
+				<StyleElement selector="&amp;:not(.disabled)" attribute="border-color"/>
+				<Description>Sets the border color of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="opacity" category="Appearance" type="Opacity" default="1" owner="widgets.brease.TextPicker">
+				<StyleElement selector="" attribute="opacity"/>
+				<Description>Opacity of the widget</Description>
+			</StyleProperty>
+			<StyleProperty name="fontSize" category="Font" type="PixelVal" default="12px" owner="widgets.brease.TextPicker">
+				<StyleElement selector="#textWheel div.itemFragment div span" attribute="font-size"/>
+				<Description>Fontsize of the text in the items (in pixel)</Description>
+			</StyleProperty>
+			<StyleProperty name="fontName" category="Font" type="FontName" default="Arial" owner="widgets.brease.TextPicker">
+				<StyleElement selector="#textWheel div.itemFragment div span" attribute="font-family"/>
+				<Description>Fontname of the text in the items</Description>
+			</StyleProperty>
+			<StyleProperty name="bold" category="Font" type="Boolean" default="false" owner="widgets.brease.TextPicker">
+				<StyleElement selector="#textWheel div.itemFragment div span" attribute="@include font-weight-bold($value)"/>
+				<Description>If **true** font style is bold in the items</Description>
+			</StyleProperty>
+			<StyleProperty name="italic" category="Font" type="Boolean" default="false" owner="widgets.brease.TextPicker">
+				<StyleElement selector="#textWheel div.itemFragment div span" attribute="@include font-style-italic($value)"/>
+				<Description>If **true** font style is italic in the items</Description>
+			</StyleProperty>
+			<StyleProperty name="margin" category="Layout" type="Margin" default="0px" owner="widgets.brease.TextPicker">
+				<StyleElement attribute="margin"/>
+				<Description>Margin of the Widget</Description>
+			</StyleProperty>
+			<StyleProperty name="minWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="3">
+				<StyleElement attribute="@include elemMinWidth($value)"/>
+				<Description>minimum outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="maxWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="4">
+				<StyleElement attribute="@include elemMaxWidth($value)"/>
+				<Description>maximum outer width of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="minHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="5">
+				<StyleElement attribute="@include elemMinHeight($value)"/>
+				<Description>minimum outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="maxHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="6">
+				<StyleElement attribute="@include elemMaxHeight($value)"/>
+				<Description>maximum outer height of widget</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledBackColor" category="Appearance" type="Color" default="#f1f1f1">
+				<StyleElement selector="&amp;.disabled" attribute="background-color"/>
+				<Description>Sets the background color of the widget when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledBackGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement selector="&amp;.disabled" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background color of the widget as a gradient when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledBorderColor" category="Appearance" type="ColorCollection" default="#535353">
+				<StyleElement selector="&amp;.disabled" attribute="border-color"/>
+				<Description>Sets the border color of the widget when disabled.</Description>
+			</StyleProperty>
+			<StyleProperty name="markerHeight" category="Appearance" type="PixelVal" default="2px">
+				<StyleElement selector="#textWheel div.marker" attribute="height"/>
+				<Description>Sets the height of the marker</Description>
+			</StyleProperty>
+			<StyleProperty name="markerColor" category="Appearance" type="Color" default="#F80">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.marker" attribute="background-color"/>
+				<Description>Sets the color of the marker</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledMarkerColor" category="Appearance" type="Color" default="#e0e0e0">
+				<StyleElement selector="&amp;.disabled #textWheel div.marker" attribute="background-color"/>
+				<Description>Sets the color of the marker when disabled.</Description>
+			</StyleProperty>
+			<StyleProperty name="itemTextColor" category="Appearance" type="Color" default="#000">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div:not(.selected) span" attribute="color"/>
+				<Description>Sets the text color of the items not selected</Description>
+			</StyleProperty>
+			<StyleProperty name="itemActiveTextColor" category="Appearance" type="Color" default="#FFF">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div.selected span" attribute="color"/>
+				<Description>Sets the text color of the selected item</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemTextColor" category="Appearance" type="Color" default="#c8c8c8">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div:not(.selected) span" attribute="color"/>
+				<Description>Sets the text color of the items not selected when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemActiveTextColor" category="Appearance" type="Color" default="#5b5b5b">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div.selected span" attribute="color"/>
+				<Description>Sets the text color of the selected item when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="itemShadow" category="Appearance" type="Shadow" default="none">
+				<StyleElement selector="#textWheel div.itemFragment div" attribute="@include box-shadow($value)"/>
+				<Description>Shadow of the items</Description>
+			</StyleProperty>
+			<StyleProperty name="itemCornerRadius" category="Appearance" type="PixelValCollection" default="0px">
+				<StyleElement selector="#textWheel div.itemFragment div" attribute="@include border-radius($value)"/>
+				<Description>Sets the radius of the items rounded corners. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="itemBorderColor" category="Appearance" type="ColorCollection" default="#535353">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div:not(.selected)" attribute="border-color"/>
+				<Description>Sets the border color of the items</Description>
+			</StyleProperty>
+			<StyleProperty name="itemActiveBorderColor" category="Appearance" type="ColorCollection" default="#000000">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div.selected" attribute="border-color"/>
+				<Description>Sets the border color of the active item</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemBorderColor" category="Appearance" type="ColorCollection" default="#c8c8c8">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div:not(.selected)" attribute="border-color"/>
+				<Description>Sets the border color of the items when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemActiveBorderColor" category="Appearance" type="ColorCollection" default="#5b5b5b">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div.selected" attribute="border-color"/>
+				<Description>Sets the border color of the active item when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="itemBorderWidth" category="Appearance" type="PixelValCollection" default="1px">
+				<StyleElement selector="#textWheel div.itemFragment div:not(.selected)" attribute="border-width"/>
+				<Description>Sets the width of the border around the items. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="itemActiveBorderWidth" category="Appearance" type="PixelValCollection" default="2px">
+				<StyleElement selector="#textWheel div.itemFragment div.selected" attribute="border-width"/>
+				<Description>Sets the width of the border around the active item</Description>
+			</StyleProperty>
+			<StyleProperty name="itemBorderStyle" category="Appearance" type="BorderStyle" default="solid">
+				<StyleElement selector="#textWheel div.itemFragment div" attribute="border-style"/>
+				<Description>Sets the border style of the items. For further information, please see its type</Description>
+			</StyleProperty>
+			<StyleProperty name="itemBackColor" category="Appearance" type="Color" default="#FFF">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div:not(.selected)" attribute="background-color"/>
+				<Description>Sets the background color of the items</Description>
+			</StyleProperty>
+			<StyleProperty name="itemActiveBackColor" category="Appearance" type="Color" default="#F80">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div.selected" attribute="background-color"/>
+				<Description>Sets the background color of the active item</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemBackColor" category="Appearance" type="Color" default="#FFF">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div:not(.selected)" attribute="background-color"/>
+				<Description>Sets the background color of the items when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemActiveBackColor" category="Appearance" type="Color" default="#8e8e8e">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div.selected" attribute="background-color"/>
+				<Description>Sets the background color of the active item when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="itemBackGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div:not(.selected)" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background color of the items as a gradient</Description>
+			</StyleProperty>
+			<StyleProperty name="itemActiveBackGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement selector="&amp;:not(.disabled) #textWheel div.itemFragment div.selected" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background color of the active item as a gradient</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemBackGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div:not(.selected)" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background color of the items as a gradient when disabled</Description>
+			</StyleProperty>
+			<StyleProperty name="disabledItemActiveBackGroundGradient" category="Appearance" type="Gradient" default="">
+				<StyleElement selector="&amp;.disabled #textWheel div.itemFragment div.selected" attribute="@include backGroundGradient(&apos;$value&apos;)"/>
+				<Description>Sets the background color of the active item as a gradient when disabled</Description>
+			</StyleProperty>
+		</StyleProperties>
+		<PropertyGroups>
+			<PropertyGroup name="Size" type="String" category="Layout">
+				<Description>outer height and width of widget</Description>
+			</PropertyGroup>
+			<PropertyGroup name="Position" type="String" category="Layout">
+				<Description>top and left of widget</Description>
+			</PropertyGroup>
+		</PropertyGroups>
+	<BindingTemplates>
+  
+</BindingTemplates>
+</Widget>
+</WidgetLibrary>

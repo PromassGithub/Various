@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleInformation name="widgets.brease.RadialGauge" xmlns="http://www.br-automation.com/iat2014/widgetStyles"
+									xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+									>
+	<StyleProperties>
+
+    <StyleProperty name="width" type="Size" default="200" category="Layout">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <Description>outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" default="200" category="Layout">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+      <Description>outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="minWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="3">
+      <StyleElement attribute="@include elemMinWidth($value)"></StyleElement>
+      <Description>minimum outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="maxWidth" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="4">
+      <StyleElement attribute="@include elemMaxWidth($value)"></StyleElement>
+      <Description>maximum outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="minHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="5">
+      <StyleElement attribute="@include elemMinHeight($value)"></StyleElement>
+      <Description>minimum outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="maxHeight" type="Size" not_styleable="true" default="0" category="Layout" groupRefId="Size" groupOrder="6">
+      <StyleElement attribute="@include elemMaxHeight($value)"></StyleElement>
+      <Description>maximum outer height of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="borderWidth" type="PixelVal" default="0px" category="Appearance">
+      <StyleElement selector=".backShape" attribute="border-width"></StyleElement>
+      <Description>
+        Sets the border width of the widget. For further information, please see its type
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderColor" type="ColorCollection" default="#000000" category="Appearance">
+      <StyleElement selector=".backShape" attribute="border-color"></StyleElement>
+      <Description>
+        Sets the border color of the widget. For further information, please see its type
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="borderStyle" type="BorderStyle" default="solid" category="Appearance">
+      <StyleElement selector=".backShape" attribute="border-style"></StyleElement>
+      <Description>
+        Style of the Border
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColor" category="Appearance" type="Color" default="#FFFFFF" >
+      <StyleElement selector=".backShape" attribute="background-color"></StyleElement>
+      <Description>
+        Sets the background color of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="shadow" type="Shadow" category="Appearance" default="none">
+      <StyleElement selector=".backShape" attribute="@include box-shadow($value)"></StyleElement>
+      <Description>
+        Shadow of the Widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="margin" category="Layout" type="Margin" default="0px">
+      <StyleElement attribute="margin"></StyleElement>
+      <Description>
+        Margin of the Widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backGroundGradient" type="Gradient" category="Appearance" default="">
+      <StyleElement selector=".backShape" attribute="@include backGroundGradient('$value')"></StyleElement>
+      <Description>
+        Background as a gradient
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backGround" category="Appearance" type="ImagePath" default="">
+      <StyleElement selector=".backShape" attribute="@include pureBackgroundImage('../$value')"></StyleElement>
+      <Description>
+        Sets the path to an image to set it as background of the widget
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColorScaleArea1" category="Appearance" type="Color" default="transparent" >
+      <StyleElement selector=".gaugeContainer .groupScaleAreas .area1" attribute="fill"></StyleElement>
+      <Description>
+        Sets the color background of the first scale area
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColorScaleArea2" category="Appearance" type="Color" default="transparent" >
+      <StyleElement selector=".gaugeContainer .groupScaleAreas .area2" attribute="fill"></StyleElement>
+      <Description>
+        Sets the color background of the second scale area
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColorScaleArea3" category="Appearance" type="Color" default="transparent" >
+      <StyleElement selector=".gaugeContainer .groupScaleAreas .area3" attribute="fill"></StyleElement>
+      <Description>
+        Sets the color background of the third scale area
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColorScaleArea4" category="Appearance" type="Color" default="transparent" >
+      <StyleElement selector=".gaugeContainer .groupScaleAreas .area4" attribute="fill"></StyleElement>
+      <Description>
+        Sets the color background of the forth scale area
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="backColorScaleArea5" category="Appearance" type="Color" default="transparent" >
+      <StyleElement selector=".gaugeContainer .groupScaleAreas .area5" attribute="fill"></StyleElement>
+      <Description>
+        Sets the color background of the fifth scale area
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="pointerBackColor" category="Appearance" type="Color" default="#FFFFFF" >
+      <StyleElement selector=".gaugeContainer .groupToRotate .groupPointer .needle" attribute="fill"></StyleElement>
+      <StyleElement selector=".gaugeContainer .groupToRotate .groupPointer .knob" attribute="fill"></StyleElement>
+      <Description>
+        Sets the background color of the pointer
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="pointerPathColor" category="Appearance" type="Color" default="#000000" >
+      <StyleElement selector=".gaugeContainer .groupToRotate .groupPointer .needle" attribute="stroke"></StyleElement>
+      <StyleElement selector=".gaugeContainer .groupToRotate .groupPointer .knob" attribute="stroke"></StyleElement>
+      <Description>
+        Sets the border color of the pointer
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="pointerPathWidth" category="Appearance" type="PixelVal" default="1px" >
+      <StyleElement selector=".gaugeContainer .groupToRotate .groupPointer .needle" attribute="stroke-width"></StyleElement>
+      <StyleElement selector=".gaugeContainer .groupToRotate .groupPointer .knob" attribute="stroke-width"></StyleElement>
+      <Description>
+        Sets the border width of the pointer
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="textColor" type="Color" category="Appearance" default="#000000" >
+      <StyleElement selector="text" attribute="fill"></StyleElement>
+      <Description> 
+        Sets the color of the displayed text 
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="fontSize" type="PixelVal" category="Font" default="10px" >
+      <StyleElement selector="text" attribute="font-size"></StyleElement>
+      <Description> 
+        Sets the height of the displayed text 
+      </Description>
+    </StyleProperty>
+    
+    <StyleProperty name="fontName" type="FontName" category="Font" default="Arial">
+      <StyleElement selector="text" attribute="font-family"></StyleElement>
+      <Description> 
+        Sets the font name of the displayed text 
+      </Description>
+    </StyleProperty>
+
+    </StyleProperties>
+</StyleInformation>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingDefinition xmlns="http://www.br-automation.com/iat2014/eventbinding/runtime/v2">
+  <Content id="mobileheader">
+    <EventBinding id="mobileheader.Button1.Click">
+      <Source type="widgets.brease.Button.Event" event="Click" refId="mobileheader_Button1" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="mobileMain" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="page_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+  <Content id="mobileheader">
+    <EventBinding id="mobileheader.Button2.Click">
+      <Source type="widgets.brease.Button.Event" event="Click" refId="mobileheader_Button2" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="mobileSetting" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="page_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+  <Content id="mobileheader">
+    <EventBinding id="mobileheader.Button3.Click">
+      <Source type="widgets.brease.Button.Event" event="Click" refId="mobileheader_Button3" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="mobileScale" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="page_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+  <Content id="mobileheader">
+    <EventBinding id="mobileheader.Button4.Click">
+      <Source type="widgets.brease.Button.Event" event="Click" refId="mobileheader_Button4" />
+      <EventHandler>
+        <Action>
+          <Target type="clientSystem.Action">
+            <Method type="clientSystem.Action.LoadContentInArea"><Parameter name="contentId" xsi:type="ANY_STRING" value="mobileRecipe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="pageId" xsi:type="ANY_STRING" value="page_1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /><Parameter name="areaId" xsi:type="ANY_STRING" value="area1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /></Method>
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Content>
+</EventBindingDefinition>

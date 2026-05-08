@@ -33557,6 +33557,2330 @@
     <Group id="3158829">
       <Item lang="en" text="PTP Slave is synchronous on interface {1}" />
     </Group>
+    <Group id="-1064116224">
+      <Item lang="en" text="The specified name is NULL" />
+      <Item lang="de" text="Der angegebene Name ist NULL" />
+    </Group>
+    <Group id="-1064116223">
+      <Item lang="en" text="The specified name is empty" />
+      <Item lang="de" text="Der angegebene Name ist leer" />
+    </Group>
+    <Group id="-2137858045">
+      <Item lang="en" text="UIConnect is NULL" />
+      <Item lang="de" text="UIConnect ist NULL" />
+    </Group>
+    <Group id="-1064116220">
+      <Item lang="en" text="The alarm is unknown and cannot be reset" />
+      <Item lang="de" text="Der Alarm ist unbekannt und kann nicht zurückgesetzt werden" />
+    </Group>
+    <Group id="-1064116219">
+      <Item lang="en" text="No alarm is selected" />
+      <Item lang="de" text="Es wurde kein Alarm ausgewählt " />
+    </Group>
+    <Group id="-1064116218">
+      <Item lang="en" text="The alarm cannot be acknowledged at this position in the component tree" />
+      <Item lang="de" text="Der Alarm kann in dieser Position nicht quittiert werden" />
+    </Group>
+    <Group id="-1064116217">
+      <Item lang="en" text="The specified device name in NULL" />
+      <Item lang="de" text="Das angegebene Speichermedium ist NULL" />
+    </Group>
+    <Group id="1083367432">
+      <Item lang="en" text="Waiting for parent component" />
+      <Item lang="de" text="Warten auf Hauptkomponente" />
+    </Group>
+    <Group id="-1064116215">
+      <Item lang="en" text="Another core component was already found in this component group" />
+      <Item lang="de" text="In dieser Komponentengruppe wurde eine andere Hauptkomponente gefunden" />
+    </Group>
+    <Group id="-1064116214">
+      <Item lang="en" text="The history memory could not be initialized. See log for furher details" />
+      <Item lang="de" text="Der Speicher für die Alarmhistorie konnte nicht initialisiert werden. Siehe Logger für mehr Informationen" />
+    </Group>
+    <Group id="-1064116213">
+      <Item lang="en" text="Error while writing to the history export file" />
+      <Item lang="de" text="Schreiben in die exportierte Alarmhistorie fehlgeschlagen" />
+    </Group>
+    <Group id="-1064116211">
+      <Item lang="en" text="Query with the given name was not found" />
+      <Item lang="de" text="Die Angegebene Abfrage konnte nicht gefunden werden" />
+    </Group>
+    <Group id="-1064299740">
+      <Item lang="en" text="The alarm identifier is not known" />
+      <Item lang="de" text="Alarmidentifizierung nicht bekannt" />
+    </Group>
+    <Group id="-1064299739">
+      <Item lang="en" text="A value was out of range" />
+      <Item lang="de" text="Ein Wert ist außerhalb des angegbenen Limits" />
+    </Group>
+    <Group id="-1064299738">
+      <Item lang="en" text="The alarm cannot be acknowledged at this location" />
+      <Item lang="de" text="Der Alarm kann in dieser Position nicht quittiert werden" />
+    </Group>
+    <Group id="-1064299737">
+      <Item lang="en" text="The storage content cannot be read" />
+      <Item lang="de" text="Lesen des Speicherinhalts fehlgeschlagen" />
+    </Group>
+    <Group id="-1064299736">
+      <Item lang="en" text="The storage has an unknown version number" />
+      <Item lang="de" text="Der Speicher hat eine unbekannte Versionsnummer" />
+    </Group>
+    <Group id="-1064299735">
+      <Item lang="en" text="The loaded storage has a different sector size than specified" />
+      <Item lang="de" text="Der geladene Speicher hat eine andere Sektorgröße als angegeben" />
+    </Group>
+    <Group id="1083183914">
+      <Item lang="en" text="The memory type of a history DataObject has been changed. The object has been relocated" />
+      <Item lang="de" text="Der Speichertyp des Datenobjektes der Alarmhistorie wurde geändert. Das Objekt wurde verlegt" />
+    </Group>
+    <Group id="1083183915">
+      <Item lang="en" text="The memory size of a history DataObject has been changed" />
+      <Item lang="de" text="Die Speichergröße des Datenobjekts der Alarmhistorie wurde geändert" />
+    </Group>
+    <Group id="-1064299732">
+      <Item lang="en" text="Failed to change the memory type of a history DataObject (Error cause: {1})" />
+      <Item lang="de" text=" Der Speichertyp des Datenobjektes der Alarmhistorie konnte nicht geändert werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299731">
+      <Item lang="en" text="Failed to create a new histroy DataObject (Error cause: {1})" />
+      <Item lang="de" text="Erstellung eines neuen Datenobjektes für die Alarmhistorie fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299730">
+      <Item lang="en" text="Failed to open existing history DataObject, relocation skipped (Error cause: {1})" />
+      <Item lang="de" text="Öffnen eines existierenden Datenobjektes der Alarmhistorie fehlgeschlagen, verlegung wurde übersprungen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299729">
+      <Item lang="en" text="Failed to create new history DataObject, relocation skipped (Error cause: {1})" />
+      <Item lang="de" text="Erstellung eines neuen Datenobjektes für die Alarmhistorie fehlgeschlagen, verlegung wurde übersprungen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299728">
+      <Item lang="en" text="Failed to initialize new history DataObject, relocation skipped (Error cause: {1})" />
+      <Item lang="de" text="Initialisierung des neuen Datenobjektes für die Alarmhistorie fehlgeschlagen, verlegung wurde übersprungen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299727">
+      <Item lang="en" text="Failed to copy existing history to new DataObject, relocation skipped (Error cause: {1})" />
+      <Item lang="de" text="Kopieren eines existierenden Datenobjektes der Alarmhistorie fehlgeschlagen, verlegung wurde übersprungen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299726">
+      <Item lang="en" text="Failed to remove the old history DataObject after relocation (Error cause: {1})" />
+      <Item lang="de" text="Löschen des alten Datenobjektes der Alarmhistorie nach Verlegung fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299725">
+      <Item lang="en" text="Failed to open or initialize the history file format (Error cause: {1})" />
+      <Item lang="de" text="Initialisierung/Öffnung des Dateiformats der Alarmhistorie fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299724">
+      <Item lang="en" text="Failed to create a new history export file {2} using device {3} (Error cause: {1})" />
+      <Item lang="de" text="Erstellung einer neuen Exportdatei {2} für die Alarmhistorie unter Verwendung des Speichermediums {3} fehlgeschlagen  (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299723">
+      <Item lang="en" text="Failed to write to history export {2} using device {3} (Error cause: {1})" />
+      <Item lang="de" text="Schreiben der Exportdatei {2} für die Alarmhistorie fehlgeschlagen unter Verwendung des Speichermediums {3} fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064299722">
+      <Item lang="en" text="A configuration property could not be found" />
+      <Item lang="de" text="Eine Eigenschaft der Konfiguration konnte nicht gefunden werden" />
+    </Group>
+    <Group id="-1064299721">
+      <Item lang="en" text="The configuration type is not specified using the definition" />
+      <Item lang="de" text="Der Typ der Konfiguration ist für diese Definition nicht spezifiziert" />
+    </Group>
+    <Group id="-1064299720">
+      <Item lang="en" text="The configuration service could not be located" />
+      <Item lang="de" text="Der Service der Konfiguration konnte nicht lokalisiert werden" />
+    </Group>
+    <Group id="-1064299719">
+      <Item lang="en" text="Failed to create a new configuration section" />
+      <Item lang="de" text="Erstellung einer neuen Sektion in der Konfiguration fehlgeschlagen" />
+    </Group>
+    <Group id="-1064299718">
+      <Item lang="en" text="Failed to read an existing configuration section" />
+      <Item lang="de" text="Lesen der Sektion in der Konfiguration fehlgeschlagen" />
+    </Group>
+    <Group id="-1064299717">
+      <Item lang="en" text="Failed to release a configuration section" />
+      <Item lang="de" text="Freigeben der Sektion in der Konfiguration fehlgeschlagen" />
+    </Group>
+    <Group id="-1064299716">
+      <Item lang="en" text="A PV with name &quot;{2}&quot; could not be found and will not be available as an alarm text snippet" />
+      <Item lang="de" text="Die PV mit dem Namen &quot;{2}&quot; konnte nicht gefunden werden und wird deshalb nicht als Textschnipsel in den Alarmtexten verfügbar sein" />
+    </Group>
+    <Group id="-1064299715">
+      <Item lang="en" text="Alarm text snippet PV &quot;{2}&quot; use an unsupported data type" />
+      <Item lang="de" text="Die Alarmtextschnipsel PV &quot;{2}&quot; verwendet einen nicht unterstützten Datentypen" />
+    </Group>
+    <Group id="-2138041538">
+      <Item lang="en" text="No configuration could be found for alarm &quot;{2}&quot;. A default configuration will be used" />
+      <Item lang="de" text="Es konnte keine Konfiguration für Alarm &quot;{2}&quot; gefunden werden. Es wird eine Default Konfiguratin verwendet" />
+    </Group>
+    <Group id="-2138041537">
+      <Item lang="en" text="Found an enabled MpAlarmBasic component. MpAlarmBasic and MpAlarmX cannot be used in the same project" />
+      <Item lang="de" text="Aktivierte MpAlarmBasic Komponente gefunden. MpAlarmBasic und MpAlarmX können nicht im selben Projekt verwendet werden." />
+    </Group>
+    <Group id="-2138041536">
+      <Item lang="en" text="No messenger service was found when trying to carry out the SendMessage action." />
+      <Item lang="de" text="Messenger-Service konnte nicht gefunden werden beim Ausführen der SendMessage Aktion." />
+    </Group>
+    <Group id="-2138041535">
+      <Item lang="en" text="Messenger service reports an error when trying to carry out the SendMessage action (Error cause: {1})" />
+      <Item lang="de" text="Messenger-Service fehlerhaft beim Ausführen der SendMessage Aktion (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138041533">
+      <Item lang="en" text="Failed to read the EventLog entries associated with this alarm (Error cause: {1})" />
+      <Item lang="de" text="Verknüpfte EventLog-Einträge konnten nicht gelesen werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138041532">
+      <Item lang="en" text="Invalid Alarm monitoring configuration. Monitored PV name is empty." />
+      <Item lang="de" text="Ungültige Alarm-Überwachungs Konfiguration. Die Aufgezeichnete PV ist leer" />
+    </Group>
+    <Group id="-2138041531">
+      <Item lang="en" text="Invalid PV name specified for alarm monitoring. PV &quot;{2}&quot; was not found." />
+      <Item lang="de" text="Ungüliger PV Name für die Überwachung. PV &quot;{2}&quot; wurde nicht gefunden." />
+    </Group>
+    <Group id="-2138041530">
+      <Item lang="en" text="Dynamic limit PV name is empty. Limit will not be monitored." />
+      <Item lang="de" text="Für das dynamische Limit wurde keine PV angegeben. Das Limit wird nicht überwacht." />
+    </Group>
+    <Group id="-2138041529">
+      <Item lang="en" text="Invalid PV name specified for dynamic limit monitoring. PV &quot;{2}&quot; was not found." />
+      <Item lang="de" text="Für die dynamische Limit-Überwachung wurde eine ungütlige PV angegeben. PV &quot;{2}&quot; wurde nicht gefunden." />
+    </Group>
+    <Group id="-2138041528">
+      <Item lang="en" text="Monitoring configuration invalid. The PV type &quot;{3}&quot; of the &quot;{2}&quot; is not supported for given monitoring type." />
+      <Item lang="de" text="Überwachungs-Konfiguration ist ungültig. Der PV Typ &quot;{3}&quot; von &quot;{2}&quot; wird nicht unterstützt." />
+    </Group>
+    <Group id="-2138041527">
+      <Item lang="en" text="Discrete monitoring Alarm trigger value configuration invalid. &quot;{2}&quot; is not a valid boolean." />
+      <Item lang="de" text="Bei der Überwachung eines bestimmten Wertes (&quot;Discrete value monitoring&quot;) ist ein Trigger-Wert ungültig. &quot;{2}&quot; ist kein gültiger boolscher Wert." />
+    </Group>
+    <Group id="-2138041526">
+      <Item lang="en" text="Discrete monitoring Alarm trigger value configuration invalid. &quot;{2}&quot; is not a valid integer." />
+      <Item lang="de" text="Bei der Überwachung eines bestimmten Wertes (&quot;Discrete value monitoring&quot;) ist ein Trigger-Wert ungültig. &quot;{2}&quot; ist kein gültiger Integer-Wert." />
+    </Group>
+    <Group id="-2138041525">
+      <Item lang="en" text="Alarm &quot;{2}&quot; could not be set because of parallel configuration access." />
+      <Item lang="de" text="Alarm &quot;{2}&quot; konnte nicht gesetzt werden wegen parallelem Zugriff auf die Konfiguration." />
+    </Group>
+    <Group id="-2138041521">
+      <Item lang="en" text="Mapping configuration invalid. The given alarm monitoring subtype &quot;{2}&quot; is not valid." />
+      <Item lang="de" text="Die Konfiguration ist ungültig. Der Alarm-Monitoring-Type &quot;{2}&quot; ist nicht gültig." />
+    </Group>
+    <Group id="-1064299696">
+      <Item lang="en" text="The range for the category &quot;{2}&quot; is invalid." />
+      <Item lang="de" text="Der Bereich für die Kategorie &quot;{2}&quot; ist ungültig." />
+    </Group>
+    <Group id="-1064299695">
+      <Item lang="en" text="The name for the category &quot;{2}&quot; already exists." />
+      <Item lang="de" text="Der Name der Kategorie &quot;{2}&quot; existiert bereits." />
+    </Group>
+    <Group id="-1064299694">
+      <Item lang="en" text="The name of the category is empty." />
+      <Item lang="de" text="Der Name der Kategorie ist leer." />
+    </Group>
+    <Group id="-2138041517">
+      <Item lang="en" text="Delay limit PV name is empty. Delay will not be monitored." />
+      <Item lang="de" text="Die Verzögerungsgrenze PV-Name ist leer. Die Verzögerung wird nicht überwacht." />
+    </Group>
+    <Group id="-2138041516">
+      <Item lang="en" text="Invalid PV name specified for dynamic delay monitoring. PV &quot;{2}&quot; was not found." />
+      <Item lang="de" text="Ungültiger PV-Name für die dynamische Verzögerungsüberwachung angegeben. PV &quot;{2}&quot; wurde nicht gefunden." />
+    </Group>
+    <Group id="-2138041515">
+      <Item lang="en" text="Hysteresis limit PV name is empty. Hysteresis will not be monitored." />
+      <Item lang="de" text="Hysteresegrenze PV-Name ist leer. Die Hysterese wird nicht überwacht." />
+    </Group>
+    <Group id="-2138041514">
+      <Item lang="en" text="Invalid PV name specified for dynamic hysteresis monitoring. PV &quot;{2}&quot; was not found." />
+      <Item lang="de" text="Ungültiger PV-Name für die dynamische Hystereseüberwachung angegeben. PV &quot;{2}&quot; wurde nicht gefunden." />
+    </Group>
+    <Group id="-2138041513">
+      <Item lang="en" text="Time Constant limit PV name is empty. Time Constant will not be monitored." />
+      <Item lang="de" text="Zeitkonstante Grenzwert PV-Name ist leer. Die Zeitkonstante wird nicht überwacht." />
+    </Group>
+    <Group id="-2138041512">
+      <Item lang="en" text="Invalid PV name specified for dynamic time constant monitoring. PV &quot;{2}&quot; was not found." />
+      <Item lang="de" text="Ungültiger PV-Name angegeben für die dynamische Zeitkonstantenüberwachung. PV &quot;{2}&quot; wurde nicht gefunden." />
+    </Group>
+    <Group id="-1064299687">
+      <Item lang="en" text="Failed to retain Alarm &quot;{2}&quot;." />
+      <Item lang="de" text="Alarm &quot;{2}&quot; konnte nicht wiederhergestellt werden." />
+    </Group>
+    <Group id="-1064299686">
+      <Item lang="en" text="Failed to create a retain DataObject (Error cause: {1})" />
+      <Item lang="de" text="Erstellung eines Daten-Objekts um die Alarme wiederherstellen zu können ist fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138041509">
+      <Item lang="en" text="SRAM-Buffer was not found during initialization - recent remanent entries might be lost" />
+      <Item lang="de" text="SRAM-Buffer konnte beim Initialisieren nicht gefunden werden - remanente Daten sind möglicherweise verlorgen gegangen" />
+    </Group>
+    <Group id="-2138043362">
+      <Item lang="en" text="Alarm Mapping configuration: Offset intersection in entry {3}" />
+      <Item lang="de" text="Alarm Mapping Konfiguration: Offset Überschneidung in Eintrag {3}" />
+    </Group>
+    <Group id="-2138043361">
+      <Item lang="en" text="Alarm Mapping configuration: Number of alarms is 0 in entry {3}" />
+      <Item lang="de" text="Alarm Mapping Konfiguration: In Eintrag {3} ist die Anzahl der Alarme 0" />
+    </Group>
+    <Group id="-2138043360">
+      <Item lang="en" text="Could not load configuration data of service {2} (ErrorCause: {1}, ConfigGroup: {3}) - no Alarms or Reactions configured?" />
+      <Item lang="de" text="Es konnten die Konfigurationsdaten des Service {2} nicht geladen werden (Fehlerursache: {1}, ConfigGroup: {3}) - keine Alarme oder Reaktionen konfiguriert?" />
+    </Group>
+    <Group id="-2138043359">
+      <Item lang="en" text="Configuration of service {2} was loaded with warnings." />
+      <Item lang="de" text="Der Service {2} der Konfiguration wurde mit Warnungen geladen." />
+    </Group>
+    <Group id="-2138043358">
+      <Item lang="en" text="Could not save configuration data of service {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Speichern der Konfigurationsdaten des Service {2} fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="1083182117">
+      <Item lang="en" text="Mapping config of service {2}: Successfully loaded {3} child services" />
+      <Item lang="de" text="Mapping Konfiguration des Service {2}: {3} Child-Services erfolgreich geladen" />
+    </Group>
+    <Group id="-2138043354">
+      <Item lang="en" text="Could not access configuration data of service {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Es konnte nicht auf die Konfigurationsdaten des Service {2} zugegriffen werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138043353">
+      <Item lang="en" text="Alarm index {2} too high in configuration data {3}" />
+      <Item lang="de" text="In den Konfigurationsdaten {3} ist der Index {2} zu hoch" />
+    </Group>
+    <Group id="-2138043352">
+      <Item lang="en" text="Could not load alarm mapping configuration (ErrorCause: {1}) - first bootup?" />
+      <Item lang="de" text="Laden der Alarm Mapping Konfiguration fehlgeschlagen (Fehlerursache: {1}) - Erster Hochlauf?" />
+    </Group>
+    <Group id="-2138043351">
+      <Item lang="en" text="Could not add user alarm configuration (ErrorCause: {1}, Step {2})" />
+      <Item lang="de" text="Laden der Benutzeralarmkonfiguration fehlgeschlagen (Fehlerursache: {1}, Schritt {2})" />
+    </Group>
+    <Group id="-1064136704">
+      <Item lang="en" text="Could not allocate memory (ErrorCause: {1})" />
+      <Item lang="de" text="Es konnte kein Speicher reserviert werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064136703">
+      <Item lang="en" text="Error writing export-file {2} at {3} (ErrorCause: {1})" />
+      <Item lang="de" text="Beim Schreiben der Exportdatei {2} bei {3} ist ein Fehler aufgetreten (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064136702">
+      <Item lang="en" text="Error reading event entries from {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Fehler beim Lesen der Daten aus {2} (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064136701">
+      <Item lang="en" text="Invalid file device" />
+      <Item lang="de" text="Ungültiges Speichermedium" />
+    </Group>
+    <Group id="-1064136700">
+      <Item lang="en" text="Missing value on UIConnect" />
+      <Item lang="de" text="An UIConnect wurde NULL angehängt" />
+    </Group>
+    <Group id="1083346949">
+      <Item lang="en" text="Core is not active" />
+      <Item lang="de" text="Warten auf Hauptkomponente" />
+    </Group>
+    <Group id="-1064136698">
+      <Item lang="en" text="Event not recorded (ErrorCause: {1})" />
+      <Item lang="de" text="Ein Ereignis konnte nicht aufgezeichnet werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064136697">
+      <Item lang="en" text="Invalid shift {2} in configuration: {3}" />
+      <Item lang="de" text="Ungültige Verschiebung {2} in der Konfiguration: {3}" />
+    </Group>
+    <Group id="-2138009590">
+      <Item lang="en" text="Inconsistency of the FB input data &quot;{2}&quot;. Value Changed from &quot;{3}&quot; to &quot;{4}&quot;" />
+      <Item lang="de" text="Inkonsistenz der FB-Eingabedaten &quot;{2}&quot;. Wert von &quot;{3}&quot; in &quot;{4}&quot; geändert." />
+    </Group>
+    <Group id="-2138009589">
+      <Item lang="en" text="Inconsistency in the &quot;NominalProductionRate&quot; parameter data. Value: &quot;{2}&quot;" />
+      <Item lang="de" text="Inkonsistenz in den Parameterdaten der &quot;NominalProductionRate&quot;. Wert: &quot;{2}&quot;" />
+    </Group>
+    <Group id="1083215884">
+      <Item lang="en" text="File &quot;{2}&quot; for backup created automatically." />
+      <Item lang="de" text="Datei &quot;{2}&quot; für Backup automatisch erstellt." />
+    </Group>
+    <Group id="-2138009587">
+      <Item lang="en" text="File Backup won´t work due to an invalid file device" />
+      <Item lang="de" text="Dateisicherung funktioniert nicht aufgrund eines ungültigen Dateigeräts" />
+    </Group>
+    <Group id="-2138009586">
+      <Item lang="en" text="Error reading entry from data object {2} when loading backup file {3}" />
+      <Item lang="de" text="Fehler beim Lesen des Eintrags aus Datenobjekt {2} beim Laden der Sicherungsdatei {3}" />
+    </Group>
+    <Group id="-1064136696">
+      <Item lang="en" text="Could not reset buffer {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Konnte Puffer nicht zurücksetzen {2} (FehlerUrsache: {1})" />
+    </Group>
+    <Group id="-1064124508">
+      <Item lang="en" text="Text source {2} not found" />
+      <Item lang="de" text="Textsource {2} konnte nicht gefunden werden" />
+    </Group>
+    <Group id="-1064124506">
+      <Item lang="en" text="Text-Key &quot;{3}&quot; not found within &quot;{2}&quot;" />
+      <Item lang="de" text="Text-Key &quot;{3}&quot; wurde innerhalb von &quot;{2}&quot; nicht gefunden" />
+    </Group>
+    <Group id="-1064124501">
+      <Item lang="en" text="Error writing archive (ErrorCause:  {1})" />
+      <Item lang="de" text="Beim Schreiben des Archivs ist ein Fehler aufgetreten (Fehlerursache:  {1})" />
+    </Group>
+    <Group id="-1064124499">
+      <Item lang="en" text="Could not create Audit-Buffer (ErrorCause: {1})" />
+      <Item lang="de" text="Der benötigte Speicher konnte nicht reserviert werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064124498">
+      <Item lang="en" text="Error writing export-file {2} at {3} (ErrorCause: {1})" />
+      <Item lang="de" text="Beim Schreiben der Exportdatei {2} bei {3} ist ein Fehler aufgetreten (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064124497">
+      <Item lang="en" text="Error reading event entries from {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Fehler beim Lesen der Ereignisse aus {2} (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064124495">
+      <Item lang="en" text="Could not record events (ErrorCause: {1})" />
+      <Item lang="de" text="Ein Ereignis konnte nicht aufgezeichnet werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064124490">
+      <Item lang="en" text="Could not read VC4-event (ErrorCause: {1})" />
+      <Item lang="de" text="Ein VC4-Ereignis konnte nicht aufgezeichnet werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064124488">
+      <Item lang="en" text="PV to monitor ({2}) could not be found (ErrorCause: {1})" />
+      <Item lang="de" text="Zu überwachende PV ({2}) wurde nicht gefunden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064298240">
+      <Item lang="en" text="Could not create Opc-Listener" />
+      <Item lang="de" text="Es konnte kein Opc-Listener erstellt werden" />
+    </Group>
+    <Group id="-1064298239">
+      <Item lang="en" text="Failed to create archive server {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Es konnte kein Archivserver {2} erstellt werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064298237">
+      <Item lang="en" text="Pdf-Functionality not available (Library MpReport missing)" />
+      <Item lang="de" text="Pdf-Funktionalität nicht verfügbar (Bibliothek MpReport fehlt)" />
+    </Group>
+    <Group id="-2138040060">
+      <Item lang="en" text="Could not create Opc-Listener" />
+      <Item lang="de" text="Es konnte kein Opc-Listener erstellt werden" />
+    </Group>
+    <Group id="-1064298234">
+      <Item lang="en" text="Could not create file {2} at {3} (ErrorCause: {1})" />
+      <Item lang="de" text="Datei {2} konnte nicht in {3} erstellt werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064298233">
+      <Item lang="en" text="Failed to create OPC-Admin-User" />
+      <Item lang="de" text="OPC-Admin-User konnte nicht erzeugt werden" />
+    </Group>
+    <Group id="-1064298232">
+      <Item lang="en" text="Error calling OPC-Functionn {2} (OPC Error-Code: {3})" />
+      <Item lang="de" text="Fehler beim Aufruf der OPC-Funktion {2} (OPC Fehler-Code: {3})" />
+    </Group>
+    <Group id="-2138040055">
+      <Item lang="en" text="Text-Configuration invalid: &quot;{2}&quot; is &quot;{3}&quot;" />
+      <Item lang="de" text="Text-Konfiguration ungültig: &quot;{2}&quot; ist &quot;{3}&quot;" />
+    </Group>
+    <Group id="-2138040054">
+      <Item lang="en" text="The SRAM-Buffer was not found during initialization - remanent data might be lost" />
+      <Item lang="de" text="Der SRAM-Buffer wurde während der Initialisierung nicht gefunden - Einträge sind möglicherweise verloren gegangen" />
+    </Group>
+    <Group id="-1064159488">
+      <Item lang="en" text="Installation of backup/update &quot;{2:Name}&quot; failed (ErrorCause: {1:ErrorNumber})" />
+      <Item lang="de" text="Installation von Backup/Update &quot;{2:Name}&quot; fehlgeschlagen (Fehlerursache: {1:ErrorNumber})" />
+    </Group>
+    <Group id="-1064159487">
+      <Item lang="en" text="Creation of backup &quot;{2:Name}&quot; failed (ErrorCause: {1:ErrorNumber})" />
+      <Item lang="de" text="Erstellung von Backup &quot;{2:Name}&quot; fehlgeschlagen (Fehlerursache: {1:ErrorNumber})" />
+    </Group>
+    <Group id="-1064159486">
+      <Item lang="en" text="Getting info of backup/update &quot;{2:Name}&quot; failed (ErrorCause: {1:ErrorNumber})" />
+      <Item lang="de" text="Informationsanfrage zu Backup/Update &quot;{2:Name}&quot; fehlgeschlagen (Fehlerursache: {1:ErrorNumber})" />
+    </Group>
+    <Group id="-2137901309">
+      <Item lang="en" text="Update check failed (ErrorCause: {1:ErrorNumber})" />
+      <Item lang="de" text="Suchen nach Updates fehlgeschlagen (Fehlerursache: {1:ErrorNumber})" />
+    </Group>
+    <Group id="-1064289140">
+      <Item lang="en" text="Reading specified backup/update &quot;{3:Name}&quot; at &quot;{2:DeviceName}&quot; failed" />
+      <Item lang="de" text="Lesen des angegebenen Backup/Update &quot;{3:Name}&quot; auf &quot;{2:DeviceName}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289139">
+      <Item lang="en" text="Opening or reading specified file &quot;{3:FileName}&quot; at &quot;{2:DeviceName}&quot; failed" />
+      <Item lang="de" text="Öffnen oder Lesen der Datei &quot;{3:FileName}&quot; auf &quot;{2:DeviceName}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289138">
+      <Item lang="en" text="Content of Target Identification File &quot;{2:FileName}&quot; is invalid" />
+      <Item lang="de" text="Inhalt des Target Identification Files &quot;{2:FileName}&quot; ist ungültig" />
+    </Group>
+    <Group id="-1064289137">
+      <Item lang="en" text="Update/backup does not match with PLC" />
+      <Item lang="de" text="Update/Backup passt nicht zur Steuerung" />
+    </Group>
+    <Group id="-1064289136">
+      <Item lang="en" text="Project installation failed. Cause:{2:FailureCause}" />
+      <Item lang="de" text="Installation des Projektes fehlgeschlagen. Ursache:{2:FailureCause}" />
+    </Group>
+    <Group id="-1064289131">
+      <Item lang="en" text="Creating backup &quot;{4:Name}&quot; at &quot;{3:DeviceName}&quot; failed. Cause:{2:FailureCause}" />
+      <Item lang="de" text="Erstellen von Backup &quot;{4:Name}&quot; auf &quot;{3:DeviceName}&quot; fehlgeschlagen. Ursache:{2:FailureCause}" />
+    </Group>
+    <Group id="-1064289130">
+      <Item lang="en" text="Creating Target Identification File at &quot;{3:DeviceName}/{2:RelativePath}&quot; failed" />
+      <Item lang="de" text="Erstellen des Target Identification Files auf &quot;{3:DeviceName}/{2:RelativePath}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289129">
+      <Item lang="en" text="Creating Folder &quot;{4:FolderName}&quot; at &quot;{3:DeviceName}/{2:RelativePath}&quot; failed" />
+      <Item lang="de" text="Erstellen des Ordners &quot;{4:FolderName}&quot; auf &quot;{3:DeviceName}/{2:RelativePath}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289125">
+      <Item lang="en" text="Reading project information failed. Cause:{2:FailureCause}" />
+      <Item lang="de" text="Lesen der Projektinformation fehlgeschlagen. Ursache:{2:FailureCause}" />
+    </Group>
+    <Group id="-1064289124">
+      <Item lang="en" text="Reading project information of target system failed. Cause:{2:FailureCause}" />
+      <Item lang="de" text="Lesen der Projektinformation des Zielsystems fehlgeschlagen. Ursache:{2:FailureCause}" />
+    </Group>
+    <Group id="-1064289123">
+      <Item lang="en" text="File device &quot;{2:DeviceName}&quot; is invalid." />
+      <Item lang="de" text="File Device &quot;{2:DeviceName}&quot; ist ungültig." />
+    </Group>
+    <Group id="-1064289122">
+      <Item lang="en" text="Directory &quot;{2:DirectoryName}&quot; is invalid." />
+      <Item lang="de" text="Verzeichnis &quot;{2:DirectoryName}&quot; ist ungültig." />
+    </Group>
+    <Group id="-1064289121">
+      <Item lang="en" text="Directory &quot;{2:DirectoryName}&quot; already exists." />
+      <Item lang="de" text="Verszeichnis &quot;{2:DirectoryName}&quot; existiert bereits." />
+    </Group>
+    <Group id="-1064289120">
+      <Item lang="en" text="Path &quot;{2:Path}&quot; is invalid." />
+      <Item lang="de" text="Pfad &quot;{2:Path}&quot; ist ungültig." />
+    </Group>
+    <Group id="-1064289119">
+      <Item lang="en" text="FileIO function block is not supported on file device &quot;{2:DeviceName}&quot;." />
+      <Item lang="de" text="FileIO Funktionsblock wird auf File Device &quot;{2:DeviceName}&quot; nicht unterstützt." />
+    </Group>
+    <Group id="-1064289118">
+      <Item lang="en" text="The version of Automation Runtime is too low. AR &gt;= F4.34 is required." />
+      <Item lang="de" text="Die aktuelle Automation Runtime Version ist zu niedrig. AR &gt;= F4.34 wird benötigt." />
+    </Group>
+    <Group id="-1064289117">
+      <Item lang="en" text="Specified directory &quot;{3:FolderName}&quot; does not exist on device &quot;{2:DeviceName}&quot;" />
+      <Item lang="de" text="Das angegebene Verzeichnis &quot;{3:FolderName}&quot; existiert auf File Device &quot;{2:DeviceName}&quot; nicht" />
+    </Group>
+    <Group id="-1064289116">
+      <Item lang="en" text="No more handles available" />
+      <Item lang="de" text="Keine Handles mehr vorhanden. Besetzte Handles freigeben" />
+    </Group>
+    <Group id="-1064289115">
+      <Item lang="en" text="Not implemented" />
+      <Item lang="de" text="Funktion nicht implementiert" />
+    </Group>
+    <Group id="-1064289114">
+      <Item lang="en" text="Invalid handle" />
+      <Item lang="de" text="Ungültiger Verzeichnis-Ident" />
+    </Group>
+    <Group id="-1064289113">
+      <Item lang="en" text="Data length specified too small" />
+      <Item lang="de" text="Angegebene Datenlänge ist zu klein" />
+    </Group>
+    <Group id="-1064289112">
+      <Item lang="en" text="Invalid data pointer (NULL) specified" />
+      <Item lang="de" text="Der angegebene Datenpointer ist ungültig (NULL)" />
+    </Group>
+    <Group id="-1064289111">
+      <Item lang="en" text="Opening folder &quot;{3:FolderName}&quot; on &quot;{2:DeviceName}&quot; failed" />
+      <Item lang="de" text="Öffnen des Ordners &quot;{3:FolderName}&quot; auf &quot;{2:DeviceName}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289110">
+      <Item lang="en" text="Reading folder &quot;{3:FolderName}&quot; on &quot;{2:DeviceName}&quot; failed" />
+      <Item lang="de" text="Lesen des Ordners &quot;{3:FolderName}&quot; auf &quot;{2:DeviceName}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289109">
+      <Item lang="en" text="Closing folder &quot;{3:FolderName}&quot; on &quot;{2:DeviceName}&quot; failed" />
+      <Item lang="de" text="Schließen des Ordners &quot;{3:FolderName}&quot; auf &quot;{2:DeviceName}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289108">
+      <Item lang="en" text="Directory contains files which cannot be deleted" />
+      <Item lang="de" text="Der Ordner enthält Dateien, die nicht gelöscht werden können" />
+    </Group>
+    <Group id="-1064289107">
+      <Item lang="en" text="Searching for automatically created backups on &quot;{3:DeviceName}/{2:RelativePath}&quot; failed" />
+      <Item lang="de" text="Suche nach automatisch erzeugten Backups auf &quot;{3:DeviceName}/{2:RelativePath}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064289106">
+      <Item lang="en" text="Deleting old backup &quot;{4:Name}&quot; on &quot;{3:DeviceName}/{2:RelativePath}&quot; failed" />
+      <Item lang="de" text="Löschen des alten Backups &quot;{4:Name}&quot; auf &quot;{3:DeviceName}/{2:RelativePath}&quot; fehlgeschlagen&quot;" />
+    </Group>
+    <Group id="-1064289105">
+      <Item lang="en" text="Cannot determine onboard ethernet device" />
+      <Item lang="de" text="Ethernet Device kann nicht ermittelt werden" />
+    </Group>
+    <Group id="-1064289104">
+      <Item lang="en" text="Cannot determine MAC address of target system. Cause:{2:FailureCause}" />
+      <Item lang="de" text="MAC-Adresse des Zielsystems kann nicht ermittelt werden. Urache:{2:FailureCause}" />
+    </Group>
+    <Group id="-1064289103">
+      <Item lang="en" text="Cannot determine Node Switch number" />
+      <Item lang="de" text="Node Number des Zielsystems kann nicht ermittelt werden" />
+    </Group>
+    <Group id="-1064289102">
+      <Item lang="en" text="Cannot determine hostname of target system. Cause:{2:FailureCause}" />
+      <Item lang="de" text="Hostname des Zielsystems kann nicht ermittelt werden. Ursache:{2:FailureCause}" />
+    </Group>
+    <Group id="-1064289101">
+      <Item lang="en" text="Searching for backups/updates on &quot;{3:DeviceName}/{2:RelativePath}&quot; failed" />
+      <Item lang="de" text="Suchen nach Backups/Updates auf &quot;{3:DeviceName}/{2:RelativePath}&quot; fehlgeschlagen" />
+    </Group>
+    <Group id="-1064169468">
+      <Item lang="en" text="Invalid / Unsupported code-type" />
+      <Item lang="de" text="Ungültiger / nicht unterstützter Code-Typ" />
+    </Group>
+    <Group id="-1064169467">
+      <Item lang="en" text="Program &quot;{2}&quot; is invalid ({1})" />
+      <Item lang="de" text="Programm &quot;{2}&quot; ist ungültig ({1})" />
+    </Group>
+    <Group id="-1064169463">
+      <Item lang="en" text="Error accessing file {2} at {3} ({1})" />
+      <Item lang="de" text="Fehler beim Zugriff auf Datei {2} in {3} ({1})" />
+    </Group>
+    <Group id="-1064169461">
+      <Item lang="en" text="Macro {2} does not exist" />
+      <Item lang="de" text="Makro {2} existiert nicht" />
+    </Group>
+    <Group id="-1064169457">
+      <Item lang="en" text="Error loading {2}({3}) to interpreter" />
+      <Item lang="de" text="Fehler beim Laden von {2}({3}) in den Interpreter" />
+    </Group>
+    <Group id="-1064169453">
+      <Item lang="en" text="Error unloading {2} from interpreter" />
+      <Item lang="de" text="Fehler bei der Deinstallation von {2} aus dem Interpreter" />
+    </Group>
+    <Group id="-1064169452">
+      <Item lang="en" text="Error converting program {2}({3})" />
+      <Item lang="de" text="Fehler beim Umwandeln des Programs {2} ({3})" />
+    </Group>
+    <Group id="-1064299438">
+      <Item lang="en" text="Processvariable {2} does not exist on target" />
+      <Item lang="de" text="Prozessvariable {2} existiert nicht am Zielsystem" />
+    </Group>
+    <Group id="-1064299437">
+      <Item lang="en" text="Variable {2} is not declared" />
+      <Item lang="de" text="Variable {2} ist nicht deklariert" />
+    </Group>
+    <Group id="-1064299435">
+      <Item lang="en" text="Syntax Error: Expected {2}" />
+      <Item lang="de" text="Syntax Fehler: {2} erwartet" />
+    </Group>
+    <Group id="-1064299434">
+      <Item lang="en" text="Invalid node-type" />
+      <Item lang="de" text="Ungültiger Knotentyp" />
+    </Group>
+    <Group id="-1064299433">
+      <Item lang="en" text="Invalid contact-type" />
+      <Item lang="de" text="Ungültiger Kontakttyp" />
+    </Group>
+    <Group id="-1064299432">
+      <Item lang="en" text="Invalid coil-type" />
+      <Item lang="de" text="Ungültiger Spulentyp" />
+    </Group>
+    <Group id="-1064299431">
+      <Item lang="en" text="Invalid variable-scope" />
+      <Item lang="de" text="Ungültiger Variablen-Scope" />
+    </Group>
+    <Group id="-1064299430">
+      <Item lang="en" text="Program-name not found" />
+      <Item lang="de" text="Program-Name nicht gefunden" />
+    </Group>
+    <Group id="-1064299429">
+      <Item lang="en" text="Invalid time-format {2}" />
+      <Item lang="de" text="Ungültiges Zeit-Format {2}" />
+    </Group>
+    <Group id="-1064299428">
+      <Item lang="en" text="Invalid dependency" />
+      <Item lang="de" text="Ungültige Abhängigkeit" />
+    </Group>
+    <Group id="-1064299426">
+      <Item lang="en" text="Entry {2}/{3} is missing in configuration" />
+      <Item lang="de" text="Eintrag {2}/{3} fehlt in der Konfiguration" />
+    </Group>
+    <Group id="-1064299425">
+      <Item lang="en" text="Entry {2}/{3}({4}) is invalid" />
+      <Item lang="de" text="Die Konfiguration der Rolle {2} konnte nicht gespeichert werden" />
+    </Group>
+    <Group id="-1064299424">
+      <Item lang="en" text="Error accessing {3} in configuration {2}" />
+      <Item lang="de" text="Fehler beim Zugriff auf {3} in Konfiguration {2}" />
+    </Group>
+    <Group id="-1064299421">
+      <Item lang="en" text="No sandbox-variable defined" />
+      <Item lang="de" text="Keine Sandbox-Variable definiert" />
+    </Group>
+    <Group id="-1064299420">
+      <Item lang="en" text="Error in macro {2}" />
+      <Item lang="de" text="Fehler in Makro {2}" />
+    </Group>
+    <Group id="-1064299419">
+      <Item lang="en" text="Error creating macro {2} from configuration ({1})" />
+      <Item lang="de" text="Fehler beim Erzeugen des Makros {2} aus der Konfiguration ({1})" />
+    </Group>
+    <Group id="-1064299418">
+      <Item lang="en" text="Error importing macro {2} ({1})" />
+      <Item lang="de" text="Fehler beim Import des Makros {2} ({1})" />
+    </Group>
+    <Group id="-1064299417">
+      <Item lang="en" text="Error deleting program {2} ({1})" />
+      <Item lang="de" text="Fehler beim Löschen des Programms {2} ({1})" />
+    </Group>
+    <Group id="-1064299416">
+      <Item lang="en" text="Error exporting program {2} ({1})" />
+      <Item lang="de" text="Fehler beim Export des Programms {2} ({1})" />
+    </Group>
+    <Group id="-1064299415">
+      <Item lang="en" text="Error initializing program manager ({1})" />
+      <Item lang="de" text="Fehler beim Initialisieren des Programm-Managers ({1})" />
+    </Group>
+    <Group id="-1064299414">
+      <Item lang="en" text="Error saving program {2} ({1})" />
+      <Item lang="de" text="Fehler beim Speichern des Programms {2} ({1})" />
+    </Group>
+    <Group id="-1064299413">
+      <Item lang="en" text="Error creating file {2} at {3} ({1})" />
+      <Item lang="de" text="Fehler beim Erzeugen der Datei {2} in {3} ({1})" />
+    </Group>
+    <Group id="-1064299411">
+      <Item lang="en" text="Unexpected end of program" />
+      <Item lang="de" text="Unerwartetes Programm-Ende" />
+    </Group>
+    <Group id="-1064299410">
+      <Item lang="en" text="Error in program code (Line: {2})" />
+      <Item lang="de" text="Fehler in Programm-Code (Zeile: {2})" />
+    </Group>
+    <Group id="-1064299409">
+      <Item lang="en" text="Invalid node-index" />
+      <Item lang="de" text="Ungültiger Knoten-Index" />
+    </Group>
+    <Group id="-1064299408">
+      <Item lang="en" text="Interpreter-Error({2}): {3} - {4} (Line: {5}, Column: {6})" />
+      <Item lang="de" text="Interpreter-Fehler({2}): {3} - {4} (Zeile: {5}, Spalte: {6})" />
+    </Group>
+    <Group id="1083184242">
+      <Item lang="en" text="Cyclic code execution locked ({2})" />
+      <Item lang="de" text="Zyklische Code-Ausfürhung gesperrt ({2})" />
+    </Group>
+    <Group id="-1064169450">
+      <Item lang="en" text="Interpreter-Command ('{2}') failed: {3} {4}" />
+      <Item lang="de" text="Interpreter-Kommando ('{2}') fehlgeschlagen: {3} {4}" />
+    </Group>
+    <Group id="-2138041232">
+      <Item lang="en" text="Interpreter-Warning({2}): {3} - {4} (Line: {5}, Column: {6})" />
+      <Item lang="de" text="Interpreter-Warnung({2}): {3} - {4} (Zeile: {5}, Spalte: {6})" />
+    </Group>
+    <Group id="-1064169472">
+      <Item lang="en" text="Program &quot;{2}&quot; already exists" />
+      <Item lang="de" text="Programm &quot;{2}&quot; existiert bereits" />
+    </Group>
+    <Group id="-1064238847">
+      <Item lang="en" text="Error handling file {2} at {3} (ErrorCause: {1})" />
+      <Item lang="de" text="Bearbeiten der Datei {2} bei {3} fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064238848">
+      <Item lang="en" text="Linking {2} to {3} not possible (ErrorCause: {1})" />
+      <Item lang="de" text="Verbinden von {2} zu {3} nicht möglich (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064303130">
+      <Item lang="en" text="Error accessing directory {3} at {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Es konnte nicht auf das Verzeichnis {3} unter {2} zugegriffen werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064303119">
+      <Item lang="en" text="Section {3} within Configuration {2} was not found" />
+      <Item lang="de" text="Die Sektion {3} in der Konfiguration {2} konnte nicht gefunden werden" />
+    </Group>
+    <Group id="-1064303049">
+      <Item lang="en" text="Type-entry for property {2} not correct" />
+      <Item lang="de" text="Eintragstyp für Eigenschaft {2} ungültig" />
+    </Group>
+    <Group id="-1064303048">
+      <Item lang="en" text="Invalid node ({2}) in import data - skipped" />
+      <Item lang="de" text="Ungültiger Knoten ({2}) in der importierten Datei - übersprungen" />
+    </Group>
+    <Group id="-1064303039">
+      <Item lang="en" text="Failed to find Logger FB-instance (ErrorCause: {1})" />
+      <Item lang="de" text="Finden der Logger FB-Instanz fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064238841">
+      <Item lang="en" text="Error in the filter string: {2}" />
+      <Item lang="de" text="Falsche Konfiguration des Filter String: {2}" />
+    </Group>
+    <Group id="-1064303050">
+      <Item lang="en" text="Entry for config-property not complete" />
+      <Item lang="de" text="Eintrag für Konfigurationseigenschaft nicht vollständig" />
+    </Group>
+    <Group id="-1064167424">
+      <Item lang="en" text="SQL server error (ErrorNumber: {2:ErrorNumber})" />
+      <Item lang="de" text="SQL Server Fehler (Fehlernummer: {2:ErrorNumber})" />
+    </Group>
+    <Group id="-1064167423">
+      <Item lang="en" text="HTTP server error (ErrorNumber: {2:ErrorNumber})" />
+      <Item lang="de" text="HTTP Server Fehler (Fehlernummer: {2:ErrorNumber})" />
+    </Group>
+    <Group id="-1064167422">
+      <Item lang="en" text="Query &quot;{2:QueryName}&quot; is not configured" />
+      <Item lang="de" text="Abfrage &quot;{2:QueryName}&quot; wurde nicht konfiguriert" />
+    </Group>
+    <Group id="-1064167421">
+      <Item lang="en" text="Query &quot;{2:QueryName}&quot; cannot be added because it already exists" />
+      <Item lang="de" text="Abrage &quot;{2:QueryName} kann nicht hinzugefügt werden, da diese bereits existiert" />
+    </Group>
+    <Group id="1083316228">
+      <Item lang="en" text="There is either no data in response or all data has been copied to PVs" />
+      <Item lang="de" text="Es sind keine weiteren Daten verfügbar oder alle Daten wurden bereits in die PVs kopiert" />
+    </Group>
+    <Group id="-1064167419">
+      <Item lang="en" text="Data type &quot;{2:TypeName}&quot; is not supported" />
+      <Item lang="de" text="Der Datentyp &quot;{2:TypeName}&quot; wird nicht unterstützt" />
+    </Group>
+    <Group id="1083316230">
+      <Item lang="en" text="Waiting for parent component" />
+      <Item lang="de" text="Warten auf die Kernkomponente" />
+    </Group>
+    <Group id="-2137909241">
+      <Item lang="en" text="When interpreting SQL result, PV &quot;{2:PvName}&quot; was written with a warning {3:ErrorNumber}" />
+      <Item lang="de" text="Beim Interpretieren des SQL Ergebnisses hat die PV &quot;{2:PvName}&quot; eine Warnung ausgelöst {3:ErrorNumber}" />
+    </Group>
+    <Group id="-1064167416">
+      <Item lang="en" text="Error when interpreting SQL result, error number: &quot;{2:ErrorNumber}&quot;" />
+      <Item lang="de" text="Fehler beim interpretieren des SQL Ergebnisses, Fehlernummer: &quot;{2:ErrorNumber}&quot;" />
+    </Group>
+    <Group id="-1064167415">
+      <Item lang="en" text="Query &quot;{2:QueryName}&quot; can only be executed from a widget&quot;" />
+      <Item lang="de" text="Die Abfrage &quot;{2: QueryName}&quot; kann nur von einem Widget ausgeführt werden.&quot;" />
+    </Group>
+    <Group id="-1064289640">
+      <Item lang="en" text="Not connected to sql server" />
+      <Item lang="de" text="Keine Verbindung zum SQL Server" />
+    </Group>
+    <Group id="-1064289639">
+      <Item lang="en" text="Http request format invalid" />
+      <Item lang="de" text="Http Abfrage ist ungültig" />
+    </Group>
+    <Group id="-1064289638">
+      <Item lang="en" text="Http response format invalid" />
+      <Item lang="de" text="Http Antwort ist ungültig" />
+    </Group>
+    <Group id="-1064289637">
+      <Item lang="en" text="SQL server reported error {2:ErrorNumber} with an error message {3:ErrorMessage}" />
+      <Item lang="de" text="SQL Server meldet den Fehler {2:ErrorNumber} mit der Fehlernachricht {3:ErrorMessage}" />
+    </Group>
+    <Group id="-1064289636">
+      <Item lang="en" text="PV name &quot;{2:PvName}&quot; already exists in this query" />
+      <Item lang="de" text="Der PV Name &quot;{2:PvName}&quot; existiert bereits in dieser Abfrage" />
+    </Group>
+    <Group id="1083194013">
+      <Item lang="en" text="Values have been copied from response to PVs, but there are more values left" />
+      <Item lang="de" text="Es wurden bereits Werte in die PVs kopiert, es sind aber noch weitere Werte vorhanden" />
+    </Group>
+    <Group id="-2138031458">
+      <Item lang="en" text=" Could not locate a PV with name &quot;{2:PVName}&quot; (Error cause: {3:ErrorNumber})" />
+      <Item lang="de" text=" Die PV &quot;{2:PVName}&quot; konnte nicht lokalisiert werden. (Fehlerursache: {3:ErrorNumber})" />
+    </Group>
+    <Group id="-2138031457">
+      <Item lang="en" text=" Value from database that is out of IEC limits for the datatype" />
+      <Item lang="de" text=" Erhaltener Wert der Datenbank ist außerhalb der IEC Limits für den Datentypen" />
+    </Group>
+    <Group id="-2138031456">
+      <Item lang="en" text=" Value from database contained NULL (invalid) value" />
+      <Item lang="de" text=" Erhaltener Wert von Datenbank enthält NULL (ungültiger) Wert" />
+    </Group>
+    <Group id="-2138031455">
+      <Item lang="en" text=" Mismatch between number of columns in response and mapped PV(s) for this query usign flexible mapping" />
+      <Item lang="de" text=" Abweichung zwischen der Anzahl der Spalten in der Datenbank und der gemappten PVs der Abfrage" />
+    </Group>
+    <Group id="-1064289631">
+      <Item lang="en" text=" Mismatch between number of columns in response and mapped PV(s) for this query" />
+      <Item lang="de" text=" Abweichung zwischen der Anzahl der Spalten in der Datenbank und der gemappten PVs der Abfrage" />
+    </Group>
+    <Group id="-1064289627">
+      <Item lang="en" text=" The time &quot;{2:Time}&quot; used to update/insert on the database is not valid" />
+      <Item lang="de" text=" Die Zeit &quot;{2:Time}&quot;, die zum Aktualisieren/Einfügen in die Datenbank verwendet wird, ist nicht gültig" />
+    </Group>
+    <Group id="-1064289626">
+      <Item lang="en" text=" Cannot create query without table name" />
+      <Item lang="de" text=" Abfrage kann nicht ohne Tabellennamen erstellt werden" />
+    </Group>
+    <Group id="-1064289625">
+      <Item lang="en" text="Version mismatch: MpDatabase &quot;{2:LibraryVersion}&quot; is not compatible with mappDatabaseConnector &quot;{3:ConnectorVersion}&quot; (compatible Versions: &quot;{4:minVersion}&quot; - &quot;{5:maxVersion}&quot;)" />
+      <Item lang="de" text="Versionskonflikt: MpDatabase &quot;{2: LibraryVersion}&quot; ist nicht kompatibel mit mappDatabaseConnector &quot;{3: ConnectorVersion}&quot; (kompatible Versionen: &quot;{4: minVersion}&quot; - &quot;{5: maxVersion}&quot;)" />
+    </Group>
+    <Group id="-1064289624">
+      <Item lang="en" text="Unable to connect to mappDatabaseConnector" />
+      <Item lang="de" text="Verbindung zu mappDatabaseConnector nicht möglich" />
+    </Group>
+    <Group id="-2137909238">
+      <Item lang="en" text="The size of the PVs in query &quot;{2:QueryName}&quot; differs between PVs" />
+      <Item lang="de" text="Die Größe der PVs in der Abfrage &quot;{2: QueryName}&quot; unterscheidet sich zwischen den PVs &quot;{2: QueryName}&quot; unterscheidet sich zwischen den PVs" />
+    </Group>
+    <Group id="-2137909237">
+      <Item lang="en" text="Command &quot;{2:Command}&quot; not allowed" />
+      <Item lang="de" text="Kommand &quot;{2:Command}&quot; nicht erlaubt" />
+    </Group>
+    <Group id="-1064124416">
+      <Item lang="en" text="Could not registered PV {2}" />
+      <Item lang="de" text="PV {2} konnte nicht registriert werden" />
+    </Group>
+    <Group id="-1064124415">
+      <Item lang="en" text="No PV registered" />
+      <Item lang="de" text="Keine PV registriert" />
+    </Group>
+    <Group id="-1064124414">
+      <Item lang="en" text="Invalid PV name" />
+      <Item lang="de" text="Ungültiger PV Name" />
+    </Group>
+    <Group id="-1064124413">
+      <Item lang="en" text="PV name null" />
+      <Item lang="de" text="PV Name ist NULL" />
+    </Group>
+    <Group id="-1064124412">
+      <Item lang="en" text="PV already registered" />
+      <Item lang="de" text="Angegebene PV wurde bereits registriert" />
+    </Group>
+    <Group id="-1064124411">
+      <Item lang="en" text="Save failure (ErrorCause:  {1})" />
+      <Item lang="de" text="Speichern fehlgeschlagen (Fehlerursache:  {1})" />
+    </Group>
+    <Group id="-2137866234">
+      <Item lang="en" text="Sampling time set as cycle time {2}" />
+      <Item lang="de" text="Die Abtastrate wurde auf die Zykluszeit {2} gesetzt" />
+    </Group>
+    <Group id="-1064124409">
+      <Item lang="en" text="Invalid file device (data storage medium)" />
+      <Item lang="de" text="Ungültiges Speichermedium" />
+    </Group>
+    <Group id="-1064124408">
+      <Item lang="en" text="MpDataRecorder not found" />
+      <Item lang="de" text="MpDataRecorder wurde nicht gefunden" />
+    </Group>
+    <Group id="-2137866231">
+      <Item lang="en" text="Invalid save interval. Save interval set to {2} seconds" />
+      <Item lang="de" text="Ungültiges Speicherintervall. Speicherintervall wurde auf {2} Sekunden gesetzt" />
+    </Group>
+    <Group id="-1064124406">
+      <Item lang="en" text="Recording error (ErrorCause:  {1})" />
+      <Item lang="de" text="Fehler beim Aufzeichnen(Fehlerursache:  {1})" />
+    </Group>
+    <Group id="-2137866229">
+      <Item lang="en" text="Sampling time is not a multiple of task cycle time" />
+      <Item lang="de" text="Abtastrate ist kein vielfaches der Zykluszeit" />
+    </Group>
+    <Group id="1083359244">
+      <Item lang="en" text="Waiting for parent component" />
+      <Item lang="de" text="Warten auf Hauptkomponente" />
+    </Group>
+    <Group id="-1064124403">
+      <Item lang="en" text="Missing value on UIConnect" />
+      <Item lang="de" text="Kein Wert an UIConnect" />
+    </Group>
+    <Group id="-2137866226">
+      <Item lang="en" text="Too many file names in a file ring buffer. Only last {2:NumberOfFiles} will be remembered after PLC restart" />
+      <Item lang="de" text="Es sind zu viele Dateien im Zwischenspeicher. Nur die letzten {2:NumberOfFiles} werden nach einem Neustart der CPU gespeichert" />
+    </Group>
+    <Group id="-1064124399">
+      <Item lang="en" text="Limits were not specified correctly" />
+      <Item lang="de" text="Die angegebenen Limits einer Variable sind nicht korrekt" />
+    </Group>
+    <Group id="9440584">
+      <Item lang="en" text="Existing dataobject was found" />
+      <Item lang="de" text="Ein bereits bestehendes Datenobjekt wurde gefunden" />
+    </Group>
+    <Group id="-1064301239">
+      <Item lang="en" text="Error in accessing memory" />
+      <Item lang="de" text="Zugriff auf Speicher fehlgeschlagen" />
+    </Group>
+    <Group id="-1064301238">
+      <Item lang="en" text="Specified file name pattern is not supported" />
+      <Item lang="de" text="Der angegebene Dateiendung wird nicht unterstüzt" />
+    </Group>
+    <Group id="9440587">
+      <Item lang="en" text="No existing dataobject was found" />
+      <Item lang="de" text="Kein vorhandenes Datenobjekt gefunden" />
+    </Group>
+    <Group id="-1064301236">
+      <Item lang="en" text="Existing dataobject was found but is corrupt" />
+      <Item lang="de" text="Fehlerhaftes Datenobjekt gefunden" />
+    </Group>
+    <Group id="-1064301235">
+      <Item lang="en" text="Pv type not supported" />
+      <Item lang="de" text="PV Typ wird nicht unterstüzt" />
+    </Group>
+    <Group id="-1064301234">
+      <Item lang="en" text="Not possible to save with current parameters" />
+      <Item lang="de" text="Speichern mit aktuellen Parametern nicht möglich" />
+    </Group>
+    <Group id="1083182415">
+      <Item lang="en" text="Existing dataobject was found" />
+      <Item lang="de" text="Vorhandenes Datenobjekt wurde gefunden" />
+    </Group>
+    <Group id="-1064301232">
+      <Item lang="en" text="Could not allocate memory (ErrorCause:  {1})" />
+      <Item lang="de" text="Der benötigte Speicher konnte nicht reserviert werden (Fehlerursache:  {1})" />
+    </Group>
+    <Group id="-1064301231">
+      <Item lang="en" text="Filename generation from pattern failed" />
+      <Item lang="de" text="Erstellung der Datei nicht möglich" />
+    </Group>
+    <Group id="-1064301230">
+      <Item lang="en" text="Pdf functionality is not available (MpReport library missing)" />
+      <Item lang="de" text="Pdf Funktionalität ist nicht verfügbar (Bibliothek MpReport fehlt)" />
+    </Group>
+    <Group id="1083182419">
+      <Item lang="en" text="Buffer size &gt;1000kB has no effect" />
+      <Item lang="de" text="Buffergröße &gt;1000kB hat keinen Effekt" />
+    </Group>
+    <Group id="1083330560">
+      <Item lang="en" text="Waiting for parent component" />
+      <Item lang="de" text="Warten auf Hauptkomponente" />
+    </Group>
+    <Group id="-1064153087">
+      <Item lang="en" text="File-system related error (ErrorCause:  {1})" />
+      <Item lang="de" text="Das Speichern der aufgenommenen Daten ist fehlgeschlagen (Fehlerursache:  {1})" />
+    </Group>
+    <Group id="-1064153086">
+      <Item lang="en" text="Invalid file device " />
+      <Item lang="de" text="Ungültiges Speichermedium " />
+    </Group>
+    <Group id="-2137894909">
+      <Item lang="en" text="Given value is out of range for {2}" />
+      <Item lang="de" text="Der angegebene Wert ist außerhalb des gültigen Limits für {2}" />
+    </Group>
+    <Group id="-1064153084">
+      <Item lang="en" text="Invalid module name {2}" />
+      <Item lang="de" text="Ungültiger Modulname {2}" />
+    </Group>
+    <Group id="-1064153083">
+      <Item lang="en" text="Module with name {2:ModuleName} already registered" />
+      <Item lang="de" text="Das Modul mit dem Namen {2:ModuleName} wurde bereits registriert " />
+    </Group>
+    <Group id="-1064153082">
+      <Item lang="en" text="Could not allocate memory (ErrorCause:  {1})" />
+      <Item lang="de" text="Der benötigte Speicher konnte nicht reserviert werden (Fehlerursache:  {1})" />
+    </Group>
+    <Group id="-1064153081">
+      <Item lang="en" text="Invalid value for &quot;UIConnect&quot;" />
+      <Item lang="de" text="Ungültiger Wert für &quot;UIConnect&quot;" />
+    </Group>
+    <Group id="-1064153080">
+      <Item lang="en" text="The allocated memory for registering the module: {2:ModuleName} is no longer sufficient" />
+      <Item lang="de" text="Der allokierte Speicher zum Registrieren des Moduls: {2:ModuleName} reicht nicht mehr aus" />
+    </Group>
+    <Group id="-1064165376">
+      <Item lang="en" text="Missing value on UIConnect" />
+      <Item lang="de" text="An UIConnect wurde NULL angehängt" />
+    </Group>
+    <Group id="-1064165375">
+      <Item lang="en" text="Command {2} not allowed" />
+      <Item lang="de" text="Kommando {2} nicht erlaubt" />
+    </Group>
+    <Group id="-1064165374">
+      <Item lang="en" text="No element to paste" />
+      <Item lang="de" text="Es wurde kein Element ausgewählt, das eingefügt werden könnte" />
+    </Group>
+    <Group id="1064165373">
+      <Item lang="en" text="Nothing selected" />
+      <Item lang="de" text="Es wurde nichts ausgewählt für eine Operation" />
+    </Group>
+    <Group id="-1064165372">
+      <Item lang="en" text="Folder {2} already exists in {3} " />
+      <Item lang="de" text="Der Ordner {2} existiert bereits in {3}" />
+    </Group>
+    <Group id="-1064165371">
+      <Item lang="en" text="Invalid file device {2}" />
+      <Item lang="de" text="Ungültiges Speichermedium {2}" />
+    </Group>
+    <Group id="-1064165370">
+      <Item lang="en" text="New name not entered" />
+      <Item lang="de" text="Es wurde kein neuer Name eingegeben" />
+    </Group>
+    <Group id="-1064165369">
+      <Item lang="en" text="Invaild name (ErrorCause: {1})" />
+      <Item lang="de" text="Ungültiger Name (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064165368">
+      <Item lang="en" text="Paste not allowed (ErrorCause: {1})" />
+      <Item lang="de" text="In diesem Pfad ist das Einfügen nicht erlaubt (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064165367">
+      <Item lang="en" text="General error from file system (ErrorCause: {1})" />
+      <Item lang="de" text="Allgemeiner Fehler im Filesystem (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064165358">
+      <Item lang="en" text="User {2} has insufficient rights to access {3}" />
+      <Item lang="de" text="Anwender {2} hat unzureichende Zugriffsrechte auf {3}" />
+    </Group>
+    <Group id="-1064165357">
+      <Item lang="en" text="User {2} tried to access locked item {3} (locked by user {4}, since {5})" />
+      <Item lang="de" text="Anwender {2} versuchte auf gesperrtes Element {3} zuzugreifen (gesperrt von Anwender {4}, seit {5})" />
+    </Group>
+    <Group id="-1064165356">
+      <Item lang="en" text="Item {3} could not be copied to {4} (ErrorCause: {2})" />
+      <Item lang="de" text="Element {3} konnte nicht nach {4} kopiert werden (FehlerUrsache: {2})" />
+    </Group>
+    <Group id="-1064165355">
+      <Item lang="en" text="Item {3} could not be deleted (ErrorCause: {2})" />
+      <Item lang="de" text="Element {3} konnte nicht gelöscht werden (FehlerUrsache: {2})" />
+    </Group>
+    <Group id="-1064165354">
+      <Item lang="en" text="Invalid path-string {2} given" />
+      <Item lang="de" text="Ungültige Pfad-Angabe {2}" />
+    </Group>
+    <Group id="-1064165352">
+      <Item lang="en" text="Item {3} could not be renamed to {4} (ErorrCause: {2})" />
+      <Item lang="de" text="Element {3} konnte nicht auf {4} umbenannt werden (Fehlerursache: {2})" />
+    </Group>
+    <Group id="-1064165351">
+      <Item lang="en" text="Item {3} could not be created (ErrorCause: {2})" />
+      <Item lang="de" text="Element {3} konnte nicht erzeugt werden (Fehlerursache: {2})" />
+    </Group>
+    <Group id="-1064165350">
+      <Item lang="en" text="Item {3} could not be read (ErrorCause: {2})" />
+      <Item lang="de" text="Element {3} konnte nicht gelesen werden (Fehlerursache: {2})" />
+    </Group>
+    <Group id="-1064165349">
+      <Item lang="en" text="Item {3} could not be written to (ErrorCause: {2})" />
+      <Item lang="de" text="Konnte nicht auf Element {3} schreiben (Fehlerursache: {2})" />
+    </Group>
+    <Group id="-1064120317">
+      <Item lang="en" text="Error activating imported data" />
+      <Item lang="de" text="Fehler beim Aktiviern der importierten Daten" />
+    </Group>
+    <Group id="-1064120318">
+      <Item lang="en" text="Error building import-data" />
+      <Item lang="de" text="Fehler beim Erzeugen der Import-Daten" />
+    </Group>
+    <Group id="-1064120312">
+      <Item lang="en" text="Import is not possible as it is locked by the application" />
+      <Item lang="de" text="Import nicht möglich da dieser von der Applikation gesperrt ist" />
+    </Group>
+    <Group id="-1064120316">
+      <Item lang="en" text="Error creating backup (ErrorCause: {1})" />
+      <Item lang="de" text="Fehler beim Erstellen des Backups (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064293140">
+      <Item lang="en" text="Main import file (.ar/.xml) was not found" />
+      <Item lang="de" text="Haupt-Import-Datei (.ar/.xml) wurde nicht gefunden" />
+    </Group>
+    <Group id="-1064293139">
+      <Item lang="en" text="Error reading/accessing file {2} at {3} (ErrorCause: {1})" />
+      <Item lang="de" text="Fehler beim Zugriff auf die Datei {2} in {3} (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064293138">
+      <Item lang="en" text="Error parsing file {3}/{2}: {4} (at {5})" />
+      <Item lang="de" text="Fehler beim Parsen der Datei {3}/{2}: {4} (in {5})" />
+    </Group>
+    <Group id="-1064293137">
+      <Item lang="en" text="AR-module {2} was not found" />
+      <Item lang="de" text="AR-Modul {2} wurde nicht gefunden" />
+    </Group>
+    <Group id="-1064293136">
+      <Item lang="en" text="Attribute ID missing for module (at {2})" />
+      <Item lang="de" text="Attribut ID fehlt in Modul (in {2})" />
+    </Group>
+    <Group id="-1064293135">
+      <Item lang="en" text="Given Source {2} is not valid ({3} at {4})" />
+      <Item lang="de" text="Angegebende Quelle {2} ist nicht gültig ({3} in {4})" />
+    </Group>
+    <Group id="-1064293134">
+      <Item lang="en" text="Module {2} was not found in source {3}" />
+      <Item lang="de" text="Modul {2} wurde nicht in Quelle {3} gefunden" />
+    </Group>
+    <Group id="-1064293133">
+      <Item lang="en" text="Module-ID of {2} missing for source" />
+      <Item lang="de" text="Modul-ID von {2} fehlt für Quelle" />
+    </Group>
+    <Group id="-1064293132">
+      <Item lang="en" text="Module {2} already exists" />
+      <Item lang="de" text="Modul {2} existiert bereits" />
+    </Group>
+    <Group id="-1064293131">
+      <Item lang="en" text="Error linking module {3} from source {4} (for {2})" />
+      <Item lang="de" text="Fehler beim Verbinden des Moduls {3} aus Quelle {4} (für {2})" />
+    </Group>
+    <Group id="-1064293130">
+      <Item lang="en" text="Imported data is conflicting with master or source {{2}/{3}/{4}) (immutable properties overwritten)" />
+      <Item lang="de" text="Importierte Daten nicht kompatibel mit Master oder Quelle {{2}/{3}/{4}) (Konstante Properties überschrieben)" />
+    </Group>
+    <Group id="-1064293129">
+      <Item lang="en" text="IO-mapping for {2} is missing in master / source" />
+      <Item lang="de" text="IO-mapping für {2} fehlt in Master / Quelle" />
+    </Group>
+    <Group id="-1064293128">
+      <Item lang="en" text="XML-File {3}/{2} has invalid format (nodes missing)" />
+      <Item lang="de" text="XML-Datei {3}/{2} hat ungültiges Format (Einträge fehlen)" />
+    </Group>
+    <Group id="-1064293127">
+      <Item lang="en" text="The PV-type {3} of PV {2} in the import file is not known" />
+      <Item lang="de" text="Der Daten-Type {3} der PV {2} in der Import-Datei ist unbekannt" />
+    </Group>
+    <Group id="-1064293126">
+      <Item lang="en" text="The data-type {3} of the PV {2} and the mapped IO ({4}) do not match" />
+      <Item lang="de" text="Der Daten-Type {3} der PV {2} und des IO-Knotens ({4}) stimmen nicht überein" />
+    </Group>
+    <Group id="-1064293125">
+      <Item lang="en" text="The PV {2} is missing" />
+      <Item lang="de" text="Die PV {2} wurde nicht gefunden" />
+    </Group>
+    <Group id="-1064293124">
+      <Item lang="en" text="The PV {2} does not match the filter" />
+      <Item lang="de" text="Die PV {2} stimmt nicht mit den Filter-Kriterien überein" />
+    </Group>
+    <Group id="-1064293123">
+      <Item lang="en" text="A link-node {2} is not well defined (ErrorCause: {1})" />
+      <Item lang="de" text="Ein Link-Node {2} ist nicht richtig definiert(Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064293122">
+      <Item lang="en" text="Failed to copy import file {2} to CF (ErrorCause: {1})" />
+      <Item lang="de" text="Kopieren der Import-Datei {2} auf die CF ist fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064293121">
+      <Item lang="en" text="System module not valid (not existing)" />
+      <Item lang="de" text="System-Module ist ungültig (nicht vorhanden)" />
+    </Group>
+    <Group id="-1064293120">
+      <Item lang="en" text="PV {2} mapped multiple times" />
+      <Item lang="de" text="PV {2} mehrfach verbunden" />
+    </Group>
+    <Group id="-1064293119">
+      <Item lang="en" text="Error when changing configuraion ({2}) (ErrorCause: {1})" />
+      <Item lang="de" text="Fehler beim ändern der Konfiguration ({2}) (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064293118">
+      <Item lang="en" text="The imported data contains unresolved cross-links" />
+      <Item lang="de" text="Die importierten Daten enthalten nich aufgelöste Querverbindungen" />
+    </Group>
+    <Group id="-1064293116">
+      <Item lang="en" text="A NC-mapping entry contains a invalid ax-reference ({2})" />
+      <Item lang="de" text="Ein NC-Tabelle enthält eine ungültige Achs-Referenz ({2})" />
+    </Group>
+    <Group id="-1064293115">
+      <Item lang="en" text="Module {2} is connected to invalid or missing interface" />
+      <Item lang="de" text="Modul {2} ist einem ungültigen oder fehlende Interface zugeordnet" />
+    </Group>
+    <Group id="-1064293114">
+      <Item lang="en" text="NC-deployment for channel {2} is missing in master / source" />
+      <Item lang="de" text="NC-deployment für Kanal {2} fehlt in Master / Quelle" />
+    </Group>
+    <Group id="-1064293113">
+      <Item lang="en" text="Error copying import-data for module {2}" />
+      <Item lang="de" text="Fehler beim Kopieren der Import-Daten für Modul {2}" />
+    </Group>
+    <Group id="-1064293112">
+      <Item lang="en" text="Invalid mode defined for {2}" />
+      <Item lang="de" text="Ungültiger Modus für {2}" />
+    </Group>
+    <Group id="-1064293111">
+      <Item lang="en" text="Additional node {2} in import-file" />
+      <Item lang="de" text="Zusätzlicher Knoten {2} in Import-Datei" />
+    </Group>
+    <Group id="-1064293110">
+      <Item lang="en" text="IO-mapping {2} already exists" />
+      <Item lang="de" text="IO-mapping {2} existiert bereits" />
+    </Group>
+    <Group id="-1064293109">
+      <Item lang="en" text="IO-mapping definition {2} not valid" />
+      <Item lang="de" text="IO-mapping Definition {2} fehlerhaft" />
+    </Group>
+    <Group id="-1064293108">
+      <Item lang="en" text="Invalid data-type ({2}) for IO-mapping" />
+      <Item lang="de" text="Ungültiger Daten-Type ({2}) für IO-mapping" />
+    </Group>
+    <Group id="-1064171520">
+      <Item lang="de" text="Wert außerhalb des zulässigen Bereichs" />
+      <Item lang="en" text="Value out of boundaries" />
+    </Group>
+    <Group id="-1064171519">
+      <Item lang="de" text="Fehler beim Öffnen der CAN Schnittstelle" />
+      <Item lang="en" text="Error when trying to open the CAN interface" />
+    </Group>
+    <Group id="-1064171518">
+      <Item lang="de" text="Die Komponente kann in Simulation nicht betrieben werden" />
+      <Item lang="en" text="The component cannot run in a simulated runtime" />
+    </Group>
+    <Group id="-1064171517">
+      <Item lang="de" text="J1939 Kommunikation fehlgeschlagen" />
+      <Item lang="en" text="J1939 communication failed" />
+    </Group>
+    <Group id="-1064171516">
+      <Item lang="de" text="Zeiger auf den Datenpuffer ist null" />
+      <Item lang="en" text="Pointer to data buffer is null" />
+    </Group>
+    <Group id="-1064290640">
+      <Item lang="de" text="Interner J1939 Fehler" />
+      <Item lang="en" text="Internal J1939 error" />
+    </Group>
+    <Group id="-1064290639">
+      <Item lang="de" text="Kein CAN sender handle übergeben" />
+      <Item lang="en" text="No CAN sender handle provided" />
+    </Group>
+    <Group id="-1064290638">
+      <Item lang="de" text="Kein CAN device handle übergeben" />
+      <Item lang="en" text="No CAN device handle provided" />
+    </Group>
+    <Group id="-1064290637">
+      <Item lang="de" text="Priorität außerhalb des gültigen Bereichs (PGN: {2})" />
+      <Item lang="en" text="Priority out of valid range (PGN: {2})" />
+    </Group>
+    <Group id="-1064290636">
+      <Item lang="de" text="Datenlänge außerhalb des gültigen Bereichs (PGN: {2})" />
+      <Item lang="en" text="Data length code out of valid range (PGN: {2})" />
+    </Group>
+    <Group id="-1064290635">
+      <Item lang="de" text="PGN außerhalb des gültigen Bereichs (PGN: {2})" />
+      <Item lang="en" text="PGN out of valid range (PGN: {2})" />
+    </Group>
+    <Group id="-1064290634">
+      <Item lang="de" text="Datenzeiger leer (PGN: {2})" />
+      <Item lang="en" text="Data pointer empty (PGN: {2})" />
+    </Group>
+    <Group id="9451191">
+      <Item lang="de" text="Senden erfolgreich (PGN: {2})" />
+      <Item lang="en" text="Transmit successful (PGN: {2})" />
+    </Group>
+    <Group id="-1064290632">
+      <Item lang="de" text="Senden fehlgeschlagen (PGN: {2})" />
+      <Item lang="en" text="Transmit failed (PGN: {2})" />
+    </Group>
+    <Group id="-1064290631">
+      <Item lang="de" text="Kein CAN device handle übergeben" />
+      <Item lang="en" text="No CAN receiver handle provided" />
+    </Group>
+    <Group id="-1064290630">
+      <Item lang="de" text="Kein Daten Info Zeiger (PGN: {2})" />
+      <Item lang="en" text="No data info pointer (PGN: {2})" />
+    </Group>
+    <Group id="1083193019">
+      <Item lang="de" text="Keine neuen Empfangsdaten seit dem letzten Aufruf" />
+      <Item lang="en" text="No new receive data since last call" />
+    </Group>
+    <Group id="1083193020">
+      <Item lang="de" text="Neue Empfangsdaten seit dem letzten Aufruf" />
+      <Item lang="en" text="New receive data since last call" />
+    </Group>
+    <Group id="-1064290627">
+      <Item lang="de" text="Empfangen fehlgeschlagen (PGN: {2})" />
+      <Item lang="en" text="Receive failed (PGN: {2})" />
+    </Group>
+    <Group id="-1064290626">
+      <Item lang="de" text="Zeitüberschreitung beim Senden (multi-frame, PGN: {2})" />
+      <Item lang="en" text="Transmit process timed out (multi frame, PGN: {2})" />
+    </Group>
+    <Group id="-1064290625">
+      <Item lang="de" text="Zeitüberschreitung beim Empfangen (multi-frame, PGN: {2})" />
+      <Item lang="en" text="Receive process timed out (multi frame, PGN: {2})" />
+    </Group>
+    <Group id="-1064290624">
+      <Item lang="de" text="Zieladresse außerhalb des gültigen Bereichs (PGN: {2})" />
+      <Item lang="en" text="Destination address is out of range (PGN: {2})" />
+    </Group>
+    <Group id="-1064290623">
+      <Item lang="de" text="Empfangen abgebrochen (PGN: {2})" />
+      <Item lang="en" text="Receive process aborted (multi frame, PGN: {2})" />
+    </Group>
+    <Group id="-1064290622">
+      <Item lang="de" text="Specific request fehlgeschlagen (gewünschte PGN {2} wird vom Gerät nicht unterstützt)" />
+      <Item lang="en" text="Specific request failed (requested PGN {2} not supported by device)" />
+    </Group>
+    <Group id="-1064290621">
+      <Item lang="de" text="Leerer Pfad zur CAN Schnittstelle" />
+      <Item lang="en" text="Empty path to CAN Interface" />
+    </Group>
+    <Group id="-1064290620">
+      <Item lang="de" text="Ungültiges PV mapping für PGN (PGN: {2})" />
+      <Item lang="en" text="Invalid PV Mapping provided for PGN (PGN: {2})" />
+    </Group>
+    <Group id="-1064290619">
+      <Item lang="de" text="Ungültige PGN Konfiguration (PGN: {2})" />
+      <Item lang="en" text="Invalid PGN configuration (PGN: {2})" />
+    </Group>
+    <Group id="1083193030">
+      <Item lang="de" text="J1939 Kommunikation beschäftigt" />
+      <Item lang="en" text="J1939 communication busy" />
+    </Group>
+    <Group id="-1064161792">
+      <Item lang="en" text="Could not allocate memory (ErrorCause: {1})" />
+      <Item lang="de" text="Es konnte kein Speicher reserviert werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064161791">
+      <Item lang="en" text="Error writing export-file {2} at {3} (ErrorCause: {1})" />
+      <Item lang="de" text="Beim Schreiben der Exportdatei {2} bei {3} ist ein Fehler aufgetreten (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064161790">
+      <Item lang="en" text="Error reading event entries from {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Fehler beim Lesen der Daten aus {2} (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064161789">
+      <Item lang="en" text="Invalid file device" />
+      <Item lang="de" text="Ungültiges Speichermedium" />
+    </Group>
+    <Group id="-1064161788">
+      <Item lang="en" text="Missing value on UIConnect" />
+      <Item lang="de" text="An UIConnect wurde NULL angehängt" />
+    </Group>
+    <Group id="1083321861">
+      <Item lang="en" text="Core is not active" />
+      <Item lang="de" text="Warten auf Hauptkomponente" />
+    </Group>
+    <Group id="-1064161786">
+      <Item lang="en" text="Event not recorded (ErrorCause: {1})" />
+      <Item lang="de" text="Ein Ereignis konnte nicht aufgezeichnet werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064161785">
+      <Item lang="en" text="Invalid shift {2} in configuration: {3}" />
+      <Item lang="de" text="Ungültige Verschiebung {2} in der Konfiguration: {3}" />
+    </Group>
+    <Group id="-1064161784">
+      <Item lang="en" text="Could not reset buffer {2} (ErrorCause: {1})" />
+      <Item lang="de" text="Konnte Puffer nicht zurücksetzen {2} (FehlerUrsache: {1})" />
+    </Group>
+    <Group id="-1064292856">
+      <Item lang="en" text="No SRAM existing, can't protect runtime data if power loss" />
+      <Item lang="de" text="Es existiert kein SRAM. Bei Energieverlust sind die Daten nicht gesichert" />
+    </Group>
+    <Group id="-2138034679">
+      <Item lang="en" text="Power failure protection data not saved. Error cause {1}" />
+      <Item lang="de" text="Stromausfallschutzdaten nicht gespeichert. Fehlerursache {1}" />
+    </Group>
+    <Group id="-2138034678">
+      <Item lang="en" text="Inconsistency of the FB input data &quot;{2}&quot;. Value Changed from &quot;{3}&quot; to &quot;{4}&quot;" />
+      <Item lang="de" text="Inkonsistenz der FB-Eingabedaten &quot;{2}&quot;. Wert von &quot;{3}&quot; in &quot;{4}&quot; geändert." />
+    </Group>
+    <Group id="-2138034677">
+      <Item lang="en" text="Inconsistency in the &quot;IdealCycleTime&quot; parameter data. Value: &quot;{2}&quot;" />
+      <Item lang="de" text="Inkonsistenz in den &quot;IdealCycleTime&quot;-Parameterdaten. Wert: &quot;{2}&quot;" />
+    </Group>
+    <Group id="1083474944">
+      <Item lang="en" text="MpPackMLCore not ready" />
+      <Item lang="de" text="Warten auf MpPackMLCore" />
+    </Group>
+    <Group id="-1064008703">
+      <Item lang="en" text="Cannot disable mode {2}" />
+      <Item lang="de" text="Deaktivieren des Modus {2} nicht möglich" />
+    </Group>
+    <Group id="-1064008702">
+      <Item lang="en" text="Invalid mode ID {2}" />
+      <Item lang="de" text="Ungültige Modus ID {2}" />
+    </Group>
+    <Group id="-1064008701">
+      <Item lang="en" text="The specified address is NULL" />
+      <Item lang="de" text="PV Adresse ist NULL" />
+    </Group>
+    <Group id="-1064008700">
+      <Item lang="en" text="The specified address is not a valid address to a known PV" />
+      <Item lang="de" text="PV Adresse ist keine gültige Adresse" />
+    </Group>
+    <Group id="-2137750523">
+      <Item lang="en" text="Command {2} not allowed" />
+      <Item lang="de" text="Kommando {2} nicht erlaubt" />
+    </Group>
+    <Group id="-2137750522">
+      <Item lang="en" text="Enabling mode {3} currently not possible requested by {2}" />
+      <Item lang="de" text="Der Modus {3} kann auf Anfrage von {2} nicht aktiviert werden" />
+    </Group>
+    <Group id="-1064008697">
+      <Item lang="en" text="Mode ID already in use {2}" />
+      <Item lang="de" text="Modus ID {2} wird bereits verwendet" />
+    </Group>
+    <Group id="-1064008696">
+      <Item lang="en" text="UIConnect is NULL" />
+      <Item lang="de" text="UIConnect ist NULL" />
+    </Group>
+    <Group id="-2137750519">
+      <Item lang="en" text="PackTags structure {2} configured not found" />
+      <Item lang="de" text="Konfigurierte PackTags Struktur {2} wurde nicht gefunden" />
+    </Group>
+    <Group id="-2137750518">
+      <Item lang="en" text="PackTags PV {2} required into the minimal set was not found" />
+      <Item lang="de" text="PackTags PV {2} welche erforderlich ist wurde nicht gefunden" />
+    </Group>
+    <Group id="-2137750517">
+      <Item lang="en" text="Wrong PackTags data type for Tag {2}: expected {3} bytes, was {3} bytes" />
+      <Item lang="de" text="Falscher PackTags Datentyp für Tag {2}: Erwartet sind {3} bytes, nicht {3}" />
+    </Group>
+    <Group id="-1064008692">
+      <Item lang="en" text="Read {2} configuration failed: {1}" />
+      <Item lang="de" text="Lesen der {2} Konfiguration Fehlgeschlagen: {1}" />
+    </Group>
+    <Group id="-1064008691">
+      <Item lang="en" text="Write {2} configuration failed: {1}" />
+      <Item lang="de" text="Schreiben der {2} Konfiguration fehlgeschlagen: {1}" />
+    </Group>
+    <Group id="-1064297340">
+      <Item lang="en" text="Error while creating mode configuration at runtime (ErrorCause: {1})" />
+      <Item lang="de" text="Erstellung der Modus Konfiguration während der Laufzeit fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064297339">
+      <Item lang="en" text="No Modes found in the configuration. At least one mode is necessary" />
+      <Item lang="de" text="Es wurden in der Konfiguration keine Modi gefunden. Es muss mindestens ein Modus konfiguriert werden" />
+    </Group>
+    <Group id="-1064297338">
+      <Item lang="en" text="Error reading core configuration after a change (ErrorCause: {1})" />
+      <Item lang="de" text="Lesen der Core Konfiguration nach einer Veränderung fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064297337">
+      <Item lang="en" text="Error reading mode configuration after a change (ErrorCause: {1})" />
+      <Item lang="de" text="Lesen der Modus Konfiguration nach einer Veränderung fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064297336">
+      <Item lang="en" text="Error {2} while registering PackMLCore service" />
+      <Item lang="de" text="Fehler {2} während der Registrierung des PackMLCore Service" />
+    </Group>
+    <Group id="-1064297335">
+      <Item lang="en" text="Error {2} while registering internal PackML service" />
+      <Item lang="de" text="Fehler {2} während der Registrierung des internen PackML Service" />
+    </Group>
+    <Group id="-1064297334">
+      <Item lang="en" text="Service PV not found" />
+      <Item lang="de" text="Service PV wurde nicht gefunden" />
+    </Group>
+    <Group id="1083186315">
+      <Item lang="en" text="Optional PackTags PV {2} found" />
+      <Item lang="de" text="Optionale PackTags PV {2} gefunden" />
+    </Group>
+    <Group id="-1064297332">
+      <Item lang="en" text="Parent- or unit name not specified in the module configuration" />
+      <Item lang="de" text="Parent- oder Unit-Name ist nicht in der Modulkonfiguration spezifiziert" />
+    </Group>
+    <Group id="-1064297331">
+      <Item lang="en" text="Invalid unit link selected in the module configuration" />
+      <Item lang="de" text="Ungültiger Unit Link in der Modulkonfiguration ausgewählt" />
+    </Group>
+    <Group id="-1064008690">
+      <Item lang="en" text="Mode change only allowed by the unit module {1}" />
+      <Item lang="de" text="Modusänderung ist nur erlaubt durch Unit Modul {1}" />
+    </Group>
+    <Group id="-1064008689">
+      <Item lang="en" text="The current state: {2} does not allow mode change {1}: {3}" />
+      <Item lang="de" text="Der aktuelle Zustand: {2} erlaubt Modusänderung {1} nicht: {3}" />
+    </Group>
+    <Group id="1083474960">
+      <Item lang="en" text="Parent not active {1}" />
+      <Item lang="de" text="Parent nicht aktiv {1}" />
+    </Group>
+    <Group id="-2137750511">
+      <Item lang="en" text="Ambiguous mode information added in the configuration: {2} {1}" />
+      <Item lang="de" text="Mehrdeutige Modusinformationen in der Konfiguration hinzugefügt: {2} {1}" />
+    </Group>
+    <Group id="1083474964">
+      <Item lang="en" text="Mode change is forbidden: either the related config parameter are set to FALSE or destination State is disabled." />
+      <Item lang="de" text="Der Moduswechsel ist verboten: Entweder sind die zugehörigen Konfigurationsparameter auf FALSE gesetzt oder der gewünschte Zustand ist deaktiviert." />
+    </Group>
+    <Group id="-1064140799">
+      <Item lang="en" text="Failed to create recipe file {2} using device {3} (Error cause: {1})" />
+      <Item lang="de" text="Erstellung der Rezeptdatei {2} auf Speichermedium {3} fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064140798">
+      <Item lang="en" text="Failed to load recipe from {2} using device {3} (Error cause: {1})" />
+      <Item lang="de" text="Laden der Rezeptdatei von {2} auf dem Speichermedium {3} fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064140797">
+      <Item lang="en" text="Invalid file device" />
+      <Item lang="de" text="Ungültiges Speichermedium" />
+    </Group>
+    <Group id="-1064140796">
+      <Item lang="en" text="Invalid filename" />
+      <Item lang="de" text="Ungültiger Dateiname" />
+    </Group>
+    <Group id="-1064140795">
+      <Item lang="en" text="Component currently executing command" />
+      <Item lang="de" text="Komponente führt gerade einen Befehl aus" />
+    </Group>
+    <Group id="-2137882618">
+      <Item lang="en" text="Warnings while saving recipe" />
+      <Item lang="de" text="Während der Speicherung des Rezepts sind Warnungen aufgetreten" />
+    </Group>
+    <Group id="-2137882617">
+      <Item lang="en" text="Warnings while loading recipe" />
+      <Item lang="de" text="Während des Ladens des Rezepts sind Warnungen aufgetreten" />
+    </Group>
+    <Group id="-1064140792">
+      <Item lang="en" text="Failed to write to recipe file {2} (Error cause: {1})" />
+      <Item lang="de" text="Schreiben der Rezeptdatei {2} fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064140791">
+      <Item lang="en" text="Error converting recipe to parameters" />
+      <Item lang="de" text="Konvertierung des Rezepts zu Parametern fehlgeschlagen" />
+    </Group>
+    <Group id="-1064140790">
+      <Item lang="en" text="No connection to parent component" />
+      <Item lang="de" text="Keine Verbindung zur Hauptkomponente" />
+    </Group>
+    <Group id="-1064140789">
+      <Item lang="en" text="No connection to file manager" />
+      <Item lang="de" text="Keine Verbindung zum Dateimanager" />
+    </Group>
+    <Group id="-1064140788">
+      <Item lang="en" text="Invalid sort order selected" />
+      <Item lang="de" text="Ungültige Sortiermethode ausgewählt" />
+    </Group>
+    <Group id="-2137882611">
+      <Item lang="en" text="Invalid value for &quot;UIConnect&quot;" />
+      <Item lang="de" text="Ungültiger Wert für &quot;UIConnect&quot;" />
+    </Group>
+    <Group id="-1064140786">
+      <Item lang="en" text="Invalid PV" />
+      <Item lang="de" text="Ungültige PV" />
+    </Group>
+    <Group id="-1064140785">
+      <Item lang="en" text="Invalid LoadType" />
+      <Item lang="de" text="Ungültiger LoadType" />
+    </Group>
+    <Group id="-1064140784">
+      <Item lang="en" text="Error creating file list" />
+      <Item lang="de" text="Erstellung einer Dateiliste fehlgeschlagen" />
+    </Group>
+    <Group id="-1064140783">
+      <Item lang="en" text="PV name is NULL" />
+      <Item lang="de" text="PV Name ist NULL" />
+    </Group>
+    <Group id="-2137882606">
+      <Item lang="en" text="No PV registered" />
+      <Item lang="de" text="Keine PV registriert" />
+    </Group>
+    <Group id="-1064140781">
+      <Item lang="en" text="Saving active" />
+      <Item lang="de" text="Speichern aktiv" />
+    </Group>
+    <Group id="-1064140780">
+      <Item lang="en" text="Failed to delete recipe {2} from device {3} (Error cause: {1})" />
+      <Item lang="de" text="Löschen des Rezepts {2} vom Speichermedium {3} ist fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2137882603">
+      <Item lang="en" text="Saving empty recipe file" />
+      <Item lang="de" text="Speichern einer leeren Rezeptdatei" />
+    </Group>
+    <Group id="1083342870">
+      <Item lang="en" text="Waiting for parent recipe component" />
+      <Item lang="de" text="Warten auf Hauptkomponente" />
+    </Group>
+    <Group id="-1064140777">
+      <Item lang="en" text="Failed to rename recipe {2} to {3} (Error cause: {1}" />
+      <Item lang="de" text="Umbenennen des Rezepts {2} zu  {3} fehlgeschlagen (Fehlerursache: {1}" />
+    </Group>
+    <Group id="-2137882600">
+      <Item lang="en" text="None of the registered PVs were found in the recipe file while loading. The file might be corrupted." />
+      <Item lang="de" text="Keine der registrierten PVs wurden gefunden während das Rezept geladen wurde. Die Datei wurde wahrscheinlich manipuliert." />
+    </Group>
+    <Group id="-2137882599">
+      <Item lang="en" text="The UISetup.RecipeListSize {2} is out of limit (1-20)." />
+      <Item lang="de" text="Die UISetup.RecipeListSize {2} ist außerhalb des Limits (1-20)." />
+    </Group>
+    <Group id="-2138044264">
+      <Item lang="en" text="Synchornized save is not supported by the current parameter" />
+      <Item lang="de" text="Synchronisierte Speicherung des Rezepts wird mit den aktuellen Parametern nicht unterstüzt" />
+    </Group>
+    <Group id="-2138044263">
+      <Item lang="en" text="Synchronized save was performed using a mix of synchronized and not synchronized parameters" />
+      <Item lang="de" text="Synchronisierte Speicherung wurde mit synchronisierten und nicht synchronisierten Parametern durchgeführt" />
+    </Group>
+    <Group id="-2138044262">
+      <Item lang="en" text="A CSV row was found but does not contain the expected number of columns" />
+      <Item lang="de" text="Es wurde eine CSV Reihe gefunden welche nicht die erwartete Anzahl von Spalten besitzt" />
+    </Group>
+    <Group id="-2138044261">
+      <Item lang="en" text="Content &quot;{2}&quot; at line {3} and column {4} in file {5} cannot be parsed as an 32-bit integer" />
+      <Item lang="de" text="Inhalt &quot;{2}&quot; bei Zeile {3} und Spalte {4} in der Datei {5} konnte nicht als ein 32-bit Integer geparst werden" />
+    </Group>
+    <Group id="-2138044260">
+      <Item lang="en" text="Content &quot;{2}&quot; at line {3} and column {4} in file {5} cannot be parsed as an unsigned 32-bit integer" />
+      <Item lang="de" text="Inhalt &quot;{2}&quot; bei Zeile {3} und Spalte {4} in der Datei {5} konnte nicht als ein unsigned 32-bit Integer geparst werden" />
+    </Group>
+    <Group id="-2138044259">
+      <Item lang="en" text="Content &quot;{2}&quot; at line {3} and column {4} in file {5} cannot be parsed as a boolean" />
+      <Item lang="de" text="Inhalt &quot;{2}&quot; bei Zeile {3} und Spalte {4} in der Datei {5} konnte nicht als ein Boolschen Wert geparst werden" />
+    </Group>
+    <Group id="-2138044258">
+      <Item lang="en" text="Content &quot;{2}&quot; at line {3} and column {4} in file {5} cannot be parsed as  a 64-bit floating point value" />
+      <Item lang="de" text="Inhalt &quot;{2}&quot; bei Zeile {3} und Spalte {4} in der Datei {5} konnte nicht als ein 64-bit Floating point geparst werden" />
+    </Group>
+    <Group id="-1064302433">
+      <Item lang="en" text="A file with the specified name already exists" />
+      <Item lang="de" text="Eine Datei mit den angegebenen Namen existiert bereits" />
+    </Group>
+    <Group id="-1064302432">
+      <Item lang="en" text="Could not locate information about PV with name &quot;{2}&quot; (Error cause: {1})" />
+      <Item lang="de" text="Lokalisierung von Information der PV mit dem Namen &quot;{2}&quot; fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138044255">
+      <Item lang="en" text="Could not locate a PV with name &quot;{2}&quot; (Error cause: {1})" />
+      <Item lang="de" text="Lokalisierung der PV mit dem Namen &quot;{2}&quot; fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138044254">
+      <Item lang="en" text="Data type &quot;{2}&quot; of variable &quot;{3}&quot; is not a known IEC data type and is not supported" />
+      <Item lang="de" text="Der Datentyp &quot;{2}&quot; der Variable &quot;{3}&quot; ist kein bekannter IEC Datentyp und wird deshalb nicht unterstüzt" />
+    </Group>
+    <Group id="-2138044253">
+      <Item lang="en" text="Data type from variable &quot;{2}&quot; does not match the data type used on the target" />
+      <Item lang="de" text="Der Datentyp der Variable &quot;{2}&quot; stimmt nicht mit dem Datentypen am Zielsystem überein" />
+    </Group>
+    <Group id="-2138044252">
+      <Item lang="en" text="Value of variable &quot;{2}&quot; does not match the scope of data type" />
+      <Item lang="de" text="Der Wert der Variable &quot;{2}&quot; stimmt nicht mit dem Wertebereich des Datentypen überein" />
+    </Group>
+    <Group id="-2138044251">
+      <Item lang="en" text="String value of variable &quot;{2}&quot; does not fit into the memory reserved on the target" />
+      <Item lang="de" text="Der String Wert der Variable &quot;{2}&quot; passt nicht in den Speicher welcher am Zielsystem reserviert ist " />
+    </Group>
+    <Group id="-2138044250">
+      <Item lang="en" text="Failed to make &quot;{2}&quot; part of the recipe (Error cause: {1})" />
+      <Item lang="de" text="Erstellung von &quot;{2}&quot; in der Rezeptdatei fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138044248">
+      <Item lang="en" text="Data type is not supported as part of a recipe" />
+      <Item lang="de" text="Im Rezept wird der Datentyp nicht unterstüzt" />
+    </Group>
+    <Group id="-2138044247">
+      <Item lang="en" text="Recipe format error at &quot;{2}&quot;" />
+      <Item lang="de" text="Rezeptformat Fehler bei &quot;{2}&quot;" />
+    </Group>
+    <Group id="-2138044246">
+      <Item lang="en" text="Invalid recipe content representing &quot;{2}&quot;" />
+      <Item lang="de" text="Ungültiger Inhalt des Rezept stellt &quot;{2}&quot; dar" />
+    </Group>
+    <Group id="-1064302421">
+      <Item lang="en" text="Required attribute &quot;{2}&quot; is missing in element &quot;{3}&quot;" />
+      <Item lang="de" text="Erforderliche Eigenschaft &quot;{2}&quot; in Element &quot;{3}&quot; nicht vorhanden" />
+    </Group>
+    <Group id="-2138044244">
+      <Item lang="en" text="Expected attribute &quot;{2}&quot; is missing in element &quot;{3}&quot;" />
+      <Item lang="de" text="Erwartete Eigenschaft &quot;{2}&quot; in Element &quot;{3}&quot; nicht vorhanden" />
+    </Group>
+    <Group id="-1064302419">
+      <Item lang="en" text="Required element &quot;{2}&quot; is missing" />
+      <Item lang="de" text="Erforderliches Element &quot;{2}&quot; nicht vorhanden" />
+    </Group>
+    <Group id="-2138044242">
+      <Item lang="en" text="Expected element &quot;{2}&quot; is missing" />
+      <Item lang="de" text="Erwartetes Element &quot;{2}&quot; nicht vorhanden" />
+    </Group>
+    <Group id="-2138044241">
+      <Item lang="en" text="Unexpected element &quot;{2}&quot; found" />
+      <Item lang="de" text="Unerwartetes Element &quot;{2}&quot; gefunden" />
+    </Group>
+    <Group id="-2138044240">
+      <Item lang="en" text="Parameter content type &quot;{2}&quot; is not recognized. Parsing of content cannot be performed. " />
+      <Item lang="de" text="Parameter Inhalt &quot;{2}&quot; wurde nicht erkannt. Parsen des Elements kann nicht durchgeführt werden " />
+    </Group>
+    <Group id="-1064302415">
+      <Item lang="en" text="Failed to create a data model used for loading/saving a recipe (Error cause: {1})" />
+      <Item lang="de" text="Erstellung des Datenmoduls um Rezepte zu speichern/laden fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064302414">
+      <Item lang="en" text="Failed to close a data model after loading/saving a recipe (Error cause: {1})" />
+      <Item lang="de" text="Schließen des Datenmoduls nach laden/speichern fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064302413">
+      <Item lang="en" text="Failed to initialize a data model used for creating a new recipe (Error cause: {1})" />
+      <Item lang="de" text="Initialisierung des Datenmoduls welches zur Erstellung von neuen Rezepten dient fehlgeschlagen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064302412">
+      <Item lang="en" text="Found parameter with undefined name" />
+      <Item lang="de" text="Parameter mit undefinierten Namen gefunden" />
+    </Group>
+    <Group id="-1064302411">
+      <Item lang="en" text="MpFile failed to list files for the selected file device (Error cause: {1})" />
+      <Item lang="de" text="MpFile konnte keine Dateiliste für das ausgewählte Speichermedium erstellen (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064302410">
+      <Item lang="en" text="Failed to add recipe core service to registry (Error cause: {1})" />
+      <Item lang="de" text="Der Hauptservice der Komponente konnte nicht registriert werden (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138044233">
+      <Item lang="en" text="Data type of header property &quot;{2}&quot; is not valid. Expected &quot;{3}&quot;, actual &quot;{4}&quot;" />
+      <Item lang="de" text="Datentyp der Kopfeigenschaft &quot;{2}&quot; ist ungültig. Erwartet ist &quot;3&quot;, nicht &quot;{4}&quot;" />
+    </Group>
+    <Group id="-2138044232">
+      <Item lang="en" text="Invalid header content representing &quot;{2}&quot; when reading {3} (Error cause: {1})" />
+      <Item lang="de" text="Ungültiger Inhalt in der Kopfzeile. Es wird &quot;{2}&quot; angezeigt obwhol {3} gelesen wird (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-1064302407">
+      <Item lang="en" text="The recipe signature verification failed. The file or the signature was manipulated." />
+      <Item lang="de" text="Die Verifizierung der Rezeptsignatur ist fehlgeschlagen. Die Rezeptdatei oder die Signatur wurden manipuliert." />
+    </Group>
+    <Group id="-1064302406">
+      <Item lang="en" text="The recipe signature file is missing but required." />
+      <Item lang="de" text="Die Signatur der Rezeptdatei welche benötigt wird fehlt." />
+    </Group>
+    <Group id="-1064302405">
+      <Item lang="en" text="The registered PV &quot;{2}&quot; is an invalid reference (NULL pointer)." />
+      <Item lang="de" text="Die registrierte PV &quot;{2}&quot; ist eine ungültige Referenz (NULL Zeiger)" />
+    </Group>
+    <Group id="-2138044228">
+      <Item lang="en" text="The category does not match. Save is not required." />
+      <Item lang="de" text="Die Kategorie stimmt nicht überein. Das Speichern ist nicht erforderlich." />
+    </Group>
+    <Group id="-1064112128">
+      <Item lang="en" text="Text not found in text system." />
+      <Item lang="de" text="Text wurde nicht gefunden im Textsystem." />
+    </Group>
+    <Group id="-1064112127">
+      <Item lang="en" text="Language not found." />
+      <Item lang="de" text="Sprache wurde nicht gefunden." />
+    </Group>
+    <Group id="-1064112126">
+      <Item lang="en" text="Invalid file device." />
+      <Item lang="de" text="Ungültiges Speichermedium." />
+    </Group>
+    <Group id="-1064112125">
+      <Item lang="en" text="Invalid report name." />
+      <Item lang="de" text="Ungültiger Report Name." />
+    </Group>
+    <Group id="-1064112124">
+      <Item lang="en" text="Error during report generation." />
+      <Item lang="de" text="Fehler bei der Report Generierung." />
+    </Group>
+    <Group id="-2138031964">
+      <Item lang="en" text="Table row size exceeds 100%. Table name: {2}, Row number: {3}." />
+      <Item lang="de" text="Tabellen Zeilenbreite überschreitet 100%. Tabellen Name: {2}, Zeilen Nummer: {3}." />
+    </Group>
+    <Group id="-2138031963">
+      <Item lang="en" text="Image could not be loaded (invalid path or invalid file). Image name: {2}" />
+      <Item lang="de" text="Bild konnte nicht geladen werden (Ungültiger Pfad oder ungültige Datei). Bildname: {2}" />
+    </Group>
+    <Group id="-2138031962">
+      <Item lang="en" text="Requested operation cannot be performed. Operation: {2}" />
+      <Item lang="de" text="Angefragte Operation kann nicht ausgeführt werden. Operation: {2}" />
+    </Group>
+    <Group id="-2138031961">
+      <Item lang="en" text="Could not protect document (setting passwords). Operation: {2}" />
+      <Item lang="de" text="Dokument kann nicht geschützt werden (Einstellungs-Passwort). Operation: {2}" />
+    </Group>
+    <Group id="-2138031960">
+      <Item lang="en" text="Area too small for item. Item: {2}" />
+      <Item lang="de" text="Bereich ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031959">
+      <Item lang="en" text="Table height too small for item. Item {2} " />
+      <Item lang="de" text="Tabellenhöhe ist zu klein für das Item. Item {2} " />
+    </Group>
+    <Group id="-2138031958">
+      <Item lang="en" text="Page height too small for item. Item: {2}" />
+      <Item lang="de" text="Seitenhöhe ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031957">
+      <Item lang="en" text="Page width too small for item. Item: {2}" />
+      <Item lang="de" text="Seitenbreite ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031956">
+      <Item lang="en" text="Font size too big for item. Item: {2}" />
+      <Item lang="de" text="Schriftgröße ist zu groß für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031955">
+      <Item lang="en" text="Chart height too small for item. Item: {2} " />
+      <Item lang="de" text="Die Grafikhöhe ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031954">
+      <Item lang="en" text="Radius too small for item. Item: {2}" />
+      <Item lang="de" text="Der Radius ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031953">
+      <Item lang="en" text="Angle end lower than begin for item. Item: {2}" />
+      <Item lang="de" text="Winkelende ist kleiner als am Anfang für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031952">
+      <Item lang="en" text="Width too small for item. Item: {2}" />
+      <Item lang="de" text="Breite ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031951">
+      <Item lang="en" text="Heigth too small for item. Item: {2}" />
+      <Item lang="de" text="Höhe ist zu klein für das Item. Item: {2}" />
+    </Group>
+    <Group id="-2138031950">
+      <Item lang="en" text="Image-file is not a &quot;jpeg&quot; format. Image name: {2}" />
+      <Item lang="de" text="Die Bild-Datei ist kein &quot;jpeg&quot; Format. Bildname: {2}" />
+    </Group>
+    <Group id="-1064290125">
+      <Item lang="en" text="Owner- and User-Password are equal." />
+      <Item lang="de" text="Owner- und User-Passwort sind gleich." />
+    </Group>
+    <Group id="-1064290124">
+      <Item lang="en" text="One of the data indexes in ArrayBasedTable {2} is invalid." />
+      <Item lang="de" text="Eine der Index der Array basierenden Tabelle {2} ist ungültig." />
+    </Group>
+    <Group id="-2138031740">
+      <Item lang="en" text="X_Axis value must be ascending, Element type: {2}, Element name: {3}" />
+      <Item lang="de" text="X_Axis Wert muss aufsteigend sein, Element Typ: {2}, Element Name: {3}" />
+    </Group>
+    <Group id="-2138031739">
+      <Item lang="en" text="PV {2} could not be found, Element type: {3}, Element name: {4}" />
+      <Item lang="de" text="PV {2} wurde nicht gefunden, Element Typ: {3}, Element Name: {4}" />
+    </Group>
+    <Group id="-2138031738">
+      <Item lang="en" text="No PV connected, Element type: {2}, Element name: {3}" />
+      <Item lang="de" text="Keine PV verbunden, Element Typ: {2}, Element Name: {3}" />
+    </Group>
+    <Group id="-2138031737">
+      <Item lang="en" text="Datatype of PV {2} is not supported, Element type: {3}, Element name: {4}" />
+      <Item lang="de" text="Datentyp der PV {2} wird nicht unterstützt, Element Typ: {3}, Element Name: {4}" />
+    </Group>
+    <Group id="-2138031736">
+      <Item lang="en" text="Data source: {2} is not allowed, Element type: {3}, Element name: {4}" />
+      <Item lang="de" text="Daten Quelle: {2} ist nicht erlaubt, Element Typ: {3}, Element Name: {4}" />
+    </Group>
+    <Group id="-2138031735">
+      <Item lang="en" text="Configuration of WHERE-logic: {2} is invalid, Element type: {3}, Element name: {4}" />
+      <Item lang="de" text="Konfiguration der WHERE-Logik: {2} ist ungültig, Element Typ: {3}, Element Name: {4}" />
+    </Group>
+    <Group id="-1064289910">
+      <Item lang="en" text="Failed to create report {2} using device {3} (Error cause: {1})" />
+      <Item lang="de" text="Fehler beim Erstellen des Reports {2} mit dem Device {3} (Fehlerursache: {1})" />
+    </Group>
+    <Group id="-2138031733">
+      <Item lang="en" text="No column has been defined for the table. Table name: {2}, Row number: {3}" />
+      <Item lang="de" text="Es wurde keine Spalte für die Tabelle definiert. Table name: {2}, Row number: {3}" />
+    </Group>
+    <Group id="-2138031947">
+      <Item lang="en" text="Table requested column not within table (&gt;max. index). Index: {2}" />
+      <Item lang="de" text="Die angeforderte Spalte ist nicht innerhalb der Tabelle (&gt; max. Index). Index: {2}" />
+    </Group>
+    <Group id="-2138031946">
+      <Item lang="en" text="Page format in layout is not defined." />
+      <Item lang="de" text="Seitenformat im Layout ist nicht definiert." />
+    </Group>
+    <Group id="-2138031945">
+      <Item lang="en" text="Page direction in layout is not defined." />
+      <Item lang="de" text="Seitenausrichtung im Layout ist nicht definiert." />
+    </Group>
+    <Group id="-2138031944">
+      <Item lang="en" text="Ruler line weight is smaller then 1.0." />
+      <Item lang="de" text="Lineal Linien Dicke ist kleiner als 1,0." />
+    </Group>
+    <Group id="-2138031943">
+      <Item lang="en" text="Font size is too small." />
+      <Item lang="de" text="Schriftgröße ist zu klein." />
+    </Group>
+    <Group id="-1064004608">
+      <Item lang="de" text="Leerer Dateiname für die Sequenz angegeben" />
+      <Item lang="en" text="Empty name specified for the sequence" />
+    </Group>
+    <Group id="-1064004607">
+      <Item lang="de" text="Import der Sequenzdatei {2} von Device {3} fehlgeschlagen" />
+      <Item lang="en" text="Import of sequence file {2} from device {3} failed" />
+    </Group>
+    <Group id="-1064004606">
+      <Item lang="de" text="Export der Sequenzdatei {2} nach Device {3} fehlgeschlagen" />
+      <Item lang="en" text="Export of sequence file {2} to device {3} failed" />
+    </Group>
+    <Group id="-1064004605">
+      <Item lang="de" text="Keine Sequenz definiert in Datei {2} auf Device {3}" />
+      <Item lang="en" text="No Sequence defined in the specified file {2} on device {3}" />
+    </Group>
+    <Group id="-1064004604">
+      <Item lang="de" text="Die angegebene Variable {2} kann nicht gefunden werden (Begründung {1})" />
+      <Item lang="en" text="Cannot access specified variable {2} (ErrorCause {1})" />
+    </Group>
+    <Group id="-1064004603">
+      <Item lang="de" text="Eine Interlock-Bedingung ist bei Ausführung der Sequenz {2} im Schritt {3} fehlgeschlagen" />
+      <Item lang="en" text="An interlock condition failed when running the sequence {2} in step {3}" />
+    </Group>
+    <Group id="-1064004602">
+      <Item lang="de" text="Das timeout für einen Schritt mit Kommando {2} wurde überschritten" />
+      <Item lang="en" text="The timeout time for one step has elapsed executing command {2}" />
+    </Group>
+    <Group id="-1064004601">
+      <Item lang="de" text="Die Schritte in der angegeben Sequenz sind nicht korrekt definiert" />
+      <Item lang="en" text="The steps in the loaded sequence are not correctly defined" />
+    </Group>
+    <Group id="-1064004600">
+      <Item lang="de" text="Das angegebene Kommando {2} wurde in der Konfiguration nicht gefunden" />
+      <Item lang="en" text="The specified command {2} was not found in the configuration" />
+    </Group>
+    <Group id="-1064004599">
+      <Item lang="de" text="Der Zeiger auf das Konfigurations-Array ist ein Nullzeiger" />
+      <Item lang="en" text="The pointer to the array of the configuration is a NULL pointer" />
+    </Group>
+    <Group id="-1064004598">
+      <Item lang="de" text="Der Zeiger auf den Namens-String ist ein Nullzeiger" />
+      <Item lang="en" text="The pointer to the name string is a NULL pointer" />
+    </Group>
+    <Group id="-2137746421">
+      <Item lang="de" text="Das Parameter Array ist zu kurz, um alle verfügbaren Parameter aus der Konfiguration zu laden" />
+      <Item lang="en" text="The parameter array is too short for loading all available parameters from the configuration" />
+    </Group>
+    <Group id="-1064004596">
+      <Item lang="de" text="Der Aktuator {2} wurde in der Konfiguration nicht gefunden" />
+      <Item lang="en" text="The actuator {2} is not existing in the configuration" />
+    </Group>
+    <Group id="-1064004595">
+      <Item lang="de" text="Es muss mindestens 2 Aktuatoren in einem Aktuator vom Typ &quot;multiple&quot; geben" />
+      <Item lang="en" text="There should be at least 2 Actuators for multiple actuator type" />
+    </Group>
+    <Group id="-1064004594">
+      <Item lang="de" text="Der Parameter {2} wurde in der Konfiguration nicht gefunden" />
+      <Item lang="en" text="The parameter {2} is not existing in the configuration" />
+    </Group>
+    <Group id="-1064004593">
+      <Item lang="de" text="Der Schritt {2} wurde nicht in der geladenen Sequenz gefunden" />
+      <Item lang="en" text="The step {2} specified was not found inside the loaded sequence" />
+    </Group>
+    <Group id="-1064004592">
+      <Item lang="de" text="Vor dem Start Kommando wurde keine Sequenz geladen" />
+      <Item lang="en" text="No sequence loaded before the Start command" />
+    </Group>
+    <Group id="-1064004591">
+      <Item lang="de" text="Die Achse {2} wurde in der Konfiguration nicht gefunden" />
+      <Item lang="en" text="The axis {2} is not existing in the configuration" />
+    </Group>
+    <Group id="-1064004590">
+      <Item lang="de" text="Das angegebene Kommando {2} wurde nicht in der Kommando-Liste gefunden" />
+      <Item lang="en" text="The specified command {2} was not found in the command list" />
+    </Group>
+    <Group id="-1064004589">
+      <Item lang="de" text="Es sind keine StepsPrevious vorhanden" />
+      <Item lang="en" text="There are no previous steps defined" />
+    </Group>
+    <Group id="-1064004588">
+      <Item lang="de" text="Keine Schritte zum Exportieren vorhanden" />
+      <Item lang="en" text="There are no steps defined that could be exported" />
+    </Group>
+    <Group id="1083190008">
+      <Item lang="de" text="Es wurden keine Schritte definiert, die Sequenz ist leer" />
+      <Item lang="en" text="There are no steps defined, the sequence is empty" />
+    </Group>
+    <Group id="1083190009">
+      <Item lang="de" text="Mindestens eine Bedingung ist aktuell aktiv, die Bewegung kann nicht gestartet werden" />
+      <Item lang="en" text="At least one condition is currently active, movement will not start" />
+    </Group>
+    <Group id="1083190010">
+      <Item lang="de" text="Die Ausführung der Sequenz wurde beendet" />
+      <Item lang="en" text="The sequence has finished executing" />
+    </Group>
+    <Group id="-1064293637">
+      <Item lang="de" text="Die vom Widget erhaltene Sequenz enthält Fehler {2}" />
+      <Item lang="en" text="The received sequence from the widget contained errors {2}" />
+    </Group>
+    <Group id="-2138035460">
+      <Item lang="de" text="Die Sequenz wird aktuell ausgeführt und kann nicht geändert werden" />
+      <Item lang="en" text="The sequence is currently running and cannot be modified" />
+    </Group>
+    <Group id="-1064293635">
+      <Item lang="de" text="Die Text ID {2} wurde nicht im namespace {3} gefunden" />
+      <Item lang="en" text="The mentioned text ID {2} was not found in namespace {3}" />
+    </Group>
+    <Group id="-1064004587">
+      <Item lang="de" text="Die Ausführung des Kommandos {2} wurde mit einem Fehler abgebrochen" />
+      <Item lang="en" text="The execution of command {2} resulted in an error state" />
+    </Group>
+    <Group id="-1064004586">
+      <Item lang="de" text="Die Sequenz kann aufgrund illegaler Verbindungen nicht importiert werden" />
+      <Item lang="en" text="The sequence is cannot be imported due to illegal links" />
+    </Group>
+    <Group id="-1064004585">
+      <Item lang="de" text="Leerer Typ für die Sequenz angegeben" />
+      <Item lang="en" text="Empty type specified for the sequence" />
+    </Group>
+    <Group id="-1064293634">
+      <Item lang="de" text="Es wurden keine Schritte definiert, die Sequenz ist leer" />
+      <Item lang="en" text="There are no steps defined, the sequence is empty" />
+    </Group>
+    <Group id="-1064126464">
+      <Item lang="en" text="Option state {2} is not existing within option state collection {3}" />
+      <Item lang="de" text="Der Options-Zustand {2} existiert nicht im Options-Zustands-Modul {3}" />
+    </Group>
+    <Group id="-1064126463">
+      <Item lang="en" text="Option collection {2} used for module {3} is not existing" />
+      <Item lang="de" text="Die Options-Liste {2} welche für Modul {3} verwendet wird, existiert nicht" />
+    </Group>
+    <Group id="-1064126462">
+      <Item lang="en" text="Current state input is not connected" />
+      <Item lang="de" text="Der Übergabeparameter für den aktuellen Zustand ist nicht verbunden" />
+    </Group>
+    <Group id="-1064126461">
+      <Item lang="en" text="Current state size is not valid" />
+      <Item lang="de" text="Die Größe für den aktuellen Zustand ist nicht gültig" />
+    </Group>
+    <Group id="-1064126460">
+      <Item lang="en" text="Module {2} is not existing" />
+      <Item lang="de" text=" Das Modul {2} existiert nicht" />
+    </Group>
+    <Group id="-1064126459">
+      <Item lang="en" text="Module state {2} is not existing within module state collection {3}" />
+      <Item lang="de" text="Der Modul-Zustand {2} existiert nicht im Zustands-Modul {3}" />
+    </Group>
+    <Group id="-1064126458">
+      <Item lang="en" text="Notification {2} is not existing within notification collection {3}" />
+      <Item lang="de" text="Die Benachrichtigung {2} existiert nicht in der Benachrichtigungs-Liste {3}" />
+    </Group>
+    <Group id="-1064126457">
+      <Item lang="en" text="MpServer could not be found" />
+      <Item lang="de" text="MpServer konnte nicht gefunden werden" />
+    </Group>
+    <Group id="-2137868280">
+      <Item lang="en" text="Current state size is too small to display complete state: {2} shown instead of {3}" />
+      <Item lang="de" text="Die Größe für den aktuellen Zustand ist zu klein um den gesamten Zustand anzuzeigen: {2} wird anstatt {3} angezeigt" />
+    </Group>
+    <Group id="1083357193">
+      <Item lang="en" text="Successfully initialized" />
+      <Item lang="de" text="Erfolgreiche Initialisierung" />
+    </Group>
+    <Group id="1083357194">
+      <Item lang="en" text="Changed configuration succesfully during runtime" />
+      <Item lang="de" text="Konfiguration wurde zur Laufzeit erfolgreiche geändert" />
+    </Group>
+    <Group id="-1064128512">
+      <Item lang="en" text="The defined receiver {2:ReceiverName} is invalid." />
+      <Item lang="de" text="Der angegebene Empfänger {2:ReceiverName} ist ungültig." />
+    </Group>
+    <Group id="-1064128511">
+      <Item lang="en" text="The defined request {2:RequestName} is invalid." />
+      <Item lang="de" text="Die angegebene Anfrage {2:RequestName} ist ungültig." />
+    </Group>
+    <Group id="1083355138">
+      <Item lang="en" text="Waiting for the server." />
+      <Item lang="de" text="Warten auf den Server." />
+    </Group>
+    <Group id="-1064128509">
+      <Item lang="en" text="Failed to send message to receiver: {2:ReceiverName}." />
+      <Item lang="de" text="Senden einer Nachricht an Empfänger {2:ReceiverName} fehlgeschlagen." />
+    </Group>
+    <Group id="-1064128508">
+      <Item lang="en" text="Ping command timeout without response." />
+      <Item lang="de" text="Ping-Befehl ergab Zeitüberschreitung ohne Antwort." />
+    </Group>
+    <Group id="-1064128507">
+      <Item lang="en" text="Communication to modem failed. Error cause {1:ErrorCause}" />
+      <Item lang="de" text="Verbindung zum Modem fehlgeschlagen. Fehlerursache {1:ErrorCause}" />
+    </Group>
+    <Group id="-1064297640">
+      <Item lang="en" text="Error reading configuration for user {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration des Benutzers {2} konnte nicht gelesen werden ({1})" />
+    </Group>
+    <Group id="-1064297639">
+      <Item lang="en" text="Error saving configuration of user {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration des Benutzers {2} konnte nicht gespeichert werden ({1})" />
+    </Group>
+    <Group id="-1064297638">
+      <Item lang="en" text="Error removing configuration of user {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration des Benutzers {2} konnte nicht gelöscht werden ({1})" />
+    </Group>
+    <Group id="-1064297637">
+      <Item lang="en" text="Error reading configuration for role {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration der Rolle {2} konnte nicht gelesen werden ({1})" />
+    </Group>
+    <Group id="-1064297636">
+      <Item lang="en" text="Error saving configuration for role {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration der Rolle {2} konnte nicht gespeichert werden ({1})" />
+    </Group>
+    <Group id="-1064297635">
+      <Item lang="en" text="Error deleting configuration for role {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration der Rolle {2} konnte nicht gelöscht werden ({1})" />
+    </Group>
+    <Group id="-1064297634">
+      <Item lang="en" text="Error recovering permanent data from file {2} ({1})" />
+      <Item lang="de" text="Laden der Daten der Datei {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297633">
+      <Item lang="en" text="Error initializing User-configuration ({1})" />
+      <Item lang="de" text="Initialisierung der Benutzerkonfiguration fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297632">
+      <Item lang="en" text="Error while importing role {2} ({1})" />
+      <Item lang="de" text="Die Rolle {2} konnte nicht importiert werden ({1})" />
+    </Group>
+    <Group id="-1064297631">
+      <Item lang="en" text="Error while importing user {2} ({1})" />
+      <Item lang="de" text="Der Benutzer {2} konnte nicht importiert werden ({1})" />
+    </Group>
+    <Group id="-1064297630">
+      <Item lang="en" text="Error deleting URS-role {2} ({1})" />
+      <Item lang="de" text="Löschen der URS-Rolle {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297629">
+      <Item lang="en" text="Error deleting URS-user {2} ({1})" />
+      <Item lang="de" text="Löschen des URS-Benutzers {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297628">
+      <Item lang="en" text="Error creating URS-user {2} ({1})" />
+      <Item lang="de" text="Erstellen des URS-Benutzers {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297627">
+      <Item lang="en" text="Error changing password for URS-user {2} ({1})" />
+      <Item lang="de" text="Das Passwort des URS-Benutzers {2} konnte nicht geändert werden ({1})" />
+    </Group>
+    <Group id="-1064297626">
+      <Item lang="en" text="Error creating roles for user {2} ({1})" />
+      <Item lang="de" text="Es konnten keine Rollen für den Benutzer {2} erstellt werden ({1})" />
+    </Group>
+    <Group id="-1064297625">
+      <Item lang="en" text="Error (re-)initializing user-management ({1})" />
+      <Item lang="de" text="Fehler beim (Re-)Initialisieren des Benutzermanagements ({1})" />
+    </Group>
+    <Group id="-1064297624">
+      <Item lang="en" text="Function is not available (runtime mismatch)" />
+      <Item lang="de" text="Funktion ist nicht verfügbar (Runtime Abweichung)" />
+    </Group>
+    <Group id="-1064297623">
+      <Item lang="en" text="Error installing manager (MpUser on target?)({1})" />
+      <Item lang="de" text="Fehler beim Installieren des User-Managements (MpUser am Taget?) ({1})" />
+    </Group>
+    <Group id="-1064144884">
+      <Item lang="en" text="A MpUserLogin-instance already exists ({1})" />
+      <Item lang="de" text="Eine Instanz von MpUserLogin existiert bereits ({1})" />
+    </Group>
+    <Group id="-1064144868">
+      <Item lang="en" text="Import failed for {2}" />
+      <Item lang="de" text="Import fehlgeschlagen für {2}" />
+    </Group>
+    <Group id="-1064144867">
+      <Item lang="en" text="Error loading import file {2} from {3} ({1})" />
+      <Item lang="de" text="Fehler beim Laden der Datei {2} von {3} ({1})" />
+    </Group>
+    <Group id="-1064144866">
+      <Item lang="en" text="Error saving export file {2} to {3} ({1})" />
+      <Item lang="de" text="Fehler beim Speichern der Datei {2} in {3} ({1})" />
+    </Group>
+    <Group id="-2137886678">
+      <Item lang="en" text="The key {2} is already in use. The value {3} will be ignored. ({1})" />
+      <Item lang="de" text="Der Key {2} ist bereits vorhanden. Der Wert {3} wird ignoriert. ({1})" />
+    </Group>
+    <Group id="-1064144850">
+      <Item lang="en" text="LDAP error: {2} ({1})" />
+      <Item lang="de" text="LDAP Fehler: {2} ({1})" />
+    </Group>
+    <Group id="-1064144849">
+      <Item lang="en" text="The connection to the central user management server has been lost." />
+      <Item lang="de" text="Keine Verbindung zum zentralen Benutzermanagement-Server." />
+    </Group>
+    <Group id="-1064144848">
+      <Item lang="en" text="Invalid credentials (username or password)" />
+      <Item lang="de" text="Ungültige Zugangsdaten (Benutzername oder Passwort)" />
+    </Group>
+    <Group id="-1064144847">
+      <Item lang="en" text="The attempted action ({2}) is not allowed for central user management." />
+      <Item lang="de" text="Die gewünschte Aktion ({2}) ist für zentrales Benutzermanagement nicht erlaubt." />
+    </Group>
+    <Group id="-2137886670">
+      <Item lang="en" text="LDAP warning: {2} ({1})" />
+      <Item lang="de" text="LDAP Warnung: {2} ({1})" />
+    </Group>
+    <Group id="-1064144845">
+      <Item lang="en" text="Could not change password. New password does not meet the server's password policy (e.g. length, complexity, history)." />
+      <Item lang="de" text="Passwort konnte nicht geändert werden. Das neue Passwort entspricht nicht den Vorgaben des Servers (z.B. Länge, Komplexität, Passworthistorie)." />
+    </Group>
+    <Group id="-2137886667">
+      <Item lang="en" text="Password will expire in {2} days." />
+      <Item lang="de" text="Passwort läuft in {2} Tagen ab." />
+    </Group>
+    <Group id="-2137886666">
+      <Item lang="en" text="Attribute {2} does not exist or has no valid value. 'Username' was used instead." />
+      <Item lang="de" text="Attribut {2} existiert nicht oder hat keinen validen Wert. 'Username' wurde stattdessen verwendet." />
+    </Group>
+    <Group id="-1064297940">
+      <Item lang="en" text="Error reading configuration for user {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration des Benutzers {2} konnte nicht gelesen werden ({1})" />
+    </Group>
+    <Group id="-1064297939">
+      <Item lang="en" text="Error saving configuration of user {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration des Benutzers {2} konnte nicht gespeichert werden ({1})" />
+    </Group>
+    <Group id="-1064297938">
+      <Item lang="en" text="Error removing configuration of user {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration des Benutzers {2} konnte nicht gelöscht werden ({1})" />
+    </Group>
+    <Group id="-1064297937">
+      <Item lang="en" text="Error reading configuration for group {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration der Gruppe {2} konnte nicht gelesen werden ({1})" />
+    </Group>
+    <Group id="-1064297936">
+      <Item lang="en" text="Error saving configuration for group {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration der Gruppe {2} konnte nicht gespeichert werden ({1})" />
+    </Group>
+    <Group id="-1064297935">
+      <Item lang="en" text="Error deleting configuration for group {2} ({1})" />
+      <Item lang="de" text="Die Konfiguration der Gruppe {2} konnte nicht gelöscht werden ({1})" />
+    </Group>
+    <Group id="-1064297934">
+      <Item lang="en" text="Error recovering permanent data from file {2} ({1})" />
+      <Item lang="de" text="Laden der Daten der Datei {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297933">
+      <Item lang="en" text="Error initializing User-configuration ({1})" />
+      <Item lang="de" text=" Initialisierung der Benutzerkonfiguration fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297932">
+      <Item lang="en" text="Error while importing group {2} ({1})" />
+      <Item lang="de" text="Importieren der Gruppe {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064297931">
+      <Item lang="en" text="Error while importing user {2} ({1})" />
+      <Item lang="de" text="Importieren des Benutzers {2} fehlgeschlagen({1})" />
+    </Group>
+    <Group id="-1064297925">
+      <Item lang="en" text="Error (re-)initializing user-management ({1})" />
+      <Item lang="de" text="Fehler bei der (Neu-)Initialisierung des User-Managements ({1})" />
+    </Group>
+    <Group id="-1064297923">
+      <Item lang="en" text="Error installing manager (MpUserX on target?)({1})" />
+      <Item lang="de" text="Fehler beim Installieren des User-Managements (MpUserX am Taget?) ({1})" />
+    </Group>
+    <Group id="-1064148980">
+      <Item lang="en" text="A MpUserLogin-instance already exists ({1})" />
+      <Item lang="de" text="Eine Instanz von MpUserLogin existiert bereits ({1})" />
+    </Group>
+    <Group id="-1064148964">
+      <Item lang="en" text="Import failed for {2}" />
+      <Item lang="de" text="Import fehlgeschlagen für {2}" />
+    </Group>
+    <Group id="-1064148963">
+      <Item lang="en" text="Error loading import file {2} from {3} ({1})" />
+      <Item lang="de" text="Fehler beim Laden der Datei {2} von {3} ({1})" />
+    </Group>
+    <Group id="-1064148962">
+      <Item lang="en" text="Error saving export file {2} to {3} ({1})" />
+      <Item lang="de" text="Fehler beim Speichern der Datei {2} in {3} ({1})" />
+    </Group>
+    <Group id="-2137890774">
+      <Item lang="en" text="The key {2} is already in use. The value {3} will be ignored. ({1})" />
+      <Item lang="de" text="Der Key {2} ist bereits vorhanden. Der Wert {3} wird ignoriert. ({1})" />
+    </Group>
+    <Group id="-1064302140">
+      <Item lang="en" text="Error initializing communication. WebXs will not be available ({1})" />
+      <Item lang="de" text="Initialisierung der Kommunikation fehlgeschlagen. WebXs ist nicht verfügbar ({1})" />
+    </Group>
+    <Group id="-1064302139">
+      <Item lang="en" text="Error (un)registering a rest web service {2} ({1})" />
+      <Item lang="de" text="Registrierung des Webservice {2} fehlgeschlagen ({1})" />
+    </Group>
+    <Group id="-1064302138">
+      <Item lang="en" text="Error while executing a web service" />
+      <Item lang="de" text="Ausführen des Webservice fehlgeschlagen" />
+    </Group>
+    <Group id="-1064302137">
+      <Item lang="en" text="Maximum size for web service exceeded" />
+      <Item lang="de" text="Maximale Größe für Webservice erreicht" />
+    </Group>
+    <Group id="-1064302136">
+      <Item lang="en" text="Error parsing URL from browser" />
+      <Item lang="de" text="URL konnte vom Browser nicht gefunden werden" />
+    </Group>
+    <Group id="-1064302135">
+      <Item lang="en" text="WebContent or WebService not found in internal list" />
+      <Item lang="de" text="In der Internen Liste konnte der Webinhalt und der Webservice nicht gefunden werden" />
+    </Group>
+    <Group id="-1064302134">
+      <Item lang="en" text="WebContent or WebService already exists in internal list" />
+      <Item lang="de" text="In der Internen Liste existiert bereits der angegebene Webinhalt oder der Webservice" />
+    </Group>
+    <Group id="-1064302133">
+      <Item lang="en" text="Web service is not yet done transferring" />
+      <Item lang="de" text="Der Webservice ist noch nicht bereit für Transfer" />
+    </Group>
+    <Group id="-1064302132">
+      <Item lang="en" text="No Data instance available for processing web request" />
+      <Item lang="de" text="Keine Dateninstanz verfügbar um Webanfrage zu verarbeiten" />
+    </Group>
+    <Group id="-1064302131">
+      <Item lang="en" text="Buffer for processing request not available" />
+      <Item lang="de" text="Speicher um Anfrage zu verarbeiten nicht verfügbar" />
+    </Group>
+    <Group id="-1064302130">
+      <Item lang="en" text="Error adding WebXs link to SDM ({1})" />
+      <Item lang="de" text="Anfügen des WebXs Links an SDM fehlgeschlagen ({1})" />
+    </Group>
     <Group id="1086390772">
       <Item lang="de" text="mapp View Server wird gestartet" />
       <Item lang="en" text="Starting mapp View server." />
@@ -34319,6 +36643,536 @@
     <Group id="-2134803099">
       <Item lang="de" text="Potenziell schädliche Dokument-Inhalte wurden gefiltert. Typ:  &quot;{1}&quot;  Name: &quot;{2}&quot;" />
       <Item lang="en" text="Potentially harmful document content was filtered. Typ: &quot;{1}&quot;  name: &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1064239099">
+      <Item lang="de" text="Ungültiger Inhalt des MpLink" />
+      <Item lang="en" text="Invalid MpLink contents" />
+    </Group>
+    <Group id="-1064239094">
+      <Item lang="de" text="Laden der Konfiguration {2} fehlgeschlagen (Fehlerursache: {1})" />
+      <Item lang="en" text="Error loading configuration {2} (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064239092">
+      <Item lang="de" text="Speichern der Konfiguration {2} fehlgeschlagen (Fehlerursache: {1})" />
+      <Item lang="en" text="Error saving configuration {2} (ErrorCause: {1})" />
+    </Group>
+    <Group id="1083180007">
+      <Item lang="de" text="{1}" />
+      <Item lang="en" text="{1}" />
+    </Group>
+    <Group id="1083180039">
+      <Item lang="de" text="Verwendete mapp Services Version: {1}.{2}.{3}" />
+      <Item lang="en" text="Used mapp Services version: {1}.{2}.{3}" />
+    </Group>
+    <Group id="1083180047">
+      <Item lang="de" text="Verwendete mapp Technology (legacy) Version: {1}.{2}.{3}" />
+      <Item lang="en" text="Used mapp Technology (legacy) version: {1}.{2}.{3}" />
+    </Group>
+    <Group id="1083180048">
+      <Item lang="de" text="Verwendete mapp Control Version: {1}.{2}.{3}" />
+      <Item lang="en" text="Used mapp Control version: {1}.{2}.{3}" />
+    </Group>
+    <Group id="-1064303639">
+      <Item lang="de" text="Der Service {2} konnte nicht gefunden werden" />
+      <Item lang="en" text="Service {2} was not found" />
+    </Group>
+    <Group id="-1064303631">
+      <Item lang="de" text="Eintrag für {2} konnte nicht erstellt werden" />
+      <Item lang="en" text="Unable to create registry for {2}" />
+    </Group>
+    <Group id="-1064303630">
+      <Item lang="de" text="Der Diagnose Web-Service konnte nicht registriert werden (Fehlerursache: {1})" />
+      <Item lang="en" text="Failed to register diagnostic web-service (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303629">
+      <Item lang="de" text="{2} konnte nicht als Kind von {3} hinzugefügt werden (Fehlerursache: {1})" />
+      <Item lang="en" text="Failed to add {2} as child to {3} (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303628">
+      <Item lang="de" text="{2} konnte nicht von {3} entfernt werden (Fehlerursache: {1})" />
+      <Item lang="en" text="Failed to remove {2} from parent {3} (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303627">
+      <Item lang="de" text="Der Komponenten Web-Service konnte nicht vom Faceplate-Service gelöscht werden (Fehlerursache {1})" />
+      <Item lang="en" text="Failed to remove the component web service from the faceplate service (ErrorCause {1})" />
+    </Group>
+    <Group id="-1064303626">
+      <Item lang="de" text="Zugriff auf Konfiguration {2} fehlgeschlagen (Fehlerursache: {1})" />
+      <Item lang="en" text="Could not access configuration {2} (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303625">
+      <Item lang="de" text="Für {3} existiert bereits die Erweiterung {2}" />
+      <Item lang="en" text="Addon with name {2} already exists for {3}" />
+    </Group>
+    <Group id="-1064303624">
+      <Item lang="de" text="Die Instanz des Konfigurations FB konnte nicht gefunden werden (Fehlerursache {1})" />
+      <Item lang="en" text="Unable to locate configuration FB instance (ErrorCause {1})" />
+    </Group>
+    <Group id="-1064303623">
+      <Item lang="de" text="Konfigurations PV konnte nicht gefunden werden (Fehlerursache: {1})" />
+      <Item lang="en" text="Unable to locate configuration PV (ErroCause: {1})" />
+    </Group>
+    <Group id="-1064303622">
+      <Item lang="de" text="Der Inhalt des Bibliotheken Faceplate konnte nicht registriert werden (Fehlerursache: {1})" />
+      <Item lang="en" text="Could not register library faceplate content (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303621">
+      <Item lang="de" text="Revision der Bibliotheks Information ist unbekannt. Erwartet wurde {2} nicht {3}" />
+      <Item lang="en" text="The revision of the library info is not known. Expected {2} was {3}" />
+    </Group>
+    <Group id="-1064303620">
+      <Item lang="de" text="Lizenz {2} konnte nicht registriert werden (Fehlerursache {1})" />
+      <Item lang="en" text="Unable to register license {2} (ErrorCause {1})" />
+    </Group>
+    <Group id="-1064303619">
+      <Item lang="de" text="Deregestrierung der Lizenz nicht möglich (Fehlerursache {1})" />
+      <Item lang="en" text="Unable to unregister license (ErrorCause {1})" />
+    </Group>
+    <Group id="1083180030">
+      <Item lang="de" text="Lizenzsystem konnte nicht lokalisiert werden. Technology guarding wurde übersprungen" />
+      <Item lang="en" text="License system could not be located. Technology guarding skipped." />
+    </Group>
+    <Group id="1083180031">
+      <Item lang="de" text="Laufzeit unterstüzt Lizensierung nicht. Technology guarding wurde übersprungen" />
+      <Item lang="en" text="Runtime does not support licensing. Technology guarding skipped." />
+    </Group>
+    <Group id="-1064303136">
+      <Item lang="de" text="Komponente ({2}) ungültig oder existiert nicht " />
+      <Item lang="en" text="Component ({2}) not valid or not existing" />
+    </Group>
+    <Group id="-1064303133">
+      <Item lang="de" text="Initialisierung der Systemelemente fehlgeschlagen (Fehlerursache: {1})" />
+      <Item lang="en" text="Error when initializing system-elements (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303132">
+      <Item lang="de" text="Verbinden der Systemelemente fehlgeschlagen(Fehlerursache: {1})" />
+      <Item lang="en" text="Error during system-element linking (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303116">
+      <Item lang="de" text="Der Konfigurations-Wert {2} wurde nicht gefunden" />
+      <Item lang="en" text="The configuration-property {2} was not found." />
+    </Group>
+    <Group id="-1064303115">
+      <Item lang="de" text="In der Konfiguration {2} fehlt der Eintrag {3}" />
+      <Item lang="en" text="The entry for {3} is missing in the configuration {2}" />
+    </Group>
+    <Group id="-1064303114">
+      <Item lang="de" text="Die Daten der Konfiguration ({2} : {3}) enthält ungültige Einträge " />
+      <Item lang="en" text="The configuration data ({2} : {3}) contains entries with invalid format" />
+    </Group>
+    <Group id="-1064303107">
+      <Item lang="de" text="Der Selektor {2} konnte nicht auf {3} gesetzt werden" />
+      <Item lang="en" text="The selector {2} could not be set to {3}" />
+    </Group>
+    <Group id="-1064303098">
+      <Item lang="de" text="Ungültiges Datenformat ({2})" />
+      <Item lang="en" text="Data-Format invalid ({2})" />
+    </Group>
+    <Group id="-1064303097">
+      <Item lang="de" text="Daten konnten nicht gespeichert werden (von {2} nach {3}) (Fehlerursache: {1})" />
+      <Item lang="en" text="Could not save data (to {2} at {3}) (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303096">
+      <Item lang="de" text="Daten konnten nicht geladen werden(von {2} nach {3}) (Fehlerursache: {1})" />
+      <Item lang="en" text="Could not load data (from {2} at {3}) (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303094">
+      <Item lang="de" text="Daten für {2} nicht vorhanden" />
+      <Item lang="en" text="No data is present for {2}" />
+    </Group>
+    <Group id="-1064303087">
+      <Item lang="de" text="Ungültiger Datenpunkt {2} in Display-Konfiguration" />
+      <Item lang="en" text="Invalid datapoint {2} in display-configuration" />
+    </Group>
+    <Group id="-1064303086">
+      <Item lang="de" text="Ungültige Einheit {3:2} in Display-Konfiguration" />
+      <Item lang="en" text="Invalid fallback-unit {3:2} in display-configuration" />
+    </Group>
+    <Group id="-1064303085">
+      <Item lang="de" text="Ungültige PV {2} für Grenzwert" />
+      <Item lang="en" text="Invalid PV {2} used for limit" />
+    </Group>
+    <Group id="-1064303084">
+      <Item lang="de" text="Einheit {2} kann nicht in {3} umgerechnet werden" />
+      <Item lang="en" text="Unit {2} is not convertible to {3}" />
+    </Group>
+    <Group id="-1064303083">
+      <Item lang="de" text="Ungültige Einheiten-Definition {3:2}" />
+      <Item lang="en" text="Invalid Unit-definition {3:2}" />
+    </Group>
+    <Group id="-1064303079">
+      <Item lang="de" text="Einheiten-Umrechnung {2} ungültig" />
+      <Item lang="en" text="Unit-translation {2} is invalid" />
+    </Group>
+    <Group id="-1064303077">
+      <Item lang="de" text="Variable {2} für Einheiten-Umrechnung nicht gefunden oder fehlerhaft" />
+      <Item lang="en" text="Variable {2} for unit-translation not found or invalid" />
+    </Group>
+    <Group id="-1064303060">
+      <Item lang="de" text="Keine PV an angegebener Adresse gefunden (Fehlerursache: {1})" />
+      <Item lang="en" text="No PV found at given address (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303030">
+      <Item lang="de" text="Registrieren einer neuen Textformatierungsquelle fehlgeschlagen (Fehlerursache: {1})" />
+      <Item lang="en" text="Failed to register a new text formatter data source (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303029">
+      <Item lang="de" text="Lokalisieren von Laufzeitunterstützung für zusätzlicher Textformatierungsquelle fehlgeschlagen" />
+      <Item lang="en" text="Failed to locate runtime support for additional text formatter data sources" />
+    </Group>
+    <Group id="-1064303020">
+      <Item lang="de" text="Die PV- oder Funktionsreferenz &quot;{2:Name}&quot; wurde nicht gefunden." />
+      <Item lang="en" text="The PV- or function reference &quot;{2:Name}&quot; was not found." />
+    </Group>
+    <Group id="-1064303019">
+      <Item lang="de" text="Die PV- oder Funktionsreferenz &quot;{2:Name}&quot; existiert bereits." />
+      <Item lang="en" text="The PV- or function reference &quot;{2:Name}&quot; already exists." />
+    </Group>
+    <Group id="-2138044953">
+      <Item lang="de" text="Komponente {2} war bereits in {3} registriert und wurde in {4} neu-registriert" />
+      <Item lang="en" text="Component {2} was already linked to {3} and is relinked to {4}" />
+    </Group>
+    <Group id="-1064294640">
+      <Item lang="de" text="Keine Konfigurations-Struktur an angegebener Adresse gefunden" />
+      <Item lang="en" text="No configuration-structure found at given address" />
+    </Group>
+    <Group id="-1064294634">
+      <Item lang="de" text="Schreiben von {3} auf  {3} fehlgeschlagenn (Fehlerursache: {1})" />
+      <Item lang="en" text="Failed to write {2} to {3} (ErrorCause: {1})" />
+    </Group>
+    <Group id="-1064303082">
+      <Item lang="de" text="Kein Zugriff auf OPC-Server (Sucht: {2}, OPC-Fehercode: {3})" />
+      <Item lang="en" text="Cannot access OPC-Server (Looking for: {2}, OPC-Errorcode: {3})" />
+    </Group>
+    <Group id="-1064303081">
+      <Item lang="de" text="Keine &quot;EngineeringUnit&quot; für {2} konfiguriert (OPC-Fehlercode: {3})" />
+      <Item lang="en" text="No EngineeringUnit configured for {2} (OPC-Errorcode: {3})" />
+    </Group>
+    <Group id="-1064303070">
+      <Item lang="de" text="Ungültiger Bezeichner {2} für Einheiten-System" />
+      <Item lang="en" text="Invalid measurement-system identifier {2}" />
+    </Group>
+    <Group id="-1064303069">
+      <Item lang="de" text="Ungültige Einheiten-Gruppe: {2}" />
+      <Item lang="en" text="Invalid Unit-group definition: {2}" />
+    </Group>
+    <Group id="-1064303068">
+      <Item lang="de" text="Unbekannte Einheiten-Gruppe: {2}" />
+      <Item lang="en" text="Unknown Unit-group {2}" />
+    </Group>
+    <Group id="-1064303067">
+      <Item lang="de" text="Ungültige PV {2} in Einheiten Gruppe" />
+      <Item lang="en" text="Invalid Pv {2} for unit-group" />
+    </Group>
+    <Group id="-1064239103">
+      <Item lang="de" text="Komponente konnte nicht erzeugt werden" />
+      <Item lang="en" text="Could not create component" />
+    </Group>
+    <Group id="-1064303616">
+      <Item lang="de" text="Es wurde keine PV mit dem angegebenen Namen gefunden." />
+      <Item lang="en" text="No PV with the requested name was found." />
+    </Group>
+    <Group id="-1064303615">
+      <Item lang="de" text="Die gewünschte Referenz ist NULL." />
+      <Item lang="en" text="The requested reference is NULL." />
+    </Group>
+    <Group id="-1064303614">
+      <Item lang="de" text="Ungültige Konfiguration der Query {2} (in {3})" />
+      <Item lang="en" text="Invalid configuration of query {2} (in {3})" />
+    </Group>
+    <Group id="-1064303613">
+      <Item lang="de" text="Konfiguration einer WHERE-Bedingung (#{2}) ungültig" />
+      <Item lang="en" text="Configuration of a WHERE-condition (#{2}) invalid" />
+    </Group>
+    <Group id="-1064303612">
+      <Item lang="de" text="Konfiguration einer SELECT-Anweisung (#{2}) ungültig" />
+      <Item lang="en" text="Configuration of a SELECT-command (#{2}) invalid" />
+    </Group>
+    <Group id="-1064303611">
+      <Item lang="de" text="Konfiguration der WHERE-Logik ungültig" />
+      <Item lang="en" text="Configuration of WHERE-logic invalid" />
+    </Group>
+    <Group id="-1064303610">
+      <Item lang="de" text="Ungültige Query-Update PV {2}" />
+      <Item lang="en" text="Invalid Query-Update PV {2}" />
+    </Group>
+    <Group id="-1064239102">
+      <Item lang="de" text="MpLink ist ein Null-Zeiger" />
+      <Item lang="en" text="MpLink is a null pointer" />
+    </Group>
+    <Group id="-1064239101">
+      <Item lang="de" text="MpLink-Verbindung nicht erlaubt" />
+      <Item lang="en" text="MpLink connection not allowed" />
+    </Group>
+    <Group id="-1064239100">
+      <Item lang="de" text="MpLink wurde geändert" />
+      <Item lang="en" text="MpLink modified" />
+    </Group>
+    <Group id="-1064239098">
+      <Item lang="de" text="MpLink wird bereits verwendet" />
+      <Item lang="en" text="MpLink already in use" />
+    </Group>
+    <Group id="-1064239097">
+      <Item lang="de" text="Parameter-Struktur ist ein Null-Zeiger" />
+      <Item lang="en" text="Parameters structure is a null pointer" />
+    </Group>
+    <Group id="-1064239096">
+      <Item lang="de" text="Configuration-Struktur ist ein Null-Zeiger" />
+      <Item lang="en" text="Configuration structure is a null pointer" />
+    </Group>
+    <Group id="-1064239095">
+      <Item lang="de" text="Configuration-Zeiger ist keine gültige PV" />
+      <Item lang="en" text="Configuration pointer is no valid PV" />
+    </Group>
+    <Group id="-1064239091">
+      <Item lang="de" text="Konfiguration ist ungültig" />
+      <Item lang="en" text="Configuration is invalid" />
+    </Group>
+    <Group id="-2137980917">
+      <Item lang="de" text="Warnung beim Laden der Konfiguration" />
+      <Item lang="en" text="Warning loading configuration" />
+    </Group>
+    <Group id="-2138045423">
+      <Item lang="de" text="Eingegebener Taskname &quot;{2}&quot; ist zu lang und wurde gekürzt: &quot;{3}&quot;" />
+      <Item lang="en" text="Entered task name &quot;{2}&quot; is too long and was truncated: &quot;{3}&quot;" />
+    </Group>
+    <Group id="-1064303598">
+      <Item lang="de" text="Fehler beim Lesen des Passworts ({2}) aus der Konfiguration (Interner Fehler: {1})" />
+      <Item lang="en" text="Error reading password ({2}) from configuration (Internal Error: {1})" />
+    </Group>
+    <Group id="-1064303597">
+      <Item lang="de" text="Passwort ist ungültig" />
+      <Item lang="en" text="Password is invalid" />
+    </Group>
+    <Group id="-1064303596">
+      <Item lang="de" text="Es konnte nicht genügend Speicher allokiert werden" />
+      <Item lang="en" text="Failed to allocated sufficient memory" />
+    </Group>
+    <Group id="-2138045419">
+      <Item lang="de" text="mapp Assertion fehlgeschlagen" />
+      <Item lang="en" text="mapp Assertion failed" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpAssetIntCore/Alarms">
+    <Group id="ExportStatisticsFailed">
+      <Item lang="en" text="Shift statistics export failed" />
+      <Item lang="de" text="Export der Schichtstatistiken fehlgeschlagen" />
+    </Group>
+    <Group id="ExportTimelineFailed">
+      <Item lang="en" text="Timeline export failed" />
+      <Item lang="de" text="Export der Timeline fehlgeschlagen" />
+    </Group>
+    <Group id="ExportJobStatisticsFailed">
+      <Item lang="en" text="Job statistics export failed" />
+      <Item lang="de" text="Export der Job Schichtstatistiken fehlgeschlagen" />
+    </Group>
+    <Group id="InUnscheduledDowntime">
+      <Item lang="en" text="Unscheduled downtime" />
+      <Item lang="de" text="Ungeplante Stillstandszeit" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpAuditTrail/Alarms">
+    <Group id="ArchiveAvailable">
+      <Item lang="en" text="Archive available" />
+      <Item lang="de" text="Archiv verfügbar" />
+    </Group>
+    <Group id="MaxArchives">
+      <Item lang="en" text="Archiving stopped (maximum number of archives reached)" />
+      <Item lang="de" text="Archivieren wurde eingestellt (maximale Anzahl an Archiven erreicht)" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpBackupCore/Alarms">
+    <Group id="CreateFailed">
+      <Item lang="en" text="A backup could not have been created" />
+      <Item lang="de" text="Ein Backup konnte nicht erstellt werden" />
+    </Group>
+    <Group id="InstallFailed">
+      <Item lang="en" text="A backup/update could not have been installed" />
+      <Item lang="de" text="Ein Backup/Update konnte nicht installiert werden" />
+    </Group>
+    <Group id="UpdateCheckFailed">
+      <Item lang="en" text="Update check could not have been performed" />
+      <Item lang="de" text="Die Verfügbarkeit neuer Updates konnte nicht überprüft werden" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpCodeBox/Alarms">
+    <Group id="ImportFailed">
+      <Item lang="en" text="Import of {&amp;ItemName} failed" />
+      <Item lang="de" text="Import von {&amp;ItemName} fehlgeschlagen" />
+    </Group>
+    <Group id="StartFailed">
+      <Item lang="en" text="Start of program {&amp;Name} failed" />
+      <Item lang="de" text="Start von Program {&amp;Name} fehlgeschlagen" />
+    </Group>
+    <Group id="ExecuteFailed">
+      <Item lang="en" text="Execution of program {&amp;Name} failed ({&amp;Title})" />
+      <Item lang="de" text="Start von Program {&amp;Name} fehlgeschlagen ({&amp;Title})" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpDataRecorder/Alarms">
+    <Group id="RecordingCompleted">
+      <Item lang="en" text="Data recording completed successfully" />
+      <Item lang="de" text="Daten sichern erfolgreich" />
+    </Group>
+    <Group id="RecordingAborted">
+      <Item lang="en" text="Data recording interrupted" />
+      <Item lang="de" text="Daten sichern unterbrochen" />
+    </Group>
+    <Group id="LimitViolated">
+      <Item lang="en" text="Value of a registered process variable has violated limits" />
+      <Item lang="de" text="Wert einer registrierten Prozessvariable hat Grenzen verletzt" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpFileManagerUI/Alarms">
+    <Group id="DeviceNotFound">
+      <Item lang="en" text="FileDevice not found" />
+      <Item lang="de" text="FileDevice wurde nicht gefunden" />
+    </Group>
+    <Group id="AlreadyExisting">
+      <Item lang="en" text="File/Folder already exists" />
+      <Item lang="de" text="Datei/Ordner existiert bereits" />
+    </Group>
+    <Group id="FileSystemError">
+      <Item lang="en" text="General error in file system" />
+      <Item lang="de" text="Genereller Fehler des Dateisystems" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpIO/Alarms">
+    <Group id="ImportFailed">
+      <Item lang="en" text="Import Hardware-Configuration has failed" />
+      <Item lang="de" text="Importieren einer Hardware-Konfiguration ist fehlgeschlagen" />
+    </Group>
+    <Group id="ImportDone">
+      <Item lang="en" text="New Hardware-Configuration imported" />
+      <Item lang="de" text="Neue Hardware-Konfiguration wurde importiert" />
+    </Group>
+    <Group id="HwChanged">
+      <Item lang="en" text="Hardware-Configuration was changed externally" />
+      <Item lang="de" text="Hardware-Konfiguration wurde extern geändert" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpOeeCore/Alarms">
+    <Group id="ExportStatisticsFailed">
+      <Item lang="en" text="Shift statistics export failed" />
+      <Item lang="de" text="Export der Schichtstatistiken fehlgeschlagen" />
+    </Group>
+    <Group id="ExportTimelineFailed">
+      <Item lang="en" text="Timeline export failed" />
+      <Item lang="de" text="Export der Timeline fehlgeschlagen" />
+    </Group>
+    <Group id="InUnscheduledDowntime">
+      <Item lang="en" text="Unscheduled downtime" />
+      <Item lang="de" text="Ungeplante Stillstandszeit" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpPackMLCore/Alarms">
+    <Group id="StateTransitionNotAllowed">
+      <Item lang="en" text="Transition to this state not possible" />
+      <Item lang="de" text="Wechsel in diesen Zustand nicht möglich" />
+    </Group>
+    <Group id="ModeTransitionNotAllowed">
+      <Item lang="en" text="Mode transition not possible" />
+      <Item lang="de" text="Modus Übergang nicht möglich" />
+    </Group>
+    <Group id="ConfigurationInvalid">
+      <Item lang="en" text="Invalid configuration" />
+      <Item lang="de" text="Konfiguration íst ungültig" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpRecipeCsv/Alarms">
+    <Group id="SaveFailed">
+      <Item lang="en" text="Recipe save failed" />
+      <Item lang="de" text="Speichern des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="SaveFailedPartial">
+      <Item lang="en" text="Recipe save partially failed" />
+      <Item lang="de" text="Speichern des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailed">
+      <Item lang="en" text="Recipe load failed" />
+      <Item lang="de" text="Laden des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailedPartial">
+      <Item lang="en" text="Recipe load partially failed" />
+      <Item lang="de" text="Laden des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpRecipeXml/Alarms">
+    <Group id="SaveFailed">
+      <Item lang="en" text="Recipe save failed" />
+      <Item lang="de" text="Speichern des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="SaveFailedPartial">
+      <Item lang="en" text="Recipe save partially failed" />
+      <Item lang="de" text="Speichern des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailed">
+      <Item lang="en" text="Recipe load failed" />
+      <Item lang="de" text="Laden des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailedPartial">
+      <Item lang="en" text="Recipe load partially failed" />
+      <Item lang="de" text="Laden des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpReportCore/Alarms">
+    <Group id="GenerateFailed">
+      <Item lang="en" text="Report generation failed" />
+      <Item lang="de" text="Erstellung des Reports fehlgeschlagen" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpSequenceCore/Alarms">
+    <Group id="ImportFailed">
+      <Item lang="de" text="Sequence Import fehlgeschlagen" />
+      <Item lang="en" text="Sequence import failed" />
+    </Group>
+    <Group id="ExportFailed">
+      <Item lang="de" text="Sequence Export fehlgeschlagen" />
+      <Item lang="en" text="Sequence export failed" />
+    </Group>
+    <Group id="Timeout">
+      <Item lang="de" text="Ein Timeout passierte während Ausführung der Sequenz " />
+      <Item lang="en" text="A timeout was triggered during the sequence execution" />
+    </Group>
+    <Group id="Interlock">
+      <Item lang="de" text="Eine Interlock-Bedingung wurde nicht erfüllt" />
+      <Item lang="en" text="An interlock condition was not fulfilled" />
+    </Group>
+    <Group id="ActuatorBlocked">
+      <Item lang="de" text="Ein Aktuator ist nicht verfügbar aufgrund einer parallelen Bewegung" />
+      <Item lang="en" text="An actuator is not available due to a parallel movement" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpSkyline/Alarms">
+    <Group id="InvalidConfig">
+      <Item lang="en" text="Import of invalid configuration" />
+      <Item lang="de" text="Import einer ungültigen Konfiguration" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpTweetCore/Alarms">
+    <Group id="MessageSendFail">
+      <Item lang="en" text="Failed to send message to receiver." />
+      <Item lang="de" text="Senden der Nachricht an Empfänger fehlgeschlagen." />
+    </Group>
+    <Group id="PingTimeout">
+      <Item lang="en" text="Ping command timeout with out response." />
+      <Item lang="de" text="Ping-Befehl ergab Zeitüberschreitung ohne Antwort." />
+    </Group>
+    <Group id="CommunicationFail">
+      <Item lang="en" text="Communication to modem failed." />
+      <Item lang="de" text="Kommunikation zum Modem ist fehlgeschlagen." />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpUserLogin/Alarms">
+    <Group id="UserLocked">
+      <Item lang="en" text="User blocked due to too many failed login attempts " />
+      <Item lang="de" text="Benutzer wurde aufgrund zu vieler fehlerhafter Loginversuche gesperrt " />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpUserXLogin/Alarms">
+    <Group id="UserLocked">
+      <Item lang="en" text="User blocked due to too many failed login attempts " />
+      <Item lang="de" text="Benutzer wurde aufgrund zu vieler fehlerhafter Loginversuche gesperrt " />
     </Group>
   </TextMessages>
   <TextMessages ns="BR/IAT">

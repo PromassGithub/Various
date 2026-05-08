@@ -124,10 +124,10 @@
 </LN>
 <LN ID="%IW.X1.AnalogInput01" Type="INT">
 <Prod Device="X1" DPName="AnalogInput01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="GlbIO.Ai.Bilancia" Kind="pv"/>
 </LN>
 <LN ID="%IW.X1.AnalogInput02" Type="INT">
 <Prod Device="X1" DPName="AnalogInput02" Kind="io"/>
+<Cons Device="TC#1-CPYDEV" DPName="::GlbIO.Ai.Valvola" Kind="pv"/>
 </LN>
 <LN ID="%IB.X1.StatusInput01" Type="USINT">
 <Prod Device="X1" DPName="StatusInput01" Kind="io"/>
@@ -316,5 +316,114 @@
 </LN>
 <LN ID="%ID.IF6.ST1.ModuleCommErrorChangeTime" Type="DATE_AND_TIME">
 <Prod Device="IF6.ST1" DPName="ModuleCommErrorChangeTime" Kind="io"/>
+</LN>
+<LN ID="%IX.SS1.ModuleOk" Type="BOOL">
+<Prod Device="SS1" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.SerialNumber" Type="UDINT">
+<Prod Device="SS1" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.ModuleID" Type="UINT">
+<Prod Device="SS1" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.HardwareVariant" Type="UINT">
+<Prod Device="SS1" DPName="HardwareVariant" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.FirmwareVersion" Type="UINT">
+<Prod Device="SS1" DPName="FirmwareVersion" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Communication_Change_of_State" Type="UDINT">
+<Prod Device="SS1" DPName="Communication_Change_of_State" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Communication_State" Type="UDINT">
+<Prod Device="SS1" DPName="Communication_State" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Communication_Error" Type="UDINT">
+<Prod Device="SS1" DPName="Communication_Error" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.Version" Type="UINT">
+<Prod Device="SS1" DPName="Version" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.Watchdog_Timeout" Type="UINT">
+<Prod Device="SS1" DPName="Watchdog_Timeout" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Host_Watchdog" Type="UDINT">
+<Prod Device="SS1" DPName="Host_Watchdog" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Error_Count" Type="UDINT">
+<Prod Device="SS1" DPName="Error_Count" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Error_Log_Indicator" Type="UDINT">
+<Prod Device="SS1" DPName="Error_Log_Indicator" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Slave_State" Type="UDINT">
+<Prod Device="SS1" DPName="Slave_State" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Slave_Error_Log_Indicator" Type="UDINT">
+<Prod Device="SS1" DPName="Slave_Error_Log_Indicator" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Configured_Slaves" Type="UDINT">
+<Prod Device="SS1" DPName="Configured_Slaves" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Active_Slaves" Type="UDINT">
+<Prod Device="SS1" DPName="Active_Slaves" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.Faulted_Slaves" Type="UDINT">
+<Prod Device="SS1" DPName="Faulted_Slaves" Kind="io"/>
+</LN>
+<LN ID="%IX.SS1.ModuleConfig_192_168_10_2_Slot_0" Type="BOOL">
+<Prod Device="SS1" DPName="ModuleConfig_192_168_10_2_Slot_0" Kind="io"/>
+</LN>
+<LN ID="%IX.SS1.ModuleState_192_168_10_2_Slot_0" Type="BOOL">
+<Prod Device="SS1" DPName="ModuleState_192_168_10_2_Slot_0" Kind="io"/>
+</LN>
+<LN ID="%IX.SS1.ModuleDiag_192_168_10_2_Slot_0" Type="BOOL">
+<Prod Device="SS1" DPName="ModuleDiag_192_168_10_2_Slot_0" Kind="io"/>
+</LN>
+<LN ID="%IX.SS1.IF1.ST1.ModuleOk" Type="BOOL">
+<Prod Device="SS1.IF1.ST1" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%ID.SS1.IF1.ST1.MB1_Command_Value" Type="REAL">
+<Prod Device="SS1.IF1.ST1" DPName="MB1_Command_Value" Kind="io"/>
+<Cons Device="TC#1-CPYDEV" DPName="Program:PesoBilancia_G" Kind="pv"/>
+</LN>
+<LN ID="%IW.SS1.IF1.ST1.MB1_Channel_Mask" Type="UINT">
+<Prod Device="SS1.IF1.ST1" DPName="MB1_Channel_Mask" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.IF1.ST1.MB1_Command" Type="INT">
+<Prod Device="SS1.IF1.ST1" DPName="MB1_Command" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.IF1.ST1.SB1_Reserved_1" Type="INT">
+<Prod Device="SS1.IF1.ST1" DPName="SB1_Reserved_1" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.IF1.ST1.SB1_Reserved_2" Type="INT">
+<Prod Device="SS1.IF1.ST1" DPName="SB1_Reserved_2" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.IF1.ST1.SB1_Reserved_3" Type="INT">
+<Prod Device="SS1.IF1.ST1" DPName="SB1_Reserved_3" Kind="io"/>
+</LN>
+<LN ID="%IW.SS1.IF1.ST1.SB1_Command" Type="INT">
+<Prod Device="SS1.IF1.ST1" DPName="SB1_Command" Kind="io"/>
+</LN>
+<LN ID="%QD.SS1.IF1.ST1.MB1_Measuring_Value" Type="REAL">
+<Cons Device="SS1.IF1.ST1" DPName="MB1_Measuring_Value" Kind="io"/>
+</LN>
+<LN ID="%QW.SS1.IF1.ST1.MB1_Device_Status" Type="UINT">
+<Cons Device="SS1.IF1.ST1" DPName="MB1_Device_Status" Kind="io"/>
+</LN>
+<LN ID="%QW.SS1.IF1.ST1.MB1_Response" Type="INT">
+<Cons Device="SS1.IF1.ST1" DPName="MB1_Response" Kind="io"/>
+</LN>
+<LN ID="%QW.SS1.IF1.ST1.SB1_Status_Group_1" Type="INT">
+<Cons Device="SS1.IF1.ST1" DPName="SB1_Status_Group_1" Kind="io"/>
+</LN>
+<LN ID="%QW.SS1.IF1.ST1.SB1_Status_Group_2" Type="INT">
+<Cons Device="SS1.IF1.ST1" DPName="SB1_Status_Group_2" Kind="io"/>
+</LN>
+<LN ID="%QW.SS1.IF1.ST1.SB1_Status_Group_3" Type="INT">
+<Cons Device="SS1.IF1.ST1" DPName="SB1_Status_Group_3" Kind="io"/>
+</LN>
+<LN ID="%QW.SS1.IF1.ST1.SB1_Response" Type="INT">
+<Cons Device="SS1.IF1.ST1" DPName="SB1_Response" Kind="io"/>
 </LN>
 </Links></IO>
