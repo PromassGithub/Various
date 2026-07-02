@@ -1,33 +1,33 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Program 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=56 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index=57 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                                 Dosatore                       FB_DosaggioPolvere    0 "                                                               *"    0   24    1    0    1    1         
                     fPesoAttualeBilancia                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                          fPesoRichiesto                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                          bAvviaDosaggio                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
-                  fTolleranzaPercentuale                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                   fPesoAnticipoChiusura                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                    fSogliaDosaggioLento                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                    fSogliaMicrodosaggio                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-               fPercentualeValvolaVeloce                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                fPercentualeValvolaLenta                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                 fPercentualeValvolaFine                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                 tTimeoutStabilizzazione                                     TIME    0 "                                                               *"    1   12    1    1    0    0         
-                      fFattoreCorrezione                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-                 C_CAPACITA_MAX_BILANCIA                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
-             fUscitaValvolaProporzionale                                     REAL    0 "                                                            30.0"    1    8    1   10    0    0         
+                          fPesoRichiesto                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                          bAvviaDosaggio                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                  fTolleranzaPercentuale                                     REAL    0 "                                                          0.0005"    1    8    1   10    0    0         
+                   fPesoAnticipoChiusura                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                    fSogliaDosaggioLento                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                    fSogliaMicrodosaggio                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+               fPercentualeValvolaVeloce                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                fPercentualeValvolaLenta                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                 fPercentualeValvolaFine                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                 tTimeoutStabilizzazione                                     TIME    0 "                                                           T#05s"    1   12    1    1    0    0         
+                      fFattoreCorrezione                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                 C_CAPACITA_MAX_BILANCIA                                     REAL    0 "                                                          3500.0"    1    8    1   10    0    0         
+             fUscitaValvolaProporzionale                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                      bDosaggioCompletato                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                        bDosaggioInCorso                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                        bDosaggioInCorso                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                   bErroreStabilizzazione                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                          eStatoDosaggio                                     DINT    0 "                                                              40"    1    4    1   10    0    0 e,10,eST
+                          eStatoDosaggio                                     DINT    0 "                                                              10"    1    4    1   10    0    0 e,10,eST
 
-                       fPesoTargetVeloce                                     REAL    0 "                                                          1050.0"    1    8    1   10    0    0         
-                        fPesoTargetLento                                     REAL    0 "                                                          1455.0"    1    8    1   10    0    0         
-                      fErrorePercentuale                                     REAL    0 "                                                      0.01998698"    1    8    1   10    0    0         
+                       fPesoTargetVeloce                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                        fPesoTargetLento                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                      fErrorePercentuale                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                          fSetPointErrore                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
-                       fTolleranzaMinima                                     REAL    0 "                                                         1499.25"    1    8    1   10    0    0         
-                      fTolleranzaMassima                                     REAL    0 "                                                         1500.75"    1    8    1   10    0    0         
-                 fPuntoDiChiusuraValvola                                     REAL    0 "                                                          1497.0"    1    8    1   10    0    0         
+                       fTolleranzaMinima                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                      fTolleranzaMassima                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                 fPuntoDiChiusuraValvola                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                              bStartTimer                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                      TON_Stabilizzazione                                      TON    0 "                                                               *"    1   24    1    0    0    0         
                                       IN                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
@@ -37,25 +37,26 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=250 Type=0 Scope=0 Force=0 Index
                                StartTime                                     TIME    0 "                                                               *"    2   12    1    1    0    0         
                                        M                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
                                  Restart                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
-                       fUltimoPesoDosato                                     REAL    0 "                                                       1500.3999"    1    8    1   10    0    0         
-                   fUltimoErroreAssoluto                                     REAL    0 "                                                     0.399902344"    1    8    1   10    0    0         
-                      fErroreAssolutoMax                                     REAL    0 "                                                      0.75000006"    1    8    1   10    0    0         
+                       fUltimoPesoDosato                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                   fUltimoErroreAssoluto                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                      fErroreAssolutoMax                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                                   Recipe                               Typ_recipe    0 "                                                               *"    0   24    1    0    0    1         
-                   fPesoAnticipoChiusura                                     REAL    0 "                                                             3.0"    1    8    1   10    0    0         
-                    fSogliaDosaggioLento                                     REAL    0 "                                                             0.7"    1    8    1   10    0    0         
-                    fSogliaMicrodosaggio                                     REAL    0 "                                                            0.97"    1    8    1   10    0    0         
-               fPercentualeValvolaVeloce                                     REAL    0 "                                                            70.0"    1    8    1   10    0    0         
-                fPercentualeValvolaLenta                                     REAL    0 "                                                            40.0"    1    8    1   10    0    0         
-                 fPercentualeValvolaFine                                     REAL    0 "                                                            30.0"    1    8    1   10    0    0         
+                   fPesoAnticipoChiusura                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                    fSogliaDosaggioLento                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                    fSogliaMicrodosaggio                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+               fPercentualeValvolaVeloce                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                fPercentualeValvolaLenta                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                 fPercentualeValvolaFine                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
                       fFattoreCorrezione                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
-                       PesoRichiesto_HMI                                     REAL    0 "                                                          1500.0"    0    8    1   10    1    0         
-                      PercentualeValvola                                     REAL    0 "                                                      -0.6065461"    0    8    1   10    1    0         
+                       PesoRichiesto_HMI                                     REAL    0 "                                                             0.0"    0    8    1   10    1    0         
+                      PercentualeValvola                                     REAL    0 "                                                     -24.9980927"    0    8    1   10    1    0         
                        TON_timerDosaggio                                      TON    0 "                                                               *"    0   24    1    0    1    1         
                                       IN                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                                       PT                                     TIME    0 "                                                       T#08m_20s"    1   12    1    1    0    0         
                                        Q                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
                                       ET                                     TIME    0 "                                                           T#0ms"    1   12    1    1    0    0         
-                               StartTime                                     TIME    0 "                                             T#03h_01m_35s_400ms"    1   12    1    1    0    0         
+                               StartTime                                     TIME    0 "                                                 T#01m_51s_590ms"    1   12    1    1    0    0         
                                        M                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                                 Restart                                    UDINT    0 "                                                               4"    1    7    1   10    0    0         
-                           tDosaggio_HMI                                    UDINT    0 "                                                           24400"    0    7    1   10    1    0         
+                                 Restart                                    UDINT    0 "                                                               1"    1    7    1   10    0    0         
+                           tDosaggio_HMI                                     REAL    0 "                                                             0.0"    0    8    1   10    1    0         
+                             radialGauge                                     UINT    0 "                                                               0"    0    6    1   10    1    0         

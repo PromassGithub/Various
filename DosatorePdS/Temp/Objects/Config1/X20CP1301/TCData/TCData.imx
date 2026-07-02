@@ -33557,6 +33557,769 @@
     <Group id="3158829">
       <Item lang="en" text="PTP Slave is synchronous on interface {1}" />
     </Group>
+    <Group id="1086390772">
+      <Item lang="de" text="mapp View Server wird gestartet" />
+      <Item lang="en" text="Starting mapp View server." />
+    </Group>
+    <Group id="1086390773">
+      <Item lang="de" text="mapp View Server wurde gestartet" />
+      <Item lang="en" text="mapp View Server started" />
+    </Group>
+    <Group id="-1061092874">
+      <Item lang="de" text="Start des mapp View Servers ist fehlgeschlagen" />
+      <Item lang="en" text="mapp View server startup failure" />
+    </Group>
+    <Group id="-1061092873">
+      <Item lang="de" text="Library-File konnte nicht geparst werden" />
+      <Item lang="en" text="Could not parse library file" />
+    </Group>
+    <Group id="-1061092872">
+      <Item lang="de" text="Fehler beim Laden der mapp View Server Module" />
+      <Item lang="en" text="Error loading mapp View server modules" />
+    </Group>
+    <Group id="12649450">
+      <Item lang="de" text="Die Logger Engine wurde vom mapp View Event Logging System getrennt." />
+      <Item lang="en" text="The Logger engine has been separated from the mapp View event logging system." />
+    </Group>
+    <Group id="-1061092373">
+      <Item lang="de" text="Fehler beim Trennen der Logger Engine vom mapp View Event Logging System. " />
+      <Item lang="en" text="Error separating Logger engine from mapp View event logging system " />
+    </Group>
+    <Group id="-1061092366">
+      <Item lang="de" text="Fehler beim Schreiben in einen Logger." />
+      <Item lang="en" text="Error writing to Logger." />
+    </Group>
+    <Group id="1086391292">
+      <Item lang="de" text="Verwendete mapp View Version: {1}.{2}.{3}" />
+      <Item lang="en" text="Used mapp View version: {1}.{2}.{3}" />
+    </Group>
+    <Group id="-2134834179">
+      <Item lang="de" text="Inoffizielle Version von mapp View! Diese Version wurde nicht für den produktiven Einsatz freigegeben." />
+      <Item lang="en" text="This is an unofficial version of mapp View! This version has not been approved for use in productive environments." />
+    </Group>
+    <Group id="1086391294">
+      <Item lang="de" text="Verwendete mapp View Version: {1}.{2}.{3}, {4} User Visualisierungen geladen" />
+      <Item lang="en" text="Used mapp View version: {1}.{2}.{3}, {4} User Visualization loaded" />
+    </Group>
+    <Group id="1086391372">
+      <Item lang="de" text="Konfigurationsdatei laut Text wird geladen" />
+      <Item lang="en" text="Loading specified configuration file" />
+    </Group>
+    <Group id="12649549">
+      <Item lang="de" text="Konfigurationsdatei mit Anzahl der Einträge laut Text wurde geladen" />
+      <Item lang="en" text="Loaded configuration file with specified number of entries" />
+    </Group>
+    <Group id="-1061092274">
+      <Item lang="de" text="Konfigurationsdatei laut Text konnte nicht geladen werden" />
+      <Item lang="en" text="Could not load specified configuration file" />
+    </Group>
+    <Group id="-1061092176">
+      <Item lang="de" text="AR-Transfer API konnte auf dem Target nicht geladen werden" />
+      <Item lang="en" text="Could not load AR transfer API on target" />
+    </Group>
+    <Group id="1086391473">
+      <Item lang="de" text="Veränderungen von mapp View relevanten Dateien durch den Transfer wurden gestartet" />
+      <Item lang="en" text="Started modifications to mapp View relevant files initiated by transfer" />
+    </Group>
+    <Group id="12649650">
+      <Item lang="de" text="Veränderungen von mapp View relevanten Dateien durch den Transfer wurden erfolgreich durchgeführt" />
+      <Item lang="en" text="Completed modifications to mapp View relevant files initiated by transfer" />
+    </Group>
+    <Group id="-1061092173">
+      <Item lang="de" text="Veränderungen von mapp View relevanten Dateien durch den Transfer waren fehlerhaft" />
+      <Item lang="en" text="Faulty modifications to mapp View relevant files initiated by transfer" />
+    </Group>
+    <Group id="1086392273">
+      <Item lang="de" text="TCP-Sever wurde gestartet" />
+      <Item lang="en" text="TCP server started" />
+    </Group>
+    <Group id="-1061091374">
+      <Item lang="de" text="TCP-Server konnte nicht gestartet werden" />
+      <Item lang="en" text="Could not start TCP server" />
+    </Group>
+    <Group id="12650458">
+      <Item lang="de" text="Client mit ID laut Text wurde verbunden" />
+      <Item lang="en" text="Client with specified ID connected" />
+    </Group>
+    <Group id="-1061091365">
+      <Item lang="de" text="Verbinden des Clients mit ID laut Text ist fehlgeschlagen" />
+      <Item lang="en" text="Failed to connect client with specified ID" />
+    </Group>
+    <Group id="-2134833188">
+      <Item lang="de" text="Maximale Anzahl an Clients wurde auf einen ungültigen Wert ({1}) gesetzt. " />
+      <Item lang="en" text="Maximum number of clients set to invalid value ({1}) " />
+    </Group>
+    <Group id="-2134833187">
+      <Item lang="de" text="Maximale Anzahl an erlaubten Clients ({1}) wurde unter die Anzahl der aktuell verbunden Clients gesetzt ({2})." />
+      <Item lang="en" text="Maximum number of allowed clients ({1}) set to less than the number of currently connected clients ({2})" />
+    </Group>
+    <Group id="-1061091362">
+      <Item lang="de" text="Clientverbindung fehlgeschlagen: Maximale Anzahl an Verbindungen ({1}) erreicht." />
+      <Item lang="en" text="Client connection failed: Maximum number of connections ({1}) reached" />
+    </Group>
+    <Group id="-1061091361">
+      <Item lang="de" text="Clientverbindung fehlgeschlagen: Keine weiteren Verbindungen erlaubt, keine Client Lizenz verfügbar." />
+      <Item lang="en" text="Client connection failed: Addition connections not permitted, no client license available." />
+    </Group>
+    <Group id="-1061091360">
+      <Item lang="de" text="Clientverbindung fehlgeschlagen: Visualisierungslizenz nicht verfügbar." />
+      <Item lang="en" text="Client connection failed: HMI application license not available." />
+    </Group>
+    <Group id="12650468">
+      <Item lang="de" text="Clientverbindung wurde geschlossen" />
+      <Item lang="en" text="Client connection closed" />
+    </Group>
+    <Group id="-1061091355">
+      <Item lang="de" text="Fehler beim Schließen der Clientverbindung" />
+      <Item lang="en" text="Error closing client connection" />
+    </Group>
+    <Group id="-2134833170">
+      <Item lang="de" text="Initialwert eines gebundenen Widget Attributs wurde nicht gesendet. contentId: {1}, refId: {2}, attribute: {3}" />
+      <Item lang="en" text="Initial value of connected widget attribute not transmitted. contentId: {1}, refId: {2}, attribute: {3}" />
+    </Group>
+    <Group id="-2134833169">
+      <Item lang="de" text="Fehler beim Initialisieren des Scopes mit der ID laut Text." />
+      <Item lang="en" text="Error initializing scope with the specified ID" />
+    </Group>
+    <Group id="-1061091342">
+      <Item lang="de" text="Initialer Werte-Update des Clients für den Content laut Text wurde nicht gesendet." />
+      <Item lang="en" text="Update of initial values on client for the specified content not transmitted" />
+    </Group>
+    <Group id="-2134833165">
+      <Item lang="de" text="Problem beim Initialisieren des Bindings" />
+      <Item lang="en" text="Error initializing binding" />
+    </Group>
+    <Group id="-1061091340">
+      <Item lang="de" text="Aktivieren der Visualisierung &quot;{1}&quot; fehlgeschlagen: Visualisierungslizenz nicht verfügbar." />
+      <Item lang="en" text="Failed to enable HMI application &quot;{1}&quot;: HMI application license not available." />
+    </Group>
+    <Group id="-2134833150">
+      <Item lang="de" text="Für User &quot;{1}&quot; hinterlegte Sprache &quot;{2}&quot; wird nicht unterstützt, Sprache wird auf &quot;{3}&quot; gesetzt" />
+      <Item lang="en" text="Language &quot;{2}&quot; stored for user &quot;{1}&quot; is not supported, language is set to &quot;{3}&quot;." />
+    </Group>
+    <Group id="-2134833149">
+      <Item lang="de" text="Für User &quot;{1}&quot; hinterlegtes MeasurementSystem &quot;{2}&quot; wird nicht unterstützt, MeasurementSystem wird auf &quot;{3}&quot; gesetzt" />
+      <Item lang="en" text="MeasurementSystem &quot;{2}&quot; stored for user &quot;{1}&quot; is not supported, MeasurementSystem is set to &quot;{3}&quot;." />
+    </Group>
+    <Group id="-1061091324">
+      <Item lang="de" text="Fehler beim Herstellen der Verbindung zu MpUserX." />
+      <Item lang="en" text="Error establishing the connection to MpUserX." />
+    </Group>
+    <Group id="-2134833000">
+      <Item lang="de" text="File mit Pfad laut Text welches an den Client ausgeliefert werden sollte wurde nicht gefunden." />
+      <Item lang="en" text="Could not find file with specified path for delivery to the client" />
+    </Group>
+    <Group id="-2134832999">
+      <Item lang="de" text="File mit Pfad laut Text kann nicht an Client ausgeliefert werden. Speicherplatz des Servers nicht mehr ausreichend." />
+      <Item lang="en" text="File with path according to text can not be delivered to client. Space of the server is no longer sufficient." />
+    </Group>
+    <Group id="1086392482">
+      <Item lang="de" text="Die Anmeldung des Benutzers {1} auf der Diagnoseseite war erfolgreich. " />
+      <Item lang="en" text="Logon of user {1} on diagnostic page was successful." />
+    </Group>
+    <Group id="-2134832989">
+      <Item lang="de" text="Die Anmeldung des Benutzers {1} auf der Diagnoseseite ist fehlgeschlagen. " />
+      <Item lang="en" text="Logon of user {1} on diagnostic page has failed." />
+    </Group>
+    <Group id="12650748">
+      <Item lang="de" text="OPC UA Server erfolgreich verbunden" />
+      <Item lang="en" text="OPC UA server connected successfully" />
+    </Group>
+    <Group id="-1061091075">
+      <Item lang="de" text="Verbinden zum OPC UA Server &quot;{1}&quot; ist fehlgeschlagen." />
+      <Item lang="en" text="Connection to OPC UA server &quot;{1}&quot; failed." />
+    </Group>
+    <Group id="1086392574">
+      <Item lang="de" text="Verbindungsstatus des OPC UA Clients verändert" />
+      <Item lang="en" text="Modified connection status of OPC UA client" />
+    </Group>
+    <Group id="-1061091073">
+      <Item lang="de" text="OPC UA Client Verbindungsfehler" />
+      <Item lang="en" text="OPC UA client connection error" />
+    </Group>
+    <Group id="-2134832896">
+      <Item lang="de" text="SamplingRate &quot;{1}&quot; ist in der Konfiguration nicht definiert." />
+      <Item lang="en" text="Sampling rate &quot;{1}&quot; is not defined in the configuration." />
+    </Group>
+    <Group id="-2134832895">
+      <Item lang="de" text="Angegebenes SamplingInterval ({4} ms) wird beim Knoten (id: {1}, attribute: {2}, serverAlias: {3}) vom OPC UA Server nicht unterstützt. Es wird der Wert {5} ms verwendet." />
+      <Item lang="en" text="OPC UA server does not support specified sampling interval ({4} ms) on node (id: {1}, attribute: {2}, serverAlias: {3}). Using the value {5} ms instead." />
+    </Group>
+    <Group id="-1061091069">
+      <Item lang="de" text="Subscribe des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4}" />
+      <Item lang="en" text="Failed to subscribe to OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4}" />
+    </Group>
+    <Group id="-1061091068">
+      <Item lang="de" text="Fehler beim Anlegen der OPC UA Subscription/MontitoredItems" />
+      <Item lang="en" text="Error creating OPC UA subscription / monitored items" />
+    </Group>
+    <Group id="-1061091067">
+      <Item lang="de" text="Verwendeter OPC UA serverAlias &quot;{1}&quot; ist nicht definiert." />
+      <Item lang="en" text="Specified OPC UA serverAlias &quot;{1}&quot; is not defined." />
+    </Group>
+    <Group id="-1061091066">
+      <Item lang="de" text="OPC UA Lesen fehlgeschlagen. Status {1}" />
+      <Item lang="en" text="OPC UA read failed. Status {1}" />
+    </Group>
+    <Group id="-1061091065">
+      <Item lang="de" text="Lesen des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4} " />
+      <Item lang="en" text="Failed to read OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4} " />
+    </Group>
+    <Group id="-1061091064">
+      <Item lang="de" text="Schreiben des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4} " />
+      <Item lang="en" text="Failed to write OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4} " />
+    </Group>
+    <Group id="-1061091063">
+      <Item lang="de" text="Lesen der OPC UA History fehlgeschlagen. Status: {1}" />
+      <Item lang="en" text="Unable to read OPC UA history. Status: {1}" />
+    </Group>
+    <Group id="-1061091062">
+      <Item lang="de" text="Lesen der OPC UA History des Nodes &quot;{1}&quot; fehlgeschlagen. Status: {2}" />
+      <Item lang="en" text="OPC UA history of node &quot;{1}&quot; failed. Status: {2}" />
+    </Group>
+    <Group id="-2134832885">
+      <Item lang="de" text="Fehler beim Löschen der OPC UA Subscription/MontitoredItems" />
+      <Item lang="en" text="Error removing OPC UA subscription / monitored items" />
+    </Group>
+    <Group id="-1061091060">
+      <Item lang="de" text="Unsubscribe des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4}" />
+      <Item lang="en" text="Failed to unsubscribe to OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4}" />
+    </Group>
+    <Group id="-1061091059">
+      <Item lang="de" text="Fehler beim Aufruf einer OPC UA Methode (id: {1}, methodRefId: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4} " />
+      <Item lang="en" text="Failed to call OPC UA Method (id: {1}, methodRefId: {2}, serverAlias: {3}) failed. Status: {4} " />
+    </Group>
+    <Group id="-2134832880">
+      <Item lang="de" text="Ganzzahlüberlauf beim Schreiben auf die OPC UA Variable &quot;{1}&quot; mit dem Wert &quot;{2}&quot;" />
+      <Item lang="en" text="Integer overflow while writing value &quot;{2}&quot; to OPC UA variable &quot;{1}&quot;" />
+    </Group>
+    <Group id="-2134832879">
+      <Item lang="de" text="Ganzzahlunterlauf beim Schreiben auf die OPC UA Variable &quot;{1}&quot; mit dem Wert &quot;{2}&quot;" />
+      <Item lang="en" text="Integer underflow while writing value &quot;{2}&quot; to OPC UA variable &quot;{1}&quot;" />
+    </Group>
+    <Group id="-2134832870">
+      <Item lang="de" text="Initialwert der gebundenen OPC UA Variable &quot;{1}&quot; nicht gesendet. (Attribut: {2})" />
+      <Item lang="en" text="Initial value not sent for bound OPC UA variable &quot;{1}&quot;. (attribute: {2})" />
+    </Group>
+    <Group id="-2134832869">
+      <Item lang="de" text="Invalide OPC UA NodeId &quot;{1}&quot;" />
+      <Item lang="en" text="Invalid OPC UA NodeId &quot;{1}&quot;" />
+    </Group>
+    <Group id="1086392620">
+      <Item lang="de" text="Verbindung mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) wird hergestellt." />
+      <Item lang="en" text="Establishing connection to configured OPC UA server (serverAlias: &quot;{1}&quot;)." />
+    </Group>
+    <Group id="12650797">
+      <Item lang="de" text="Verbindung mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) hergestellt." />
+      <Item lang="en" text="Connection established to configured OPC UA server (serverAlias: &quot;{1}&quot;)." />
+    </Group>
+    <Group id="-1061091026">
+      <Item lang="de" text="Verbinden mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) fehlgeschlagen. Status: {2}" />
+      <Item lang="en" text="Connection to configured OPC UA server (serverAlias: &quot;{1}&quot;) failed. Status: {2}" />
+    </Group>
+    <Group id="-1061091025">
+      <Item lang="de" text="Benutzerwechsel beim konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) mit Benutzer &quot;{2}&quot; fehlgeschlagen. Status: {3}" />
+      <Item lang="en" text="Switching users with user &quot;{2}&quot; on configured OPC UA server (serverAlias: &quot;{1}&quot;) failed. Status: {3}" />
+    </Group>
+    <Group id="-1061091023">
+      <Item lang="de" text="Verbindung mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) verloren" />
+      <Item lang="en" text="Lost connection to configured OPC UA server (serverAlias: &quot;{1}&quot;)." />
+    </Group>
+    <Group id="-1061090873">
+      <Item lang="de" text="Subscribe der Session-Variable &quot;{1}&quot; fehlgeschlagen: Variable ist nicht vorhanden" />
+      <Item lang="en" text="Session variable &quot;{1}&quot; subscribe failed: Variable not found" />
+    </Group>
+    <Group id="-1061090872">
+      <Item lang="de" text="Schreiben auf Session-Variable &quot;{1}&quot; mit einem Wert vom falschen Typ &quot;{2}&quot; fehlgeschlagen. Erwartet: &quot;{3}&quot;" />
+      <Item lang="en" text="Write to session variable &quot;{1}&quot; with a value of incorrect type &quot;{2}&quot; failed. Expected: &quot;{3}&quot;" />
+    </Group>
+    <Group id="-1061090871">
+      <Item lang="de" text="Schreiben auf die Variable &quot;{1}&quot; fehlgeschlagen. Der Wert &quot;{2}&quot; kann nicht in den Typ &quot;{3}&quot; konvertiert werden." />
+      <Item lang="en" text="Variable &quot;{1}&quot; write failed. Cannot convert value &quot;{2}&quot; to type &quot;{3}&quot;." />
+    </Group>
+    <Group id="-1061090856">
+      <Item lang="de" text="Verweis auf Timer &quot;{1}&quot; konnte nicht aufgelöst werden. Referenzierter Timer ist undefiniert." />
+      <Item lang="en" text="Could not resolve reference to timer &quot;{1}&quot;. Referenced timer is undefined." />
+    </Group>
+    <Group id="-1061090675">
+      <Item lang="de" text="Fehler beim Einlesen des Snippet Files {1}." />
+      <Item lang="en" text="Error reading snippet file {1}" />
+    </Group>
+    <Group id="-1061090674">
+      <Item lang="de" text="Wert konnte nicht formatiert werden: Der Datentyp wird nicht unterstützt." />
+      <Item lang="en" text="The value could not be formatted. The data type is not supported." />
+    </Group>
+    <Group id="-1061090671">
+      <Item lang="de" text="Subscribe des Snippets &quot;{1}&quot; fehlgeschlagen. Das Snippet ist nicht vorhanden." />
+      <Item lang="en" text="Snippet &quot;{1}&quot; subscribe failed: Snippet not found" />
+    </Group>
+    <Group id="-1061090666">
+      <Item lang="de" text="Subscribe des Texts &quot;{1}&quot; fehlgeschlagen: Text ist nicht vorhanden." />
+      <Item lang="en" text="Text &quot;{1}&quot; subscribe failed: Text not found." />
+    </Group>
+    <Group id="-2134832485">
+      <Item lang="de" text="Verwendung des alten Snippets - &quot;formatItems&quot; - Format ohne Platzhalter beim Snippet mit der ID &quot;{1}&quot;. Richtig wäre: &quot;{2}&quot;" />
+      <Item lang="en" text="Using old snippet - &quot;formatItems&quot; - format without placeholder for snippet with ID &quot;{1}&quot;. Correct would be: &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1061090374">
+      <Item lang="de" text="Maximale Rekursionstiefe bei Binding erreicht" />
+      <Item lang="en" text="Maximum recursion depth reached for binding" />
+    </Group>
+    <Group id="-1061090355">
+      <Item lang="de" text="Fehler beim Einlesen des Binding Files &quot;{1}&quot;." />
+      <Item lang="en" text="Error reading binding file &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061090353">
+      <Item lang="de" text="Fehler beim Einlesen des BindingList Files &quot;{1}&quot;." />
+      <Item lang="en" text="Error reading binding list file &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061090351">
+      <Item lang="de" text="Fehler beim Einlesen des EventBinding Files &quot;{1}&quot;." />
+      <Item lang="en" text="Error reading event binding file &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061090349">
+      <Item lang="de" text="Fehler beim Einlesen des Expression Files &quot;{1}&quot;." />
+      <Item lang="en" text="Error reading expression file &quot;{1}&quot;" />
+    </Group>
+    <Group id="-2134832171">
+      <Item lang="de" text="Fehler beim Einlesen des Variablen Files &quot;{1}&quot;." />
+    </Group>
+    <Group id="-1061090276">
+      <Item lang="de" text="Selektor des List-Bindings mit der ID &quot;{1}&quot; wurde auf einen nicht existierenden Index &quot;{2}&quot; gesetzt." />
+      <Item lang="en" text="Selector for list binding with ID &quot;{1}&quot; set to non-existing index &quot;{2}&quot;&#xA;&#x9;&#x9;If the list is an embedded list, the binding id is displayed. The binding id is generated from the binding target attributes and has the format {type}*{refId}*{attribute}." />
+    </Group>
+    <Group id="-1061090275">
+      <Item lang="de" text="Verweis auf BindingList &quot;{1}&quot; konnte nicht aufgelöst werden. Referenzierte BindingList ist undefiniert." />
+      <Item lang="en" text="Could not resolve reference to binding list &quot;{1}&quot;. Referenced binding list is undefined." />
+    </Group>
+    <Group id="-1061090226">
+      <Item lang="de" text="Maximale Anzahl an abzuarbeitenden Events (type: &quot;{1}&quot;, refId: &quot;{2}&quot;, event: &quot;{3}&quot;) für ein EventBinding erreicht." />
+      <Item lang="en" text="Maximum number of events (type: &quot;{1}&quot;, refId: &quot;{2}&quot;, event: &quot;{3}&quot;) to be executed for an event binding reached" />
+    </Group>
+    <Group id="-1061090225">
+      <Item lang="de" text="Initialisierung des Operands &quot;{1}&quot; im EventBinding mit der ID &quot;{2}&quot; fehlgeschlagen" />
+      <Item lang="en" text="Failed to initialize operand &quot;{1}&quot; in event binding with ID &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1061090224">
+      <Item lang="de" text="Operand-Name &quot;{1}&quot; im EventBinding mit der ID &quot;{2}&quot; ist schon definiert" />
+      <Item lang="en" text="Operand name &quot;{1}&quot; in event binding with ID &quot;{2}&quot; already defined" />
+    </Group>
+    <Group id="-1061090201">
+      <Item lang="de" text="Typenkonflikt bei Operand &quot;{1}&quot;. Erwartet: {2}, Bekam: {3} " />
+      <Item lang="en" text="Type mismatch with Operand &quot;{1}&quot;. Expected: {2}, Received: {3} " />
+    </Group>
+    <Group id="-1061090175">
+      <Item lang="de" text="Fehler beim Interpretieren der Condition." />
+      <Item lang="en" text="Error interpreting condition" />
+    </Group>
+    <Group id="-1061090174">
+      <Item lang="de" text="Laufzeitfehler beim Auswerten der Condition" />
+      <Item lang="en" text="Runtime error while evaluating condition" />
+    </Group>
+    <Group id="-1061090173">
+      <Item lang="de" text="Condition ist nicht vom Typ &quot;BOOL&quot;" />
+      <Item lang="en" text="Condition not of type &quot;BOOL&quot;" />
+    </Group>
+    <Group id="-1061090151">
+      <Item lang="de" text="Problem beim Ausführen der Aktion &quot;{1}&quot; im Kontext &quot;{2}&quot;" />
+      <Item lang="en" text="Error executing action &quot;{1}&quot; in context &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1061090149">
+      <Item lang="de" text="Fehler beim Interpretieren der Aktionsparameter Expression" />
+      <Item lang="en" text="Error interpreting expression in action parameter" />
+    </Group>
+    <Group id="-1061090148">
+      <Item lang="de" text="Laufzeitfehler beim Auswerten der Aktionsparamter Expression" />
+      <Item lang="en" text="Runtime error while evaluating expression in action parameter" />
+    </Group>
+    <Group id="-2134831971">
+      <Item lang="de" text="Aktionsparameter Expression Typenkonflikt bei {&quot;{1}&quot;}. Erwartet: {2}, Bekam: {3} " />
+      <Item lang="en" text="Action parameter expression type conflict with {&quot;{1}&quot;}. Expected: {2}, Received: {3} " />
+    </Group>
+    <Group id="-1061090146">
+      <Item lang="de" text="Read-Aktion &quot;{1}&quot; liefert kein Ergebnis" />
+      <Item lang="en" text="No result returned by read action &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061090136">
+      <Item lang="de" text="Timer Start-Action Interval-Parameter &quot;{2}&quot; bei Timer &quot;{1}&quot; ungültig. " />
+      <Item lang="en" text="Timer Start-Action interval parameter &quot;{2}&quot; of timer &quot;{1}&quot; invalid." />
+    </Group>
+    <Group id="-1061090069">
+      <Item lang="de" text="Datei &quot;{1}&quot; kann nicht geöffnet werden. " />
+      <Item lang="en" text="Cannot open file &quot;{1}&quot; " />
+    </Group>
+    <Group id="-1061089376">
+      <Item lang="de" text="&#xA;Typenkonflikt beim Schreiben auf den Expression-Opreand &quot;{2}&quot; der Expresssion &quot;{1}&quot;. Erwartet: {3}, Bekam: {4}" />
+      <Item lang="en" text="&#xA;Type conflict while writing to expression operand &quot;{2}&quot; of expression &quot;{1}&quot;. Expected: {3}, Received: {4}" />
+    </Group>
+    <Group id="-1061089375">
+      <Item lang="de" text="Datentyp ({4}) vom Expression-Ergebnis der Expression &quot;{1}&quot; kann nicht in den spezifizierten Ergebnis-Datentypen ({3}) konvertiert werden" />
+      <Item lang="en" text="Cannot convert data type ({4}) of result of expression &quot;{1}&quot; to specified event data type ({3})" />
+    </Group>
+    <Group id="-1061089374">
+      <Item lang="de" text="Expression Laufzeitfehler: Division durch Null" />
+      <Item lang="en" text="Expression runtime error: Division by zero" />
+    </Group>
+    <Group id="-1061089373">
+      <Item lang="de" text="Expression Laufzeitfehler: N Mod 0 ist undefiniert" />
+      <Item lang="en" text="Expression runtime error: N Mod 0 undefined" />
+    </Group>
+    <Group id="-1061089371">
+      <Item lang="de" text="Index-Operator erfordert ein Array" />
+      <Item lang="en" text="Index operator requires array" />
+    </Group>
+    <Group id="-1061089370">
+      <Item lang="de" text="Array-Index ist kein Ganzzahltyp" />
+      <Item lang="en" text="Array index not integer" />
+    </Group>
+    <Group id="-1061089369">
+      <Item lang="de" text="Expression Laufzeitfehler: Array-Index außerhalb des zulässigen Bereichs. Index: &quot;{1}&quot;, Arraygröße: &quot;{2}&quot;" />
+      <Item lang="en" text="Expression runtime error: Array index outside permissible range. Index: &quot;{1}&quot;, Array size: &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1061089366">
+      <Item lang="de" text="Fehler beim Interpretieren der Expression mit der ID &quot;{1}&quot;" />
+      <Item lang="en" text="Error interpreting expression with ID &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061089365">
+      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Token &quot;{1}&quot; in der Expression-Operation bei Position &quot;{2}&quot;" />
+      <Item lang="en" text="Expression syntax error: Unexpected token &quot;{1}&quot; at position &quot;{2}&quot; of expression operation" />
+    </Group>
+    <Group id="-1061089364">
+      <Item lang="de" text="Expression Syntaxfehler: Kein schließendes Anführungszeichen nach der Zeichenfolge: &quot;{1}&quot;." />
+      <Item lang="en" text="Expression syntax error: No closing quotation mark after string: &quot;{1}&quot;." />
+    </Group>
+    <Group id="-1061089363">
+      <Item lang="de" text="Expression Syntaxfehler: Ungültige Escapesequenz außerhalb einer Zeichenfolge." />
+      <Item lang="en" text="Expression syntax error: Invalid string escape sequence" />
+    </Group>
+    <Group id="-1061089362">
+      <Item lang="de" text="Expression Syntaxfehler: Unbekanntes Zeichen in Escape-Sequenz: &quot;{1}&quot;" />
+      <Item lang="en" text="Expression syntax error: Invalid character in escape sequence: &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061089326">
+      <Item lang="de" text="Expression Syntaxfehler: Erwarte binären Operator vor unären Operator &quot;{1}&quot; bei Position: &quot;{2}&quot;" />
+      <Item lang="en" text="Expression syntax error: Expected binary operator before unary operator &quot;{1}&quot; at position: &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1061089325">
+      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Ende" />
+      <Item lang="en" text="Expression syntax error: Unexpected end" />
+    </Group>
+    <Group id="-1061089324">
+      <Item lang="de" text="Expression Syntaxfehler: Unerwarteter Operator &quot;{1}&quot; bei Position &quot;{2}&quot;" />
+      <Item lang="en" text="Expression syntax error: Unexpected operator &quot;{1}&quot; at position &quot;{2}&quot;" />
+    </Group>
+    <Group id="-1061089323">
+      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Ende, erwarte eine schließende runde Klammer &quot;)&quot;" />
+      <Item lang="en" text="Expression syntax error: Unexpected end, expected closing parenthesis &quot;)&quot;" />
+    </Group>
+    <Group id="-1061089322">
+      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Ende, erwarte eine schließende eckige Klammer &quot;]&quot;" />
+      <Item lang="en" text="Expression syntax error: Unexpected end, expected closing bracket &quot;]&quot;" />
+    </Group>
+    <Group id="-1061089296">
+      <Item lang="de" text="Typenkonflikt beim Operator &quot;{1}&quot;" />
+      <Item lang="en" text="Type conflict on operator &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061088875">
+      <Item lang="de" text="Verbinden mit mapp Server fehlgeschlagen. Url: {1} Status: {2}" />
+      <Item lang="en" text="Connection to configured mapp server failed. Url: {1} Status: {2}" />
+    </Group>
+    <Group id="-1061088873">
+      <Item lang="de" text="Subscribe der mapp Komponente &quot;{1}&quot; fehlgeschlagen. Status: {2}" />
+      <Item lang="en" text="Subscribing to mapp component &quot;{1}&quot; failed. Status: {2}" />
+    </Group>
+    <Group id="-1061088869">
+      <Item lang="de" text="Schreiben der mapp Komponente &quot;{1}&quot; fehlgeschlagen. Status: {2} " />
+      <Item lang="en" text="Writing to mapp component &quot;{1}&quot; failed. Status: {2} " />
+    </Group>
+    <Group id="-2134830200">
+      <Item lang="de" text="Konvertierungsfehler: Wert &quot;{2}&quot; kann nicht in den/die gewünschte/n Zieltyp/Einheit &quot;{3}&quot; konvertieren werden. Quelle: {1}" />
+      <Item lang="en" text="Conversion error: Cannot convert value &quot;{2}&quot; to the requested target type/unit &quot;{3}&quot;. Source: {1}" />
+    </Group>
+    <Group id="-2134830199">
+      <Item lang="de" text="Funktionen der FileIO Bibliothek sind nicht verfügbar." />
+      <Item lang="en" text="FileIO library functions not available" />
+    </Group>
+    <Group id="-2134830195">
+      <Item lang="de" text="Funktionen des AR Lizenzmanager sind nicht verfügbar." />
+      <Item lang="en" text="AR license manager functions not available" />
+    </Group>
+    <Group id="-1061088370">
+      <Item lang="de" text="Keine gültige Lizenz für mapp View gefunden." />
+      <Item lang="en" text="Could not find valid license for mapp View." />
+    </Group>
+    <Group id="-1061088369">
+      <Item lang="de" text="Server- Konfiguration ermöglicht mehr Verbindungen ({1}) als Client-Lizenzen verfügbar sind ({2})." />
+      <Item lang="en" text="Server configuration allowing more connections ({1}) than available client licenses ({2})" />
+    </Group>
+    <Group id="-1061088368">
+      <Item lang="de" text="Server- Konfiguration ermöglicht mehr B&amp;R Verbindungen ({1}) als B&amp;R Client-Lizenzen verfügbar sind ({2})." />
+      <Item lang="en" text="Server configuration allowing more B&amp;R connections ({1}) than available B&amp;R client licenses ({2})" />
+    </Group>
+    <Group id="-2134830190">
+      <Item lang="de" text="PV Zugriff ist nicht möglich" />
+      <Item lang="en" text="PV access is not possible" />
+    </Group>
+    <Group id="-2134830189">
+      <Item lang="de" text="Process Variable &quot;{1}&quot; nicht gefunden" />
+      <Item lang="en" text="Process variable &quot;{1}&quot; could not be found" />
+    </Group>
+    <Group id="-2134830188">
+      <Item lang="de" text="Datentyp (&quot;{2}&quot;) der Process Variable (&quot;{1}&quot;) wird nicht unterstützt" />
+      <Item lang="en" text="Datatype (&quot;{2}&quot;) of process variable (&quot;{1}&quot;) is not supported" />
+    </Group>
+    <Group id="-2134830187">
+      <Item lang="de" text="Referenz der Process Variable &quot;{1}&quot; ist ungültig" />
+      <Item lang="en" text="Reference of process variable &quot;{1}&quot; is invalid" />
+    </Group>
+    <Group id="-2134830186">
+      <Item lang="de" text="Division durch null ({1} / {2})" />
+      <Item lang="en" text="Division by zero ({1} / {2})" />
+    </Group>
+    <Group id="-2134830185">
+      <Item lang="de" text="Variable &quot;{1}&quot; in der Unit Tranlation &quot;{2}&quot; ist nicht definiert" />
+      <Item lang="en" text="Variable &quot;{1}&quot; in Unit Tranlation &quot;{2}&quot; is not defined" />
+    </Group>
+    <Group id="-2134830184">
+      <Item lang="de" text="Unit Translation &quot;{1}&quot; fehlgeschlagen" />
+      <Item lang="en" text="Unit Translation &quot;{1}&quot; failed" />
+    </Group>
+    <Group id="-2134830180">
+      <Item lang="de" text="Nicht unterstütztes SSL/TLS Protokoll ({1}) konfiguriert" />
+      <Item lang="en" text="Unsupported SSL/TLS protocol configured" />
+    </Group>
+    <Group id="-2134829198">
+      <Item lang="de" text="WebServer Konfiguration ungültig" />
+      <Item lang="en" text="Invalid web server configuration" />
+    </Group>
+    <Group id="-1061087326">
+      <Item lang="de" text="Fehler beim Auflösen des Root-Verzeichnis der TransferGruppe &quot;{1}&quot;." />
+      <Item lang="en" text="Error when resolving the root directory of the transfer group &quot;{1}&quot;." />
+    </Group>
+    <Group id="-1061087325">
+      <Item lang="de" text="Root-Verzeichnis &quot;{2}&quot; befindet sich nicht im Verzeichnis der Transfergruppe &quot;{1}&quot;." />
+      <Item lang="en" text="Root directory &quot;{2}&quot; is not in the transfer group directory &quot;{1}&quot;." />
+    </Group>
+    <Group id="-1061085376">
+      <Item lang="de" text="Fehler beim Senden der Client Aktion &quot;{1}&quot;." />
+      <Item lang="en" text="Error transmitting client action &quot;{1}&quot;" />
+    </Group>
+    <Group id="1086398273">
+      <Item lang="de" text="Client Aktion &quot;{1}&quot; wurde abgebrochen." />
+      <Item lang="en" text="Client action &quot;{1}&quot; aborted" />
+    </Group>
+    <Group id="12658448">
+      <Item lang="de" text="Der mapp View Server wird geladen" />
+      <Item lang="en" text="Loading mapp View server" />
+    </Group>
+    <Group id="-1061083375">
+      <Item lang="de" text="Fehler beim Laden des mapp View Server: mapp View Server Verzeichnis nicht gefunden" />
+      <Item lang="en" text="Error loading mapp View server: mapp View server directory not found" />
+    </Group>
+    <Group id="-1061083374">
+      <Item lang="de" text="Fehler beim Laden des mapp View Server: System API ist nicht valide" />
+      <Item lang="en" text="Error loading mapp View server: Invalid system API" />
+    </Group>
+    <Group id="-1061083373">
+      <Item lang="de" text="Fehler beim Laden des mapp View Server: Modul-Verzeichnis kann nicht gesetzt werden" />
+      <Item lang="en" text="Error loading mapp View server: Cannot set module directory" />
+    </Group>
+    <Group id="-1061083372">
+      <Item lang="de" text="Fehler beim Laden des mapp View Server: Modul kann nicht geladen werden" />
+      <Item lang="en" text="Error loading mapp View server: Cannot load module" />
+    </Group>
+    <Group id="-1061083371">
+      <Item lang="de" text="Fehler beim Laden des mapp View Server: Funktion kann nicht aufgelöst werden" />
+      <Item lang="en" text="Error loading mapp View server: Cannot resolve function" />
+    </Group>
+    <Group id="12680448">
+      <Item lang="de" text="Client Initialisierung erfolgreich. Client ID : &quot;{1}&quot; " />
+      <Item lang="en" text="Client initialization successful. Client ID: &quot;{1}&quot; " />
+    </Group>
+    <Group id="-1061061375">
+      <Item lang="de" text="Client Initialisierung fehlgeschlagen. Für Details siehe ASCII Data" />
+      <Item lang="en" text="Client initialization failed. For details, see &quot;ASCII data&quot;." />
+    </Group>
+    <Group id="12680450">
+      <Item lang="de" text="Client Deinitialisierung erfolgreich" />
+      <Item lang="en" text="Client deinitialization successful" />
+    </Group>
+    <Group id="-1061061373">
+      <Item lang="de" text="Client Verbindung fehlgeschlagen: Client bereits verbunden" />
+      <Item lang="en" text="Client connection failed: Client already connected" />
+    </Group>
+    <Group id="-1061061372">
+      <Item lang="de" text="Client Verbindung fehlgeschlagen: Maximale Anzahl an Verbindungen erreicht." />
+      <Item lang="en" text="Client connection failed: Maximum number of connections reached." />
+    </Group>
+    <Group id="-1061061371">
+      <Item lang="de" text="Client Verbindung fehlgeschlagen: Keine weiteren Verbindungen erlaubt, keine Client Lizenz verfügbar." />
+      <Item lang="en" text="Client connection failed: Addition connections not permitted, no client license available." />
+    </Group>
+    <Group id="-1061061370">
+      <Item lang="de" text="Client Verbindung fehlgeschlagen: Visualisierungslizenz nicht verfügbar." />
+      <Item lang="en" text="Client connection failed: HMI application license not available." />
+    </Group>
+    <Group id="-1061061366">
+      <Item lang="de" text="Client Fehler bei Skriptausführung" />
+      <Item lang="en" text="Client error during script execution" />
+    </Group>
+    <Group id="12680468">
+      <Item lang="de" text="Client aktivierung des Contents &quot;{1}&quot; erfolgreich" />
+      <Item lang="en" text="Client: Content &quot;{1}&quot; enabled successfully" />
+    </Group>
+    <Group id="-1061061355">
+      <Item lang="de" text="Client Aktivierung des Contents &quot;{1}&quot; fehlgeschlagen" />
+      <Item lang="en" text="Client: Activation of content &quot;{1} &quot; failed" />
+    </Group>
+    <Group id="-2134803178">
+      <Item lang="de" text="Client kein Binding zu Content &quot;{1}&quot; gefunden" />
+      <Item lang="en" text="Client: No binding for content &quot;{1}&quot; found" />
+    </Group>
+    <Group id="12680478">
+      <Item lang="de" text="Client Deaktivierung des Contents &quot;{1}&quot; erfolgreich" />
+      <Item lang="en" text="Client: content &quot;{1}&quot; disabled successfully" />
+    </Group>
+    <Group id="-1061061345">
+      <Item lang="de" text="Client Deaktivierung des Contents &quot;{1}&quot; fehlgeschlagen" />
+      <Item lang="en" text="Client: Failed to disable content &quot;{1}&quot;" />
+    </Group>
+    <Group id="12680488">
+      <Item lang="de" text="Client Benutzerauthentifizierung für &quot;{1}&quot; erfolgreich" />
+      <Item lang="en" text="Client: User authentication successful for &quot;{1}&quot;" />
+    </Group>
+    <Group id="-1061061335">
+      <Item lang="de" text="Client Benutzerauthentifizierung für &quot;{1}&quot; fehlgeschlagen" />
+      <Item lang="en" text="Client: User authentication failed for &quot;{1}&quot;" />
+    </Group>
+    <Group id="12680498">
+      <Item lang="de" text="Client Benutzeranmeldung erfolgreich" />
+      <Item lang="en" text="Client: User login successful" />
+    </Group>
+    <Group id="-1061061325">
+      <Item lang="de" text="Client Benutzeranmeldung fehlgeschlagen" />
+      <Item lang="en" text="Client: User login failed" />
+    </Group>
+    <Group id="1086422324">
+      <Item lang="de" text="Client Benutzer hat sich geaendert: &quot;{1}&quot;" />
+      <Item lang="en" text="Client: User has changed: &quot;{1}&quot;" />
+    </Group>
+    <Group id="-2134803140">
+      <Item lang="de" text="Client Visualisierung mit der ID &quot;{1}&quot; wurde nicht gefunden" />
+      <Item lang="en" text="Client: Visualization object with ID &quot;{1}&quot; not found" />
+    </Group>
+    <Group id="-2134803139">
+      <Item lang="de" text="Client Visualisierung mit der ID &quot;{1}&quot; fehlerhaft" />
+      <Item lang="en" text="Client: Error in visualization object with ID &quot;{1}&quot;" />
+    </Group>
+    <Group id="-2134803138">
+      <Item lang="de" text="Client keine Pages in Visualisierung mit der ID &quot;{1}&quot; " />
+      <Item lang="en" text="Client: No pages in visualization object with ID &quot;{1}&quot; " />
+    </Group>
+    <Group id="-2134803137">
+      <Item lang="de" text="Client keine Layouts in Visualisierung mit der ID &quot;{1}&quot; " />
+      <Item lang="en" text="Client: No layouts in visualization object with ID &quot;{1}&quot; " />
+    </Group>
+    <Group id="-2134803136">
+      <Item lang="de" text="Client Page &quot;{1}&quot; nicht Teil der Visualisierung" />
+      <Item lang="en" text="Client: Page &quot;{1}&quot; not part of visualization object" />
+    </Group>
+    <Group id="-2134803135">
+      <Item lang="de" text="Client Content &quot;{1}&quot; nicht Teil der Visualisierung" />
+      <Item lang="en" text="Client: Content &quot;{1}&quot; not part of visualization object" />
+    </Group>
+    <Group id="-2134803134">
+      <Item lang="de" text="Client Layout &quot;{1}&quot; in Page &quot;{2}&quot; nicht Teil der Visualisierung" />
+      <Item lang="en" text="Client: Layout &quot;{1}&quot; in page &quot;{2}&quot; not part of visualization object" />
+    </Group>
+    <Group id="-2134803133">
+      <Item lang="de" text="Client Dialog &quot;{1}&quot; nicht Teil der Visualisierung" />
+      <Item lang="en" text="Client: Dialog box &quot;{1}&quot; not part of visualization object" />
+    </Group>
+    <Group id="-2134803127">
+      <Item lang="de" text="Client noch nicht bereit -&gt; Aktion &quot;{1}&quot; nicht ausgeführt" />
+      <Item lang="en" text="Client not yet ready -&gt; clientSystem.Action &quot;{1}&quot; rejected" />
+    </Group>
+    <Group id="-2134803128">
+      <Item lang="de" text="Client Content &quot;{1}&quot; nicht Teil der Content Liste" />
+      <Item lang="en" text="Client content &quot;{1}&quot; not part of content list" />
+    </Group>
+    <Group id="-2134803132">
+      <Item lang="de" text="Client Area &quot;{1}&quot; in Layout :&quot;{2}&quot; für Page &quot;{3}&quot; wurde nicht gefunden" />
+      <Item lang="en" text="Client: Area &quot;{1}&quot; in layout: &quot;{2}&quot; for page &quot;{3}&quot; not found" />
+    </Group>
+    <Group id="-2134803131">
+      <Item lang="de" text="Client Theme &quot;{1}&quot; wurde nicht gefunden" />
+      <Item lang="en" text="Client: Theme &quot;{1}&quot; not found" />
+    </Group>
+    <Group id="-2134803130">
+      <Item lang="de" text="Client: Page &quot;{1}&quot; derzeit nicht geladen" />
+      <Item lang="en" text="Client: Page &quot;{1}&quot; not currently loaded" />
+    </Group>
+    <Group id="-2134803120">
+      <Item lang="de" text="Client Redirect configuration beinhaltet keine Regeln und keine Default Visualisierung wurde angegeben" />
+      <Item lang="en" text="Client redirect configuration does not contain any rules and no default visualization was specified" />
+    </Group>
+    <Group id="-2134803129">
+      <Item lang="de" text="Client: Content &quot;{1}&quot; bereits geladen" />
+      <Item lang="en" text="Client: content &quot;{1}&quot; already loaded" />
+    </Group>
+    <Group id="-2134803117">
+      <Item lang="de" text="{1} Widget mit der ID &quot;{2}&quot; hat einen ungültigen Wert &quot;{3}&quot; für das Property &quot;{4}&quot;" />
+      <Item lang="en" text="{1} Widget with ID &quot;{2}&quot; has an invalid value &quot;{3}&quot; for property &quot;{4}&quot;" />
+    </Group>
+    <Group id="-2134803116">
+      <Item lang="de" text="Visualisierung mit der ID &quot;{1}&quot; konnte nicht aktiviert werden" />
+      <Item lang="en" text="Visualization with ID &quot;{1}&quot; could not be activated!" />
+    </Group>
+    <Group id="-2134803114">
+      <Item lang="de" text="Widget vom Typ &quot;{1}&quot; ist nicht als Kindelement erlaubt in Widget &quot;{2}&quot; vom Typ &quot;{3}&quot; in Content &quot;{4}&quot;." />
+      <Item lang="en" text="Widget of type &quot;{1}&quot; is not allowed as child element in widget &quot;{2}&quot; of type &quot;{3}&quot; in content &quot;{4}&quot;." />
+    </Group>
+    <Group id="12680536">
+      <Item lang="de" text="Client Passwortänderung für Benutzer {1} erfolgreich" />
+      <Item lang="en" text="Client: password change for user {1} successful" />
+    </Group>
+    <Group id="-1061061287">
+      <Item lang="de" text="Client Passwortänderung für Benutzer {1} fehlgeschlagen" />
+      <Item lang="en" text="Client: password change for user {1} failed" />
+    </Group>
+    <Group id="-2134803126">
+      <Item lang="de" text="Client: Zugriff auf Visualisierung mit der ID &quot;{1}&quot; wurde verweigert" />
+      <Item lang="en" text="Client: access to visualization with ID &quot;{1}&quot; has been denied" />
+    </Group>
+    <Group id="-2134803125">
+      <Item lang="de" text="Client in Ladephase: Page oder Content &quot;{1}&quot; nicht geladen" />
+      <Item lang="en" text="Client not finished loading -&gt; page or content &quot;{1}&quot; not loaded" />
+    </Group>
+    <Group id="-2134803119">
+      <Item lang="de" text="Client: ungültige Werte für Positionierung und Ausrichtung" />
+      <Item lang="en" text="Client: invalid values for positioning and alignment." />
+    </Group>
+    <Group id="-2134803118">
+      <Item lang="de" text="Client: mehr contents für precaching konfiguriert als caching slots" />
+      <Item lang="en" text="Client: more contents are configured for precaching then caching slots" />
+    </Group>
+    <Group id="-2134803115">
+      <Item lang="de" text="Client: Verschachtelung von ContentControls in Content &quot;{2}&quot; beim Laden von Content &quot;{3}&quot; in Widget &quot;{1}&quot; " />
+      <Item lang="en" text="Client: nested ContentControls in content &quot;{2}&quot; when loading content &quot;{3}&quot; into widget &quot;{1}&quot; " />
+    </Group>
+    <Group id="-2134803113">
+      <Item lang="de" text="Client: Initialisierung des Widgets mit ID &quot;{1}&quot; in Content &quot;{2}&quot; fehlgeschlagen" />
+      <Item lang="en" text="Client: failed to initialize widget with ID &quot;{1}&quot; on content &quot;{2}&quot;" />
+    </Group>
+    <Group id="-2134803110">
+      <Item lang="de" text="Nicht erlaubte Fokus Aktion. Widget &quot;{1}&quot; befindet sich außerhalb des fokussierbaren Bereiches." />
+      <Item lang="en" text="Not allowed focus action. Widget &quot;{1}&quot; is outside the focusable area." />
+    </Group>
+    <Group id="-2134803100">
+      <Item lang="de" text="Cross-Origin-Anfrage blockiert: {1}" />
+      <Item lang="en" text="Cross-Origin-Request blocked: {1}" />
+    </Group>
+    <Group id="-2134803099">
+      <Item lang="de" text="Potenziell schädliche Dokument-Inhalte wurden gefiltert. Typ:  &quot;{1}&quot;  Name: &quot;{2}&quot;" />
+      <Item lang="en" text="Potentially harmful document content was filtered. Typ: &quot;{1}&quot;  name: &quot;{2}&quot;" />
+    </Group>
     <Group id="-1064116224">
       <Item lang="en" text="The specified name is NULL" />
       <Item lang="de" text="Der angegebene Name ist NULL" />
@@ -35881,769 +36644,6 @@
       <Item lang="en" text="Error adding WebXs link to SDM ({1})" />
       <Item lang="de" text="Anfügen des WebXs Links an SDM fehlgeschlagen ({1})" />
     </Group>
-    <Group id="1086390772">
-      <Item lang="de" text="mapp View Server wird gestartet" />
-      <Item lang="en" text="Starting mapp View server." />
-    </Group>
-    <Group id="1086390773">
-      <Item lang="de" text="mapp View Server wurde gestartet" />
-      <Item lang="en" text="mapp View Server started" />
-    </Group>
-    <Group id="-1061092874">
-      <Item lang="de" text="Start des mapp View Servers ist fehlgeschlagen" />
-      <Item lang="en" text="mapp View server startup failure" />
-    </Group>
-    <Group id="-1061092873">
-      <Item lang="de" text="Library-File konnte nicht geparst werden" />
-      <Item lang="en" text="Could not parse library file" />
-    </Group>
-    <Group id="-1061092872">
-      <Item lang="de" text="Fehler beim Laden der mapp View Server Module" />
-      <Item lang="en" text="Error loading mapp View server modules" />
-    </Group>
-    <Group id="12649450">
-      <Item lang="de" text="Die Logger Engine wurde vom mapp View Event Logging System getrennt." />
-      <Item lang="en" text="The Logger engine has been separated from the mapp View event logging system." />
-    </Group>
-    <Group id="-1061092373">
-      <Item lang="de" text="Fehler beim Trennen der Logger Engine vom mapp View Event Logging System. " />
-      <Item lang="en" text="Error separating Logger engine from mapp View event logging system " />
-    </Group>
-    <Group id="-1061092366">
-      <Item lang="de" text="Fehler beim Schreiben in einen Logger." />
-      <Item lang="en" text="Error writing to Logger." />
-    </Group>
-    <Group id="1086391292">
-      <Item lang="de" text="Verwendete mapp View Version: {1}.{2}.{3}" />
-      <Item lang="en" text="Used mapp View version: {1}.{2}.{3}" />
-    </Group>
-    <Group id="-2134834179">
-      <Item lang="de" text="Inoffizielle Version von mapp View! Diese Version wurde nicht für den produktiven Einsatz freigegeben." />
-      <Item lang="en" text="This is an unofficial version of mapp View! This version has not been approved for use in productive environments." />
-    </Group>
-    <Group id="1086391294">
-      <Item lang="de" text="Verwendete mapp View Version: {1}.{2}.{3}, {4} User Visualisierungen geladen" />
-      <Item lang="en" text="Used mapp View version: {1}.{2}.{3}, {4} User Visualization loaded" />
-    </Group>
-    <Group id="1086391372">
-      <Item lang="de" text="Konfigurationsdatei laut Text wird geladen" />
-      <Item lang="en" text="Loading specified configuration file" />
-    </Group>
-    <Group id="12649549">
-      <Item lang="de" text="Konfigurationsdatei mit Anzahl der Einträge laut Text wurde geladen" />
-      <Item lang="en" text="Loaded configuration file with specified number of entries" />
-    </Group>
-    <Group id="-1061092274">
-      <Item lang="de" text="Konfigurationsdatei laut Text konnte nicht geladen werden" />
-      <Item lang="en" text="Could not load specified configuration file" />
-    </Group>
-    <Group id="-1061092176">
-      <Item lang="de" text="AR-Transfer API konnte auf dem Target nicht geladen werden" />
-      <Item lang="en" text="Could not load AR transfer API on target" />
-    </Group>
-    <Group id="1086391473">
-      <Item lang="de" text="Veränderungen von mapp View relevanten Dateien durch den Transfer wurden gestartet" />
-      <Item lang="en" text="Started modifications to mapp View relevant files initiated by transfer" />
-    </Group>
-    <Group id="12649650">
-      <Item lang="de" text="Veränderungen von mapp View relevanten Dateien durch den Transfer wurden erfolgreich durchgeführt" />
-      <Item lang="en" text="Completed modifications to mapp View relevant files initiated by transfer" />
-    </Group>
-    <Group id="-1061092173">
-      <Item lang="de" text="Veränderungen von mapp View relevanten Dateien durch den Transfer waren fehlerhaft" />
-      <Item lang="en" text="Faulty modifications to mapp View relevant files initiated by transfer" />
-    </Group>
-    <Group id="1086392273">
-      <Item lang="de" text="TCP-Sever wurde gestartet" />
-      <Item lang="en" text="TCP server started" />
-    </Group>
-    <Group id="-1061091374">
-      <Item lang="de" text="TCP-Server konnte nicht gestartet werden" />
-      <Item lang="en" text="Could not start TCP server" />
-    </Group>
-    <Group id="12650458">
-      <Item lang="de" text="Client mit ID laut Text wurde verbunden" />
-      <Item lang="en" text="Client with specified ID connected" />
-    </Group>
-    <Group id="-1061091365">
-      <Item lang="de" text="Verbinden des Clients mit ID laut Text ist fehlgeschlagen" />
-      <Item lang="en" text="Failed to connect client with specified ID" />
-    </Group>
-    <Group id="-2134833188">
-      <Item lang="de" text="Maximale Anzahl an Clients wurde auf einen ungültigen Wert ({1}) gesetzt. " />
-      <Item lang="en" text="Maximum number of clients set to invalid value ({1}) " />
-    </Group>
-    <Group id="-2134833187">
-      <Item lang="de" text="Maximale Anzahl an erlaubten Clients ({1}) wurde unter die Anzahl der aktuell verbunden Clients gesetzt ({2})." />
-      <Item lang="en" text="Maximum number of allowed clients ({1}) set to less than the number of currently connected clients ({2})" />
-    </Group>
-    <Group id="-1061091362">
-      <Item lang="de" text="Clientverbindung fehlgeschlagen: Maximale Anzahl an Verbindungen ({1}) erreicht." />
-      <Item lang="en" text="Client connection failed: Maximum number of connections ({1}) reached" />
-    </Group>
-    <Group id="-1061091361">
-      <Item lang="de" text="Clientverbindung fehlgeschlagen: Keine weiteren Verbindungen erlaubt, keine Client Lizenz verfügbar." />
-      <Item lang="en" text="Client connection failed: Addition connections not permitted, no client license available." />
-    </Group>
-    <Group id="-1061091360">
-      <Item lang="de" text="Clientverbindung fehlgeschlagen: Visualisierungslizenz nicht verfügbar." />
-      <Item lang="en" text="Client connection failed: HMI application license not available." />
-    </Group>
-    <Group id="12650468">
-      <Item lang="de" text="Clientverbindung wurde geschlossen" />
-      <Item lang="en" text="Client connection closed" />
-    </Group>
-    <Group id="-1061091355">
-      <Item lang="de" text="Fehler beim Schließen der Clientverbindung" />
-      <Item lang="en" text="Error closing client connection" />
-    </Group>
-    <Group id="-2134833170">
-      <Item lang="de" text="Initialwert eines gebundenen Widget Attributs wurde nicht gesendet. contentId: {1}, refId: {2}, attribute: {3}" />
-      <Item lang="en" text="Initial value of connected widget attribute not transmitted. contentId: {1}, refId: {2}, attribute: {3}" />
-    </Group>
-    <Group id="-2134833169">
-      <Item lang="de" text="Fehler beim Initialisieren des Scopes mit der ID laut Text." />
-      <Item lang="en" text="Error initializing scope with the specified ID" />
-    </Group>
-    <Group id="-1061091342">
-      <Item lang="de" text="Initialer Werte-Update des Clients für den Content laut Text wurde nicht gesendet." />
-      <Item lang="en" text="Update of initial values on client for the specified content not transmitted" />
-    </Group>
-    <Group id="-2134833165">
-      <Item lang="de" text="Problem beim Initialisieren des Bindings" />
-      <Item lang="en" text="Error initializing binding" />
-    </Group>
-    <Group id="-1061091340">
-      <Item lang="de" text="Aktivieren der Visualisierung &quot;{1}&quot; fehlgeschlagen: Visualisierungslizenz nicht verfügbar." />
-      <Item lang="en" text="Failed to enable HMI application &quot;{1}&quot;: HMI application license not available." />
-    </Group>
-    <Group id="-2134833150">
-      <Item lang="de" text="Für User &quot;{1}&quot; hinterlegte Sprache &quot;{2}&quot; wird nicht unterstützt, Sprache wird auf &quot;{3}&quot; gesetzt" />
-      <Item lang="en" text="Language &quot;{2}&quot; stored for user &quot;{1}&quot; is not supported, language is set to &quot;{3}&quot;." />
-    </Group>
-    <Group id="-2134833149">
-      <Item lang="de" text="Für User &quot;{1}&quot; hinterlegtes MeasurementSystem &quot;{2}&quot; wird nicht unterstützt, MeasurementSystem wird auf &quot;{3}&quot; gesetzt" />
-      <Item lang="en" text="MeasurementSystem &quot;{2}&quot; stored for user &quot;{1}&quot; is not supported, MeasurementSystem is set to &quot;{3}&quot;." />
-    </Group>
-    <Group id="-1061091324">
-      <Item lang="de" text="Fehler beim Herstellen der Verbindung zu MpUserX." />
-      <Item lang="en" text="Error establishing the connection to MpUserX." />
-    </Group>
-    <Group id="-2134833000">
-      <Item lang="de" text="File mit Pfad laut Text welches an den Client ausgeliefert werden sollte wurde nicht gefunden." />
-      <Item lang="en" text="Could not find file with specified path for delivery to the client" />
-    </Group>
-    <Group id="-2134832999">
-      <Item lang="de" text="File mit Pfad laut Text kann nicht an Client ausgeliefert werden. Speicherplatz des Servers nicht mehr ausreichend." />
-      <Item lang="en" text="File with path according to text can not be delivered to client. Space of the server is no longer sufficient." />
-    </Group>
-    <Group id="1086392482">
-      <Item lang="de" text="Die Anmeldung des Benutzers {1} auf der Diagnoseseite war erfolgreich. " />
-      <Item lang="en" text="Logon of user {1} on diagnostic page was successful." />
-    </Group>
-    <Group id="-2134832989">
-      <Item lang="de" text="Die Anmeldung des Benutzers {1} auf der Diagnoseseite ist fehlgeschlagen. " />
-      <Item lang="en" text="Logon of user {1} on diagnostic page has failed." />
-    </Group>
-    <Group id="12650748">
-      <Item lang="de" text="OPC UA Server erfolgreich verbunden" />
-      <Item lang="en" text="OPC UA server connected successfully" />
-    </Group>
-    <Group id="-1061091075">
-      <Item lang="de" text="Verbinden zum OPC UA Server &quot;{1}&quot; ist fehlgeschlagen." />
-      <Item lang="en" text="Connection to OPC UA server &quot;{1}&quot; failed." />
-    </Group>
-    <Group id="1086392574">
-      <Item lang="de" text="Verbindungsstatus des OPC UA Clients verändert" />
-      <Item lang="en" text="Modified connection status of OPC UA client" />
-    </Group>
-    <Group id="-1061091073">
-      <Item lang="de" text="OPC UA Client Verbindungsfehler" />
-      <Item lang="en" text="OPC UA client connection error" />
-    </Group>
-    <Group id="-2134832896">
-      <Item lang="de" text="SamplingRate &quot;{1}&quot; ist in der Konfiguration nicht definiert." />
-      <Item lang="en" text="Sampling rate &quot;{1}&quot; is not defined in the configuration." />
-    </Group>
-    <Group id="-2134832895">
-      <Item lang="de" text="Angegebenes SamplingInterval ({4} ms) wird beim Knoten (id: {1}, attribute: {2}, serverAlias: {3}) vom OPC UA Server nicht unterstützt. Es wird der Wert {5} ms verwendet." />
-      <Item lang="en" text="OPC UA server does not support specified sampling interval ({4} ms) on node (id: {1}, attribute: {2}, serverAlias: {3}). Using the value {5} ms instead." />
-    </Group>
-    <Group id="-1061091069">
-      <Item lang="de" text="Subscribe des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4}" />
-      <Item lang="en" text="Failed to subscribe to OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4}" />
-    </Group>
-    <Group id="-1061091068">
-      <Item lang="de" text="Fehler beim Anlegen der OPC UA Subscription/MontitoredItems" />
-      <Item lang="en" text="Error creating OPC UA subscription / monitored items" />
-    </Group>
-    <Group id="-1061091067">
-      <Item lang="de" text="Verwendeter OPC UA serverAlias &quot;{1}&quot; ist nicht definiert." />
-      <Item lang="en" text="Specified OPC UA serverAlias &quot;{1}&quot; is not defined." />
-    </Group>
-    <Group id="-1061091066">
-      <Item lang="de" text="OPC UA Lesen fehlgeschlagen. Status {1}" />
-      <Item lang="en" text="OPC UA read failed. Status {1}" />
-    </Group>
-    <Group id="-1061091065">
-      <Item lang="de" text="Lesen des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4} " />
-      <Item lang="en" text="Failed to read OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4} " />
-    </Group>
-    <Group id="-1061091064">
-      <Item lang="de" text="Schreiben des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4} " />
-      <Item lang="en" text="Failed to write OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4} " />
-    </Group>
-    <Group id="-1061091063">
-      <Item lang="de" text="Lesen der OPC UA History fehlgeschlagen. Status: {1}" />
-      <Item lang="en" text="Unable to read OPC UA history. Status: {1}" />
-    </Group>
-    <Group id="-1061091062">
-      <Item lang="de" text="Lesen der OPC UA History des Nodes &quot;{1}&quot; fehlgeschlagen. Status: {2}" />
-      <Item lang="en" text="OPC UA history of node &quot;{1}&quot; failed. Status: {2}" />
-    </Group>
-    <Group id="-2134832885">
-      <Item lang="de" text="Fehler beim Löschen der OPC UA Subscription/MontitoredItems" />
-      <Item lang="en" text="Error removing OPC UA subscription / monitored items" />
-    </Group>
-    <Group id="-1061091060">
-      <Item lang="de" text="Unsubscribe des OPC UA Knoten Attribut (id: {1}, attribute: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4}" />
-      <Item lang="en" text="Failed to unsubscribe to OPC UA node attribute (id: {1}, attribute: {2}, serverAlias: {3}). Status: {4}" />
-    </Group>
-    <Group id="-1061091059">
-      <Item lang="de" text="Fehler beim Aufruf einer OPC UA Methode (id: {1}, methodRefId: {2}, serverAlias: {3}) fehlgeschlagen. Status: {4} " />
-      <Item lang="en" text="Failed to call OPC UA Method (id: {1}, methodRefId: {2}, serverAlias: {3}) failed. Status: {4} " />
-    </Group>
-    <Group id="-2134832880">
-      <Item lang="de" text="Ganzzahlüberlauf beim Schreiben auf die OPC UA Variable &quot;{1}&quot; mit dem Wert &quot;{2}&quot;" />
-      <Item lang="en" text="Integer overflow while writing value &quot;{2}&quot; to OPC UA variable &quot;{1}&quot;" />
-    </Group>
-    <Group id="-2134832879">
-      <Item lang="de" text="Ganzzahlunterlauf beim Schreiben auf die OPC UA Variable &quot;{1}&quot; mit dem Wert &quot;{2}&quot;" />
-      <Item lang="en" text="Integer underflow while writing value &quot;{2}&quot; to OPC UA variable &quot;{1}&quot;" />
-    </Group>
-    <Group id="-2134832870">
-      <Item lang="de" text="Initialwert der gebundenen OPC UA Variable &quot;{1}&quot; nicht gesendet. (Attribut: {2})" />
-      <Item lang="en" text="Initial value not sent for bound OPC UA variable &quot;{1}&quot;. (attribute: {2})" />
-    </Group>
-    <Group id="-2134832869">
-      <Item lang="de" text="Invalide OPC UA NodeId &quot;{1}&quot;" />
-      <Item lang="en" text="Invalid OPC UA NodeId &quot;{1}&quot;" />
-    </Group>
-    <Group id="1086392620">
-      <Item lang="de" text="Verbindung mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) wird hergestellt." />
-      <Item lang="en" text="Establishing connection to configured OPC UA server (serverAlias: &quot;{1}&quot;)." />
-    </Group>
-    <Group id="12650797">
-      <Item lang="de" text="Verbindung mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) hergestellt." />
-      <Item lang="en" text="Connection established to configured OPC UA server (serverAlias: &quot;{1}&quot;)." />
-    </Group>
-    <Group id="-1061091026">
-      <Item lang="de" text="Verbinden mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) fehlgeschlagen. Status: {2}" />
-      <Item lang="en" text="Connection to configured OPC UA server (serverAlias: &quot;{1}&quot;) failed. Status: {2}" />
-    </Group>
-    <Group id="-1061091025">
-      <Item lang="de" text="Benutzerwechsel beim konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) mit Benutzer &quot;{2}&quot; fehlgeschlagen. Status: {3}" />
-      <Item lang="en" text="Switching users with user &quot;{2}&quot; on configured OPC UA server (serverAlias: &quot;{1}&quot;) failed. Status: {3}" />
-    </Group>
-    <Group id="-1061091023">
-      <Item lang="de" text="Verbindung mit konfigurierten OPC UA Server (serverAlias: &quot;{1}&quot;) verloren" />
-      <Item lang="en" text="Lost connection to configured OPC UA server (serverAlias: &quot;{1}&quot;)." />
-    </Group>
-    <Group id="-1061090873">
-      <Item lang="de" text="Subscribe der Session-Variable &quot;{1}&quot; fehlgeschlagen: Variable ist nicht vorhanden" />
-      <Item lang="en" text="Session variable &quot;{1}&quot; subscribe failed: Variable not found" />
-    </Group>
-    <Group id="-1061090872">
-      <Item lang="de" text="Schreiben auf Session-Variable &quot;{1}&quot; mit einem Wert vom falschen Typ &quot;{2}&quot; fehlgeschlagen. Erwartet: &quot;{3}&quot;" />
-      <Item lang="en" text="Write to session variable &quot;{1}&quot; with a value of incorrect type &quot;{2}&quot; failed. Expected: &quot;{3}&quot;" />
-    </Group>
-    <Group id="-1061090871">
-      <Item lang="de" text="Schreiben auf die Variable &quot;{1}&quot; fehlgeschlagen. Der Wert &quot;{2}&quot; kann nicht in den Typ &quot;{3}&quot; konvertiert werden." />
-      <Item lang="en" text="Variable &quot;{1}&quot; write failed. Cannot convert value &quot;{2}&quot; to type &quot;{3}&quot;." />
-    </Group>
-    <Group id="-1061090856">
-      <Item lang="de" text="Verweis auf Timer &quot;{1}&quot; konnte nicht aufgelöst werden. Referenzierter Timer ist undefiniert." />
-      <Item lang="en" text="Could not resolve reference to timer &quot;{1}&quot;. Referenced timer is undefined." />
-    </Group>
-    <Group id="-1061090675">
-      <Item lang="de" text="Fehler beim Einlesen des Snippet Files {1}." />
-      <Item lang="en" text="Error reading snippet file {1}" />
-    </Group>
-    <Group id="-1061090674">
-      <Item lang="de" text="Wert konnte nicht formatiert werden: Der Datentyp wird nicht unterstützt." />
-      <Item lang="en" text="The value could not be formatted. The data type is not supported." />
-    </Group>
-    <Group id="-1061090671">
-      <Item lang="de" text="Subscribe des Snippets &quot;{1}&quot; fehlgeschlagen. Das Snippet ist nicht vorhanden." />
-      <Item lang="en" text="Snippet &quot;{1}&quot; subscribe failed: Snippet not found" />
-    </Group>
-    <Group id="-1061090666">
-      <Item lang="de" text="Subscribe des Texts &quot;{1}&quot; fehlgeschlagen: Text ist nicht vorhanden." />
-      <Item lang="en" text="Text &quot;{1}&quot; subscribe failed: Text not found." />
-    </Group>
-    <Group id="-2134832485">
-      <Item lang="de" text="Verwendung des alten Snippets - &quot;formatItems&quot; - Format ohne Platzhalter beim Snippet mit der ID &quot;{1}&quot;. Richtig wäre: &quot;{2}&quot;" />
-      <Item lang="en" text="Using old snippet - &quot;formatItems&quot; - format without placeholder for snippet with ID &quot;{1}&quot;. Correct would be: &quot;{2}&quot;" />
-    </Group>
-    <Group id="-1061090374">
-      <Item lang="de" text="Maximale Rekursionstiefe bei Binding erreicht" />
-      <Item lang="en" text="Maximum recursion depth reached for binding" />
-    </Group>
-    <Group id="-1061090355">
-      <Item lang="de" text="Fehler beim Einlesen des Binding Files &quot;{1}&quot;." />
-      <Item lang="en" text="Error reading binding file &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061090353">
-      <Item lang="de" text="Fehler beim Einlesen des BindingList Files &quot;{1}&quot;." />
-      <Item lang="en" text="Error reading binding list file &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061090351">
-      <Item lang="de" text="Fehler beim Einlesen des EventBinding Files &quot;{1}&quot;." />
-      <Item lang="en" text="Error reading event binding file &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061090349">
-      <Item lang="de" text="Fehler beim Einlesen des Expression Files &quot;{1}&quot;." />
-      <Item lang="en" text="Error reading expression file &quot;{1}&quot;" />
-    </Group>
-    <Group id="-2134832171">
-      <Item lang="de" text="Fehler beim Einlesen des Variablen Files &quot;{1}&quot;." />
-    </Group>
-    <Group id="-1061090276">
-      <Item lang="de" text="Selektor des List-Bindings mit der ID &quot;{1}&quot; wurde auf einen nicht existierenden Index &quot;{2}&quot; gesetzt." />
-      <Item lang="en" text="Selector for list binding with ID &quot;{1}&quot; set to non-existing index &quot;{2}&quot;&#xA;&#x9;&#x9;If the list is an embedded list, the binding id is displayed. The binding id is generated from the binding target attributes and has the format {type}*{refId}*{attribute}." />
-    </Group>
-    <Group id="-1061090275">
-      <Item lang="de" text="Verweis auf BindingList &quot;{1}&quot; konnte nicht aufgelöst werden. Referenzierte BindingList ist undefiniert." />
-      <Item lang="en" text="Could not resolve reference to binding list &quot;{1}&quot;. Referenced binding list is undefined." />
-    </Group>
-    <Group id="-1061090226">
-      <Item lang="de" text="Maximale Anzahl an abzuarbeitenden Events (type: &quot;{1}&quot;, refId: &quot;{2}&quot;, event: &quot;{3}&quot;) für ein EventBinding erreicht." />
-      <Item lang="en" text="Maximum number of events (type: &quot;{1}&quot;, refId: &quot;{2}&quot;, event: &quot;{3}&quot;) to be executed for an event binding reached" />
-    </Group>
-    <Group id="-1061090225">
-      <Item lang="de" text="Initialisierung des Operands &quot;{1}&quot; im EventBinding mit der ID &quot;{2}&quot; fehlgeschlagen" />
-      <Item lang="en" text="Failed to initialize operand &quot;{1}&quot; in event binding with ID &quot;{2}&quot;" />
-    </Group>
-    <Group id="-1061090224">
-      <Item lang="de" text="Operand-Name &quot;{1}&quot; im EventBinding mit der ID &quot;{2}&quot; ist schon definiert" />
-      <Item lang="en" text="Operand name &quot;{1}&quot; in event binding with ID &quot;{2}&quot; already defined" />
-    </Group>
-    <Group id="-1061090201">
-      <Item lang="de" text="Typenkonflikt bei Operand &quot;{1}&quot;. Erwartet: {2}, Bekam: {3} " />
-      <Item lang="en" text="Type mismatch with Operand &quot;{1}&quot;. Expected: {2}, Received: {3} " />
-    </Group>
-    <Group id="-1061090175">
-      <Item lang="de" text="Fehler beim Interpretieren der Condition." />
-      <Item lang="en" text="Error interpreting condition" />
-    </Group>
-    <Group id="-1061090174">
-      <Item lang="de" text="Laufzeitfehler beim Auswerten der Condition" />
-      <Item lang="en" text="Runtime error while evaluating condition" />
-    </Group>
-    <Group id="-1061090173">
-      <Item lang="de" text="Condition ist nicht vom Typ &quot;BOOL&quot;" />
-      <Item lang="en" text="Condition not of type &quot;BOOL&quot;" />
-    </Group>
-    <Group id="-1061090151">
-      <Item lang="de" text="Problem beim Ausführen der Aktion &quot;{1}&quot; im Kontext &quot;{2}&quot;" />
-      <Item lang="en" text="Error executing action &quot;{1}&quot; in context &quot;{2}&quot;" />
-    </Group>
-    <Group id="-1061090149">
-      <Item lang="de" text="Fehler beim Interpretieren der Aktionsparameter Expression" />
-      <Item lang="en" text="Error interpreting expression in action parameter" />
-    </Group>
-    <Group id="-1061090148">
-      <Item lang="de" text="Laufzeitfehler beim Auswerten der Aktionsparamter Expression" />
-      <Item lang="en" text="Runtime error while evaluating expression in action parameter" />
-    </Group>
-    <Group id="-2134831971">
-      <Item lang="de" text="Aktionsparameter Expression Typenkonflikt bei {&quot;{1}&quot;}. Erwartet: {2}, Bekam: {3} " />
-      <Item lang="en" text="Action parameter expression type conflict with {&quot;{1}&quot;}. Expected: {2}, Received: {3} " />
-    </Group>
-    <Group id="-1061090146">
-      <Item lang="de" text="Read-Aktion &quot;{1}&quot; liefert kein Ergebnis" />
-      <Item lang="en" text="No result returned by read action &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061090136">
-      <Item lang="de" text="Timer Start-Action Interval-Parameter &quot;{2}&quot; bei Timer &quot;{1}&quot; ungültig. " />
-      <Item lang="en" text="Timer Start-Action interval parameter &quot;{2}&quot; of timer &quot;{1}&quot; invalid." />
-    </Group>
-    <Group id="-1061090069">
-      <Item lang="de" text="Datei &quot;{1}&quot; kann nicht geöffnet werden. " />
-      <Item lang="en" text="Cannot open file &quot;{1}&quot; " />
-    </Group>
-    <Group id="-1061089376">
-      <Item lang="de" text="&#xA;Typenkonflikt beim Schreiben auf den Expression-Opreand &quot;{2}&quot; der Expresssion &quot;{1}&quot;. Erwartet: {3}, Bekam: {4}" />
-      <Item lang="en" text="&#xA;Type conflict while writing to expression operand &quot;{2}&quot; of expression &quot;{1}&quot;. Expected: {3}, Received: {4}" />
-    </Group>
-    <Group id="-1061089375">
-      <Item lang="de" text="Datentyp ({4}) vom Expression-Ergebnis der Expression &quot;{1}&quot; kann nicht in den spezifizierten Ergebnis-Datentypen ({3}) konvertiert werden" />
-      <Item lang="en" text="Cannot convert data type ({4}) of result of expression &quot;{1}&quot; to specified event data type ({3})" />
-    </Group>
-    <Group id="-1061089374">
-      <Item lang="de" text="Expression Laufzeitfehler: Division durch Null" />
-      <Item lang="en" text="Expression runtime error: Division by zero" />
-    </Group>
-    <Group id="-1061089373">
-      <Item lang="de" text="Expression Laufzeitfehler: N Mod 0 ist undefiniert" />
-      <Item lang="en" text="Expression runtime error: N Mod 0 undefined" />
-    </Group>
-    <Group id="-1061089371">
-      <Item lang="de" text="Index-Operator erfordert ein Array" />
-      <Item lang="en" text="Index operator requires array" />
-    </Group>
-    <Group id="-1061089370">
-      <Item lang="de" text="Array-Index ist kein Ganzzahltyp" />
-      <Item lang="en" text="Array index not integer" />
-    </Group>
-    <Group id="-1061089369">
-      <Item lang="de" text="Expression Laufzeitfehler: Array-Index außerhalb des zulässigen Bereichs. Index: &quot;{1}&quot;, Arraygröße: &quot;{2}&quot;" />
-      <Item lang="en" text="Expression runtime error: Array index outside permissible range. Index: &quot;{1}&quot;, Array size: &quot;{2}&quot;" />
-    </Group>
-    <Group id="-1061089366">
-      <Item lang="de" text="Fehler beim Interpretieren der Expression mit der ID &quot;{1}&quot;" />
-      <Item lang="en" text="Error interpreting expression with ID &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061089365">
-      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Token &quot;{1}&quot; in der Expression-Operation bei Position &quot;{2}&quot;" />
-      <Item lang="en" text="Expression syntax error: Unexpected token &quot;{1}&quot; at position &quot;{2}&quot; of expression operation" />
-    </Group>
-    <Group id="-1061089364">
-      <Item lang="de" text="Expression Syntaxfehler: Kein schließendes Anführungszeichen nach der Zeichenfolge: &quot;{1}&quot;." />
-      <Item lang="en" text="Expression syntax error: No closing quotation mark after string: &quot;{1}&quot;." />
-    </Group>
-    <Group id="-1061089363">
-      <Item lang="de" text="Expression Syntaxfehler: Ungültige Escapesequenz außerhalb einer Zeichenfolge." />
-      <Item lang="en" text="Expression syntax error: Invalid string escape sequence" />
-    </Group>
-    <Group id="-1061089362">
-      <Item lang="de" text="Expression Syntaxfehler: Unbekanntes Zeichen in Escape-Sequenz: &quot;{1}&quot;" />
-      <Item lang="en" text="Expression syntax error: Invalid character in escape sequence: &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061089326">
-      <Item lang="de" text="Expression Syntaxfehler: Erwarte binären Operator vor unären Operator &quot;{1}&quot; bei Position: &quot;{2}&quot;" />
-      <Item lang="en" text="Expression syntax error: Expected binary operator before unary operator &quot;{1}&quot; at position: &quot;{2}&quot;" />
-    </Group>
-    <Group id="-1061089325">
-      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Ende" />
-      <Item lang="en" text="Expression syntax error: Unexpected end" />
-    </Group>
-    <Group id="-1061089324">
-      <Item lang="de" text="Expression Syntaxfehler: Unerwarteter Operator &quot;{1}&quot; bei Position &quot;{2}&quot;" />
-      <Item lang="en" text="Expression syntax error: Unexpected operator &quot;{1}&quot; at position &quot;{2}&quot;" />
-    </Group>
-    <Group id="-1061089323">
-      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Ende, erwarte eine schließende runde Klammer &quot;)&quot;" />
-      <Item lang="en" text="Expression syntax error: Unexpected end, expected closing parenthesis &quot;)&quot;" />
-    </Group>
-    <Group id="-1061089322">
-      <Item lang="de" text="Expression Syntaxfehler: Unerwartetes Ende, erwarte eine schließende eckige Klammer &quot;]&quot;" />
-      <Item lang="en" text="Expression syntax error: Unexpected end, expected closing bracket &quot;]&quot;" />
-    </Group>
-    <Group id="-1061089296">
-      <Item lang="de" text="Typenkonflikt beim Operator &quot;{1}&quot;" />
-      <Item lang="en" text="Type conflict on operator &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061088875">
-      <Item lang="de" text="Verbinden mit mapp Server fehlgeschlagen. Url: {1} Status: {2}" />
-      <Item lang="en" text="Connection to configured mapp server failed. Url: {1} Status: {2}" />
-    </Group>
-    <Group id="-1061088873">
-      <Item lang="de" text="Subscribe der mapp Komponente &quot;{1}&quot; fehlgeschlagen. Status: {2}" />
-      <Item lang="en" text="Subscribing to mapp component &quot;{1}&quot; failed. Status: {2}" />
-    </Group>
-    <Group id="-1061088869">
-      <Item lang="de" text="Schreiben der mapp Komponente &quot;{1}&quot; fehlgeschlagen. Status: {2} " />
-      <Item lang="en" text="Writing to mapp component &quot;{1}&quot; failed. Status: {2} " />
-    </Group>
-    <Group id="-2134830200">
-      <Item lang="de" text="Konvertierungsfehler: Wert &quot;{2}&quot; kann nicht in den/die gewünschte/n Zieltyp/Einheit &quot;{3}&quot; konvertieren werden. Quelle: {1}" />
-      <Item lang="en" text="Conversion error: Cannot convert value &quot;{2}&quot; to the requested target type/unit &quot;{3}&quot;. Source: {1}" />
-    </Group>
-    <Group id="-2134830199">
-      <Item lang="de" text="Funktionen der FileIO Bibliothek sind nicht verfügbar." />
-      <Item lang="en" text="FileIO library functions not available" />
-    </Group>
-    <Group id="-2134830195">
-      <Item lang="de" text="Funktionen des AR Lizenzmanager sind nicht verfügbar." />
-      <Item lang="en" text="AR license manager functions not available" />
-    </Group>
-    <Group id="-1061088370">
-      <Item lang="de" text="Keine gültige Lizenz für mapp View gefunden." />
-      <Item lang="en" text="Could not find valid license for mapp View." />
-    </Group>
-    <Group id="-1061088369">
-      <Item lang="de" text="Server- Konfiguration ermöglicht mehr Verbindungen ({1}) als Client-Lizenzen verfügbar sind ({2})." />
-      <Item lang="en" text="Server configuration allowing more connections ({1}) than available client licenses ({2})" />
-    </Group>
-    <Group id="-1061088368">
-      <Item lang="de" text="Server- Konfiguration ermöglicht mehr B&amp;R Verbindungen ({1}) als B&amp;R Client-Lizenzen verfügbar sind ({2})." />
-      <Item lang="en" text="Server configuration allowing more B&amp;R connections ({1}) than available B&amp;R client licenses ({2})" />
-    </Group>
-    <Group id="-2134830190">
-      <Item lang="de" text="PV Zugriff ist nicht möglich" />
-      <Item lang="en" text="PV access is not possible" />
-    </Group>
-    <Group id="-2134830189">
-      <Item lang="de" text="Process Variable &quot;{1}&quot; nicht gefunden" />
-      <Item lang="en" text="Process variable &quot;{1}&quot; could not be found" />
-    </Group>
-    <Group id="-2134830188">
-      <Item lang="de" text="Datentyp (&quot;{2}&quot;) der Process Variable (&quot;{1}&quot;) wird nicht unterstützt" />
-      <Item lang="en" text="Datatype (&quot;{2}&quot;) of process variable (&quot;{1}&quot;) is not supported" />
-    </Group>
-    <Group id="-2134830187">
-      <Item lang="de" text="Referenz der Process Variable &quot;{1}&quot; ist ungültig" />
-      <Item lang="en" text="Reference of process variable &quot;{1}&quot; is invalid" />
-    </Group>
-    <Group id="-2134830186">
-      <Item lang="de" text="Division durch null ({1} / {2})" />
-      <Item lang="en" text="Division by zero ({1} / {2})" />
-    </Group>
-    <Group id="-2134830185">
-      <Item lang="de" text="Variable &quot;{1}&quot; in der Unit Tranlation &quot;{2}&quot; ist nicht definiert" />
-      <Item lang="en" text="Variable &quot;{1}&quot; in Unit Tranlation &quot;{2}&quot; is not defined" />
-    </Group>
-    <Group id="-2134830184">
-      <Item lang="de" text="Unit Translation &quot;{1}&quot; fehlgeschlagen" />
-      <Item lang="en" text="Unit Translation &quot;{1}&quot; failed" />
-    </Group>
-    <Group id="-2134830180">
-      <Item lang="de" text="Nicht unterstütztes SSL/TLS Protokoll ({1}) konfiguriert" />
-      <Item lang="en" text="Unsupported SSL/TLS protocol configured" />
-    </Group>
-    <Group id="-2134829198">
-      <Item lang="de" text="WebServer Konfiguration ungültig" />
-      <Item lang="en" text="Invalid web server configuration" />
-    </Group>
-    <Group id="-1061087326">
-      <Item lang="de" text="Fehler beim Auflösen des Root-Verzeichnis der TransferGruppe &quot;{1}&quot;." />
-      <Item lang="en" text="Error when resolving the root directory of the transfer group &quot;{1}&quot;." />
-    </Group>
-    <Group id="-1061087325">
-      <Item lang="de" text="Root-Verzeichnis &quot;{2}&quot; befindet sich nicht im Verzeichnis der Transfergruppe &quot;{1}&quot;." />
-      <Item lang="en" text="Root directory &quot;{2}&quot; is not in the transfer group directory &quot;{1}&quot;." />
-    </Group>
-    <Group id="-1061085376">
-      <Item lang="de" text="Fehler beim Senden der Client Aktion &quot;{1}&quot;." />
-      <Item lang="en" text="Error transmitting client action &quot;{1}&quot;" />
-    </Group>
-    <Group id="1086398273">
-      <Item lang="de" text="Client Aktion &quot;{1}&quot; wurde abgebrochen." />
-      <Item lang="en" text="Client action &quot;{1}&quot; aborted" />
-    </Group>
-    <Group id="12658448">
-      <Item lang="de" text="Der mapp View Server wird geladen" />
-      <Item lang="en" text="Loading mapp View server" />
-    </Group>
-    <Group id="-1061083375">
-      <Item lang="de" text="Fehler beim Laden des mapp View Server: mapp View Server Verzeichnis nicht gefunden" />
-      <Item lang="en" text="Error loading mapp View server: mapp View server directory not found" />
-    </Group>
-    <Group id="-1061083374">
-      <Item lang="de" text="Fehler beim Laden des mapp View Server: System API ist nicht valide" />
-      <Item lang="en" text="Error loading mapp View server: Invalid system API" />
-    </Group>
-    <Group id="-1061083373">
-      <Item lang="de" text="Fehler beim Laden des mapp View Server: Modul-Verzeichnis kann nicht gesetzt werden" />
-      <Item lang="en" text="Error loading mapp View server: Cannot set module directory" />
-    </Group>
-    <Group id="-1061083372">
-      <Item lang="de" text="Fehler beim Laden des mapp View Server: Modul kann nicht geladen werden" />
-      <Item lang="en" text="Error loading mapp View server: Cannot load module" />
-    </Group>
-    <Group id="-1061083371">
-      <Item lang="de" text="Fehler beim Laden des mapp View Server: Funktion kann nicht aufgelöst werden" />
-      <Item lang="en" text="Error loading mapp View server: Cannot resolve function" />
-    </Group>
-    <Group id="12680448">
-      <Item lang="de" text="Client Initialisierung erfolgreich. Client ID : &quot;{1}&quot; " />
-      <Item lang="en" text="Client initialization successful. Client ID: &quot;{1}&quot; " />
-    </Group>
-    <Group id="-1061061375">
-      <Item lang="de" text="Client Initialisierung fehlgeschlagen. Für Details siehe ASCII Data" />
-      <Item lang="en" text="Client initialization failed. For details, see &quot;ASCII data&quot;." />
-    </Group>
-    <Group id="12680450">
-      <Item lang="de" text="Client Deinitialisierung erfolgreich" />
-      <Item lang="en" text="Client deinitialization successful" />
-    </Group>
-    <Group id="-1061061373">
-      <Item lang="de" text="Client Verbindung fehlgeschlagen: Client bereits verbunden" />
-      <Item lang="en" text="Client connection failed: Client already connected" />
-    </Group>
-    <Group id="-1061061372">
-      <Item lang="de" text="Client Verbindung fehlgeschlagen: Maximale Anzahl an Verbindungen erreicht." />
-      <Item lang="en" text="Client connection failed: Maximum number of connections reached." />
-    </Group>
-    <Group id="-1061061371">
-      <Item lang="de" text="Client Verbindung fehlgeschlagen: Keine weiteren Verbindungen erlaubt, keine Client Lizenz verfügbar." />
-      <Item lang="en" text="Client connection failed: Addition connections not permitted, no client license available." />
-    </Group>
-    <Group id="-1061061370">
-      <Item lang="de" text="Client Verbindung fehlgeschlagen: Visualisierungslizenz nicht verfügbar." />
-      <Item lang="en" text="Client connection failed: HMI application license not available." />
-    </Group>
-    <Group id="-1061061366">
-      <Item lang="de" text="Client Fehler bei Skriptausführung" />
-      <Item lang="en" text="Client error during script execution" />
-    </Group>
-    <Group id="12680468">
-      <Item lang="de" text="Client aktivierung des Contents &quot;{1}&quot; erfolgreich" />
-      <Item lang="en" text="Client: Content &quot;{1}&quot; enabled successfully" />
-    </Group>
-    <Group id="-1061061355">
-      <Item lang="de" text="Client Aktivierung des Contents &quot;{1}&quot; fehlgeschlagen" />
-      <Item lang="en" text="Client: Activation of content &quot;{1} &quot; failed" />
-    </Group>
-    <Group id="-2134803178">
-      <Item lang="de" text="Client kein Binding zu Content &quot;{1}&quot; gefunden" />
-      <Item lang="en" text="Client: No binding for content &quot;{1}&quot; found" />
-    </Group>
-    <Group id="12680478">
-      <Item lang="de" text="Client Deaktivierung des Contents &quot;{1}&quot; erfolgreich" />
-      <Item lang="en" text="Client: content &quot;{1}&quot; disabled successfully" />
-    </Group>
-    <Group id="-1061061345">
-      <Item lang="de" text="Client Deaktivierung des Contents &quot;{1}&quot; fehlgeschlagen" />
-      <Item lang="en" text="Client: Failed to disable content &quot;{1}&quot;" />
-    </Group>
-    <Group id="12680488">
-      <Item lang="de" text="Client Benutzerauthentifizierung für &quot;{1}&quot; erfolgreich" />
-      <Item lang="en" text="Client: User authentication successful for &quot;{1}&quot;" />
-    </Group>
-    <Group id="-1061061335">
-      <Item lang="de" text="Client Benutzerauthentifizierung für &quot;{1}&quot; fehlgeschlagen" />
-      <Item lang="en" text="Client: User authentication failed for &quot;{1}&quot;" />
-    </Group>
-    <Group id="12680498">
-      <Item lang="de" text="Client Benutzeranmeldung erfolgreich" />
-      <Item lang="en" text="Client: User login successful" />
-    </Group>
-    <Group id="-1061061325">
-      <Item lang="de" text="Client Benutzeranmeldung fehlgeschlagen" />
-      <Item lang="en" text="Client: User login failed" />
-    </Group>
-    <Group id="1086422324">
-      <Item lang="de" text="Client Benutzer hat sich geaendert: &quot;{1}&quot;" />
-      <Item lang="en" text="Client: User has changed: &quot;{1}&quot;" />
-    </Group>
-    <Group id="-2134803140">
-      <Item lang="de" text="Client Visualisierung mit der ID &quot;{1}&quot; wurde nicht gefunden" />
-      <Item lang="en" text="Client: Visualization object with ID &quot;{1}&quot; not found" />
-    </Group>
-    <Group id="-2134803139">
-      <Item lang="de" text="Client Visualisierung mit der ID &quot;{1}&quot; fehlerhaft" />
-      <Item lang="en" text="Client: Error in visualization object with ID &quot;{1}&quot;" />
-    </Group>
-    <Group id="-2134803138">
-      <Item lang="de" text="Client keine Pages in Visualisierung mit der ID &quot;{1}&quot; " />
-      <Item lang="en" text="Client: No pages in visualization object with ID &quot;{1}&quot; " />
-    </Group>
-    <Group id="-2134803137">
-      <Item lang="de" text="Client keine Layouts in Visualisierung mit der ID &quot;{1}&quot; " />
-      <Item lang="en" text="Client: No layouts in visualization object with ID &quot;{1}&quot; " />
-    </Group>
-    <Group id="-2134803136">
-      <Item lang="de" text="Client Page &quot;{1}&quot; nicht Teil der Visualisierung" />
-      <Item lang="en" text="Client: Page &quot;{1}&quot; not part of visualization object" />
-    </Group>
-    <Group id="-2134803135">
-      <Item lang="de" text="Client Content &quot;{1}&quot; nicht Teil der Visualisierung" />
-      <Item lang="en" text="Client: Content &quot;{1}&quot; not part of visualization object" />
-    </Group>
-    <Group id="-2134803134">
-      <Item lang="de" text="Client Layout &quot;{1}&quot; in Page &quot;{2}&quot; nicht Teil der Visualisierung" />
-      <Item lang="en" text="Client: Layout &quot;{1}&quot; in page &quot;{2}&quot; not part of visualization object" />
-    </Group>
-    <Group id="-2134803133">
-      <Item lang="de" text="Client Dialog &quot;{1}&quot; nicht Teil der Visualisierung" />
-      <Item lang="en" text="Client: Dialog box &quot;{1}&quot; not part of visualization object" />
-    </Group>
-    <Group id="-2134803127">
-      <Item lang="de" text="Client noch nicht bereit -&gt; Aktion &quot;{1}&quot; nicht ausgeführt" />
-      <Item lang="en" text="Client not yet ready -&gt; clientSystem.Action &quot;{1}&quot; rejected" />
-    </Group>
-    <Group id="-2134803128">
-      <Item lang="de" text="Client Content &quot;{1}&quot; nicht Teil der Content Liste" />
-      <Item lang="en" text="Client content &quot;{1}&quot; not part of content list" />
-    </Group>
-    <Group id="-2134803132">
-      <Item lang="de" text="Client Area &quot;{1}&quot; in Layout :&quot;{2}&quot; für Page &quot;{3}&quot; wurde nicht gefunden" />
-      <Item lang="en" text="Client: Area &quot;{1}&quot; in layout: &quot;{2}&quot; for page &quot;{3}&quot; not found" />
-    </Group>
-    <Group id="-2134803131">
-      <Item lang="de" text="Client Theme &quot;{1}&quot; wurde nicht gefunden" />
-      <Item lang="en" text="Client: Theme &quot;{1}&quot; not found" />
-    </Group>
-    <Group id="-2134803130">
-      <Item lang="de" text="Client: Page &quot;{1}&quot; derzeit nicht geladen" />
-      <Item lang="en" text="Client: Page &quot;{1}&quot; not currently loaded" />
-    </Group>
-    <Group id="-2134803120">
-      <Item lang="de" text="Client Redirect configuration beinhaltet keine Regeln und keine Default Visualisierung wurde angegeben" />
-      <Item lang="en" text="Client redirect configuration does not contain any rules and no default visualization was specified" />
-    </Group>
-    <Group id="-2134803129">
-      <Item lang="de" text="Client: Content &quot;{1}&quot; bereits geladen" />
-      <Item lang="en" text="Client: content &quot;{1}&quot; already loaded" />
-    </Group>
-    <Group id="-2134803117">
-      <Item lang="de" text="{1} Widget mit der ID &quot;{2}&quot; hat einen ungültigen Wert &quot;{3}&quot; für das Property &quot;{4}&quot;" />
-      <Item lang="en" text="{1} Widget with ID &quot;{2}&quot; has an invalid value &quot;{3}&quot; for property &quot;{4}&quot;" />
-    </Group>
-    <Group id="-2134803116">
-      <Item lang="de" text="Visualisierung mit der ID &quot;{1}&quot; konnte nicht aktiviert werden" />
-      <Item lang="en" text="Visualization with ID &quot;{1}&quot; could not be activated!" />
-    </Group>
-    <Group id="-2134803114">
-      <Item lang="de" text="Widget vom Typ &quot;{1}&quot; ist nicht als Kindelement erlaubt in Widget &quot;{2}&quot; vom Typ &quot;{3}&quot; in Content &quot;{4}&quot;." />
-      <Item lang="en" text="Widget of type &quot;{1}&quot; is not allowed as child element in widget &quot;{2}&quot; of type &quot;{3}&quot; in content &quot;{4}&quot;." />
-    </Group>
-    <Group id="12680536">
-      <Item lang="de" text="Client Passwortänderung für Benutzer {1} erfolgreich" />
-      <Item lang="en" text="Client: password change for user {1} successful" />
-    </Group>
-    <Group id="-1061061287">
-      <Item lang="de" text="Client Passwortänderung für Benutzer {1} fehlgeschlagen" />
-      <Item lang="en" text="Client: password change for user {1} failed" />
-    </Group>
-    <Group id="-2134803126">
-      <Item lang="de" text="Client: Zugriff auf Visualisierung mit der ID &quot;{1}&quot; wurde verweigert" />
-      <Item lang="en" text="Client: access to visualization with ID &quot;{1}&quot; has been denied" />
-    </Group>
-    <Group id="-2134803125">
-      <Item lang="de" text="Client in Ladephase: Page oder Content &quot;{1}&quot; nicht geladen" />
-      <Item lang="en" text="Client not finished loading -&gt; page or content &quot;{1}&quot; not loaded" />
-    </Group>
-    <Group id="-2134803119">
-      <Item lang="de" text="Client: ungültige Werte für Positionierung und Ausrichtung" />
-      <Item lang="en" text="Client: invalid values for positioning and alignment." />
-    </Group>
-    <Group id="-2134803118">
-      <Item lang="de" text="Client: mehr contents für precaching konfiguriert als caching slots" />
-      <Item lang="en" text="Client: more contents are configured for precaching then caching slots" />
-    </Group>
-    <Group id="-2134803115">
-      <Item lang="de" text="Client: Verschachtelung von ContentControls in Content &quot;{2}&quot; beim Laden von Content &quot;{3}&quot; in Widget &quot;{1}&quot; " />
-      <Item lang="en" text="Client: nested ContentControls in content &quot;{2}&quot; when loading content &quot;{3}&quot; into widget &quot;{1}&quot; " />
-    </Group>
-    <Group id="-2134803113">
-      <Item lang="de" text="Client: Initialisierung des Widgets mit ID &quot;{1}&quot; in Content &quot;{2}&quot; fehlgeschlagen" />
-      <Item lang="en" text="Client: failed to initialize widget with ID &quot;{1}&quot; on content &quot;{2}&quot;" />
-    </Group>
-    <Group id="-2134803110">
-      <Item lang="de" text="Nicht erlaubte Fokus Aktion. Widget &quot;{1}&quot; befindet sich außerhalb des fokussierbaren Bereiches." />
-      <Item lang="en" text="Not allowed focus action. Widget &quot;{1}&quot; is outside the focusable area." />
-    </Group>
-    <Group id="-2134803100">
-      <Item lang="de" text="Cross-Origin-Anfrage blockiert: {1}" />
-      <Item lang="en" text="Cross-Origin-Request blocked: {1}" />
-    </Group>
-    <Group id="-2134803099">
-      <Item lang="de" text="Potenziell schädliche Dokument-Inhalte wurden gefiltert. Typ:  &quot;{1}&quot;  Name: &quot;{2}&quot;" />
-      <Item lang="en" text="Potentially harmful document content was filtered. Typ: &quot;{1}&quot;  name: &quot;{2}&quot;" />
-    </Group>
     <Group id="-1064239099">
       <Item lang="de" text="Ungültiger Inhalt des MpLink" />
       <Item lang="en" text="Invalid MpLink contents" />
@@ -36951,228 +36951,6 @@
     <Group id="-2138045419">
       <Item lang="de" text="mapp Assertion fehlgeschlagen" />
       <Item lang="en" text="mapp Assertion failed" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpAssetIntCore/Alarms">
-    <Group id="ExportStatisticsFailed">
-      <Item lang="en" text="Shift statistics export failed" />
-      <Item lang="de" text="Export der Schichtstatistiken fehlgeschlagen" />
-    </Group>
-    <Group id="ExportTimelineFailed">
-      <Item lang="en" text="Timeline export failed" />
-      <Item lang="de" text="Export der Timeline fehlgeschlagen" />
-    </Group>
-    <Group id="ExportJobStatisticsFailed">
-      <Item lang="en" text="Job statistics export failed" />
-      <Item lang="de" text="Export der Job Schichtstatistiken fehlgeschlagen" />
-    </Group>
-    <Group id="InUnscheduledDowntime">
-      <Item lang="en" text="Unscheduled downtime" />
-      <Item lang="de" text="Ungeplante Stillstandszeit" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpAuditTrail/Alarms">
-    <Group id="ArchiveAvailable">
-      <Item lang="en" text="Archive available" />
-      <Item lang="de" text="Archiv verfügbar" />
-    </Group>
-    <Group id="MaxArchives">
-      <Item lang="en" text="Archiving stopped (maximum number of archives reached)" />
-      <Item lang="de" text="Archivieren wurde eingestellt (maximale Anzahl an Archiven erreicht)" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpBackupCore/Alarms">
-    <Group id="CreateFailed">
-      <Item lang="en" text="A backup could not have been created" />
-      <Item lang="de" text="Ein Backup konnte nicht erstellt werden" />
-    </Group>
-    <Group id="InstallFailed">
-      <Item lang="en" text="A backup/update could not have been installed" />
-      <Item lang="de" text="Ein Backup/Update konnte nicht installiert werden" />
-    </Group>
-    <Group id="UpdateCheckFailed">
-      <Item lang="en" text="Update check could not have been performed" />
-      <Item lang="de" text="Die Verfügbarkeit neuer Updates konnte nicht überprüft werden" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpCodeBox/Alarms">
-    <Group id="ImportFailed">
-      <Item lang="en" text="Import of {&amp;ItemName} failed" />
-      <Item lang="de" text="Import von {&amp;ItemName} fehlgeschlagen" />
-    </Group>
-    <Group id="StartFailed">
-      <Item lang="en" text="Start of program {&amp;Name} failed" />
-      <Item lang="de" text="Start von Program {&amp;Name} fehlgeschlagen" />
-    </Group>
-    <Group id="ExecuteFailed">
-      <Item lang="en" text="Execution of program {&amp;Name} failed ({&amp;Title})" />
-      <Item lang="de" text="Start von Program {&amp;Name} fehlgeschlagen ({&amp;Title})" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpDataRecorder/Alarms">
-    <Group id="RecordingCompleted">
-      <Item lang="en" text="Data recording completed successfully" />
-      <Item lang="de" text="Daten sichern erfolgreich" />
-    </Group>
-    <Group id="RecordingAborted">
-      <Item lang="en" text="Data recording interrupted" />
-      <Item lang="de" text="Daten sichern unterbrochen" />
-    </Group>
-    <Group id="LimitViolated">
-      <Item lang="en" text="Value of a registered process variable has violated limits" />
-      <Item lang="de" text="Wert einer registrierten Prozessvariable hat Grenzen verletzt" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpFileManagerUI/Alarms">
-    <Group id="DeviceNotFound">
-      <Item lang="en" text="FileDevice not found" />
-      <Item lang="de" text="FileDevice wurde nicht gefunden" />
-    </Group>
-    <Group id="AlreadyExisting">
-      <Item lang="en" text="File/Folder already exists" />
-      <Item lang="de" text="Datei/Ordner existiert bereits" />
-    </Group>
-    <Group id="FileSystemError">
-      <Item lang="en" text="General error in file system" />
-      <Item lang="de" text="Genereller Fehler des Dateisystems" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpIO/Alarms">
-    <Group id="ImportFailed">
-      <Item lang="en" text="Import Hardware-Configuration has failed" />
-      <Item lang="de" text="Importieren einer Hardware-Konfiguration ist fehlgeschlagen" />
-    </Group>
-    <Group id="ImportDone">
-      <Item lang="en" text="New Hardware-Configuration imported" />
-      <Item lang="de" text="Neue Hardware-Konfiguration wurde importiert" />
-    </Group>
-    <Group id="HwChanged">
-      <Item lang="en" text="Hardware-Configuration was changed externally" />
-      <Item lang="de" text="Hardware-Konfiguration wurde extern geändert" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpOeeCore/Alarms">
-    <Group id="ExportStatisticsFailed">
-      <Item lang="en" text="Shift statistics export failed" />
-      <Item lang="de" text="Export der Schichtstatistiken fehlgeschlagen" />
-    </Group>
-    <Group id="ExportTimelineFailed">
-      <Item lang="en" text="Timeline export failed" />
-      <Item lang="de" text="Export der Timeline fehlgeschlagen" />
-    </Group>
-    <Group id="InUnscheduledDowntime">
-      <Item lang="en" text="Unscheduled downtime" />
-      <Item lang="de" text="Ungeplante Stillstandszeit" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpPackMLCore/Alarms">
-    <Group id="StateTransitionNotAllowed">
-      <Item lang="en" text="Transition to this state not possible" />
-      <Item lang="de" text="Wechsel in diesen Zustand nicht möglich" />
-    </Group>
-    <Group id="ModeTransitionNotAllowed">
-      <Item lang="en" text="Mode transition not possible" />
-      <Item lang="de" text="Modus Übergang nicht möglich" />
-    </Group>
-    <Group id="ConfigurationInvalid">
-      <Item lang="en" text="Invalid configuration" />
-      <Item lang="de" text="Konfiguration íst ungültig" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpRecipeCsv/Alarms">
-    <Group id="SaveFailed">
-      <Item lang="en" text="Recipe save failed" />
-      <Item lang="de" text="Speichern des Rezepts ist fehlgeschlagen" />
-    </Group>
-    <Group id="SaveFailedPartial">
-      <Item lang="en" text="Recipe save partially failed" />
-      <Item lang="de" text="Speichern des Rezepts teilweise fehlgeschlagen" />
-    </Group>
-    <Group id="LoadFailed">
-      <Item lang="en" text="Recipe load failed" />
-      <Item lang="de" text="Laden des Rezepts ist fehlgeschlagen" />
-    </Group>
-    <Group id="LoadFailedPartial">
-      <Item lang="en" text="Recipe load partially failed" />
-      <Item lang="de" text="Laden des Rezepts teilweise fehlgeschlagen" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpRecipeXml/Alarms">
-    <Group id="SaveFailed">
-      <Item lang="en" text="Recipe save failed" />
-      <Item lang="de" text="Speichern des Rezepts ist fehlgeschlagen" />
-    </Group>
-    <Group id="SaveFailedPartial">
-      <Item lang="en" text="Recipe save partially failed" />
-      <Item lang="de" text="Speichern des Rezepts teilweise fehlgeschlagen" />
-    </Group>
-    <Group id="LoadFailed">
-      <Item lang="en" text="Recipe load failed" />
-      <Item lang="de" text="Laden des Rezepts ist fehlgeschlagen" />
-    </Group>
-    <Group id="LoadFailedPartial">
-      <Item lang="en" text="Recipe load partially failed" />
-      <Item lang="de" text="Laden des Rezepts teilweise fehlgeschlagen" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpReportCore/Alarms">
-    <Group id="GenerateFailed">
-      <Item lang="en" text="Report generation failed" />
-      <Item lang="de" text="Erstellung des Reports fehlgeschlagen" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpSequenceCore/Alarms">
-    <Group id="ImportFailed">
-      <Item lang="de" text="Sequence Import fehlgeschlagen" />
-      <Item lang="en" text="Sequence import failed" />
-    </Group>
-    <Group id="ExportFailed">
-      <Item lang="de" text="Sequence Export fehlgeschlagen" />
-      <Item lang="en" text="Sequence export failed" />
-    </Group>
-    <Group id="Timeout">
-      <Item lang="de" text="Ein Timeout passierte während Ausführung der Sequenz " />
-      <Item lang="en" text="A timeout was triggered during the sequence execution" />
-    </Group>
-    <Group id="Interlock">
-      <Item lang="de" text="Eine Interlock-Bedingung wurde nicht erfüllt" />
-      <Item lang="en" text="An interlock condition was not fulfilled" />
-    </Group>
-    <Group id="ActuatorBlocked">
-      <Item lang="de" text="Ein Aktuator ist nicht verfügbar aufgrund einer parallelen Bewegung" />
-      <Item lang="en" text="An actuator is not available due to a parallel movement" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpSkyline/Alarms">
-    <Group id="InvalidConfig">
-      <Item lang="en" text="Import of invalid configuration" />
-      <Item lang="de" text="Import einer ungültigen Konfiguration" />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpTweetCore/Alarms">
-    <Group id="MessageSendFail">
-      <Item lang="en" text="Failed to send message to receiver." />
-      <Item lang="de" text="Senden der Nachricht an Empfänger fehlgeschlagen." />
-    </Group>
-    <Group id="PingTimeout">
-      <Item lang="en" text="Ping command timeout with out response." />
-      <Item lang="de" text="Ping-Befehl ergab Zeitüberschreitung ohne Antwort." />
-    </Group>
-    <Group id="CommunicationFail">
-      <Item lang="en" text="Communication to modem failed." />
-      <Item lang="de" text="Kommunikation zum Modem ist fehlgeschlagen." />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpUserLogin/Alarms">
-    <Group id="UserLocked">
-      <Item lang="en" text="User blocked due to too many failed login attempts " />
-      <Item lang="de" text="Benutzer wurde aufgrund zu vieler fehlerhafter Loginversuche gesperrt " />
-    </Group>
-  </TextMessages>
-  <TextMessages ns="BR/mapp/MpUserXLogin/Alarms">
-    <Group id="UserLocked">
-      <Item lang="en" text="User blocked due to too many failed login attempts " />
-      <Item lang="de" text="Benutzer wurde aufgrund zu vieler fehlerhafter Loginversuche gesperrt " />
     </Group>
   </TextMessages>
   <TextMessages ns="BR/IAT">
@@ -37852,6 +37630,228 @@
     <Group id="imperial-us">
       <Item lang="de" text="Imperial U.S" />
       <Item lang="en" text="Imperial U.S" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpAssetIntCore/Alarms">
+    <Group id="ExportStatisticsFailed">
+      <Item lang="en" text="Shift statistics export failed" />
+      <Item lang="de" text="Export der Schichtstatistiken fehlgeschlagen" />
+    </Group>
+    <Group id="ExportTimelineFailed">
+      <Item lang="en" text="Timeline export failed" />
+      <Item lang="de" text="Export der Timeline fehlgeschlagen" />
+    </Group>
+    <Group id="ExportJobStatisticsFailed">
+      <Item lang="en" text="Job statistics export failed" />
+      <Item lang="de" text="Export der Job Schichtstatistiken fehlgeschlagen" />
+    </Group>
+    <Group id="InUnscheduledDowntime">
+      <Item lang="en" text="Unscheduled downtime" />
+      <Item lang="de" text="Ungeplante Stillstandszeit" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpAuditTrail/Alarms">
+    <Group id="ArchiveAvailable">
+      <Item lang="en" text="Archive available" />
+      <Item lang="de" text="Archiv verfügbar" />
+    </Group>
+    <Group id="MaxArchives">
+      <Item lang="en" text="Archiving stopped (maximum number of archives reached)" />
+      <Item lang="de" text="Archivieren wurde eingestellt (maximale Anzahl an Archiven erreicht)" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpBackupCore/Alarms">
+    <Group id="CreateFailed">
+      <Item lang="en" text="A backup could not have been created" />
+      <Item lang="de" text="Ein Backup konnte nicht erstellt werden" />
+    </Group>
+    <Group id="InstallFailed">
+      <Item lang="en" text="A backup/update could not have been installed" />
+      <Item lang="de" text="Ein Backup/Update konnte nicht installiert werden" />
+    </Group>
+    <Group id="UpdateCheckFailed">
+      <Item lang="en" text="Update check could not have been performed" />
+      <Item lang="de" text="Die Verfügbarkeit neuer Updates konnte nicht überprüft werden" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpCodeBox/Alarms">
+    <Group id="ImportFailed">
+      <Item lang="en" text="Import of {&amp;ItemName} failed" />
+      <Item lang="de" text="Import von {&amp;ItemName} fehlgeschlagen" />
+    </Group>
+    <Group id="StartFailed">
+      <Item lang="en" text="Start of program {&amp;Name} failed" />
+      <Item lang="de" text="Start von Program {&amp;Name} fehlgeschlagen" />
+    </Group>
+    <Group id="ExecuteFailed">
+      <Item lang="en" text="Execution of program {&amp;Name} failed ({&amp;Title})" />
+      <Item lang="de" text="Start von Program {&amp;Name} fehlgeschlagen ({&amp;Title})" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpDataRecorder/Alarms">
+    <Group id="RecordingCompleted">
+      <Item lang="en" text="Data recording completed successfully" />
+      <Item lang="de" text="Daten sichern erfolgreich" />
+    </Group>
+    <Group id="RecordingAborted">
+      <Item lang="en" text="Data recording interrupted" />
+      <Item lang="de" text="Daten sichern unterbrochen" />
+    </Group>
+    <Group id="LimitViolated">
+      <Item lang="en" text="Value of a registered process variable has violated limits" />
+      <Item lang="de" text="Wert einer registrierten Prozessvariable hat Grenzen verletzt" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpFileManagerUI/Alarms">
+    <Group id="DeviceNotFound">
+      <Item lang="en" text="FileDevice not found" />
+      <Item lang="de" text="FileDevice wurde nicht gefunden" />
+    </Group>
+    <Group id="AlreadyExisting">
+      <Item lang="en" text="File/Folder already exists" />
+      <Item lang="de" text="Datei/Ordner existiert bereits" />
+    </Group>
+    <Group id="FileSystemError">
+      <Item lang="en" text="General error in file system" />
+      <Item lang="de" text="Genereller Fehler des Dateisystems" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpIO/Alarms">
+    <Group id="ImportFailed">
+      <Item lang="en" text="Import Hardware-Configuration has failed" />
+      <Item lang="de" text="Importieren einer Hardware-Konfiguration ist fehlgeschlagen" />
+    </Group>
+    <Group id="ImportDone">
+      <Item lang="en" text="New Hardware-Configuration imported" />
+      <Item lang="de" text="Neue Hardware-Konfiguration wurde importiert" />
+    </Group>
+    <Group id="HwChanged">
+      <Item lang="en" text="Hardware-Configuration was changed externally" />
+      <Item lang="de" text="Hardware-Konfiguration wurde extern geändert" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpOeeCore/Alarms">
+    <Group id="ExportStatisticsFailed">
+      <Item lang="en" text="Shift statistics export failed" />
+      <Item lang="de" text="Export der Schichtstatistiken fehlgeschlagen" />
+    </Group>
+    <Group id="ExportTimelineFailed">
+      <Item lang="en" text="Timeline export failed" />
+      <Item lang="de" text="Export der Timeline fehlgeschlagen" />
+    </Group>
+    <Group id="InUnscheduledDowntime">
+      <Item lang="en" text="Unscheduled downtime" />
+      <Item lang="de" text="Ungeplante Stillstandszeit" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpPackMLCore/Alarms">
+    <Group id="StateTransitionNotAllowed">
+      <Item lang="en" text="Transition to this state not possible" />
+      <Item lang="de" text="Wechsel in diesen Zustand nicht möglich" />
+    </Group>
+    <Group id="ModeTransitionNotAllowed">
+      <Item lang="en" text="Mode transition not possible" />
+      <Item lang="de" text="Modus Übergang nicht möglich" />
+    </Group>
+    <Group id="ConfigurationInvalid">
+      <Item lang="en" text="Invalid configuration" />
+      <Item lang="de" text="Konfiguration íst ungültig" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpRecipeCsv/Alarms">
+    <Group id="SaveFailed">
+      <Item lang="en" text="Recipe save failed" />
+      <Item lang="de" text="Speichern des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="SaveFailedPartial">
+      <Item lang="en" text="Recipe save partially failed" />
+      <Item lang="de" text="Speichern des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailed">
+      <Item lang="en" text="Recipe load failed" />
+      <Item lang="de" text="Laden des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailedPartial">
+      <Item lang="en" text="Recipe load partially failed" />
+      <Item lang="de" text="Laden des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpRecipeXml/Alarms">
+    <Group id="SaveFailed">
+      <Item lang="en" text="Recipe save failed" />
+      <Item lang="de" text="Speichern des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="SaveFailedPartial">
+      <Item lang="en" text="Recipe save partially failed" />
+      <Item lang="de" text="Speichern des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailed">
+      <Item lang="en" text="Recipe load failed" />
+      <Item lang="de" text="Laden des Rezepts ist fehlgeschlagen" />
+    </Group>
+    <Group id="LoadFailedPartial">
+      <Item lang="en" text="Recipe load partially failed" />
+      <Item lang="de" text="Laden des Rezepts teilweise fehlgeschlagen" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpReportCore/Alarms">
+    <Group id="GenerateFailed">
+      <Item lang="en" text="Report generation failed" />
+      <Item lang="de" text="Erstellung des Reports fehlgeschlagen" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpSequenceCore/Alarms">
+    <Group id="ImportFailed">
+      <Item lang="de" text="Sequence Import fehlgeschlagen" />
+      <Item lang="en" text="Sequence import failed" />
+    </Group>
+    <Group id="ExportFailed">
+      <Item lang="de" text="Sequence Export fehlgeschlagen" />
+      <Item lang="en" text="Sequence export failed" />
+    </Group>
+    <Group id="Timeout">
+      <Item lang="de" text="Ein Timeout passierte während Ausführung der Sequenz " />
+      <Item lang="en" text="A timeout was triggered during the sequence execution" />
+    </Group>
+    <Group id="Interlock">
+      <Item lang="de" text="Eine Interlock-Bedingung wurde nicht erfüllt" />
+      <Item lang="en" text="An interlock condition was not fulfilled" />
+    </Group>
+    <Group id="ActuatorBlocked">
+      <Item lang="de" text="Ein Aktuator ist nicht verfügbar aufgrund einer parallelen Bewegung" />
+      <Item lang="en" text="An actuator is not available due to a parallel movement" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpSkyline/Alarms">
+    <Group id="InvalidConfig">
+      <Item lang="en" text="Import of invalid configuration" />
+      <Item lang="de" text="Import einer ungültigen Konfiguration" />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpTweetCore/Alarms">
+    <Group id="MessageSendFail">
+      <Item lang="en" text="Failed to send message to receiver." />
+      <Item lang="de" text="Senden der Nachricht an Empfänger fehlgeschlagen." />
+    </Group>
+    <Group id="PingTimeout">
+      <Item lang="en" text="Ping command timeout with out response." />
+      <Item lang="de" text="Ping-Befehl ergab Zeitüberschreitung ohne Antwort." />
+    </Group>
+    <Group id="CommunicationFail">
+      <Item lang="en" text="Communication to modem failed." />
+      <Item lang="de" text="Kommunikation zum Modem ist fehlgeschlagen." />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpUserLogin/Alarms">
+    <Group id="UserLocked">
+      <Item lang="en" text="User blocked due to too many failed login attempts " />
+      <Item lang="de" text="Benutzer wurde aufgrund zu vieler fehlerhafter Loginversuche gesperrt " />
+    </Group>
+  </TextMessages>
+  <TextMessages ns="BR/mapp/MpUserXLogin/Alarms">
+    <Group id="UserLocked">
+      <Item lang="en" text="User blocked due to too many failed login attempts " />
+      <Item lang="de" text="Benutzer wurde aufgrund zu vieler fehlerhafter Loginversuche gesperrt " />
     </Group>
   </TextMessages>
   <TextMessages ns="BR/Localization/Units/BF102BE7">

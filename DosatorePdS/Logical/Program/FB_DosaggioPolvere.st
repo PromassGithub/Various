@@ -9,23 +9,29 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 
 	// --- ESECUZIONE TIMER E CALCOLI PRELIMINARI ---
 	TON_Stabilizzazione(IN := bStartTimer, PT := tTimeoutStabilizzazione);
+	TON_AttesaMateriale(IN := bStartTimerAttesa, PT := T#2s);
 
 	// CALCOLO DELL'ERRORE MASSIMO ASSOLUTO (basato sulla percentuale)
 	fErroreAssolutoMax := fPesoRichiesto * fTolleranzaPercentuale;
 
 	// Calcolo del Punto di Chiusura (Anticipo del Volo)
-	fPuntoDiChiusuraValvola := fPesoRichiesto - fPesoAnticipoChiusura;
+	//fPuntoDiChiusuraValvola := fPesoRichiesto - fPesoAnticipoChiusura;
+	fTempoRitardoPrecedente := fPesoAnticipoChiusura;
 	
 	// Calcolo dei Target
-	fPesoTargetVeloce := (fPesoRichiesto) * fSogliaDosaggioLento;
-	fPesoTargetLento := (fPesoRichiesto) * fSogliaMicrodosaggio;
+	fPesoTargetVeloce := (fPesoRichiesto) * fSogliaDosaggioLento/100;
+	fPesoTargetLento := (fPesoRichiesto) * fSogliaMicrodosaggio/100;
 	
 	// Calcolo dei Limiti di Tolleranza Finale
 	fTolleranzaMinima := fPesoRichiesto - fErroreAssolutoMax;
 	fTolleranzaMassima := fPesoRichiesto + fErroreAssolutoMax;
 
-	// Calcolo del Punto di Chiusura (Anticipo del Volo)
-	fPuntoDiChiusuraValvola := fPesoRichiesto - fPesoAnticipoChiusura;
+	fPortataAttuale := (fPesoAttualeBilancia - bilanciaPortataOld)/0.01;
+	bilanciaPortataOld := fPesoAttualeBilancia;
+	
+	IF NOT TON_AttesaMateriale.Q THEN
+		fOldWeight := fPesoAttualeBilancia;
+	END_IF
 
 	// Gestione degli stati
 	CASE eStatoDosaggio OF
@@ -36,6 +42,7 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 			bDosaggioInCorso := FALSE;
 			bDosaggioCompletato := FALSE;
 			fUscitaValvolaProporzionale := 0.0; // Valvola chiusa
+			fIncrementoPercentualeValvola:= 0;
         
 			IF bAvviaDosaggio AND (fPesoRichiesto > 0.0) THEN
 				eStatoDosaggio := eST_VELOCE;
@@ -44,59 +51,186 @@ FUNCTION_BLOCK FB_DosaggioPolvere
         
 		eST_VELOCE: // Dosaggio Veloce (fino al 90% del peso richiesto)
 			bStartTimer := FALSE; // Timer disattivo
-			fUscitaValvolaProporzionale := fPercentualeValvolaVeloce; // Apertura valvola al valore veloce
+			fUscitaValvolaProporzionale := fPercentualeValvolaVeloce + fIncrementoPercentualeValvola; // Apertura valvola al valore veloce
         
+			IF fUscitaValvolaProporzionale > 100 THEN 
+				eStatoDosaggio := eST_ERRORE;
+			END_IF
+			
+			
+			IF ABS(fUscitaValvolaProporzionale - fFeadbackValvolaProporzionale) < 5 THEN
+				bStartTimerAttesa := TRUE;
+				IF TON_AttesaMateriale.Q AND (ABS(fOldWeight - fPesoAttualeBilancia) < 5) THEN
+					fIncrementoPercentualeValvola := fIncrementoPercentualeValvola + 7;
+				END_IF
+			ELSE
+				bStartTimerAttesa := FALSE;
+			END_IF
+			
 			// Transizione allo stato successivo
 			IF fPesoAttualeBilancia >= fPesoTargetVeloce THEN
 				eStatoDosaggio := eST_LENTO;
+				fIncrementoPercentualeValvola:= 0;
 			END_IF
         
 		eST_LENTO: // Dosaggio Lento (dal 90% al 99% del peso richiesto)
 			bStartTimer := FALSE; // Timer disattivo
-			fUscitaValvolaProporzionale := fPercentualeValvolaLenta; // Apertura valvola al valore lento per maggiore precisione
+			fUscitaValvolaProporzionale := fPercentualeValvolaLenta + fIncrementoPercentualeValvola; // Apertura valvola al valore lento per maggiore precisione
+			
+			IF fUscitaValvolaProporzionale > 100 THEN 
+				eStatoDosaggio := eST_ERRORE;
+			END_IF
+			
+			IF ABS(fUscitaValvolaProporzionale - fFeadbackValvolaProporzionale) < 4 THEN
+				bStartTimerAttesa := TRUE;
+				IF TON_AttesaMateriale.Q AND (ABS(fOldWeight - fPesoAttualeBilancia) < 4) THEN
+					fIncrementoPercentualeValvola := fIncrementoPercentualeValvola + 5;
+				END_IF
+			ELSE
+				bStartTimerAttesa := FALSE;
+			END_IF
         
 			// Transizione allo stato successivo
 			IF fPesoAttualeBilancia >= fPesoTargetLento THEN
 				eStatoDosaggio := eST_FINE;
+				fIncrementoPercentualeValvola:= 0;
+			END_IF
+			
+			
+			
+		eST_FINE: // Microdosaggio (dal 99% fino al punto di chiusura anticipata)
+			
+			// --- 1. CALCOLO DINAMICO DEL PUNTO DI CHIUSURA ---
+			IF fPercentualeValvolaPrec > 0.0 THEN
+				fFattoreCorrezioneValvola := fFeadbackValvolaProporzionale / fPercentualeValvolaPrec;
+			ELSE
+				fFattoreCorrezioneValvola := 1.0; // Sicurezza per il primo ciclo assoluto
+			END_IF
+			
+			// Stima del ritardo e del materiale in volo (Anticipo dinamico)
+			fTempoRitardoStimato := fTempoRitardoPrecedente * fFattoreCorrezioneValvola;
+			fMaterialeInVolo := fPortataAttuale * fTempoRitardoStimato;
+			fPuntoDiChiusuraValvola := fPesoRichiesto - fMaterialeInVolo;
+			// --------------------------------------------------
+
+			fUscitaValvolaProporzionale := fPercentualeValvolaFine + fIncrementoPercentualeValvola; // Apertura minima della valvola (Microdosaggio)
+			
+			IF fUscitaValvolaProporzionale > 100 THEN 
+				eStatoDosaggio := eST_ERRORE;
+			END_IF
+			
+			IF fPortataAttuale < 2 THEN
+				bStartTimerAttesa := TRUE;
+				IF TON_AttesaMateriale.Q AND (ABS(fOldWeight - fPesoAttualeBilancia) < 2) THEN
+					fIncrementoPercentualeValvola := fIncrementoPercentualeValvola + 3;
+				END_IF
+			ELSE
+				bStartTimerAttesa := FALSE;
 			END_IF
         
-		eST_FINE: // Microdosaggio (dal 99% fino al punto di chiusura anticipata)
-			fUscitaValvolaProporzionale := fPercentualeValvolaFine; // Apertura minima della valvola (Microdosaggio)
-        
-			// CONDIZIONE DI CHIUSURA ANTICIPATA:
+			// --- 2. CONDIZIONE DI CHIUSURA ANTICIPATA ---
 			IF fPesoAttualeBilancia >= fPuntoDiChiusuraValvola THEN
+				
+				// SALVATAGGIO DATI PER L'AUTO-APPRENDIMENTO DEL CICLO SUCCESSIVO
+				fPercentualeValvolaPrec := fFeadbackValvolaProporzionale;
+				fPortataAlComandoChiusura := fPortataAttuale;
+				fPesoAlComandoChiusura := fPesoAttualeBilancia;
 			
 				fUscitaValvolaProporzionale := 0.0;	// Chiusura IMMEDIATA della valvola
 				bStartTimer := TRUE; // AVVIO DEL TIMER e transizione allo stato di attesa
 				eStatoDosaggio := eST_ATTESA_STABILIZZAZIONE; // Passaggio ad uno stato di attesa per la stabilizzazione/volo
+				fIncrementoPercentualeValvola:= 0;
 			END_IF
 			
 		eST_ATTESA_STABILIZZAZIONE: // Stato di attesa: la valvola è chiusa (Output = 0.0), il timer è attivo
 			bStartTimer := TRUE; // Mantiene attivo l'ingresso del TON
         
-			// 1. Controllo di successo: Peso stabilizzato nell'intervallo ACCETTABILE (0.05% del setpoint)
+			// Controllo di successo: Peso stabilizzato nell'intervallo ACCETTABILE
 			IF fPesoAttualeBilancia >= fTolleranzaMinima AND fPesoAttualeBilancia <= fTolleranzaMassima AND TON_Stabilizzazione.Q THEN
 				bStartTimer := FALSE; 
 				eStatoDosaggio := eST_COMPLETATO;
 				
+				// --- LOGICA DI AUTO-TARATURA (SUCCESSO) ---
+				IF fPortataAlComandoChiusura > 0.0 THEN
+					fMaterialeCadutoDopoChiusura := fPesoAttualeBilancia - fPesoAlComandoChiusura;
+					fTempoRitardoPrecedente := fMaterialeCadutoDopoChiusura / fPortataAlComandoChiusura;
+				END_IF
+				
 			ELSIF TON_Stabilizzazione.Q THEN
-				// 2. Controllo di errore: Timeout raggiunto
+				// Controllo di errore: Timeout raggiunto e peso fuori tolleranza
 			 
 				bStartTimer := FALSE; // Spegne il timer
 				bErroreStabilizzazione := TRUE; // Segnala l'errore specifico
-				eStatoDosaggio := eST_ERRORE;
+				//eStatoDosaggio := eST_ERRORE;
 				
-				// --- LOGICA DI AUTO-TARATURA ---
-				// 1. Registra l'ultimo risultato e calcola l'errore
+				// --- LOGICA DI AUTO-TARATURA (ERRORE) ---
+				// Anche se è in errore, calcoliamo il ritardo reale per correggere il prossimo ciclo
+				IF fPortataAlComandoChiusura > 0.0 THEN
+					fMaterialeCadutoDopoChiusura := fPesoAttualeBilancia - fPesoAlComandoChiusura;
+					
+					// Protezione per evitare calcoli errati se qualcuno ha toccato la bilancia
+					IF fMaterialeCadutoDopoChiusura > 0.0 THEN
+						fTempoRitardoPrecedente := fMaterialeCadutoDopoChiusura / fPortataAlComandoChiusura;
+						eStatoDosaggio := eST_ERRORE;
+					END_IF
+				END_IF
+				
+				// Registra l'ultimo risultato per diagnostica o per HMI
 				fUltimoPesoDosato := fPesoAttualeBilancia;
-				fUltimoErroreAssoluto := fUltimoPesoDosato - fPesoRichiesto; // Errore = (Finale - Richiesto)
-            
-				// 2. Aggiorna il peso di anticipo chiusura (fPesoAnticipoChiusura)
-				// Se l'ultimo dosaggio ha superato il setpoint (sovradosaggio):
-				// L'errore è positivo, quindi dobbiamo aumentare l'anticipo (chiudere prima).
-				// Nuova anticipazione = Vecchia anticipazione + (Errore * Fattore di correzione)
-				fPesoAnticipoChiusura := fPesoAnticipoChiusura + (fUltimoErroreAssoluto * fFattoreCorrezione);
-			END_IF	
+				fUltimoErroreAssoluto := fUltimoPesoDosato - fPesoRichiesto; 
+			END_IF
+        
+			//		eST_FINE: // Microdosaggio (dal 99% fino al punto di chiusura anticipata)
+			//			fUscitaValvolaProporzionale := fPercentualeValvolaFine + fIncrementoPercentualeValvola; // Apertura minima della valvola (Microdosaggio)
+			//			
+			//			IF fUscitaValvolaProporzionale > 100 THEN 
+			//				eStatoDosaggio := eST_ERRORE;
+			//			END_IF
+			//			
+			//			IF ABS(fUscitaValvolaProporzionale - fFeadbackValvolaProporzionale) < 2 THEN
+			//				bStartTimerAttesa := TRUE;
+			//				IF TON_AttesaMateriale.Q AND (ABS(fOldWeight - fPesoAttualeBilancia) < 2) THEN
+			//					fIncrementoPercentualeValvola := fIncrementoPercentualeValvola + 3;
+			//				END_IF
+			//			ELSE
+			//				bStartTimerAttesa := FALSE;
+			//			END_IF
+			//        
+			//			// CONDIZIONE DI CHIUSURA ANTICIPATA:
+			//			IF fPesoAttualeBilancia >= fPuntoDiChiusuraValvola THEN
+			//			
+			//				fUscitaValvolaProporzionale := 0.0;	// Chiusura IMMEDIATA della valvola
+			//				bStartTimer := TRUE; // AVVIO DEL TIMER e transizione allo stato di attesa
+			//				eStatoDosaggio := eST_ATTESA_STABILIZZAZIONE; // Passaggio ad uno stato di attesa per la stabilizzazione/volo
+			//				fIncrementoPercentualeValvola:= 0;
+			//			END_IF
+			//			
+			//		eST_ATTESA_STABILIZZAZIONE: // Stato di attesa: la valvola è chiusa (Output = 0.0), il timer è attivo
+			//			bStartTimer := TRUE; // Mantiene attivo l'ingresso del TON
+			//        
+			//			// 1. Controllo di successo: Peso stabilizzato nell'intervallo ACCETTABILE (0.05% del setpoint)
+			//			IF fPesoAttualeBilancia >= fTolleranzaMinima AND fPesoAttualeBilancia <= fTolleranzaMassima AND TON_Stabilizzazione.Q THEN
+			//				bStartTimer := FALSE; 
+			//				eStatoDosaggio := eST_COMPLETATO;
+			//				
+			//			ELSIF TON_Stabilizzazione.Q THEN
+			//				// 2. Controllo di errore: Timeout raggiunto
+			//			 
+			//				bStartTimer := FALSE; // Spegne il timer
+			//				bErroreStabilizzazione := TRUE; // Segnala l'errore specifico
+			//				eStatoDosaggio := eST_ERRORE;
+			//				
+			//				// --- LOGICA DI AUTO-TARATURA ---
+			//				// 1. Registra l'ultimo risultato e calcola l'errore
+			//				fUltimoPesoDosato := fPesoAttualeBilancia;
+			//				fUltimoErroreAssoluto := fUltimoPesoDosato - fPesoRichiesto; // Errore = (Finale - Richiesto)
+			//            
+			//				// 2. Aggiorna il peso di anticipo chiusura (fPesoAnticipoChiusura)
+			//				// Se l'ultimo dosaggio ha superato il setpoint (sovradosaggio):
+			//				// L'errore è positivo, quindi dobbiamo aumentare l'anticipo (chiudere prima).
+			//				// Nuova anticipazione = Vecchia anticipazione + (Errore * Fattore di correzione)
+			//				fPesoAnticipoChiusura := fPesoAnticipoChiusura + (fUltimoErroreAssoluto * fFattoreCorrezione);
+			//			END_IF	
         
 		eST_COMPLETATO: // Dosaggio terminato con successo
 			bStartTimer := FALSE; // Timer disattivo
@@ -129,12 +263,15 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 			bStartTimer := FALSE; // Timer disattivo
 			fUscitaValvolaProporzionale := 0.0;
 			bDosaggioInCorso := FALSE;
+			bStartTimerAttesa := FALSE;
 		
 			IF NOT bAvviaDosaggio THEN
 				eStatoDosaggio := eST_IDLE;
 			END_IF
         
 	END_CASE
+	
+	fPesoAnticipoChiusura := fTempoRitardoPrecedente;
 
 	// Calcolo e monitoraggio dell'errore (solo per info esterna/HMI)
 	IF fPesoAttualeBilancia > 0.0 AND fPesoRichiesto > 0.0 THEN

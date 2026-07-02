@@ -1,0 +1,1523 @@
+$ EZ-EDS Version 3.23.1.20171205 Generated Electronic Data Sheet
+
+$ ****************************************************************************
+$ 								METTLER TOLEDO
+$ ****************************************************************************
+$  
+$ Product: IND360 Premium
+$  
+$ (c) Copyright 2020 Mettler-Toledo AG. All Rights Reserved.
+$  
+$ Author: Wang xiaolin (POLC)
+$ Date:   07.16.2020
+$  
+$ ****************************************************************************
+$  
+$ ATTENTION:
+$ Changes in this file can cause configuration or communication problems.
+$  
+$ ****************************************************************************
+$  
+$ Changes:
+$ Version	Date		Name		SVN	Description
+$ 1.0		07.16.2020	Wang xiaolin	6869	Initial Version
+$ 1.1		07.28.2020	Wang xiaolin	8169	Using EDS tool V3.27 to fix some warnings.
+$ 							Modified the Min/Max/Defasult value of Param73 from 104 to 100.
+$ 							Deleted the paramN and assemblyN related 1-block format
+$ 							Modified the Catalog in [Device[ region from "MT-IND360 2 Ports" to "MT-IND360"
+$ 1.2       06.24.2021  Bi LiuGang      add icon for the IND360
+$ ****************************************************************************
+
+[File]
+        DescText = "EDS-File for IND360 Transmitter";
+        CreateDate = 06-24-2021;
+        CreateTime = 13:37:56;
+        ModDate = 06-24-2021;
+        ModTime = 13:37:57;
+        Revision = 1.2;
+        HomeURL = "www.mt.com";
+        1_IOC_Details_License = 0xEDC6689B;
+
+[Device]
+        VendCode = 666;
+        VendName = "METTLER TOLEDO";
+        ProdType = 12;
+        ProdTypeStr = "Communications Adapter";
+        ProdCode = 16898;
+        MajRev = 1;
+        MinRev = 1;
+        ProdName = "IND360";
+        Catalog = "MT-IND360";
+        Icon = "IND360_DIN_IE_AO_DIO_PS_AV_3D.ico";
+        IconContents =
+                "AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAA"
+                "ABILAAASCwAAAAAAAAAAAAD//////f39//z8/P/8/Pz//Pz8//z8/P/7+/v/"
+                "+/v7//r6+v/6+vr/+fn5//n5+f/4+Pj/+Pj4//j4+P/39/f/9/f3//b29v/2"
+                "9vb/9vb2//X19f/19fX/9fX1//X19f/19fX/9PT0//b19f/6+vr/////////"
+                "///6+vr/+fn5//r6+v/6+vr/+fn5//n5+f/4+Pj/+Pj4//j4+P/4+Pj/+Pj4"
+                "//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+fn5//n5+f/5+fn/+fn5//n5+f/5+fn/"
+                "+vr6//r6+v/6+vr/+vr6//r6+v/7+/v/+/v7//v7+//7+/v/+/v7//39/f//"
+                "//////////39/f/8/Pz//Pz8//z8/P/7+/v/+/v7//r6+v/6+vr/+fn5//j4"
+                "+P/4+Pj/9/f3//b29v/19fX/9fX1//T09P/z8/P/8/Pz//Ly8v/w8PD/7u7u"
+                "/+7u7v/w8PD/9fX1//r7+//6+/v/7/Dx/9HS0f/MzMz/+Pj4//f39//x8fH/"
+                "8/Pz//Pz8//z8/P/9PT0//T09P/09PT/9PT0//X19f/19fX/9fX1//b29v/2"
+                "9vb/9vb2//f39//39/f/9/f3//j4+P/4+Pj/+Pj4//n5+f/5+fn/+fn5//n5"
+                "+f/5+fn/+vr6//r6+v/6+vr/+vr6//r6+v/9/f3////////////9/f3//Pz8"
+                "//z8/P/8/Pz/+/v7//v7+//6+vr/+fn5//j4+P/39/f/9vb2//X19f/09PT/"
+                "8/Pz//Hx8f/v7+//7e3t/+zs6//u7e3/8vLy//b39//19/f/6err/87Pz/+o"
+                "pqT/fXdz/1ZKQ/8+MCf/UE9O/4SEhf/R0dH/7+/v/+np6f/o6Oj/7Ozs/+3t"
+                "7f/u7u7/7+/v//Dw8P/x8fH/8fHx//Ly8v/z8/P/8/Pz//T09P/09PT/9fX1"
+                "//X19f/29vb/9vb2//b29v/39/f/9/f3//j4+P/4+Pj/+Pj4//n5+f/5+fn/"
+                "+fn5//r6+v/5+fn//Pz8/////////////Pz8//z8/P/8/Pz//Pz8//v7+//7"
+                "+/v/+vr6//n5+f/39/f/9vb2//T09P/x8fH/7u7u/+3t7P/u7e3/8vLy//b3"
+                "9//19vf/6evs/9DR0f+qqaf/gHp2/1lPSP8+Lyb/Mh8U/zIeEv82IRX/QC4k"
+                "/15fXv9UVVX/XVxd/56en//g4OD/6+vr/+Tk5P/m5ub/6enp/+vr6//s7Oz/"
+                "7e3t/+7u7v/v7+//7+/v//Dw8P/x8fH/8vLy//Ly8v/z8/P/9PT0//T09P/1"
+                "9fX/9fX1//b29v/29vb/9/f3//f39//4+Pj/+Pj4//j4+P/5+fn/+fn5//z8"
+                "/P////////////z8/P/8/Pz//Pz8//z8/P/7+/v/+/v7//r6+v/5+fn/9/f3"
+                "//Pz8//x8fH/9PT0//j4+P/3+fn/6+3u/9HR0f+qp6b/gnx4/1tRSv8/MCj/"
+                "MyAW/zIeE/83JBj/Pike/0EsIf9CLyT/Pywh/0MxJ/9dXl3/YWFi/11cXf9S"
+                "UVL/bm5u/7i4uP/o6Oj/5ubm/+Li4v/m5ub/6Ojo/+np6f/q6ur/6+vr/+zs"
+                "7P/t7e3/7u7u/+/v7//w8PD/8fHx//Hx8f/y8vL/8/Pz//T09P/09PT/9fX1"
+                "//X19f/29vb/9vb2//f39//39/f/+Pj4//j4+P/8/Pz////////////8/Pz/"
+                "/Pz8//v7+//7+/v/+/v7//v7+//6+vr/+vr6//j4+P/4+Pj/8fLy/9XW1v+v"
+                "rav/f3l1/1pPSf9ENi7/QDAm/zIeE/82Ihf/PSke/0AsIP89Kh//Oygc/zwo"
+                "Hv9ALiX/Py0i/z8tIf9EMyj/Xl5e/2BgYf9fX1//YWFh/1dXWP9RUVL/hoaG"
+                "/8/Pz//q6un/4uLi/+Hh4f/l5eX/5+fn/+np6f/q6ur/6+vr/+vr6//t7e3/"
+                "7u7u/+/v7//v7+//8PDw//Hx8f/y8vL/8/Pz//Pz8//09PT/9fX1//X19f/2"
+                "9vb/9vb2//f39//39/f/+/v7/////////////Pz8//v7+//7+/v/+/v7//v7"
+                "+//6+vr/+vr6//j4+P//////y8rK/1pRS/9DNSz/NiUb/05ANv9WST7/ZllQ"
+                "/2NUS/9DMCX/Pysg/z0rIP9BMSj/T0I7/1hPSf9pZWD/WVZS/z0rH/9BLSH/"
+                "RDEm/2BgX/9hYWL/YGBg/19fYP9fX2D/XFxd/1RUVf9eXl//n5+g/9/f3//n"
+                "5+f/39/f/+Li4v/l5eX/5+fn/+jo6P/p6en/6urq/+vr6//s7Oz/7e3t/+7u"
+                "7v/v7+//8PDw//Hx8f/y8vL/8/Pz//Pz8//09PT/9fX1//X19f/29vb/9vb2"
+                "//v7+/////////////z8/P/7+/v/+/v7//v7+//6+vr/+vr6//n5+f/09PP/"
+                "/////6mop/8sGxD/QCwh/0c1K/9eSkT/TjYw/0MwJv85LB7/PCgd/1BGQP9i"
+                "Xlr/ZWNh/2BgXf9WVlP/gYB8/2JdWf86Jhr/RjIl/0w8Mf9gX1//YmJj/2Fh"
+                "Yf9hYWH/X19f/1xcXf9hYWL/XFxd/1JRU/9ub3D/urq6/+fn5//k5OT/39/f"
+                "/+Pj4//l5eX/5+fn/+jo6P/p6en/6urq/+vr6//s7Oz/7e3t/+7u7v/v7+//"
+                "8PDw//Hx8f/y8vL/8/Pz//T09P/09PT/9fX1//X19f/7+/v////////////8"
+                "/Pz/+/v7//v7+//6+vr/+fn5//j4+P/29vb/8fHx//39/f+rqqj/NCMY/z4r"
+                "IP8/LiX/N0Qn/zFULP8uaTT/K14w/zklGv9iXlr/Xl1Z/yAgH/8cHRv/HyAe"
+                "/z8/Pv9UUEz/SDYq/2BQRf9iVEv/XVta/2RkZf9iYmL/YmJi/2BgYP9dXV7/"
+                "YF9g/19fYP9hYWL/WVha/1VUVv+Ghof/0NDQ/+np6f/g4OD/4ODg/+Tk5P/l"
+                "5eX/5+fn/+np6f/q6ur/6urq/+vr6//t7e3/7u7u/+/v7//w8PD/8fHx//Ly"
+                "8v/z8/P/8/Pz//X19f/09PT/+vr6////////////+/v7//r6+v/5+fn/+fn5"
+                "//j4+P/29vb/9fX1//Dw8P/9/v7/pKKh/z4vJf9pV0//S0Yz/yd2Nv8WUCH/"
+                "Ej0b/yVTKP8+Kh7/ZWBb/1xaVv8mJyX/GRoY/xAQEP8KDAz/RUE+/1NANf9h"
+                "UEX/Y1RK/15cW/9kZWX/Y2Nj/2NjY/9hYWH/Xl5f/2FhYv9hYWL/Wlpb/1lZ"
+                "Wf9gX2H/VVRW/19eYP+hoaH/39/f/+fn5//f39//4eHh/+Tk5P/m5ub/6Ojo"
+                "/+np6f/q6ur/6+vr/+zs7P/u7u7/7+/v/+/v7//x8fH/8vLy//Ly8v/09PT/"
+                "9PT0//r6+v////////////v7+//5+fn/+fn5//j4+P/39/f/9vb2//T09P/w"
+                "8PD//v///6CdnP9FNSr/VEI7/yoyI/8pbjP/ETUV/wwlD/8nVir/Pike/2tm"
+                "Yv9dW1j/Jygm/x4fHv8QEA//XFxZ/2lkX/86Ixf/W0g9/21gV/9gXl3/ZWVl"
+                "/2RkZP9kZGT/YmJi/19fX/9iYmL/Y2Nj/1lZWv9KSkr/U1NT/15dXv9dXF7/"
+                "U1JU/3Bwcf+7u7v/5+fn/+Pj4//f39//4+Pj/+Xl5f/n5+f/6enp/+rq6v/r"
+                "6+v/7Ozs/+3t7f/u7u7/7+/v//Hx8f/y8vL/8/Pz//Pz8//6+vr/////////"
+                "///7+/v/+fn5//n5+f/4+Pj/9/f3//b29v/19fX/8fDw//////+fnZv/NiIV"
+                "/zUeFv8jLyD/JHEy/ww5Ff8JKhH/I1Em/0AsIf9taGT/XFpW/yIiIf8dHRz/"
+                "NTQy/4mHgv9oY17/Pigc/15LQP9nWE//YV9e/2ZmZv9kZGT/ZGRk/2NjY/9g"
+                "YGD/Y2Nj/2NjY/9gYWH/VldX/05PTv9WVlb/Wlpb/2BfYf9ZWFr/VlZY/4iI"
+                "iP/Q0NH/6enp/+Hh4f/g4OD/5OTk/+bm5v/o6Oj/6urq/+rq6v/s7Oz/7e3t"
+                "/+/v7//w8PD/8fHx//Ly8v/y8vL/+vr6////////////+/v7//n5+f/5+fn/"
+                "+Pj4//f39//29vb/9fX1//Hx8f//////mpeU/0IxJf9pVU7/SEoy/ytsM/8r"
+                "RiX/OkYr/0VELP9AKiD/amZh/29taP9gXlr/bmxo/21rZ/+SkIv/bWhj/z0m"
+                "Gv9hTkP/altR/2FfXv9nZ2j/ZWVl/2VlZf9kZGT/YWFh/2RkZP9jY2P/ZGRk"
+                "/2RkZP9dXV7/VlZX/1VVVf9TVFT/WVlZ/19fYP9WVVf/YF9h/6Kio//f4OD/"
+                "5+fn/+Dg4P/j4+P/5ubm/+jo6P/q6ur/6+vr/+zs7P/u7u7/7+/v//Hx8f/y"
+                "8vL/8vLy//r6+v////////////v7+//5+fn/+fn5//j4+P/4+Pj/9/f3//b2"
+                "9v/y8vL//////5iUkf9BLSH/Uj4z/0c0J/9LPCz/TTUp/0wxJ/9LMCf/QCwh"
+                "/29rZv9ta2f/NDQy/ykqKP8pKSj/YmFf/2diXf9DLSH/ZlRI/2laUP9iYF//"
+                "aGhp/2ZmZv9mZmb/ZWVl/2JiYv9lZWX/ZGRk/2RkZP9jY2P/ZGRl/2JjY/9a"
+                "W1v/VFRU/1VWVv9SUlL/XFxd/19eYP9TU1X/cXJz/7y8vP/o6Oj/5OTk/+Hh"
+                "4f/l5eX/6Ojo/+rq6v/r6+v/7e3t/+/v7//w8PD/8vLy//Ly8v/6+vr/////"
+                "///////7+/v/+vr6//n5+f/5+fn/+Pj4//f39//29vb/8/Pz//////+Wko//"
+                "OyUY/0o0KP9KMyj/STEm/0gzJ/9INCf/SzUo/0ItIv93dHD/X15b/xwdHP8W"
+                "FhX/ERER/woMDP9KRUH/Xks//2hWS/9qW1D/ZGJh/2lpav9oaGf/Z2dn/2Zm"
+                "Zv9iYmP/Z2dm/2ZmZv9lZWX/ZWVl/2RkZP9kZGT/ZWVl/2JjY/9cXF3/UVFR"
+                "/1lZWf9eXl//Xl5f/1lZW/9XV1n/iYmK/9LS0v/q6ur/4+Pj/+Tk5P/p6en/"
+                "6+vr/+3t7f/v7+//8fHx//Pz8//z8/P/+vr6////////////+/v7//r6+v/6"
+                "+vr/+fn5//n5+f/4+Pj/9/f3//T09P//////ko2K/z0nG/9NNyv/SjQo/0o0"
+                "KP9KNCj/SjQo/0w1Kf9DLiP/dnRw/2BfW/8nKCb/IiMh/xAREP9CQ0H/aGNd"
+                "/0kyJv9ONin/Uj8y/2lpaP9paWr/aWlp/2hoaP9nZ2f/Y2Nj/2hoaP9mZmb/"
+                "ZmZm/2ZmZv9mZmb/ZWVl/2RkZP9lZWX/ZWVl/19fYP9fX1//Wlpa/1FRUf9c"
+                "XF3/Xl5f/1ZWWP9hYWL/pKSl/+Li4v/r6+v/5+fn/+vr6//u7u7/8PDw//Ly"
+                "8v/09PT/9fX1//v7+/////////////z8/P/7+/v/+vr6//r6+v/5+fn/+fn5"
+                "//j4+P/19fX//////4+Khv8+Jxr/TTcr/0s1Kf9LNSn/SzUp/0s1Kv9NNin/"
+                "Qy8k/3l2cv9gXlv/HR4d/w8QD/8jIiH/mZaR/3Vwav9FLiD/TDQl/1A7L/9r"
+                "a2r/ampr/2ppaf9paWn/Z2ho/2RkZP9oaGj/aWlp/2hoaP9nZ2f/Z2dn/2Zm"
+                "Zv9mZmb/ZWVl/2VlZf9lZWb/ZmZn/19fX/9WVlb/UFBQ/1ZWVv9dXV7/X19h"
+                "/1VUVv9zc3T/wMDA/+vr6//t7e3/8vLy//T09P/29vb/9/f3//f39//8/Pz/"
+                "///////////8/Pz/+/v7//v7+//6+vr/+vr6//n5+f/5+fn/9vb2//////+L"
+                "hoL/Pygb/044LP9MNir/TDYq/0w2Kv9NNyv/Tjcr/0UxJv9+e3b/bGpm/0lJ"
+                "Rv9mZ2P/fX56/4qLhv9mYVv/SjMl/1A4Kf9SPTH/bGtq/2trbP9qamr/a2tr"
+                "/2lpaf9lZWX/a2ts/2RkZf9jY2P/aWlp/2hoaP9oaGj/Z2dn/2dnZ/9mZmb/"
+                "ZmZm/2VlZv9mZmf/ZGRl/15eX/9ZWVr/U1RT/1lZWf9hYmP/XV9g/1RVVv+7"
+                "vLz//v7+//X19f/39/f/+Pj4//j4+P/4+Pj//Pz8/////////////Pz8//z8"
+                "/P/7+/v/+/v7//v7+//6+vr/+vr6//f39///////iIJ9/0EpG/9POS3/TTcr"
+                "/003K/9NNyv/TTcr/1A4K/9HMyf/eHd0/4eDfv99dm//a11X/2VOSf9VOjL/"
+                "Si8m/001J/9KMSL/UT0w/2xsbP9sbGz/a2tr/2xsbP9ra2v/ZWZm/3BvcP9a"
+                "Wlr/VlZW/21tbv9oaGj/aWhp/2lpaf9oaGn/aGdo/2hnaP9nZ2j/Z2Zo/2Zm"
+                "Z/9nZ2n/ZGVm/11eX/9SUlL/WVpa/2lrbP9YW1z/qKmp///////19fX/+fn5"
+                "//n5+f/5+fn/+fn5//39/f////////////z8/P/8/Pz//Pz8//z8/P/7+/v/"
+                "+/v7//v7+//5+Pj//////4V+ef9DKx3/UTov/044LP9POCv/Tzkr/1A5Kv9R"
+                "OSv/TDYp/007MP9OOiz/STAj/0M4JP9DTi7/PGA0/zhcMf9dRjv/bFpO/1lF"
+                "Of9sa2r/bW1u/2xsbP9tbW3/bGxs/2dnZ/9xcXH/Wlpa/1ZVVf9vb3D/aWlq"
+                "/2ppa/9qamr/aWlq/2lpav9paWr/aGlq/2hoav9naGn/Z2hp/2dpav9oamv/"
+                "ZWdn/1xdXv9oamv/Wlxd/6ipqf//////9vb2//n5+f/6+vr/+/v7//r6+v/9"
+                "/f3////////////9/f3//Pz8//z8/P/8/Pz//Pz8//z8/P/7+/v/+fn5////"
+                "//+CenX/RSwe/1I7Lv9QOiv/UDsr/1A7Kv9QOir/UDkq/1E6K/9ROSn/Ujoq"
+                "/080KP84dD3/I2Yx/xRHIP8uZTH/alVK/3ZkWP9aRTn/bWxr/25ub/9tbW3/"
+                "bm5u/21tbf9paWn/b29v/2ZmZ/9mZmb/bW1t/2trbP9sa2z/a2ts/2prbP9q"
+                "amz/aWts/2lrbP9pa2z/aGpr/2lqa/9oamv/Z2lq/2hqa/9pa2z/aWts/1td"
+                "Xv+kpaX///////f39//6+vr/+/v7//v7+//8/Pz//f39/////////////f39"
+                "//39/f/9/f3//f39//z8/P/8/Pz//Pz8//r6+v//////fnZx/0YuHv9TPS7/"
+                "Ujkr/1M0Kf9TMyn/UjQp/1I5K/9TOiv/Uzos/1Q6LP9PNSj/NnQ7/yFZKv8Y"
+                "QR//MWMx/2lUSP91Y1f/XEc7/25tbP9wcHD/b29v/29vb/9ubm7/ampq/29u"
+                "bv9vb2//b29v/21tbf9tbW3/bW1t/21tbf9sbG3/a2xt/2tsbf9rbG3/a2xt"
+                "/2psbf9qbG3/amxt/2lrbP9pa2z/aWts/2ttbv9cXmD/n6Gh///////4+Pj/"
+                "+/v7//v7+//8/Pz//Pz8//7+/v////////////39/f/9/f3//f39//39/f/9"
+                "/f3//f39//z8/P/7+/v//////3tzbf9GLR3/UTkr/1A9LP9LUjT/RGE3/z1q"
+                "Ov9NOyr/VTks/1Q6LP9VOy3/TzYp/zZ1PP8fWin/FUEd/zFjMf9rVUn/eGVa"
+                "/11IPP9vbm3/cXFx/3BwcP9wcHD/b29v/2tra/9wcHD/bm5u/25ubv9ubm7/"
+                "b29v/25ubv9ubm7/bm5u/25tbv9tbW7/bW1u/21tbv9sbW7/bG1u/2ttbv9r"
+                "bW7/a21u/2psbf9sbm//XmBh/5ucnf//////+vr6//z8/P/8/Pz//f39//39"
+                "/f/+/v7////////////+/v7//v7+//39/f/9/f3//f39//39/f/9/f3//Pz8"
+                "//////93bmf/Tjcn/15AN/9EXDb/GmQr/xZKIf8xfD7/Tj8s/1U4K/9UOiz/"
+                "VTos/082Kf83dz3/H1op/xVBHf8xZDH/bVdL/3NgVP9ZQzf/cXBv/3Fxcv9x"
+                "cXH/cXFx/3BwcP9ra2v/cXFx/3BwcP9wcHD/cHBw/29vb/9vb2//b29v/29v"
+                "b/9vb2//b29v/25ub/9ubm7/bm5v/25ub/9tbW//bW1v/21tbv9sbW7/bW9w"
+                "/2BiY/+XmJn///////v7+//9/f3//f39//39/f/9/f3//v7+////////////"
+                "/v7+//7+/v/+/v7//v7+//7+/v/9/f3//f39//38/P//////cmdg/2hVR/90"
+                "WVH/QV00/xpYJv8cRCH/OHpA/08+LP9VOSz/VDss/1U7Lf9QNyr/Nng9/yBZ"
+                "Kf8WQR7/NGUz/2xWSv97al7/YEw//3Bvbv9ycnP/cXFx/3Jycv9wcHD/bGxs"
+                "/3Jycv9xcXH/cXFx/3BwcP9xcXH/cHBw/3BwcP9wcHD/cHBw/3BwcP9wcHD/"
+                "b29v/29vb/9wcHD/b29w/29ub/9vbm//b25w/29wcf9iY2T/k5SV///////8"
+                "/Pz//f39//39/f/+/v7//v7+//////////////////7+/v/+/v7//v7+//7+"
+                "/v/+/v7//v7+//7+/v/+/v3//////29jXP9oVUf/eF1W/0FfNf8aWSf/G0Yh"
+                "/zh7Qf9QPi3/Vjot/1U7Lf9WPC7/UDgq/zd5Pv8eWCj/FUEd/zZmNf9uWE3/"
+                "gnFm/2hVSf9vbm3/c3N0/3Jycv9ycnL/cXFx/2xsbP9ycnL/cXFx/3Fxcf9x"
+                "cXH/cXFx/3Fxcf9xcXH/cXFx/3Fxcf9xcXH/cXFx/3BwcP9wcHD/cXFx/3Fx"
+                "cf9wcHD/cHBw/3BwcP9xcXH/ZGVm/4+Pkf///////f39//7+/v/+/v7//v7+"
+                "//7+/v/////////////////+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7/"
+                "//7+//7///9sX1j/bFlL/25RSf9BYDX/Glgn/xxIIv82ez//UT4t/1c7Lv9V"
+                "PC7/Vz0v/1A5K/81eT7/HVcn/xVAHf81ZzT/bldM/4Z2a/9qV0v/cG9t/3N0"
+                "dP9ycnL/c3Nz/3Fxcf9sbGz/cnJy/3Jycv9ycnL/cXFx/3Jycv9ycnL/cnJy"
+                "/3Jycv9xcXH/cnJy/3Fxcf9xcXH/cXFx/3Fxcf9xcXH/cXFx/3Fwcf9wcHD/"
+                "cnJy/2dnZ/+Li4z///////39/f/+/v7//v7+//7+/v/+/v7//v7+////////"
+                "/////v7+//7+/v/+/v7//v7+//7+/v/+/v7//v7+/////v/7/f7/al1V/29d"
+                "T/9rTUX/QGI2/xlWJf8cSCL/Nns+/1I+Lf9XOy7/Vjwu/1g9L/9QOSv/NHk8"
+                "/xxWJv8UQBz/M2Yz/3JbUP9uWUz/W0Y5/3Nycf9zdHT/c3Nz/3Nzc/9ycnL/"
+                "bW1t/3Nzc/9ycnL/cnJy/3Jycv9ycnL/c3Nz/3Jycv9ycnL/cnJy/3Jycv9y"
+                "cnL/cXFx/3Jycv9xcXH/cnJy/3Jycv9xcXH/cXFx/3Jycv9paWn/iIeI////"
+                "///+/v7//v7+//7+/v/+/v7/////////////////////////////////////"
+                "///////+/v7//v7+//7+/f//////+fv8/2pcVP93ZVj/bE9H/z9jNv8XVCT/"
+                "G0gi/zh7P/9SPS3/Vzsu/1Y9Lv9ZPjD/UDor/zJ6PP8cVSX/FEAc/zJlMf96"
+                "ZVr/Yko9/1U+Mf92dXT/c3N0/3Nzc/9zc3P/cnJy/21tbf90dHT/c3Nz/3Nz"
+                "c/9ycnL/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/cnJy/3Jycv9ycnL/cnJy"
+                "/3Jycv9ycnL/cnJy/3Jycv9zc3P/a2tr/4WFhf//////////////////////"
+                "///////////////////////////////////////////////////////////+"
+                "/v7///////j6+v9lV07/cV5Q/3BTS/8/ZTf/GFMk/x1KJP86fEH/Uzwt/1c8"
+                "L/9WPS//WT4w/1A7LP8zez3/HFUm/xNAHP8xZTD/fGZc/2lTRv9XQDP/dnV0"
+                "/3N0dP9zc3P/dHR0/3Jycv9tbW3/dHR0/3Nzc/90dHT/c3Nz/3Nzc/9zc3P/"
+                "c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Jycv9y"
+                "cnL/c3Nz/21tbf+CgoL//f39////////////////////////////////////"
+                "/////////////////////////////////////////v7+///////19/j/Y1RL"
+                "/3RhU/96YFj/QGg5/xpSJP8fTCX/PHtB/1M7LP9YPS//Vz4w/1k+MP9QOyz/"
+                "NXw+/x1UJv8VPxz/M2Qx/3xmXP9pU0b/V0Az/3Z2df90dHT/dHR0/3R0dP9z"
+                "c3P/bm1t/3R0dP9zc3P/dHR0/3R0dP90dHT/dHR0/3Nzc/9zc3P/dHR0/3Nz"
+                "c/90dHT/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3R0dP9ubm7/f39/"
+                "//r6+v//////////////////////////////////////////////////////"
+                "//////////////////////7+/v//////8/T1/2FRSP92ZFb/eF1V/z9rOv8V"
+                "TSH/G0wl/zuAQ/9VPC7/WD4w/1c+MP9aPjD/UT0t/zV/QP8YUiP/DkAb/zRs"
+                "Nv96Ylj/Zk9B/1hBNP92dnX/dHR1/3R0dP90dHT/c3Nz/25tbf91dXX/c3Nz"
+                "/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP9zc3P/"
+                "c3Nz/3R0dP90dHT/dHR0/3R0dP90dHT/b29v/3p6ev/4+Pj///////7+/v//"
+                "////////////////////////////////////////////////////////////"
+                "///+/v7///////Dx8v9hUUf/dWJU/21SSf9BZzn/NGk3/z9gN/9KXTj/Vzwv"
+                "/1k/Mf9ZPzH/Wz8y/1A8LP89ekH/OmQ2/z9WMv9NTjP/UzYo/1Q4Kv9cRjn/"
+                "dXV0/3R0dP90dHT/dXV1/3Nzc/9tbW3/dXV1/3R0dP90dHT/dHR0/3R0dP90"
+                "dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0"
+                "dP90dHT/dHR0/3BwcP/Q0ND///////7+/v//////////////////////////"
+                "/////////////////////////////////////////////v7+///////t7+//"
+                "X05E/1I2J/9WPC7/VDwu/1s/MP9cOi3/Wjku/1k/Mf9YPjD/WT8x/1lAMf9X"
+                "PS//Uj8u/1VNNf9QWTj/SU0x/2FGOv9eRTf/WkQ3/3Z1dP90dHT/dHR0/3R0"
+                "dP90dHT/bW1t/3V1df90dHT/dHR0/3V1df91dXX/dHR0/3V1df91dXX/dXV1"
+                "/3R0dP90dHT/dHR0/3R0dP90dHT/dHR0/3R0dP90dHT/dXV1/3R0dP9wcHD/"
+                "6urq///////+/v7/////////////////////////////////////////////"
+                "//////////////////////////7+/v//////6uvs/11LQf9WOiz/WD4x/11D"
+                "Nf9VQTb/TkI4/1g/MP9YPjD/WD4w/1g/MP9aPzH/UDss/zh6P/8kZS//FlIk"
+                "/zJsNP95YVf/bFdJ/1hBM/92dnX/dHR0/3R0dP90dHT/c3Nz/21tbf91dXX/"
+                "dHR0/3V1df90dHT/dXV1/3V1df91dXX/dXV1/3V1df90dHT/dHR0/3R0dP90"
+                "dHT/dXV1/3V1df90dHT/dXV1/3V1df91dXX/bm5u/+Dg4P///////v7+////"
+                "////////////////////////////////////////////////////////////"
+                "///////+/v7//////+fo6f9bST//Vjor/4NzaP+DcGT/TkA3/1BFPP9ZPi//"
+                "WD8x/1k/Mf9ZPzH/W0Ax/1A/Lf84g0P/Hk8l/xQ6G/89bDv/fWZb/4d3av9t"
+                "Wk7/cnFw/3V1df90dHT/dXV1/3R0dP9tbW3/dXV1/3R0dP91dXX/dXV1/3V1"
+                "df91dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dHR0/3V1df91dXX/dXV1"
+                "/3V1df91dXX/dnZ2/21tbf/d3d3///////39/f//////////////////////"
+                "/////////////////////////////////////////////////v7+///////k"
+                "5eX/Wkc8/1g9Lf9nUUP/ZU0//1JCN/9OQTj/WT8v/1g+Mf9YPjD/WD8x/1xA"
+                "Mf9RQC7/OYFD/x9RJv8WPx3/PGs5/3tjWP9+bF//YU1A/3V0c/91dXX/dHR0"
+                "/3V1df90dHT/bm5u/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/"
+                "dXV1/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3d3d/9s"
+                "bGz/2NjY///////9/f3/////////////////////////////////////////"
+                "//////////////////////////////39/f//////4eLi/1hFOv9YPC3/g3Jm"
+                "/31pW/9QQDb/UkQ6/1k/MP9ZPzH/WUAx/1lBMf9cQDH/UUEu/zaCQv8YTCL/"
+                "EDwb/zdrN/92XVL/fGpc/15IPP92dXT/dXV1/3V1df91dXX/dHR0/25ubf91"
+                "dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3V1"
+                "df91dXX/dXV1/3V1df91dXX/dXV1/3V1df93d3f/a2tr/9TU1P///////f39"
+                "////////////////////////////////////////////////////////////"
+                "///////////9/f3//////93e3v9WQjb/WD0v/2RNQP9oUEH/UkQ7/01COv9Z"
+                "Py//WkEx/1pBMf9YPy7/XUEy/1FALv85gkL/MWY0/zZeM/9IWjb/WTwu/1U6"
+                "Kv9dRjn/d3Z1/3V1df91dXT/dHR0/3R0dP9ubm7/dXV1/3V1df91dXX/dXV1"
+                "/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3Z2dv92dnb/dnZ2/3Z2dv92dnb/"
+                "dXV1/3V1df91dXX/d3d3/2pqav/Pz8////////39/f//////////////////"
+                "/////////////////////////////////////////////////////f39////"
+                "///a2tr/VEA0/1k+MP98al7/eWVX/1FBNv9TQzj/WkAw/1g/L/9YPy//YUo7"
+                "/1lAMP9ZQTH/V0Yy/1tGM/9dQDH/XD0w/1pCMv9aQDD/Xkc5/3d2df90dHX/"
+                "dHR0/3R0dP90dHT/bm5u/3Z2dv91dXX/dXV1/3V1df91dXX/dXV1/3V1df91"
+                "dXX/dXV1/3V1df92dnb/dXV1/3V1df92dnb/dnZ2/3V1df92dnb/dnZ2/3d3"
+                "d/9qamr/ysrK///////9/f3/////////////////////////////////////"
+                "//////////////////////////////////39/f//////1tfW/1Q/M/9aPzD/"
+                "WUAw/1c9Lf9bQC//W0Av/1pBMf9XPi//gW9j/29aTP9WPS7/WkAx/1o/Mf9Z"
+                "PzH/WUEx/1pDMv9bQjL/WT8v/19IOf93dnX/dHR0/3R0dP90dHT/dHR0/21t"
+                "bf91dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dXV1/3V1df92dnb/dnZ2"
+                "/3Z2dv92dnb/dnZ2/3Z2dv91dXX/dnZ2/3Z2dv94eHj/ampq/8bGxv//////"
+                "/f39////////////////////////////////////////////////////////"
+                "///////////////9/f3//////9PT0v9TPTH/W0Ew/1xDM/9cQzP/WkIy/1pC"
+                "Mv9bQjH/WUAw/4t7cP9wW03/WD4v/1k/MP9ZQDH/WD4v/1pCMv9VPS3/Vz4u"
+                "/1pAMP9eSDn/d3Z1/3R0dP90dHT/dHR0/3R0dP9tbW3/dXV1/3Nzc/91dXX/"
+                "dXV1/3V1df91dXX/dXV1/3Z2dv91dXX/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92"
+                "dnb/dnZ2/3V1df92dnb/eHh4/2pqav/AwMD///////39/f//////////////"
+                "/////////////////////////////////////////////////////////f39"
+                "///////Pzs7/UTwv/1tBMf9cQzP/Vz0t/1pAMP9bQjL/W0Iy/1lAMP9bQjP/"
+                "YUk6/1g/L/9aQTH/WD4u/19HOf98aV3/jHxx/2FKPP9YPSz/X0g6/3Z2df90"
+                "dHT/dHR0/3R0dP90dHT/bW1t/3d3d/9sbGz/XFxb/3l5ef90dHT/dXV1/3V1"
+                "df92dnb/dXV1/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2"
+                "/3h4eP9qamr/u7u7///////9/f3/////////////////////////////////"
+                "//////////////////////////////////////39/f//////y8rJ/1E7Lv9c"
+                "QjH/Vj0t/2xWSP9eRjj/WUAw/1tCMv9bQjL/WkEx/1lAMP9aQTH/WkEx/1c9"
+                "Lf9jTT7/hXNo/4d1av9fRzj/WD0t/19IOv92dnX/dHR0/3R0dP90dHT/dHR0"
+                "/21tbf94eHj/bGxs/1FRUP96enr/dHR0/3V1df91dXX/dXV1/3V1df91dXX/"
+                "dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv95eXn/aWlp/7m5uf//"
+                "/////Pz8////////////////////////////////////////////////////"
+                "///////////////////9/f3//////8fGxf9ROy3/Vz0t/3dkV/+bjYP/hnVq"
+                "/1Y8Lf9cQzP/W0Iy/1pBMf9YPy//WkEx/1pBMf9aQDD/WUEx/2FJO/9YPi7/"
+                "WD8v/1pAMP9eSDn/dnZ1/3R0dP90dHT/dHR0/3R0dP9tbGz/d3d3/2tra/9U"
+                "VFP/eXl5/3V1df91dXX/dXV1/3V1df92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2"
+                "dv92dnb/dnZ2/3Z2dv92dnb/d3d3/3R0dP99fX3/19fX///////9/f3/////"
+                "////////////////////////////////////////////////////////////"
+                "/f38///////DwcD/UDkr/1pAL/9nUUP/gG5i/2FJOv9YPi//W0Iy/1k/L/9d"
+                "RDX/YEk7/1Y9Lv9aQTH/WkEx/1pAMP9YPi7/WkEx/1tCMv9aQC//X0g6/3d2"
+                "dv90dXX/dHR0/3R0dP90dHT/bWxs/3V1df9ycnL/cXFx/3V1df91dXX/dXV1"
+                "/3V1df91dXX/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv91dXX/dXV1/3Z2dv92dnb/"
+                "dnZ2/3Z2dv94eHj/ampq/42Njf///////v7+////////////////////////"
+                "//////////////////////////////////////////38/P//////v727/084"
+                "Kv9cQzL/Vz4u/1U7K/9ZQC//W0Iy/1pBMf9XPi7/fWte/45+cv9ZQTL/WEAw"
+                "/1pCMv9aQTH/XEIy/1xDMv9bQjL/WUAv/19IOv93d3b/dHV1/3V0dP90dHT/"
+                "dHR0/21tbf91dXX/dXV1/3V1df90dHT/dXV1/3V1df91dXX/dXV1/3V1df91"
+                "dXX/dXV1/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92dnb/eHh4/3Jy"
+                "cv+FhYX//Pz8////////////////////////////////////////////////"
+                "///////////////////////9/Pz//////7u5t/9PNyn/XEMy/1pBMv9bQjP/"
+                "W0Iy/1pCMf9bQjL/WD4v/39rXv+FcmT/XEEx/15DMv9cQTH/WkAw/1U5Lf9Q"
+                "Niv/VDwv/1o/L/9eSDr/d3Z1/3R0df91dXX/dHR0/3R0dP9tbW3/dXV1/3V1"
+                "df91dXX/dHR0/3R0dP91dXX/dXV1/3V1df91dXX/dXV1/3V1df92dnb/dnZ2"
+                "/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3h4eP9ycnL/goKC//r6+v//////"
+                "////////////////////////////////////////////////////////////"
+                "/////Pz8//////+3tLL/TjYo/1xDM/9dQzL/XkMy/11CMf9aPzD/Vj0u/1I7"
+                "Lf9HLyX/Pykg/z4tJf83KCP/Misl/yslIv8vNi3/Jzct/z4yKP9bPi//XUc6"
+                "/3d2df90dHX/dXV0/3R0dP90dHT/bWxs/3V1df90dHT/dXV1/3V1df91dXX/"
+                "dXV1/3V1df91dXX/dXV1/3V1df92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92"
+                "dnb/d3d3/3Z2dv93d3f/c3Nz/39/f//4+Pj///////7+/v//////////////"
+                "//////////////////////////////////////////////z8/P//////srCt"
+                "/042J/9eRDT/RjQp/zYrJP8xKCP/KiQh/yUiIP8gHR3/KTov/ypAM/8uSjn/"
+                "NV5F/zZdRP8hJyT/NFA9/y1HN/87LSX/XEAv/15IOv93dnX/dHR0/3R0dP90"
+                "dHT/dHR0/2xsbP90dHT/dHR0/3R0dP90dHT/dXV1/3V1df91dXX/dXV1/3V1"
+                "df91dXX/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3d3d/93d3f/d3d3"
+                "/3Nzc/+CgoL/+fn5////////////////////////////////////////////"
+                "///////////////////////////8/Pz//////66rqP9ONSb/X0Qz/yoiHv8Y"
+                "Gx3/HR4e/x0eH/8fICD/HRgb/zRSPv8zTzz/NFI+/zphSP81V0L/ICUk/y5G"
+                "OP8eKib/OCgh/1xBMP9dSDr/d3Z1/3R0df90dHT/dHR0/3R0dP9sbGz/dXV1"
+                "/3R0dP90dHT/dXV1/3R0dP91dXX/dXV1/3V1df91dXX/dXV1/3Z2dv92dnb/"
+                "dnZ2/3Z2dv91dXX/dXV1/3Z2dv93d3f/d3d3/3h4eP9ycnL/hYWF//z8/P//"
+                "////////////////////////////////////////////////////////////"
+                "/////////Pz8//////+qpqP/TjUm/15DM/8rJB//HB8g/x8gIP8dHx//HB4f"
+                "/xsbHf8jLyj/ISUi/x8cG/8hHBn/IxoW/ykeGf8uHxj/NSQc/003Kv9bQDD/"
+                "X0g6/3d3dv90dHT/dHR0/3R0dP90dHT/bG1s/3V1df91dXX/dHR0/3V1df91"
+                "dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dnZ2/3Z2dv92dnb/dnZ2/3Z2"
+                "dv92dnb/eHh4/3d3d/94eHj/cXFx/4iIiP/+/v7/////////////////////"
+                "//////////////////////////////////////////////////38/P//////"
+                "pqKe/041Jv9eRDT/KiAa/x4ZFv8pIBv/LyMd/zUmHv8+LSP/RC4k/002Kv9b"
+                "RDf/bllM/4BtYP+Ne2//l4Z7/6eZj/94Y1b/VDop/15HOP91dXT/c3R0/3R0"
+                "dP91dXX/dXV1/21tbP91dXX/dXV1/3V1df91dXX/dXV1/3V1df91dXX/dXV1"
+                "/3V1df91dXX/dXV1/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3d3d/93d3f/"
+                "eHh4/3BwcP+Li4v/////////////////////////////////////////////"
+                "///////////////////////////////9/Pz//////6Kemv9QNib/XEMz/2xW"
+                "Sf+CbmL/fmlc/39pXP+djYL/s6ed/7itpP9uV0n/tquj/7mwqP+nm5L/r6Wd"
+                "/6aakf+dkIb/a1NE/1I3Jv9oWE3/fn59/3V1dv9ycnL/cnJy/3Nzc/9sbWz/"
+                "dXV1/3V1df91dXX/dXV1/3V1df91dXX/dnZ2/3V1df91dXX/dXV1/3V1df92"
+                "dnb/dnZ2/3Z2dv92dnb/dnZ2/3d3d/93d3f/eHh4/3h4eP9vb2//j4+P////"
+                "////////////////////////////////////////////////////////////"
+                "/////////////fz8//////+blpH/TzMj/2BGNv+9tKz/0MvF/6qelv+lmZD/"
+                "k4R6/5CBdv+JeW7/ZE0//3hkV/9nUEL/W0Ex/1k/Lv9RNST/Ujgo/2NTR/98"
+                "d3P/j5CQ/5GRkf+NjY3/iIiI/4KCgv96enr/bW5t/3R0c/9zc3P/cnJy/3V0"
+                "dP92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2/3Z2dv92dnb/dnZ2"
+                "/3Z2dv92dnb/d3d3/3d3d/95eXn/b29v/5OTk////////v7+////////////"
+                "//////////////////////////////////////////////////////39/f//"
+                "////oJyY/0o0KP9ROCn/WUAx/1c8Lf9aPy//Vzwr/1M3Jv9QNCP/TzMh/1U5"
+                "KP9QNCP/VDop/1lDNP9jUUb/dWxl/4mHhf+Ulpf/lpeY/5OTk/+SkpL/kpKS"
+                "/5KSkv+Pj4//i4uL/4mKiv+Gh4f/gICA/39/f/93eHj/cnNz/3Fycv9zc3P/"
+                "dnV1/3d3dv93d3f/dnZ2/3Z2dv93d3f/d3d3/3d3d/93d3f/d3d3/3d3d/93"
+                "d3f/eXl5/29vb/+Xl5f///////7+/v//////////////////////////////"
+                "//////////////////////////////////////////////f3+P/U1NT/rKil"
+                "/4h/ef9wZFz/ZVZM/2JRR/9iUUb/ZFRJ/2laUP9uYlr/eHBp/4F9ef+Mi4r/"
+                "l5iZ/5ucnf+Zmpr/l5aW/5WVlf+UlJT/lJSU/5SUlP+QkJD/jo6O/5GSkv+W"
+                "lZT/m5aV/6KZl/+mnZv/oZua/5eUk/+Lior/f3+A/3d4eP9yc3P/cnJy/3R0"
+                "dP92dnb/d3d3/3h4eP93d3f/eHh4/3h4eP93d3f/d3d3/3l5ef9ubm7/m5ub"
+                "///////+/v7/////////////////////////////////////////////////"
+                "////////////////////////////////////////////////+/3+/+7w8P/i"
+                "5OT/2drb/9DS0v/HyMn/vL6//7K0tf+pqqv/oaKi/52cnP+bm5v/mpqa/5iZ"
+                "mf+Xl5f/mJiY/5GRkf+Hh4f/kJGR/56cm/+im5n/opeV/6WZlv+mmpf/pZmW"
+                "/6ebmP+pnZv/qp+d/6mfnv+inJv/l5ST/4qJif9+f3//dnd3/3Jzc/9zc3P/"
+                "dXV1/3d3d/95eXn/eXl5/3h4eP96enr/bm5u/6CgoP///////f39////////"
+                "////////////////////////////////////////////////////////////"
+                "/////////v7+//39/f/8/Pz//f39/////////////////////////////fz8"
+                "//X09P/r6+v/4uLi/9bW1f+/v7//q6qp/6Kenv+empn/oJ2c/3p5eP9VVVT/"
+                "S0xL/z09PP9hXV//lY2Q/7essP+snqL/p5eZ/6qcnP+nm5r/p5uZ/6eamP+o"
+                "m5n/qZ2a/6ufnf+toaD/qqGf/6Kcm/+XlJP/iomJ/39/f/94eXn/dXV1/3V1"
+                "df93d3f/e3t7/3Bwb/+mpqb///////39/f//////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "/////////////////v7+//7+/v/+/v7//v7+////////////////////////"
+                "/////v7+//Hw8P/h3t7/0MvL/7qzsv+mnZz/oJiX/6yko/+gm5j/j56M/3qZ"
+                "e/90n3j/gqOE/5WhkP+jopn/qaCc/6ugnf+soJ7/q6Cd/6qfnf+pnpv/qp6b"
+                "/6qenP+roJ3/rqOh/66kov+noaD/m5mY/5GRkf+Hh4f/e3t7/3Z2dv9mZmb/"
+                "pKSk///////9/f3/////////////////////////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "/////////////////////////v7+//7+/v/+/v7//v7+////////////////"
+                "////////////+vr7/+vq6v/a19f/zcnJ/7e3sv+bo5b/gJV9/2qQbP9slHD/"
+                "iKGI/52il/+hmZj/npeW/6OdnP+oo6L/qqWl/6mmpf+opqb/m5qZ/4+Pjv+K"
+                "iYn/jo2N/5KSkf+cnJv/qKio/7Gxsf+tra3/mpqa/8PDw////////f39////"
+                "////////////////////////////////////////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "/////////////////////////////////v7+//7+/v/+/v7//v7+////////"
+                "////////////////////+fT3/+zk6f/b09j/v7i8/6Wgo/+SkJH/lJSU/5ma"
+                "mf+io6P/r7Cw/76+v//Dw8P/ycnJ/9DR0f/V1dX/29vb/+Tk5P/r6+v/8PDw"
+                "//X19f/6+vr/////////////////////////////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "/////////////////////////////////////////v7+//7+/v/+/v7/////"
+                "///////////////////////9/v3/8fHx//Hx8f/4+Pj/+/v7//7+/v//////"
+                "///////////////////////////////////////////////////////////+"
+                "/v7//v7+////////////////////////////////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "////////////////////////////////////////////////////////////"
+                "///////////////////////////////////////////+/v7//v7+//79/f/+"
+                "/v7///////////////////////////////////////7+/v/+/v7//v7+//7+"
+                "/v/+/v7//v7+//7+/v/+/v7//v7+////////////////////////////////"
+                "////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Params]
+        Param1 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB1 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param2 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB1 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum2 =
+                0,"Apply command to Channel 1",
+                1,"Apply command to Channel 2",
+                2,"Apply command to Channel 3",
+                3,"Apply command to Channel 4",
+                4,"Apply command to Channel 5",
+                5,"Apply command to Channel 6",
+                6,"Apply command to Channel 7",
+                7,"Apply command to Channel 8",
+                8,"Apply command to Channel 9",
+                9,"Apply command to Channel 10",
+                10,"Apply command to Channel 11",
+                11,"Apply command to Channel 12",
+                12,"Apply command to Channel 13",
+                13,"Apply command to Channel 14",
+                14,"Apply command to Channel 15",
+                15,"Apply command to Channel 16";
+        Param3 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB1 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param4 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Reserved 1",       $ name
+                "",                     $ units
+                "Reserved",             $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param5 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Reserved 2",       $ name
+                "",                     $ units
+                "Reserved",             $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param6 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Reserved 3",       $ name
+                "",                     $ units
+                "Reserved",             $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param7 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Command",          $ name
+                "",                     $ units
+                "Status Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param8 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB1 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param9 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB1 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum9 =
+                0,"Sequence bit 0",
+                1,"Sequence bit 1",
+                2,"Heart Beat",
+                3,"Data Okay",
+                4,"Alarm Condition",
+                5,"Center of Zero",
+                6,"Motion",
+                7,"Net Mode",
+                8,"Alternate Weight Unit",
+                9,"Device Specific Bit 1",
+                10,"Device Specific Bit 2",
+                11,"Device Specific Bit 3",
+                12,"Device Specific Bit 4",
+                13,"Device Specific Bit 5",
+                14,"Device Specific Bit 6",
+                15,"Device Specific Bit 7";
+        Param10 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB1 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param11 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Status Group 1",   $ name
+                "",                     $ units
+                "Status Group 1",       $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Status Group 2",   $ name
+                "",                     $ units
+                "Status Group 2",       $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Status Group 3",   $ name
+                "",                     $ units
+                "Status Group 3",       $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param14 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "SB1 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measuring block 2 output
+    $ Measuring block 2 output
+        Param15 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB2 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param16 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB2 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param17 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB2 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measuring block 2 input
+    $ Measuring block 2 input
+        Param18 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB2 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param19 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB2 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param20 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB2 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measure block 3 output
+    $ Measure block 3 output
+        Param21 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB3 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param22 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB3 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param23 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB3 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measureing block 3 input
+    $ Measureing block 3 input
+        Param24 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB3 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param25 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB3 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param26 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB3 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measure block 4 output
+    $ Measure block 4 output
+        Param27 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB4 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param28 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB4 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param29 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB4 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measureing block 4 input
+    $ Measureing block 4 input
+        Param30 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB4 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param31 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB4 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param32 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB4 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measure block 5 output
+    $ Measure block 5 output
+        Param33 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB5 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param34 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB5 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param35 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB5 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measureing block 5 input
+    $ Measureing block 5 input
+        Param36 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB5 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param37 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB5 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param38 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB5 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measure block 6 output
+    $ Measure block 6 output
+        Param39 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB6 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param40 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB6 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param41 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB6 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measureing block 6 input
+    $ Measureing block 6 input
+        Param42 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB6 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param43 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB6 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param44 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB6 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measure block 7 output
+    $ Measure block 7 output
+        Param45 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB7 Command Value",    $ name
+                "",                     $ units
+                "Floating point value - optionally used with command",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param46 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB7 Channel Mask",     $ name
+                "",                     $ units
+                "Channel Mask (0 always for single devices)",    $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param47 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB7 Command",          $ name
+                "",                     $ units
+                "Command and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+                                        $ Measureing block 3 input
+    $ Measureing block 7 input
+        Param48 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xCA,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "MB7 Measuring Value",  $ name
+                "",                     $ units
+                "Requested floating point value (32-bit)",    $ help string
+                -3000000000.0,3000000000.0,0,    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param49 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD2,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB7 Device Status",    $ name
+                "",                     $ units
+                "Command Status",       $ help string
+                0,0xFFFF,0,             $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param50 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "MB7 Response",         $ name
+                "",                     $ units
+                "Field Value and Channel Indicator",    $ help string
+                0,32767,0,              $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param60 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RPI Range",            $ name
+                "micro second",         $ units
+                "supported RPI range",  $ help string
+                1000,100000,10000,      $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param69 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Assembly 8 Block Size",$ name
+                "",                     $ units
+                "",                     $ help string
+                64,64,64,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param70 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Assembly 2 Block Size",$ name
+                "",                     $ units
+                "Assembly Block Size for 2 Block Format",    $ help string
+                16,16,16,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param73 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Output 8 Block",    $ name
+                "",                     $ units
+                "",                     $ help string
+                100,100,100,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param74 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Input 8 Block",    $ name
+                "",                     $ units
+                "",                     $ help string
+                105,105,105,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param75 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Output 2 Block",    $ name
+                "",                     $ units
+                "",                     $ help string
+                100,100,100,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param76 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Input 2 Block",    $ name
+                "",                     $ units
+                "",                     $ help string
+                101,101,101,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+[Groups]
+        Group1 =
+                "Measuring Block 1",    $ Group Name
+                6,                      $ Number of Members
+                1,2,3,8,9,10;           $ Parameters and Variants in Group
+        Group2 =
+                "Status Block 1",       $ Group Name
+                8,                      $ Number of Members
+                4,5,6,7,11,12,13,14;    $ Parameters and Variants in Group
+        Group3 =
+                "Measuring Block 2",
+                6,
+                15,16,17,18,19,20;
+        Group4 =
+                "Measuring Block 3",
+                6,
+                21,22,23,24,25,26;
+        Group5 =
+                "Measuring Block 4",
+                6,
+                27,28,29,30,31,32;
+        Group6 =
+                "Measuring Block 5",
+                6,
+                33,34,35,36,37,38;
+        Group7 =
+                "Measuring Block 6",
+                6,
+                39,40,41,42,43,44;
+        Group8 =
+                "Measuring Block 7",
+                6,
+                45,46,47,48,49,50;
+
+[Assembly]
+        Object_Name = "Assembly Object";
+        Object_Class_Code = 0x04;
+        Assem100 =
+                $ Includes Measuring Block (Floating Point) and Status Block
+                "Output 2 Block Format",$ Name
+                "20 04 24 64 30 03",    $ Path
+                ,                       $ Size of the Data Block (in bytes)
+                0x0000,                 $ Descriptor
+                ,,                      $ Reserved, Reserved
+                32,Param1,              $ Member Size, Member Name
+                16,Param2,
+                16,Param3,
+                16,Param4,
+                16,Param5,
+                16,Param6,
+                16,Param7;
+        Assem101 =
+                $ Includes Measuring and Status Data
+                "Input 2 Block Format ",
+                "20 04 24 65 30 03",
+                ,
+                0x0000,
+                ,,
+                32,Param8,
+                16,Param9,
+                16,Param10,
+                16,Param11,
+                16,Param12,
+                16,Param13,
+                16,Param14;
+        Assem104 =
+                $ Includes Measuring Block (Floating Point) and Status Block
+                "Output 8 Block Format",$ Name
+                "20 04 24 64 30 03",    $ Path
+                ,                       $ Size of the Data Block (in bytes)
+                0x0000,                 $ Descriptor
+                ,,                      $ Reserved, Reserved
+                32,Param1,              $ Member Size, Member Name
+                16,Param2,
+                16,Param3,
+                16,Param4,
+                16,Param5,
+                16,Param6,
+                16,Param7,
+                32,Param15,
+                16,Param16,
+                16,Param17,
+                32,Param21,
+                16,Param22,
+                16,Param23,
+                32,Param27,
+                16,Param28,
+                16,Param29,
+                32,Param33,
+                16,Param34,
+                16,Param35,
+                32,Param39,
+                16,Param40,
+                16,Param41,
+                32,Param45,
+                16,Param46,
+                16,Param47;
+        Assem105 =
+                $ Includes Measuring and Status Data
+                "Input 8 Block Format ",
+                "20 04 24 65 30 03",
+                ,
+                0x0000,
+                ,,
+                32,Param8,              $ Measuring block input
+                16,Param9,
+                16,Param10,
+                16,Param11,             $ Status block input
+                16,Param12,
+                16,Param13,
+                16,Param14,
+                32,Param18,             $ MB2 input
+                16,Param19,
+                16,Param20,
+                32,Param24,             $ MB3 input
+                16,Param25,
+                16,Param26,
+                32,Param30,             $ MB4 input
+                16,Param31,
+                16,Param32,
+                32,Param36,             $ MB5 input
+                16,Param37,
+                16,Param38,
+                32,Param42,             $ MB6 input
+                16,Param43,
+                16,Param44,
+                32,Param48,             $ MB7 input
+                16,Param49,
+                16,Param50;
+
+[Connection Manager]
+        Object_Name = "Connection Manager Object";
+        Object_Class_Code = 0x06;
+
+        Connection1 =
+                0x04010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44640405,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,Param70,Assem100,      $ O->T RPI, size, format
+                ,Param70,Assem101,      $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,,                      $ target config size, format
+                "I/O 2 Block Format",   $ Connection Name
+                "",                     $ help string
+                "20 04 24 01 2C [Param75] 2C [Param76]";    $ Path
+
+        Connection2 =
+                0x04010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44640405,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,Param69,Assem104,      $ O->T RPI, size, format
+                ,Param69,Assem105,      $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,,                      $ target config size, format
+                "I/O 8 Block Format",   $ Connection Name
+                "",                     $ help string
+                "20 04 24 01 2C [Param73] 2C [Param74]";    $ Path
+
+[Port]
+        Object_Name = "Port Object";
+        Object_Class_Code = 0xF4;
+        Port1 =
+                TCP,
+                "EtherNet/IP port",
+                "20 F5 24 01",
+                2,
+                $ Routing Capabilities.
+                0x00,
+                ;
+
+[Capacity]
+
+        ConnOverhead = .004;            $ Connection Overhead
+
+        MaxIOConnections = 1;           $ Maximum number of Class 1 Connections
+        MaxMsgConnections = 6;          $ Maximum number of Class 3 Connections
+        TSpec1 = TxRx, 10, 2000;        $ packets per sec @ 10 bytes
+        TSpec2 = TxRx, 504, 1500;       $ packets per sec @ 504 bytes
+
+[DLR Class]
+        Revision = 3;
+        Object_Name = "Device Level Ring Object";
+        Object_Class_Code = 0x47;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+
+[TCP/IP Interface Class]
+        Revision = 4;
+        Object_Name = "TCP/IP Interface Object";
+        Object_Class_Code = 0xF5;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+
+[Ethernet Link Class]
+        Revision = 4;
+        Object_Name = "Ethernet Link Object";
+        Object_Class_Code = 0xF6;
+        MaxInst = 2;
+        Number_Of_Static_Instances = 2;
+        Max_Number_Of_Dynamic_Instances = 0;
+        InterfaceLabel1 = "Port 1";
+        InterfaceLabel2 = "Port 2";
+
+$ ****************************************************************************
+$ EOF
+$ ****************************************************************************

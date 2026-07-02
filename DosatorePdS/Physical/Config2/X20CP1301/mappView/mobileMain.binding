@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="mobileMain_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fErrorePercentuale" attribute="value" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="val_ErroreFinale" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:StartDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="btn_Start" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Recipe.PesoRichiesto" attribute="node" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="input_SetPoint" attribute="node" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:PercentualeValvola" attribute="node" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="val_ErroreFinale1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Stop_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="btn_Start1" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:tDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="val_PesoAttuale1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:PesoBilancia_G" attribute="node" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="val_PesoAttuale" attribute="node" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:radialGauge" attribute="node" />
+<Target xsi:type="brease" contentRefId="mobileMain" widgetRefId="RadialGauge1" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

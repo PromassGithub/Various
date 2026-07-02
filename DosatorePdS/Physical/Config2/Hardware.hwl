@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="03/18/2026 11:29:51" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20CP1301" Type="X20CP1301" X="100" Y="100" />
+    <Module Name="X20IF10D1_1" Type="X20IF10D1-1" X="199" Y="100" />
+    <Module Name="X20BM11" Type="X20BM11" X="264" Y="100" />
+    <Module Name="X20AO4632" Type="X20AO4632" X="264" Y="100" />
+    <Module Name="X20TB12" Type="X20TB12" X="264" Y="127" />
+    <Module Name="X3" Type="X3" X="251" Y="103" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
+    <Module Name="X2" Type="X2" X="238" Y="103" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
+    <Module Name="X1" Type="X1" X="225" Y="103" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="IND360_V1_1" Type="FBD.Hilscher.EIGenEDSAdapterDTM.IND360 V1.1" X="277" Y="252" />
+  </Modules>
+  <Links>
+    <Link From="X20IF10D1_1" To="IND360_V1_1" FromPort="IF1" ToPort="EIP1" IsRoutedByUser="False">
+      <Point X="213" Y="191" />
+      <Point X="213" Y="191" />
+      <Point X="213" Y="203" />
+      <Point X="213" Y="315" />
+      <Point X="296" Y="315" />
+      <Point X="296" Y="303" />
+      <Point X="296" Y="291" />
+      <Point X="296" Y="291" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

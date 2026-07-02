@@ -4,6 +4,13 @@ PROGRAM _CYCLIC
 // --- LOGICA PRINCIPALE E CALIBRAZIONE ---
 // #######################################################################
 	
+	
+	IF PercentualeValvola > 0 THEN
+		radialGauge := REAL_TO_INT(PercentualeValvola*10);
+	ELSE 
+		radialGauge := 0;
+	END_IF
+	
 	// conversione segnale d'ingresso valvola
 	
 	PercentualeValvola := (((INT_TO_REAL(GlbIO.Ai.Valvola) - 6553.0) / (32767.0 - 6553.0)) * 100.0);
@@ -31,14 +38,15 @@ PROGRAM _CYCLIC
 	END_IF
 	
 	
-	Dosatore.fPesoAnticipoChiusura 		:= Recipe.fPesoAnticipoChiusura;
-	Dosatore.fSogliaDosaggioLento 		:= Recipe.fSogliaDosaggioLento;
-	Dosatore.fSogliaMicrodosaggio 		:= Recipe.fSogliaMicrodosaggio;
-	Dosatore.fPercentualeValvolaVeloce 	:= Recipe.fPercentualeValvolaVeloce;
-	Dosatore.fPercentualeValvolaLenta 	:= Recipe.fPercentualeValvolaLenta;
-	Dosatore.fPercentualeValvolaFine 	:= Recipe.fPercentualeValvolaFine;
-	Dosatore.fFattoreCorrezione 		:= Recipe.fFattoreCorrezione;
-	PesoRichiesto_HMI					:= Recipe.PesoRichiesto;
+	Dosatore.fPesoAnticipoChiusura 			:= Recipe.fPesoAnticipoChiusura;
+	Dosatore.fSogliaDosaggioLento 			:= Recipe.fSogliaDosaggioLento;
+	Dosatore.fSogliaMicrodosaggio 			:= Recipe.fSogliaMicrodosaggio;
+	Dosatore.fPercentualeValvolaVeloce 		:= Recipe.fPercentualeValvolaVeloce;
+	Dosatore.fPercentualeValvolaLenta 		:= Recipe.fPercentualeValvolaLenta;
+	Dosatore.fPercentualeValvolaFine 		:= Recipe.fPercentualeValvolaFine;
+	Dosatore.fFattoreCorrezione 			:= Recipe.fFattoreCorrezione;
+	Dosatore.fFeadbackValvolaProporzionale 	:= PercentualeValvola;
+	PesoRichiesto_HMI						:= Recipe.PesoRichiesto;
 
 	Dosatore(
 		fPesoAttualeBilancia := PesoBilancia_G,
@@ -55,9 +63,9 @@ PROGRAM _CYCLIC
 		);
 	
 	// Mappa l'uscita
-	//	PesoBilancia_G := BilanciaManager.fPesoGrammi;
+	// PesoBilancia_G := BilanciaManager.fPesoGrammi;
 
-	Valvola_AO := (Dosatore.fUscitaValvolaProporzionale * (32767 - 6553) / 100) + 6553;
+	Valvola_AO := (Dosatore.fUscitaValvolaProporzionale * (32767 - 6600) / 100) + 6600;
 
 	// --- SEQUENZA DI MISURAZIONE DELLA PORTATA ---
 	// Logica per eseguire il test di portata con Timer e chiusura valvola

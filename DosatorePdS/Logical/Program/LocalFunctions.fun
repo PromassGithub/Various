@@ -37,6 +37,7 @@ END_FUNCTION_BLOCK
 		tTimeoutStabilizzazione : TIME := T#5s; (*Tempo massimo di attesa per la stabilizzazione (es. 5 secondi)*)
 		fFattoreCorrezione : REAL := 0.1; (*Fattore che determina la velocità di correzione (es. 0.1 = correggiamo il 10% dell'errore ad ogni ciclo)*)
 		C_CAPACITA_MAX_BILANCIA : REAL := 3500;
+		fFeadbackValvolaProporzionale : REAL; (*// Uscita: Comando alla valvola proporzionale (0.0 - 100.0)*)
 	END_VAR
 	VAR_OUTPUT
 		fUscitaValvolaProporzionale : REAL; (*// Uscita: Comando alla valvola proporzionale (0.0 - 100.0)*)
@@ -53,10 +54,24 @@ END_FUNCTION_BLOCK
 		fTolleranzaMinima : REAL; (*Limite inferiore accettabile*)
 		fTolleranzaMassima : REAL; (*Limite superiore accettabile*)
 		fPuntoDiChiusuraValvola : REAL; (*Nuovo punto di chiusura calcolato*) (*// VARIABILI TIMER*)
+		bStartTimerAttesa : BOOL; (*Flag per attivare il timer*)
 		bStartTimer : BOOL; (*Flag per attivare il timer*)
+		TON_AttesaMateriale : TON; (*Istanza del Timer di Attesa, dopo questo tempo, se il materiale non passaaumento l'apertura della valvola*) (*// VARIABILI PER L'AUTO-TARATURA*)
 		TON_Stabilizzazione : TON; (*Istanza del Timer On Delay*) (*// VARIABILI PER L'AUTO-TARATURA*)
 		fUltimoPesoDosato : REAL; (*Peso finale registrato nel ciclo precedente*)
 		fUltimoErroreAssoluto : REAL; (*Differenza tra fUltimoPesoDosato e fPesoRichiesto*)
 		fErroreAssolutoMax : REAL; (*// Valore calcolato: Peso max di errore (es. 1.0g per 2000g)*)
+		fOldWeight : REAL; (*vecchio valore bilancia per controllo flusso*)
+		fIncrementoPercentualeValvola : REAL;
+		fPercentualeValvolaPrec : REAL;
+		fPortataAlComandoChiusura : REAL;
+		fPortataAttuale : REAL;
+		fFattoreCorrezioneValvola : REAL;
+		fMaterialeInVolo : REAL;
+		fTempoRitardoStimato : REAL;
+		fPesoAlComandoChiusura : REAL;
+		fMaterialeCadutoDopoChiusura : REAL;
+		fTempoRitardoPrecedente : REAL;
+		bilanciaPortataOld : REAL;
 	END_VAR
 END_FUNCTION_BLOCK

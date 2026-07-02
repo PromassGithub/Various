@@ -104,5 +104,15 @@
 
 
 
+<Content id="content_1"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:GlbIO.Do.PompaAspirazione" attribute="value" />
+<Target xsi:type="brease" refId="content_1_ToggleButton1" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:GlbIO.Do.PompaAspirazione" attribute="editable" />
+<Target xsi:type="brease" refId="content_1_ToggleButton1" attribute="editable::value" />
+</Binding></Content>
+
+
+
 
 </BindingDefinition>

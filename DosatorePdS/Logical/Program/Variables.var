@@ -59,9 +59,11 @@ VAR RETAIN
 	PesoTara : REAL;
 END_VAR
 VAR
-	PesoBilancia_G : REAL; (*// Peso finale in grammi*)
 	Pulsante_Tara : BOOL; (*// Comando di azzeramento da HMI o logica*)
 END_VAR
 VAR RETAIN
 	BilanciaManager : FB_GestioneBilancia; (*// Istanza del Blocco Funzione*)
+END_VAR
+VAR
+	radialGauge : UINT;
 END_VAR

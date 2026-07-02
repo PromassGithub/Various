@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_1_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:PesoBilancia_G" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_PesoAttuale" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fErrorePercentuale" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_ErroreFinale" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:PesoRichiesto_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="input_SetPoint" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:StartDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="btn_Start" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Pulsante_Tara" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="btn_Tare" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:bStartCalibrazione" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="btn_StartCalib" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fPesoAnticipoChiusura" attribute="node" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_Volo" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fPercentualeValvolaVeloce" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_Veloce" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fPercentualeValvolaLenta" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_Lenta" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fPercentualeValvolaFine" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_Fine" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:fPendenza_m" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_Pendenza" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:fIntercetta_q" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="val_Intercetta" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:bCalibrazioneCompletata" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="lbl_CalibOK" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:GlbIO.Do.PompaAspirazione" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_1" widgetRefId="ToggleButton1" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

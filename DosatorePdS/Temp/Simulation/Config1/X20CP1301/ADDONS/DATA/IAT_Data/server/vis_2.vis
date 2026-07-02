@@ -1,19 +1,29 @@
 
 <vdef:Visualization id="vis_2" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-  <StartPage pageRefId="page_0" />
+  <StartPage pageRefId="page_1" />
   <Pages>
     <Page refId="page_0" />
+    <Page refId="page_1" />
   </Pages>
   <Navigations />
   <BindingsSets>
-    <BindingsSet refId="-1285506712" />
     <BindingsSet refId="-1291218519" />
+    <BindingsSet refId="691987861" />
+    <BindingsSet refId="1759966598" />
+    <BindingsSet refId="-1287599890" />
+    <BindingsSet refId="1201813212" />
   </BindingsSets>
-  <EventBindingsSets />
+  <EventBindingsSets>
+    <EventBindingsSet refId="-12960615" />
+  </EventBindingsSets>
   <Dialogs />
   <Contents>
-    <Content refId="content_2" />
     <Content refId="content_1" />
+    <Content refId="mobileMain" />
+    <Content refId="mobileheader" />
+    <Content refId="mobileSetting" />
+    <Content refId="mobileScale" />
+    <Content refId="mobileRecipe" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
@@ -24,6 +34,8 @@
   </Themes>
   <Configurations>
     <Configuration key="activityCount" value="false" />
+    <Configuration key="zoom" value="true" />
+    <Configuration key="browserZoom" value="true" />
     <Gestures>
       <!--<SystemGesture1 touchPoints="2" />
 		  <SystemGesture2 touchPoints="2" />
