@@ -1,0 +1,305 @@
+<?xml version="1.0" ?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="X20CP1301">
+    <Parameter ID="HardwareModuleName" Value="X20CP1301" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="on" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+    <Parameter ID="TemperatureCPUType" Value="UINT" />
+    <Parameter ID="TemperatureENVType" Value="UINT" />
+  </Module>
+  <Module ID="IF2" Hardware="X20CP1301">
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF2.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF2.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF6.X2X" Hardware="X2X">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="BusLength" Value="1000" Type="UDINT" />
+    <Parameter ID="Stations" Value="64" Type="UDINT" />
+    <Parameter ID="AsyncPayload" Value="80" Type="UDINT" />
+    <Parameter ID="Asymmetric" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="on" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF6.ST1" Hardware="X20AO4632">
+    <Parameter ID="HardwareModuleName" Value="X20AO4632" />
+  </Module>
+  <Module ID="IF6.ST1.IO" Hardware="X20AO4632">
+    <Parameter ID="FunctionModel" Value="Standard" />
+    <Parameter ID="FunctionModelNumber" Value="0" Type="USINT" />
+    <Parameter ID="Supervision" Value="on" />
+    <Parameter ID="ChannelType01" Value="0 to 20mA" />
+    <Parameter ID="ChannelType02" Value="-10V to +10V" />
+    <Parameter ID="ChannelType03" Value="-10V to +10V" />
+    <Parameter ID="ChannelType04" Value="-10V to +10V" />
+  </Module>
+  <Module ID="SS1" Hardware="X20IF10D1-1">
+    <Parameter ID="HardwareModuleName" Value="X20IF10D1_1" />
+    <Parameter ID="ConfigFile" Value="X20IF10D1_1.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
+    <Parameter ID="CycleTime" Value="10000" Type="UDINT" />
+    <Parameter ID="ConfigUID" Value="396773860" Type="UDINT" />
+  </Module>
+  <Module ID="SS1.IF1.NETX" Hardware="NETX" />
+  <Module ID="SS1.IF1.NETX.BUS" Hardware="X20IF10D1-1">
+    <Channel ID="Communication_Change_of_State">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Communication_State">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Communication_Error">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Version">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="12" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="Watchdog_Timeout">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="14" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="Host_Watchdog">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="20" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Error_Count">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="24" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Error_Log_Indicator">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="28" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Slave_State">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="40" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Slave_Error_Log_Indicator">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="44" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Configured_Slaves">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="48" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Active_Slaves">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="52" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="Faulted_Slaves">
+      <Parameter ID="Ext" Value="/HW /STATE /PSEUDOCYCLIC" />
+      <Parameter ID="Address" Value="56" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="ModuleConfig_192_168_10_2_Slot_0">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="16" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ModuleState_192_168_10_2_Slot_0">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="32" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ModuleDiag_192_168_10_2_Slot_0">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="48" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+  </Module>
+  <Module ID="SS1.IF1.ST1" Hardware="NetX_any">
+    <Parameter ID="HardwareModuleName" Value="IND360_V1_1" />
+    <Parameter ID="OrderNumber" Value="IND360 V1.1" />
+  </Module>
+  <Module ID="SS1.IF1.ST1.IO" Hardware="NetX_any">
+    <Parameter ID="Supervision" Value="off" />
+    <Channel ID="ModuleOk">
+      <Parameter ID="Ext" Value="/OK" />
+      <Parameter ID="Address" Value="32" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+      <Parameter ID="Sig_St_Bool" Value="1" />
+    </Channel>
+    <Channel ID="MB1_Command_Value">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="REAL" />
+    </Channel>
+    <Channel ID="MB1_Channel_Mask">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="MB1_Command">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Reserved_1">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Reserved_2">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Reserved_3">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="12" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Command">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="14" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="MB1_Measuring_Value">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="REAL" />
+    </Channel>
+    <Channel ID="MB1_Device_Status">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="MB1_Response">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Status_Group_1">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Status_Group_2">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Status_Group_3">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="12" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+    <Channel ID="SB1_Response">
+      <Parameter ID="Ext" Value="/HW" />
+      <Parameter ID="Address" Value="14" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="INT" />
+    </Channel>
+  </Module>
+  <Module ID="SS1.IO" Hardware="X20IF10D1-1">
+    <Parameter ID="FunctionModel" Value="Standard" />
+  </Module>
+  <Module ID="X1" Hardware="X1">
+    <Parameter ID="HardwareModuleName" Value="X1" />
+  </Module>
+  <Module ID="X1.IO" Hardware="X1">
+    <Parameter ID="X1DI_InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="X1AI_ChannelType01" Value="0 to 20mA" />
+    <Parameter ID="X1AI1_UpperLimit_020mA" Value="32767" Type="INT" />
+    <Parameter ID="X1AI1_LowerLimit_020mA" Value="0" Type="INT" />
+    <Parameter ID="X1AI1_InputFilter" Value="level 2" />
+    <Parameter ID="X1AI1_InputLimitation" Value="off" />
+    <Parameter ID="X1AI_ChannelType02" Value="0 to 20mA" />
+    <Parameter ID="X1AI2_UpperLimit_020mA" Value="32767" Type="INT" />
+    <Parameter ID="X1AI2_LowerLimit_020mA" Value="0" Type="INT" />
+    <Parameter ID="X1AI2_InputFilter" Value="off" />
+  </Module>
+  <Module ID="X2" Hardware="X2">
+    <Parameter ID="HardwareModuleName" Value="X2" />
+  </Module>
+  <Module ID="X2.IO" Hardware="X2">
+    <Parameter ID="X2DI_InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="X2EdgeDetectEnable" Value="off" />
+    <Parameter ID="X2CounterFunction" Value="off" />
+  </Module>
+  <Module ID="X3" Hardware="X3">
+    <Parameter ID="HardwareModuleName" Value="X3" />
+  </Module>
+  <Module ID="X3.IO" Hardware="X3">
+    <Parameter ID="X3StatusInfo" Value="on" />
+    <Parameter ID="X3DI_InputFilter" Value="10" Type="USINT" />
+    <Parameter ID="X3Channel01Source" Value="DirectIO" />
+    <Parameter ID="X3Channel02Source" Value="DirectIO" />
+    <Parameter ID="X3Channel03Source" Value="DirectIO" />
+    <Parameter ID="X3Channel04Source" Value="DirectIO" />
+    <Parameter ID="X3Channel05Config" Value="outputPushPull" />
+    <Parameter ID="X3Channel05Source" Value="DirectIO" />
+    <Parameter ID="X3Channel06Config" Value="outputPushPull" />
+    <Parameter ID="X3Channel06Source" Value="DirectIO" />
+    <Parameter ID="X3Channel07Config" Value="outputPushPull" />
+    <Parameter ID="X3Channel07Source" Value="DirectIO" />
+    <Parameter ID="X3Channel08Config" Value="outputPushPull" />
+    <Parameter ID="X3Channel08Source" Value="DirectIO" />
+    <Parameter ID="X3Channel09Source" Value="DirectIO" />
+    <Parameter ID="X3Channel10Source" Value="DirectIO" />
+    <Parameter ID="X3Channel11Source" Value="DirectIO" />
+    <Parameter ID="X3Channel12Source" Value="DirectIO" />
+    <Parameter ID="X3Move01Function" Value="off" />
+    <Parameter ID="X3Move02Function" Value="off" />
+  </Module>
+</IOCFG>  

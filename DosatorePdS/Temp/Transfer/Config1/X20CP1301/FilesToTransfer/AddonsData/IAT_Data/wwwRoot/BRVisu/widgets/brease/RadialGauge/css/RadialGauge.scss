@@ -1,0 +1,78 @@
+﻿@import '../../../../css/libs/mixins.scss';
+
+.breaseRadialGauge {
+
+    .backShape {
+        height: inherit;
+        width: inherit;
+        box-sizing: border-box;
+        position: absolute;
+    }
+
+    .gaugeContainer {
+        position: absolute;
+
+        .area1 {
+            fill: transparent;
+        }
+
+        .area2 {
+            fill: transparent;
+        }
+
+        .area3 {
+            fill: transparent;
+        }
+
+        .area4 {
+            fill: transparent;
+        }
+
+        .area5 {
+            fill: transparent;
+        }
+
+        .majorTick {
+            stroke: #000;
+            stroke-width: 2px;
+            transform-box: fill-box;
+            transform-origin: 0% 0%;
+        }
+
+        .minorTick {
+            stroke: #000;
+            stroke-width: 1px;
+            transform-box: fill-box;
+            transform-origin: 0% 0%;
+        }
+
+        .groupNumbers text {
+            text-anchor: middle;
+            dominant-baseline: central;
+        }
+    }
+
+    .textContainer {
+        position: absolute;
+
+        .groupText text {
+            text-anchor: middle;
+        }
+    }
+
+    .groupPointer {
+        fill: transparent;
+        position: absolute;
+
+        .needle {
+            position: absolute;
+        }
+
+        .knob {
+            position: absolute;
+        }
+    }
+
+    &.disabled {
+    }
+}

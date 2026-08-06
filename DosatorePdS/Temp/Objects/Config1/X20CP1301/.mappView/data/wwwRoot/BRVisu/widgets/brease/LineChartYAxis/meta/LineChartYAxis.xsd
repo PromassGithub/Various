@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:iat="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" elementFormDefault="qualified">
+<xs:complexType name="widgets.brease.LineChartYAxisRestrict" abstract="true">
+	<xs:complexContent>
+		<xs:restriction base="iat:brease.core.BaseContentWidget">
+			<xs:attribute name="permissionOperate" use="prohibited" type="types:RoleCollection" />
+			<xs:attribute name="permissionView" use="prohibited" type="types:RoleCollection" />
+			<xs:attribute name="tooltip" use="prohibited" type="types:String" />
+			<xs:attribute name="tabIndex" use="prohibited" type="types:Integer" />
+			<xs:attribute name="left" use="prohibited" type="types:Integer" />
+			<xs:attribute name="top" use="prohibited" type="types:Integer" />
+			<xs:attribute name="height" use="prohibited" type="types:Size" />
+			<xs:attribute name="width" use="optional" type="types:Size" default="60" />
+		</xs:restriction>
+	</xs:complexContent>
+</xs:complexType>
+<xs:complexType name="widgets.brease.LineChartYAxis">
+	<xs:complexContent>
+		<xs:extension base="iat:widgets.brease.LineChartYAxisRestrict">
+			<xs:all>
+				<xs:element name="Widgets" type="iat:Widgets" minOccurs="1" maxOccurs="1">
+					<xs:unique name="widgets.brease.LineChartYAxis.zIndex">
+						<xs:selector xpath="./iat:Widget"/>
+						<xs:field xpath="@zIndex"/>
+					</xs:unique>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="axisLabel" use="optional" type="types:String" default="" />
+			<xs:attribute name="axisLabelDistance" use="optional" type="types:PixelVal" default="45px" />
+			<xs:attribute name="axisPosition" use="optional" type="types:brease.enum.HorizontalAlign" default="left" />
+			<xs:attribute name="format" use="optional" type="types:brease.config.MeasurementSystemFormat" default="{&apos;metric&apos;: {&apos;decimalPlaces&apos;: 1, &apos;minimumIntegerDigits&apos;:1}, &apos;imperial&apos;: {&apos;decimalPlaces&apos;: 1, &apos;minimumIntegerDigits&apos;:1}, &apos;imperial-us&apos;: {&apos;decimalPlaces&apos;: 1, &apos;minimumIntegerDigits&apos;:1}}" />
+			<xs:attribute name="tickLabelDistance" use="optional" type="types:PixelVal" default="9px" />
+			<xs:attribute name="tickLabelRotation" use="optional" type="types:Rotation" default="0deg" />
+			<xs:attribute name="unit" use="optional" type="types:brease.config.MeasurementSystemUnit" default="" />
+			<xs:attribute name="axisColor" use="optional" type="types:Color" default="#000000" />
+			<xs:attribute name="disabledAxisColor" use="optional" type="types:Color" default="#EEEEEE" />
+		</xs:extension>
+	</xs:complexContent>
+</xs:complexType>
+</xs:schema>

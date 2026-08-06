@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationRuntimeIOSystem Version="1.0"?>
+<IO xmlns="http://www.br-automation.com/AR/IO">
+<Links>
+<LN ID="%ID.SerialNumber_CPU" Type="UDINT">
+<Prod Device="$root" DPName="SerialNumber_CPU" Kind="io"/>
+</LN>
+<LN ID="%IW.ModuleID_CPU" Type="UINT">
+<Prod Device="$root" DPName="ModuleID_CPU" Kind="io"/>
+</LN>
+<LN ID="%ID.PowerOnCycles_CPU" Type="UDINT">
+<Prod Device="$root" DPName="PowerOnCycles_CPU" Kind="io"/>
+</LN>
+<LN ID="%ID.OperatingHours_CPU" Type="UDINT">
+<Prod Device="$root" DPName="OperatingHours_CPU" Kind="io"/>
+</LN>
+<LN ID="%IB.MtcxVersionMajor" Type="USINT">
+<Prod Device="$root" DPName="MtcxVersionMajor" Kind="io"/>
+</LN>
+<LN ID="%IB.MtcxVersionMinor" Type="USINT">
+<Prod Device="$root" DPName="MtcxVersionMinor" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureCPU" Type="UINT">
+<Prod Device="$root" DPName="TemperatureCPU" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureRAM" Type="UINT">
+<Prod Device="$root" DPName="TemperatureRAM" Kind="io"/>
+</LN>
+<LN ID="%ID.SystemTime" Type="DINT">
+<Prod Device="$root" DPName="SystemTime" Kind="io"/>
+</LN>
+</Links></IO>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleInformation name="widgets.brease.ChartYAxisWidget" xmlns="http://www.br-automation.com/iat2014/widgetStyles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
+	<StyleProperties>
+
+    <StyleProperty name="axisColor" category="Appearance" type="Color" default="#000000">
+      <StyleElement idsuffix="_breaseChartYAxis" selector="&amp;:not(.disabled) path" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_breaseChartYAxis" selector="&amp;:not(.disabled) line" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_breaseChartYAxis" selector="&amp;:not(.disabled) text" attribute="fill"></StyleElement>
+      <StyleElement selector="&amp;.editMode.breaseChartYAxisWidget:not(.disabled) path" attribute="stroke"></StyleElement>
+      <StyleElement selector="&amp;.editMode.breaseChartYAxisWidget:not(.disabled) line" attribute="stroke"></StyleElement>
+      <StyleElement selector="&amp;.editMode.breaseChartYAxisWidget:not(.disabled) text" attribute="fill"></StyleElement>
+      <Description>
+        Color of the axis and its labels
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="disabledAxisColor" category="Appearance" type="Color" default="#EEEEEE">
+      <StyleElement idsuffix="_breaseChartYAxis" selector="&amp;.disabled path" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_breaseChartYAxis" selector="&amp;.disabled line" attribute="stroke"></StyleElement>
+      <StyleElement idsuffix="_breaseChartYAxis" selector="&amp;.disabled text" attribute="fill"></StyleElement>
+      <StyleElement selector="&amp;.editMode.breaseChartYAxisWidget.disabled path" attribute="stroke"></StyleElement>
+      <StyleElement selector="&amp;.editMode.breaseChartYAxisWidget.disabled line" attribute="stroke"></StyleElement>
+      <StyleElement selector="&amp;.editMode.breaseChartYAxisWidget.disabled text" attribute="fill"></StyleElement>
+      <Description>
+        Color of the axis and its labels when it is disabled
+      </Description>
+    </StyleProperty>
+
+    <StyleProperty name="width" type="Size" not_styleable="true" category="Layout" default="60">
+      <StyleElement attribute="@include elemWidth($value)"></StyleElement>
+      <StyleElement attribute="@include elemFlexBasis($value)"></StyleElement>
+      <Description>Outer width of widget</Description>
+    </StyleProperty>
+    <StyleProperty name="height" type="Size" not_styleable="true" hide="true">
+      <StyleElement attribute="@include elemHeight($value)"></StyleElement>
+    </StyleProperty>
+
+    <StyleProperty name="top" type="Integer" not_styleable="true" hide="true">
+      <StyleElement attribute="@include elemTop($value)"></StyleElement>
+    </StyleProperty>
+    <StyleProperty name="left" type="Integer" not_styleable="true" hide="true">
+      <StyleElement attribute="@include elemLeft($value)"></StyleElement>
+    </StyleProperty>
+    
+	</StyleProperties>
+</StyleInformation>
+	
+	
+

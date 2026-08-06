@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingDefinition xmlns="http://www.br-automation.com/iat2014/binding/runtime/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:br="http://www.br-automation.com/iat2015/bindingList/runtime/v2">
+  
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Dosatore.fErrorePercentuale" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_val_ErroreFinale" attribute="value" />
+</Binding></Content>
+
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:StartDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_btn_Start" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Program:StartDosaggio_HMI" attribute="editable" />
+<Target xsi:type="brease" refId="mobileMain_btn_Start" attribute="editable::value" />
+</Binding></Content>
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Recipe.PesoRichiesto" attribute="node" />
+<Target xsi:type="brease" refId="mobileMain_input_SetPoint" attribute="node" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Recipe.PesoRichiesto" attribute="editable" />
+<Target xsi:type="brease" refId="mobileMain_input_SetPoint" attribute="editable::node" />
+</Binding></Content>
+
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:PercentualeValvola" attribute="node" />
+<Target xsi:type="brease" refId="mobileMain_val_ErroreFinale1" attribute="node" />
+</Binding></Content>
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:Stop_HMI" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_btn_Start1" attribute="value" />
+</Binding><Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Program:Stop_HMI" attribute="editable" />
+<Target xsi:type="brease" refId="mobileMain_btn_Start1" attribute="editable::value" />
+</Binding></Content>
+
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:tDosaggio_HMI" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_val_PesoAttuale1" attribute="value" />
+</Binding></Content>
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:radialGauge" attribute="value" />
+<Target xsi:type="brease" refId="mobileMain_RadialGauge1" attribute="value" />
+</Binding></Content>
+
+
+
+<Content id="mobileMain"><Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:PesoBilancia_G" attribute="node" />
+<Target xsi:type="brease" refId="mobileMain_val_PesoAttuale" attribute="node" />
+</Binding></Content>
+
+
+
+
+</BindingDefinition>

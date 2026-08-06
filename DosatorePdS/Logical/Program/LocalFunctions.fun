@@ -72,6 +72,8 @@ END_FUNCTION_BLOCK
 		fPesoAlComandoChiusura : REAL;
 		fMaterialeCadutoDopoChiusura : REAL;
 		fTempoRitardoPrecedente : REAL;
+		i : USINT;
+		bilanciaPortataArray : ARRAY[0..9] OF REAL;
 		bilanciaPortataOld : REAL;
 	END_VAR
 END_FUNCTION_BLOCK

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
+  <Module ID="$root" Hardware="5AP923.1906-00" HardwareModuleName="5PPC2100_BY34_000" ModuleID="3">
+    <Channel ID="SerialNumber_CPU" Description="Serial number of CPU board" Ext="/HW" Address="0" Direction="IN" Type="UDINT" Sig_St_Udint="1" ChannelType="GenericFuncCall" Function="mtcxGetSerialNoPP500" FuncParam1="0" />
+    <Channel ID="ModuleID_CPU" Description="Module ID of CPU board" Ext="/HW" Address="1" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="GenericFuncCall" Function="mtcxGetDeviceIdPP500" FuncParam1="0x0" />
+    <Channel ID="PowerOnCycles_CPU" Description="PowerOnCycles of CPU board" Ext="/HW" Address="2" Direction="IN" Type="UDINT" Sig_St_Udint="1" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter1" FuncParam1="0x0" FuncParam2="0x0" />
+    <Channel ID="OperatingHours_CPU" Description="Operating hours of CPU board [h]" Ext="/HW" Address="3" Direction="IN" Type="UDINT" Sig_St_Udint="1" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter0" FuncParam1="0x0" FuncParam2="0x0" CyclicUpdate="1" />
+    <Channel ID="MtcxVersionMajor" Description="MtcX version" Ext="/HW" Address="4" Direction="IN" Type="USINT" Sig_St_Usint="1" ChannelType="GenericFuncCall" Function="mtcxGetPx32Version2" FuncParam1="1" />
+    <Channel ID="MtcxVersionMinor" Description="MtcX version" Ext="/HW" Address="5" Direction="IN" Type="USINT" Sig_St_Usint="1" ChannelType="GenericFuncCall" Function="mtcxGetPx32Version2" FuncParam1="0" />
+    <Channel ID="TemperatureCPU" Description="Ambient temperature of the processor in 1/10 degree Celsius" Ext="/HW" Address="6" Direction="IN" Type="UINT" Sig_Temp_CPUTemp="1" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x1" CyclicUpdate="1" />
+    <Channel ID="TemperatureRAM" Description="Temperature of RAM area in 1/10 degree Celsius" Ext="/HW" Address="7" Direction="IN" Type="UINT" Sig_Temp_RAMTemp="1" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x0" CyclicUpdate="1" />
+    <Channel ID="SystemTime" Description="System time at the start of the current task cycle [µs]" Ext="/HW" Address="8" Direction="IN" Type="DINT" Sig_St_Dint="1" ChannelType="SystemTime" />
+  </Module>
+</ChannelConfiguration>

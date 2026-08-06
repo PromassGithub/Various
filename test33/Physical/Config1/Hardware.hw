@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.6.42 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="5AP923.1906-00" Type="5AP923.1906-00" Version="2.0.1.0">
+    <Parameter ID="VcObjectName" Value="Visu" />
+    <Parameter ID="RotationAngle" Value="270" />
+  </Module>
+  <Module Name="5PPC2100_BY34_000" Type="5PPC2100.BY34-000" Version="2.1.2.0">
+    <Connection Connector="SY" TargetModule="5AP923.1906-00" TargetConnector="SY1" />
+    <Connector Name="IF3">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.2" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Connector Name="IF4">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Connector Name="IF5">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+    </Connector>
+    <Connector Name="IF6">
+      <Parameter ID="AssignedOperatingSystem" Value="ARemb" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="test33_Config1" />
+  </Module>
+</Hardware>

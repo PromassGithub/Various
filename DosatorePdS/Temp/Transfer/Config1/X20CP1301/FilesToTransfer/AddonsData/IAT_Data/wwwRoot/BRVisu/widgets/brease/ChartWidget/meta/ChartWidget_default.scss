@@ -1,0 +1,78 @@
+@import "mixins.scss";
+@mixin widgets_brease_ChartWidget_base {
+	@include elemWidth(720);
+	@include elemHeight(440);
+	&:not(.disabled) {
+		background-color: transparent;
+	}
+	&.disabled {
+		background-color: transparent;
+	}
+	&:not(.disabled) {
+		@include backGroundGradient('');
+	}
+	&.disabled {
+		@include backGroundGradient('');
+	}
+	&:not(.disabled) .chart {
+		fill: #FFFFFF;
+	}
+	&.breaseChartWidget.editMode:not(.disabled) .areaGraph {
+		background-color: #FFFFFF;
+	}
+	&.disabled .chart {
+		fill: #FFFFFF;
+	}
+	&.disabled.breaseChartWidget.editMode .areaGraph {
+		background-color: #FFFFFF;
+	}
+	&:not(.disabled) .chart {
+		stroke: #000000;
+	}
+	&.breaseChartWidget.editMode:not(.disabled) .areaGraph {
+		border-color: #000000;
+	}
+	&.disabled .chart {
+		stroke: #999999;
+	}
+	&.disabled.breaseChartWidget.editMode .areaGraph {
+		border-color: #999999;
+	}
+	&:not(.disabled) .gridLines {
+		stroke: #DDDDDD;
+	}
+	&.disabled .gridLines {
+		stroke: #EEEEEE;
+	}
+	.axis text {
+		font-size: 12px;
+	}
+	.containerAxisDescription text {
+		font-size: 12px;
+	}
+	.axis text {
+		font-family: Arial;
+	}
+	text {
+		font-family: Arial;
+	}
+	border-width: 1px;
+	&.disabled {
+		border-width: 1px;
+	}
+	&:not(.disabled) {
+		border-color: #5B7C70;
+	}
+	&.disabled {
+		border-color: #C8C8C8;
+	}
+	border-style: solid;
+	&.disabled {
+		border-style: solid;
+	}
+
+}
+
+.widgets_brease_ChartWidget_style_default {
+@include widgets_brease_ChartWidget_base
+}

@@ -9,7 +9,7 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 
 	// --- ESECUZIONE TIMER E CALCOLI PRELIMINARI ---
 	TON_Stabilizzazione(IN := bStartTimer, PT := tTimeoutStabilizzazione);
-	TON_AttesaMateriale(IN := bStartTimerAttesa, PT := T#2s);
+	TON_AttesaMateriale(IN := bStartTimerAttesa, PT := T#10s);
 
 	// CALCOLO DELL'ERRORE MASSIMO ASSOLUTO (basato sulla percentuale)
 	fErroreAssolutoMax := fPesoRichiesto * fTolleranzaPercentuale;
@@ -26,7 +26,16 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 	fTolleranzaMinima := fPesoRichiesto - fErroreAssolutoMax;
 	fTolleranzaMassima := fPesoRichiesto + fErroreAssolutoMax;
 
-	fPortataAttuale := (fPesoAttualeBilancia - bilanciaPortataOld)/0.01;
+	IF i = 9 THEN
+		fPortataAttuale := (bilanciaPortataArray[0] + bilanciaPortataArray[1] + bilanciaPortataArray[2] + bilanciaPortataArray[3] + bilanciaPortataArray[4] + bilanciaPortataArray[5] + bilanciaPortataArray[6] + bilanciaPortataArray[7] + bilanciaPortataArray[8] + bilanciaPortataArray[9])/0.1;
+	END_IF
+	
+	
+	bilanciaPortataArray[i] := fPesoAttualeBilancia - bilanciaPortataOld;
+
+	i := i+1;
+	IF i > 9 THEN i := 0; END_IF
+	
 	bilanciaPortataOld := fPesoAttualeBilancia;
 	
 	IF NOT TON_AttesaMateriale.Q THEN
@@ -58,7 +67,7 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 			END_IF
 			
 			
-			IF ABS(fUscitaValvolaProporzionale - fFeadbackValvolaProporzionale) < 5 THEN
+			IF ABS(fUscitaValvolaProporzionale - fFeadbackValvolaProporzionale) < 4 THEN
 				bStartTimerAttesa := TRUE;
 				IF TON_AttesaMateriale.Q AND (ABS(fOldWeight - fPesoAttualeBilancia) < 5) THEN
 					fIncrementoPercentualeValvola := fIncrementoPercentualeValvola + 7;
@@ -119,9 +128,9 @@ FUNCTION_BLOCK FB_DosaggioPolvere
 				eStatoDosaggio := eST_ERRORE;
 			END_IF
 			
-			IF fPortataAttuale < 2 THEN
+			IF ABS(fUscitaValvolaProporzionale - fFeadbackValvolaProporzionale) < 4 THEN
 				bStartTimerAttesa := TRUE;
-				IF TON_AttesaMateriale.Q AND (ABS(fOldWeight - fPesoAttualeBilancia) < 2) THEN
+				IF TON_AttesaMateriale.Q AND (fPortataAttuale) < 2 THEN
 					fIncrementoPercentualeValvola := fIncrementoPercentualeValvola + 3;
 				END_IF
 			ELSE

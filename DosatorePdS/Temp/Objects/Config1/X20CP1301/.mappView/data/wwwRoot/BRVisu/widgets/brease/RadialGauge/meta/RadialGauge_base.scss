@@ -1,0 +1,75 @@
+@import "mixins.scss";
+@mixin widgets_brease_RadialGauge_base {
+	@include elemWidth(200);
+	@include elemHeight(200);
+	@include elemMinWidth(0);
+	@include elemMaxWidth(0);
+	@include elemMinHeight(0);
+	@include elemMaxHeight(0);
+	.backShape {
+		border-width: 0px;
+	}
+	.backShape {
+		border-color: #000000;
+	}
+	.backShape {
+		border-style: solid;
+	}
+	.backShape {
+		background-color: #FFFFFF;
+	}
+	.backShape {
+		@include box-shadow(none);
+	}
+	margin: 0px;
+	.backShape {
+		@include backGroundGradient('');
+	}
+	.backShape {
+		@include pureBackgroundImage('../');
+	}
+	.gaugeContainer .groupScaleAreas .area1 {
+		fill: transparent;
+	}
+	.gaugeContainer .groupScaleAreas .area2 {
+		fill: transparent;
+	}
+	.gaugeContainer .groupScaleAreas .area3 {
+		fill: transparent;
+	}
+	.gaugeContainer .groupScaleAreas .area4 {
+		fill: transparent;
+	}
+	.gaugeContainer .groupScaleAreas .area5 {
+		fill: transparent;
+	}
+	.gaugeContainer .groupToRotate .groupPointer .needle {
+		fill: #FFFFFF;
+	}
+	.gaugeContainer .groupToRotate .groupPointer .knob {
+		fill: #FFFFFF;
+	}
+	.gaugeContainer .groupToRotate .groupPointer .needle {
+		stroke: #000000;
+	}
+	.gaugeContainer .groupToRotate .groupPointer .knob {
+		stroke: #000000;
+	}
+	.gaugeContainer .groupToRotate .groupPointer .needle {
+		stroke-width: 1px;
+	}
+	.gaugeContainer .groupToRotate .groupPointer .knob {
+		stroke-width: 1px;
+	}
+	text {
+		fill: #000000;
+	}
+	text {
+		font-size: 10px;
+	}
+	text {
+		font-family: Arial;
+	}
+
+}
+

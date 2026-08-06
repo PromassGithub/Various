@@ -1,0 +1,46 @@
+@import "mixins.scss";
+@mixin widgets_brease_LineChartTimeAxis_base {
+	@include elemHeight(50);
+	@include elemFlexBasis(50);
+	&:not(.disabled) path {
+		stroke: #000000;
+	}
+	&:not(.disabled) line {
+		stroke: #000000;
+	}
+	&:not(.disabled) text {
+		fill: #000000;
+	}
+	&.editMode.breaseChartXAxisWidget:not(.disabled) path {
+		stroke: #000000;
+	}
+	&.editMode.breaseChartXAxisWidget:not(.disabled) line {
+		stroke: #000000;
+	}
+	&.editMode.breaseChartXAxisWidget:not(.disabled) text {
+		fill: #000000;
+	}
+	&.disabled path {
+		stroke: #EEEEEE;
+	}
+	&.disabled line {
+		stroke: #EEEEEE;
+	}
+	&.disabled text {
+		fill: #EEEEEE;
+	}
+	&.editMode.breaseChartXAxisWidget.disabled path {
+		stroke: #EEEEEE;
+	}
+	&.editMode.breaseChartXAxisWidget.disabled line {
+		stroke: #EEEEEE;
+	}
+	&.editMode.breaseChartXAxisWidget.disabled text {
+		fill: #EEEEEE;
+	}
+
+}
+
+.widgets_brease_LineChartTimeAxis_style_default {
+@include widgets_brease_LineChartTimeAxis_base
+}

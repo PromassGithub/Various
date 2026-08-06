@@ -1,0 +1,53 @@
+@import "mixins.scss";
+#mobileScale_lbl_Fine_Perc {	@include elemTop(30);
+}
+#mobileScale_lbl_Fine_Perc {	@include elemLeft(20);
+}
+#mobileScale_lbl_Fine_Perc {	@include elemAutoWidth(540);
+}
+#mobileScale_lbl_Fine_Perc {	@include elemAutoHeight(110);
+}
+#mobileScale_lbl_Fine_Perc {	z-index: 0;
+}
+#mobileScale_lbl_Fine_Perc {	font-size: 40px;
+}
+#mobileScale_NumericOutput1 {	@include elemTop(30);
+}
+#mobileScale_NumericOutput1 {	@include elemLeft(630);
+}
+#mobileScale_NumericOutput1 {	@include elemAutoWidth(250);
+}
+#mobileScale_NumericOutput1 {	@include elemAutoHeight(110);
+}
+#mobileScale_NumericOutput1 {	z-index: 1;
+}
+#mobileScale_NumericOutput1 {	input {
+		font-size: 40px;
+	}
+}
+#mobileScale_lbl_Tare {	@include elemTop(350);
+}
+#mobileScale_lbl_Tare {	@include elemLeft(20);
+}
+#mobileScale_lbl_Tare {	@include elemAutoWidth(420);
+}
+#mobileScale_lbl_Tare {	@include elemAutoHeight(110);
+}
+#mobileScale_lbl_Tare {	z-index: 2;
+}
+#mobileScale_lbl_Tare {	font-size: 40px;
+}
+#mobileScale_btn_Tare {	@include elemTop(350);
+}
+#mobileScale_btn_Tare {	@include elemLeft(450);
+}
+#mobileScale_btn_Tare {	@include elemAutoWidth(430);
+}
+#mobileScale_btn_Tare {	@include elemAutoHeight(110);
+}
+#mobileScale_btn_Tare {	z-index: 3;
+}
+#mobileScale_btn_Tare {	span {
+		font-size: 40px;
+	}
+}

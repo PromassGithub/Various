@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="5AP923.1906-00">
+    <Parameter ID="HardwareModuleName" Value="5PPC2100_BY34_000" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="on" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+    <Parameter ID="TouchInterface" Value="COMB" />
+    <Parameter ID="Supervision" Value="on" />
+  </Module>
+  <Module ID="CPU" Hardware="5PPC2100.BY34-000" />
+  <Module ID="IF3" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF3.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF3.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF4" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF4.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF4.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF5" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+  </Module>
+  <Module ID="IF6" Hardware="5AP923.1906-00">
+    <Parameter ID="AssignedToOs" Value="ARemb" />
+  </Module>
+</IOCFG>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.9"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2026-07-16 09:31:48" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ashwac.br&quot; -L &quot;AsIecCon: V*, astime: V*, operator: V*, runtime: V*&quot; -c &quot;Config1&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B G4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2026-07-16 09:31:48" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;5PPC2100_BY34_000&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\sysconf.br&quot; -T SG4 -B G4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2026-07-16 09:31:48" />
+    <Prerequisite ID="c:\program files\brautomation\as49\upgrades\modified.txt" LastWriteTime="2024-01-29 07:59:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;5PPC2100_BY34_000&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\asfw.br&quot; -T SG4 -B G4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2026-07-16 09:31:48" />
+    <Prerequisite ID="c:\program files\brautomation\as49\upgrades\modified.txt" LastWriteTime="2024-01-29 07:59:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;5PPC2100_BY34_000&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ashwd.br&quot; -T SG4 -B G4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2026-07-16 09:31:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\iomap.iom" LastWriteTime="2026-07-16 09:29:36" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.0.4 /REPO=11159 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;5PPC2100_BY34_000&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B G4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\udbdef.br">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter="C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\iomap.iom" LastWriteTime="2026-07-16 09:29:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\pvmap.vvm" LastWriteTime="2026-07-16 09:25:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2026-07-16 09:31:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\cpu.sw" LastWriteTime="2026-07-16 09:31:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\channelconfiguration.xml" LastWriteTime="2026-07-16 09:32:02" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\iomap.br&quot; -T SG4 -B G4.83 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.5PPC2100_BY34_000&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\program files\brautomation\as49\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2020-08-10 04:29:50" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\TCData\TCData.imx&quot; -c &quot;C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\Program Files\BrAutomation\AS\System\G0483&quot; &quot;C:\Program Files\BrAutomation\AS49\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\tcdata\tcdata.imx" LastWriteTime="2026-07-16 09:32:00" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\tcdata\tcdata.s18d" LastWriteTime="2026-07-16 09:32:02" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\accessandsecurity\userrolesystem\role.role" LastWriteTime="2026-07-16 09:25:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\Role.br&quot; -zip -B G4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\accessandsecurity\userrolesystem\user.user" LastWriteTime="2026-07-16 09:25:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\User.br&quot; -zip -B G4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2026-07-16 09:25:08" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\FWRules.br&quot; -zip -B G4.83 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\visu\visu.mak">
+    <CommandLine Parameter="&quot;Visu&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\Visu.br&quot; -T SG4 -B G4.83 -c &quot;Config1&quot; -S &quot;5PPC2100_BY34_000&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -H &quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; -V &quot;V4.72.6&quot; -apj &quot;test33&quot; -v V1.00.0 -all -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -w2 -sfas" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\visu.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\visu\visu.mak" LastWriteTime="2026-07-16 09:32:02" />
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\#cpu_vc.mak&quot; -k" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\5PPC2100_BY34_000\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\5ppc2100_by34_000\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\ashwac.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\sysconf.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\asfw.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\ashwd.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\arconfig.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\udbdef.br" LastWriteTime="2020-08-10 04:29:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\iomap.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\tcdata.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\role.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\user.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\fwrules.br" LastWriteTime="2026-07-16 09:32:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\5ppc2100_by34_000\visu.br" LastWriteTime="2026-07-16 09:32:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\5ppc2100_by34_000\cpu.sw" LastWriteTime="2026-07-16 09:31:32" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\test33.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\Program Files\BrAutomation\AS49&quot; -S &quot;5PPC2100_BY34_000&quot; -all -A &quot;PPC21xx&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\5PPC2100_BY34_000\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/COMT=2500 /RT=1000 /AM=* /DAIP=192.168.0.4 /REPO=11159 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

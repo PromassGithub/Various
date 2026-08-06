@@ -1,0 +1,299 @@
+﻿@import "mixins.scss";
+@import "../../../../widgets/brease/DateTimeInput/meta/DateTimeInput_base";
+.widgets_brease_DateTimeInput_style_Input {
+@include widgets_brease_DateTimeInput_base; 
+&:not(.active):not(.disabled) span {
+	color: #000000;
+}
+&:not(.disabled):not(.active) {
+	border-width: 2px 2px 1px 1px;
+}
+&.active:not(.disabled) {
+	border-width: 2px 2px 1px 1px;
+}
+&:not(.active):not(.disabled) {
+	border-color: #FF8800;
+}
+&.active:not(.disabled) {
+	border-color: #FF8800;
+}
+	font-size: 20px;
+&:not(.active):not(.disabled) {
+	background-color: #FFFFFF;
+}
+&.active:not(.disabled) {
+	background-color: #EBEBEB;
+}
+&.active:not(.disabled) span {
+	color: #555555;
+}
+@include font-weight-bold(true);
+@include box-shadow(4px 1px 3px 0px rgba(255, 113, 0, 0.75));
+
+}
+@import "../../../../widgets/brease/DateTimeInput/meta/DateTimeInput_base";
+.widgets_brease_DateTimeInput_style_InputLarge {
+@include widgets_brease_DateTimeInput_base; 
+&:not(.active):not(.disabled) span {
+	color: #000000;
+}
+&:not(.disabled):not(.active) {
+	border-width: 2px 2px 1px 1px;
+}
+&.active:not(.disabled) {
+	border-width: 2px 2px 1px 1px;
+}
+&:not(.active):not(.disabled) {
+	border-color: #FF8800;
+}
+&.active:not(.disabled) {
+	border-color: #FF8800;
+}
+	font-size: 32px;
+&:not(.active):not(.disabled) {
+	background-color: #FFFFFF;
+}
+&.active:not(.disabled) {
+	background-color: #EBEBEB;
+}
+&.active:not(.disabled) span {
+	color: #555555;
+}
+@include font-weight-bold(true);
+@include box-shadow(4px 1px 3px 0px rgba(255, 113, 0, 0.75));
+
+}
+@import "../../../../widgets/brease/DateTimeInput/meta/DateTimeInput_base";
+.widgets_brease_DateTimeInput_style_InputCommand {
+@include widgets_brease_DateTimeInput_base; 
+&:not(.active):not(.disabled) span {
+	color: #000000;
+}
+&:not(.disabled):not(.active) {
+	border-width: 2px 2px 1px 1px;
+}
+&.active:not(.disabled) {
+	border-width: 2px 2px 1px 1px;
+}
+&:not(.active):not(.disabled) {
+	border-color: #5196AF;
+}
+&.active:not(.disabled) {
+	border-color: #5196AF;
+}
+	font-size: 20px;
+&:not(.active):not(.disabled) {
+	background-color: #FFFFFF;
+}
+&.active:not(.disabled) {
+	background-color: #EBEBEB;
+}
+&.active:not(.disabled) span {
+	color: #555555;
+}
+@include font-weight-bold(true);
+@include box-shadow(4px 1px 3px 0px rgba(81, 150, 175, 0.75));
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge1 {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(ellipse farthest-corner at 45px 45px , #d9d9d9 0%, rgba(0, 0, 255, 0) 50%, #555555 95%)');
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge2 {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(farthest-corner at 45px 45px , #FFFFFF 0%, #a6a6a6 100%)');
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge1_from80_red {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(ellipse farthest-corner at 45px 45px , #d9d9d9 0%, rgba(0, 0, 255, 0) 50%, #555555 95%)');
+}
+.gaugeContainer .groupScaleAreas .area5 {
+	fill: #ff1a1a;
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge2_from80_red {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(farthest-corner at 45px 45px , #FFFFFF 0%, #a6a6a6 100%)');
+}
+.gaugeContainer .groupScaleAreas .area5 {
+	fill: #ff1a1a;
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge1_to20_red {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(ellipse farthest-corner at 45px 45px , #d9d9d9 0%, rgba(0, 0, 255, 0) 50%, #555555 95%)');
+}
+.gaugeContainer .groupScaleAreas .area1 {
+	fill: #ff1a1a;
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge2_to20_red {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(farthest-corner at 45px 45px , #FFFFFF 0%, #a6a6a6 100%)');
+}
+.gaugeContainer .groupScaleAreas .area1 {
+	fill: #ff1a1a;
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge1_to80_green {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(ellipse farthest-corner at 45px 45px , #d9d9d9 0%, rgba(0, 0, 255, 0) 50%, #555555 95%)');
+}
+.gaugeContainer .groupScaleAreas .area1 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area2 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area3 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area4 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area5 {
+	fill: #ff1a1a;
+}
+
+}
+@import "../../../../widgets/brease/RadialGauge/meta/RadialGauge_base";
+.widgets_brease_RadialGauge_style_Gauge2_to80_green {
+@include widgets_brease_RadialGauge_base; 
+.backShape {
+	border-width: 2px;
+}
+.backShape {
+	border-color: #474747;
+}
+.gaugeContainer .groupToRotate .groupPointer .needle {
+	fill: #FF0000;
+}
+.gaugeContainer .groupToRotate .groupPointer .knob {
+	fill: #FF0000;
+}
+.backShape {
+@include backGroundGradient('radial-gradient(farthest-corner at 45px 45px , #FFFFFF 0%, #a6a6a6 100%)');
+}
+.gaugeContainer .groupScaleAreas .area1 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area2 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area3 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area4 {
+	fill: rgba(102, 153, 0, 0.5);
+}
+.gaugeContainer .groupScaleAreas .area5 {
+	fill: #ff1a1a;
+}
+
+}
